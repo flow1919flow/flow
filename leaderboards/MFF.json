@@ -1,0 +1,2633 @@
+{
+  "period": [
+    "2025-11-19",
+    "2026-10-30"
+  ],
+  "sessions": 245,
+  "starts": 146,
+  "horizon": 100,
+  "plans": {
+    "rapid_eod_50k": [
+      {
+        "rank": 1,
+        "key": "HY104-EMA22",
+        "evaluation": "HY104-EMA22",
+        "funded": "HYcomb-28-HY104-03",
+        "normal": {
+          "cash": 8461.11,
+          "median": 10188.13,
+          "paid": 146,
+          "days": 66.5
+        },
+        "stress": {
+          "cash": 6907.36,
+          "median": 7757.8,
+          "paid": 146,
+          "days": 70.0
+        },
+        "market": "ES",
+        "name": "EMA22 für den Rücklaufeinstieg",
+        "settings": "Keltner-Mitte EMA20",
+        "status": "SQX-Jahresbacktest · OOS offen",
+        "timing": {
+          "normal": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 146,
+              "median_days": 66.5,
+              "day_q1": 47.5,
+              "day_q3": 90.25,
+              "median_cents": 83617.0
+            },
+            "reaches_target": {
+              "target": 846111,
+              "count": 90,
+              "median_days": 110.5
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 146,
+                "median_days": 66.5,
+                "median_amount": 83617.0,
+                "median_cumulative": 83617.0
+              },
+              {
+                "n": 2,
+                "count": 146,
+                "median_days": 71.0,
+                "median_amount": 63092.0,
+                "median_cumulative": 146709.0
+              },
+              {
+                "n": 3,
+                "count": 132,
+                "median_days": 85.0,
+                "median_amount": 63608.0,
+                "median_cumulative": 210317.0
+              },
+              {
+                "n": 4,
+                "count": 129,
+                "median_days": 90,
+                "median_amount": 66650,
+                "median_cumulative": 284727
+              },
+              {
+                "n": 5,
+                "count": 125,
+                "median_days": 97,
+                "median_amount": 82492,
+                "median_cumulative": 396894
+              },
+              {
+                "n": 6,
+                "count": 120,
+                "median_days": 99.0,
+                "median_amount": 151450.0,
+                "median_cumulative": 510909.0
+              },
+              {
+                "n": 7,
+                "count": 112,
+                "median_days": 100.0,
+                "median_amount": 81608.0,
+                "median_cumulative": 592517.0
+              },
+              {
+                "n": 8,
+                "count": 107,
+                "median_days": 105,
+                "median_amount": 68292,
+                "median_cumulative": 660809
+              },
+              {
+                "n": 9,
+                "count": 95,
+                "median_days": 112,
+                "median_amount": 104051,
+                "median_cumulative": 764860
+              },
+              {
+                "n": 10,
+                "count": 91,
+                "median_days": 117,
+                "median_amount": 95292,
+                "median_cumulative": 860152
+              },
+              {
+                "n": 11,
+                "count": 87,
+                "median_days": 121,
+                "median_amount": 101858,
+                "median_cumulative": 962010
+              },
+              {
+                "n": 12,
+                "count": 74,
+                "median_days": 123.5,
+                "median_amount": 75983.0,
+                "median_cumulative": 1037993.0
+              },
+              {
+                "n": 13,
+                "count": 10,
+                "median_days": 135.5,
+                "median_amount": 80426.0,
+                "median_cumulative": 1075944.0
+              },
+              {
+                "n": 14,
+                "count": 1,
+                "median_days": 139,
+                "median_amount": 94109,
+                "median_cumulative": 1170053
+              }
+            ],
+            "mean_challenge_fees": 64634,
+            "median_challenge_fees": 67500
+          },
+          "stress": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 146,
+              "median_days": 70.0,
+              "day_q1": 50.0,
+              "day_q3": 92.25,
+              "median_cents": 88817.0
+            },
+            "reaches_target": {
+              "target": 690736,
+              "count": 94,
+              "median_days": 108.5
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 146,
+                "median_days": 70.0,
+                "median_amount": 88817.0,
+                "median_cumulative": 88817.0
+              },
+              {
+                "n": 2,
+                "count": 132,
+                "median_days": 84.0,
+                "median_amount": 58592.0,
+                "median_cumulative": 147409.0
+              },
+              {
+                "n": 3,
+                "count": 129,
+                "median_days": 91,
+                "median_amount": 61358,
+                "median_cumulative": 208767
+              },
+              {
+                "n": 4,
+                "count": 127,
+                "median_days": 95,
+                "median_amount": 53150,
+                "median_cumulative": 261917
+              },
+              {
+                "n": 5,
+                "count": 118,
+                "median_days": 98.5,
+                "median_amount": 64492.0,
+                "median_cumulative": 326409.0
+              },
+              {
+                "n": 6,
+                "count": 113,
+                "median_days": 100,
+                "median_amount": 144700,
+                "median_cumulative": 471109
+              },
+              {
+                "n": 7,
+                "count": 108,
+                "median_days": 99.5,
+                "median_amount": 79358.0,
+                "median_cumulative": 550467.0
+              },
+              {
+                "n": 8,
+                "count": 102,
+                "median_days": 107.5,
+                "median_amount": 57042.0,
+                "median_cumulative": 607509.0
+              },
+              {
+                "n": 9,
+                "count": 91,
+                "median_days": 117,
+                "median_amount": 77051,
+                "median_cumulative": 684560
+              },
+              {
+                "n": 10,
+                "count": 66,
+                "median_days": 117.5,
+                "median_amount": 84042.0,
+                "median_cumulative": 768602.0
+              },
+              {
+                "n": 11,
+                "count": 55,
+                "median_days": 114,
+                "median_amount": 99608,
+                "median_cumulative": 868210
+              },
+              {
+                "n": 12,
+                "count": 46,
+                "median_days": 109.5,
+                "median_amount": 73733.0,
+                "median_cumulative": 941943.0
+              },
+              {
+                "n": 13,
+                "count": 1,
+                "median_days": 140,
+                "median_amount": 74835,
+                "median_cumulative": 1016778
+              }
+            ],
+            "mean_challenge_fees": 69257,
+            "median_challenge_fees": 67500
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "key": "HYcomb-28-HY104-03",
+        "evaluation": "HY104",
+        "funded": "HYcomb-28-HY104-03",
+        "normal": {
+          "cash": 8093.92,
+          "median": 9810.1,
+          "paid": 144,
+          "days": 67.0
+        },
+        "stress": {
+          "cash": 6058.78,
+          "median": 6861.13,
+          "paid": 131,
+          "days": 84
+        },
+        "name": "Eröffnungsspanne als Zusatzziel",
+        "settings": "60 min",
+        "trade_net": 27205.54,
+        "without_top3": 20622.76,
+        "without_top10": 10112.94,
+        "timing": {
+          "normal": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 144,
+              "median_days": 67.0,
+              "day_q1": 49.0,
+              "day_q3": 91.0,
+              "median_cents": 65617.0
+            },
+            "reaches_target": {
+              "target": 809392,
+              "count": 93,
+              "median_days": 110
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 144,
+                "median_days": 67.0,
+                "median_amount": 65617.0,
+                "median_cumulative": 65617.0
+              },
+              {
+                "n": 2,
+                "count": 144,
+                "median_days": 72.5,
+                "median_amount": 82217.0,
+                "median_cumulative": 147834.0
+              },
+              {
+                "n": 3,
+                "count": 131,
+                "median_days": 85,
+                "median_amount": 66650,
+                "median_cumulative": 214484
+              },
+              {
+                "n": 4,
+                "count": 123,
+                "median_days": 91,
+                "median_amount": 82492,
+                "median_cumulative": 296976
+              },
+              {
+                "n": 5,
+                "count": 120,
+                "median_days": 95.5,
+                "median_amount": 151450.0,
+                "median_cumulative": 448426.0
+              },
+              {
+                "n": 6,
+                "count": 118,
+                "median_days": 97.5,
+                "median_amount": 81608.0,
+                "median_cumulative": 530034.0
+              },
+              {
+                "n": 7,
+                "count": 113,
+                "median_days": 102,
+                "median_amount": 68292,
+                "median_cumulative": 598326
+              },
+              {
+                "n": 8,
+                "count": 101,
+                "median_days": 106,
+                "median_amount": 104051,
+                "median_cumulative": 702377
+              },
+              {
+                "n": 9,
+                "count": 98,
+                "median_days": 112.5,
+                "median_amount": 95292.0,
+                "median_cumulative": 797669.0
+              },
+              {
+                "n": 10,
+                "count": 93,
+                "median_days": 114,
+                "median_amount": 101858,
+                "median_cumulative": 899527
+              },
+              {
+                "n": 11,
+                "count": 90,
+                "median_days": 119.0,
+                "median_amount": 75983.0,
+                "median_cumulative": 972881.5
+              },
+              {
+                "n": 12,
+                "count": 41,
+                "median_days": 132,
+                "median_amount": 53483,
+                "median_cumulative": 989469
+              },
+              {
+                "n": 13,
+                "count": 21,
+                "median_days": 134,
+                "median_amount": 56709,
+                "median_cumulative": 1046178
+              },
+              {
+                "n": 14,
+                "count": 5,
+                "median_days": 135,
+                "median_amount": 53483,
+                "median_cumulative": 1099661
+              },
+              {
+                "n": 15,
+                "count": 1,
+                "median_days": 139,
+                "median_amount": 94109,
+                "median_cumulative": 1193770
+              }
+            ],
+            "mean_challenge_fees": 61305,
+            "median_challenge_fees": 67500
+          },
+          "stress": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 131,
+              "median_days": 84,
+              "day_q1": 50.0,
+              "day_q3": 101.0,
+              "median_cents": 47617
+            },
+            "reaches_target": {
+              "target": 605878,
+              "count": 94,
+              "median_days": 106.5
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 131,
+                "median_days": 84,
+                "median_amount": 47617,
+                "median_cumulative": 47617
+              },
+              {
+                "n": 2,
+                "count": 127,
+                "median_days": 91,
+                "median_amount": 77717,
+                "median_cumulative": 125334
+              },
+              {
+                "n": 3,
+                "count": 123,
+                "median_days": 95,
+                "median_amount": 53150,
+                "median_cumulative": 178484
+              },
+              {
+                "n": 4,
+                "count": 118,
+                "median_days": 100.5,
+                "median_amount": 64492.0,
+                "median_cumulative": 242976.0
+              },
+              {
+                "n": 5,
+                "count": 117,
+                "median_days": 104,
+                "median_amount": 144700,
+                "median_cumulative": 387676
+              },
+              {
+                "n": 6,
+                "count": 112,
+                "median_days": 101.5,
+                "median_amount": 79358.0,
+                "median_cumulative": 467034.0
+              },
+              {
+                "n": 7,
+                "count": 104,
+                "median_days": 103.5,
+                "median_amount": 57042.0,
+                "median_cumulative": 524076.0
+              },
+              {
+                "n": 8,
+                "count": 80,
+                "median_days": 103.5,
+                "median_amount": 77051.0,
+                "median_cumulative": 601127.0
+              },
+              {
+                "n": 9,
+                "count": 61,
+                "median_days": 111,
+                "median_amount": 84042,
+                "median_cumulative": 685169
+              },
+              {
+                "n": 10,
+                "count": 47,
+                "median_days": 110,
+                "median_amount": 99608,
+                "median_cumulative": 784777
+              },
+              {
+                "n": 11,
+                "count": 45,
+                "median_days": 108,
+                "median_amount": 73733,
+                "median_cumulative": 858510
+              }
+            ],
+            "mean_challenge_fees": 67870,
+            "median_challenge_fees": 67500
+          }
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 3,
+        "key": "HYcomb-28-HY85-03",
+        "evaluation": "HY85",
+        "funded": "HYcomb-28-HY85-03",
+        "normal": {
+          "cash": 7884.36,
+          "median": 9765.1,
+          "paid": 144,
+          "days": 68.5
+        },
+        "stress": {
+          "cash": 5873.62,
+          "median": 6726.13,
+          "paid": 127,
+          "days": 86
+        },
+        "name": "Eröffnungsspanne als Zusatzziel",
+        "settings": "60 min",
+        "trade_net": 26880.54,
+        "without_top3": 20297.76,
+        "without_top10": 9775.44,
+        "timing": {
+          "normal": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 144,
+              "median_days": 68.5,
+              "day_q1": 49.25,
+              "day_q3": 92.75,
+              "median_cents": 59992.0
+            },
+            "reaches_target": {
+              "target": 788436,
+              "count": 92,
+              "median_days": 109.5
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 144,
+                "median_days": 68.5,
+                "median_amount": 59992.0,
+                "median_cumulative": 59992.0
+              },
+              {
+                "n": 2,
+                "count": 144,
+                "median_days": 74.5,
+                "median_amount": 82217.0,
+                "median_cumulative": 142209.0
+              },
+              {
+                "n": 3,
+                "count": 131,
+                "median_days": 87,
+                "median_amount": 66650,
+                "median_cumulative": 208859
+              },
+              {
+                "n": 4,
+                "count": 122,
+                "median_days": 92.5,
+                "median_amount": 82492.0,
+                "median_cumulative": 291351.0
+              },
+              {
+                "n": 5,
+                "count": 119,
+                "median_days": 96,
+                "median_amount": 151450,
+                "median_cumulative": 442801
+              },
+              {
+                "n": 6,
+                "count": 116,
+                "median_days": 99.0,
+                "median_amount": 81608.0,
+                "median_cumulative": 524409.0
+              },
+              {
+                "n": 7,
+                "count": 111,
+                "median_days": 104,
+                "median_amount": 68292,
+                "median_cumulative": 592701
+              },
+              {
+                "n": 8,
+                "count": 100,
+                "median_days": 109.0,
+                "median_amount": 101858.0,
+                "median_cumulative": 697877.0
+              },
+              {
+                "n": 9,
+                "count": 94,
+                "median_days": 114.5,
+                "median_amount": 95292.0,
+                "median_cumulative": 793169.0
+              },
+              {
+                "n": 10,
+                "count": 90,
+                "median_days": 117.5,
+                "median_amount": 101858.0,
+                "median_cumulative": 895027.0
+              },
+              {
+                "n": 11,
+                "count": 80,
+                "median_days": 125.5,
+                "median_amount": 75983.0,
+                "median_cumulative": 971010.0
+              },
+              {
+                "n": 12,
+                "count": 14,
+                "median_days": 135.5,
+                "median_amount": 56709.0,
+                "median_cumulative": 1022828.5
+              },
+              {
+                "n": 13,
+                "count": 5,
+                "median_days": 135,
+                "median_amount": 53483,
+                "median_cumulative": 1071444
+              },
+              {
+                "n": 14,
+                "count": 1,
+                "median_days": 139,
+                "median_amount": 89609,
+                "median_cumulative": 1161053
+              }
+            ],
+            "mean_challenge_fees": 61305,
+            "median_challenge_fees": 67500
+          },
+          "stress": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 127,
+              "median_days": 86,
+              "day_q1": 55.0,
+              "day_q3": 101.0,
+              "median_cents": 101617
+            },
+            "reaches_target": {
+              "target": 587362,
+              "count": 94,
+              "median_days": 105.5
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 127,
+                "median_days": 86,
+                "median_amount": 101617,
+                "median_cumulative": 101617
+              },
+              {
+                "n": 2,
+                "count": 125,
+                "median_days": 93,
+                "median_amount": 53150,
+                "median_cumulative": 154767
+              },
+              {
+                "n": 3,
+                "count": 118,
+                "median_days": 98.0,
+                "median_amount": 64492.0,
+                "median_cumulative": 219259.0
+              },
+              {
+                "n": 4,
+                "count": 117,
+                "median_days": 102,
+                "median_amount": 144700,
+                "median_cumulative": 363959
+              },
+              {
+                "n": 5,
+                "count": 116,
+                "median_days": 104.5,
+                "median_amount": 79358.0,
+                "median_cumulative": 443317.0
+              },
+              {
+                "n": 6,
+                "count": 108,
+                "median_days": 104.5,
+                "median_amount": 57042.0,
+                "median_cumulative": 500359.0
+              },
+              {
+                "n": 7,
+                "count": 96,
+                "median_days": 108.5,
+                "median_amount": 78176.0,
+                "median_cumulative": 578535.0
+              },
+              {
+                "n": 8,
+                "count": 65,
+                "median_days": 113,
+                "median_amount": 84042,
+                "median_cumulative": 662577
+              },
+              {
+                "n": 9,
+                "count": 54,
+                "median_days": 106.5,
+                "median_amount": 99608.0,
+                "median_cumulative": 762185.0
+              },
+              {
+                "n": 10,
+                "count": 46,
+                "median_days": 109.5,
+                "median_amount": 73733.0,
+                "median_cumulative": 835918.0
+              }
+            ],
+            "mean_challenge_fees": 67870,
+            "median_challenge_fees": 67500
+          }
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 4,
+        "key": "HYcomb-61-HY104-03",
+        "evaluation": "HY104",
+        "funded": "HYcomb-61-HY104-03",
+        "normal": {
+          "cash": 6688.8,
+          "median": 7976.36,
+          "paid": 131,
+          "days": 73
+        },
+        "stress": {
+          "cash": 4809.02,
+          "median": 6320.2,
+          "paid": 121,
+          "days": 88
+        },
+        "name": "True Range",
+        "settings": "Fall 03 · 2,5",
+        "trade_net": 30218.04,
+        "without_top3": 23285.26,
+        "without_top10": 12100.44,
+        "timing": {
+          "normal": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 131,
+              "median_days": 73,
+              "day_q1": 51.0,
+              "day_q3": 98.0,
+              "median_cents": 81367
+            },
+            "reaches_target": {
+              "target": 668880,
+              "count": 92,
+              "median_days": 111.5
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 131,
+                "median_days": 73,
+                "median_amount": 81367,
+                "median_cumulative": 81367
+              },
+              {
+                "n": 2,
+                "count": 127,
+                "median_days": 84,
+                "median_amount": 83342,
+                "median_cumulative": 164709
+              },
+              {
+                "n": 3,
+                "count": 125,
+                "median_days": 89,
+                "median_amount": 72275,
+                "median_cumulative": 236984
+              },
+              {
+                "n": 4,
+                "count": 114,
+                "median_days": 98.5,
+                "median_amount": 84593.0,
+                "median_cumulative": 321577.0
+              },
+              {
+                "n": 5,
+                "count": 105,
+                "median_days": 107,
+                "median_amount": 75983,
+                "median_cumulative": 445361
+              },
+              {
+                "n": 6,
+                "count": 97,
+                "median_days": 109,
+                "median_amount": 231417,
+                "median_cumulative": 600795
+              },
+              {
+                "n": 7,
+                "count": 89,
+                "median_days": 110,
+                "median_amount": 101858,
+                "median_cumulative": 702653
+              },
+              {
+                "n": 8,
+                "count": 86,
+                "median_days": 115.0,
+                "median_amount": 75983.0,
+                "median_cumulative": 778636.0
+              },
+              {
+                "n": 9,
+                "count": 37,
+                "median_days": 127,
+                "median_amount": 92101,
+                "median_cumulative": 820721
+              },
+              {
+                "n": 10,
+                "count": 29,
+                "median_days": 127,
+                "median_amount": 132842,
+                "median_cumulative": 953321
+              },
+              {
+                "n": 11,
+                "count": 19,
+                "median_days": 127,
+                "median_amount": 61967,
+                "median_cumulative": 1015288
+              },
+              {
+                "n": 12,
+                "count": 12,
+                "median_days": 131.0,
+                "median_amount": 55859.0,
+                "median_cumulative": 1076588.5
+              },
+              {
+                "n": 13,
+                "count": 6,
+                "median_days": 134.5,
+                "median_amount": 143483.0,
+                "median_cumulative": 1214630.0
+              }
+            ],
+            "mean_challenge_fees": 58068,
+            "median_challenge_fees": 67500
+          },
+          "stress": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 121,
+              "median_days": 88,
+              "day_q1": 69.5,
+              "day_q3": 106.5,
+              "median_cents": 63367
+            },
+            "reaches_target": {
+              "target": 480902,
+              "count": 86,
+              "median_days": 113.0
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 121,
+                "median_days": 88,
+                "median_amount": 63367,
+                "median_cumulative": 63367
+              },
+              {
+                "n": 2,
+                "count": 115,
+                "median_days": 93,
+                "median_amount": 78842,
+                "median_cumulative": 142209
+              },
+              {
+                "n": 3,
+                "count": 112,
+                "median_days": 98.5,
+                "median_amount": 58775.0,
+                "median_cumulative": 200984.0
+              },
+              {
+                "n": 4,
+                "count": 99,
+                "median_days": 106,
+                "median_amount": 46343,
+                "median_cumulative": 247327
+              },
+              {
+                "n": 5,
+                "count": 86,
+                "median_days": 113.0,
+                "median_amount": 240968.0,
+                "median_cumulative": 488295.0
+              },
+              {
+                "n": 6,
+                "count": 83,
+                "median_days": 114,
+                "median_amount": 99608,
+                "median_cumulative": 587903
+              },
+              {
+                "n": 7,
+                "count": 77,
+                "median_days": 119,
+                "median_amount": 73733,
+                "median_cumulative": 661636
+              },
+              {
+                "n": 8,
+                "count": 19,
+                "median_days": 130,
+                "median_amount": 128342,
+                "median_cumulative": 665229
+              },
+              {
+                "n": 9,
+                "count": 9,
+                "median_days": 132,
+                "median_amount": 128342,
+                "median_cumulative": 772713
+              },
+              {
+                "n": 10,
+                "count": 6,
+                "median_days": 136.5,
+                "median_amount": 109280.0,
+                "median_cumulative": 865801.0
+              }
+            ],
+            "mean_challenge_fees": 61397,
+            "median_challenge_fees": 67500
+          }
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 5,
+        "key": "HY104-NQ-Open30",
+        "evaluation": "HY104-NQ-Open30",
+        "funded": "HY104-NQ-Open30",
+        "market": "NQ",
+        "name": "HY 3 · zusätzlicher ROC(5)-Ausstieg",
+        "settings": "Einstieg ab 09:00 Chicago",
+        "funded_without_top10": -2800.18,
+        "normal": {
+          "cash": 5749.15,
+          "median": 5491.85,
+          "paid": 137,
+          "days": 53
+        },
+        "stress": {
+          "cash": 4676.3,
+          "median": 4358.34,
+          "paid": 139,
+          "days": 60
+        },
+        "timing": {
+          "normal": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 137,
+              "median_days": 53,
+              "day_q1": 40.0,
+              "day_q3": 69.5,
+              "median_cents": 83050
+            },
+            "reaches_target": {
+              "target": 574915,
+              "count": 80,
+              "median_days": 78.5
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 137,
+                "median_days": 53,
+                "median_amount": 83050,
+                "median_cumulative": 83050
+              },
+              {
+                "n": 2,
+                "count": 126,
+                "median_days": 70.0,
+                "median_amount": 102850.0,
+                "median_cumulative": 194284.0
+              },
+              {
+                "n": 3,
+                "count": 123,
+                "median_days": 74,
+                "median_amount": 95967,
+                "median_cumulative": 452834
+              },
+              {
+                "n": 4,
+                "count": 82,
+                "median_days": 77.0,
+                "median_amount": 73084.0,
+                "median_cumulative": 574500.0
+              },
+              {
+                "n": 5,
+                "count": 71,
+                "median_days": 77,
+                "median_amount": 237850,
+                "median_cumulative": 543685
+              },
+              {
+                "n": 6,
+                "count": 60,
+                "median_days": 105.5,
+                "median_amount": 185200.0,
+                "median_cumulative": 810800.0
+              },
+              {
+                "n": 7,
+                "count": 13,
+                "median_days": 132,
+                "median_amount": 116267,
+                "median_cumulative": 737969
+              },
+              {
+                "n": 8,
+                "count": 11,
+                "median_days": 133,
+                "median_amount": 258550,
+                "median_cumulative": 996519
+              }
+            ],
+            "mean_challenge_fees": 91726,
+            "median_challenge_fees": 94500
+          },
+          "stress": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 139,
+              "median_days": 60,
+              "day_q1": 43.0,
+              "day_q3": 77.0,
+              "median_cents": 68117
+            },
+            "reaches_target": {
+              "target": 467630,
+              "count": 89,
+              "median_days": 97
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 139,
+                "median_days": 60,
+                "median_amount": 68117,
+                "median_cumulative": 68117
+              },
+              {
+                "n": 2,
+                "count": 128,
+                "median_days": 75.5,
+                "median_amount": 70067.0,
+                "median_cumulative": 174484.0
+              },
+              {
+                "n": 3,
+                "count": 125,
+                "median_days": 79,
+                "median_amount": 235150,
+                "median_cumulative": 338551
+              },
+              {
+                "n": 4,
+                "count": 73,
+                "median_days": 107,
+                "median_amount": 68117,
+                "median_cumulative": 406668
+              },
+              {
+                "n": 5,
+                "count": 49,
+                "median_days": 97,
+                "median_amount": 48400,
+                "median_cumulative": 405617
+              },
+              {
+                "n": 6,
+                "count": 47,
+                "median_days": 98,
+                "median_amount": 182500,
+                "median_cumulative": 588117
+              }
+            ],
+            "mean_challenge_fees": 91634,
+            "median_challenge_fees": 94500
+          }
+        }
+      },
+      {
+        "rank": 6,
+        "key": "HYcomb-61-HY104-02",
+        "evaluation": "HY104",
+        "funded": "HYcomb-61-HY104-02",
+        "normal": {
+          "cash": 6514.91,
+          "median": 7143.87,
+          "paid": 131,
+          "days": 72
+        },
+        "stress": {
+          "cash": 4646.7,
+          "median": 5761.49,
+          "paid": 131,
+          "days": 87
+        },
+        "name": "True Range",
+        "settings": "Fall 02 · 2,0",
+        "trade_net": 27187.3,
+        "without_top3": 20254.52,
+        "without_top10": 9244.7,
+        "timing": {
+          "normal": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 131,
+              "median_days": 72,
+              "day_q1": 53.0,
+              "day_q3": 98.0,
+              "median_cents": 81367
+            },
+            "reaches_target": {
+              "target": 651491,
+              "count": 95,
+              "median_days": 110
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 131,
+                "median_days": 72,
+                "median_amount": 81367,
+                "median_cumulative": 81367
+              },
+              {
+                "n": 2,
+                "count": 127,
+                "median_days": 80,
+                "median_amount": 76592,
+                "median_cumulative": 157959
+              },
+              {
+                "n": 3,
+                "count": 125,
+                "median_days": 85,
+                "median_amount": 72275,
+                "median_cumulative": 230234
+              },
+              {
+                "n": 4,
+                "count": 116,
+                "median_days": 92.0,
+                "median_amount": 83376.0,
+                "median_cumulative": 313610.0
+              },
+              {
+                "n": 5,
+                "count": 114,
+                "median_days": 97.5,
+                "median_amount": 74342.0,
+                "median_cumulative": 387952.0
+              },
+              {
+                "n": 6,
+                "count": 104,
+                "median_days": 106.0,
+                "median_amount": 112167.0,
+                "median_cumulative": 605203.0
+              },
+              {
+                "n": 7,
+                "count": 99,
+                "median_days": 113,
+                "median_amount": 52967,
+                "median_cumulative": 655254
+              },
+              {
+                "n": 8,
+                "count": 49,
+                "median_days": 122,
+                "median_amount": 112167,
+                "median_cumulative": 709346
+              },
+              {
+                "n": 9,
+                "count": 40,
+                "median_days": 126.0,
+                "median_amount": 61817.0,
+                "median_cumulative": 781952.0
+              },
+              {
+                "n": 10,
+                "count": 32,
+                "median_days": 126.0,
+                "median_amount": 74342.0,
+                "median_cumulative": 856294.0
+              },
+              {
+                "n": 11,
+                "count": 22,
+                "median_days": 129.0,
+                "median_amount": 61967.0,
+                "median_cumulative": 969770.0
+              },
+              {
+                "n": 12,
+                "count": 16,
+                "median_days": 132.5,
+                "median_amount": 132842.0,
+                "median_cumulative": 1063272.0
+              },
+              {
+                "n": 13,
+                "count": 8,
+                "median_days": 134.5,
+                "median_amount": 143483.0,
+                "median_cumulative": 1206755.0
+              },
+              {
+                "n": 14,
+                "count": 1,
+                "median_days": 136,
+                "median_amount": 55859,
+                "median_cumulative": 1220438
+              },
+              {
+                "n": 15,
+                "count": 1,
+                "median_days": 137,
+                "median_amount": 143483,
+                "median_cumulative": 1363921
+              }
+            ],
+            "mean_challenge_fees": 57514,
+            "median_challenge_fees": 67500
+          },
+          "stress": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 131,
+              "median_days": 87,
+              "day_q1": 71.0,
+              "day_q3": 108.0,
+              "median_cents": 63367
+            },
+            "reaches_target": {
+              "target": 464670,
+              "count": 86,
+              "median_days": 113.5
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 131,
+                "median_days": 87,
+                "median_amount": 63367,
+                "median_cumulative": 63367
+              },
+              {
+                "n": 2,
+                "count": 127,
+                "median_days": 94,
+                "median_amount": 72092,
+                "median_cumulative": 135459
+              },
+              {
+                "n": 3,
+                "count": 123,
+                "median_days": 99,
+                "median_amount": 58775,
+                "median_cumulative": 194234
+              },
+              {
+                "n": 4,
+                "count": 103,
+                "median_days": 108,
+                "median_amount": 49626,
+                "median_cumulative": 243860
+              },
+              {
+                "n": 5,
+                "count": 96,
+                "median_days": 112.0,
+                "median_amount": 69842.0,
+                "median_cumulative": 313702.0
+              },
+              {
+                "n": 6,
+                "count": 84,
+                "median_days": 117.5,
+                "median_amount": 216218.0,
+                "median_cumulative": 529920.0
+              },
+              {
+                "n": 7,
+                "count": 73,
+                "median_days": 119,
+                "median_amount": 48467,
+                "median_cumulative": 578387
+              },
+              {
+                "n": 8,
+                "count": 19,
+                "median_days": 130,
+                "median_amount": 81275,
+                "median_cumulative": 681222
+              },
+              {
+                "n": 9,
+                "count": 8,
+                "median_days": 135.0,
+                "median_amount": 128342.0,
+                "median_cumulative": 775267.5
+              },
+              {
+                "n": 10,
+                "count": 3,
+                "median_days": 138,
+                "median_amount": 57467,
+                "median_cumulative": 822305
+              }
+            ],
+            "mean_challenge_fees": 61397,
+            "median_challenge_fees": 67500
+          }
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 7,
+        "key": "HYcomb-61-HY85-03",
+        "evaluation": "HY85",
+        "funded": "HYcomb-61-HY85-03",
+        "normal": {
+          "cash": 6529.99,
+          "median": 7931.36,
+          "paid": 131,
+          "days": 73
+        },
+        "stress": {
+          "cash": 4624.07,
+          "median": 6173.95,
+          "paid": 119,
+          "days": 91
+        },
+        "name": "True Range",
+        "settings": "Fall 03 · 2,5",
+        "trade_net": 29880.54,
+        "without_top3": 22947.76,
+        "without_top10": 11750.44,
+        "timing": {
+          "normal": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 131,
+              "median_days": 73,
+              "day_q1": 52.0,
+              "day_q3": 99.0,
+              "median_cents": 75742
+            },
+            "reaches_target": {
+              "target": 652999,
+              "count": 91,
+              "median_days": 112
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 131,
+                "median_days": 73,
+                "median_amount": 75742,
+                "median_cumulative": 75742
+              },
+              {
+                "n": 2,
+                "count": 127,
+                "median_days": 84,
+                "median_amount": 83342,
+                "median_cumulative": 159084
+              },
+              {
+                "n": 3,
+                "count": 125,
+                "median_days": 89,
+                "median_amount": 72275,
+                "median_cumulative": 231359
+              },
+              {
+                "n": 4,
+                "count": 114,
+                "median_days": 98.5,
+                "median_amount": 84593.0,
+                "median_cumulative": 315952.0
+              },
+              {
+                "n": 5,
+                "count": 104,
+                "median_days": 106.5,
+                "median_amount": 76075.0,
+                "median_cumulative": 431195.0
+              },
+              {
+                "n": 6,
+                "count": 94,
+                "median_days": 109.0,
+                "median_amount": 180763.0,
+                "median_cumulative": 596295.0
+              },
+              {
+                "n": 7,
+                "count": 89,
+                "median_days": 111,
+                "median_amount": 101858,
+                "median_cumulative": 698153
+              },
+              {
+                "n": 8,
+                "count": 86,
+                "median_days": 116.5,
+                "median_amount": 75983.0,
+                "median_cumulative": 774136.0
+              },
+              {
+                "n": 9,
+                "count": 29,
+                "median_days": 126,
+                "median_amount": 88726,
+                "median_cumulative": 843221
+              },
+              {
+                "n": 10,
+                "count": 22,
+                "median_days": 126.5,
+                "median_amount": 132842.0,
+                "median_cumulative": 935321.0
+              },
+              {
+                "n": 11,
+                "count": 18,
+                "median_days": 128.5,
+                "median_amount": 58592.0,
+                "median_cumulative": 1026664.0
+              },
+              {
+                "n": 12,
+                "count": 7,
+                "median_days": 134,
+                "median_amount": 55859,
+                "median_cumulative": 1049772
+              },
+              {
+                "n": 13,
+                "count": 4,
+                "median_days": 134.5,
+                "median_amount": 143483.0,
+                "median_cumulative": 1193255.0
+              }
+            ],
+            "mean_challenge_fees": 58253,
+            "median_challenge_fees": 67500
+          },
+          "stress": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 119,
+              "median_days": 91,
+              "day_q1": 74.0,
+              "day_q3": 107.0,
+              "median_cents": 57134
+            },
+            "reaches_target": {
+              "target": 462407,
+              "count": 86,
+              "median_days": 115.5
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 119,
+                "median_days": 91,
+                "median_amount": 57134,
+                "median_cumulative": 57134
+              },
+              {
+                "n": 2,
+                "count": 115,
+                "median_days": 94,
+                "median_amount": 61358,
+                "median_cumulative": 118492
+              },
+              {
+                "n": 3,
+                "count": 112,
+                "median_days": 100.0,
+                "median_amount": 58775.0,
+                "median_cumulative": 177267.0
+              },
+              {
+                "n": 4,
+                "count": 99,
+                "median_days": 107,
+                "median_amount": 46343,
+                "median_cumulative": 223610
+              },
+              {
+                "n": 5,
+                "count": 86,
+                "median_days": 115.5,
+                "median_amount": 242093.0,
+                "median_cumulative": 465703.0
+              },
+              {
+                "n": 6,
+                "count": 83,
+                "median_days": 117,
+                "median_amount": 99608,
+                "median_cumulative": 565311
+              },
+              {
+                "n": 7,
+                "count": 77,
+                "median_days": 120,
+                "median_amount": 73733,
+                "median_cumulative": 639044
+              },
+              {
+                "n": 8,
+                "count": 18,
+                "median_days": 132.5,
+                "median_amount": 161093.0,
+                "median_cumulative": 767364.0
+              },
+              {
+                "n": 9,
+                "count": 6,
+                "median_days": 134.5,
+                "median_amount": 128342.0,
+                "median_cumulative": 754713.0
+              },
+              {
+                "n": 10,
+                "count": 4,
+                "median_days": 137.5,
+                "median_amount": 54092.0,
+                "median_cumulative": 819234.0
+              }
+            ],
+            "mean_challenge_fees": 61397,
+            "median_challenge_fees": 67500
+          }
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 8,
+        "key": "HY104",
+        "evaluation": "HY104",
+        "funded": "HY104",
+        "normal": {
+          "cash": 4678.96,
+          "median": 2829.84,
+          "paid": 131,
+          "days": 75
+        },
+        "stress": {
+          "cash": 3285.77,
+          "median": 2334.84,
+          "paid": 131,
+          "days": 89
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 9,
+        "key": "HY85",
+        "evaluation": "HY85",
+        "funded": "HY85",
+        "normal": {
+          "cash": 4513.54,
+          "median": 2773.59,
+          "paid": 131,
+          "days": 75
+        },
+        "stress": {
+          "cash": 3083.56,
+          "median": 2097.67,
+          "paid": 129,
+          "days": 91
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 10,
+        "key": "HY120",
+        "evaluation": "HY120",
+        "funded": "HY120",
+        "normal": {
+          "cash": 3090.31,
+          "median": 2807.34,
+          "paid": 128,
+          "days": 91.0
+        },
+        "stress": {
+          "cash": 2559.46,
+          "median": 2312.34,
+          "paid": 107,
+          "days": 85
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 11,
+        "key": "HY18b",
+        "evaluation": "HY18b",
+        "funded": "HY18b",
+        "normal": {
+          "cash": 3079.68,
+          "median": 2807.34,
+          "paid": 128,
+          "days": 90.5
+        },
+        "stress": {
+          "cash": 2538.06,
+          "median": 2312.34,
+          "paid": 107,
+          "days": 87
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 12,
+        "key": "HY121",
+        "evaluation": "HY121",
+        "funded": "HY121",
+        "normal": {
+          "cash": 3227.07,
+          "median": 2021.68,
+          "paid": 126,
+          "days": 85.0
+        },
+        "stress": {
+          "cash": 1671.96,
+          "median": 1301.68,
+          "paid": 82,
+          "days": 84.5
+        },
+        "market": "ES"
+      }
+    ],
+    "pro_50k": [
+      {
+        "rank": 1,
+        "key": "HY104-NQ-Open30",
+        "evaluation": "HY104-NQ-Open30",
+        "funded": "HY104-NQ-Open30",
+        "market": "NQ",
+        "name": "HY 3 · zusätzlicher ROC(5)-Ausstieg",
+        "settings": "Einstieg ab 09:00 Chicago",
+        "funded_without_top10": -2800.18,
+        "normal": {
+          "cash": 4841.22,
+          "median": 5779.13,
+          "paid": 136,
+          "days": 56.0
+        },
+        "stress": {
+          "cash": 4586.03,
+          "median": 5443.13,
+          "paid": 136,
+          "days": 56.0
+        },
+        "timing": {
+          "normal": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 136,
+              "median_days": 56.0,
+              "day_q1": 36.25,
+              "day_q3": 74.75,
+              "median_cents": 264090.0
+            },
+            "reaches_target": {
+              "target": 484122,
+              "count": 96,
+              "median_days": 77.0
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 136,
+                "median_days": 56.0,
+                "median_amount": 264090.0,
+                "median_cumulative": 264090.0
+              },
+              {
+                "n": 2,
+                "count": 96,
+                "median_days": 69.5,
+                "median_amount": 152371.0,
+                "median_cumulative": 343928.0
+              },
+              {
+                "n": 3,
+                "count": 96,
+                "median_days": 87.0,
+                "median_amount": 171889.5,
+                "median_cumulative": 534136.0
+              },
+              {
+                "n": 4,
+                "count": 11,
+                "median_days": 123,
+                "median_amount": 224771,
+                "median_cumulative": 756699
+              },
+              {
+                "n": 5,
+                "count": 5,
+                "median_days": 133,
+                "median_amount": 224771,
+                "median_cumulative": 981470
+              }
+            ],
+            "mean_challenge_fees": 60214,
+            "median_challenge_fees": 52800
+          },
+          "stress": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 136,
+              "median_days": 56.0,
+              "day_q1": 36.25,
+              "day_q3": 74.75,
+              "median_cents": 254490.0
+            },
+            "reaches_target": {
+              "target": 458603,
+              "count": 96,
+              "median_days": 77.0
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 136,
+                "median_days": 56.0,
+                "median_amount": 254490.0,
+                "median_cumulative": 254490.0
+              },
+              {
+                "n": 2,
+                "count": 96,
+                "median_days": 69.5,
+                "median_amount": 141171.0,
+                "median_cumulative": 315928.0
+              },
+              {
+                "n": 3,
+                "count": 96,
+                "median_days": 87.0,
+                "median_amount": 162289.5,
+                "median_cumulative": 498136.0
+              },
+              {
+                "n": 4,
+                "count": 11,
+                "median_days": 123,
+                "median_amount": 213571,
+                "median_cumulative": 717499
+              },
+              {
+                "n": 5,
+                "count": 5,
+                "median_days": 133,
+                "median_amount": 213571,
+                "median_cumulative": 931070
+              }
+            ],
+            "mean_challenge_fees": 60214,
+            "median_challenge_fees": 52800
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "key": "HYcomb-28-HY85-03",
+        "evaluation": "HY85",
+        "funded": "HYcomb-28-HY85-03",
+        "normal": {
+          "cash": 4844.08,
+          "median": 4176.48,
+          "paid": 133,
+          "days": 68
+        },
+        "stress": {
+          "cash": 4011.7,
+          "median": 3995.15,
+          "paid": 102,
+          "days": 78.5
+        },
+        "name": "Eröffnungsspanne als Zusatzziel",
+        "settings": "60 min",
+        "trade_net": 26880.54,
+        "without_top3": 20297.76,
+        "without_top10": 9775.44,
+        "timing": {
+          "normal": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 133,
+              "median_days": 68,
+              "day_q1": 50.5,
+              "day_q3": 88.5,
+              "median_cents": 162734
+            },
+            "reaches_target": {
+              "target": 484408,
+              "count": 70,
+              "median_days": 81.5
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 133,
+                "median_days": 68,
+                "median_amount": 162734,
+                "median_cumulative": 162734
+              },
+              {
+                "n": 2,
+                "count": 104,
+                "median_days": 88.5,
+                "median_amount": 297194.0,
+                "median_cumulative": 477010.0
+              },
+              {
+                "n": 3,
+                "count": 100,
+                "median_days": 102.5,
+                "median_amount": 268571.0,
+                "median_cumulative": 728499.0
+              },
+              {
+                "n": 4,
+                "count": 1,
+                "median_days": 117,
+                "median_amount": 83194,
+                "median_cumulative": 621264
+              },
+              {
+                "n": 5,
+                "count": 1,
+                "median_days": 134,
+                "median_amount": 191112,
+                "median_cumulative": 812376
+              }
+            ],
+            "mean_challenge_fees": 64644,
+            "median_challenge_fees": 66000
+          },
+          "stress": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 102,
+              "median_days": 78.5,
+              "day_q1": 53.75,
+              "day_q3": 96.25,
+              "median_cents": 139816.0
+            },
+            "reaches_target": {
+              "target": 401170,
+              "count": 70,
+              "median_days": 81.5
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 102,
+                "median_days": 78.5,
+                "median_amount": 139816.0,
+                "median_cumulative": 139816.0
+              },
+              {
+                "n": 2,
+                "count": 102,
+                "median_days": 95.5,
+                "median_amount": 263194.0,
+                "median_cumulative": 403010.0
+              },
+              {
+                "n": 3,
+                "count": 94,
+                "median_days": 108.0,
+                "median_amount": 240571.0,
+                "median_cumulative": 643581.0
+              },
+              {
+                "n": 4,
+                "count": 1,
+                "median_days": 134,
+                "median_amount": 134357,
+                "median_cumulative": 622376
+              }
+            ],
+            "mean_challenge_fees": 67627,
+            "median_challenge_fees": 79200
+          }
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 3,
+        "key": "HYcomb-28-HY104-03",
+        "evaluation": "HY104",
+        "funded": "HYcomb-28-HY104-03",
+        "normal": {
+          "cash": 4895.27,
+          "median": 4356.48,
+          "paid": 133,
+          "days": 68
+        },
+        "stress": {
+          "cash": 4005.94,
+          "median": 3738.11,
+          "paid": 102,
+          "days": 74.5
+        },
+        "name": "Eröffnungsspanne als Zusatzziel",
+        "settings": "60 min",
+        "trade_net": 27205.54,
+        "without_top3": 20622.76,
+        "without_top10": 10112.94,
+        "timing": {
+          "normal": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 133,
+              "median_days": 68,
+              "day_q1": 50.5,
+              "day_q3": 88.5,
+              "median_cents": 166734
+            },
+            "reaches_target": {
+              "target": 489527,
+              "count": 68,
+              "median_days": 80.5
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 133,
+                "median_days": 68,
+                "median_amount": 166734,
+                "median_cumulative": 166734
+              },
+              {
+                "n": 2,
+                "count": 104,
+                "median_days": 88.5,
+                "median_amount": 297194.0,
+                "median_cumulative": 481010.0
+              },
+              {
+                "n": 3,
+                "count": 100,
+                "median_days": 102.5,
+                "median_amount": 267571.0,
+                "median_cumulative": 731499.0
+              },
+              {
+                "n": 4,
+                "count": 1,
+                "median_days": 117,
+                "median_amount": 84194,
+                "median_cumulative": 632264
+              },
+              {
+                "n": 5,
+                "count": 1,
+                "median_days": 134,
+                "median_amount": 197112,
+                "median_cumulative": 829376
+              }
+            ],
+            "mean_challenge_fees": 64553,
+            "median_challenge_fees": 66000
+          },
+          "stress": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 102,
+              "median_days": 74.5,
+              "day_q1": 53.75,
+              "day_q3": 91.25,
+              "median_cents": 143816.0
+            },
+            "reaches_target": {
+              "target": 400594,
+              "count": 70,
+              "median_days": 81.5
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 102,
+                "median_days": 74.5,
+                "median_amount": 143816.0,
+                "median_cumulative": 143816.0
+              },
+              {
+                "n": 2,
+                "count": 102,
+                "median_days": 91.5,
+                "median_amount": 263194.0,
+                "median_cumulative": 407010.0
+              },
+              {
+                "n": 3,
+                "count": 100,
+                "median_days": 105.0,
+                "median_amount": 239571.0,
+                "median_cumulative": 646581.0
+              },
+              {
+                "n": 4,
+                "count": 1,
+                "median_days": 126,
+                "median_amount": 93520,
+                "median_cumulative": 549672
+              }
+            ],
+            "mean_challenge_fees": 67627,
+            "median_challenge_fees": 79200
+          }
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 4,
+        "key": "HYcomb-09-HY104-02",
+        "evaluation": "HYcomb-09-HY104-02",
+        "funded": "HY104",
+        "normal": {
+          "cash": 3804.06,
+          "median": 4230.4,
+          "paid": 117,
+          "days": 72
+        },
+        "stress": {
+          "cash": 3938.83,
+          "median": 4296.48,
+          "paid": 120,
+          "days": 68.0
+        },
+        "name": "Aroon",
+        "settings": "Fall 02 · 10 / 3",
+        "trade_net": 16500.98,
+        "without_top3": 11593.2,
+        "without_top10": 2595.88,
+        "timing": {
+          "normal": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 117,
+              "median_days": 72,
+              "day_q1": 50.5,
+              "day_q3": 100.5,
+              "median_cents": 200571
+            },
+            "reaches_target": {
+              "target": 380406,
+              "count": 95,
+              "median_days": 107
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 117,
+                "median_days": 72,
+                "median_amount": 200571,
+                "median_cumulative": 200571
+              },
+              {
+                "n": 2,
+                "count": 114,
+                "median_days": 93.5,
+                "median_amount": 106275.0,
+                "median_cumulative": 306846.0
+              },
+              {
+                "n": 3,
+                "count": 95,
+                "median_days": 107,
+                "median_amount": 82194,
+                "median_cumulative": 389040
+              },
+              {
+                "n": 4,
+                "count": 13,
+                "median_days": 128,
+                "median_amount": 193357,
+                "median_cumulative": 665886
+              }
+            ],
+            "mean_challenge_fees": 63649,
+            "median_challenge_fees": 66000
+          },
+          "stress": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 120,
+              "median_days": 68.0,
+              "day_q1": 53.25,
+              "day_q3": 90.25,
+              "median_cents": 219030.0
+            },
+            "reaches_target": {
+              "target": 393883,
+              "count": 101,
+              "median_days": 109
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 120,
+                "median_days": 68.0,
+                "median_amount": 219030.0,
+                "median_cumulative": 219030.0
+              },
+              {
+                "n": 2,
+                "count": 104,
+                "median_days": 99.5,
+                "median_amount": 146571.0,
+                "median_cumulative": 231091.0
+              },
+              {
+                "n": 3,
+                "count": 91,
+                "median_days": 112,
+                "median_amount": 151357,
+                "median_cumulative": 382448
+              },
+              {
+                "n": 4,
+                "count": 14,
+                "median_days": 128.5,
+                "median_amount": 151357.0,
+                "median_cumulative": 499886.0
+              }
+            ],
+            "mean_challenge_fees": 62836,
+            "median_challenge_fees": 52800
+          }
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 5,
+        "key": "HYcomb-19-HY85-03",
+        "evaluation": "HY85",
+        "funded": "HYcomb-19-HY85-03",
+        "normal": {
+          "cash": 3921.69,
+          "median": 4836.62,
+          "paid": 105,
+          "days": 69
+        },
+        "stress": {
+          "cash": 3879.81,
+          "median": 3551.21,
+          "paid": 102,
+          "days": 68.5
+        },
+        "name": "Exponential Moving Average (EMA)",
+        "settings": "Fall 03 · 24",
+        "trade_net": 22241.0,
+        "without_top3": 14808.22,
+        "without_top10": 2885.9,
+        "timing": {
+          "normal": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 105,
+              "median_days": 69,
+              "day_q1": 47.5,
+              "day_q3": 87.5,
+              "median_cents": 235653
+            },
+            "reaches_target": {
+              "target": 392169,
+              "count": 92,
+              "median_days": 98.0
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 105,
+                "median_days": 69,
+                "median_amount": 235653,
+                "median_cumulative": 235653
+              },
+              {
+                "n": 2,
+                "count": 102,
+                "median_days": 82.5,
+                "median_amount": 113194.0,
+                "median_cumulative": 348847.0
+              },
+              {
+                "n": 3,
+                "count": 92,
+                "median_days": 104.5,
+                "median_amount": 190194.0,
+                "median_cumulative": 539041.0
+              },
+              {
+                "n": 4,
+                "count": 4,
+                "median_days": 114.5,
+                "median_amount": 158030.0,
+                "median_cumulative": 691926.0
+              }
+            ],
+            "mean_challenge_fees": 69526,
+            "median_challenge_fees": 79200
+          },
+          "stress": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 102,
+              "median_days": 68.5,
+              "day_q1": 53.75,
+              "day_q3": 86.25,
+              "median_cents": 187571.0
+            },
+            "reaches_target": {
+              "target": 387981,
+              "count": 70,
+              "median_days": 90.5
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 102,
+                "median_days": 68.5,
+                "median_amount": 187571.0,
+                "median_cumulative": 187571.0
+              },
+              {
+                "n": 2,
+                "count": 102,
+                "median_days": 90.5,
+                "median_amount": 227208.5,
+                "median_cumulative": 422958.0
+              },
+              {
+                "n": 3,
+                "count": 82,
+                "median_days": 112.5,
+                "median_amount": 219030.0,
+                "median_cumulative": 641988.0
+              },
+              {
+                "n": 4,
+                "count": 11,
+                "median_days": 114,
+                "median_amount": 108112,
+                "median_cumulative": 724671
+              },
+              {
+                "n": 5,
+                "count": 3,
+                "median_days": 136,
+                "median_amount": 100520,
+                "median_cumulative": 708569
+              }
+            ],
+            "mean_challenge_fees": 72419,
+            "median_challenge_fees": 92400
+          }
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 6,
+        "key": "HYcomb-09-HY85-02",
+        "evaluation": "HYcomb-09-HY85-02",
+        "funded": "HY85",
+        "normal": {
+          "cash": 3727.76,
+          "median": 4200.4,
+          "paid": 117,
+          "days": 72
+        },
+        "stress": {
+          "cash": 3817.3,
+          "median": 4106.48,
+          "paid": 120,
+          "days": 69.5
+        },
+        "name": "Aroon",
+        "settings": "Fall 02 · 10 / 3",
+        "trade_net": 16388.48,
+        "without_top3": 11468.2,
+        "without_top10": 2470.88,
+        "timing": {
+          "normal": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 117,
+              "median_days": 72,
+              "day_q1": 50.5,
+              "day_q3": 100.5,
+              "median_cents": 196571
+            },
+            "reaches_target": {
+              "target": 372776,
+              "count": 95,
+              "median_days": 107
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 117,
+                "median_days": 72,
+                "median_amount": 196571,
+                "median_cumulative": 196571
+              },
+              {
+                "n": 2,
+                "count": 114,
+                "median_days": 93.5,
+                "median_amount": 106275.0,
+                "median_cumulative": 302846.0
+              },
+              {
+                "n": 3,
+                "count": 95,
+                "median_days": 107,
+                "median_amount": 83194,
+                "median_cumulative": 386040
+              },
+              {
+                "n": 4,
+                "count": 13,
+                "median_days": 128,
+                "median_amount": 186357,
+                "median_cumulative": 647886
+              }
+            ],
+            "mean_challenge_fees": 63649,
+            "median_challenge_fees": 66000
+          },
+          "stress": {
+            "days_each_end": [
+              137,
+              144
+            ],
+            "first": {
+              "count": 120,
+              "median_days": 69.5,
+              "day_q1": 54.25,
+              "day_q3": 91.0,
+              "median_cents": 215030.0
+            },
+            "reaches_target": {
+              "target": 381730,
+              "count": 87,
+              "median_days": 109
+            },
+            "milestones": [
+              {
+                "n": 1,
+                "count": 120,
+                "median_days": 69.5,
+                "median_amount": 215030.0,
+                "median_cumulative": 215030.0
+              },
+              {
+                "n": 2,
+                "count": 104,
+                "median_days": 102.0,
+                "median_amount": 99061.0,
+                "median_cumulative": 223188.0
+              },
+              {
+                "n": 3,
+                "count": 89,
+                "median_days": 112,
+                "median_amount": 180030,
+                "median_cumulative": 363448
+              },
+              {
+                "n": 4,
+                "count": 14,
+                "median_days": 128.5,
+                "median_amount": 182112.0,
+                "median_cumulative": 481886.0
+              }
+            ],
+            "mean_challenge_fees": 62836,
+            "median_challenge_fees": 52800
+          }
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 7,
+        "key": "HY104 → HY121",
+        "evaluation": "HY104",
+        "funded": "HY121",
+        "normal": {
+          "cash": 3215.67,
+          "median": 3184.85,
+          "paid": 105,
+          "days": 76
+        },
+        "stress": {
+          "cash": 2685.58,
+          "median": 3692.11,
+          "paid": 102,
+          "days": 78.0
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 8,
+        "key": "HY121",
+        "evaluation": "HY121",
+        "funded": "HY121",
+        "normal": {
+          "cash": 3140.75,
+          "median": 3052.85,
+          "paid": 102,
+          "days": 77.0
+        },
+        "stress": {
+          "cash": 1601.34,
+          "median": 1184.16,
+          "paid": 91,
+          "days": 77
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 9,
+        "key": "HY104",
+        "evaluation": "HY104",
+        "funded": "HY104",
+        "normal": {
+          "cash": 1869.43,
+          "median": 76.0,
+          "paid": 58,
+          "days": 85.5
+        },
+        "stress": {
+          "cash": 1308.62,
+          "median": 76.0,
+          "paid": 50,
+          "days": 84.5
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 10,
+        "key": "HY85",
+        "evaluation": "HY85",
+        "funded": "HY85",
+        "normal": {
+          "cash": 1802.44,
+          "median": 76.0,
+          "paid": 58,
+          "days": 85.5
+        },
+        "stress": {
+          "cash": 1216.64,
+          "median": 76.0,
+          "paid": 50,
+          "days": 87.5
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 11,
+        "key": "HY120",
+        "evaluation": "HY120",
+        "funded": "HY120",
+        "normal": {
+          "cash": 1723.81,
+          "median": 2101.71,
+          "paid": 93,
+          "days": 92
+        },
+        "stress": {
+          "cash": 786.95,
+          "median": 76.0,
+          "paid": 36,
+          "days": 113.5
+        },
+        "market": "ES"
+      },
+      {
+        "rank": 12,
+        "key": "HY18b",
+        "evaluation": "HY18b",
+        "funded": "HY18b",
+        "normal": {
+          "cash": 1718.88,
+          "median": 2101.71,
+          "paid": 93,
+          "days": 92
+        },
+        "stress": {
+          "cash": 783.34,
+          "median": 76.0,
+          "paid": 36,
+          "days": 113.5
+        },
+        "market": "ES"
+      }
+    ]
+  }
+}

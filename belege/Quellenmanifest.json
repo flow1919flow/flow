@@ -1,0 +1,448 @@
+{
+  "data_vendor": "Databento",
+  "dataset": "GLBX.MDP3",
+  "schema": "TBBO",
+  "period": [
+    "2025-11-19",
+    "2026-10-30"
+  ],
+  "source_segment_metadata": {
+    "ES": {
+      "september-2026-ESZ6": {
+        "first": "2026-09-15",
+        "last": "2026-09-16",
+        "sessions": 2,
+        "callbacks": 1227912,
+        "staged_metadata_sha256": "6f9f607d3cb18f7928b3c942cf71e2ccaf472eea69a36b6b6ad3b3035ac845be"
+      },
+      "jahr-ergaenzung-ESZ5": {
+        "first": "2025-11-19",
+        "last": "2025-12-15",
+        "sessions": 19,
+        "callbacks": 21757864,
+        "staged_metadata_sha256": "82d1aee55815cbf975431755bcbd1cd361aa43528e75eb5e27870e0b633835a9"
+      },
+      "jahr-ergaenzung-ESH6": {
+        "first": "2025-12-16",
+        "last": "2026-03-16",
+        "sessions": 63,
+        "callbacks": 50050757,
+        "staged_metadata_sha256": "c4a322bddf00aeab5cdc8567e1253d5d1e3c59a584775e18bdec72ea4d9c0555"
+      },
+      "jahr-uebergang-ESM6": {
+        "first": "2026-03-17",
+        "last": "2026-06-15",
+        "sessions": 64,
+        "callbacks": 51468463,
+        "staged_metadata_sha256": "fc6adbccd20f20e5db5a1eb6ea7ebf584fd5bd622a9c276e070fd3c90affe588"
+      },
+      "mai-oktober-2026-ESU6": {
+        "first": "2026-06-16",
+        "last": "2026-09-14",
+        "sessions": 65,
+        "callbacks": 43102643,
+        "staged_metadata_sha256": "580a02bde8f725604941dd06d57dfa91ea96718701da3583f3f12c7285cb9f25"
+      },
+      "mai-oktober-2026-ESZ6": {
+        "first": "2026-09-17",
+        "last": "2026-10-30",
+        "sessions": 32,
+        "callbacks": 22693166,
+        "staged_metadata_sha256": "b3c08d52c93791dd54eebdf605def3c1de4ba27ec02e40d8b9558166efcf28cd"
+      }
+    },
+    "NQ": {
+      "NQZ5": {
+        "first": "2025-11-19",
+        "last": "2025-12-15",
+        "sessions": 19,
+        "callbacks": 15144916,
+        "staged_metadata_sha256": "3010bd94b8b32b20bd33ceb92585cf54f84f8f287f130a6d97b0664d6facd960"
+      },
+      "NQH6": {
+        "first": "2025-12-16",
+        "last": "2026-03-16",
+        "sessions": 63,
+        "callbacks": 35221594,
+        "staged_metadata_sha256": "e76f5698f9d4eea9637e07151a1b5188720c42233913999fe90e49ac5fe57e8d"
+      },
+      "NQM6": {
+        "first": "2026-03-17",
+        "last": "2026-06-15",
+        "sessions": 64,
+        "callbacks": 38123673,
+        "staged_metadata_sha256": "01d0989e8bb1243a19941d2b9bad342ac17c824b401d9e0924f5018cc6397538"
+      },
+      "NQU6": {
+        "first": "2026-06-16",
+        "last": "2026-09-14",
+        "sessions": 65,
+        "callbacks": 36567752,
+        "staged_metadata_sha256": "a6b9839e7478c07adccad88a44714fad53dfab68e6f4d24aa968454eca9bf43c"
+      },
+      "NQZ6": {
+        "first": "2026-09-15",
+        "last": "2026-10-30",
+        "sessions": 34,
+        "callbacks": 22435877,
+        "staged_metadata_sha256": "8dda10ebdc6b193e2d1360ef565ddae10c72b310edb9e474d9be8ea8998423ee"
+      }
+    }
+  },
+  "native_ES_HY104_C28": {
+    "evaluation/HY104": [
+      {
+        "segment": "september-2026-ESZ6",
+        "trades": 2,
+        "params": {
+          "TargetOffsetTicks": "0.75",
+          "BollingerWidth": "1.75",
+          "StopAtrPad": "0.15",
+          "EntryFilterMode": "0"
+        },
+        "fills_sha256": "41da8d499ceb96945193f4c9a495b23bca742941e7c6113b8cf97576eeeb515c",
+        "report_sha256": "59175ccb9cf909b3589c7d6bada8309fd3f40e717c49c2bf76c04d25b1a6f10a"
+      },
+      {
+        "segment": "jahr-ergaenzung-ESZ5",
+        "trades": 29,
+        "params": {
+          "TargetOffsetTicks": "0.75",
+          "BollingerWidth": "1.75",
+          "StopAtrPad": "0.15",
+          "EntryFilterMode": "0"
+        },
+        "fills_sha256": "30c6c763eb649ac9f9725d6212f175d0aa736f8b12e2a1dbf5a977d3b2ebfa50",
+        "report_sha256": "f9cdb1f758992595430c8c7ad1e78fd9b1279edf621801dd583fc4b7db49b78a"
+      },
+      {
+        "segment": "jahr-ergaenzung-ESH6",
+        "trades": 94,
+        "params": {
+          "TargetOffsetTicks": "0.75",
+          "BollingerWidth": "1.75",
+          "StopAtrPad": "0.15",
+          "EntryFilterMode": "0"
+        },
+        "fills_sha256": "8d5c954b9edc0e8ce8249e533dd9f337910d0d9badeb9e49f42e0819a807c6be",
+        "report_sha256": "e0ad5818450a99a10c55b0d9b498e39fd54c43524a29e5c6a5658e4394bdc278"
+      },
+      {
+        "segment": "jahr-uebergang-ESM6",
+        "trades": 91,
+        "params": {
+          "TargetOffsetTicks": "0.75",
+          "BollingerWidth": "1.75",
+          "StopAtrPad": "0.15",
+          "EntryFilterMode": "0"
+        },
+        "fills_sha256": "32b39cc55dd0fad9ab0fd02618752422e33a7ac33e7fa8d8a05bde3d0ff4f538",
+        "report_sha256": "8d7ccc9fab890fe3eff02cd8a62f5fa5ba94ea0f3898c89201a6e168104ebad2"
+      },
+      {
+        "segment": "mai-oktober-2026-ESU6",
+        "trades": 94,
+        "params": {
+          "TargetOffsetTicks": "0.75",
+          "BollingerWidth": "1.75",
+          "StopAtrPad": "0.15",
+          "EntryFilterMode": "0"
+        },
+        "fills_sha256": "c0544209c84af315bd3d66949b97eb6c6dc05d1f8b4b75b42db05057dd842c85",
+        "report_sha256": "76530c96384bffe7a3dadd4e920eb58c338ab03ac716b46a7f22a1b7c34b887c"
+      },
+      {
+        "segment": "mai-oktober-2026-ESZ6",
+        "trades": 45,
+        "params": {
+          "TargetOffsetTicks": "0.75",
+          "BollingerWidth": "1.75",
+          "StopAtrPad": "0.15",
+          "EntryFilterMode": "0"
+        },
+        "fills_sha256": "b4387a5b88e21341a5d397a7d78ea4a352a6cf07cec82694fc1f25c09aaa6f4f",
+        "report_sha256": "4e1840733329b472e8230bca4fd02fe5d298dc468e9ad208a2b3d5152fb11f55"
+      }
+    ],
+    "funded/HYcomb-28-HY104-03": [
+      {
+        "segment": "september-2026-ESZ6",
+        "trades": 2,
+        "params": {
+          "BollingerWidth": "1.75",
+          "StopAtrPad": "0.15",
+          "EntryFilterMode": "0",
+          "IndicatorFilterMode": "0",
+          "StrategyExtension": "0",
+          "VwapBandSigma": "0",
+          "VwapWarmupMinutes": "15",
+          "VwapGridCase": "-1",
+          "TpoGridCase": "-1",
+          "KerGridCase": "-1",
+          "KamaGridCase": "-1",
+          "TargetOffsetTicks": "0.75",
+          "BarIndicatorGridCase": "3"
+        },
+        "fills_sha256": "dacf9685e8e2f6c49a7dfffea37260a298505cd5a883b2767595397ae588796c",
+        "report_sha256": "399a19ed43b64329a79c02d039c77dedeaa7adf3a3ef1ea62d027f70d9140bac"
+      },
+      {
+        "segment": "jahr-ergaenzung-ESZ5",
+        "trades": 28,
+        "params": {
+          "BollingerWidth": "1.75",
+          "StopAtrPad": "0.15",
+          "EntryFilterMode": "0",
+          "IndicatorFilterMode": "0",
+          "StrategyExtension": "0",
+          "VwapBandSigma": "0",
+          "VwapWarmupMinutes": "15",
+          "VwapGridCase": "-1",
+          "TpoGridCase": "-1",
+          "KerGridCase": "-1",
+          "KamaGridCase": "-1",
+          "TargetOffsetTicks": "0.75",
+          "BarIndicatorGridCase": "3"
+        },
+        "fills_sha256": "84339d927b60979a70287f351dd8846dcbe9ac302099b770f16f503b2b69d796",
+        "report_sha256": "c257d1862a680d77bec4f00354f3f670fdf84be4b39f0903ef876bbd2dd42e24"
+      },
+      {
+        "segment": "jahr-ergaenzung-ESH6",
+        "trades": 94,
+        "params": {
+          "BollingerWidth": "1.75",
+          "StopAtrPad": "0.15",
+          "EntryFilterMode": "0",
+          "IndicatorFilterMode": "0",
+          "StrategyExtension": "0",
+          "VwapBandSigma": "0",
+          "VwapWarmupMinutes": "15",
+          "VwapGridCase": "-1",
+          "TpoGridCase": "-1",
+          "KerGridCase": "-1",
+          "KamaGridCase": "-1",
+          "TargetOffsetTicks": "0.75",
+          "BarIndicatorGridCase": "3"
+        },
+        "fills_sha256": "e023d12bc0d036305d6a07f3de1aa1907d5f47449a1dbeec04fe32d897b98dac",
+        "report_sha256": "f090c563eae1d94c909b7bb3d1794202384e66bec1fd882637386a9f352c4c33"
+      },
+      {
+        "segment": "jahr-uebergang-ESM6",
+        "trades": 91,
+        "params": {
+          "BollingerWidth": "1.75",
+          "StopAtrPad": "0.15",
+          "EntryFilterMode": "0",
+          "IndicatorFilterMode": "0",
+          "StrategyExtension": "0",
+          "VwapBandSigma": "0",
+          "VwapWarmupMinutes": "15",
+          "VwapGridCase": "-1",
+          "TpoGridCase": "-1",
+          "KerGridCase": "-1",
+          "KamaGridCase": "-1",
+          "TargetOffsetTicks": "0.75",
+          "BarIndicatorGridCase": "3"
+        },
+        "fills_sha256": "14993ec82d1b8754478f5c33b4b0c81b28a9f34c94047d19f556dfc7ad384f3e",
+        "report_sha256": "a114e54d85f75257e10da64d5306b0de2efc417d7ebbb4a6ac9cc792688fc332"
+      },
+      {
+        "segment": "mai-oktober-2026-ESU6",
+        "trades": 94,
+        "params": {
+          "BollingerWidth": "1.75",
+          "StopAtrPad": "0.15",
+          "EntryFilterMode": "0",
+          "IndicatorFilterMode": "0",
+          "StrategyExtension": "0",
+          "VwapBandSigma": "0",
+          "VwapWarmupMinutes": "15",
+          "VwapGridCase": "-1",
+          "TpoGridCase": "-1",
+          "KerGridCase": "-1",
+          "KamaGridCase": "-1",
+          "TargetOffsetTicks": "0.75",
+          "BarIndicatorGridCase": "3"
+        },
+        "fills_sha256": "9a2d363596f1402045bcc2e44470db99d0b8991e9aac9266c2aa32a9f2a34179",
+        "report_sha256": "810618e175f8264772a660eab7a1e26345a3e1ac2a06dfe09883f98001140805"
+      },
+      {
+        "segment": "mai-oktober-2026-ESZ6",
+        "trades": 45,
+        "params": {
+          "BollingerWidth": "1.75",
+          "StopAtrPad": "0.15",
+          "EntryFilterMode": "0",
+          "IndicatorFilterMode": "0",
+          "StrategyExtension": "0",
+          "VwapBandSigma": "0",
+          "VwapWarmupMinutes": "15",
+          "VwapGridCase": "-1",
+          "TpoGridCase": "-1",
+          "KerGridCase": "-1",
+          "KamaGridCase": "-1",
+          "TargetOffsetTicks": "0.75",
+          "BarIndicatorGridCase": "3"
+        },
+        "fills_sha256": "2dfc3166a418fc3cbea33879a68ecfb84b0cd5d5478aa836d31aeebb68e2a31e",
+        "report_sha256": "8de0cfe5fe7667015fc3c94040c17ea7df613c040b5e083c2bf2fe54fbe30d2a"
+      }
+    ]
+  },
+  "native_ES_EMA22_C28": {
+    "september-2026-ESZ6": {
+      "evaluation": {
+        "entry_center": "EMA22",
+        "trades": 2,
+        "fills_sha256": "7f5e950841077b50077098cccdbf7825d706c9d4ac33516afcea5506ddd6adb2"
+      },
+      "funded": {
+        "entry_center": "EMA20",
+        "trades": 2,
+        "fills_sha256": "dacf9685e8e2f6c49a7dfffea37260a298505cd5a883b2767595397ae588796c"
+      }
+    },
+    "jahr-ergaenzung-ESZ5": {
+      "evaluation": {
+        "entry_center": "EMA22",
+        "trades": 29,
+        "fills_sha256": "9543c2c431754d20c382230bee3ed337479a88d23484409a3b5f7125e7d53580"
+      },
+      "funded": {
+        "entry_center": "EMA20",
+        "trades": 28,
+        "fills_sha256": "84339d927b60979a70287f351dd8846dcbe9ac302099b770f16f503b2b69d796"
+      }
+    },
+    "jahr-ergaenzung-ESH6": {
+      "evaluation": {
+        "entry_center": "EMA22",
+        "trades": 94,
+        "fills_sha256": "a19117041aea2661c21f09b643d75fd6ec6fca84890cedcd104b150b6b820003"
+      },
+      "funded": {
+        "entry_center": "EMA20",
+        "trades": 94,
+        "fills_sha256": "e023d12bc0d036305d6a07f3de1aa1907d5f47449a1dbeec04fe32d897b98dac"
+      }
+    },
+    "jahr-uebergang-ESM6": {
+      "evaluation": {
+        "entry_center": "EMA22",
+        "trades": 92,
+        "fills_sha256": "ba030d0ff7d030c3063f41a29c2d550602f010f1b56a013f5d852c2d466b98e6"
+      },
+      "funded": {
+        "entry_center": "EMA20",
+        "trades": 91,
+        "fills_sha256": "14993ec82d1b8754478f5c33b4b0c81b28a9f34c94047d19f556dfc7ad384f3e"
+      }
+    },
+    "mai-oktober-2026-ESU6": {
+      "evaluation": {
+        "entry_center": "EMA22",
+        "trades": 94,
+        "fills_sha256": "3b97f05e823477433d24c37fca24efcc01b0fbe9a7c0cd404f5fe8525ee07818"
+      },
+      "funded": {
+        "entry_center": "EMA20",
+        "trades": 94,
+        "fills_sha256": "9a2d363596f1402045bcc2e44470db99d0b8991e9aac9266c2aa32a9f2a34179"
+      }
+    },
+    "mai-oktober-2026-ESZ6": {
+      "evaluation": {
+        "entry_center": "EMA22",
+        "trades": 45,
+        "fills_sha256": "e54aeb1d4e99f3f2170d031bc5129881369d67ae98734a8c221320bc98023118"
+      },
+      "funded": {
+        "entry_center": "EMA20",
+        "trades": 45,
+        "fills_sha256": "2dfc3166a418fc3cbea33879a68ecfb84b0cd5d5478aa836d31aeebb68e2a31e"
+      }
+    }
+  },
+  "native_NQ": {
+    "NQZ5": {
+      "callbacks": 15144916,
+      "news_calendar_sha256": "13d7914f9cd6a00438acc7c489301197aeffafa9c02861c3358505c7bda132ce",
+      "daily_quote_packet_sha256": "ce89b425c4362d962ad42db79ea5b14f02cdfdd3f503a5eeb76a9b7d17607c94",
+      "phases": {
+        "EMA20": {
+          "trades": 21,
+          "sha256": "93ab487d7e1e08b93fd2c4af1ec34d0194a34bc0139529c145b5393e0facdc1a"
+        },
+        "SMA5/10 nach Außenbruch": {
+          "trades": 21,
+          "sha256": "94649edb0bf55999c2f49485879e0df18e428118e1345e30b7d57f57d01c61a4"
+        }
+      }
+    },
+    "NQH6": {
+      "callbacks": 35221594,
+      "news_calendar_sha256": "0a1de2526c596a2fd396af668216e8f8912247b546a9a0e01cda7d3614c47750",
+      "daily_quote_packet_sha256": "966471162ee02ddda9ecd2bc0148d1253b963cb637b7e0c2fe8089fb7b218233",
+      "phases": {
+        "EMA20": {
+          "trades": 67,
+          "sha256": "d7d47afa2ed8702dba7345643022df61d02b326c8c433d0c62f5ca1316078402"
+        },
+        "SMA5/10 nach Außenbruch": {
+          "trades": 69,
+          "sha256": "d8b83de2e99f5f700c042d530fcfae92b986a40280d4000411063caaa9ef865c"
+        }
+      }
+    },
+    "NQM6": {
+      "callbacks": 38123673,
+      "news_calendar_sha256": "d0181217f926dce99599c822eb29c1418269260c495b94216b3d4ca63ea1ed45",
+      "daily_quote_packet_sha256": "debe4a2560f5a6f28b3c26454fb54d8a76c3da3fb878a7636cfaf35557c81b91",
+      "phases": {
+        "EMA20": {
+          "trades": 71,
+          "sha256": "bf851c7109d57097475bce1d23fbec7f031e218a0491535e98e80b276bee94c5"
+        },
+        "SMA5/10 nach Außenbruch": {
+          "trades": 74,
+          "sha256": "c4144e056c70693467e47302a40dd995771ddab591c7338d88db8548196406dd"
+        }
+      }
+    },
+    "NQU6": {
+      "callbacks": 36567752,
+      "news_calendar_sha256": "f23cf309750933e956bcb915da95f19e52953bc44df33501098cc6f5a45f9e5b",
+      "daily_quote_packet_sha256": "272b174687db414d659b7414db9a91ff28ca7b14a572ee536a3b2e87c791d242",
+      "phases": {
+        "EMA20": {
+          "trades": 72,
+          "sha256": "f93d1473ae673ffdeb60d2489cfd581288041b6ea1f5b8a8036d22e1aa478b9f"
+        },
+        "SMA5/10 nach Außenbruch": {
+          "trades": 74,
+          "sha256": "dcae65fbc17486d322c8bf77fc7f9ea8090bb80bcc3a588ade32ba0ab8f001c0"
+        }
+      }
+    },
+    "NQZ6": {
+      "callbacks": 22435877,
+      "news_calendar_sha256": "fbdf3eeb3689cf1872371486d4242012d6db95cdf48368e17f72e8815bc95e59",
+      "daily_quote_packet_sha256": "a4cefa7e8ca3835009eec20d6270d4ef18a1d80c47de86d9f6d38e55958d0f0b",
+      "phases": {
+        "EMA20": {
+          "trades": 36,
+          "sha256": "f8c074b02a44222703f447e00019168d2571765000d1d24d086c91fa92eb0127"
+        },
+        "SMA5/10 nach Außenbruch": {
+          "trades": 36,
+          "sha256": "34ec4602582d07eee5fa19ab0c38f4a0ddd6c2806b4cd4152fa226e68304dace"
+        }
+      }
+    }
+  },
+  "quote_replay_source_sha256": "66488d5562287e5ecce9970e68c8b4487609acd24421410a710bb98d01730769"
+}

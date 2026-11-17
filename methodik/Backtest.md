@@ -1,0 +1,34 @@
+# Backtest, Kontoreplay und Daten
+
+## Datenbasis und Ausführung
+
+Databento CME Globex MDP 3.0, Dataset GLBX.MDP3, Schema TBBO. 245 gemeinsame Handelssitzungen vom 19.11.2025 bis 30.10.2026. ES und NQ werden im jeweiligen aktiven Einzelkontrakt gerechnet. Das [Quellenmanifest](../belege/Quellenmanifest.json) nennt die Abschnitte, Testtage, Callback-Zahlen, Hashwerte der Staging-Metadaten und der nativen SQX-Fill-Exporte. Warmup-Sitzungen liefern den Indikatorzustand und bleiben bei Trades unberücksichtigt. Die Kontorechnung geht über die Kontraktwechsel hinweg weiter.
+
+StrategyQuant X erzeugte die historischen Trades aus den archivierten Tick- und Quote-Segmenten. Der Optimizer lief im historischen MetaTrader-5-Engine-Modus mit projektspezifischen Java-Blöcken. Die C#-Klassen für NinjaTrader sind separate lokale Sim-Fassungen. Die Archiv-Prüfung verknüpft jede Phase mit ihrem SQX-Fill-Hash. Bei NQ sind es fünf Kontrakte und zusammen 147’493’812 Callback-Zeilen. Die Kontosimulation verwendet die zuletzt geprüften SQX-Signale und rechnet die Anbieterregeln anschließend in Python.
+
+## MFF
+
+Rapid EOD 50k verwendet im Modell 3’000 USD Gewinnziel, 2’000 USD Abstand zum Tagesend-Trailing, vier Mindesthandelstage und die 30-%-Konsistenzregel in der Eval. Die MFF-Funded-Trades verwenden die T1-News-Sperren der archivierten Phase. Pro 50k hat im Board seine eigenen Eval- und Auszahlungsvorgaben. Für den Jahresvergleich wurden 135 USD je Rapid-Eval, 132 USD je Pro-Eval und 5,74 USD pro ES-Roundtrip angesetzt. Ein zusätzlicher Tick auf beiden Seiten belastet einen ES-Roundtrip mit 25 USD. Pro und Rapid EOD haben eigene Regeln für Limits, Puffer, Auszahlungen und Übergang in Live. Die Regelpfade und Preisannahmen stehen im [Kontomodell](quellstand/sqx_mff_payout_rules.py). [MFF Rapid EOD](https://help.myfundedfutures.com/en/articles/16158363-rapid-eod-50k-a-comprehensive-look) · [MFF Pro](https://help.myfundedfutures.com/en/articles/17573707-comprehensive-look-into-redesigned-pro-plan)
+
+Im Rapid-EOD-Paarvergleich erhalten parallele MFF-Konten pro Phase dieselben ES-Ausführungen. Die Rechnung belastet jedes Konto mit der vollen Gebühr. Die unterschiedlichen EMA20- und EMA22-Arme in der Eval stehen als eigene Zeilen im Leaderboard. Die Funded-Fassung 104-C28.03 verwendet weiterhin die EMA20. Ab 09:30 Uhr Chicago wirkt die Spanne der ersten 60 Minuten als zusätzliches Ziel und muss auf der Gewinnseite des tatsächlichen Einstiegs liegen.
+
+## TradeDay und gemeinsame Liquidität
+
+HY3 handelt im Modell ab 09:00 Uhr Chicago. In der Eval bestätigt der Rücklauf zur laufenden EMA20 den Einstieg. Funded kann nach dem Bruch der äußeren SMA5 um mindestens einen Tick bereits am SMA10 einsteigen, wenn SMA5, SMA10 und abgeschlossene EMA20 in der richtigen Reihenfolge liegen. Der ROC(5) kann bei einem Vorzeichenwechsel gegen die Position einen Ausstieg auslösen. Der Funded-SQX-Lauf enthält den archivierten News-Kalender.
+
+Fast Pass 25k, 50k, 100k und 150k wurden mit je 1 bis zum anfänglichen Sim-Funded-Kontraktlimit getestet. Das ergibt maximal 1, 2, 3 bzw. 4 NQ pro Konto. Pro Konfiguration sind Größe und Kontraktmenge auf allen Kopien gleich. Es gibt jeweils 1 bis 5 Konten, 1’000 und 4’000 USD Startbudget sowie zwei Preisannahmen. Geld reicht bei einigen Kombinationen nicht zur Eröffnung aller Konten. Diese Kombinationen fehlen im Raster. Für 100k nutzt der Replay die 1’875 USD aus der separaten Auszahlungstabelle von TradeDay. 2,88 USD Provision je NQ-Seite und im Stress zusätzlich 5 USD je tatsächlich gefüllter Seite und Kontrakt gehen in den Pfad ein. [Fast-Pass-Regeln](https://tradeday.freshdesk.com/en/support/solutions/articles/103000405229-what-is-fast-pass-) · [Auszahlungstabelle](https://tradeday.freshdesk.com/en/support/solutions/articles/103000404096-fast-pass-funded-sim-payout-policy)
+
+Am eingefrorenen SQX-Ausführungszeitpunkt geht der Auftrag zum beobachteten Bid oder Ask ins Modell. Auf jeder Buchseite teilen sich die Konten das sichtbare Volumen. Ausstiege haben Vorrang, danach entscheidet die Reihenfolge der Modellkonten. Restmengen warten auf einen Preiswechsel oder sichtbare Auffüllung. Positionen werden zum Liquidationskurs bewertet. Eine neue Funded-Phase, Auszahlungsverarbeitung oder Kontoverlust verändert die Zahl und Reihenfolge handelnder Konten ab der nächsten Sitzung. Am Tag eines Verlustgrenzenbruchs verwendet das Partnerkonto weiterhin seinen vorab berechneten Tagespfad. TBBO misst die beste Quote bei Trades. Tiefe, Queue-Position und zusätzliche Brokerlatenz sind im Modell nicht beobachtbar. Der Abgleich von 4’900 Tages- und Kontopaketen mit der alten Ausführung für ein und zwei Konten war exakt.
+
+Der Kontoreplay wendet die 45-%-Konsistenzregel der aktuellen Fast-Pass-Käufe an. Der Mindestwert von drei Handelstagen folgt rechnerisch aus der Konsistenzregel. Im Funded-Modell müssen fünf Gewinntage mit der jeweiligen Plangrenze und die Auszahlungsbedingungen erfüllt sein. Die Auszahlung wird nach Split am nächsten Handelstag gebucht. An diesem Tag pausiert das Konto. Nach der fünften Sim-Auszahlung endet der modellierte Cashflow dieses Kontos. Individuelle Banklaufzeiten und Funded-Live-Handel sind nicht Teil des Modells. Der ältere Quick-Pay-Vergleich nutzt ein anderes Ausführungsmodell mit gleichem Fill-Preis für alle Kopien.
+
+## Kennzahlen
+
+Jede Simulation startet an einem der 146 historischen Starttage und hat 100 Handelssitzungen als Datenfenster. Neue Evaluationen werden nach einem Verlust oder modellierter Inaktivität frühestens zur folgenden Sitzung aus dem verbleibenden Startbudget gekauft. Auszahlungen finanzieren keine Ersatzkäufe.
+
+- **Endbargeld** = Startbudget − Challengegebühren + empfangene Nettoauszahlungen. Das Endbargeld im Leaderboard wird am Ende der 100 Handelssitzungen gemessen.
+- **Netto je 30 Kalendertage** = (empfangene Nettoauszahlungen bis Kalendertag 90 − bis dahin gebuchte Challengegebühren) / 3. Jeder Start zählt, auch ohne Auszahlung.
+- **Ø und Median** werden jeweils aus den 146 Ergebnissen je Konfiguration berechnet. Im kombinierten Modell werden zuerst die zwei Ergebnisse mit identischem Starttag addiert. Erst danach werden die Statistiken berechnet. MFF hat dabei ein eigenes Budget von 1’000 USD.
+- **Untere 10-%-Schwelle** ist der Wert an Index floor(0,10 × (n − 1)) der aufsteigend sortierten Ergebnisse. Mehrere Startfenster teilen dieselben Handelstage. Diese Zahlen sind historische Modellvergleiche.
+
+Die [Quellstände](quellstand/) enthalten die SQX-Logik und die Rechenkette. Die Python-Dateien referenzieren die projektspezifische SQX-Umgebung und lokale Exportpfade. Für einen neuen Lauf braucht es die markierten, lizenzierten Databento-Eingaben, das SQX-Projekt und den lokalen Retester. Die Belege in diesem Snapshot enthalten aggregierte Ergebnisse und Prüfsummen.

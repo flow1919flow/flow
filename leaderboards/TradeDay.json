@@ -1,0 +1,5191 @@
+{
+  "period": [
+    "2025-11-19",
+    "2026-10-30"
+  ],
+  "sessions": 245,
+  "starts": 146,
+  "horizon_sessions": 100,
+  "monthly_period_days": 90,
+  "budget_cents": 100000,
+  "rows": [
+    {
+      "plan": "fast_pass",
+      "size": 50,
+      "quantity": 1,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 478436,
+        "rates": {
+          "sale": {
+            "fee": 9900,
+            "portfolios": {
+              "1": {
+                "end_mean": 441479,
+                "end_median": 530500.0,
+                "monthly_mean": 59253.178082191786,
+                "monthly_median": 66800.0,
+                "median_fees_90": 39600.0,
+                "median_fees_end": 39600.0,
+                "first_paid_days": 60.0,
+                "ever_paid": 144,
+                "paid_by_90": 128,
+                "first_eval_passes": 53,
+                "review_windows": 40
+              },
+              "2": {
+                "end_mean": 757512,
+                "end_median": 961000.0,
+                "monthly_mean": 113321.42465753424,
+                "monthly_median": 133600.0,
+                "median_fees_90": 79200.0,
+                "median_fees_end": 79200.0,
+                "first_paid_days": 49.5,
+                "ever_paid": 114,
+                "paid_by_90": 114,
+                "first_eval_passes": 53,
+                "review_windows": 40
+              },
+              "3": {
+                "end_mean": 770888,
+                "end_median": 481000.0,
+                "monthly_mean": 116229.39726027398,
+                "monthly_median": 47000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 41,
+                "ever_paid": 87,
+                "paid_by_90": 87,
+                "first_eval_passes": 53,
+                "review_windows": 39
+              },
+              "4": {
+                "end_mean": 823667,
+                "end_median": 1000.0,
+                "monthly_mean": 126334.6301369863,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 34,
+                "ever_paid": 61,
+                "paid_by_90": 61,
+                "first_eval_passes": 53,
+                "review_windows": 34
+              },
+              "5": {
+                "end_mean": 910068,
+                "end_median": 1000.0,
+                "monthly_mean": 139998.7671232877,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 32,
+                "ever_paid": 49,
+                "paid_by_90": 49,
+                "first_eval_passes": 53,
+                "review_windows": 24
+              }
+            }
+          },
+          "list": {
+            "fee": 24800,
+            "portfolios": {
+              "1": {
+                "end_mean": 325834,
+                "end_median": 410400.0,
+                "monthly_mean": 30960.255707762557,
+                "monthly_median": 46933.333333333336,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 41,
+                "ever_paid": 87,
+                "paid_by_90": 87,
+                "first_eval_passes": 53,
+                "review_windows": 39
+              },
+              "2": {
+                "end_mean": 370551,
+                "end_median": 800.0,
+                "monthly_mean": 38241.97260273973,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 32,
+                "ever_paid": 49,
+                "paid_by_90": 49,
+                "first_eval_passes": 53,
+                "review_windows": 24
+              },
+              "3": {
+                "end_mean": 430166,
+                "end_median": 800.0,
+                "monthly_mean": 51755.65296803653,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 32,
+                "ever_paid": 49,
+                "paid_by_90": 49,
+                "first_eval_passes": 53,
+                "review_windows": 24
+              },
+              "4": {
+                "end_mean": 489781,
+                "end_median": 800.0,
+                "monthly_mean": 65269.333333333336,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 30,
+                "ever_paid": 33,
+                "paid_by_90": 33,
+                "first_eval_passes": 53,
+                "review_windows": 23
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 214436,
+        "rates": {
+          "sale": {
+            "fee": 9900,
+            "portfolios": {
+              "1": {
+                "end_mean": 396283,
+                "end_median": 415450.0,
+                "monthly_mean": 45343.178082191786,
+                "monthly_median": 28450.0,
+                "median_fees_90": 39600.0,
+                "median_fees_end": 49500.0,
+                "first_paid_days": 61.5,
+                "ever_paid": 144,
+                "paid_by_90": 124,
+                "first_eval_passes": 44,
+                "review_windows": 21
+              },
+              "2": {
+                "end_mean": 671628,
+                "end_median": 730900.0,
+                "monthly_mean": 85179.50684931506,
+                "monthly_median": 56900.0,
+                "median_fees_90": 79200.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 53.5,
+                "ever_paid": 118,
+                "paid_by_90": 109,
+                "first_eval_passes": 44,
+                "review_windows": 21
+              },
+              "3": {
+                "end_mean": 688124,
+                "end_median": 361000.0,
+                "monthly_mean": 86441.17808219178,
+                "monthly_median": 7000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 42,
+                "ever_paid": 91,
+                "paid_by_90": 82,
+                "first_eval_passes": 44,
+                "review_windows": 21
+              },
+              "4": {
+                "end_mean": 658933,
+                "end_median": 1000.0,
+                "monthly_mean": 91691.8904109589,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 36,
+                "ever_paid": 65,
+                "paid_by_90": 56,
+                "first_eval_passes": 44,
+                "review_windows": 21
+              },
+              "5": {
+                "end_mean": 604103,
+                "end_median": 1000.0,
+                "monthly_mean": 97253.56164383562,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 33,
+                "ever_paid": 45,
+                "paid_by_90": 45,
+                "first_eval_passes": 44,
+                "review_windows": 15
+              }
+            }
+          },
+          "list": {
+            "fee": 24800,
+            "portfolios": {
+              "1": {
+                "end_mean": 280417,
+                "end_median": 240800.0,
+                "monthly_mean": 17662.12785388128,
+                "monthly_median": 6933.333333333333,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 42,
+                "ever_paid": 91,
+                "paid_by_90": 82,
+                "first_eval_passes": 44,
+                "review_windows": 21
+              },
+              "2": {
+                "end_mean": 244899,
+                "end_median": 800.0,
+                "monthly_mean": 20259.415525114153,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 33,
+                "ever_paid": 45,
+                "paid_by_90": 45,
+                "first_eval_passes": 44,
+                "review_windows": 15
+              },
+              "3": {
+                "end_mean": 280000,
+                "end_median": 800.0,
+                "monthly_mean": 26801.908675799088,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 33,
+                "ever_paid": 45,
+                "paid_by_90": 45,
+                "first_eval_passes": 44,
+                "review_windows": 15
+              },
+              "4": {
+                "end_mean": 315102,
+                "end_median": 800.0,
+                "monthly_mean": 33344.40182648402,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 30,
+                "ever_paid": 29,
+                "paid_by_90": 29,
+                "first_eval_passes": 44,
+                "review_windows": 14
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "quick_eod",
+      "size": 50,
+      "quantity": 1,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 478436,
+        "rates": {
+          "sale": {
+            "fee": 6900,
+            "portfolios": {
+              "1": {
+                "end_mean": 119160,
+                "end_median": 99784.0,
+                "monthly_mean": 5910.187214611872,
+                "monthly_median": 2228.0,
+                "median_fees_90": 34500.0,
+                "median_fees_end": 48300.0,
+                "first_paid_days": 60,
+                "ever_paid": 141,
+                "paid_by_90": 119,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 149091,
+                "end_median": 99568.0,
+                "monthly_mean": 12209.593607305937,
+                "monthly_median": 4456.0,
+                "median_fees_90": 69000.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 58.5,
+                "ever_paid": 138,
+                "paid_by_90": 116,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 168975,
+                "end_median": 126952.0,
+                "monthly_mean": 17732.828767123287,
+                "monthly_median": 8984.0,
+                "median_fees_90": 96600.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 54.0,
+                "ever_paid": 124,
+                "paid_by_90": 102,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 174093,
+                "end_median": 165748.0,
+                "monthly_mean": 18309.342465753423,
+                "monthly_median": -4744.0,
+                "median_fees_90": 96600.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 48.0,
+                "ever_paid": 108,
+                "paid_by_90": 86,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 164487,
+                "end_median": 144950.0,
+                "monthly_mean": 15918.865296803653,
+                "monthly_median": -27600.0,
+                "median_fees_90": 96600.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 38.0,
+                "ever_paid": 78,
+                "paid_by_90": 60,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 17400,
+            "portfolios": {
+              "1": {
+                "end_mean": 72358,
+                "end_median": 54184.0,
+                "monthly_mean": -8502.737442922375,
+                "monthly_median": -9472.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 54.0,
+                "ever_paid": 124,
+                "paid_by_90": 102,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 69485,
+                "end_median": 53587.0,
+                "monthly_mean": -11011.744292237441,
+                "monthly_median": -26100.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 38.0,
+                "ever_paid": 78,
+                "paid_by_90": 60,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 63456,
+                "end_median": 13000.0,
+                "monthly_mean": -12253.714611872145,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 27.5,
+                "ever_paid": 42,
+                "paid_by_90": 40,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 59278,
+                "end_median": 13000.0,
+                "monthly_mean": -13610.310502283106,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 27.5,
+                "ever_paid": 42,
+                "paid_by_90": 40,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 55099,
+                "end_median": 13000.0,
+                "monthly_mean": -14966.906392694063,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 24.5,
+                "ever_paid": 22,
+                "paid_by_90": 22,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 214436,
+        "rates": {
+          "sale": {
+            "fee": 6900,
+            "portfolios": {
+              "1": {
+                "end_mean": 120393,
+                "end_median": 102359.0,
+                "monthly_mean": 6539.132420091325,
+                "monthly_median": 1936.3333333333333,
+                "median_fees_90": 34500.0,
+                "median_fees_end": 48300.0,
+                "first_paid_days": 60.5,
+                "ever_paid": 140,
+                "paid_by_90": 118,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 152532,
+                "end_median": 104718.0,
+                "monthly_mean": 13316.799086757992,
+                "monthly_median": 3872.6666666666665,
+                "median_fees_90": 69000.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 58,
+                "ever_paid": 137,
+                "paid_by_90": 115,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 172880,
+                "end_median": 124327.0,
+                "monthly_mean": 19101.75799086758,
+                "monthly_median": 8109.0,
+                "median_fees_90": 96600.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 54,
+                "ever_paid": 123,
+                "paid_by_90": 101,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 175595,
+                "end_median": 163748.0,
+                "monthly_mean": 19690.383561643834,
+                "monthly_median": -5327.333333333333,
+                "median_fees_90": 96600.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 47.5,
+                "ever_paid": 104,
+                "paid_by_90": 85,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 167665,
+                "end_median": 132450.0,
+                "monthly_mean": 17402.029680365296,
+                "monthly_median": -27600.0,
+                "median_fees_90": 96600.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 38,
+                "ever_paid": 77,
+                "paid_by_90": 59,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 17400,
+            "portfolios": {
+              "1": {
+                "end_mean": 74575,
+                "end_median": 53309.0,
+                "monthly_mean": -8010.842465753424,
+                "monthly_median": -9800.666666666666,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 54,
+                "ever_paid": 123,
+                "paid_by_90": 101,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 70618,
+                "end_median": 53087.0,
+                "monthly_mean": -10420.751141552511,
+                "monthly_median": -26100.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 38,
+                "ever_paid": 77,
+                "paid_by_90": 59,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 64213,
+                "end_median": 13000.0,
+                "monthly_mean": -11714.810502283106,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 28,
+                "ever_paid": 41,
+                "paid_by_90": 40,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 59773,
+                "end_median": 13000.0,
+                "monthly_mean": -13301.794520547946,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 28,
+                "ever_paid": 41,
+                "paid_by_90": 40,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 55334,
+                "end_median": 13000.0,
+                "monthly_mean": -14888.778538812787,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 25.5,
+                "ever_paid": 22,
+                "paid_by_90": 22,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "quick_intraday",
+      "size": 50,
+      "quantity": 1,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 478436,
+        "rates": {
+          "sale": {
+            "fee": 4900,
+            "portfolios": {
+              "1": {
+                "end_mean": 125224,
+                "end_median": 106884.0,
+                "monthly_mean": 6451.191780821918,
+                "monthly_median": 2294.6666666666665,
+                "median_fees_90": 29400.0,
+                "median_fees_end": 44100.0,
+                "first_paid_days": 61.0,
+                "ever_paid": 144,
+                "paid_by_90": 119,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 154372,
+                "end_median": 113768.0,
+                "monthly_mean": 13065.753424657536,
+                "monthly_median": 4589.333333333333,
+                "median_fees_90": 58800.0,
+                "median_fees_end": 88200.0,
+                "first_paid_days": 58.5,
+                "ever_paid": 138,
+                "paid_by_90": 113,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 185123,
+                "end_median": 125552.0,
+                "monthly_mean": 18653.7899543379,
+                "monthly_median": 8517.333333333334,
+                "median_fees_90": 88200.0,
+                "median_fees_end": 98000.0,
+                "first_paid_days": 53.5,
+                "ever_paid": 122,
+                "paid_by_90": 97,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 193034,
+                "end_median": 166736.0,
+                "monthly_mean": 21936.812785388127,
+                "monthly_median": 14810.0,
+                "median_fees_90": 98000.0,
+                "median_fees_end": 98000.0,
+                "first_paid_days": 47.5,
+                "ever_paid": 106,
+                "paid_by_90": 81,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 197070,
+                "end_median": 204935.0,
+                "monthly_mean": 22116.23287671233,
+                "monthly_median": -16333.333333333334,
+                "median_fees_90": 98000.0,
+                "median_fees_end": 98000.0,
+                "first_paid_days": 41.5,
+                "ever_paid": 90,
+                "paid_by_90": 65,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 12400,
+            "portfolios": {
+              "1": {
+                "end_mean": 72516,
+                "end_median": 54384.0,
+                "monthly_mean": -7387.890410958905,
+                "monthly_median": -9028.166666666666,
+                "median_fees_90": 74400.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 55.5,
+                "ever_paid": 130,
+                "paid_by_90": 105,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 79342,
+                "end_median": 81974.0,
+                "monthly_mean": -9441.17808219178,
+                "monthly_median": -19579.333333333332,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 41.5,
+                "ever_paid": 90,
+                "paid_by_90": 65,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 84240,
+                "end_median": 61493.0,
+                "monthly_mean": -7888.657534246576,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 37.5,
+                "ever_paid": 76,
+                "paid_by_90": 59,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 70926,
+                "end_median": 800.0,
+                "monthly_mean": -10178.082191780823,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 27,
+                "ever_paid": 37,
+                "paid_by_90": 35,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 66978,
+                "end_median": 800.0,
+                "monthly_mean": -11372.214611872145,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 27,
+                "ever_paid": 37,
+                "paid_by_90": 35,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 214436,
+        "rates": {
+          "sale": {
+            "fee": 4900,
+            "portfolios": {
+              "1": {
+                "end_mean": 124023,
+                "end_median": 101109.0,
+                "monthly_mean": 6637.504566210046,
+                "monthly_median": 369.6666666666667,
+                "median_fees_90": 29400.0,
+                "median_fees_end": 44100.0,
+                "first_paid_days": 61.5,
+                "ever_paid": 144,
+                "paid_by_90": 118,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 153075,
+                "end_median": 102218.0,
+                "monthly_mean": 13250.707762557076,
+                "monthly_median": 739.3333333333334,
+                "median_fees_90": 58800.0,
+                "median_fees_end": 88200.0,
+                "first_paid_days": 59.0,
+                "ever_paid": 138,
+                "paid_by_90": 112,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 188741,
+                "end_median": 122927.0,
+                "monthly_mean": 19339.004566210046,
+                "monthly_median": 7642.333333333333,
+                "median_fees_90": 88200.0,
+                "median_fees_end": 98000.0,
+                "first_paid_days": 54.0,
+                "ever_paid": 122,
+                "paid_by_90": 96,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 192252,
+                "end_median": 162348.0,
+                "monthly_mean": 23030.401826484016,
+                "monthly_median": 1746.6666666666667,
+                "median_fees_90": 98000.0,
+                "median_fees_end": 98000.0,
+                "first_paid_days": 47,
+                "ever_paid": 103,
+                "paid_by_90": 81,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 189086,
+                "end_median": 131050.0,
+                "monthly_mean": 23192.328767123287,
+                "monthly_median": -24500.0,
+                "median_fees_90": 98000.0,
+                "median_fees_end": 98000.0,
+                "first_paid_days": 39.5,
+                "ever_paid": 82,
+                "paid_by_90": 64,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 12400,
+            "portfolios": {
+              "1": {
+                "end_mean": 71222,
+                "end_median": 41109.0,
+                "monthly_mean": -7852.034246575342,
+                "monthly_median": -12063.333333333334,
+                "median_fees_90": 74400.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 56.0,
+                "ever_paid": 130,
+                "paid_by_90": 104,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 76148,
+                "end_median": 63810.0,
+                "monthly_mean": -9490.191780821917,
+                "monthly_median": -24800.0,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 39.5,
+                "ever_paid": 82,
+                "paid_by_90": 64,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 85493,
+                "end_median": 42070.5,
+                "monthly_mean": -7091.687214611872,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 36.5,
+                "ever_paid": 74,
+                "paid_by_90": 58,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 72268,
+                "end_median": 800.0,
+                "monthly_mean": -9043.899543378995,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 27.0,
+                "ever_paid": 36,
+                "paid_by_90": 35,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 68328,
+                "end_median": 800.0,
+                "monthly_mean": -10407.098173515982,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 27.0,
+                "ever_paid": 36,
+                "paid_by_90": 35,
+                "first_eval_passes": 29,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "fast_pass",
+      "size": 50,
+      "quantity": 2,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 956872,
+        "rates": {
+          "sale": {
+            "fee": 9900,
+            "portfolios": {
+              "1": {
+                "end_mean": 113442,
+                "end_median": 121000.0,
+                "monthly_mean": 4267.808219178082,
+                "monthly_median": -29700.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 62,
+                "ever_paid": 75,
+                "paid_by_90": 66,
+                "first_eval_passes": 32,
+                "review_windows": 3
+              },
+              "2": {
+                "end_mean": 142353,
+                "end_median": 1000.0,
+                "monthly_mean": 12926.027397260274,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 38,
+                "ever_paid": 39,
+                "paid_by_90": 39,
+                "first_eval_passes": 32,
+                "review_windows": 3
+              },
+              "3": {
+                "end_mean": 145438,
+                "end_median": 1000.0,
+                "monthly_mean": 12883.561643835616,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 31,
+                "ever_paid": 29,
+                "paid_by_90": 29,
+                "first_eval_passes": 32,
+                "review_windows": 3
+              },
+              "4": {
+                "end_mean": 168248,
+                "end_median": 1000.0,
+                "monthly_mean": 19552.054794520547,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 28,
+                "ever_paid": 23,
+                "paid_by_90": 23,
+                "first_eval_passes": 32,
+                "review_windows": 3
+              },
+              "5": {
+                "end_mean": 195168,
+                "end_median": 1000.0,
+                "monthly_mean": 27613.013698630137,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 27,
+                "ever_paid": 19,
+                "paid_by_90": 19,
+                "first_eval_passes": 32,
+                "review_windows": 3
+              }
+            }
+          },
+          "list": {
+            "fee": 24800,
+            "portfolios": {
+              "1": {
+                "end_mean": 56575,
+                "end_median": 800.0,
+                "monthly_mean": -15013.698630136985,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 31,
+                "ever_paid": 29,
+                "paid_by_90": 29,
+                "first_eval_passes": 32,
+                "review_windows": 3
+              },
+              "2": {
+                "end_mean": 79079,
+                "end_median": 800.0,
+                "monthly_mean": -8617.351598173516,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 27,
+                "ever_paid": 19,
+                "paid_by_90": 19,
+                "first_eval_passes": 32,
+                "review_windows": 3
+              },
+              "3": {
+                "end_mean": 87611,
+                "end_median": 800.0,
+                "monthly_mean": -6595.433789954338,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 27,
+                "ever_paid": 19,
+                "paid_by_90": 19,
+                "first_eval_passes": 32,
+                "review_windows": 3
+              },
+              "4": {
+                "end_mean": 96142,
+                "end_median": 800.0,
+                "monthly_mean": -4573.51598173516,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 20.5,
+                "ever_paid": 10,
+                "paid_by_90": 10,
+                "first_eval_passes": 32,
+                "review_windows": 3
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 428872,
+        "rates": {
+          "sale": {
+            "fee": 9900,
+            "portfolios": {
+              "1": {
+                "end_mean": 114688,
+                "end_median": 121000.0,
+                "monthly_mean": 1630.13698630137,
+                "monthly_median": -23100.0,
+                "median_fees_90": 79200.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 68,
+                "ever_paid": 91,
+                "paid_by_90": 62,
+                "first_eval_passes": 24,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 121000,
+                "end_median": 1000.0,
+                "monthly_mean": 7452.054794520548,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 39.0,
+                "ever_paid": 40,
+                "paid_by_90": 40,
+                "first_eval_passes": 24,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 111959,
+                "end_median": 1000.0,
+                "monthly_mean": 4189.72602739726,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 31,
+                "ever_paid": 29,
+                "paid_by_90": 29,
+                "first_eval_passes": 24,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 124288,
+                "end_median": 1000.0,
+                "monthly_mean": 8186.301369863014,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 28,
+                "ever_paid": 23,
+                "paid_by_90": 23,
+                "first_eval_passes": 24,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 140726,
+                "end_median": 1000.0,
+                "monthly_mean": 13575.342465753425,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 27,
+                "ever_paid": 19,
+                "paid_by_90": 19,
+                "first_eval_passes": 24,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 24800,
+            "portfolios": {
+              "1": {
+                "end_mean": 44362,
+                "end_median": 800.0,
+                "monthly_mean": -18263.013698630137,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 31,
+                "ever_paid": 29,
+                "paid_by_90": 29,
+                "first_eval_passes": 24,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 56690,
+                "end_median": 800.0,
+                "monthly_mean": -14436.529680365296,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 27,
+                "ever_paid": 19,
+                "paid_by_90": 19,
+                "first_eval_passes": 24,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 55047,
+                "end_median": 800.0,
+                "monthly_mean": -14984.47488584475,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 27,
+                "ever_paid": 19,
+                "paid_by_90": 19,
+                "first_eval_passes": 24,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 53403,
+                "end_median": 800.0,
+                "monthly_mean": -15532.420091324202,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 23.5,
+                "ever_paid": 10,
+                "paid_by_90": 10,
+                "first_eval_passes": 24,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "quick_eod",
+      "size": 50,
+      "quantity": 2,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 956872,
+        "rates": {
+          "sale": {
+            "fee": 6900,
+            "portfolios": {
+              "1": {
+                "end_mean": 106127,
+                "end_median": 94924.0,
+                "monthly_mean": 4613.929223744292,
+                "monthly_median": -6900.0,
+                "median_fees_90": 62100.0,
+                "median_fees_end": 89700.0,
+                "first_paid_days": 74,
+                "ever_paid": 95,
+                "paid_by_90": 61,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 162061,
+                "end_median": 165748.0,
+                "monthly_mean": 13520.406392694063,
+                "monthly_median": -27600.0,
+                "median_fees_90": 96600.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 68.5,
+                "ever_paid": 74,
+                "paid_by_90": 43,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 206445,
+                "end_median": 3400.0,
+                "monthly_mean": 26603.698630136987,
+                "monthly_median": -32200.0,
+                "median_fees_90": 96600.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 60,
+                "ever_paid": 61,
+                "paid_by_90": 41,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 212865,
+                "end_median": 3400.0,
+                "monthly_mean": 28244.059360730593,
+                "monthly_median": -32200.0,
+                "median_fees_90": 96600.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 55,
+                "ever_paid": 55,
+                "paid_by_90": 38,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 185213,
+                "end_median": 3400.0,
+                "monthly_mean": 21054.303652968036,
+                "monthly_median": -32200.0,
+                "median_fees_90": 96600.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 48,
+                "ever_paid": 35,
+                "paid_by_90": 25,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 17400,
+            "portfolios": {
+              "1": {
+                "end_mean": 82680,
+                "end_median": 13000.0,
+                "monthly_mean": -7732.002283105023,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 60,
+                "ever_paid": 61,
+                "paid_by_90": 41,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 71673,
+                "end_median": 13000.0,
+                "monthly_mean": -11255.936073059362,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 48,
+                "ever_paid": 35,
+                "paid_by_90": 25,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 54342,
+                "end_median": 13000.0,
+                "monthly_mean": -15219.472602739726,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 25.5,
+                "ever_paid": 12,
+                "paid_by_90": 12,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 48894,
+                "end_median": 13000.0,
+                "monthly_mean": -17035.187214611873,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 25.5,
+                "ever_paid": 12,
+                "paid_by_90": 12,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 43447,
+                "end_median": 13000.0,
+                "monthly_mean": -18850.901826484016,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 23.0,
+                "ever_paid": 4,
+                "paid_by_90": 4,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 428872,
+        "rates": {
+          "sale": {
+            "fee": 6900,
+            "portfolios": {
+              "1": {
+                "end_mean": 103292,
+                "end_median": 83574.0,
+                "monthly_mean": 4001.073059360731,
+                "monthly_median": -13800.0,
+                "median_fees_90": 62100.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 74,
+                "ever_paid": 95,
+                "paid_by_90": 61,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 155788,
+                "end_median": 3400.0,
+                "monthly_mean": 14570.374429223744,
+                "monthly_median": -32200.0,
+                "median_fees_90": 96600.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 61,
+                "ever_paid": 63,
+                "paid_by_90": 44,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 198881,
+                "end_median": 3400.0,
+                "monthly_mean": 29553.7899543379,
+                "monthly_median": -32200.0,
+                "median_fees_90": 96600.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 51.5,
+                "ever_paid": 50,
+                "paid_by_90": 42,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 206986,
+                "end_median": 3400.0,
+                "monthly_mean": 31981.65296803653,
+                "monthly_median": -32200.0,
+                "median_fees_90": 96600.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 48,
+                "ever_paid": 45,
+                "paid_by_90": 38,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 185587,
+                "end_median": 3400.0,
+                "monthly_mean": 25558.981735159818,
+                "monthly_median": -32200.0,
+                "median_fees_90": 96600.0,
+                "median_fees_end": 96600.0,
+                "first_paid_days": 43,
+                "ever_paid": 29,
+                "paid_by_90": 25,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 17400,
+            "portfolios": {
+              "1": {
+                "end_mean": 80022,
+                "end_median": 13000.0,
+                "monthly_mean": -7289.598173515981,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 51.5,
+                "ever_paid": 50,
+                "paid_by_90": 42,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 74122,
+                "end_median": 13000.0,
+                "monthly_mean": -9422.073059360731,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 43,
+                "ever_paid": 29,
+                "paid_by_90": 25,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 62791,
+                "end_median": 13000.0,
+                "monthly_mean": -12689.566210045661,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 27.0,
+                "ever_paid": 14,
+                "paid_by_90": 13,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 58539,
+                "end_median": 13000.0,
+                "monthly_mean": -13963.65296803653,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 27.0,
+                "ever_paid": 14,
+                "paid_by_90": 13,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 54287,
+                "end_median": 13000.0,
+                "monthly_mean": -15237.739726027396,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 27,
+                "ever_paid": 5,
+                "paid_by_90": 5,
+                "first_eval_passes": 20,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "quick_intraday",
+      "size": 50,
+      "quantity": 2,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 956872,
+        "rates": {
+          "sale": {
+            "fee": 4900,
+            "portfolios": {
+              "1": {
+                "end_mean": 140603,
+                "end_median": 90524.0,
+                "monthly_mean": 12783.87899543379,
+                "monthly_median": -5608.666666666667,
+                "median_fees_90": 56350.0,
+                "median_fees_end": 83300.0,
+                "first_paid_days": 67,
+                "ever_paid": 145,
+                "paid_by_90": 111,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 190768,
+                "end_median": 164348.0,
+                "monthly_mean": 23831.995433789954,
+                "monthly_median": -9800.0,
+                "median_fees_90": 98000.0,
+                "median_fees_end": 98000.0,
+                "first_paid_days": 52,
+                "ever_paid": 99,
+                "paid_by_90": 70,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 242065,
+                "end_median": 123386.0,
+                "monthly_mean": 40461.62785388128,
+                "monthly_median": -32666.666666666668,
+                "median_fees_90": 98000.0,
+                "median_fees_end": 98000.0,
+                "first_paid_days": 50.5,
+                "ever_paid": 76,
+                "paid_by_90": 57,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 263888,
+                "end_median": 2000.0,
+                "monthly_mean": 53683.799086757994,
+                "monthly_median": -32666.666666666668,
+                "median_fees_90": 98000.0,
+                "median_fees_end": 98000.0,
+                "first_paid_days": 38,
+                "ever_paid": 49,
+                "paid_by_90": 47,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 247531,
+                "end_median": 2000.0,
+                "monthly_mean": 49456.735159817355,
+                "monthly_median": -32666.666666666668,
+                "median_fees_90": 98000.0,
+                "median_fees_end": 98000.0,
+                "first_paid_days": 31,
+                "ever_paid": 35,
+                "paid_by_90": 35,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 12400,
+            "portfolios": {
+              "1": {
+                "end_mean": 87930,
+                "end_median": 41262.0,
+                "monthly_mean": -4832.166666666667,
+                "monthly_median": -24800.0,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 52,
+                "ever_paid": 85,
+                "paid_by_90": 62,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 99012,
+                "end_median": 800.0,
+                "monthly_mean": -46.07305936073059,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 31,
+                "ever_paid": 35,
+                "paid_by_90": 35,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 97936,
+                "end_median": 800.0,
+                "monthly_mean": -631.5228310502283,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 30,
+                "ever_paid": 27,
+                "paid_by_90": 27,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 79466,
+                "end_median": 800.0,
+                "monthly_mean": -6844.75799086758,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 25.5,
+                "ever_paid": 14,
+                "paid_by_90": 14,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 67608,
+                "end_median": 800.0,
+                "monthly_mean": -10797.344748858448,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 25.5,
+                "ever_paid": 14,
+                "paid_by_90": 14,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 428872,
+        "rates": {
+          "sale": {
+            "fee": 4900,
+            "portfolios": {
+              "1": {
+                "end_mean": 134296,
+                "end_median": 82174.0,
+                "monthly_mean": 11250.077625570775,
+                "monthly_median": -5942.0,
+                "median_fees_90": 58800.0,
+                "median_fees_end": 88200.0,
+                "first_paid_days": 65.0,
+                "ever_paid": 140,
+                "paid_by_90": 106,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 166627,
+                "end_median": 81924.0,
+                "monthly_mean": 23084.00913242009,
+                "monthly_median": -14700.0,
+                "median_fees_90": 98000.0,
+                "median_fees_end": 98000.0,
+                "first_paid_days": 43,
+                "ever_paid": 77,
+                "paid_by_90": 69,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 220826,
+                "end_median": 2000.0,
+                "monthly_mean": 41292.52511415525,
+                "monthly_median": -32666.666666666668,
+                "median_fees_90": 98000.0,
+                "median_fees_end": 98000.0,
+                "first_paid_days": 36,
+                "ever_paid": 57,
+                "paid_by_90": 56,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 266002,
+                "end_median": 2000.0,
+                "monthly_mean": 55138.739726027394,
+                "monthly_median": -32666.666666666668,
+                "median_fees_90": 98000.0,
+                "median_fees_end": 98000.0,
+                "first_paid_days": 36,
+                "ever_paid": 47,
+                "paid_by_90": 46,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 255881,
+                "end_median": 2000.0,
+                "monthly_mean": 51380.70776255708,
+                "monthly_median": -32666.666666666668,
+                "median_fees_90": 98000.0,
+                "median_fees_end": 98000.0,
+                "first_paid_days": 32.5,
+                "ever_paid": 36,
+                "paid_by_90": 35,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 12400,
+            "portfolios": {
+              "1": {
+                "end_mean": 77562,
+                "end_median": 800.0,
+                "monthly_mean": -5325.7945205479455,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 39,
+                "ever_paid": 63,
+                "paid_by_90": 61,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 102352,
+                "end_median": 800.0,
+                "monthly_mean": 757.7625570776255,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 32.5,
+                "ever_paid": 36,
+                "paid_by_90": 35,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 101361,
+                "end_median": 800.0,
+                "monthly_mean": 46.18264840182649,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 31.5,
+                "ever_paid": 28,
+                "paid_by_90": 27,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 82748,
+                "end_median": 800.0,
+                "monthly_mean": -6369.461187214612,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 27,
+                "ever_paid": 15,
+                "paid_by_90": 14,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 70125,
+                "end_median": 800.0,
+                "monthly_mean": -10422.675799086757,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 27,
+                "ever_paid": 15,
+                "paid_by_90": 14,
+                "first_eval_passes": 13,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "fast_pass",
+      "size": 100,
+      "quantity": 1,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 478436,
+        "rates": {
+          "sale": {
+            "fee": 19900,
+            "portfolios": {
+              "1": {
+                "end_mean": 293193,
+                "end_median": 320400.0,
+                "monthly_mean": 22343.66894977169,
+                "monthly_median": 23558.666666666668,
+                "median_fees_90": 59700.0,
+                "median_fees_end": 79600.0,
+                "first_paid_days": 78,
+                "ever_paid": 145,
+                "paid_by_90": 93,
+                "first_eval_passes": 53,
+                "review_windows": 3
+              },
+              "2": {
+                "end_mean": 355333,
+                "end_median": 300500.0,
+                "monthly_mean": 33646.09132420091,
+                "monthly_median": 171.0,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 71,
+                "ever_paid": 93,
+                "paid_by_90": 73,
+                "first_eval_passes": 53,
+                "review_windows": 3
+              },
+              "3": {
+                "end_mean": 348460,
+                "end_median": 500.0,
+                "monthly_mean": 36156.719178082196,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 53,
+                "ever_paid": 53,
+                "paid_by_90": 51,
+                "first_eval_passes": 53,
+                "review_windows": 3
+              },
+              "4": {
+                "end_mean": 350951,
+                "end_median": 500.0,
+                "monthly_mean": 33777.45205479452,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 53,
+                "ever_paid": 53,
+                "paid_by_90": 51,
+                "first_eval_passes": 53,
+                "review_windows": 3
+              },
+              "5": {
+                "end_mean": 353441,
+                "end_median": 500.0,
+                "monthly_mean": 31398.18493150685,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 61,
+                "ever_paid": 25,
+                "paid_by_90": 25,
+                "first_eval_passes": 53,
+                "review_windows": 3
+              }
+            }
+          },
+          "list": {
+            "fee": 49800,
+            "portfolios": {
+              "1": {
+                "end_mean": 141339,
+                "end_median": 400.0,
+                "monthly_mean": -3629.4954337899544,
+                "monthly_median": -33200.0,
+                "median_fees_90": 99600.0,
+                "median_fees_end": 99600.0,
+                "first_paid_days": 53,
+                "ever_paid": 53,
+                "paid_by_90": 51,
+                "first_eval_passes": 53,
+                "review_windows": 3
+              },
+              "2": {
+                "end_mean": 141576,
+                "end_median": 400.0,
+                "monthly_mean": -7374.059360730594,
+                "monthly_median": -33200.0,
+                "median_fees_90": 99600.0,
+                "median_fees_end": 99600.0,
+                "first_paid_days": 61,
+                "ever_paid": 25,
+                "paid_by_90": 25,
+                "first_eval_passes": 53,
+                "review_windows": 3
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 214436,
+        "rates": {
+          "sale": {
+            "fee": 19900,
+            "portfolios": {
+              "1": {
+                "end_mean": 287331,
+                "end_median": 307126.0,
+                "monthly_mean": 19488.3401826484,
+                "monthly_median": 12408.666666666666,
+                "median_fees_90": 59700.0,
+                "median_fees_end": 79600.0,
+                "first_paid_days": 79.0,
+                "ever_paid": 134,
+                "paid_by_90": 85,
+                "first_eval_passes": 44,
+                "review_windows": 7
+              },
+              "2": {
+                "end_mean": 357355,
+                "end_median": 300500.0,
+                "monthly_mean": 31129.794520547945,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 77,
+                "ever_paid": 97,
+                "paid_by_90": 67,
+                "first_eval_passes": 44,
+                "review_windows": 7
+              },
+              "3": {
+                "end_mean": 325701,
+                "end_median": 500.0,
+                "monthly_mean": 34059.760273972606,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 53,
+                "ever_paid": 49,
+                "paid_by_90": 46,
+                "first_eval_passes": 44,
+                "review_windows": 7
+              },
+              "4": {
+                "end_mean": 323880,
+                "end_median": 500.0,
+                "monthly_mean": 31779.452054794518,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 53,
+                "ever_paid": 49,
+                "paid_by_90": 46,
+                "first_eval_passes": 44,
+                "review_windows": 7
+              },
+              "5": {
+                "end_mean": 322059,
+                "end_median": 500.0,
+                "monthly_mean": 29499.14383561644,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 53,
+                "ever_paid": 21,
+                "paid_by_90": 21,
+                "first_eval_passes": 44,
+                "review_windows": 7
+              }
+            }
+          },
+          "list": {
+            "fee": 49800,
+            "portfolios": {
+              "1": {
+                "end_mean": 133097,
+                "end_median": 400.0,
+                "monthly_mean": -4692.865296803653,
+                "monthly_median": -33200.0,
+                "median_fees_90": 99600.0,
+                "median_fees_end": 99600.0,
+                "first_paid_days": 53,
+                "ever_paid": 49,
+                "paid_by_90": 46,
+                "first_eval_passes": 44,
+                "review_windows": 7
+              },
+              "2": {
+                "end_mean": 129024,
+                "end_median": 400.0,
+                "monthly_mean": -8133.675799086758,
+                "monthly_median": -33200.0,
+                "median_fees_90": 99600.0,
+                "median_fees_end": 99600.0,
+                "first_paid_days": 53,
+                "ever_paid": 21,
+                "paid_by_90": 21,
+                "first_eval_passes": 44,
+                "review_windows": 7
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "quick_eod",
+      "size": 100,
+      "quantity": 1,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 478436,
+        "rates": {
+          "sale": {
+            "fee": 11900,
+            "portfolios": {
+              "1": {
+                "end_mean": 138047,
+                "end_median": 130895.0,
+                "monthly_mean": 9659.771689497717,
+                "monthly_median": 11543.333333333334,
+                "median_fees_90": 47600.0,
+                "median_fees_end": 71400.0,
+                "first_paid_days": 63,
+                "ever_paid": 145,
+                "paid_by_90": 123,
+                "first_eval_passes": 35,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 198049,
+                "end_median": 209390.0,
+                "monthly_mean": 22525.47945205479,
+                "monthly_median": 36463.333333333336,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 63,
+                "ever_paid": 145,
+                "paid_by_90": 123,
+                "first_eval_passes": 35,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 216953,
+                "end_median": 209390.0,
+                "monthly_mean": 27627.956621004563,
+                "monthly_median": 32287.666666666668,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 59.5,
+                "ever_paid": 120,
+                "paid_by_90": 100,
+                "first_eval_passes": 35,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 219675,
+                "end_median": 118040.0,
+                "monthly_mean": 27934.840182648404,
+                "monthly_median": -15866.666666666666,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 49,
+                "ever_paid": 79,
+                "paid_by_90": 68,
+                "first_eval_passes": 35,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 219460,
+                "end_median": 89730.0,
+                "monthly_mean": 28953.34474885845,
+                "monthly_median": -19833.333333333332,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 49,
+                "ever_paid": 79,
+                "paid_by_90": 68,
+                "first_eval_passes": 35,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 29800,
+            "portfolios": {
+              "1": {
+                "end_mean": 90062,
+                "end_median": 112895.0,
+                "monthly_mean": -6392.716894977169,
+                "monthly_median": -4452.0,
+                "median_fees_90": 89400.0,
+                "median_fees_end": 89400.0,
+                "first_paid_days": 59.5,
+                "ever_paid": 120,
+                "paid_by_90": 100,
+                "first_eval_passes": 35,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 91193,
+                "end_median": 38910.0,
+                "monthly_mean": -6669.977168949772,
+                "monthly_median": -20363.333333333332,
+                "median_fees_90": 89400.0,
+                "median_fees_end": 89400.0,
+                "first_paid_days": 49,
+                "ever_paid": 79,
+                "paid_by_90": 68,
+                "first_eval_passes": 35,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 90855,
+                "end_median": 10600.0,
+                "monthly_mean": -5896.678082191781,
+                "monthly_median": -29800.0,
+                "median_fees_90": 89400.0,
+                "median_fees_end": 89400.0,
+                "first_paid_days": 34,
+                "ever_paid": 33,
+                "paid_by_90": 30,
+                "first_eval_passes": 35,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 214436,
+        "rates": {
+          "sale": {
+            "fee": 11900,
+            "portfolios": {
+              "1": {
+                "end_mean": 133644,
+                "end_median": 137739.0,
+                "monthly_mean": 9281.002283105023,
+                "monthly_median": 11126.666666666666,
+                "median_fees_90": 47600.0,
+                "median_fees_end": 71400.0,
+                "first_paid_days": 64,
+                "ever_paid": 145,
+                "paid_by_90": 119,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 193398,
+                "end_median": 214360.0,
+                "monthly_mean": 21202.004566210046,
+                "monthly_median": 38120.0,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 63.0,
+                "ever_paid": 142,
+                "paid_by_90": 116,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 211942,
+                "end_median": 223078.0,
+                "monthly_mean": 27186.821917808218,
+                "monthly_median": 30787.333333333332,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 60,
+                "ever_paid": 117,
+                "paid_by_90": 95,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 220828,
+                "end_median": 108040.0,
+                "monthly_mean": 26448.493150684928,
+                "monthly_median": -31733.333333333332,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 45.5,
+                "ever_paid": 76,
+                "paid_by_90": 63,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 220249,
+                "end_median": 82230.0,
+                "monthly_mean": 27204.65296803653,
+                "monthly_median": -31733.333333333332,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 45.5,
+                "ever_paid": 76,
+                "paid_by_90": 63,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 29800,
+            "portfolios": {
+              "1": {
+                "end_mean": 87413,
+                "end_median": 115380.0,
+                "monthly_mean": -6304.888127853882,
+                "monthly_median": -8918.0,
+                "median_fees_90": 89400.0,
+                "median_fees_end": 89400.0,
+                "first_paid_days": 60,
+                "ever_paid": 117,
+                "paid_by_90": 95,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 91444,
+                "end_median": 36410.0,
+                "monthly_mean": -7317.662100456621,
+                "monthly_median": -29800.0,
+                "median_fees_90": 89400.0,
+                "median_fees_end": 89400.0,
+                "first_paid_days": 45.5,
+                "ever_paid": 76,
+                "paid_by_90": 63,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 90743,
+                "end_median": 10600.0,
+                "monthly_mean": -6847.575342465753,
+                "monthly_median": -29800.0,
+                "median_fees_90": 89400.0,
+                "median_fees_end": 89400.0,
+                "first_paid_days": 33.5,
+                "ever_paid": 30,
+                "paid_by_90": 26,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "quick_intraday",
+      "size": 100,
+      "quantity": 1,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 478436,
+        "rates": {
+          "sale": {
+            "fee": 9900,
+            "portfolios": {
+              "1": {
+                "end_mean": 176578,
+                "end_median": 150592.0,
+                "monthly_mean": 15068.187214611871,
+                "monthly_median": 14298.333333333334,
+                "median_fees_90": 49500.0,
+                "median_fees_end": 59400.0,
+                "first_paid_days": 56,
+                "ever_paid": 145,
+                "paid_by_90": 134,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 226565,
+                "end_median": 205590.0,
+                "monthly_mean": 28182.08219178082,
+                "monthly_median": 35196.666666666664,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 54.0,
+                "ever_paid": 132,
+                "paid_by_90": 121,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 232178,
+                "end_median": 301276.0,
+                "monthly_mean": 32325.522831050228,
+                "monthly_median": 31021.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 52,
+                "ever_paid": 115,
+                "paid_by_90": 104,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 247956,
+                "end_median": 205590.0,
+                "monthly_mean": 35844.08219178082,
+                "monthly_median": 33728.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 45,
+                "ever_paid": 91,
+                "paid_by_90": 80,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 262289,
+                "end_median": 1000.0,
+                "monthly_mean": 39035.92465753425,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 41,
+                "ever_paid": 69,
+                "paid_by_90": 58,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 24800,
+            "portfolios": {
+              "1": {
+                "end_mean": 89946,
+                "end_median": 103095.0,
+                "monthly_mean": -5763.778538812785,
+                "monthly_median": 297.3333333333333,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 52,
+                "ever_paid": 115,
+                "paid_by_90": 104,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 105520,
+                "end_median": 800.0,
+                "monthly_mean": -3844.0776255707765,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 41,
+                "ever_paid": 69,
+                "paid_by_90": 58,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 106275,
+                "end_median": 800.0,
+                "monthly_mean": -2649.093607305936,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 41,
+                "ever_paid": 69,
+                "paid_by_90": 58,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 107031,
+                "end_median": 800.0,
+                "monthly_mean": -1454.109589041096,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 33.5,
+                "ever_paid": 32,
+                "paid_by_90": 29,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 214436,
+        "rates": {
+          "sale": {
+            "fee": 9900,
+            "portfolios": {
+              "1": {
+                "end_mean": 175517,
+                "end_median": 145380.0,
+                "monthly_mean": 15704.19406392694,
+                "monthly_median": 16579.666666666668,
+                "median_fees_90": 49500.0,
+                "median_fees_end": 69300.0,
+                "first_paid_days": 59,
+                "ever_paid": 145,
+                "paid_by_90": 130,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 225650,
+                "end_median": 215160.0,
+                "monthly_mean": 29004.64383561644,
+                "monthly_median": 39073.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 55,
+                "ever_paid": 129,
+                "paid_by_90": 116,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 226283,
+                "end_median": 315340.0,
+                "monthly_mean": 32893.593607305935,
+                "monthly_median": 9482.833333333334,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 51.5,
+                "ever_paid": 112,
+                "paid_by_90": 99,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 244873,
+                "end_median": 219278.0,
+                "monthly_mean": 35438.94063926941,
+                "monthly_median": 11097.333333333334,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 45.0,
+                "ever_paid": 88,
+                "paid_by_90": 75,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 264911,
+                "end_median": 1000.0,
+                "monthly_mean": 37548.85844748859,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 41.0,
+                "ever_paid": 66,
+                "paid_by_90": 53,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 24800,
+            "portfolios": {
+              "1": {
+                "end_mean": 88182,
+                "end_median": 107880.0,
+                "monthly_mean": -5249.319634703196,
+                "monthly_median": 2626.6666666666665,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 51.5,
+                "ever_paid": 112,
+                "paid_by_90": 99,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 106568,
+                "end_median": 800.0,
+                "monthly_mean": -4370.867579908676,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 41.0,
+                "ever_paid": 66,
+                "paid_by_90": 53,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 106759,
+                "end_median": 800.0,
+                "monthly_mean": -3535.0045662100456,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 41.0,
+                "ever_paid": 66,
+                "paid_by_90": 53,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 106950,
+                "end_median": 800.0,
+                "monthly_mean": -2699.1415525114157,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 33,
+                "ever_paid": 29,
+                "paid_by_90": 25,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "fast_pass",
+      "size": 100,
+      "quantity": 2,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 956872,
+        "rates": {
+          "sale": {
+            "fee": 19900,
+            "portfolios": {
+              "1": {
+                "end_mean": 452977,
+                "end_median": 600500.0,
+                "monthly_mean": 54617.35159817352,
+                "monthly_median": 73466.66666666667,
+                "median_fees_90": 79600.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 47,
+                "ever_paid": 101,
+                "paid_by_90": 101,
+                "first_eval_passes": 47,
+                "review_windows": 36
+              },
+              "2": {
+                "end_mean": 501745,
+                "end_median": 500.0,
+                "monthly_mean": 67452.28310502283,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 33,
+                "ever_paid": 61,
+                "paid_by_90": 61,
+                "first_eval_passes": 47,
+                "review_windows": 31
+              },
+              "3": {
+                "end_mean": 547453,
+                "end_median": 500.0,
+                "monthly_mean": 84858.44748858448,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 32,
+                "ever_paid": 49,
+                "paid_by_90": 49,
+                "first_eval_passes": 47,
+                "review_windows": 21
+              },
+              "4": {
+                "end_mean": 618155,
+                "end_median": 500.0,
+                "monthly_mean": 102900.68493150685,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 32,
+                "ever_paid": 49,
+                "paid_by_90": 49,
+                "first_eval_passes": 47,
+                "review_windows": 21
+              },
+              "5": {
+                "end_mean": 688856,
+                "end_median": 500.0,
+                "monthly_mean": 120942.92237442922,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 30,
+                "ever_paid": 33,
+                "paid_by_90": 33,
+                "first_eval_passes": 47,
+                "review_windows": 20
+              }
+            }
+          },
+          "list": {
+            "fee": 49800,
+            "portfolios": {
+              "1": {
+                "end_mean": 209956,
+                "end_median": 400.0,
+                "monthly_mean": 12108.21917808219,
+                "monthly_median": -33200.0,
+                "median_fees_90": 99600.0,
+                "median_fees_end": 99600.0,
+                "first_paid_days": 32,
+                "ever_paid": 49,
+                "paid_by_90": 49,
+                "first_eval_passes": 47,
+                "review_windows": 21
+              },
+              "2": {
+                "end_mean": 275742,
+                "end_median": 400.0,
+                "monthly_mean": 28443.83561643836,
+                "monthly_median": -33200.0,
+                "median_fees_90": 99600.0,
+                "median_fees_end": 99600.0,
+                "first_paid_days": 30,
+                "ever_paid": 33,
+                "paid_by_90": 33,
+                "first_eval_passes": 47,
+                "review_windows": 20
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 428872,
+        "rates": {
+          "sale": {
+            "fee": 19900,
+            "portfolios": {
+              "1": {
+                "end_mean": 424293,
+                "end_median": 535450.0,
+                "monthly_mean": 45052.739726027394,
+                "monthly_median": 66833.33333333333,
+                "median_fees_90": 79600.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 47,
+                "ever_paid": 101,
+                "paid_by_90": 93,
+                "first_eval_passes": 40,
+                "review_windows": 33
+              },
+              "2": {
+                "end_mean": 464360,
+                "end_median": 500.0,
+                "monthly_mean": 52593.37899543379,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 34,
+                "ever_paid": 63,
+                "paid_by_90": 56,
+                "first_eval_passes": 40,
+                "review_windows": 28
+              },
+              "3": {
+                "end_mean": 474655,
+                "end_median": 500.0,
+                "monthly_mean": 62647.03196347033,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 32,
+                "ever_paid": 45,
+                "paid_by_90": 45,
+                "first_eval_passes": 40,
+                "review_windows": 18
+              },
+              "4": {
+                "end_mean": 507269,
+                "end_median": 500.0,
+                "monthly_mean": 72103.19634703196,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 32,
+                "ever_paid": 45,
+                "paid_by_90": 45,
+                "first_eval_passes": 40,
+                "review_windows": 18
+              },
+              "5": {
+                "end_mean": 539884,
+                "end_median": 500.0,
+                "monthly_mean": 81559.3607305936,
+                "monthly_median": -33166.666666666664,
+                "median_fees_90": 99500.0,
+                "median_fees_end": 99500.0,
+                "first_paid_days": 29,
+                "ever_paid": 29,
+                "paid_by_90": 29,
+                "first_eval_passes": 40,
+                "review_windows": 17
+              }
+            }
+          },
+          "list": {
+            "fee": 49800,
+            "portfolios": {
+              "1": {
+                "end_mean": 187021,
+                "end_median": 400.0,
+                "monthly_mean": 4463.013698630137,
+                "monthly_median": -33200.0,
+                "median_fees_90": 99600.0,
+                "median_fees_end": 99600.0,
+                "first_paid_days": 32,
+                "ever_paid": 45,
+                "paid_by_90": 45,
+                "first_eval_passes": 40,
+                "review_windows": 18
+              },
+              "2": {
+                "end_mean": 216153,
+                "end_median": 400.0,
+                "monthly_mean": 12690.410958904109,
+                "monthly_median": -33200.0,
+                "median_fees_90": 99600.0,
+                "median_fees_end": 99600.0,
+                "first_paid_days": 29,
+                "ever_paid": 29,
+                "paid_by_90": 29,
+                "first_eval_passes": 40,
+                "review_windows": 17
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "quick_eod",
+      "size": 100,
+      "quantity": 2,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 956872,
+        "rates": {
+          "sale": {
+            "fee": 11900,
+            "portfolios": {
+              "1": {
+                "end_mean": 117680,
+                "end_median": 85974.0,
+                "monthly_mean": 5721.098173515981,
+                "monthly_median": -8679.333333333334,
+                "median_fees_90": 59500.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 64.5,
+                "ever_paid": 138,
+                "paid_by_90": 105,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 154844,
+                "end_median": 71724.0,
+                "monthly_mean": 11578.091324200914,
+                "monthly_median": -23800.0,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 47.5,
+                "ever_paid": 86,
+                "paid_by_90": 63,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 146888,
+                "end_median": 4800.0,
+                "monthly_mean": 11743.751141552513,
+                "monthly_median": -31733.333333333332,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 40,
+                "ever_paid": 63,
+                "paid_by_90": 50,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 134868,
+                "end_median": 4800.0,
+                "monthly_mean": 11660.885844748858,
+                "monthly_median": -31733.333333333332,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 29.0,
+                "ever_paid": 32,
+                "paid_by_90": 30,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 119564,
+                "end_median": 4800.0,
+                "monthly_mean": 6550.025114155251,
+                "monthly_median": -31733.333333333332,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 29.0,
+                "ever_paid": 32,
+                "paid_by_90": 30,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 29800,
+            "portfolios": {
+              "1": {
+                "end_mean": 65999,
+                "end_median": 10600.0,
+                "monthly_mean": -12995.324200913243,
+                "monthly_median": -29800.0,
+                "median_fees_90": 89400.0,
+                "median_fees_end": 89400.0,
+                "first_paid_days": 40,
+                "ever_paid": 63,
+                "paid_by_90": 50,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 51846,
+                "end_median": 10600.0,
+                "monthly_mean": -15878.260273972604,
+                "monthly_median": -29800.0,
+                "median_fees_90": 89400.0,
+                "median_fees_end": 89400.0,
+                "first_paid_days": 29.0,
+                "ever_paid": 32,
+                "paid_by_90": 30,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 36420,
+                "end_median": 10600.0,
+                "monthly_mean": -21193.45890410959,
+                "monthly_median": -29800.0,
+                "median_fees_90": 89400.0,
+                "median_fees_end": 89400.0,
+                "first_paid_days": 27.0,
+                "ever_paid": 12,
+                "paid_by_90": 12,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 428872,
+        "rates": {
+          "sale": {
+            "fee": 11900,
+            "portfolios": {
+              "1": {
+                "end_mean": 120476,
+                "end_median": 84974.0,
+                "monthly_mean": 6320.753424657534,
+                "monthly_median": -8389.666666666666,
+                "median_fees_90": 59500.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 64,
+                "ever_paid": 135,
+                "paid_by_90": 104,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 155090,
+                "end_median": 70724.0,
+                "monthly_mean": 13363.625570776256,
+                "monthly_median": -23800.0,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 45.0,
+                "ever_paid": 80,
+                "paid_by_90": 61,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 156109,
+                "end_median": 4800.0,
+                "monthly_mean": 14643.182648401826,
+                "monthly_median": -31733.333333333332,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 38.0,
+                "ever_paid": 62,
+                "paid_by_90": 50,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 147232,
+                "end_median": 4800.0,
+                "monthly_mean": 15555.159817351598,
+                "monthly_median": -31733.333333333332,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 29.0,
+                "ever_paid": 32,
+                "paid_by_90": 31,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 132834,
+                "end_median": 4800.0,
+                "monthly_mean": 10802.981735159818,
+                "monthly_median": -31733.333333333332,
+                "median_fees_90": 95200.0,
+                "median_fees_end": 95200.0,
+                "first_paid_days": 29.0,
+                "ever_paid": 32,
+                "paid_by_90": 31,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 29800,
+            "portfolios": {
+              "1": {
+                "end_mean": 69309,
+                "end_median": 10600.0,
+                "monthly_mean": -11950.657534246575,
+                "monthly_median": -29800.0,
+                "median_fees_90": 89400.0,
+                "median_fees_end": 89400.0,
+                "first_paid_days": 38.0,
+                "ever_paid": 62,
+                "paid_by_90": 50,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 56935,
+                "end_median": 10600.0,
+                "monthly_mean": -14197.698630136985,
+                "monthly_median": -29800.0,
+                "median_fees_90": 89400.0,
+                "median_fees_end": 89400.0,
+                "first_paid_days": 29.0,
+                "ever_paid": 32,
+                "paid_by_90": 31,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 42415,
+                "end_median": 10600.0,
+                "monthly_mean": -19195.08219178082,
+                "monthly_median": -29800.0,
+                "median_fees_90": 89400.0,
+                "median_fees_end": 89400.0,
+                "first_paid_days": 27,
+                "ever_paid": 13,
+                "paid_by_90": 13,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "quick_intraday",
+      "size": 100,
+      "quantity": 2,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 956872,
+        "rates": {
+          "sale": {
+            "fee": 9900,
+            "portfolios": {
+              "1": {
+                "end_mean": 102100,
+                "end_median": 82174.0,
+                "monthly_mean": 459.3493150684931,
+                "monthly_median": -16438.0,
+                "median_fees_90": 79200.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 60.0,
+                "ever_paid": 128,
+                "paid_by_90": 95,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 134311,
+                "end_median": 52598.0,
+                "monthly_mean": 8517.808219178083,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 42,
+                "ever_paid": 75,
+                "paid_by_90": 62,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 137555,
+                "end_median": 1000.0,
+                "monthly_mean": 11832.116438356165,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 34.5,
+                "ever_paid": 56,
+                "paid_by_90": 52,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 126331,
+                "end_median": 1000.0,
+                "monthly_mean": 8181.48401826484,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 31,
+                "ever_paid": 43,
+                "paid_by_90": 39,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 105607,
+                "end_median": 1000.0,
+                "monthly_mean": 1825.285388127854,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 27.5,
+                "ever_paid": 24,
+                "paid_by_90": 22,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 24800,
+            "portfolios": {
+              "1": {
+                "end_mean": 53867,
+                "end_median": 800.0,
+                "monthly_mean": -14941.627853881278,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 34.5,
+                "ever_paid": 56,
+                "paid_by_90": 52,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 42643,
+                "end_median": 800.0,
+                "monthly_mean": -18864.40639269406,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 27.5,
+                "ever_paid": 24,
+                "paid_by_90": 22,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 37150,
+                "end_median": 800.0,
+                "monthly_mean": -20822.69178082192,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 27.5,
+                "ever_paid": 24,
+                "paid_by_90": 22,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 31657,
+                "end_median": 800.0,
+                "monthly_mean": -22780.977168949772,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 28.0,
+                "ever_paid": 8,
+                "paid_by_90": 8,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 428872,
+        "rates": {
+          "sale": {
+            "fee": 9900,
+            "portfolios": {
+              "1": {
+                "end_mean": 105980,
+                "end_median": 72242.0,
+                "monthly_mean": 1911.2237442922376,
+                "monthly_median": -13638.0,
+                "median_fees_90": 79200.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 60.0,
+                "ever_paid": 128,
+                "paid_by_90": 105,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 140850,
+                "end_median": 57772.0,
+                "monthly_mean": 12622.14611872146,
+                "monthly_median": -14076.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 42,
+                "ever_paid": 75,
+                "paid_by_90": 70,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 148051,
+                "end_median": 1000.0,
+                "monthly_mean": 14062.44292237443,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 35.0,
+                "ever_paid": 58,
+                "paid_by_90": 53,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 137419,
+                "end_median": 1000.0,
+                "monthly_mean": 10954.374429223744,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 30.5,
+                "ever_paid": 44,
+                "paid_by_90": 39,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 118839,
+                "end_median": 1000.0,
+                "monthly_mean": 5929.657534246576,
+                "monthly_median": -33000.0,
+                "median_fees_90": 99000.0,
+                "median_fees_end": 99000.0,
+                "first_paid_days": 27.5,
+                "ever_paid": 24,
+                "paid_by_90": 23,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 24800,
+            "portfolios": {
+              "1": {
+                "end_mean": 58568,
+                "end_median": 800.0,
+                "monthly_mean": -13876.461187214612,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 35.0,
+                "ever_paid": 58,
+                "paid_by_90": 53,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 47936,
+                "end_median": 800.0,
+                "monthly_mean": -17154.621004566212,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 27.5,
+                "ever_paid": 24,
+                "paid_by_90": 23,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 43834,
+                "end_median": 800.0,
+                "monthly_mean": -18621.84931506849,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 27.5,
+                "ever_paid": 24,
+                "paid_by_90": 23,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 39733,
+                "end_median": 800.0,
+                "monthly_mean": -20089.077625570775,
+                "monthly_median": -33066.666666666664,
+                "median_fees_90": 99200.0,
+                "median_fees_end": 99200.0,
+                "first_paid_days": 28,
+                "ever_paid": 9,
+                "paid_by_90": 9,
+                "first_eval_passes": 23,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "fast_pass",
+      "size": 150,
+      "quantity": 1,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 478436,
+        "rates": {
+          "sale": {
+            "fee": 29000,
+            "portfolios": {
+              "1": {
+                "end_mean": 252486,
+                "end_median": 193000.0,
+                "monthly_mean": 4543.37899543379,
+                "monthly_median": -19333.333333333332,
+                "median_fees_90": 58000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 92.5,
+                "ever_paid": 98,
+                "paid_by_90": 44,
+                "first_eval_passes": 69,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 272856,
+                "end_median": 193000.0,
+                "monthly_mean": 3543.37899543379,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 88,
+                "ever_paid": 77,
+                "paid_by_90": 44,
+                "first_eval_passes": 69,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 190534,
+                "end_median": 13000.0,
+                "monthly_mean": -11739.726027397259,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 84.0,
+                "ever_paid": 16,
+                "paid_by_90": 14,
+                "first_eval_passes": 69,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 72500,
+            "portfolios": {
+              "1": {
+                "end_mean": 86678,
+                "end_median": 27500.0,
+                "monthly_mean": -18413.24200913242,
+                "monthly_median": -24166.666666666668,
+                "median_fees_90": 72500.0,
+                "median_fees_end": 72500.0,
+                "first_paid_days": 84.0,
+                "ever_paid": 16,
+                "paid_by_90": 14,
+                "first_eval_passes": 69,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 214436,
+        "rates": {
+          "sale": {
+            "fee": 29000,
+            "portfolios": {
+              "1": {
+                "end_mean": 280007,
+                "end_median": 373000.0,
+                "monthly_mean": 4705.479452054795,
+                "monthly_median": -19333.333333333332,
+                "median_fees_90": 72500.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 94,
+                "ever_paid": 109,
+                "paid_by_90": 48,
+                "first_eval_passes": 55,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 234836,
+                "end_median": 13000.0,
+                "monthly_mean": -12867.579908675798,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 92,
+                "ever_paid": 63,
+                "paid_by_90": 28,
+                "first_eval_passes": 55,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 183137,
+                "end_median": 13000.0,
+                "monthly_mean": -17904.109589041098,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 88.5,
+                "ever_paid": 14,
+                "paid_by_90": 9,
+                "first_eval_passes": 55,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 72500,
+            "portfolios": {
+              "1": {
+                "end_mean": 84212,
+                "end_median": 27500.0,
+                "monthly_mean": -20468.036529680365,
+                "monthly_median": -24166.666666666668,
+                "median_fees_90": 72500.0,
+                "median_fees_end": 72500.0,
+                "first_paid_days": 88.5,
+                "ever_paid": 14,
+                "paid_by_90": 9,
+                "first_eval_passes": 55,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "quick_eod",
+      "size": 150,
+      "quantity": 1,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 478436,
+        "rates": {
+          "sale": {
+            "fee": 17600,
+            "portfolios": {
+              "1": {
+                "end_mean": 217767,
+                "end_median": 233836.0,
+                "monthly_mean": 17025.098173515984,
+                "monthly_median": 19362.333333333332,
+                "median_fees_90": 52800.0,
+                "median_fees_end": 70400.0,
+                "first_paid_days": 77,
+                "ever_paid": 135,
+                "paid_by_90": 92,
+                "first_eval_passes": 68,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 307481,
+                "end_median": 256052.0,
+                "monthly_mean": 35155.004566210046,
+                "monthly_median": 42972.333333333336,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 77,
+                "ever_paid": 135,
+                "paid_by_90": 92,
+                "first_eval_passes": 68,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 285793,
+                "end_median": 233774.0,
+                "monthly_mean": 45878.87214611872,
+                "monthly_median": 41353.333333333336,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 68.5,
+                "ever_paid": 106,
+                "paid_by_90": 85,
+                "first_eval_passes": 68,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 279990,
+                "end_median": 122887.0,
+                "monthly_mean": 47790.73744292237,
+                "monthly_median": 7629.0,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 68.5,
+                "ever_paid": 106,
+                "paid_by_90": 85,
+                "first_eval_passes": 68,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 274186,
+                "end_median": 12000.0,
+                "monthly_mean": 49702.602739726026,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 60.5,
+                "ever_paid": 48,
+                "paid_by_90": 44,
+                "first_eval_passes": 68,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 44000,
+            "portfolios": {
+              "1": {
+                "end_mean": 122859,
+                "end_median": 122887.0,
+                "monthly_mean": 1333.5593607305937,
+                "monthly_median": 6010.0,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 68.5,
+                "ever_paid": 106,
+                "paid_by_90": 85,
+                "first_eval_passes": 68,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 116874,
+                "end_median": 12000.0,
+                "monthly_mean": 2281.041095890411,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 60.5,
+                "ever_paid": 48,
+                "paid_by_90": 44,
+                "first_eval_passes": 68,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 214436,
+        "rates": {
+          "sale": {
+            "fee": 17600,
+            "portfolios": {
+              "1": {
+                "end_mean": 191927,
+                "end_median": 208068.0,
+                "monthly_mean": 14558.14611872146,
+                "monthly_median": 9148.666666666666,
+                "median_fees_90": 52800.0,
+                "median_fees_end": 70400.0,
+                "first_paid_days": 73,
+                "ever_paid": 139,
+                "paid_by_90": 96,
+                "first_eval_passes": 54,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 250056,
+                "end_median": 208068.0,
+                "monthly_mean": 25867.776255707762,
+                "monthly_median": 24069.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 73,
+                "ever_paid": 139,
+                "paid_by_90": 96,
+                "first_eval_passes": 54,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 240719,
+                "end_median": 243804.0,
+                "monthly_mean": 24554.867579908678,
+                "monthly_median": -17600.0,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 69,
+                "ever_paid": 89,
+                "paid_by_90": 71,
+                "first_eval_passes": 54,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 213428,
+                "end_median": 147522.0,
+                "monthly_mean": 23344.762557077625,
+                "monthly_median": -23466.666666666668,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 69,
+                "ever_paid": 89,
+                "paid_by_90": 71,
+                "first_eval_passes": 54,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 186137,
+                "end_median": 12000.0,
+                "monthly_mean": 22134.657534246577,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 61,
+                "ever_paid": 37,
+                "paid_by_90": 33,
+                "first_eval_passes": 54,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 44000,
+            "portfolios": {
+              "1": {
+                "end_mean": 109127,
+                "end_median": 89268.0,
+                "monthly_mean": -7053.840182648401,
+                "monthly_median": -14666.666666666666,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 69,
+                "ever_paid": 89,
+                "paid_by_90": 71,
+                "first_eval_passes": 54,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 81655,
+                "end_median": 12000.0,
+                "monthly_mean": -8746.13698630137,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 61,
+                "ever_paid": 37,
+                "paid_by_90": 33,
+                "first_eval_passes": 54,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "quick_intraday",
+      "size": 150,
+      "quantity": 1,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 478436,
+        "rates": {
+          "sale": {
+            "fee": 15900,
+            "portfolios": {
+              "1": {
+                "end_mean": 185453,
+                "end_median": 164585.0,
+                "monthly_mean": 12630.815068493152,
+                "monthly_median": 8843.333333333334,
+                "median_fees_90": 47700.0,
+                "median_fees_end": 71550.0,
+                "first_paid_days": 74.5,
+                "ever_paid": 138,
+                "paid_by_90": 93,
+                "first_eval_passes": 55,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 270667,
+                "end_median": 292770.0,
+                "monthly_mean": 22864.095890410958,
+                "monthly_median": 15441.333333333334,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 78.5,
+                "ever_paid": 126,
+                "paid_by_90": 81,
+                "first_eval_passes": 55,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 259494,
+                "end_median": 322690.0,
+                "monthly_mean": 34460.95205479452,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 64.5,
+                "ever_paid": 80,
+                "paid_by_90": 66,
+                "first_eval_passes": 55,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 262780,
+                "end_median": 216660.0,
+                "monthly_mean": 39762.30593607306,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 64.5,
+                "ever_paid": 80,
+                "paid_by_90": 66,
+                "first_eval_passes": 55,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 266066,
+                "end_median": 110630.0,
+                "monthly_mean": 45063.6598173516,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 64.5,
+                "ever_paid": 80,
+                "paid_by_90": 66,
+                "first_eval_passes": 55,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 39800,
+            "portfolios": {
+              "1": {
+                "end_mean": 105528,
+                "end_median": 126430.0,
+                "monthly_mean": -4064.3858447488583,
+                "monthly_median": -26533.333333333332,
+                "median_fees_90": 79600.0,
+                "median_fees_end": 79600.0,
+                "first_paid_days": 64.5,
+                "ever_paid": 80,
+                "paid_by_90": 66,
+                "first_eval_passes": 55,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 108651,
+                "end_median": 20400.0,
+                "monthly_mean": 855.0045662100456,
+                "monthly_median": -26533.333333333332,
+                "median_fees_90": 79600.0,
+                "median_fees_end": 79600.0,
+                "first_paid_days": 56.5,
+                "ever_paid": 40,
+                "paid_by_90": 37,
+                "first_eval_passes": 55,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 214436,
+        "rates": {
+          "sale": {
+            "fee": 15900,
+            "portfolios": {
+              "1": {
+                "end_mean": 202791,
+                "end_median": 200668.0,
+                "monthly_mean": 14156.73515981735,
+                "monthly_median": 7554.0,
+                "median_fees_90": 47700.0,
+                "median_fees_end": 79500.0,
+                "first_paid_days": 76.0,
+                "ever_paid": 136,
+                "paid_by_90": 90,
+                "first_eval_passes": 54,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 273127,
+                "end_median": 275644.0,
+                "monthly_mean": 21417.963470319635,
+                "monthly_median": 9964.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 80.5,
+                "ever_paid": 124,
+                "paid_by_90": 78,
+                "first_eval_passes": 54,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 257118,
+                "end_median": 236404.0,
+                "monthly_mean": 25813.205479452055,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 69,
+                "ever_paid": 77,
+                "paid_by_90": 62,
+                "first_eval_passes": 54,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 242600,
+                "end_median": 275644.0,
+                "monthly_mean": 27196.0,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 69,
+                "ever_paid": 77,
+                "paid_by_90": 62,
+                "first_eval_passes": 54,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 228082,
+                "end_median": 140122.0,
+                "monthly_mean": 28578.794520547945,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 69,
+                "ever_paid": 77,
+                "paid_by_90": 62,
+                "first_eval_passes": 54,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 39800,
+            "portfolios": {
+              "1": {
+                "end_mean": 104736,
+                "end_median": 97668.0,
+                "monthly_mean": -6892.401826484019,
+                "monthly_median": -26533.333333333332,
+                "median_fees_90": 79600.0,
+                "median_fees_end": 79600.0,
+                "first_paid_days": 69,
+                "ever_paid": 77,
+                "paid_by_90": 62,
+                "first_eval_passes": 54,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 90055,
+                "end_median": 20400.0,
+                "monthly_mean": -5946.136986301371,
+                "monthly_median": -26533.333333333332,
+                "median_fees_90": 79600.0,
+                "median_fees_end": 79600.0,
+                "first_paid_days": 61,
+                "ever_paid": 37,
+                "paid_by_90": 33,
+                "first_eval_passes": 54,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "fast_pass",
+      "size": 150,
+      "quantity": 2,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 956872,
+        "rates": {
+          "sale": {
+            "fee": 29000,
+            "portfolios": {
+              "1": {
+                "end_mean": 359507,
+                "end_median": 13000.0,
+                "monthly_mean": 38472.602739726026,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 41.0,
+                "ever_paid": 68,
+                "paid_by_90": 68,
+                "first_eval_passes": 52,
+                "review_windows": 25
+              },
+              "2": {
+                "end_mean": 373274,
+                "end_median": 13000.0,
+                "monthly_mean": 41842.46575342466,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 35.0,
+                "ever_paid": 46,
+                "paid_by_90": 46,
+                "first_eval_passes": 52,
+                "review_windows": 17
+              },
+              "3": {
+                "end_mean": 434644,
+                "end_median": 13000.0,
+                "monthly_mean": 53602.739726027394,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 35,
+                "ever_paid": 29,
+                "paid_by_90": 29,
+                "first_eval_passes": 52,
+                "review_windows": 16
+              }
+            }
+          },
+          "list": {
+            "fee": 72500,
+            "portfolios": {
+              "1": {
+                "end_mean": 168048,
+                "end_median": 27500.0,
+                "monthly_mean": 3367.5799086757993,
+                "monthly_median": -24166.666666666668,
+                "median_fees_90": 72500.0,
+                "median_fees_end": 72500.0,
+                "first_paid_days": 35,
+                "ever_paid": 29,
+                "paid_by_90": 29,
+                "first_eval_passes": 52,
+                "review_windows": 16
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 428872,
+        "rates": {
+          "sale": {
+            "fee": 29000,
+            "portfolios": {
+              "1": {
+                "end_mean": 336363,
+                "end_median": 13000.0,
+                "monthly_mean": 29525.11415525114,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 43.5,
+                "ever_paid": 72,
+                "paid_by_90": 63,
+                "first_eval_passes": 43,
+                "review_windows": 17
+              },
+              "2": {
+                "end_mean": 304075,
+                "end_median": 13000.0,
+                "monthly_mean": 25762.557077625574,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 35.0,
+                "ever_paid": 42,
+                "paid_by_90": 42,
+                "first_eval_passes": 43,
+                "review_windows": 11
+              },
+              "3": {
+                "end_mean": 316288,
+                "end_median": 13000.0,
+                "monthly_mean": 30178.08219178082,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 34,
+                "ever_paid": 25,
+                "paid_by_90": 25,
+                "first_eval_passes": 43,
+                "review_windows": 10
+              }
+            }
+          },
+          "list": {
+            "fee": 72500,
+            "portfolios": {
+              "1": {
+                "end_mean": 128596,
+                "end_median": 27500.0,
+                "monthly_mean": -4440.6392694063925,
+                "monthly_median": -24166.666666666668,
+                "median_fees_90": 72500.0,
+                "median_fees_end": 72500.0,
+                "first_paid_days": 34,
+                "ever_paid": 25,
+                "paid_by_90": 25,
+                "first_eval_passes": 43,
+                "review_windows": 10
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "quick_eod",
+      "size": 150,
+      "quantity": 2,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 956872,
+        "rates": {
+          "sale": {
+            "fee": 17600,
+            "portfolios": {
+              "1": {
+                "end_mean": 125997,
+                "end_median": 111782.0,
+                "monthly_mean": 9182.221461187215,
+                "monthly_median": 3927.3333333333335,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 46,
+                "ever_paid": 101,
+                "paid_by_90": 96,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 138598,
+                "end_median": 12000.0,
+                "monthly_mean": 9840.860730593608,
+                "monthly_median": -23466.666666666668,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 33.5,
+                "ever_paid": 66,
+                "paid_by_90": 61,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 142631,
+                "end_median": 12000.0,
+                "monthly_mean": 8305.260273972603,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 28,
+                "ever_paid": 45,
+                "paid_by_90": 40,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 144745,
+                "end_median": 12000.0,
+                "monthly_mean": 6871.808219178082,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 28,
+                "ever_paid": 45,
+                "paid_by_90": 40,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 146859,
+                "end_median": 12000.0,
+                "monthly_mean": 5438.356164383562,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 26,
+                "ever_paid": 25,
+                "paid_by_90": 22,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 44000,
+            "portfolios": {
+              "1": {
+                "end_mean": 64011,
+                "end_median": 12000.0,
+                "monthly_mean": -13629.561643835616,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 28,
+                "ever_paid": 45,
+                "paid_by_90": 40,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 65944,
+                "end_median": 12000.0,
+                "monthly_mean": -15424.657534246575,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 26,
+                "ever_paid": 25,
+                "paid_by_90": 22,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 428872,
+        "rates": {
+          "sale": {
+            "fee": 17600,
+            "portfolios": {
+              "1": {
+                "end_mean": 130680,
+                "end_median": 108907.0,
+                "monthly_mean": 9931.228310502283,
+                "monthly_median": 2969.0,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 47,
+                "ever_paid": 101,
+                "paid_by_90": 96,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 147117,
+                "end_median": 12000.0,
+                "monthly_mean": 11254.333333333334,
+                "monthly_median": -23466.666666666668,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 34.0,
+                "ever_paid": 66,
+                "paid_by_90": 61,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 153771,
+                "end_median": 12000.0,
+                "monthly_mean": 9902.83789954338,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 28,
+                "ever_paid": 45,
+                "paid_by_90": 40,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 157832,
+                "end_median": 12000.0,
+                "monthly_mean": 8552.86301369863,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 28,
+                "ever_paid": 45,
+                "paid_by_90": 40,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 161892,
+                "end_median": 12000.0,
+                "monthly_mean": 7202.888127853882,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 27.0,
+                "ever_paid": 26,
+                "paid_by_90": 22,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 44000,
+            "portfolios": {
+              "1": {
+                "end_mean": 68077,
+                "end_median": 12000.0,
+                "monthly_mean": -13007.226027397259,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 28,
+                "ever_paid": 45,
+                "paid_by_90": 40,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 71957,
+                "end_median": 12000.0,
+                "monthly_mean": -14718.844748858448,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 27.0,
+                "ever_paid": 26,
+                "paid_by_90": 22,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "quick_intraday",
+      "size": 150,
+      "quantity": 2,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 956872,
+        "rates": {
+          "sale": {
+            "fee": 15900,
+            "portfolios": {
+              "1": {
+                "end_mean": 131948,
+                "end_median": 105512.0,
+                "monthly_mean": 8290.335616438357,
+                "monthly_median": 6760.666666666667,
+                "median_fees_90": 79500.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 44.5,
+                "ever_paid": 98,
+                "paid_by_90": 93,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 148298,
+                "end_median": 4600.0,
+                "monthly_mean": 13716.251141552513,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 33.0,
+                "ever_paid": 64,
+                "paid_by_90": 59,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 160054,
+                "end_median": 4600.0,
+                "monthly_mean": 14156.520547945205,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 28,
+                "ever_paid": 45,
+                "paid_by_90": 40,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 162180,
+                "end_median": 4600.0,
+                "monthly_mean": 12746.356164383562,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 28,
+                "ever_paid": 45,
+                "paid_by_90": 40,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 164305,
+                "end_median": 4600.0,
+                "monthly_mean": 11336.191780821917,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 28,
+                "ever_paid": 45,
+                "paid_by_90": 40,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 39800,
+            "portfolios": {
+              "1": {
+                "end_mean": 72382,
+                "end_median": 20400.0,
+                "monthly_mean": -10887.09589041096,
+                "monthly_median": -26533.333333333332,
+                "median_fees_90": 79600.0,
+                "median_fees_end": 79600.0,
+                "first_paid_days": 28,
+                "ever_paid": 45,
+                "paid_by_90": 40,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 74344,
+                "end_median": 20400.0,
+                "monthly_mean": -12624.657534246575,
+                "monthly_median": -26533.333333333332,
+                "median_fees_90": 79600.0,
+                "median_fees_end": 79600.0,
+                "first_paid_days": 26,
+                "ever_paid": 25,
+                "paid_by_90": 22,
+                "first_eval_passes": 34,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 428872,
+        "rates": {
+          "sale": {
+            "fee": 15900,
+            "portfolios": {
+              "1": {
+                "end_mean": 135744,
+                "end_median": 101507.0,
+                "monthly_mean": 8969.536529680365,
+                "monthly_median": 5802.333333333333,
+                "median_fees_90": 79500.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 45.0,
+                "ever_paid": 98,
+                "paid_by_90": 93,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 156991,
+                "end_median": 4600.0,
+                "monthly_mean": 15220.123287671233,
+                "monthly_median": -26500.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 33.5,
+                "ever_paid": 64,
+                "paid_by_90": 59,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "3": {
+                "end_mean": 172254,
+                "end_median": 4600.0,
+                "monthly_mean": 16023.527397260274,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 28,
+                "ever_paid": 45,
+                "paid_by_90": 40,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "4": {
+                "end_mean": 176326,
+                "end_median": 4600.0,
+                "monthly_mean": 14696.840182648402,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 28,
+                "ever_paid": 45,
+                "paid_by_90": 40,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "5": {
+                "end_mean": 180398,
+                "end_median": 4600.0,
+                "monthly_mean": 13370.15296803653,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 28,
+                "ever_paid": 45,
+                "paid_by_90": 40,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              }
+            }
+          },
+          "list": {
+            "fee": 39800,
+            "portfolios": {
+              "1": {
+                "end_mean": 76448,
+                "end_median": 20400.0,
+                "monthly_mean": -10264.760273972603,
+                "monthly_median": -26533.333333333332,
+                "median_fees_90": 79600.0,
+                "median_fees_end": 79600.0,
+                "first_paid_days": 28,
+                "ever_paid": 45,
+                "paid_by_90": 40,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              },
+              "2": {
+                "end_mean": 80357,
+                "end_median": 20400.0,
+                "monthly_mean": -11918.844748858448,
+                "monthly_median": -26533.333333333332,
+                "median_fees_90": 79600.0,
+                "median_fees_end": 79600.0,
+                "first_paid_days": 27.0,
+                "ever_paid": 26,
+                "paid_by_90": 22,
+                "first_eval_passes": 33,
+                "review_windows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "fast_pass",
+      "size": 150,
+      "quantity": 3,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 1435308,
+        "rates": {
+          "sale": {
+            "fee": 29000,
+            "portfolios": {
+              "1": {
+                "end_mean": 373425,
+                "end_median": 13000.0,
+                "monthly_mean": 40168.9497716895,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 33,
+                "ever_paid": 61,
+                "paid_by_90": 61,
+                "first_eval_passes": 47,
+                "review_windows": 33
+              },
+              "2": {
+                "end_mean": 429548,
+                "end_median": 13000.0,
+                "monthly_mean": 60600.45662100457,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 32,
+                "ever_paid": 49,
+                "paid_by_90": 49,
+                "first_eval_passes": 47,
+                "review_windows": 23
+              },
+              "3": {
+                "end_mean": 516014,
+                "end_median": 13000.0,
+                "monthly_mean": 81958.90410958904,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 30,
+                "ever_paid": 33,
+                "paid_by_90": 33,
+                "first_eval_passes": 47,
+                "review_windows": 22
+              }
+            }
+          },
+          "list": {
+            "fee": 72500,
+            "portfolios": {
+              "1": {
+                "end_mean": 195171,
+                "end_median": 27500.0,
+                "monthly_mean": 12819.634703196347,
+                "monthly_median": -24166.666666666668,
+                "median_fees_90": 72500.0,
+                "median_fees_end": 72500.0,
+                "first_paid_days": 30,
+                "ever_paid": 33,
+                "paid_by_90": 33,
+                "first_eval_passes": 47,
+                "review_windows": 22
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 643308,
+        "rates": {
+          "sale": {
+            "fee": 29000,
+            "portfolios": {
+              "1": {
+                "end_mean": 351514,
+                "end_median": 13000.0,
+                "monthly_mean": 30810.502283105026,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 34,
+                "ever_paid": 63,
+                "paid_by_90": 56,
+                "first_eval_passes": 40,
+                "review_windows": 28
+              },
+              "2": {
+                "end_mean": 362815,
+                "end_median": 13000.0,
+                "monthly_mean": 42465.75342465753,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 32,
+                "ever_paid": 45,
+                "paid_by_90": 45,
+                "first_eval_passes": 40,
+                "review_windows": 18
+              },
+              "3": {
+                "end_mean": 401356,
+                "end_median": 13000.0,
+                "monthly_mean": 53602.739726027394,
+                "monthly_median": -29000.0,
+                "median_fees_90": 87000.0,
+                "median_fees_end": 87000.0,
+                "first_paid_days": 29,
+                "ever_paid": 29,
+                "paid_by_90": 29,
+                "first_eval_passes": 40,
+                "review_windows": 17
+              }
+            }
+          },
+          "list": {
+            "fee": 72500,
+            "portfolios": {
+              "1": {
+                "end_mean": 156952,
+                "end_median": 27500.0,
+                "monthly_mean": 3367.5799086757993,
+                "monthly_median": -24166.666666666668,
+                "median_fees_90": 72500.0,
+                "median_fees_end": 72500.0,
+                "first_paid_days": 29,
+                "ever_paid": 29,
+                "paid_by_90": 29,
+                "first_eval_passes": 40,
+                "review_windows": 17
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "quick_eod",
+      "size": 150,
+      "quantity": 3,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 1435308,
+        "rates": {
+          "sale": {
+            "fee": 17600,
+            "portfolios": {
+              "1": {
+                "end_mean": 160884,
+                "end_median": 81096.5,
+                "monthly_mean": 13101.547945205479,
+                "monthly_median": -12602.333333333334,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 59,
+                "ever_paid": 113,
+                "paid_by_90": 85,
+                "first_eval_passes": 33,
+                "review_windows": 2
+              },
+              "2": {
+                "end_mean": 153545,
+                "end_median": 12000.0,
+                "monthly_mean": 14279.038812785388,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 37.5,
+                "ever_paid": 66,
+                "paid_by_90": 53,
+                "first_eval_passes": 33,
+                "review_windows": 2
+              },
+              "3": {
+                "end_mean": 122413,
+                "end_median": 12000.0,
+                "monthly_mean": 7495.191780821918,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 28,
+                "ever_paid": 35,
+                "paid_by_90": 33,
+                "first_eval_passes": 33,
+                "review_windows": 2
+              },
+              "4": {
+                "end_mean": 88084,
+                "end_median": 12000.0,
+                "monthly_mean": -3960.0867579908677,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 28,
+                "ever_paid": 35,
+                "paid_by_90": 33,
+                "first_eval_passes": 33,
+                "review_windows": 2
+              },
+              "5": {
+                "end_mean": 53754,
+                "end_median": 12000.0,
+                "monthly_mean": -15415.365296803653,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 27,
+                "ever_paid": 15,
+                "paid_by_90": 15,
+                "first_eval_passes": 33,
+                "review_windows": 2
+              }
+            }
+          },
+          "list": {
+            "fee": 44000,
+            "portfolios": {
+              "1": {
+                "end_mean": 63574,
+                "end_median": 12000.0,
+                "monthly_mean": -11888.949771689498,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 28,
+                "ever_paid": 35,
+                "paid_by_90": 33,
+                "first_eval_passes": 33,
+                "review_windows": 2
+              },
+              "2": {
+                "end_mean": 28702,
+                "end_median": 12000.0,
+                "monthly_mean": -23766.14611872146,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 27,
+                "ever_paid": 15,
+                "paid_by_90": 15,
+                "first_eval_passes": 33,
+                "review_windows": 2
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 643308,
+        "rates": {
+          "sale": {
+            "fee": 17600,
+            "portfolios": {
+              "1": {
+                "end_mean": 161902,
+                "end_median": 80721.5,
+                "monthly_mean": 13422.933789954339,
+                "monthly_median": -12852.333333333334,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 54.5,
+                "ever_paid": 108,
+                "paid_by_90": 82,
+                "first_eval_passes": 33,
+                "review_windows": 3
+              },
+              "2": {
+                "end_mean": 157890,
+                "end_median": 12000.0,
+                "monthly_mean": 15487.86301369863,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 36,
+                "ever_paid": 65,
+                "paid_by_90": 53,
+                "first_eval_passes": 33,
+                "review_windows": 3
+              },
+              "3": {
+                "end_mean": 127447,
+                "end_median": 12000.0,
+                "monthly_mean": 8890.657534246575,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 28,
+                "ever_paid": 35,
+                "paid_by_90": 34,
+                "first_eval_passes": 33,
+                "review_windows": 3
+              },
+              "4": {
+                "end_mean": 91664,
+                "end_median": 12000.0,
+                "monthly_mean": -2907.8219178082195,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 28,
+                "ever_paid": 35,
+                "paid_by_90": 34,
+                "first_eval_passes": 33,
+                "review_windows": 3
+              },
+              "5": {
+                "end_mean": 55881,
+                "end_median": 12000.0,
+                "monthly_mean": -14706.301369863015,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 27.0,
+                "ever_paid": 16,
+                "paid_by_90": 16,
+                "first_eval_passes": 33,
+                "review_windows": 3
+              }
+            }
+          },
+          "list": {
+            "fee": 44000,
+            "portfolios": {
+              "1": {
+                "end_mean": 66059,
+                "end_median": 12000.0,
+                "monthly_mean": -11141.575342465752,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 28,
+                "ever_paid": 35,
+                "paid_by_90": 34,
+                "first_eval_passes": 33,
+                "review_windows": 3
+              },
+              "2": {
+                "end_mean": 29552,
+                "end_median": 12000.0,
+                "monthly_mean": -23482.52054794521,
+                "monthly_median": -29333.333333333332,
+                "median_fees_90": 88000.0,
+                "median_fees_end": 88000.0,
+                "first_paid_days": 27.0,
+                "ever_paid": 16,
+                "paid_by_90": 16,
+                "first_eval_passes": 33,
+                "review_windows": 3
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "plan": "quick_intraday",
+      "size": 150,
+      "quantity": 3,
+      "case": "SMA5/10 nach Außenbruch",
+      "normal": {
+        "without_top10": 1435308,
+        "rates": {
+          "sale": {
+            "fee": 15900,
+            "portfolios": {
+              "1": {
+                "end_mean": 134273,
+                "end_median": 49429.0,
+                "monthly_mean": 7173.54794520548,
+                "monthly_median": -21200.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 45,
+                "ever_paid": 89,
+                "paid_by_90": 70,
+                "first_eval_passes": 23,
+                "review_windows": 2
+              },
+              "2": {
+                "end_mean": 139561,
+                "end_median": 4600.0,
+                "monthly_mean": 12119.940639269407,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 29.5,
+                "ever_paid": 46,
+                "paid_by_90": 42,
+                "first_eval_passes": 23,
+                "review_windows": 2
+              },
+              "3": {
+                "end_mean": 95586,
+                "end_median": 4600.0,
+                "monthly_mean": -1482.0,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 27,
+                "ever_paid": 27,
+                "paid_by_90": 25,
+                "first_eval_passes": 23,
+                "review_windows": 2
+              },
+              "4": {
+                "end_mean": 79282,
+                "end_median": 4600.0,
+                "monthly_mean": -6913.086757990867,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 27,
+                "ever_paid": 27,
+                "paid_by_90": 25,
+                "first_eval_passes": 23,
+                "review_windows": 2
+              },
+              "5": {
+                "end_mean": 62978,
+                "end_median": 4600.0,
+                "monthly_mean": -12344.173515981734,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 27,
+                "ever_paid": 27,
+                "paid_by_90": 25,
+                "first_eval_passes": 23,
+                "review_windows": 2
+              }
+            }
+          },
+          "list": {
+            "fee": 39800,
+            "portfolios": {
+              "1": {
+                "end_mean": 51056,
+                "end_median": 20400.0,
+                "monthly_mean": -16099.936073059362,
+                "monthly_median": -26533.333333333332,
+                "median_fees_90": 79600.0,
+                "median_fees_end": 79600.0,
+                "first_paid_days": 27,
+                "ever_paid": 27,
+                "paid_by_90": 25,
+                "first_eval_passes": 23,
+                "review_windows": 2
+              },
+              "2": {
+                "end_mean": 34425,
+                "end_median": 20400.0,
+                "monthly_mean": -21858.4200913242,
+                "monthly_median": -26533.333333333332,
+                "median_fees_90": 79600.0,
+                "median_fees_end": 79600.0,
+                "first_paid_days": 27,
+                "ever_paid": 11,
+                "paid_by_90": 11,
+                "first_eval_passes": 23,
+                "review_windows": 2
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "without_top10": 643308,
+        "rates": {
+          "sale": {
+            "fee": 15900,
+            "portfolios": {
+              "1": {
+                "end_mean": 128286,
+                "end_median": 47179.0,
+                "monthly_mean": 8991.139269406392,
+                "monthly_median": -17607.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 43,
+                "ever_paid": 85,
+                "paid_by_90": 78,
+                "first_eval_passes": 23,
+                "review_windows": 3
+              },
+              "2": {
+                "end_mean": 143554,
+                "end_median": 4600.0,
+                "monthly_mean": 11943.315068493152,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 30,
+                "ever_paid": 47,
+                "paid_by_90": 42,
+                "first_eval_passes": 23,
+                "review_windows": 3
+              },
+              "3": {
+                "end_mean": 100534,
+                "end_median": 4600.0,
+                "monthly_mean": -267.73972602739724,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 27,
+                "ever_paid": 27,
+                "paid_by_90": 26,
+                "first_eval_passes": 23,
+                "review_windows": 3
+              },
+              "4": {
+                "end_mean": 83493,
+                "end_median": 4600.0,
+                "monthly_mean": -5799.406392694064,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 27,
+                "ever_paid": 27,
+                "paid_by_90": 26,
+                "first_eval_passes": 23,
+                "review_windows": 3
+              },
+              "5": {
+                "end_mean": 66452,
+                "end_median": 4600.0,
+                "monthly_mean": -11331.07305936073,
+                "monthly_median": -31800.0,
+                "median_fees_90": 95400.0,
+                "median_fees_end": 95400.0,
+                "first_paid_days": 27,
+                "ever_paid": 27,
+                "paid_by_90": 26,
+                "first_eval_passes": 23,
+                "review_windows": 3
+              }
+            }
+          },
+          "list": {
+            "fee": 39800,
+            "portfolios": {
+              "1": {
+                "end_mean": 52869,
+                "end_median": 20400.0,
+                "monthly_mean": -15586.050228310502,
+                "monthly_median": -26533.333333333332,
+                "median_fees_90": 79600.0,
+                "median_fees_end": 79600.0,
+                "first_paid_days": 27,
+                "ever_paid": 27,
+                "paid_by_90": 26,
+                "first_eval_passes": 23,
+                "review_windows": 3
+              },
+              "2": {
+                "end_mean": 35337,
+                "end_median": 20400.0,
+                "monthly_mean": -21554.246575342466,
+                "monthly_median": -26533.333333333332,
+                "median_fees_90": 79600.0,
+                "median_fees_end": 79600.0,
+                "first_paid_days": 27.0,
+                "ever_paid": 12,
+                "paid_by_90": 12,
+                "first_eval_passes": 23,
+                "review_windows": 3
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "original_book_comparison": {
+    "50k-1x1NQ": {
+      "size": 50,
+      "quantity": 1,
+      "copies": 1,
+      "rates": {
+        "sale": {
+          "fee": 9900,
+          "normal": {
+            "end_mean": 441479,
+            "end_median": 530500.0,
+            "monthly_mean": 59253.178082191786,
+            "monthly_median": 66800.0,
+            "median_fees_90": 39600.0,
+            "median_fees_end": 39600.0,
+            "first_paid_days": 60.0,
+            "ever_paid": 144,
+            "paid_by_90": 128,
+            "first_eval_passes": 53,
+            "review_windows": 40
+          },
+          "stress": {
+            "end_mean": 396283,
+            "end_median": 415450.0,
+            "monthly_mean": 45343.178082191786,
+            "monthly_median": 28450.0,
+            "median_fees_90": 39600.0,
+            "median_fees_end": 49500.0,
+            "first_paid_days": 61.5,
+            "ever_paid": 144,
+            "paid_by_90": 124,
+            "first_eval_passes": 44,
+            "review_windows": 21
+          }
+        },
+        "list": {
+          "fee": 24800,
+          "normal": {
+            "end_mean": 325834,
+            "end_median": 410400.0,
+            "monthly_mean": 30960.255707762557,
+            "monthly_median": 46933.333333333336,
+            "median_fees_90": 99200.0,
+            "median_fees_end": 99200.0,
+            "first_paid_days": 41,
+            "ever_paid": 87,
+            "paid_by_90": 87,
+            "first_eval_passes": 53,
+            "review_windows": 39
+          },
+          "stress": {
+            "end_mean": 280417,
+            "end_median": 240800.0,
+            "monthly_mean": 17662.12785388128,
+            "monthly_median": 6933.333333333333,
+            "median_fees_90": 99200.0,
+            "median_fees_end": 99200.0,
+            "first_paid_days": 42,
+            "ever_paid": 91,
+            "paid_by_90": 82,
+            "first_eval_passes": 44,
+            "review_windows": 21
+          }
+        }
+      }
+    },
+    "50k-2x1NQ": {
+      "size": 50,
+      "quantity": 1,
+      "copies": 2,
+      "rates": {
+        "sale": {
+          "fee": 9900,
+          "normal": {
+            "end_mean": 761538,
+            "end_median": 961000.0,
+            "monthly_mean": 112813.21689497716,
+            "monthly_median": 133600.0,
+            "median_fees_90": 79200.0,
+            "median_fees_end": 79200.0,
+            "first_paid_days": 52,
+            "ever_paid": 117,
+            "paid_by_90": 114,
+            "first_eval_passes": 53,
+            "review_windows": 40
+          },
+          "stress": {
+            "end_mean": 669992,
+            "end_median": 730900.0,
+            "monthly_mean": 88515.1598173516,
+            "monthly_median": 93600.0,
+            "median_fees_90": 79200.0,
+            "median_fees_end": 99000.0,
+            "first_paid_days": 53.5,
+            "ever_paid": 118,
+            "paid_by_90": 109,
+            "first_eval_passes": 44,
+            "review_windows": 21
+          }
+        },
+        "list": {
+          "fee": 24800,
+          "normal": {
+            "end_mean": 370466,
+            "end_median": 800.0,
+            "monthly_mean": 37665.95662100457,
+            "monthly_median": -33066.666666666664,
+            "median_fees_90": 99200.0,
+            "median_fees_end": 99200.0,
+            "first_paid_days": 32,
+            "ever_paid": 49,
+            "paid_by_90": 49,
+            "first_eval_passes": 53,
+            "review_windows": 24
+          },
+          "stress": {
+            "end_mean": 243059,
+            "end_median": 800.0,
+            "monthly_mean": 20307.39726027397,
+            "monthly_median": -33066.666666666664,
+            "median_fees_90": 99200.0,
+            "median_fees_end": 99200.0,
+            "first_paid_days": 33,
+            "ever_paid": 45,
+            "paid_by_90": 45,
+            "first_eval_passes": 44,
+            "review_windows": 15
+          }
+        }
+      }
+    },
+    "100k-1x2NQ": {
+      "size": 100,
+      "quantity": 2,
+      "copies": 1,
+      "rates": {
+        "sale": {
+          "fee": 19900,
+          "normal": {
+            "end_mean": 455650,
+            "end_median": 600500.0,
+            "monthly_mean": 54068.72146118721,
+            "monthly_median": 73466.66666666667,
+            "median_fees_90": 79600.0,
+            "median_fees_end": 99500.0,
+            "first_paid_days": 47.5,
+            "ever_paid": 104,
+            "paid_by_90": 101,
+            "first_eval_passes": 44,
+            "review_windows": 36
+          },
+          "stress": {
+            "end_mean": 424293,
+            "end_median": 535450.0,
+            "monthly_mean": 44710.273972602736,
+            "monthly_median": 66833.33333333333,
+            "median_fees_90": 79600.0,
+            "median_fees_end": 99500.0,
+            "first_paid_days": 47,
+            "ever_paid": 101,
+            "paid_by_90": 93,
+            "first_eval_passes": 40,
+            "review_windows": 33
+          }
+        },
+        "list": {
+          "fee": 49800,
+          "normal": {
+            "end_mean": 209956,
+            "end_median": 400.0,
+            "monthly_mean": 11423.287671232878,
+            "monthly_median": -33200.0,
+            "median_fees_90": 99600.0,
+            "median_fees_end": 99600.0,
+            "first_paid_days": 32,
+            "ever_paid": 49,
+            "paid_by_90": 49,
+            "first_eval_passes": 44,
+            "review_windows": 21
+          },
+          "stress": {
+            "end_mean": 187021,
+            "end_median": 400.0,
+            "monthly_mean": 4120.54794520548,
+            "monthly_median": -33200.0,
+            "median_fees_90": 99600.0,
+            "median_fees_end": 99600.0,
+            "first_paid_days": 32,
+            "ever_paid": 45,
+            "paid_by_90": 45,
+            "first_eval_passes": 40,
+            "review_windows": 18
+          }
+        }
+      }
+    },
+    "100k-2x2NQ": {
+      "size": 100,
+      "quantity": 2,
+      "copies": 2,
+      "rates": {
+        "sale": {
+          "fee": 19900,
+          "normal": {
+            "end_mean": 501745,
+            "end_median": 500.0,
+            "monthly_mean": 66424.88584474886,
+            "monthly_median": -33166.666666666664,
+            "median_fees_90": 99500.0,
+            "median_fees_end": 99500.0,
+            "first_paid_days": 33,
+            "ever_paid": 61,
+            "paid_by_90": 61,
+            "first_eval_passes": 44,
+            "review_windows": 31
+          },
+          "stress": {
+            "end_mean": 452849,
+            "end_median": 500.0,
+            "monthly_mean": 48710.95890410958,
+            "monthly_median": -33166.666666666664,
+            "median_fees_90": 99500.0,
+            "median_fees_end": 99500.0,
+            "first_paid_days": 34,
+            "ever_paid": 59,
+            "paid_by_90": 55,
+            "first_eval_passes": 40,
+            "review_windows": 31
+          }
+        },
+        "list": {
+          "fee": 49800,
+          "normal": {
+            "end_mean": 275742,
+            "end_median": 400.0,
+            "monthly_mean": 27416.43835616438,
+            "monthly_median": -33200.0,
+            "median_fees_90": 99600.0,
+            "median_fees_end": 99600.0,
+            "first_paid_days": 30,
+            "ever_paid": 33,
+            "paid_by_90": 33,
+            "first_eval_passes": 44,
+            "review_windows": 20
+          },
+          "stress": {
+            "end_mean": 231564,
+            "end_median": 400.0,
+            "monthly_mean": 12005.479452054795,
+            "monthly_median": -33200.0,
+            "median_fees_90": 99600.0,
+            "median_fees_end": 99600.0,
+            "first_paid_days": 29,
+            "ever_paid": 29,
+            "paid_by_90": 29,
+            "first_eval_passes": 40,
+            "review_windows": 20
+          }
+        }
+      }
+    }
+  }
+}

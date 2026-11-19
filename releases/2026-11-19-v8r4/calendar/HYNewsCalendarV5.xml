@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<HYNewsCalendar schema="HY-T1-PARITY-1" timezone="America/New_York" scope="frozen_named_t1_only" coveredFrom="2025-11-19" coveredThrough="2026-11-30" verifiedAtUtc="2026-11-18T23:27:37Z" expiresAtUtc="2026-11-19T23:27:37Z" csvFile="HYNewsCalendarV5.csv" csvSha256="99ad227b0951f2976110684cff14a19fa371882514b8ef6c2164c49ac539c64e" provenanceFile="HYNewsCalendarV5-provenance.json" provenanceSha256="abb1cad432accaca5bfdef5c2305c7d378b5c481b57e16c694f6e892c6780d40" />

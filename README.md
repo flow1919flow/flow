@@ -1,3 +1,20 @@
+# ES und NQ · NinjaTrader V8r4 · 19. November 2026
+
+Aktueller auf Windows importierter, nativ kompilierter und auf vier lokalen Sim-Instanzen geprüfter Stand: **AccountReplay V8r4**.
+
+- [Aktueller Stand, Installation und Grenzen der Prüfung](releases/2026-11-19-v8r4/README.md)
+- [Importpaket](releases/2026-11-19-v8r4/AccountReplay-V8r4-ES-NQ-Sim-Import.zip)
+- [ES-Strategien](ninjatrader/ES.md) · [NQ-Strategien](ninjatrader/NQ.md)
+- [Installierte Quelldateien und SHA-256](releases/2026-11-19-v8r4/SHA256SUMS)
+- [Native Sim-Abnahme](releases/2026-11-19-v8r4/proofs/native-acceptance.json)
+- [MFF Leaderboard](leaderboards/MFF.md) · [TradeDay Leaderboard](leaderboards/TradeDay.md)
+
+V8r4 ergänzt die persistente Kontoführung nach den gespeicherten Kontoreplay-Regeln: EOD-Trailing, Gebühren pro Ausführungsseite, dauerhaften Verluststatus und Prüfung gegen native Ausführungen. Die Signal-, Indikator-, Einstiegs-, Strategie-Stop- und Zielregeln wurden dabei nicht verändert. Ein vorbeugender Stop-Risiko-Filter wurde nicht ergänzt.
+
+Die Leaderboards unten sind historische Snapshots vom 17. November. Dieser Commit berechnet oder bestätigt deren wirtschaftliche Ergebnisse nicht erneut. Die native Sim-Abnahme belegt Installation und die konkret genannten Prüfungen; sie ist keine vollständige Tick-für-Tick-Parität oder Einsatzfreigabe für Providerkonten.
+
+## Archiv: Dokumentation vom 17. November
+
 # ES und NQ · Strategiestand vom 17. November 2026
 
 | Anbieter | Markt | NinjaTrader · lokale Simulation | Historischer Anbieter-Replay |

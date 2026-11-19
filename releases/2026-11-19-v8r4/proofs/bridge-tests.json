@@ -1,0 +1,22 @@
+{
+  "status": "BRIDGE_PASS checks=71",
+  "actual_candidate_methods": [
+    "InitializeAccountReplay",
+    "AccountReplayReady",
+    "AccountReplayStatus",
+    "AdvanceAccountReplay",
+    "ReserveAccountIntent",
+    "RecordAccountExecution",
+    "CloseAccountReplay",
+    "CheckModelLoss",
+    "CatchUpAccountCalendar",
+    "ResolveAccountOrderTerminal",
+    "AdvanceAccountReplayCore",
+    "RecordAccountExecutionCore",
+    "BlockAccountException",
+    "ReconcileNativeAccountExecutions",
+    "VerifyNativeAccountNegativeProbe"
+  ],
+  "scope": "Actual C# integration methods and account book/store. Explicit vendor/account/intent stubs; no orders and no native NinjaTrader acceptance.",
+  "harness_sha256": "0c245ae6ec35e75eb8b57a7db9b1639faf0e92ed7505398643b870bf32a34107"
+}

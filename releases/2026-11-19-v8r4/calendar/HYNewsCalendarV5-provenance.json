@@ -1,0 +1,450 @@
+{
+  "scope": "frozen_named_t1_only; not all-news/provider-compliance guarantee",
+  "historical_sources": [
+    {
+      "model": "ES_RAPID_FUNDED",
+      "news_csv": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/NQ-Woche-20261118/leaderboard-integrity-acceptance/ES/SQX/funded/jahr-ergaenzung-ESH6/news-windows.csv",
+      "news_sha256": "c35b42ce6bbc6dfcfef913e6af81019c6639f3d6480bee779b5e9485342bbee7",
+      "session_seed": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/jahr-ergaenzung-ESH6/session-states.csv",
+      "session_seed_sha256": "3b425f3151dcb7f8425dce9f7ca86c00be964fda9468fc8e5f2e5bb66543a5dd",
+      "coverage_rule": "only scored test seed dates, not unobserved dates"
+    },
+    {
+      "model": "ES_RAPID_FUNDED",
+      "news_csv": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/NQ-Woche-20261118/leaderboard-integrity-acceptance/ES/SQX/funded/jahr-ergaenzung-ESZ5/news-windows.csv",
+      "news_sha256": "6fe91250053d027a323b03c0f574092fd63d9cdcbfe4e6880b59e20e21f35c31",
+      "session_seed": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/jahr-ergaenzung-ESZ5/session-states.csv",
+      "session_seed_sha256": "299993c4f159f367bdb8a2fed0f954f3952bb7f3c1b723b80ff69520c78445c2",
+      "coverage_rule": "only scored test seed dates, not unobserved dates"
+    },
+    {
+      "model": "ES_RAPID_FUNDED",
+      "news_csv": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/NQ-Woche-20261118/leaderboard-integrity-acceptance/ES/SQX/funded/jahr-uebergang-ESM6/news-windows.csv",
+      "news_sha256": "14f2c3498dcab088e3bd573f3aeeb122f05f61f6282dd530d2f6babde2a1b987",
+      "session_seed": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/jahr-uebergang-ESM6/session-states.csv",
+      "session_seed_sha256": "e4c8bb712ac01f064d4c3207da89636c587ff089cc9d434503ecacf278441984",
+      "coverage_rule": "only scored test seed dates, not unobserved dates"
+    },
+    {
+      "model": "ES_RAPID_FUNDED",
+      "news_csv": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/NQ-Woche-20261118/leaderboard-integrity-acceptance/ES/SQX/funded/mai-oktober-2026-ESU6/news-windows.csv",
+      "news_sha256": "f37b16b98fb3907330c71c92d7a673ae187bf643b8a96aa2841fedda25329b39",
+      "session_seed": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/mai-oktober-2026-ESU6/session-states.csv",
+      "session_seed_sha256": "5dd21f2b2d69b7dc46f6f6050d634368029c5f9c6a077224e406010266547e8e",
+      "coverage_rule": "only scored test seed dates, not unobserved dates"
+    },
+    {
+      "model": "ES_RAPID_FUNDED",
+      "news_csv": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/NQ-Woche-20261118/leaderboard-integrity-acceptance/ES/SQX/funded/mai-oktober-2026-ESZ6/news-windows.csv",
+      "news_sha256": "de3490f63339f92f7405d3fd2c04e842298b2f1e3c89f4db0da05c100365cc76",
+      "session_seed": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/mai-oktober-2026-ESZ6/session-states.csv",
+      "session_seed_sha256": "107f0da128be85e67d7db32a8c02671abf9a44de38638245df13dc1c092e8afb",
+      "coverage_rule": "only scored test seed dates, not unobserved dates"
+    },
+    {
+      "model": "ES_RAPID_FUNDED",
+      "news_csv": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/NQ-Woche-20261118/leaderboard-integrity-acceptance/ES/SQX/funded/september-2026-ESZ6/news-windows.csv",
+      "news_sha256": "a2e4ef40c8c5a24b064ea464df24e2c78e7167cb312acda1a6f20725b35b6173",
+      "session_seed": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/september-2026-ESZ6/session-states.csv",
+      "session_seed_sha256": "aef905fd60882225812a61dd623270a58a633d782729326de92b36951db5e297",
+      "coverage_rule": "only scored test seed dates, not unobserved dates"
+    },
+    {
+      "model": "NQ_TRADEDAY_BOTH",
+      "news_csv": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/NQ-Woche-20261118/leaderboard-integrity-acceptance/NQ/SQX/NQH6/news-windows.csv",
+      "news_sha256": "0a1de2526c596a2fd396af668216e8f8912247b546a9a0e01cda7d3614c47750",
+      "session_seed": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/Rapid-EOD-SQX-NQ-Jahr-v1/Basisdaten/NQH6/session-states.csv",
+      "session_seed_sha256": "3b425f3151dcb7f8425dce9f7ca86c00be964fda9468fc8e5f2e5bb66543a5dd",
+      "coverage_rule": "only scored test seed dates, not unobserved dates"
+    },
+    {
+      "model": "NQ_TRADEDAY_BOTH",
+      "news_csv": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/NQ-Woche-20261118/leaderboard-integrity-acceptance/NQ/SQX/NQM6/news-windows.csv",
+      "news_sha256": "d0181217f926dce99599c822eb29c1418269260c495b94216b3d4ca63ea1ed45",
+      "session_seed": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/Rapid-EOD-SQX-NQ-Jahr-v1/Basisdaten/NQM6/session-states.csv",
+      "session_seed_sha256": "e4c8bb712ac01f064d4c3207da89636c587ff089cc9d434503ecacf278441984",
+      "coverage_rule": "only scored test seed dates, not unobserved dates"
+    },
+    {
+      "model": "NQ_TRADEDAY_BOTH",
+      "news_csv": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/NQ-Woche-20261118/leaderboard-integrity-acceptance/NQ/SQX/NQU6/news-windows.csv",
+      "news_sha256": "f23cf309750933e956bcb915da95f19e52953bc44df33501098cc6f5a45f9e5b",
+      "session_seed": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/Rapid-EOD-SQX-NQ-Jahr-v1/Basisdaten/NQU6/session-states.csv",
+      "session_seed_sha256": "6c40227e3aa1d310329d830eba44510f41dff4da65f09c0c0511921e389cc06d",
+      "coverage_rule": "only scored test seed dates, not unobserved dates"
+    },
+    {
+      "model": "NQ_TRADEDAY_BOTH",
+      "news_csv": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/NQ-Woche-20261118/leaderboard-integrity-acceptance/NQ/SQX/NQZ5/news-windows.csv",
+      "news_sha256": "13d7914f9cd6a00438acc7c489301197aeffafa9c02861c3358505c7bda132ce",
+      "session_seed": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/Rapid-EOD-SQX-NQ-Jahr-v1/Basisdaten/NQZ5/session-states.csv",
+      "session_seed_sha256": "299993c4f159f367bdb8a2fed0f954f3952bb7f3c1b723b80ff69520c78445c2",
+      "coverage_rule": "only scored test seed dates, not unobserved dates"
+    },
+    {
+      "model": "NQ_TRADEDAY_BOTH",
+      "news_csv": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/NQ-Woche-20261118/leaderboard-integrity-acceptance/NQ/SQX/NQZ6/news-windows.csv",
+      "news_sha256": "fbdf3eeb3689cf1872371486d4242012d6db95cdf48368e17f72e8815bc95e59",
+      "session_seed": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/Rapid-EOD-SQX-NQ-Jahr-v1/Basisdaten/NQZ6/session-states.csv",
+      "session_seed_sha256": "913dddc977d9151f08ccb8c99f97e1b8677eea7e4ca513e04514371b1e32a217",
+      "coverage_rule": "only scored test seed dates, not unobserved dates"
+    }
+  ],
+  "current_coverage_evidence_path": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/HY18b-NinjaTrader/ES-NQ-Sim-Audit-V4-20261118/independent-review/named-t1-coverage-20261101-30.json",
+  "current_coverage_evidence_sha256": "4918bac2fd6c72a3131c5d283787728e174c0a00805e1db3fe450fa44abe2738",
+  "current_coverage_evidence": {
+    "schema": "independent-named-t1-calendar-evidence-v1",
+    "reviewer": "native_gap_playback_fixture",
+    "verifiedAtUTC": "2026-11-18T23:27:37Z",
+    "suggestedLiveExpiryUTC": "2026-11-19T23:27:37Z",
+    "expiry_rationale": "24-hour freshness cap for operational SIM model; reverify before each trading day and after updates. This is a local acceptance policy, not a provider-stated deadline.",
+    "calendar_timezone": "America/New_York",
+    "instruments": [
+      "ES",
+      "NQ"
+    ],
+    "coverage_start_et": "2026-11-01",
+    "coverage_end_et_inclusive": "2026-11-30",
+    "covered_categories": [
+      "US_NFP_EMPLOYMENT",
+      "US_CPI",
+      "FOMC_DECISION",
+      "FOMC_MINUTES",
+      "FOMC_PRESS_CONFERENCE_for_ES_funded_include_press_only"
+    ],
+    "not_covered": [
+      "unscheduled future events",
+      "all economic releases",
+      "EIA energy",
+      "agricultural crop reports",
+      "provider discretionary policy changes"
+    ],
+    "sources": [
+      {
+        "url": "https://www.bls.gov/schedule/2026/11_sched.htm",
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "verification_method": "direct_open_full_month",
+        "normalized_source_extract_path": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/HY18b-NinjaTrader/ES-NQ-Sim-Audit-V4-20261118/independent-review/bls-2026-11-normalized.csv",
+        "normalized_source_extract_sha256": "53d1344e61531c0df3e23f0e4d02c5abafbbf0c88fab24e171e4e03a3c52368b",
+        "hash_scope": "local normalized factual extract; not raw HTML / not full site archive"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "verification_method": "direct_open_complete_year",
+        "normalized_source_extract_path": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/HY18b-NinjaTrader/ES-NQ-Sim-Audit-V4-20261118/independent-review/fed-2026-fomc-normalized.csv",
+        "normalized_source_extract_sha256": "b85e5d64d3c586e55742142cd7d1b5b8050366ca5d4280ebe135d0f5ff717e11",
+        "hash_scope": "local normalized factual extract; not raw HTML / not full site archive"
+      },
+      {
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm",
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "verification_method": "official_domain_search_result_full_body",
+        "normalized_source_extract_path": "/Users/cinderellajehle/Documents/Codex/2026-11-07/de/outputs/HY18b-NinjaTrader/ES-NQ-Sim-Audit-V4-20261118/independent-review/fed-minutes-20261118-release-normalized.txt",
+        "normalized_source_extract_sha256": "2f90990cdd43cb9ccd87c283274e27463a8a061c4df1f5f90334bdc7093cb2c1",
+        "hash_scope": "local normalized factual extract; not raw HTML / not full site archive"
+      }
+    ],
+    "events": [
+      {
+        "date_et": "2026-11-06",
+        "event": "US_NFP_EMPLOYMENT",
+        "release_et": "2026-11-06T08:30:00-05:00",
+        "release_utc": "2026-11-06T13:30:00Z",
+        "entry_block_and_preclose_from_utc": "2026-11-06T13:27:50Z",
+        "flat_required_from_utc": "2026-11-06T13:28:00Z",
+        "flat_required_until_utc_inclusive": "2026-11-06T13:32:00Z",
+        "source_url": "https://www.bls.gov/schedule/2026/11_sched.htm"
+      },
+      {
+        "date_et": "2026-11-10",
+        "event": "US_CPI",
+        "release_et": "2026-11-10T08:30:00-05:00",
+        "release_utc": "2026-11-10T13:30:00Z",
+        "entry_block_and_preclose_from_utc": "2026-11-10T13:27:50Z",
+        "flat_required_from_utc": "2026-11-10T13:28:00Z",
+        "flat_required_until_utc_inclusive": "2026-11-10T13:32:00Z",
+        "source_url": "https://www.bls.gov/schedule/2026/11_sched.htm"
+      },
+      {
+        "date_et": "2026-11-18",
+        "event": "FOMC_MINUTES",
+        "release_et": "2026-11-18T14:00:00-05:00",
+        "release_utc": "2026-11-18T19:00:00Z",
+        "entry_block_and_preclose_from_utc": "2026-11-18T18:57:50Z",
+        "flat_required_from_utc": "2026-11-18T18:58:00Z",
+        "flat_required_until_utc_inclusive": "2026-11-18T19:02:00Z",
+        "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
+      }
+    ],
+    "daily_coverage": [
+      {
+        "date_et": "2026-11-01",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-02",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-03",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-04",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-05",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-06",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 1,
+        "event_ids": [
+          "US_NFP_EMPLOYMENT"
+        ],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-07",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-08",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-09",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-10",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 1,
+        "event_ids": [
+          "US_CPI"
+        ],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-11",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-12",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-13",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-14",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-15",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-16",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-17",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-18",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 1,
+        "event_ids": [
+          "FOMC_MINUTES"
+        ],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-19",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-20",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-21",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-22",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-23",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-24",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-25",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-26",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-27",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-28",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-29",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      },
+      {
+        "date_et": "2026-11-30",
+        "coverage": "VERIFIED_SCHEDULED_NAMED_T1_AS_OF_SOURCE_CHECK",
+        "event_count": 0,
+        "event_ids": [],
+        "verifiedAtUTC": "2026-11-18T23:27:37Z",
+        "live_reverification_required_after_utc": "2026-11-19T23:27:37Z"
+      }
+    ],
+    "important_exclusions": [
+      "2026-11-20 State Employment is not the national NFP Employment Situation.",
+      "No regular November FOMC decision/press conference is listed; November 18 minutes at14:00EST are explicitly evidenced.",
+      "A date with event_count0 means no scheduled event in the named whitelist found in checked full-month/full-year sources; it does not mean all-news clearance."
+    ],
+    "frozen_sqx_semantics": {
+      "preclose_lead_seconds": 130,
+      "position_flat_lead_seconds": 120,
+      "end_lag_seconds": 120,
+      "hi_inclusive": true,
+      "normal_dispatch_wait_seconds": 2,
+      "phases": {
+        "ES_Eval": "no news gate in inspected frozen inputs",
+        "ES_Funded": "named T1 including FOMC press conference",
+        "NQ_TradeDay_Eval": "named T1 excluding press conference as separate event",
+        "NQ_TradeDay_Funded": "same TradeDay named T1 gate"
+      }
+    }
+  },
+  "historical_gaps": "Dates not explicitly covered by scored seeds/current official calendar remain missing, never implicitly no-events",
+  "future_freshness": "24h local operational acceptance, not a provider-stated expiry",
+  "no_network_by_builder": true
+}

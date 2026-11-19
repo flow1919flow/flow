@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "processes": 2,
+  "book_sha256": "c3b80240b038f87b251213918d81255be914cd2b9f38534372af16e18ac414f3",
+  "native_ninjatrader_restart": false,
+  "stdout": "Simtradedaya\tTradeDayEvaluation\t-204576\t-200000\tTrue\t7e1511616ff021c467d1279dc0579e24.xml\nSimtradedayb\tTradeDayFunded\t-204576\t-200000\tTrue\tc65bc038a097f8cf0dc30fa774461380.xml\nSimhy104rapideval\tMffEvaluation\t186926\t-200000\tFalse\t5a76960cf0a0d93eb5305f3403b01d36.xml\nSim104c28funded\tMffFunded\t186926\t-200000\tFalse\ta181a9d1ed4e19cc26093e4ee1a4ae63.xml\n"
+}

@@ -25,14 +25,10 @@ namespace NinjaTrader.NinjaScript.Strategies
         private const string TradingHoursName = "CME US Index Futures ETH";
         private const int WarmupSessions = 5;
         private const string SimulationAccountName = "SimHY104RapidEval";
-        private static readonly DateTime TestDay = new DateTime(2026, 11, 16);
         private const bool UsesOpeningRange = false;
-        private const double OpeningModelBalance = 50000.0;
-        private const double IntradayLossFloor = OpeningModelBalance - 2000.0;
-        private const double ModelFeePerSide = 2.87;
         private static readonly TimeSpan OpeningWindow = TimeSpan.FromMinutes(60);
-        private static bool modelLossLatched;
-        private static double modelRealized;
+        private bool modelLossLatched;
+        private double modelRealized;
         private double openingHigh, openingLow;
         private bool openingObserved, openingFromStart, openingReported;
         private DateTime bidClock, askClock;
@@ -49,12 +45,12 @@ namespace NinjaTrader.NinjaScript.Strategies
         private static readonly Brush KeltnerBrush = FrozenBrush(94, 143, 138);
         private static readonly Brush BollingerBrush = FrozenBrush(112, 136, 191);
         private static readonly Brush StopBrush = FrozenBrush(255, 156, 172);
-        private static readonly SharpDX.Color4 LiveAccent = Pigment(154, 187, 255);
+        private static readonly SharpDX.Color4 LiveAccent = Pigment(55, 222, 143);
         private static readonly SharpDX.Color4 ReplayAccent = Pigment(116, 147, 194);
         private static readonly SharpDX.Color4 ManualAccent = Pigment(166, 181, 203);
-        private static readonly SharpDX.Color4 WaitingAccent = Pigment(116, 147, 194);
-        private static readonly SharpDX.Color4 ClosedAccent = Pigment(166, 181, 203);
-        private static readonly SharpDX.Color4 ErrorAccent = Pigment(255, 156, 172);
+        private static readonly SharpDX.Color4 WaitingAccent = Pigment(255, 201, 74);
+        private static readonly SharpDX.Color4 ClosedAccent = Pigment(255, 83, 105);
+        private static readonly SharpDX.Color4 ErrorAccent = Pigment(255, 83, 105);
         private readonly object sync = new object();
         private readonly IndicatorState indicators = new IndicatorState();
 
@@ -62,12 +58,23 @@ namespace NinjaTrader.NinjaScript.Strategies
         private TimeZoneInfo easternZone;
         private TimeZoneInfo chicagoZone;
         private SessionIterator sessionIterator;
+        private SessionIterator integrityCalendar;
+        private bool integrityBoundaryProbed;
+        private int verifiedCompleteSessions;
+        private DateTime integritySeedBegin, lastUncoveredSession, integrityLastEventTime;
+        private bool integrityCalendarFailed, integrityAuditFailed;
+        private string integrityFailure, lastCoverageReason, integrityAuditPath;
+        private System.IO.StreamWriter integrityAudit;
+        private long integrityAuditSequence;
+        private double integrityBarOpen;
+        private long integrityBarTicks;
         private DateTime templateBegin;
         private DateTime templateEnd;
         private DateTime sessionOpen;
         private DateTime sessionEnd;
         private DateTime flattenAt;
         private DateTime lastMarketTime;
+        private DateTime lastProcessedTradeTime; // Last-event order independent of quote/control clocks.
         private DateTime barStart;
         private double barHigh;
         private double barLow;
@@ -149,6 +156,9 @@ namespace NinjaTrader.NinjaScript.Strategies
 
         protected override void OnStateChange()
         {
+            // Diagnostic state identity only; no trading readiness or clock changes.
+            if (State == State.Historical || State == State.Realtime)
+                AuditRuntimeMetadata("state transition");
             if (State == State.SetDefaults)
             {
                 Name = "HY104 | Rapid EOD Eval SIM";
@@ -186,6 +196,8 @@ namespace NinjaTrader.NinjaScript.Strategies
                     throw new InvalidOperationException("HY104: use ES, 5 minutes, CME US Index Futures ETH and Tick Replay.");
 
                 sessionIterator = new SessionIterator(Bars);
+                integrityCalendar = new SessionIterator(Bars);
+                InitializeIntegrityAudit();
                 ready = true;
             }
             else if (State == State.Historical && ChartControl != null)
@@ -212,6 +224,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 liveClock = NinjaTrader.Cbi.Connection.PlaybackConnection == null;
                 if (SimAutomatik && liveClock && MatchesSimulationAccount())
                     ownsSimulationOrderSlot = Interlocked.CompareExchange(ref simulationOrderSlot, 1, 0) == 0;
+                InitializeAccountReplay();
                 Print("HY104: " + Account.Name + " · " + ModeLabel()
                     + " · Aufwärmsitzungen " + completeSessions + "/" + WarmupSessions);
                 if (ChartControl != null)
@@ -221,6 +234,11 @@ namespace NinjaTrader.NinjaScript.Strategies
             }
             else if (State == State.Terminated)
             {
+                lock (sync)
+                {
+                    CloseAccountReplay();
+                    CloseIntegrityAudit();
+                }
                 if (watchdog != null)
                     watchdog.Dispose();
                 if (ownsSimulationOrderSlot)
@@ -270,31 +288,44 @@ namespace NinjaTrader.NinjaScript.Strategies
             Intent next;
             lock (sync)
             {
-                if (time < lastMarketTime)
+                // Quotes may be timestamped ahead of a Last during playback.
+                // Keep receipt/control time monotonic without dropping that Last.
+                if ((realtime && liveClock || kind != MarketDataType.Last) && time < lastMarketTime)
                     return;
-                lastMarketTime = time;
+                if (time > lastMarketTime)
+                    lastMarketTime = time;
+                integrityLastEventTime = marketEventTime;
 
                 bool forceClose = realtime && CheckClose(time);
                 // When crossing an entire session gap, handle the old position before replacing its close time.
                 next = forceClose ? TakePending(time, false, true) : null;
-                RefreshSession(time);
-                if (kind == MarketDataType.Last)
+                // Only a valid, ordered Last may advance/finalize market sessions.
+                // Control time still governs CheckClose and pending order deadlines.
+                bool processTrade = kind == MarketDataType.Last && update.Price > 0
+                    && !double.IsInfinity(update.Price) && marketEventTime >= lastProcessedTradeTime;
+                if (kind == MarketDataType.Last && !processTrade)
+                    AuditIntegrity("LAST_IGNORED", marketEventTime,
+                        "Invalid price or Last predates most recently processed Last; control dispatch remains active", update.Price);
+                if (processTrade)
+                {
+                    lastProcessedTradeTime = marketEventTime;
+                    RefreshSession(marketEventTime);
+                }
+                if (processTrade)
                     ObserveOpeningRange(marketEventTime, update.Price, realtime);
                 if (realtime && kind == MarketDataType.Last)
                     CheckModelLoss(time, false);
                 if (kind == MarketDataType.Last)
                 {
-                    if (update.Price > 0 && !double.IsInfinity(update.Price))
+                    if (processTrade)
                     {
-                        if (time >= sessionOpen && time < sessionEnd)
-                        {
-                            if (realtime)
-                                lastTradeClock = marketEventTime;
+                        // Last-trade timestamps determine the indicator candles; the local clock
+                        // still drives order deadlines; Last time finalizes the session.
+                        if (!sessionFinished && marketEventTime >= sessionOpen && marketEventTime < sessionEnd)
                             ObserveTrade(time, marketEventTime, update.Price, realtime);
-                        }
-                        else if (ChartControl != null && time >= templateBegin && time < sessionOpen
-                            && sessionOpen < sessionEnd)
-                            ObservePreviewTrade(time, update.Price);
+                        else if (ChartControl != null && !sessionSeenTrade && marketEventTime >= templateBegin
+                            && marketEventTime < sessionOpen && sessionOpen < sessionEnd)
+                            ObservePreviewTrade(marketEventTime, update.Price);
                     }
                 }
                 else if (kind == MarketDataType.Bid)
@@ -348,6 +379,8 @@ namespace NinjaTrader.NinjaScript.Strategies
 
             long elapsed = (time - templateBegin).Ticks;
             DateTime bucket = templateBegin.AddTicks(elapsed / FiveMinutes.Ticks * FiveMinutes.Ticks);
+            if (bucket < previewBarStart)
+                return;
             if (previewBarStart != bucket)
             {
                 if (previewBarStart != default(DateTime))
@@ -399,6 +432,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                     levels = string.Format(CultureInfo.CurrentCulture, "Stop {0:F2}   |   Ziel {1:F4}",
                         pending.Stop, pending.Side > 0 ? chartLines.BollingerUpper : chartLines.BollingerLower);
                 }
+                string integrityDetail = IntegrityLegend();
+                if (integrityDetail != null)
+                    detail = string.IsNullOrEmpty(detail) ? integrityDetail : detail + "\n" + integrityDetail;
                 DateTime candleEnd = CurrentBar >= 0 ? PlatformToEastern(Time[0]) : default(DateTime);
                 TimeSpan candleRemaining = candleEnd - time;
                 bool currentCandle = candleRemaining > TimeSpan.Zero && candleRemaining <= FiveMinutes;
@@ -414,21 +450,27 @@ namespace NinjaTrader.NinjaScript.Strategies
                     : null;
                 DateTime chicago = TimeZoneInfo.ConvertTime(DateTime.SpecifyKind(time, DateTimeKind.Unspecified),
                     easternZone, chicagoZone);
-                string steps = null;
-                if (time.Date == TestDay && time >= sessionOpen && time < flattenAt && positionSide == 0)
-                {
-                    EntryMarks intent = (submitted ?? pending)?.Marks;
-                    if (intent != null)
-                        steps = "1 Band  ·  2 Gegenband  ·  3 EMA " + (intent.Return.Side > 0 ? "Long" : "Short") + "  ·  Fill ausstehend";
-                    else if (armedSecondMark != null)
-                        steps = "1 Band  ·  2 Gegenband  ·  " + (armedSecondMark.Side > 0 ? "Long" : "Short") + " bereit";
-                    else if (lastContactMark != null)
-                        steps = "1 Band  ·  Gegenband ausstehend";
-                }
+                EntryMarks trace = (submitted ?? pending)?.Marks;
+                if (positionSide != 0 && confirmedEntryMarks.Count > 0)
+                    trace = confirmedEntryMarks[confirmedEntryMarks.Count - 1];
+                SetupPoint first = trace != null ? trace.First
+                    : armedSecondMark != null ? armedFirstMark : lastContactMark;
+                SetupPoint opposite = trace != null ? trace.Second : armedSecondMark;
                 statusCard = new StatusCard(Account.Name, chicago.ToString("HH:mm:ss", CultureInfo.InvariantCulture) + " CT",
-                    mode, state, detail, levels, countdown, marketCountdown, accent, steps);
+                    mode, state, detail, levels, countdown, marketCountdown, accent,
+                    FormatSetupPrice(first, sessionOpen.Date),
+                    FormatSetupPrice(opposite, sessionOpen.Date),
+                    FormatSetupPrice(trace?.Return, sessionOpen.Date), first?.Side ?? 0, opposite?.Side ?? 0);
             }
             ForceRefresh();
+        }
+
+        private static string FormatSetupPrice(SetupPoint point, DateTime session)
+        {
+            if (point == null)
+                return null;
+            string previous = point.Session < session ? " (Vorsitzung)" : "";
+            return point.Price.ToString("F2", CultureInfo.CurrentCulture) + previous;
         }
 
         private string GetPositionLegend(bool simulatedOrders)
@@ -451,9 +493,30 @@ namespace NinjaTrader.NinjaScript.Strategies
                 return "LOKALES SIM-KONTO PRÜFEN";
             }
             if (SimAutomatik && !ownsSimulationOrderSlot && liveClock)
+            {
+                accent = ErrorAccent;
                 return "SIM-KONTO BEREITS BELEGT";
+            }
             if (SimAutomatik && (!liveClock || !OrderConnectionReady()))
+            {
+                accent = ErrorAccent;
                 return "WARTET  ·  SIM-Orderverbindung";
+            }
+            if (!AccountReplayReady() && State == State.Realtime && IsOrderAccount())
+            {
+                accent = modelLossLatched || accountReplayFailure != null ? ErrorAccent : WaitingAccent;
+                return AccountReplayStatus();
+            }
+            if (integrityAuditFailed || integrityCalendarFailed)
+            {
+                accent = ErrorAccent;
+                return IntegrityGateReason();
+            }
+            if (ownershipViolation)
+            {
+                accent = ErrorAccent;
+                return "ORDER OWNERSHIP GESPERRT · Log prüfen";
+            }
             if (IsPreviewTime(time))
             {
                 var remaining = TimeSpan.FromSeconds(Math.Ceiling((sessionOpen - time).TotalSeconds));
@@ -470,11 +533,22 @@ namespace NinjaTrader.NinjaScript.Strategies
                 return "EINSTIEGE GESPERRT  ·  Log prüfen";
             }
             if (time >= flattenAt)
+            {
+                accent = ClosedAccent;
                 return "SITZUNGSENDE  ·  Keine neuen Einstiege";
-            if (!CanEnter(time))
-                return completeSessions < WarmupSessions
-                    ? "WARTET  ·  Warm-up " + completeSessions + "/" + WarmupSessions
-                    : "WARTET  ·  Unvollständige Sitzung";
+            }
+            if (modelLossLatched)
+            {
+                accent = ErrorAccent;
+                return "SIM-VERLUSTGRENZE ERREICHT";
+            }
+            string integrity = IntegrityGateReason();
+            if (integrity != null)
+                return "GESPERRT  ·  " + integrity;
+            if (completeSessions < WarmupSessions)
+                return "WARTET  ·  Warm-up " + completeSessions + "/" + WarmupSessions;
+            if (!sessionComplete)
+                return "WARTET  ·  Unvollständige Sitzung";
             if (!sessionSeenTrade || (liveClock && !MarketTimeAgrees(time, lastTradeClock)))
                 return "WARTET  ·  Aktuelle Marktdaten";
             accent = simulatedOrders ? (liveClock ? LiveAccent : ReplayAccent) : ManualAccent;
@@ -555,7 +629,7 @@ namespace NinjaTrader.NinjaScript.Strategies
 
         private void RememberBadge(SetupPoint point, int step)
         {
-            if (point == null || point.Session != TestDay || sessionBadges.Any(b => b.Point == point))
+            if (point == null || point.Session != sessionOpen.Date || sessionBadges.Any(b => b.Point == point))
                 return;
             if (sessionBadges.Count == 96)
                 sessionBadges.RemoveAt(0);
@@ -566,58 +640,71 @@ namespace NinjaTrader.NinjaScript.Strategies
         {
             if (RenderTarget == null || ChartBars == null || ChartPanel == null || Bars == null)
                 return;
-            EntryMarks live;
+            EntryMarks active;
             EntryMarks[] recent;
             SetupBadge[] badges;
-            SetupPoint first, second;
+            SetupPoint first, second, retrace;
             lock (sync)
             {
-                live = (submitted ?? pending)?.Marks;
                 recent = confirmedEntryMarks.ToArray();
                 badges = sessionBadges.ToArray();
-                first = armedSecondMark == null ? lastContactMark : armedFirstMark;
-                second = armedSecondMark;
+                active = (submitted ?? pending)?.Marks;
+                if (positionSide != 0 && recent.Length > 0)
+                    active = recent[recent.Length - 1];
+                first = active != null ? active.First : armedSecondMark == null ? lastContactMark : armedFirstMark;
+                second = active != null ? active.Second : armedSecondMark;
+                retrace = active?.Return;
             }
+
+            // A contact reused by the current setup has one visible number, even if its role changed.
+            var drawn = new HashSet<SetupPoint> { first, second, retrace, active?.Fill };
             using (var cyan = new D2D.SolidColorBrush(RenderTarget, Pigment(86, 228, 255)))
-            using (var violet = new D2D.SolidColorBrush(RenderTarget, Pigment(189, 153, 255)))
+            using (var violet = new D2D.SolidColorBrush(RenderTarget, Pigment(204, 164, 255)))
             using (var gold = new D2D.SolidColorBrush(RenderTarget, Pigment(255, 214, 97)))
             using (var mint = new D2D.SolidColorBrush(RenderTarget, Pigment(88, 255, 184)))
+            using (var gray = new D2D.SolidColorBrush(RenderTarget, Pigment(149, 158, 174, .66f)))
             using (var ink = new D2D.SolidColorBrush(RenderTarget, Pigment(11, 19, 33)))
-            using (var number = new DWrite.TextFormat(Core.Globals.DirectWriteFactory, "Segoe UI Black", 29f))
+            using (var number = new DWrite.TextFormat(Core.Globals.DirectWriteFactory, "Segoe UI Semibold", 28f))
+            using (var smallNumber = new DWrite.TextFormat(Core.Globals.DirectWriteFactory, "Segoe UI Semibold", 17f))
             {
-                number.TextAlignment = DWrite.TextAlignment.Center;
-                number.ParagraphAlignment = DWrite.ParagraphAlignment.Center;
-                number.WordWrapping = DWrite.WordWrapping.NoWrap;
-                foreach (SetupBadge badge in badges)
+                number.TextAlignment = smallNumber.TextAlignment = DWrite.TextAlignment.Center;
+                number.ParagraphAlignment = smallNumber.ParagraphAlignment = DWrite.ParagraphAlignment.Center;
+                number.WordWrapping = smallNumber.WordWrapping = DWrite.WordWrapping.NoWrap;
+
+                for (int i = recent.Length - 1; i >= 0; --i)
                 {
-                    if (badge.Point == first || badge.Point == second || live?.Contains(badge.Point) == true
-                        || recent.Any(trace => trace.Contains(badge.Point)))
+                    EntryMarks trace = recent[i];
+                    if (trace == active)
                         continue;
-                    DrawStep(badge.Point, badge.Step, chart, scale, cyan, violet, gold, ink, number);
+                    if (drawn.Add(trace.First)) DrawStep(trace.First, 1, false, chart, scale, gray, ink, smallNumber);
+                    if (drawn.Add(trace.Second)) DrawStep(trace.Second, 2, false, chart, scale, gray, ink, smallNumber);
+                    if (drawn.Add(trace.Return)) DrawStep(trace.Return, 3, false, chart, scale, gray, ink, smallNumber);
+                    if (drawn.Add(trace.Fill)) DrawFillMark(trace.Fill, false, chart, scale, gray, ink, smallNumber);
                 }
-                foreach (EntryMarks trace in recent)
-                    DrawEntryTrace(trace, chart, scale, cyan, violet, gold, mint, ink, number);
-                if (live != null)
-                    DrawEntryTrace(live, chart, scale, cyan, violet, gold, mint, ink, number);
-                else
+                for (int i = badges.Length - 1; i >= 0; --i)
                 {
-                    if (!recent.Any(t => t.First == first || t.Second == first))
-                        DrawStep(first, 1, chart, scale, cyan, violet, gold, ink, number);
-                    if (!recent.Any(t => t.Second == second))
-                        DrawStep(second, 2, chart, scale, cyan, violet, gold, ink, number);
+                    SetupBadge badge = badges[i];
+                    if (drawn.Add(badge.Point))
+                        DrawStep(badge.Point, badge.Step, false, chart, scale, gray, ink, smallNumber);
                 }
+
+                DrawStep(first, 1, true, chart, scale, cyan, ink, number);
+                DrawStep(second, 2, true, chart, scale, violet, ink, number);
+                DrawStep(retrace, 3, true, chart, scale, gold, ink, number);
+                if (active?.Fill != null)
+                    DrawFillMark(active.Fill, true, chart, scale, mint, ink, number);
             }
         }
 
-        private void DrawStep(SetupPoint point, int step, ChartControl chart, ChartScale scale,
-            D2D.Brush cyan, D2D.Brush violet, D2D.Brush gold, D2D.Brush ink, DWrite.TextFormat text)
+        private void DrawStep(SetupPoint point, int step, bool current, ChartControl chart, ChartScale scale,
+            D2D.Brush color, D2D.Brush ink, DWrite.TextFormat text)
         {
-            if (point == null) return;
+            if (point == null)
+                return;
             if (step == 3)
                 point = new SetupPoint(point.Bar, point.Price, -point.Side, point.Session);
             DrawSetupBadge(point, step == 1 ? "1" : step == 2 ? "2" : "3",
-                step == 3 ? -59f : 0f, 24f, false, chart, scale,
-                step == 1 ? cyan : step == 2 ? violet : gold, ink, text);
+                step == 3 ? -59f : 0f, current ? 24f : 14f, false, chart, scale, color, ink, text);
         }
 
         private bool VisibleMark(SetupPoint p, ChartScale scale)
@@ -669,20 +756,16 @@ namespace NinjaTrader.NinjaScript.Strategies
             DrawCardLine(label, x - radius, y - radius, 2f * radius, 2f * radius, text, ink);
         }
 
-        private void DrawEntryTrace(EntryMarks m, ChartControl chart, ChartScale scale,
-            D2D.Brush cyan, D2D.Brush violet, D2D.Brush gold, D2D.Brush mint, D2D.Brush ink, DWrite.TextFormat text)
+        private void DrawFillMark(SetupPoint fill, bool current, ChartControl chart, ChartScale scale,
+            D2D.Brush color, D2D.Brush ink, DWrite.TextFormat text)
         {
-            DrawStep(m.First, 1, chart, scale, cyan, violet, gold, ink, text);
-            DrawStep(m.Second, 2, chart, scale, cyan, violet, gold, ink, text);
-            DrawStep(m.Return, 3, chart, scale, cyan, violet, gold, ink, text);
-            if (m.Fill != null)
-                DrawSetupBadge(new SetupPoint(m.Fill.Bar, m.Fill.Price, -m.Fill.Side, m.Fill.Session),
-                    m.Fill.Side > 0 ? "▲" : "▼", 62f, 25f, true, chart, scale, mint, ink, text);
+            DrawSetupBadge(new SetupPoint(fill.Bar, fill.Price, -fill.Side, fill.Session),
+                fill.Side > 0 ? "▲" : "▼", 62f, current ? 25f : 14f, current, chart, scale, color, ink, text);
         }
 
         private void RenderStatusCard()
         {
-            if (RenderTarget == null || ChartPanel == null || ChartPanel.W < 284)
+            if (RenderTarget == null || ChartPanel == null || ChartPanel.W < 310f)
                 return;
             StatusCard card;
             lock (sync)
@@ -690,67 +773,134 @@ namespace NinjaTrader.NinjaScript.Strategies
             if (card == null)
                 return;
 
-            float width = Math.Min(680f, ChartPanel.W - 18f);
-            const float pad = 15f;
-            string[] levels = string.IsNullOrEmpty(card.Levels) ? new string[0] : card.Levels.Split('|');
-            bool detail = !string.IsNullOrEmpty(card.Detail);
-            bool steps = !string.IsNullOrEmpty(card.Steps);
-            float height = 87f + (steps ? 28f : 0f) + (detail ? 28f : 0f) + 28f * levels.Length;
+            const float designWidth = 720f;
+            float width = Math.Min(designWidth, ChartPanel.W - 18f);
+            float scale = width / designWidth;
+            string[] levels = (card.Levels ?? "").Split(new[] { '|' }, StringSplitOptions.RemoveEmptyEntries);
+            bool hasDetail = !string.IsNullOrEmpty(card.Detail);
+            float height = (224f + (hasDetail ? 32f : 0f) + (levels.Length > 0 ? 58f : 0f)) * scale;
             if (ChartPanel.H < height + 14f)
                 return;
             float left = ChartPanel.X + (ChartPanel.W - width) / 2f;
             float top = ChartPanel.Y + 10f;
-            float x = left + pad;
-            float inner = width - 2f * pad;
+            float x = left + 20f * scale;
+            const float inner = 680f;
 
-            using (var surface = new D2D.SolidColorBrush(RenderTarget, Pigment(25, 35, 53, .93f)))
-            using (var frame = new D2D.SolidColorBrush(RenderTarget, Pigment(50, 64, 87)))
+            using (var surface = new D2D.SolidColorBrush(RenderTarget, Pigment(19, 29, 46, .97f)))
+            using (var frame = new D2D.SolidColorBrush(RenderTarget, Pigment(54, 74, 102)))
+            using (var tile = new D2D.SolidColorBrush(RenderTarget, Pigment(28, 42, 64)))
             using (var status = new D2D.SolidColorBrush(RenderTarget, card.Accent))
-            using (var text = new D2D.SolidColorBrush(RenderTarget, Pigment(237, 242, 252)))
-            using (var muted = new D2D.SolidColorBrush(RenderTarget, Pigment(166, 181, 203)))
-            using (var title = new DWrite.TextFormat(Core.Globals.DirectWriteFactory, "Segoe UI Semibold", 24f))
-            using (var body = new DWrite.TextFormat(Core.Globals.DirectWriteFactory, "Segoe UI Semibold", 19f))
-            using (var small = new DWrite.TextFormat(Core.Globals.DirectWriteFactory, "Segoe UI", 16f))
-            using (var right = new DWrite.TextFormat(Core.Globals.DirectWriteFactory, "Consolas", 20f))
+            using (var foreground = new D2D.SolidColorBrush(RenderTarget, Pigment(239, 245, 255)))
+            using (var muted = new D2D.SolidColorBrush(RenderTarget, Pigment(169, 186, 211)))
+            using (var cyan = new D2D.SolidColorBrush(RenderTarget, Pigment(86, 228, 255)))
+            using (var violet = new D2D.SolidColorBrush(RenderTarget, Pigment(204, 164, 255)))
+            using (var gold = new D2D.SolidColorBrush(RenderTarget, Pigment(255, 214, 97)))
+            using (var ink = new D2D.SolidColorBrush(RenderTarget, Pigment(11, 19, 33)))
+            using (var title = new DWrite.TextFormat(Core.Globals.DirectWriteFactory, "Segoe UI Semibold", 26f * scale))
+            using (var timer = new DWrite.TextFormat(Core.Globals.DirectWriteFactory, "Segoe UI Semibold", 32f * scale))
+            using (var value = new DWrite.TextFormat(Core.Globals.DirectWriteFactory, "Segoe UI Semibold", 21f * scale))
+            using (var label = new DWrite.TextFormat(Core.Globals.DirectWriteFactory, "Segoe UI", 17f * scale))
+            using (var right = new DWrite.TextFormat(Core.Globals.DirectWriteFactory, "Segoe UI Semibold", 21f * scale))
+            using (var stepNumber = new DWrite.TextFormat(Core.Globals.DirectWriteFactory, "Segoe UI Semibold", 17f * scale))
             {
+                title.WordWrapping = timer.WordWrapping = value.WordWrapping = label.WordWrapping = DWrite.WordWrapping.NoWrap;
                 right.TextAlignment = DWrite.TextAlignment.Trailing;
                 right.WordWrapping = DWrite.WordWrapping.NoWrap;
+                stepNumber.TextAlignment = DWrite.TextAlignment.Center;
+                stepNumber.ParagraphAlignment = DWrite.ParagraphAlignment.Center;
+                stepNumber.WordWrapping = DWrite.WordWrapping.NoWrap;
+
                 RenderTarget.FillRectangle(new SharpDX.RectangleF(left, top, width, height), surface);
                 RenderTarget.DrawRectangle(new SharpDX.RectangleF(left, top, width, height), frame, 1f);
-                DrawCardLine("HY104 · Eval SIM", x, top + 8f, inner - 195f, 30f, title, text);
-                DrawCardLine("Chicago " + card.Clock, x, top + 12f, inner, 26f, right, text);
-                RenderTarget.FillRectangle(new SharpDX.RectangleF(x, top + 43f, inner, 1f), frame);
-                RenderTarget.FillEllipse(new D2D.Ellipse(new SharpDX.Vector2(x + 5f, top + 63f), 4.5f, 4.5f), status);
-                float timerArea = 0f;
-                if (inner > 550f && card.MarketRemaining != null)
-                    timerArea = 187f;
-                if (inner > 460f && card.Countdown != "—")
-                    timerArea += 145f;
-                DrawCardLine(card.State, x + 16f, top + 51f, inner - timerArea - 18f, 29f, body, text);
-                if (timerArea >= 187f && card.MarketRemaining != null)
-                    DrawCardLine("Markt " + card.MarketRemaining, x + inner - timerArea, top + 54f, 174f, 25f, small, muted);
-                if (inner > 460f && card.Countdown != "—")
-                    DrawCardLine("Kerze " + card.Countdown, x + inner - 135f, top + 51f, 135f, 29f, right, text);
-                float row = top + 82f;
-                if (steps)
+                DrawCardLine("HY104 · Eval SIM", x, top + 15f * scale, 485f * scale, 38f * scale, title, foreground);
+                DrawCardLine("CHICAGO", x + 485f * scale, top + 7f * scale, 195f * scale, 22f * scale, right, muted);
+                DrawCardLine(card.Clock, x + 485f * scale, top + 29f * scale, 195f * scale, 29f * scale, right, foreground);
+
+                float statusY = top + 67f * scale;
+                RenderTarget.FillRectangle(new SharpDX.RectangleF(x, statusY, inner * scale, 72f * scale), tile);
+                string[] state = card.State.Split(new[] { "  ·  " }, 2, StringSplitOptions.None);
+                float stateY = statusY + (state.Length == 1 ? 32f : 24f) * scale;
+                DrawStatusLed(x + 17f * scale, stateY + 14f * scale, scale, card.Accent, status);
+                DrawCardLine("SITZUNG", x + 12f * scale, statusY + 6f * scale, 338f * scale, 24f * scale, label, muted);
+                DrawCardLine(state[0], x + 30f * scale, stateY,
+                    309f * scale, 28f * scale, value, foreground);
+                if (state.Length > 1)
+                    DrawCardLine(state[1], x + 30f * scale, statusY + 48f * scale, 309f * scale, 22f * scale, label, muted);
+                DrawCardTimer("HANDELSFRIST IN", card.MarketRemaining, x + 360f * scale, statusY, 182f * scale,
+                    scale, label, timer, cyan, muted);
+                DrawCardTimer("KERZE ENDET IN", card.Countdown, x + 538f * scale, statusY, 142f * scale,
+                    scale, label, timer, foreground, muted);
+
+                float stepY = top + 148f * scale;
+                float stepWidth = inner / 3f * scale;
+                DrawSetupStep("1", "Keltnerband", card.FirstBand, card.FirstBandSide, x, stepY, stepWidth, scale,
+                    label, value, stepNumber, cyan, foreground, muted, ink, tile);
+                DrawSetupStep("2", "Gegenband", card.OppositeBand, card.OppositeBandSide, x + stepWidth, stepY, stepWidth, scale,
+                    label, value, stepNumber, violet, foreground, muted, ink, tile);
+                DrawSetupStep("3", "Rücklauf", card.Retrace, 0, x + 2f * stepWidth, stepY, stepWidth, scale,
+                    label, value, stepNumber, gold, foreground, muted, ink, tile);
+
+                float row = top + 224f * scale;
+                if (hasDetail)
                 {
-                    DrawCardLine(card.Steps, x, row, inner, 27f, small, muted);
-                    row += 28f;
+                    DrawCardLine(card.Detail, x, row, inner * scale, 28f * scale, value, foreground);
+                    row += 32f * scale;
                 }
-                if (detail)
+                for (int i = 0; i < levels.Length; ++i)
                 {
-                    DrawCardLine(card.Detail, x, row, inner, 27f, small, text);
-                    row += 28f;
-                }
-                if (levels.Length > 0)
-                {
-                    for (int i = 0; i < levels.Length; ++i)
-                    {
-                        DrawCardLine(levels[i].Trim(), x, row, inner, 26f, body, text);
-                        row += 28f;
-                    }
+                    string level = levels[i].Trim();
+                    int separator = level.IndexOf(' ');
+                    float column = x + i * stepWidth;
+                    DrawCardLine(level.Substring(0, separator), column, row, stepWidth, 25f * scale, label, muted);
+                    DrawCardLine(level.Substring(separator + 1), column, row + 23f * scale, stepWidth, 29f * scale, value, foreground);
                 }
             }
+        }
+
+        private void DrawStatusLed(float x, float y, float scale, SharpDX.Color4 color, D2D.Brush light)
+        {
+            var center = new SharpDX.Vector2(x, y);
+            using (var halo = new D2D.SolidColorBrush(RenderTarget,
+                new SharpDX.Color4(color.Red, color.Green, color.Blue, .18f)))
+            using (var rim = new D2D.SolidColorBrush(RenderTarget, Pigment(7, 15, 27)))
+            using (var shine = new D2D.SolidColorBrush(RenderTarget, Pigment(255, 255, 255, .82f)))
+            {
+                RenderTarget.FillEllipse(new D2D.Ellipse(center, 10f * scale, 10f * scale), halo);
+                RenderTarget.DrawEllipse(new D2D.Ellipse(center, 7.5f * scale, 7.5f * scale), halo, 1.5f * scale);
+                RenderTarget.FillEllipse(new D2D.Ellipse(center, 6.4f * scale, 6.4f * scale), rim);
+                RenderTarget.FillEllipse(new D2D.Ellipse(center, 5.3f * scale, 5.3f * scale), light);
+                RenderTarget.FillEllipse(new D2D.Ellipse(new SharpDX.Vector2(x - 1.7f * scale, y - 1.7f * scale),
+                    1.5f * scale, 1.5f * scale), shine);
+            }
+        }
+
+        private void DrawCardTimer(string name, string time, float x, float y, float width, float scale,
+            DWrite.TextFormat label, DWrite.TextFormat value, D2D.Brush highlight, D2D.Brush muted)
+        {
+            DrawCardLine(name, x, y + 6f * scale, width, 24f * scale, label, muted);
+            DrawCardLine(time ?? "—", x, y + 25f * scale, width, 43f * scale, value,
+                time == null || time == "—" ? muted : highlight);
+        }
+
+        private void DrawSetupStep(string step, string name, string price, int bandSide, float x, float y, float width,
+            float scale, DWrite.TextFormat label, DWrite.TextFormat value, DWrite.TextFormat number,
+            D2D.Brush accent, D2D.Brush text, D2D.Brush muted, D2D.Brush ink, D2D.Brush tile)
+        {
+            bool reached = price != null;
+            bool previous = reached && price.EndsWith(" (Vorsitzung)", StringComparison.Ordinal);
+            var center = new SharpDX.Vector2(x + 17f * scale, y + 19f * scale);
+            RenderTarget.FillEllipse(new D2D.Ellipse(center, 14f * scale, 14f * scale), reached ? accent : tile);
+            DrawCardLine(step, x + 3f * scale, y + 5f * scale, 28f * scale, 28f * scale, number, reached ? ink : muted);
+            float textX = x + 41f * scale;
+            float textWidth = width - 46f * scale;
+            DrawCardLine(name, textX, y + 4f * scale, textWidth, 24f * scale, label, reached ? accent : muted);
+            DrawCardLine(previous ? price.Substring(0, price.Length - " (Vorsitzung)".Length) : price ?? "Ausstehend",
+                textX, y + 24f * scale, textWidth, 28f * scale, value, reached ? text : muted);
+            string side = bandSide > 0 ? "↑ Oben" : bandSide < 0 ? "↓ Unten" : null;
+            if (previous)
+                side = side == null ? "Vorsitzung" : side + " · Vorsitzung";
+            if (reached)
+                DrawCardLine(side, textX, y + 49f * scale, textWidth, 24f * scale, label, muted);
         }
 
         private void RenderBandLabels(ChartControl chartControl, ChartScale scale)
@@ -857,6 +1007,659 @@ namespace NinjaTrader.NinjaScript.Strategies
             }
         }
 
+        // Independent readiness verification. It never alters indicators or setup state.
+        private void VerifyCalendarContinuity(DateTime previousTemplateEnd, DateTime nextTemplateBegin)
+        {
+            if (previousTemplateEnd == default(DateTime) || nextTemplateBegin <= previousTemplateEnd)
+                return;
+            DateTime cursor = previousTemplateEnd;
+            DateTime query = default(DateTime), diagnosticBegin = default(DateTime), diagnosticEnd = default(DateTime);
+            DateTime diagnosticTradingDay = default(DateTime);
+            string diagnosticStage = "initialize";
+            string diagnosticPrevious = "not captured", diagnosticRaw = "not returned";
+            int diagnosticIteration = -1;
+            try
+            {
+                DateTime targetEnd = templateEnd;
+                DateTime targetTradingDay = sessionIterator.ActualTradingDayExchange.Date;
+                for (int count = 0; count < 512; ++count)
+                {
+                    diagnosticIteration = count;
+                    diagnosticStage = "convert cursor+1tick ET to platform";
+                    query = TimeZoneInfo.ConvertTime(DateTime.SpecifyKind(cursor.AddTicks(1),
+                        DateTimeKind.Unspecified), easternZone, platformZone);
+                    diagnosticStage = "GetNextSession(query,false)";
+                    try
+                    {
+                        DateTime oldBegin = integrityCalendar.ActualSessionBegin, oldEnd = integrityCalendar.ActualSessionEnd;
+                        diagnosticPrevious = oldBegin.ToString("O", CultureInfo.InvariantCulture) + " kind=" + oldBegin.Kind
+                            + " ticks=" + oldBegin.Ticks + " / " + oldEnd.ToString("O", CultureInfo.InvariantCulture)
+                            + " kind=" + oldEnd.Kind + " ticks=" + oldEnd.Ticks;
+                    }
+                    catch (Exception snapshotError) { diagnosticPrevious = "unavailable: " + snapshotError.GetType().Name; }
+                    bool returned = integrityCalendar.GetNextSession(query, false);
+                    diagnosticStage = "read candidate after GetNextSession returned " + returned;
+                    DateTime rawBegin = integrityCalendar.ActualSessionBegin, rawEnd = integrityCalendar.ActualSessionEnd;
+                    DateTime tradingDay = integrityCalendar.ActualTradingDayExchange;
+                    diagnosticRaw = rawBegin.ToString("O", CultureInfo.InvariantCulture) + " kind=" + rawBegin.Kind
+                        + " ticks=" + rawBegin.Ticks + " / " + rawEnd.ToString("O", CultureInfo.InvariantCulture)
+                        + " kind=" + rawEnd.Kind + " ticks=" + rawEnd.Ticks;
+                    diagnosticTradingDay = tradingDay;
+                    diagnosticStage = "validate candidate dates and forward progress";
+                    if (rawBegin.Year < 1900 || rawEnd.Year < 1900 || tradingDay.Year < 1900 || rawEnd <= rawBegin)
+                        throw new InvalidOperationException("Kalender liefert leere oder ungültige Sitzungsgrenzen");
+                    DateTime begin = PlatformToEastern(rawBegin), end = PlatformToEastern(rawEnd);
+                    diagnosticBegin = begin;
+                    diagnosticEnd = end;
+                    if (end <= begin || end <= cursor || begin < cursor)
+                        throw new InvalidOperationException("Trading-Hours-Kalender schreitet nicht voran");
+                    if (begin > nextTemplateBegin)
+                        throw new InvalidOperationException("Trading-Hours-Kalender überspringt die erwartete Zielsitzung");
+
+                    // Native NT8 can populate correct next bounds while returning false
+                    // for a maintenance-gap query. Never accept false on its own: confirm
+                    // strictly inside the candidate and require true plus identical bounds.
+                    if (!returned)
+                    {
+                        diagnosticStage = "confirm candidate from strictly interior timestamp";
+                        long duration = (rawEnd - rawBegin).Ticks;
+                        long offset = Math.Min(TimeSpan.TicksPerSecond, duration / 2);
+                        if (offset <= 0 || offset >= duration)
+                            throw new InvalidOperationException("Kalendersitzung hat keinen inneren Bestätigungszeitpunkt");
+                        DateTime confirmationQuery = rawBegin.AddTicks(offset);
+                        diagnosticStage += " query_PLATFORM=" + confirmationQuery.ToString("O", CultureInfo.InvariantCulture);
+                        bool confirmed = integrityCalendar.GetNextSession(confirmationQuery, false);
+                        if (!confirmed
+                            || integrityCalendar.ActualSessionBegin != rawBegin || integrityCalendar.ActualSessionBegin.Kind != rawBegin.Kind
+                            || integrityCalendar.ActualSessionEnd != rawEnd || integrityCalendar.ActualSessionEnd.Kind != rawEnd.Kind
+                            || integrityCalendar.ActualTradingDayExchange != tradingDay
+                            || integrityCalendar.ActualTradingDayExchange.Kind != tradingDay.Kind)
+                            throw new InvalidOperationException("Kalenderkandidat im Sitzungsinneren nicht identisch bestätigt");
+                        AuditIntegrity("CALENDAR_CONFIRMED", lastMarketTime,
+                            "gapQueryReturned=False confirmation=True query_PLATFORM="
+                            + confirmationQuery.ToString("O", CultureInfo.InvariantCulture)
+                            + " begin_ET=" + AuditDate(begin) + " end_ET=" + AuditDate(end)
+                            + " tradingDay=" + AuditDate(tradingDay), double.NaN);
+                    }
+                    diagnosticStage = "match main iterator target bounds and trading day";
+                    if (begin == nextTemplateBegin)
+                    {
+                        if (end != targetEnd || tradingDay.Date != targetTradingDay)
+                            throw new InvalidOperationException("Kalenderziel stimmt nicht mit Hauptiterator-Ende/Handelstag überein");
+                        return;
+                    }
+                    diagnosticStage = "evaluate missing session overlap";
+                    DateTime day = tradingDay.Date;
+                    DateTime open = day.AddHours(9).AddMinutes(30);
+                    if (begin > open)
+                        open = begin;
+                    DateTime regularEnd = day.AddHours(17);
+                    DateTime close = end < regularEnd ? end : regularEnd;
+                    if (close > open)
+                        InvalidateIntegrity(day, "Erwartete Sitzung ohne beobachtete Tickabdeckung");
+                    cursor = end;
+                }
+                throw new InvalidOperationException("Trading-Hours-Kalendergrenze von 512 Sitzungen erreicht");
+            }
+            catch (Exception error)
+            {
+                integrityCalendarFailed = true;
+                integrityFailure = "Kalenderprüfung fehlgeschlagen: " + error.GetType().Name;
+                string diagnostic = integrityFailure + ": " + error.Message
+                    + " | stage=" + diagnosticStage + " iteration=" + diagnosticIteration
+                    + " previousTemplateEnd_ET=" + AuditDate(previousTemplateEnd)
+                    + " nextTemplateBegin_ET=" + AuditDate(nextTemplateBegin)
+                    + " cursor_ET=" + AuditDate(cursor) + " query_PLATFORM=" + AuditDate(query)
+                    + " actualBegin_ET=" + AuditDate(diagnosticBegin) + " actualEnd_ET=" + AuditDate(diagnosticEnd)
+                    + " actualTradingDay=" + AuditDate(diagnosticTradingDay)
+                    + " queryKind=" + query.Kind + " queryTicks=" + query.Ticks
+                    + " previousIterator_PLATFORM=" + diagnosticPrevious + " returnedIterator_PLATFORM=" + diagnosticRaw
+                    + " ETzone=" + easternZone.Id + " platformZone=" + platformZone.Id;
+                AuditIntegrity("CALENDAR_FAILURE", lastMarketTime, diagnostic, double.NaN);
+                if (!integrityBoundaryProbed && !integrityAuditFailed)
+                {
+                    integrityBoundaryProbed = true;
+                    ProbeCalendarBoundary(cursor, nextTemplateBegin);
+                }
+                Print("HY HISTORIE: " + integrityFailure + ". Neue Einstiege gesperrt; Ausstiege bleiben aktiv.");
+            }
+        }
+
+        private void InvalidateIntegrity(DateTime day, string reason)
+        {
+            verifiedCompleteSessions = 0;
+            integritySeedBegin = default(DateTime);
+            lastUncoveredSession = day.Date;
+            lastCoverageReason = reason;
+            AuditIntegrity("HISTORY_UNCOVERED", lastMarketTime,
+                day.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) + " " + reason, double.NaN);
+            if (positionSide != 0)
+                Print("HY ALARM: Historienabdeckung unvollständig bei offener Position. "
+                    + "Indikatorziel möglicherweise abweichend; vorhandene Ausstiegslogik bleibt aktiv. "
+                    + day.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) + " " + reason);
+        }
+
+        private void CompleteIntegritySession(int expected)
+        {
+            bool complete = sessionComplete && expected > 0 && committedBars == expected;
+            if (complete)
+            {
+                if (verifiedCompleteSessions == 0)
+                    integritySeedBegin = sessionOpen;
+                verifiedCompleteSessions++;
+            }
+            else
+                InvalidateIntegrity(sessionOpen.Date, "Sitzung mit unvollständiger Tickabdeckung "
+                    + committedBars + "/" + expected + " Abschnitte");
+            AuditIntegrity("SESSION_END", lastMarketTime, complete ? "vollständig" : "unvollständig", double.NaN);
+        }
+
+        private string IntegrityGateReason()
+        {
+            if (integrityAuditFailed)
+                return "Diagnose nicht schreibbar · neue Einstiege gesperrt";
+            if (integrityCalendarFailed)
+                return "Kalenderprüfung fehlgeschlagen · neu laden und Log prüfen";
+            if (verifiedCompleteSessions < WarmupSessions)
+                return "Historie " + verifiedCompleteSessions + "/" + WarmupSessions + " vollständige Folgesitzungen"
+                    + (lastUncoveredSession == default(DateTime) ? "" : " · ohne Abdeckung "
+                        + lastUncoveredSession.ToString("dd.MM.", CultureInfo.InvariantCulture));
+            if (!sessionComplete)
+                return "Aktuelle Sitzung ohne lückenlose Tickabdeckung";
+            if (!sessionSeenTrade)
+                return "Aktuelle Sitzung noch ohne Last-Tick";
+            return null;
+        }
+
+        private string IntegrityLegend()
+        {
+            string reason = IntegrityGateReason();
+            if (reason != null)
+                return reason;
+            return null;
+        }
+
+        private string EntryAuditReason(DateTime time, bool realtime)
+        {
+            string integrity = IntegrityGateReason();
+            if (integrity != null)
+                return integrity;
+            if (ownershipViolation)
+                return "ORDER OWNERSHIP GESPERRT · Log prüfen";
+            if (!realtime)
+                return "historischer Rücklauf · keine Echtzeitorder";
+            if (!AccountReplayReady() && IsOrderAccount())
+                return AccountReplayStatus();
+            if (modelLossLatched)
+                return "Sim-Verlustgrenze erreicht";
+            if (entryBlocked)
+                return "Einstiege nach Orderfehler gesperrt";
+            if (!sessionComplete)
+                return "Aktuelle Sitzung unvollständig";
+            if (completeSessions < WarmupSessions)
+                return "Bestehender Warmlauf " + completeSessions + "/" + WarmupSessions;
+            if (time < sessionOpen.AddMinutes(0))
+                return "Vor dem erlaubten Eintrittsfenster";
+            if (time >= flattenAt)
+                return "Nach Eintrittsschluss / Glattstellungsfrist";
+            if (liveClock && !MarketTimeAgrees(time, lastTradeClock))
+                return "Marktzeit/Steueruhr außerhalb Toleranz";
+            if (positionSide != 0)
+                return "Position bereits offen";
+            if (pending != null || submitted != null)
+                return "Order bereits aktiv";
+            return "Eintrittsprüfung freigegeben · Stop/Quote/Frist folgt";
+        }
+
+        private bool ownershipViolation, ownershipMismatchLogged;
+        private string ownershipViolationReason;
+        private readonly Dictionary<Order, Intent> ownedOrderIntents = new Dictionary<Order, Intent>(new OrderReferenceComparer());
+        private readonly Dictionary<Order, int> ownedOrderMaxFilled = new Dictionary<Order, int>(new OrderReferenceComparer());
+        private readonly HashSet<string> seenExecutionIds = new HashSet<string>();
+        private readonly HashSet<Intent> intentApiSendStarted = new HashSet<Intent>();
+        private readonly HashSet<Intent> intentExecutionCompleted = new HashSet<Intent>();
+        private readonly HashSet<Intent> intentExecutionInvalid = new HashSet<Intent>();
+        private readonly Dictionary<Intent, long> intentTradeClaims = new Dictionary<Intent, long>();
+        private long nextOwnedTradeId, activeOwnedTradeId, nextOrderReferenceId;
+        private readonly Dictionary<Order, long> orderReferenceIds = new Dictionary<Order, long>(new OrderReferenceComparer());
+        private sealed class OrderReferenceComparer : IEqualityComparer<Order>
+        {
+            public bool Equals(Order first, Order second) { return object.ReferenceEquals(first, second); }
+            public int GetHashCode(Order order) { return System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(order); }
+        }
+
+
+        private void LatchOwnershipViolation(DateTime time, string reason)
+        {
+            if (ownershipViolation) return;
+            ownershipViolation = true;
+            ownershipViolationReason = reason;
+            AuditIntegrity("INTENT_OWNERSHIP_VIOLATION", time, reason, double.NaN);
+            Print("HY ORDER OWNERSHIP GESPERRT: " + reason + ". Neue Einstiege gesperrt; keine fremde Position übernehmen.");
+        }
+
+        private long OrderReferenceId(Order order)
+        {
+            if (order == null) return 0;
+            long id;
+            if (!orderReferenceIds.TryGetValue(order, out id))
+            {
+                id = ++nextOrderReferenceId;
+                orderReferenceIds.Add(order, id);
+            }
+            return id;
+        }
+        private Intent OwnedOrderIntent(Order order)
+        {
+            Intent owner;
+            return IsOwnedOrder(order) && ownedOrderIntents.TryGetValue(order, out owner) ? owner : null;
+        }
+        private DateTime OwnershipControlNow()
+        {
+            return liveClock || lastMarketTime == default(DateTime) ? EasternNow() : lastMarketTime;
+        }
+        private bool IsOwnedOrder(Order order)
+        {
+            return order != null && order.Account == Account && order.Instrument == Instrument
+                && ownedOrderIntents.ContainsKey(order);
+        }
+        private void TrackOwnedOrder(Order order)
+        {
+            if (order == null || order.Account != Account || order.Instrument != Instrument)
+                return;
+            // Never rebind a known order to a newer intent, even when OrderName is the same.
+            if (ownedOrderIntents.ContainsKey(order))
+                return;
+            if (submitted == null || !intentApiSendStarted.Contains(submitted)
+                || intentExecutionCompleted.Contains(submitted) || intentExecutionInvalid.Contains(submitted)
+                || order.Name != submitted.OrderName)
+                return;
+            // NT may invoke this callback synchronously inside Enter/Exit before the API returns its Order.
+            // The own API attempt has already been reserved; only this first association uses the name.
+            foreach (var known in ownedOrderIntents)
+                if (object.ReferenceEquals(known.Value, submitted))
+                    return; // One API attempt owns one exact Order object; a same-name copy is not its owner.
+            ownedOrderIntents.Add(order, submitted);
+            AuditIntegrity("ORDER_INTENT_BOUND", OwnershipControlNow(),
+                "orderId=" + order.OrderId + " orderRef=" + OrderReferenceId(order) + " ownerReason=" + submitted.Reason
+                + " reservedAPI=true;exactOrderReference=true", double.NaN);
+        }
+        private bool HandleOwnedOrderUpdate(Order order, int quantity, int filled, OrderState state, ErrorCode error, DateTime time)
+        {
+            if (!IsOrderAccount())
+                return false;
+            TrackOwnedOrder(order);
+            Intent owner = OwnedOrderIntent(order);
+            if (owner == null)
+            {
+                if (order != null && order.Account == Account && order.Instrument == Instrument)
+                {
+                    LatchOwnershipViolation(time, "UNKNOWN ORDER CALLBACK OWNERSHIP · keine Zuordnung nur nach Name");
+                    AuditIntegrity("ORDER_UPDATE_WITHOUT_INTENT_CLAIM", time,
+                        "state=" + state + " orderId=" + order.OrderId + ";current reservation unchanged", double.NaN);
+                }
+                return true;
+            }
+            if (!object.ReferenceEquals(owner, submitted))
+            {
+                // Archive the retired owner's callback. It must never fail/clear a newer same-name intent.
+                AuditIntegrity("ORDER_UPDATE_PRIOR_INTENT", time,
+                    "state=" + state + " orderId=" + order.OrderId + " ownerReason=" + owner.Reason
+                    + " quantity=" + quantity + " filled=" + filled + ";current reservation unchanged", double.NaN);
+                return true;
+            }
+            int previousFilled;
+            ownedOrderMaxFilled.TryGetValue(order, out previousFilled);
+            if (quantity < 0 || quantity > 1 || (quantity != 1 && state != OrderState.Initialized)
+                || filled < 0 || filled > quantity || filled < previousFilled
+                || (state == OrderState.Filled && filled != quantity))
+            {
+                LatchOwnershipViolation(time, "ORDER QUANTITY/PROGRESS ANOMALY · tatsächliche Kontoposition prüfen");
+                AuditIntegrity("ORDER_UPDATE_PROGRESS_ANOMALY", time,
+                    "state=" + state + " quantity=" + quantity + " filled=" + filled
+                    + " previousFilled=" + previousFilled + ";no inferred repair;current reservation retained", double.NaN);
+                return true;
+            }
+            ownedOrderMaxFilled[order] = filled;
+            return false;
+        }
+        private Intent OwnedExecutionIntent(Execution execution)
+        {
+            return execution == null ? null : OwnedOrderIntent(execution.Order);
+        }
+        private bool DuplicateOwnedExecution(string executionId, DateTime time)
+        {
+            if (string.IsNullOrEmpty(executionId))
+                return false;
+            if (seenExecutionIds.Add(executionId))
+                return false;
+            AuditIntegrity("INTENT_DUPLICATE_EXECUTION_IGNORED", time, "executionId=" + executionId, double.NaN);
+            return true;
+        }
+        private void ExecutionQuantityAnomaly(Intent filled, int quantity, DateTime time)
+        {
+            intentExecutionInvalid.Add(filled);
+            string actual = PositionAccount == null ? "unavailable" : PositionAccount.MarketPosition
+                + " quantity=" + PositionAccount.Quantity.ToString(CultureInfo.InvariantCulture);
+            LatchOwnershipViolation(time, "Unerwartete Ausführungsmenge " + quantity.ToString(CultureInfo.InvariantCulture)
+                + "; tatsächliche Kontoposition prüfen");
+            AuditIntegrity("INTENT_ACTUAL_POSITION_MISMATCH", time,
+                "executionQuantity=" + quantity.ToString(CultureInfo.InvariantCulture)
+                + " permittedQuantity=1 actual=" + actual
+                + " action=no_unapproved_quantity_close;manual_position_check_required", double.NaN);
+            // A cancelled intent can still receive a late callback. Latch independently of submitted.
+            // Never turn an unexpected quantity into an invented model fill or an unapproved size-2 close.
+            FailSubmission(filled, "Unexpected execution quantity " + quantity + ". Actual account position must be checked.");
+        }
+        private bool RejectUnavailableIntent(Intent intent, DateTime time)
+        {
+            lock (sync)
+            {
+                if (intentApiSendStarted.Contains(intent) || intentExecutionCompleted.Contains(intent))
+                {
+                    AuditIntegrity("INTENT_DUPLICATE_SEND_IGNORED", time,
+                        "exact intent already sent/completed; independent of current news marker", double.NaN);
+                    return true;
+                }
+                if (submitted != intent)
+                {
+                    AuditIntegrity("INTENT_STALE_SEND_IGNORED", time,
+                        "exact intent does not own current submitted reservation", double.NaN);
+                    return true;
+                }
+                return false;
+            }
+        }
+        private bool ClaimCurrentTradeExit(Intent intent, DateTime time)
+        {
+            long claimed;
+            if (activeOwnedTradeId == 0 || positionSide == 0 || positionSide != intent.Side
+                || (intentTradeClaims.TryGetValue(intent, out claimed) && claimed != activeOwnedTradeId))
+            {
+                LatchOwnershipViolation(time, "EXIT TRADE OWNERSHIP MISMATCH · keine fremde/neue Position schließen");
+                AuditIntegrity("INTENT_TRADE_CLAIM_REJECTED", time,
+                    "activeTrade=" + activeOwnedTradeId + " side=" + intent.Side + " reason=" + intent.Reason, double.NaN);
+                return false;
+            }
+            intentTradeClaims[intent] = activeOwnedTradeId;
+            return true;
+        }
+        private bool AcceptIntentExecutionLifetime(Intent intent, DateTime time)
+        {
+            if (intentExecutionCompleted.Contains(intent) || intentExecutionInvalid.Contains(intent))
+            {
+                AuditIntegrity("INTENT_DUPLICATE_EXECUTION_IGNORED", time,
+                    "exact intent already completed/invalid; no repeated fee, model fill or trade reset", double.NaN);
+                return false;
+            }
+            if (intent.IsEntry)
+            {
+                if (positionSide != 0 || activeOwnedTradeId != 0)
+                {
+                    intentExecutionInvalid.Add(intent);
+                    LatchOwnershipViolation(time, "ENTRY TRADE OWNERSHIP COLLISION · tatsächliche Kontoposition prüfen");
+                    AuditIntegrity("INTENT_TRADE_EXECUTION_REJECTED", time, "another owned trade is already active", double.NaN);
+                    return false;
+                }
+                activeOwnedTradeId = ++nextOwnedTradeId;
+                intentTradeClaims[intent] = activeOwnedTradeId;
+            }
+            else
+            {
+                long claimed;
+                if (!intentTradeClaims.TryGetValue(intent, out claimed) || activeOwnedTradeId == 0
+                    || claimed != activeOwnedTradeId || positionSide != intent.Side)
+                {
+                    intentExecutionInvalid.Add(intent);
+                    LatchOwnershipViolation(time, "LATE EXIT TRADE OWNERSHIP MISMATCH · keine neue Modellposition ändern");
+                    AuditIntegrity("INTENT_TRADE_EXECUTION_REJECTED", time,
+                        "stale/unclaimed exit callback; activeTrade=" + activeOwnedTradeId, double.NaN);
+                    return false;
+                }
+                activeOwnedTradeId = 0;
+            }
+            intentExecutionCompleted.Add(intent);
+            return true;
+        }
+        private bool HasUnknownActiveAccountOrder()
+        {
+            if (Account == null)
+                return false;
+            lock (Account.Orders)
+                foreach (Order order in Account.Orders)
+                    if (order != null && order.Instrument == Instrument && !IsOwnedOrder(order)
+                        && order.OrderState != OrderState.Filled && order.OrderState != OrderState.Cancelled
+                        && order.OrderState != OrderState.Rejected)
+                        return true;
+            return false;
+        }
+        private void CheckOwnershipPositionMismatch(DateTime time)
+        {
+            if (State != State.Realtime || !liveClock || !IsOrderAccount())
+                return;
+            // A known order's account/strategy updates can precede its execution callback.
+            // No new dispatch is possible while submitted is occupied; provider deadline enforcement remains in the existing close path.
+            if (submitted != null && intentApiSendStarted.Contains(submitted))
+                return;
+            if (submitted != null)
+                foreach (var pair in ownedOrderIntents)
+                    if (pair.Value == submitted && IsOwnedOrder(pair.Key))
+                        return;
+            if (HasUnknownActiveAccountOrder())
+            {
+                LatchOwnershipViolation(time, "UNKNOWN ACTIVE ORDER · keine neue Order; Kontozuordnung prüfen");
+                if (!ownershipMismatchLogged)
+                {
+                    ownershipMismatchLogged = true;
+                    AuditIntegrity("INTENT_UNKNOWN_ORDER_OWNERSHIP", time,
+                        "active account/instrument order has no strategy intent claim;entry_block;no_cancel_or_adoption", double.NaN);
+                }
+                return;
+            }
+            MarketPosition expected = positionSide > 0 ? MarketPosition.Long : positionSide < 0 ? MarketPosition.Short : MarketPosition.Flat;
+            int expectedQuantity = positionSide == 0 ? 0 : 1;
+            bool agrees = Position != null && PositionAccount != null
+                && Position.MarketPosition == expected && PositionAccount.MarketPosition == expected
+                && Position.Quantity == expectedQuantity && PositionAccount.Quantity == expectedQuantity;
+            if (agrees)
+                return;
+            LatchOwnershipViolation(time, "ORDER POSITION MISMATCH · tatsächliche Strategie-/Kontoposition prüfen");
+            if (ownershipMismatchLogged)
+                return;
+            ownershipMismatchLogged = true;
+            string strategy = Position == null ? "unavailable" : Position.MarketPosition + " quantity=" + Position.Quantity;
+            string account = PositionAccount == null ? "unavailable" : PositionAccount.MarketPosition + " quantity=" + PositionAccount.Quantity;
+            AuditIntegrity("INTENT_POSITION_MISMATCH", time,
+                "modelSide=" + positionSide + " strategy=" + strategy + " account=" + account
+                + " action=entry_block;no_position_adoption;no_unapproved_close", double.NaN);
+        }
+
+        private const string AuditDiagnosticVersion = "V8-ACCOUNT-REPLAY-20261119";
+
+        private string AuditPhaseLabel()
+        {
+            return "Eval EMA20";
+        }
+
+        private void AuditRuntimeMetadata(string reason)
+        {
+            AuditIntegrity("RUNTIME_METADATA", integrityLastEventTime,
+                reason + " source=" + AuditDiagnosticVersion, double.NaN);
+        }
+
+        private void AuditOrderState(Order order, double limitPrice, double stopPrice, int quantity,
+            int filled, double averageFillPrice, OrderState orderState, DateTime time, ErrorCode error, string comment)
+        {
+            try
+            {
+            string detail = "orderRef=" + OrderReferenceId(order) + " state=" + orderState + " orderId=" + (order?.OrderId ?? "")
+                + " orderName=" + (order?.Name ?? "") + " quantity=" + quantity + " filled=" + filled
+                + " limit=" + limitPrice.ToString("R", CultureInfo.InvariantCulture)
+                + " stop=" + stopPrice.ToString("R", CultureInfo.InvariantCulture)
+                + " reason=" + (OwnedOrderIntent(order)?.Reason ?? "unclaimed") + " error=" + error
+                + " comment=" + (comment ?? "");
+            AuditIntegrity("ORDER_STATE", PlatformToEastern(time), detail, averageFillPrice);
+            }
+            catch (Exception auditError)
+            {
+                MarkIntegrityAuditFailure(auditError);
+            }
+        }
+
+        private void AuditExecutionCallback(Execution execution, string executionId, double price, int quantity,
+            MarketPosition marketPosition, string orderId, DateTime time)
+        {
+            try
+            {
+            string detail = "orderRef=" + OrderReferenceId(execution?.Order) + " executionId=" + (executionId ?? "") + " orderId=" + (orderId ?? "")
+                + " orderName=" + (execution?.Order?.Name ?? "") + " quantity=" + quantity
+                + " marketPosition=" + marketPosition + " reason=" + (OwnedExecutionIntent(execution)?.Reason ?? "unclaimed");
+            AuditIntegrity("EXECUTION_CALLBACK", PlatformToEastern(time), detail, price);
+            }
+            catch (Exception auditError)
+            {
+                MarkIntegrityAuditFailure(auditError);
+            }
+        }
+
+        private void InitializeIntegrityAudit()
+        {
+            try
+            {
+                string folder = System.IO.Path.Combine(NinjaTrader.Core.Globals.UserDataDir, "log", "HY-integrity");
+                System.IO.Directory.CreateDirectory(folder);
+                integrityAuditPath = System.IO.Path.Combine(folder, GetType().Name + "-"
+                    + DateTime.UtcNow.ToString("yyyyMMdd-HHmmss", CultureInfo.InvariantCulture) + "-"
+                    + Guid.NewGuid().ToString("N") + ".csv");
+                integrityAudit = new System.IO.StreamWriter(integrityAuditPath, false, new System.Text.UTF8Encoding(true));
+                integrityAudit.WriteLine("seq,logged_utc,event,event_et,market_event_et,control_et,session_open_et,session_end_et,seed_begin_et,verified_sessions,legacy_warmup,committed_bars,expected_bars,session_complete,gate,price,bar_start_et,bar_open,bar_high,bar_low,bar_close,last_ticks_in_bar,ema,keltner_upper,keltner_lower,bollinger_upper,bollinger_lower,atr,last_band,setup_side,position_side,detail,runtime_state,strategy_class,strategy_phase,account_local,instrument,trading_hours,tick_replay,bar_period,audit_source_version");
+                integrityAudit.Flush();
+                Print("HY Historien-Diagnose: " + integrityAuditPath);
+                AuditRuntimeMetadata("audit initialized");
+            }
+            catch (Exception error)
+            {
+                MarkIntegrityAuditFailure(error);
+            }
+        }
+
+        private static string AuditCsv(string value)
+        {
+            return "\"" + (value ?? "").Replace("\"", "\"\"").Replace("\r", " ").Replace("\n", " ") + "\"";
+        }
+
+        private static string AuditDate(DateTime value)
+        {
+            return value == default(DateTime) ? "" : value.ToString("yyyy-MM-dd HH:mm:ss.fffffff", CultureInfo.InvariantCulture);
+        }
+
+        private void MarkIntegrityAuditFailure(Exception error)
+        {
+            if (!integrityAuditFailed)
+                Print("HY DIAGNOSE NICHT SCHREIBBAR: " + error.GetType().Name
+                    + ". Neue Einstiege gesperrt; Ausstiege bleiben aktiv.");
+            integrityAuditFailed = true;
+            // Disk/log failures must never throw out of the market-data or order thread.
+            try { integrityAudit?.Dispose(); } catch { }
+            integrityAudit = null;
+        }
+
+        private void AuditIntegrity(string kind, DateTime eventTime, string detail, double price)
+        {
+            if (integrityAuditFailed || integrityAudit == null)
+                return;
+            try
+            {
+                int expected = sessionEnd > sessionOpen
+                    ? (int)((sessionEnd - sessionOpen).Ticks / FiveMinutes.Ticks) : 0;
+                string[] values = {
+                    (++integrityAuditSequence).ToString(CultureInfo.InvariantCulture),
+                    DateTime.UtcNow.ToString("O", CultureInfo.InvariantCulture), kind,
+                    AuditDate(eventTime), AuditDate(integrityLastEventTime), AuditDate(lastMarketTime),
+                    AuditDate(sessionOpen), AuditDate(sessionEnd), AuditDate(integritySeedBegin),
+                    verifiedCompleteSessions.ToString(CultureInfo.InvariantCulture),
+                    completeSessions.ToString(CultureInfo.InvariantCulture),
+                    committedBars.ToString(CultureInfo.InvariantCulture), expected.ToString(CultureInfo.InvariantCulture),
+                    sessionComplete.ToString(), IntegrityGateReason() ?? "READY",
+                    price.ToString("R", CultureInfo.InvariantCulture), AuditDate(barStart),
+                    integrityBarOpen.ToString("R", CultureInfo.InvariantCulture),
+                    barHigh.ToString("R", CultureInfo.InvariantCulture), barLow.ToString("R", CultureInfo.InvariantCulture),
+                    barClose.ToString("R", CultureInfo.InvariantCulture), integrityBarTicks.ToString(CultureInfo.InvariantCulture),
+                    chartLines.Ema.ToString("R", CultureInfo.InvariantCulture),
+                    chartLines.KeltnerUpper.ToString("R", CultureInfo.InvariantCulture), chartLines.KeltnerLower.ToString("R", CultureInfo.InvariantCulture),
+                    chartLines.BollingerUpper.ToString("R", CultureInfo.InvariantCulture), chartLines.BollingerLower.ToString("R", CultureInfo.InvariantCulture),
+                    chartLines.Atr.ToString("R", CultureInfo.InvariantCulture), lastBand.ToString(CultureInfo.InvariantCulture),
+                    setupSide.ToString(CultureInfo.InvariantCulture), positionSide.ToString(CultureInfo.InvariantCulture), detail,
+                    State.ToString(), GetType().Name, AuditPhaseLabel(), Account?.Name ?? "",
+                    Instrument?.FullName ?? "", Bars?.TradingHours?.Name ?? "",
+                    (Bars != null && IsTickReplays[0] == true).ToString(),
+                    BarsPeriod == null ? "" : BarsPeriod.BarsPeriodType + ":" + BarsPeriod.Value, AuditDiagnosticVersion
+                };
+                integrityAudit.WriteLine(string.Join(",", Array.ConvertAll(values, AuditCsv)));
+                integrityAudit.Flush();
+            }
+            catch (Exception error)
+            {
+                MarkIntegrityAuditFailure(error);
+            }
+        }
+
+        private void CloseIntegrityAudit()
+        {
+            try
+            {
+                AuditIntegrity("TERMINATED", lastMarketTime, "Instanz beendet", double.NaN);
+                integrityAudit?.Dispose();
+                integrityAudit = null;
+            }
+            catch (Exception error)
+            {
+                MarkIntegrityAuditFailure(error);
+            }
+        }
+
+        private void ProbeCalendarBoundary(DateTime cursor, DateTime nextTemplateBegin)
+        {
+            // Bounded diagnostics only. Fresh iterators cannot reposition either live iterator.
+            long[] offsets = { 1, TimeSpan.TicksPerMillisecond, TimeSpan.TicksPerSecond, TimeSpan.TicksPerMinute };
+            foreach (long offset in offsets)
+            foreach (bool includesEnd in new[] { false, true })
+            foreach (bool positioned in new[] { false, true })
+            {
+                string detail = "offsetTicks=" + offset + " includesEnd=" + includesEnd + " positioned=" + positioned
+                    + " cursor_ET=" + AuditDate(cursor) + " expectedBegin_ET=" + AuditDate(nextTemplateBegin);
+                try
+                {
+                    var probe = new SessionIterator(Bars);
+                    if (positioned)
+                    {
+                        DateTime seed = TimeZoneInfo.ConvertTime(DateTime.SpecifyKind(cursor.AddMinutes(-1),
+                            DateTimeKind.Unspecified), easternZone, platformZone);
+                        bool seedReturned = probe.GetNextSession(seed, true);
+                        detail += " seedReturned=" + seedReturned;
+                    }
+                    DateTime query = TimeZoneInfo.ConvertTime(DateTime.SpecifyKind(cursor.AddTicks(offset),
+                        DateTimeKind.Unspecified), easternZone, platformZone);
+                    bool returned = probe.GetNextSession(query, includesEnd);
+                    DateTime rawBegin = probe.ActualSessionBegin, rawEnd = probe.ActualSessionEnd;
+                    detail += " returned=" + returned + " query_PLATFORM=" + query.ToString("O", CultureInfo.InvariantCulture)
+                        + " queryKind=" + query.Kind + " queryTicks=" + query.Ticks
+                        + " actualBegin_PLATFORM=" + rawBegin.ToString("O", CultureInfo.InvariantCulture)
+                        + " beginKind=" + rawBegin.Kind + " beginTicks=" + rawBegin.Ticks
+                        + " actualEnd_PLATFORM=" + rawEnd.ToString("O", CultureInfo.InvariantCulture)
+                        + " endKind=" + rawEnd.Kind + " endTicks=" + rawEnd.Ticks
+                        + " actualBegin_ET=" + AuditDate(PlatformToEastern(rawBegin))
+                        + " actualEnd_ET=" + AuditDate(PlatformToEastern(rawEnd))
+                        + " tradingDay=" + AuditDate(probe.ActualTradingDayExchange);
+                }
+                catch (Exception error)
+                {
+                    detail += " error=" + error.GetType().Name + ": " + error.Message;
+                }
+                AuditIntegrity("CALENDAR_PROBE", lastMarketTime, detail, double.NaN);
+            }
+        }
+
         private void RefreshSession(DateTime time)
         {
             if (!sessionFinished && sessionEnd != default(DateTime) && time >= sessionEnd)
@@ -865,9 +1668,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 return;
 
             DateTime local = TimeZoneInfo.ConvertTime(DateTime.SpecifyKind(time, DateTimeKind.Unspecified), easternZone, platformZone);
+            DateTime previousTemplateEnd = templateEnd;
             sessionIterator.GetNextSession(local, false);
             templateBegin = PlatformToEastern(sessionIterator.ActualSessionBegin);
             templateEnd = PlatformToEastern(sessionIterator.ActualSessionEnd);
+            VerifyCalendarContinuity(previousTemplateEnd, templateBegin);
             DateTime day = sessionIterator.ActualTradingDayExchange.Date;
             sessionOpen = day.AddHours(9).AddMinutes(30);
             if (templateBegin > sessionOpen)
@@ -886,6 +1691,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             bidClock = askClock = default(DateTime);
             barStart = default(DateTime);
             bidSize = askSize = 0;
+            AuditIntegrity("SESSION_BEGIN", time, "Kalendersitzung geladen", double.NaN);
         }
 
         private void FinishSession()
@@ -894,12 +1700,13 @@ namespace NinjaTrader.NinjaScript.Strategies
             int expected = (int)((sessionEnd - sessionOpen).Ticks / FiveMinutes.Ticks);
             completeSessions = sessionComplete && committedBars == expected && expected > 0
                 ? completeSessions + 1 : 0;
+            CompleteIntegritySession(expected);
             sessionFinished = true;
         }
 
         private void ObserveOpeningRange(DateTime eventTime, double price, bool realtime)
         {
-            if (!UsesOpeningRange || eventTime.Date != TestDay || eventTime < sessionOpen
+            if (!UsesOpeningRange || eventTime < sessionOpen
                 || eventTime >= sessionEnd || !(price > 0) || double.IsInfinity(price))
                 return;
             if (eventTime < sessionOpen + OpeningWindow)
@@ -933,8 +1740,13 @@ namespace NinjaTrader.NinjaScript.Strategies
 
         private void ObserveTrade(DateTime time, DateTime marketEventTime, double price, bool realtime)
         {
-            long elapsed = (time - sessionOpen).Ticks;
+            long elapsed = (marketEventTime - sessionOpen).Ticks;
             DateTime bucket = sessionOpen.AddTicks(elapsed / FiveMinutes.Ticks * FiveMinutes.Ticks);
+            // A late print may still update the active bar, but never a bar already committed.
+            if (bucket < barStart)
+                return;
+            if (realtime && marketEventTime > lastTradeClock)
+                lastTradeClock = marketEventTime;
             if (barStart != bucket)
             {
                 if ((!sessionSeenTrade && bucket != sessionOpen)
@@ -943,11 +1755,14 @@ namespace NinjaTrader.NinjaScript.Strategies
                 CommitBar();
                 barStart = bucket;
                 barHigh = barLow = price;
+                integrityBarOpen = price;
+                integrityBarTicks = 0;
                 sessionSeenTrade = true;
             }
             barHigh = Math.Max(barHigh, price);
             barLow = Math.Min(barLow, price);
             barClose = price;
+            integrityBarTicks++;
 
             Lines lines;
             if (!indicators.TryPreview(barHigh, barLow, barClose, committedBars == 0, out lines))
@@ -976,6 +1791,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 var retrace = CurrentBar < 0 ? null : new SetupPoint(CurrentBar, price, side, time.Date);
                 if (armedSecondMark != null)
                     RememberBadge(retrace, 3);
+                AuditIntegrity("ENTRY_DECISION", time, "side=" + side + " " + EntryAuditReason(time, realtime), price);
                 if (realtime && CanEnter(time) && positionSide == 0 && pending == null && submitted == null)
                 {
                     double stop = InitialStop(side, lines);
@@ -1004,10 +1820,12 @@ namespace NinjaTrader.NinjaScript.Strategies
                 }
                 else
                     RememberBadge(touched, 1);
+                AuditIntegrity("BAND_CONTACT", time, "Band=" + contact
+                    + (lastBand == 0 ? " erster Kontakt" : " Gegenband / Setup"), price);
                 lastBand = contact;
                 lastContactMark = touched;
             }
-            else if (contact != 0 && setupSide == 0 && time.Date == TestDay && CurrentBar >= 0
+            else if (contact != 0 && setupSide == 0 && CurrentBar >= 0
                 && (lastContactMark == null || lastContactMark.Session != time.Date))
             {
                 // A real same-side retouch can give the carried contact a visible anchor today.
@@ -1023,12 +1841,14 @@ namespace NinjaTrader.NinjaScript.Strategies
                 return;
             indicators.Commit(barHigh, barLow, barClose, committedBars == 0);
             committedBars++;
+            AuditIntegrity("BAR_COMMIT", barStart, "5-Minuten-Abschnitt abgeschlossen", barClose);
             barStart = default(DateTime);
         }
 
         private bool CanEnter(DateTime time)
         {
-            return time.Date == TestDay && !modelLossLatched && !entryBlocked && sessionComplete && completeSessions >= WarmupSessions
+            return IntegrityGateReason() == null && !ownershipViolation
+                && AccountReplayReady() && !modelLossLatched && !entryBlocked && sessionComplete && completeSessions >= WarmupSessions
                 && time >= sessionOpen && time < flattenAt
                 && (!liveClock || MarketTimeAgrees(time, lastTradeClock));
         }
@@ -1052,6 +1872,9 @@ namespace NinjaTrader.NinjaScript.Strategies
 
         private void Queue(Intent intent)
         {
+            AuditIntegrity(intent.IsEntry ? "ENTRY_SIGNAL" : "EXIT_SIGNAL", intent.Time,
+                intent.Reason + " side=" + intent.Side + " stop="
+                + intent.Stop.ToString("R", CultureInfo.InvariantCulture), double.NaN);
             pending = intent;
             Print(string.Format(CultureInfo.InvariantCulture,
                 "HY104 SIGNAL {0:yyyy-MM-dd HH:mm:ss.fff} ET {1} {2} stop={3:F2}",
@@ -1060,34 +1883,25 @@ namespace NinjaTrader.NinjaScript.Strategies
 
         private bool CheckModelLoss(DateTime time, bool useNewQuote)
         {
-            if (!IsOrderAccount() || time.Date != TestDay || time < sessionOpen || sessionOpen.Date != TestDay)
-                return false;
-            double openNet = 0;
+            if (!IsOrderAccount()) return false;
+            AdvanceAccountReplay(time);
+            if (accountReplay == null) return false;
             if (positionSide != 0)
             {
                 bool validBook = bidSize > 0 && askSize > 0 && bid > 0 && ask >= bid
                     && !double.IsInfinity(ask) && MarketTimeAgrees(time, bidClock) && MarketTimeAgrees(time, askClock);
-                if (!validBook && !modelLossLatched)
-                    return false;
-                double liquidation = positionSide > 0 ? bid : ask;
                 if (validBook)
-                    openNet = positionSide * (liquidation - positionEntryPrice) * 50.0 - ModelFeePerSide;
+                    try { accountReplay.Mark(Convert.ToDecimal(bid, CultureInfo.InvariantCulture), Convert.ToDecimal(ask, CultureInfo.InvariantCulture)); }
+                    catch (Exception e) { BlockAccountException(e); }
             }
-            double equity = OpeningModelBalance + modelRealized + openNet;
-            if (!modelLossLatched && equity <= IntradayLossFloor + 0.0000001)
-            {
-                modelLossLatched = true;
-                Print(string.Format(CultureInfo.InvariantCulture,
-                    "Rapid EOD SIM: loss floor reached {0:F2} / {1:F2}; new entries blocked.",
-                    equity, IntradayLossFloor));
-            }
-            if (!modelLossLatched)
-                return false;
+            modelLossLatched = accountReplay.Breached;
+            if (!modelLossLatched) return false;
             if (pending != null && pending.IsEntry)
+            {
                 pending = null;
+            }
             if (positionSide != 0 && !exitSubmissionFailed && submitted == null && pending == null)
                 Queue(new Intent(false, positionSide, "RapidLoss", time, positionStop));
-            // Watchdog may dispatch a pending liquidation even without a new quote.
             return useNewQuote;
         }
 
@@ -1108,6 +1922,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 return null;
             if (pending.IsEntry && !CanEnter(time))
             {
+                AuditIntegrity("ENTRY_DISPATCH_BLOCKED", time, EntryAuditReason(time, true), double.NaN);
                 pending = null;
                 return null;
             }
@@ -1135,6 +1950,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 ApplyModelSignal(signal, validQuote ? (buy ? ask : bid) : double.NaN, time);
                 return null;
             }
+            if (!pending.IsEntry && !ClaimCurrentTradeExit(pending, time))
+            {
+                pending = null;
+                return null;
+            }
             submitted = pending;
             pending = null;
             return submitted;
@@ -1142,12 +1962,16 @@ namespace NinjaTrader.NinjaScript.Strategies
 
         private void Submit(Intent intent)
         {
+            if (RejectUnavailableIntent(intent, OwnershipControlNow()))
+                return;
             if (State != State.Realtime || !IsOrderAccount())
                 return;
             if (!OrderConnectionReady())
             {
                 lock (sync)
                 {
+                    if (RejectUnavailableIntent(intent, OwnershipControlNow()))
+                        return;
                     if (submitted == intent)
                     {
                         pending = intent;
@@ -1181,6 +2005,42 @@ namespace NinjaTrader.NinjaScript.Strategies
                 }
             }
 
+            lock (sync)
+            {
+                if (RejectUnavailableIntent(intent, now)) return;
+                CheckOwnershipPositionMismatch(now);
+                if (intent.IsEntry && (!CanEnter(now) || PositionAccount == null || Position == null
+                    || Position.MarketPosition != MarketPosition.Flat
+                    || PositionAccount.MarketPosition != MarketPosition.Flat || HasWorkingOrder()))
+                {
+                    FailSubmission(intent, "Entry blocked by final ownership/position/order recheck.");
+                    return;
+                }
+                if (!intent.IsEntry)
+                {
+                    MarketPosition expectedFinal = intent.Side > 0 ? MarketPosition.Long : MarketPosition.Short;
+                    if (Position == null || PositionAccount == null || Position.MarketPosition != expectedFinal
+                        || PositionAccount.MarketPosition != expectedFinal || Position.Quantity != 1 || PositionAccount.Quantity != 1)
+                    {
+                        FailSubmission(intent, "Exit blocked by final owned position recheck.");
+                        return;
+                    }
+                }
+                if (!intent.IsEntry && !ClaimCurrentTradeExit(intent, now))
+                {
+                    FailSubmission(intent, "Exit intent does not own the active trade.");
+                    return;
+                }
+                if (!intentApiSendStarted.Add(intent)) return;
+                if (!ReserveAccountIntent(intent, now))
+                {
+                    FailSubmission(intent, "Kontojournal konnte Orderabsicht nicht dauerhaft speichern.");
+                    return;
+                }
+
+                AuditIntegrity("INTENT_API_REQUEST_RESERVED", now,
+                    "reason=" + intent.Reason + " ownedTrade=" + activeOwnedTradeId + ";request_only", double.NaN);
+            }
             Order order;
             if (intent.IsEntry)
                 order = intent.Side > 0 ? EnterLong(1, LongEntry) : EnterShort(1, ShortEntry);
@@ -1280,6 +2140,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                     exitSubmissionFailed = true;
                     Print("HY104: verify the remaining ES position on the strategy account.");
                 }
+                AuditIntegrity("ORDER_FAILURE", intent.Time, message, double.NaN);
                 Print("HY104: " + message);
             }
         }
@@ -1287,35 +2148,55 @@ namespace NinjaTrader.NinjaScript.Strategies
         protected override void OnOrderUpdate(Order order, double limitPrice, double stopPrice, int quantity,
             int filled, double averageFillPrice, OrderState orderState, DateTime time, ErrorCode error, string comment)
         {
+            lock (sync)
+                AuditOrderState(order, limitPrice, stopPrice, quantity, filled, averageFillPrice, orderState, time, error, comment);
             if (!IsOrderAccount())
                 return;
+            lock (sync)
+            {
+                bool handled = HandleOwnedOrderUpdate(order, quantity, filled, orderState, error, OwnershipControlNow());
+                ResolveAccountOrderTerminal(order, quantity, filled, orderState);
+                if (handled) return;
+            }
             if (orderState != OrderState.Rejected && orderState != OrderState.Cancelled)
                 return;
             lock (sync)
             {
-                if (submitted != null && order.Name == submitted.OrderName && filled == 0)
-                    FailSubmission(submitted, order.Name + " " + orderState + " " + error + " " + comment);
+                Intent owner = OwnedOrderIntent(order);
+                if (owner != null && object.ReferenceEquals(owner, submitted) && filled == 0)
+                    FailSubmission(owner, order.Name + " " + orderState + " " + error + " " + comment);
             }
         }
 
         protected override void OnExecutionUpdate(Execution execution, string executionId, double price, int quantity,
             MarketPosition marketPosition, string orderId, DateTime time)
         {
+            lock (sync)
+                AuditExecutionCallback(execution, executionId, price, quantity, marketPosition, orderId, time);
             if (!IsOrderAccount())
                 return;
             lock (sync)
             {
-                if (submitted == null || execution.Order == null || execution.Order.Name != submitted.OrderName)
+                if (execution.Order == null || execution.Order.Account != Account || execution.Order.Instrument != Instrument)
                     return;
-                Intent filled = submitted;
-                if (quantity != 1)
+                Intent filled = OwnedExecutionIntent(execution);
+                if (filled == null)
                 {
-                    FailSubmission(filled, "Unexpected execution quantity " + quantity + ".");
+                    LatchOwnershipViolation(OwnershipControlNow(), "EXECUTION WITHOUT INTENT CLAIM · tatsächliche Kontoposition prüfen");
+                    AuditIntegrity("EXECUTION_WITHOUT_INTENT_CLAIM", PlatformToEastern(time),
+                        "executionId=" + executionId + " orderId=" + orderId + ";no name-only fill adoption", price);
                     return;
                 }
-                modelRealized -= ModelFeePerSide;
-                if (!filled.IsEntry)
-                    modelRealized += positionSide * (price - positionEntryPrice) * 50.0;
+                if (DuplicateOwnedExecution(executionId, PlatformToEastern(time))) return;
+                AuditIntegrity(filled.IsEntry ? "ENTRY_FILL" : "EXIT_FILL", PlatformToEastern(time),
+                    filled.Reason + " quantity=" + quantity, price);
+                if (quantity != 1)
+                {
+                    ExecutionQuantityAnomaly(filled, quantity, OwnershipControlNow());
+                    return;
+                }
+                if (!AcceptIntentExecutionLifetime(filled, OwnershipControlNow())) return;
+                RecordAccountExecution(executionId, filled, price, time);
                 UpdatePosition(filled, price);
                 if (filled.IsEntry && filled.Marks != null && CurrentBar >= 0)
                 {
@@ -1325,7 +2206,8 @@ namespace NinjaTrader.NinjaScript.Strategies
                         confirmedEntryMarks.RemoveAt(0);
                 }
                 Print(string.Format(CultureInfo.InvariantCulture, "Rapid EOD SIM realized={0:F2}", modelRealized));
-                submitted = null;
+                if (object.ReferenceEquals(submitted, filled))
+                    submitted = null;
                 Print(string.Format(CultureInfo.InvariantCulture,
                     "HY104 FILL {0:yyyy-MM-dd HH:mm:ss.fff} ET {1} {2} x{3} @ {4:F2}",
                     PlatformToEastern(time), filled.IsEntry ? "ENTRY" : "EXIT", filled.Reason, quantity, price));
@@ -1356,6 +2238,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 Intent next;
                 lock (sync)
                 {
+                    CheckOwnershipPositionMismatch(time);
                     bool loss = CheckModelLoss(time, true);
                     next = TakePending(time, false, CheckClose(time) || loss);
                 }
@@ -1391,11 +2274,12 @@ namespace NinjaTrader.NinjaScript.Strategies
             public readonly string Levels;
             public readonly string Countdown;
             public readonly string MarketRemaining;
-            public readonly string Steps;
+            public readonly string FirstBand, OppositeBand, Retrace;
+            public readonly int FirstBandSide, OppositeBandSide;
             public readonly SharpDX.Color4 Accent;
 
             public StatusCard(string account, string clock, string mode, string state,
-                string detail, string levels, string countdown, string marketRemaining, SharpDX.Color4 accent, string steps)
+                string detail, string levels, string countdown, string marketRemaining, SharpDX.Color4 accent, string firstBand, string oppositeBand, string retrace, int firstBandSide, int oppositeBandSide)
             {
                 Account = account;
                 Clock = clock;
@@ -1405,7 +2289,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 Levels = levels;
                 Countdown = countdown;
                 MarketRemaining = marketRemaining;
-                Steps = steps;
+                FirstBand = firstBand;
+                OppositeBand = oppositeBand;
+                Retrace = retrace;
+                FirstBandSide = firstBandSide;
+                OppositeBandSide = oppositeBandSide;
                 Accent = accent;
             }
         }
@@ -1442,6 +2330,258 @@ namespace NinjaTrader.NinjaScript.Strategies
             public double KeltnerLower;
             public double BollingerUpper;
             public double BollingerLower;
+        }
+
+        private HYAccountReplayV8 accountReplay;
+        private string accountReplayFailure;
+        private Intent accountReservedIntent;
+        private string accountReservationToken;
+        private DateTime accountCalendarCheckedDay;
+
+        private void InitializeAccountReplay()
+        {
+            if (!IsOrderAccount()) return;
+            try
+            {
+                HYAccountProfileV8 profile = HYAccountProfileV8.MffEvaluation;
+                string identity = HYAccountReplayV8.Identity(Account.Name, GetType().Name, profile);
+                string folder = System.IO.Path.Combine(NinjaTrader.Core.Globals.UserDataDir, "HY-AccountReplay-v8");
+                accountReplay = new HYAccountReplayV8(folder, identity, profile);
+                accountReplay.ReconcileFlat(PositionAccount != null && PositionAccount.MarketPosition == MarketPosition.Flat
+                    && PositionAccount.Quantity == 0 && Position != null && Position.MarketPosition == MarketPosition.Flat,
+                    HasWorkingOrder());
+                int executions = ReconcileNativeAccountExecutions(accountReplay);
+                if (accountReplay.Fault == null && executions > 0)
+                    VerifyNativeAccountNegativeProbe(identity, profile);
+                AdvanceAccountReplay(EasternNow());
+                Print("HY ACCOUNT V8 " + identity + " epoch=" + accountReplay.Epoch
+                    + " net=" + (accountReplay.BalanceCents / 100.0).ToString("F2", CultureInfo.InvariantCulture)
+                    + " floor=" + (accountReplay.FloorCents / 100.0).ToString("F2", CultureInfo.InvariantCulture)
+                    + " status=" + accountReplay.Status);
+            }
+            catch (Exception e)
+            {
+                accountReplayFailure = e.GetType().Name + ": " + e.Message;
+                entryBlocked = true;
+                Print("HY ACCOUNT V8 BLOCKED " + accountReplayFailure);
+            }
+        }
+
+        private int ReconcileNativeAccountExecutions(HYAccountReplayV8 book)
+        {
+            // Account.Executions is the current-session collection. The durable
+            // pre-entry barrier covers crashes whose fills are no longer in it.
+            int count = 0;
+            lock (Account.Executions)
+                foreach (Execution execution in Account.Executions)
+                {
+                    if (execution == null || execution.Order == null || execution.Instrument == null
+                        || execution.Instrument.MasterInstrument.Name != Instrument.MasterInstrument.Name
+                        || PlatformToEastern(execution.Time).Ticks < book.EpochStartTicks) continue;
+                    count++;
+                    bool buy = execution.Order.OrderAction == OrderAction.Buy || execution.Order.OrderAction == OrderAction.BuyToCover;
+                    if (!book.KnowsExecution(execution.ExecutionId, Convert.ToDecimal(execution.Price), execution.Quantity, buy))
+                        book.Fail("NinjaTrader-Ausführung fehlt/abweichend im Journal: " + execution.ExecutionId);
+                }
+            return count;
+        }
+
+        private void VerifyNativeAccountNegativeProbe(string identity, HYAccountProfileV8 profile)
+        {
+            // Isolated COPY only, no native orders, account changes or live ledger writes.
+            string accepted = System.IO.Path.Combine(NinjaTrader.Core.Globals.UserDataDir, "HY-AccountReplay-v8",
+                HYAccountReplayV8.FileName(identity) + ".native-probe-v8r3.ok");
+            if (System.IO.File.Exists(accepted) && System.IO.File.ReadAllText(accepted) == accountReplay.Epoch)
+            { Print("HY ACCOUNT V8 NEGATIVE PROBE PASS (already accepted) " + identity); return; }
+            var copy = accountReplay.Snapshot();
+            if (copy.ExecutionFacts.Count == 0) return;
+            string remove = null;
+            lock (Account.Executions)
+                foreach (Execution execution in Account.Executions)
+                    if (execution != null && execution.Order != null && execution.Instrument != null
+                        && execution.Instrument.MasterInstrument.Name == Instrument.MasterInstrument.Name
+                        && PlatformToEastern(execution.Time).Ticks >= accountReplay.EpochStartTicks)
+                    { remove = execution.ExecutionId + "|"; break; }
+            if (remove == null) return;
+            copy.ExecutionFacts.RemoveAll(fact => fact.StartsWith(remove, StringComparison.Ordinal));
+            string probe = System.IO.Path.Combine(NinjaTrader.Core.Globals.UserDataDir, "log", "HY-account-v8-acceptance", Guid.NewGuid().ToString("N"));
+            HYAccountReplayV8.WriteSeed(System.IO.Path.Combine(probe, "seeds", HYAccountReplayV8.FileName(identity)), copy);
+            using (var book = new HYAccountReplayV8(probe, identity, profile))
+            {
+                ReconcileNativeAccountExecutions(book);
+                if (book.Fault == null || book.CanEnter)
+                    throw new InvalidOperationException("Native Negativprobe muss fehlenden Fill sperren");
+            }
+            using (var book = new HYAccountReplayV8(probe, identity, profile))
+                if (book.CanEnter) throw new InvalidOperationException("Native Negativprobe muss Neustart überstehen");
+            System.IO.File.WriteAllText(System.IO.Path.Combine(probe, "PASS.txt"),
+                "READ_ONLY_NATIVE_EXECUTION_NEGATIVE_PROBE_PASS\n" + DateTime.UtcNow.ToString("O", CultureInfo.InvariantCulture)
+                + "\n" + identity + "\nProduction ledger unchanged; no orders submitted.\n");
+            System.IO.File.WriteAllText(accepted, accountReplay.Epoch);
+            Print("HY ACCOUNT V8 NEGATIVE PROBE PASS " + identity);
+        }
+
+        private bool AccountReplayReady()
+        {
+            if (!IsOrderAccount()) return true;
+            return accountReplay != null && accountReplayFailure == null && accountReplay.CanEnter;
+        }
+
+        private string AccountReplayStatus()
+        {
+            if (accountReplayFailure != null) return "KONTOSTATUS PRÜFEN";
+            if (accountReplay == null) return "KONTOJOURNAL AUSSTEHEND";
+            return accountReplay.Status;
+        }
+
+        private void AdvanceAccountReplay(DateTime now)
+        {
+            try { AdvanceAccountReplayCore(now); }
+            catch (Exception e) { BlockAccountException(e); }
+        }
+
+        private void BlockAccountException(Exception e)
+        {
+            accountReplayFailure = e.GetType().Name + ": " + e.Message;
+            entryBlocked = true;
+            if (accountReplay != null) accountReplay.Fail("Kontooperation fehlgeschlagen · " + accountReplayFailure);
+            Print("HY ACCOUNT V8 BLOCKED " + accountReplayFailure);
+        }
+
+        private void AdvanceAccountReplayCore(DateTime now)
+        {
+            if (accountReplay == null) return;
+            bool flat = positionSide == 0 && PositionAccount != null && PositionAccount.Quantity == 0
+                && PositionAccount.MarketPosition == MarketPosition.Flat;
+            if (accountReplay.DayTicks != 0 && accountReplay.LastClosedDayTicks < accountReplay.DayTicks && now.Ticks >= accountReplay.CloseTicks)
+                accountReplay.CloseDay(now, flat, pending != null || submitted != null || HasWorkingOrder());
+            if (accountCalendarCheckedDay != now.Date || (now >= sessionOpen && now < sessionEnd && accountReplay.DayTicks != sessionOpen.Date.Ticks))
+            {
+                CatchUpAccountCalendar(now, flat);
+                accountCalendarCheckedDay = now.Date;
+            }
+            if (now >= sessionOpen && now < sessionEnd)
+                accountReplay.StartDay(sessionOpen.Date, sessionEnd);
+            modelRealized = accountReplay.BalanceCents / 100.0;
+            modelLossLatched = accountReplay.Breached;
+            if (accountReplay.Fault != null)
+            {
+                accountReplayFailure = accountReplay.Fault;
+                entryBlocked = true;
+            }
+        }
+
+        private void CatchUpAccountCalendar(DateTime now, bool flat)
+        {
+            if (accountReplay.LifecycleEnded || accountReplay.Fault != null || accountReplay.DayTicks == 0
+                || accountReplay.LastClosedDayTicks < accountReplay.DayTicks) return;
+            DateTime cursor = new DateTime(accountReplay.LastClosedDayTicks).Date.AddDays(1);
+            if (cursor > now.Date || !flat || pending != null || submitted != null || HasWorkingOrder()) return;
+            var calendar = new SessionIterator(Bars);
+            for (int count = 0; count < 512 && cursor <= now.Date && !accountReplay.LifecycleEnded; count++)
+            {
+                DateTime query = TimeZoneInfo.ConvertTime(DateTime.SpecifyKind(cursor.AddHours(9.5), DateTimeKind.Unspecified), easternZone, platformZone);
+                bool returned = calendar.GetNextSession(query, true);
+                DateTime day = calendar.ActualTradingDayExchange.Date;
+                DateTime rawDay = calendar.ActualTradingDayExchange;
+                DateTime rawBegin = calendar.ActualSessionBegin, rawEnd = calendar.ActualSessionEnd;
+                DateTime end = PlatformToEastern(rawEnd);
+                DateTime begin = PlatformToEastern(rawBegin);
+                DateTime open = day.AddHours(9.5);
+                if (begin > open) open = begin;
+                if (day < cursor || end <= begin || day.Year < 1900 || begin.Year < 1900 || end < cursor)
+                { accountReplay.Fail("Ungültige Reihenfolge im Konto-Sitzungskalender"); return; }
+                // NT8 may return false for a weekend/holiday gap while populating
+                // valid next bounds. Confirm strictly inside that candidate,
+                // exactly as in the frozen integrity-calendar implementation.
+                if (!returned)
+                {
+                    long duration = (rawEnd - rawBegin).Ticks;
+                    long offset = Math.Min(TimeSpan.TicksPerSecond, duration / 2);
+                    if (offset <= 0 || offset >= duration || !calendar.GetNextSession(rawBegin.AddTicks(offset), false)
+                        || calendar.ActualSessionBegin != rawBegin || calendar.ActualSessionBegin.Kind != rawBegin.Kind
+                        || calendar.ActualSessionEnd != rawEnd || calendar.ActualSessionEnd.Kind != rawEnd.Kind
+                        || calendar.ActualTradingDayExchange != rawDay || calendar.ActualTradingDayExchange.Kind != rawDay.Kind)
+                    { accountReplay.Fail("Konto-Sitzungskalender nicht im Sitzungsinneren bestätigt"); return; }
+                }
+                if (end > day.AddHours(17)) end = day.AddHours(17);
+                if (end > now || open >= end) return;
+                accountReplay.StartDay(day, end);
+                if (!accountReplay.CloseDay(now, true, false) || accountReplay.Fault != null) return;
+                cursor = day.AddDays(1);
+            }
+        }
+
+        private bool ReserveAccountIntent(Intent intent, DateTime now)
+        {
+            // The existing owned exit must still work if the disk fails. Never
+            // turn a journal error into an unprotected open position.
+            if (!intent.IsEntry && (accountReplay == null || accountReplayFailure != null || accountReplay.Fault != null))
+            { Print("HY ACCOUNT V8: owned exit proceeds; journal reconciliation required."); return true; }
+            if (accountReplay == null || accountReplayFailure != null) return false;
+            string token = (intent.IsEntry ? "ENTRY" : "EXIT") + "|"
+                + now.ToString("O", CultureInfo.InvariantCulture) + "|" + intent.Reason + "|" + Guid.NewGuid().ToString("N");
+            if (!intent.IsEntry)
+            {
+                if (accountReplay.StageExit(token))
+                { accountReservedIntent = intent; accountReservationToken = token; }
+                return true;
+            }
+            if (!accountReplay.Reserve(token))
+            {
+                accountReplayFailure = accountReplay.Fault ?? "Ordervorbehalt nicht gespeichert";
+                entryBlocked = true;
+                if (!intent.IsEntry)
+                { Print("HY ACCOUNT V8: owned exit proceeds after journal write failure; reconciliation required."); return true; }
+                return false;
+            }
+            accountReservedIntent = intent;
+            accountReservationToken = token;
+            return true;
+        }
+
+        private void ResolveAccountOrderTerminal(Order order, int quantity, int filled, OrderState orderState)
+        {
+            if (accountReplay == null || order == null || quantity != 1 || filled != 0
+                || (orderState != OrderState.Cancelled && orderState != OrderState.Rejected)) return;
+            Intent owner = OwnedOrderIntent(order);
+            if (owner != null && object.ReferenceEquals(owner, accountReservedIntent))
+            {
+                accountReplay.ConfirmNoFill(accountReservationToken);
+                accountReservedIntent = null;
+                accountReservationToken = null;
+            }
+        }
+
+        private void RecordAccountExecution(string executionId, Intent intent, double price, DateTime executionTime)
+        {
+            try { RecordAccountExecutionCore(executionId, intent, price, executionTime); }
+            catch (Exception e) { BlockAccountException(e); }
+        }
+
+        private void RecordAccountExecutionCore(string executionId, Intent intent, double price, DateTime executionTime)
+        {
+            if (accountReplay == null) { accountReplayFailure = "Ausführung ohne Kontojournal"; entryBlocked = true; return; }
+            bool ok = accountReplay.Fill(executionId, intent.IsEntry, intent.Side,
+                Convert.ToDecimal(price, CultureInfo.InvariantCulture), PlatformToEastern(executionTime));
+            DateTime fillTime = PlatformToEastern(executionTime);
+            if (ok && intent.IsEntry && bidSize > 0 && askSize > 0 && bid > 0 && ask >= bid && !double.IsInfinity(ask)
+                && MarketTimeAgrees(fillTime, bidClock) && MarketTimeAgrees(fillTime, askClock))
+                accountReplay.Mark(Convert.ToDecimal(bid, CultureInfo.InvariantCulture), Convert.ToDecimal(ask, CultureInfo.InvariantCulture));
+            modelRealized = accountReplay.BalanceCents / 100.0;
+            modelLossLatched = accountReplay.Breached;
+            if (object.ReferenceEquals(intent, accountReservedIntent))
+            { accountReservedIntent = null; accountReservationToken = null; }
+            if (!ok) { accountReplayFailure = accountReplay.Fault ?? "Kontobuchung fehlgeschlagen"; entryBlocked = true; }
+        }
+
+        private void CloseAccountReplay()
+        {
+            if (accountReplay != null)
+            {
+                accountReplay.Dispose();
+                accountReplay = null;
+            }
         }
 
         private sealed class IndicatorState

@@ -1,0 +1,1939 @@
+{
+  "status": "PASS_EXACT_ACCOUNT_ORACLES_AND_COMPILED_STORAGE_TESTS_NOT_NATIVE",
+  "structural": "STRUCTURAL_PASS checks=165",
+  "scenarios": 32,
+  "day_comparisons": 385,
+  "oracle_sources": {
+    "LOCAL_PROJECT_ROOT/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/sqx_tradeday_fast_pass_accounts.py": "4a42caba2e35f252a2c9e29592ab01f84e54f3934dfaca1d2a02daad1642f013",
+    "LOCAL_PROJECT_ROOT/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/sqx_mff_payout_rules.py": "4e3371f2b159b83feaf96887fb2f0f6f7c689cabfd13027673f5dabaa154db75",
+    "LOCAL_PROJECT_ROOT/outputs/MFFU-HY18b-ES-v1/konten.py": "b63b72830d109391ff1ea12139cb72176fc45f1cd686fdc465857083c256ef88"
+  },
+  "scope": "Compiled actual C# book/store and unmodified saved Python account oracles on explicit fixtures. No native NinjaTrader or raw-tick parity claim.",
+  "comparisons": [
+    [
+      "TradeDayEvaluation-steady",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-steady",
+      "2026-11-20",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-steady",
+      "2026-11-21",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-steady",
+      "2026-11-22",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-steady",
+      "2026-11-23",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-mixed",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-mixed",
+      "2026-11-20",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-mixed",
+      "2026-11-21",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-mixed",
+      "2026-11-22",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-mixed",
+      "2026-11-23",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-mixed",
+      "2026-11-24",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-mixed",
+      "2026-11-25",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-mixed",
+      "2026-11-26",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-mixed",
+      "2026-11-27",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-mixed",
+      "2026-11-28",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-mixed",
+      "2026-11-29",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-mixed",
+      "2026-11-30",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-mixed",
+      "2026-12-01",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-mixed",
+      "2026-12-02",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-loss",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-payout",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-payout",
+      "2026-11-20",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-11-20",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-11-21",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-11-22",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-11-23",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-11-24",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-11-25",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-11-26",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-11-27",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-11-28",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-11-29",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-11-30",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-01",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-02",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-03",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-04",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-05",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-06",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-07",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-08",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-09",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-10",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-11",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-12",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-13",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-14",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-15",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-16",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-17",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-inactive",
+      "2026-12-18",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-random",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-random",
+      "2026-11-20",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-intraday-recovery",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-multiple-trades",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-multiple-trades",
+      "2026-11-20",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-multiple-trades",
+      "2026-11-21",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayEvaluation-multiple-trades",
+      "2026-11-22",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-11-20",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-11-21",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-11-22",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-11-23",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-11-24",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-11-25",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-11-26",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-11-27",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-11-28",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-11-29",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-11-30",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-12-01",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-12-02",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-12-03",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-12-04",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-12-05",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-12-06",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-12-07",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-12-08",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-12-09",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-12-10",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-12-11",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-12-12",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-steady",
+      "2026-12-13",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-11-20",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-11-21",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-11-22",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-11-23",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-11-24",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-11-25",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-11-26",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-11-27",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-11-28",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-11-29",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-11-30",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-01",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-02",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-03",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-04",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-05",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-06",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-07",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-08",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-09",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-10",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-11",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-12",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-13",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-14",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-15",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-16",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-17",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-mixed",
+      "2026-12-18",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-loss",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-11-20",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-11-21",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-11-22",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-11-23",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-11-24",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-11-25",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-11-26",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-11-27",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-11-28",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-11-29",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-11-30",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-01",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-02",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-03",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-04",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-05",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-06",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-07",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-08",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-09",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-10",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-11",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-12",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-13",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-14",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-15",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-16",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-payout",
+      "2026-12-17",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-11-20",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-11-21",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-11-22",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-11-23",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-11-24",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-11-25",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-11-26",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-11-27",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-11-28",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-11-29",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-11-30",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-01",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-02",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-03",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-04",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-05",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-06",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-07",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-08",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-09",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-10",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-11",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-12",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-13",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-14",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-15",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-16",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-17",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-inactive",
+      "2026-12-18",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-11-20",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-11-21",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-11-22",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-11-23",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-11-24",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-11-25",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-11-26",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-11-27",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-11-28",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-11-29",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-11-30",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-01",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-02",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-03",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-04",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-05",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-06",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-07",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-08",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-09",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-10",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-11",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-12",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-13",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-14",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-15",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-16",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-17",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-18",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-20",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-21",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-22",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-23",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-24",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-25",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-26",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-27",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-random",
+      "2026-12-28",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-intraday-recovery",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-multiple-trades",
+      "2026-11-19",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-multiple-trades",
+      "2026-11-20",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-multiple-trades",
+      "2026-11-21",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-multiple-trades",
+      "2026-11-22",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-multiple-trades",
+      "2026-11-23",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-multiple-trades",
+      "2026-11-24",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-multiple-trades",
+      "2026-11-25",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-multiple-trades",
+      "2026-11-26",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-multiple-trades",
+      "2026-11-27",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-multiple-trades",
+      "2026-11-28",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-multiple-trades",
+      "2026-11-29",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "TradeDayFunded-multiple-trades",
+      "2026-11-30",
+      "exact TradeDay account state/status"
+    ],
+    [
+      "MffEvaluation-steady",
+      "2026-11-19",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-steady",
+      "2026-11-20",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-steady",
+      "2026-11-21",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-steady",
+      "2026-11-22",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-mixed",
+      "2026-11-19",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-mixed",
+      "2026-11-20",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-mixed",
+      "2026-11-21",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-mixed",
+      "2026-11-22",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-mixed",
+      "2026-11-23",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-mixed",
+      "2026-11-24",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-mixed",
+      "2026-11-25",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-mixed",
+      "2026-11-26",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-mixed",
+      "2026-11-27",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-mixed",
+      "2026-11-28",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-mixed",
+      "2026-11-29",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-loss",
+      "2026-11-19",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-payout",
+      "2026-11-19",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-payout",
+      "2026-11-20",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-payout",
+      "2026-11-21",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-payout",
+      "2026-11-22",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-inactive",
+      "2026-11-19",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-inactive",
+      "2026-11-20",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-inactive",
+      "2026-11-21",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-inactive",
+      "2026-11-22",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-inactive",
+      "2026-11-23",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-inactive",
+      "2026-11-24",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-inactive",
+      "2026-11-25",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-inactive",
+      "2026-11-26",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-random",
+      "2026-11-19",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-random",
+      "2026-11-20",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-random",
+      "2026-11-21",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-random",
+      "2026-11-22",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-random",
+      "2026-11-23",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-random",
+      "2026-11-24",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-intraday-recovery",
+      "2026-11-19",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-multiple-trades",
+      "2026-11-19",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-multiple-trades",
+      "2026-11-20",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-multiple-trades",
+      "2026-11-21",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffEvaluation-multiple-trades",
+      "2026-11-22",
+      "exact MFF evaluation balance/floor/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-11-19",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-11-20",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-11-21",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-11-22",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-11-23",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-11-24",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-11-25",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-11-26",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-11-27",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-11-28",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-11-29",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-11-30",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-12-01",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-12-02",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-12-03",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-12-04",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-12-05",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-12-06",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-12-07",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-12-08",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-12-09",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-12-10",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-12-11",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-12-12",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-steady",
+      "2026-12-13",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-11-19",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-11-20",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-11-21",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-11-22",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-11-23",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-11-24",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-11-25",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-11-26",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-11-27",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-11-28",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-11-29",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-11-30",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-01",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-02",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-03",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-04",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-05",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-06",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-07",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-08",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-09",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-10",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-11",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-12",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-13",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-14",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-15",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-16",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-17",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-mixed",
+      "2026-12-18",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-loss",
+      "2026-11-19",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-11-19",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-11-20",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-11-21",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-11-22",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-11-23",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-11-24",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-11-25",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-11-26",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-11-27",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-11-28",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-11-29",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-11-30",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-01",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-02",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-03",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-04",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-05",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-06",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-07",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-08",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-09",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-10",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-11",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-12",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-13",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-14",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-15",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-16",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-17",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-payout",
+      "2026-12-18",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-inactive",
+      "2026-11-19",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-inactive",
+      "2026-11-20",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-inactive",
+      "2026-11-21",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-inactive",
+      "2026-11-22",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-inactive",
+      "2026-11-23",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-inactive",
+      "2026-11-24",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-inactive",
+      "2026-11-25",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-inactive",
+      "2026-11-26",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-random",
+      "2026-11-19",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-random",
+      "2026-11-20",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-random",
+      "2026-11-21",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-random",
+      "2026-11-22",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-random",
+      "2026-11-23",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-random",
+      "2026-11-24",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-random",
+      "2026-11-25",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-random",
+      "2026-11-26",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-random",
+      "2026-11-27",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-random",
+      "2026-11-28",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-random",
+      "2026-11-29",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-random",
+      "2026-11-30",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-intraday-recovery",
+      "2026-11-19",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-multiple-trades",
+      "2026-11-19",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-multiple-trades",
+      "2026-11-20",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-multiple-trades",
+      "2026-11-21",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-multiple-trades",
+      "2026-11-22",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-multiple-trades",
+      "2026-11-23",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-multiple-trades",
+      "2026-11-24",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-multiple-trades",
+      "2026-11-25",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-multiple-trades",
+      "2026-11-26",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-multiple-trades",
+      "2026-11-27",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-multiple-trades",
+      "2026-11-28",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-multiple-trades",
+      "2026-11-29",
+      "exact MFF funded balance/floor/payouts/status"
+    ],
+    [
+      "MffFunded-multiple-trades",
+      "2026-11-30",
+      "exact MFF funded balance/floor/payouts/status"
+    ]
+  ]
+}

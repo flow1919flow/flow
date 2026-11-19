@@ -1,0 +1,36 @@
+{
+  "status": "INSTALLED_NATIVE_COMPILE_AND_FOUR_SIM_RELOAD_CHECKS_PASS",
+  "observed_at_local": "2026-11-19T19:38:45+01:00",
+  "revision": "V8r4",
+  "r3_failure_and_r4_fix": "Native R3 import rolled back after CS0103: NQ-only SetReturnOutcome diagnostic referenced in two ES classes. R4 removes exactly those two calls. Bridge ES stub corrected so this error can no longer be hidden.",
+  "native_import_success_observed": true,
+  "remaining_native_observations": [
+    "Actual session close at 17:00 Eastern / 22:00 Vaduz has not occurred. No native EOD transition is claimed.",
+    "Upcoming weekend/holiday catch-up has compiled fixture coverage but has not yet been observed on the Windows main instances."
+  ],
+  "scope": {
+    "local_sim_only": true,
+    "test_orders_submitted": false,
+    "provider_orders_submitted": false,
+    "trade_signal_indicator_entry_stop_target_rules_changed": false,
+    "account_epoch_reset": false,
+    "epoch": "native-sim-20261119",
+    "new_NQ_run": "Subsequently requested by user. Windows changes deferred while Claude is using computer."
+  },
+  "three_points": {
+    "breach": "Terminal and persisted. NQ A and B remain breached; enabled scripts continue display but cannot enter.",
+    "trail": "EOD high/floor, fees and lifecycle persist by identity. EOD only at actual session close, flat, no pending/working orders.",
+    "risk_gate": "No preventative stop-risk gate added; this would be a separate HY."
+  },
+  "native_checks": {
+    "accounts": 4,
+    "negative_probes_passed": 4,
+    "all_enabled_and_sync_true": true,
+    "flat_at_checkpoint": true,
+    "journal_unchanged_after_disable_enable": true,
+    "full_native_process_restart": false,
+    "ES_net_per_sim": 1869.26,
+    "NQ_net_per_sim": -2045.76,
+    "NQ_breached_at_checkpoint": true
+  }
+}

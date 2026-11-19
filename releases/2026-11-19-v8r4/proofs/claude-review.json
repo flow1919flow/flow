@@ -1,0 +1,16 @@
+{
+  "verdict": "Die drei Änderungen sind korrekt, im R3-Quelltext sehe ich keinen Blocker mehr.",
+  "scope": "local native SIM acceptance only, not provider/live certification",
+  "reviewer_limitations": [
+    "did not compile or execute C# harness",
+    "no native NinjaTrader behavior observed by reviewer"
+  ],
+  "three_points": {
+    "breach": "terminal for that account epoch, survives reload; crossing liquidation is a failed challenge, not prevention",
+    "eod_trail": "winning closing balance raises high/floor, never lowers them, persisted",
+    "preventative_stop_risk_filter": "excluded; would be a separate new strategy hypothesis"
+  },
+  "repair_policy": "No deleting primaries/heads/backups to revive an epoch. Technical reconciliation pauses entries. Any manual repair requires verified native executions and preservation of balance, high, floor, true lifecycle flags and monotonic head; no automatic repair exists.",
+  "r4_verdict": "Bestätigt: Das R4-Delta ist genau die eine entfernte Diagnosezeile je ES-Klasse und ändert kein Verhalten. Die Freigabe für die lokale native Sim-Abnahme gilt damit unverändert für R4; die Kompilierung selbst kann nur NinjaTrader zeigen.",
+  "r4_review_zip_sha256": "d4f1a720534b913f85c4d3a44732531e7f32d63a12d3c2c285bdb1cd30e495ca"
+}

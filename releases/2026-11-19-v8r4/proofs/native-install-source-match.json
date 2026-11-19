@@ -1,0 +1,22 @@
+[
+  {
+    "file": "HY104C2803FundedSim.cs",
+    "sha256": "1be92b9235dc84be7f1cc5ccc3205dc6440cd570c81d94e710d8f56f593f769b",
+    "native_download_matches_reviewed_candidate": true
+  },
+  {
+    "file": "HY104RapidEvalSim.cs",
+    "sha256": "b1f5d906292c577edf9ca768e05a3aa5b3d805284cde6087754ff51b3c6b1b73",
+    "native_download_matches_reviewed_candidate": true
+  },
+  {
+    "file": "HY3TradeDayFastPassSim.cs",
+    "sha256": "f031a497fb072b4bf62fe8392fbcc8267305d88048381e35205e0b3117a93e3f",
+    "native_download_matches_reviewed_candidate": true
+  },
+  {
+    "file": "HYAccountReplayV8.cs",
+    "sha256": "c3b80240b038f87b251213918d81255be914cd2b9f38534372af16e18ac414f3",
+    "native_download_matches_reviewed_candidate": true
+  }
+]

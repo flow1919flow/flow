@@ -5,7 +5,7 @@
   "r3_failure_and_r4_fix": "Native R3 import rolled back after CS0103: NQ-only SetReturnOutcome diagnostic referenced in two ES classes. R4 removes exactly those two calls. Bridge ES stub corrected so this error can no longer be hidden.",
   "native_import_success_observed": true,
   "remaining_native_observations": [
-    "Actual session close at 17:00 Eastern / 22:00 Vaduz has not occurred. No native EOD transition is claimed.",
+    "Actual session close at 17:00 Eastern / 23:00 Vaduz has not occurred. No native EOD transition is claimed.",
     "Upcoming weekend/holiday catch-up has compiled fixture coverage but has not yet been observed on the Windows main instances."
   ],
   "scope": {

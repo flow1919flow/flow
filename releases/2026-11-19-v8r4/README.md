@@ -29,3 +29,7 @@ Der tatsächliche native EOD-Wechsel um 17:00 Eastern war am Prüfcheckpoint noc
 Produktive Kontojournale, Migrationsseeds und rohe Marktdaten werden nicht veröffentlicht. Eine neue Installation ohne geprüftes Journal startet absichtlich kein frisches Konto. Ein autorisierter neuer Sim-Versuch bekommt eine neue Testepoche; der alte Lauf bleibt erhalten. Keine Journaldateien zur Wiederbelebung derselben gescheiterten Epoche löschen.
 
 Die Dateien unter tests sind die verwendeten Testquellen und Fixtures. Die ursprünglichen Python-Prüfskripte referenzieren das lokale Forschungsprojekt und das damalige .NET-SDK; sie sind Belegquellen und kein fertig portiertes Installationsprogramm.
+
+## Nachtrag: NQ-Sim-Versuch 2
+
+Die beiden NQ-Instanzen wurden um 21:14 Uhr Vaduz mit einer ausdrücklich neuen Testepoche gestartet und blieben beim Check um 21:18 Uhr aktiviert und synchronisiert. Native neue Journale, monotone Prüfstände und übertragene Seeds wurden zurückgelesen und geprüft. Beide ES-Journale blieben bytegleich; ES wurde nicht deaktiviert oder neu geladen. Der gespeicherte Workspace enthält vier Charts. [Prüfbericht](proofs/nq-run2-native-acceptance.json). Die acht bisherigen gefüllten Orders blieben unverändert; keine Testorder wurde gesendet. Die bekannten noch offenen nativen Prüfungen bleiben offen.

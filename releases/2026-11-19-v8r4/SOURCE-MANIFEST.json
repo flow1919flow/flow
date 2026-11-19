@@ -36,8 +36,8 @@
   },
   {
     "path": "ninjatrader/NQ.md",
-    "bytes": 1684,
-    "sha256": "683207361821f4f52cef6511bb7698fea59d6c0240e16786e49353e5cb70438d"
+    "bytes": 2617,
+    "sha256": "3cdce8426740a9c2ed3062fd2bbc00baa2a882cee452494e6999e687d51a6118"
   },
   {
     "path": "releases/2026-11-19-v8r4/AccountReplay-V8r4-ES-NQ-Sim-Import.zip",
@@ -46,8 +46,8 @@
   },
   {
     "path": "releases/2026-11-19-v8r4/README.md",
-    "bytes": 3693,
-    "sha256": "f7c1a23263de58db58bcc99336fafe36957aed584bb3685868b1a2e37a99d775"
+    "bytes": 4335,
+    "sha256": "fdbd2c8ed628656382810993688eea7d9841f0219c5a45b24822e404fe579e70"
   },
   {
     "path": "releases/2026-11-19-v8r4/calendar/HYNewsCalendarV5-provenance.json",
@@ -87,12 +87,17 @@
   {
     "path": "releases/2026-11-19-v8r4/proofs/native-acceptance.json",
     "bytes": 1801,
-    "sha256": "b8e4ab5eba84cefcb96d380f582809423a62f604d247a5bf8f799a45da80dc0a"
+    "sha256": "4ac640172eae2e2b0a2e71f294f5dccc9031e3a7645d2613e2163886bee60be0"
   },
   {
     "path": "releases/2026-11-19-v8r4/proofs/native-install-source-match.json",
     "bytes": 737,
     "sha256": "2a61f1813f0b4ef1f2eaec1e781404592ff73f73cff2b74add0f3268c60c761b"
+  },
+  {
+    "path": "releases/2026-11-19-v8r4/proofs/nq-run2-native-acceptance.json",
+    "bytes": 3385,
+    "sha256": "02249f36ff8f00a4cca4af7a7db6c023a5f52dd36e32b77d040fd3c6fe5d9cc7"
   },
   {
     "path": "releases/2026-11-19-v8r4/tests/AccountHarness.cs",

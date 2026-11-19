@@ -1,0 +1,95 @@
+{
+  "status": "PASS_NATIVE_NEW_NQ_EPOCH_BOTH_ZERO_ES_BYTE_UNCHANGED",
+  "journals": {
+    "7e1511616ff021c467d1279dc0579e24.xml": {
+      "Identity": "SIMTRADEDAYA|HY3TradeDayFastPassSim|TradeDayEvaluation",
+      "Epoch": "native-sim-20261119-nq-run2-20261119T200601Z",
+      "EpochStartTicks": "639306975610000000",
+      "BalanceCents": "0",
+      "HighCents": "0",
+      "FloorCents": "-200000",
+      "Side": "0",
+      "Breached": "false",
+      "EvaluationPassed": "false",
+      "ReviewRequired": "false",
+      "ReconciliationReason": "",
+      "PendingIntent": "",
+      "Sequence": "3",
+      "CloseTicks": "639307044000000000"
+    },
+    "a181a9d1ed4e19cc26093e4ee1a4ae63.xml": {
+      "Identity": "SIM104C28FUNDED|HY104C2803FundedSim|MffFunded",
+      "Epoch": "native-sim-20261119",
+      "EpochStartTicks": "639306432000000000",
+      "BalanceCents": "186926",
+      "HighCents": "0",
+      "FloorCents": "-200000",
+      "Side": "0",
+      "Breached": "false",
+      "EvaluationPassed": "false",
+      "ReviewRequired": "false",
+      "ReconciliationReason": "",
+      "PendingIntent": "",
+      "Sequence": "7",
+      "CloseTicks": "639307044000000000"
+    },
+    "c65bc038a097f8cf0dc30fa774461380.xml": {
+      "Identity": "SIMTRADEDAYB|HY3TradeDayFastPassSim|TradeDayFunded",
+      "Epoch": "native-sim-20261119-nq-run2-20261119T200601Z",
+      "EpochStartTicks": "639306975610000000",
+      "BalanceCents": "0",
+      "HighCents": "0",
+      "FloorCents": "-200000",
+      "Side": "0",
+      "Breached": "false",
+      "EvaluationPassed": "false",
+      "ReviewRequired": "false",
+      "ReconciliationReason": "",
+      "PendingIntent": "",
+      "Sequence": "3",
+      "CloseTicks": "639307044000000000"
+    },
+    "5a76960cf0a0d93eb5305f3403b01d36.xml": {
+      "Identity": "SIMHY104RAPIDEVAL|HY104RapidEvalSim|MffEvaluation",
+      "Epoch": "native-sim-20261119",
+      "EpochStartTicks": "639306432000000000",
+      "BalanceCents": "186926",
+      "HighCents": "0",
+      "FloorCents": "-200000",
+      "Side": "0",
+      "Breached": "false",
+      "EvaluationPassed": "false",
+      "ReviewRequired": "false",
+      "ReconciliationReason": "",
+      "PendingIntent": "",
+      "Sequence": "7",
+      "CloseTicks": "639307044000000000"
+    }
+  },
+  "archived_primaries_unchanged": true,
+  "observed_at_local": "2026-11-19T21:18:29+01:00",
+  "enabled_at_local": "2026-11-19T21:13:42+01:00",
+  "native_initialization_at_local": "2026-11-19T21:14:06+01:00",
+  "both_nq_enabled_and_sync_true_at_final_check": true,
+  "both_nq_cards_green_live": true,
+  "es_not_reloaded_or_disabled": true,
+  "strategy_source_changed": false,
+  "orders_at_before_and_after_checkpoint": {
+    "count": 8,
+    "all_filled": true,
+    "new_test_orders": 0
+  },
+  "workspace": {
+    "name": "rapid eod - eval und funded sim",
+    "native_modified_at_local": "2026-11-19T21:15:22+01:00",
+    "four_charts_serialized": true,
+    "sha256": "cb751b53436c3402da887b17e1ce746ccf8eb603b06a1f21f57852f458e4fb26"
+  },
+  "limitations": [
+    "No new strategy fill since cutover observed; no test orders requested or submitted",
+    "Complete NinjaTrader process restart still pending",
+    "Actual EOD and weekend/holiday transition still pending",
+    "No complete raw-tick parity or new OOS result claimed",
+    "Native Sim cash balance not reset; account model uses new relative epoch"
+  ]
+}

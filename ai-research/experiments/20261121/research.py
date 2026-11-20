@@ -165,7 +165,7 @@ def fit_arm(arm):
     path=HERE/'Training'/arm/'predictions.csv'
     with path.open('w') as f:
         w=csv.DictWriter(f,fieldnames=list(predictions[0]));w.writeheader();w.writerows(predictions)
-    for segment in {r['segment'] for r in rows}:
+    for segment in {source['segment'] for source in sources}:
         target=HERE/'Decisions'/arm/segment/'ml-decisions.csv';target.parent.mkdir(parents=True,exist_ok=True)
         target.write_text('signal_ns,take\n'+''.join(f'{r["signal_ns"]},{r["take"]}\n' for r in predictions if r['segment']==segment))
     result['random_omission_control']=matched_random(net[indices],take,np.array([p['block'] for p in predictions if p['block'] is not None]))

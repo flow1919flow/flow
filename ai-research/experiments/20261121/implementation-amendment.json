@@ -1,0 +1,7 @@
+{
+  "at_utc": "2026-11-20T23:41:41.315974+00:00",
+  "before_new_model_fit": true,
+  "prior_commit": "c918836629711d2ff3ff2ec469c4a784387a14b1",
+  "change": "Create header-only gate input for the zero-candidate roll segment by iterating all six proven sources, not five segments represented by rows. No feature, split, model, threshold, metric or permutation change.",
+  "prior_controls": "Completed using v1 source/registration; retained unchanged."
+}

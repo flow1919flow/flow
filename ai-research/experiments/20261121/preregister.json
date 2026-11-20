@@ -1,5 +1,5 @@
 {
-  "schema": "ES-ML-COMPARISON-20261121-v1",
+  "schema": "ES-ML-COMPARISON-20261121-v1.1",
   "created_at_utc": "2026-11-20T23:38:53.418632+00:00",
   "period": [
     "2025-11-24",
@@ -115,9 +115,16 @@
   ],
   "sklearn_version": "1.9.1",
   "code": {
-    "research.py": "cbf69372a90f8544aa30cfb64e0e3445767910b6764065a08814330b9288c3d6",
+    "research.py": "91e55174079a48d22b071ad029bf64c4e9789dc53e59c1bc39962511cc9b6e37",
     "native_check.py": "536c79191c36e6626a49b1e03603c1f06f6d7af5175209ac8f77fced6b6c0936"
   },
   "cost": "local compute; no cloud calls/GPU rental/data purchase",
-  "SI": "separate coverage/availability feasibility audit; no missing-feed intervals encoded as no event"
+  "SI": "separate coverage/availability feasibility audit; no missing-feed intervals encoded as no event",
+  "implementation_amendment": {
+    "at_utc": "2026-11-20T23:41:41.315974+00:00",
+    "before_new_model_fit": true,
+    "prior_commit": "c918836629711d2ff3ff2ec469c4a784387a14b1",
+    "change": "Create header-only gate input for the zero-candidate roll segment by iterating all six proven sources, not five segments represented by rows. No feature, split, model, threshold, metric or permutation change.",
+    "prior_controls": "Completed using v1 source/registration; retained unchanged."
+  }
 }

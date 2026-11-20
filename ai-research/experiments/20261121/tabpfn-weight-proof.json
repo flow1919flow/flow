@@ -1,0 +1,15 @@
+{
+  "model_version": "V2",
+  "package": "tabpfn==10.2.0",
+  "filename": "tabpfn-v2-classifier-finetuned-zk73skhh.ckpt",
+  "weight_sha256": "cf8c519c01eaf1613ee91239006d57b1c806ff5f23ac1aeb1315ba1015210e49",
+  "bytes": 29009539,
+  "model_repository": "Prior-Labs/TabPFN-v2-clf",
+  "repository_commit": "275f19d2add9c2c0de38f9ebaded3856599fa2e7",
+  "license": "Prior Labs License1.1, Apache2-derived, additional attribution section10",
+  "license_sha256": "08b1851b4b6136b5fb0cb124d3258e0d91e3e1623f1be5904b77e4d270d112d8",
+  "commercial_exclusion_in_v2_license": false,
+  "attribution": "Built with PriorLabs-TabPFN",
+  "cloud_inference": false,
+  "raw_inputs_uploaded": false
+}

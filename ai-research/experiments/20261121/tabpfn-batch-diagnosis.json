@@ -1,0 +1,13 @@
+{
+  "state": "diagnosed_same_frozen_model_no_new_hyperparameters",
+  "block": 221,
+  "samples": 31,
+  "max_batch_singleton_abs": 1.3113021850585938e-06,
+  "mean_batch_singleton_abs": 2.499549509593635e-07,
+  "first_row_original_batch": 0.6471025943756104,
+  "first_row_changed_future_inputs": 0.6471025943756104,
+  "first_row_singleton": 0.6471025943756104,
+  "first_row_future_feature_effect": 0.0,
+  "seconds": 20.60047058300006,
+  "use": "diagnosis only, not a new cash/strategy result"
+}

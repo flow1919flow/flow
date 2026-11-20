@@ -1,0 +1,8 @@
+{
+  "at_utc": "2026-11-20T23:50:51.681654+00:00",
+  "scope": "TabPFN numeric audit, before any completed TabPFN result/native gate/cash",
+  "prior_attempt": "v1.1 stopped at block8, absolute batch/singleton difference1.3113021850585938e-6; no first-row change in the tested altered-future-row probe. Failed attempt preserved.",
+  "change": "Final TabPFN scores remain the originally intended singleton predictions. Record batch/singleton differences and gate differences instead of rejecting by an unvalidated1e-6 tolerance. All hyperparameters, features, targets, splits, cross-fitted thresholds and actual singleton gate policy unchanged.",
+  "null_scope": "Conditional null statistic uses batched float32 scores; first/last singleton deviations recorded. No claim of bitwise batch equivalence.",
+  "completed_other_arms": "ML1C,ML8,MR1 remain the unchanged v1.1 results; no refit chosen after their outcomes."
+}

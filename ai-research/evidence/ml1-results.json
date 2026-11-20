@@ -224,7 +224,7 @@
   "fresh_OOS": false,
   "leaderboard_changed": false,
   "ninjatrader_changed": false,
-  "new_Claude_review": false,
+  "new_Claude_review": true,
   "training_result_sha256": "d34a6e99ab38ba16371db08c68e3a837555e49ecb99deec20aa0fb5401f2081f",
   "cash_result_sha256": "c98fe7e1a16ab7ae8127a8077031124ae4681250b234a6472072d0c5e0ac00e6",
   "executed_training_source_sha256": "929a54ad08c5b9418624775514f80826ebb62f3eb164acba4f463da107d3a571",
@@ -234,7 +234,7 @@
     "complete native prefix-perturbation causality test",
     "1000 random-omission controls",
     "1000 full-pipeline block permutations",
-    "independent new Claude review"
+    "independent ML/cash recalculation by a second implementation"
   ],
-  "new_Claude_review_status": "questions_sent_actual_existing_chat_review_in_progress"
+  "new_Claude_review_status": "completed_code_and_report_review_not_independent_ML_cash_recalculation"
 }

@@ -6,7 +6,7 @@
   "training_test_blocks": 9,
   "cash_replay": "complete_baseline_reproduced",
   "computer_control": "restored_and_verified_after_further_app_restart",
-  "Claude_new_questions": "sent_actual_existing_chat_review_in_progress",
+  "Claude_new_questions": "actual_existing_chat_review_completed_read_sources_reviewed_no_independent_ML_recalculation",
   "Windows_last_visual_check_local": "2026-11-20 21:48:09 Europe/Vaduz",
   "Windows_current_state": "four_charts_seen_outside_regular_session_Control_Center_flags_not_rechecked",
   "GitHub_publish": "included_in_this_snapshot",
@@ -16,5 +16,7 @@
     "compare next preregistered linear classifiers separately"
   ],
   "Any_App_user_confirmed_enabled": true,
-  "Windows_chart_check_local": "2026-11-20 23:46 Europe/Vaduz"
+  "Windows_chart_check_local": "2026-11-20 23:46 Europe/Vaduz",
+  "SI_next_step": "drafted_reviewed_by_Claude_no_new_training",
+  "calendar_new_open_issue": "mandatory_next_Fed_month_may_block_refresh_if_unpublished_month_boundary_test_pending_no_Windows_change"
 }

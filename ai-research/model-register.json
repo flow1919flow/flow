@@ -43,6 +43,25 @@
       "status": "separate_followup_not_trained",
       "alpha": 10,
       "solver": "svd"
+    },
+    {
+      "id": "ML8",
+      "name": "HistGradientBoostingClassifier depth-one additive nonlinear control",
+      "status": "proposed_by_Claude_not_trained_not_final_preregistration",
+      "parameters": {
+        "max_depth": 1,
+        "learning_rate": 0.05,
+        "max_iter": 100,
+        "min_samples_leaf": 20,
+        "l2_regularization": 1.0,
+        "early_stopping": false
+      }
     }
-  ]
+  ],
+  "next_priority": [
+    "ML1 controls and native feature prefix test",
+    "one prespecified nonlinear comparison and separate MR1 expected net R",
+    "separate SI feasibility and coverage inventory"
+  ],
+  "modern_tabular_comparison": "TabPFN feasibility and version-specific licence check; not installed or tested"
 }

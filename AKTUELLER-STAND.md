@@ -1,4 +1,4 @@
-# Arbeitsstand und Übergabe · 20. November 2026
+# Arbeitsstand und Übergabe · 20. November, Nachtrag 21. November 2026
 
 Diese Datei ist der Einstieg für einen neuen Codex-Chat. Sie trennt beobachteten Betrieb, historische Forschung und offene Aufgaben. Zugangsdaten, Kontonummern, Remote-ID und lizenzierte Rohdaten werden nicht veröffentlicht.
 
@@ -47,6 +47,8 @@ Eingefrorene Sperrprofile: MFF-Eval ohne News-Sperre; MFF-Funded und TradeDay be
 
 Ein Trading-Economics-Kalenderangebot wurde mit Freigabe angefragt; Preisantwort steht aus. Kein Abo wurde gebucht.
 
+**Neuer offener Reviewpunkt:** Der Updater verlangt den laufenden und folgenden Fed-Monat. Eine noch unveröffentlichte Folgemonatsseite könnte die Erneuerung blockieren. Die Quelltextabhängigkeit wurde bestätigt; Monatswechseltest und sichere Korrektur sind noch offen. Die aktuelle Windows-Fassung wurde nicht verändert. Details im [Claude-Review](ai-research/docs/Claude-Review-20261121.md).
+
 ## Micros
 
 Nullreserve- und feste 11–15-MNQ-Versuche sind abgeschlossen. 3’146 Kaufketten wurden auf Bargeldidentität geprüft. Kein robuster neuer Gesamtsieger:
@@ -61,7 +63,7 @@ Dies sind vollständige Kontoreplays auf bereits verifizierten SQX-Signalen und 
 
 **ML1 ist tatsächlich trainiert und vollständig bis zum Kontovergleich gerechnet.** Modell: StandardScaler und L2-logistische Regression, festes C=0,1, fünf kausale Merkmale. Classification schätzt den positiven Nettoausgang; Ridge-Regression für erwartete Ergebnisgröße ist ein separater Folgeversuch.
 
-347 eindeutige Setupkandidaten, keine Vervielfachung durch Micro-/Mini-Kopien oder Kaufketten. Neun chronologische Prüfblöcke, zunächst 80 Trainingssitzungen, eine Sitzung Abstand, dann 20 Prüfungssitzungen. Überlappende noch unbekannte Outcomes werden entfernt. 230 spätere Kandidaten erhielten Prognosen, 35 wurden verworfen. Die vorherige Trainingsphase handelt als unveränderte Basis weiter.
+347 eindeutige ES-Setupkandidaten aus Funded C28.03, keine NQ-Kandidaten und keine Vervielfachung durch Micro-/Mini-Kopien oder Kaufketten. Neun chronologische Prüfblöcke, zunächst 80 Trainingssitzungen, eine Sitzung Abstand, dann 20 Prüfungssitzungen. Überlappende noch unbekannte Outcomes werden entfernt. 230 spätere Kandidaten erhielten Prognosen, 35 wurden verworfen. Die vorherige Trainingsphase handelt als unveränderte Basis weiter.
 
 Die fünf Merkmale sind Stoprisiko aus der Entscheidungsquote, Bollinger-/Keltner-Breitenverhältnis, gerichtete abgeschlossene EMA-Steigung/ATR, abgeschlossenes relatives Volumen und Chicago-Handelsminute. Kein späterer Fill, Exit, MFE oder Auszahlungsergebnis ist Eingabe.
 
@@ -85,8 +87,8 @@ Die breite Idee „ein KI-Agent setzt Paper korrekt um und erkennt eigene Fehler
 ## Offene Aufgaben in Reihenfolge
 
 1. Computersteuerung wurde nach erneutem App-Neustart tatsächlich wiederhergestellt; RustDesk und der echte Claude-Chat sind wieder erreichbar. Keine Einstellungsänderung oder bestimmte Fehlerursache nachgewiesen.
-2. Gesammelte Fragen wurden im echten Claude-Chat gesendet: Modellwahl/DeepInfra, ML-Methoden, Kalendercode, Micro-Fairness und Research-Agent-Vorarbeiten. Seine neue Antwort wird getrennt vom alten Review protokolliert. Interne Codex-Rechercheagenten sind nicht Claude.
-3. Modellfamilien nach dem Register einzeln vergleichen, mit identischer Daten- und Kontobasis; keine breite nachträgliche Merkmals-/Schwellensuche als Bestätigung ausgeben.
+2. Die gesammelten Fragen und der SI-Nachtrag wurden im echten Claude-Chat gesendet; die fertige Antwort wurde am 21.11. gelesen und [getrennt protokolliert](ai-research/docs/Claude-Review-20261121.md). Code-/Berichtsreview, keine unabhängige neue ML-Kontorechnung. Interne Codex-Rechercheagenten sind nicht Claude.
+3. Zuerst Kontrollen für ML1 und native Feature-Prefix-Prüfung vorbereiten. Danach eine feste flache Boosting-Gegenprobe und den getrennten MR1-Regressionsversuch, jeweils gleiche Daten-/Kontobasis. TabPFN nur nach konkreter Versions-/Lizenzprüfung. Keine breite Suche als Bestätigung ausgeben. SI-Zusatzinformation und explorative Regimefragen sind als [getrennter Entwurf](ai-research/docs/SI-Naechster-Schritt.md) gespeichert, noch nicht trainiert.
 4. Vor einem Paperprojekt die engere Forschungsfrage und Abgrenzung mit Laskov besprechen. Ein sauberer Nullbefund ist kein Fehler und kein Profitversprechen.
 
 Der Nutzer bestätigt, dass **Settings → Computer use → Control → Any App eingeschaltet** ist. Nach dem weiteren App-Neustart funktionieren die Werkzeuge wieder. NinjaTrader/Windows wurden dafür nicht neu gestartet oder verändert. Ein neuer Chat soll den Werkzeugzugang zunächst prüfen, bevor er auf alte Fehlerzustände reagiert.

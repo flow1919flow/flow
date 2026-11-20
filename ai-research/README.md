@@ -6,7 +6,7 @@ Dieser Forschungsbereich trennt zwei Aufgaben: Ein kleiner Klassifikator bewerte
 
 ## Erstes Modell: kleine feste Lernregel
 
-347 eindeutige Kandidaten liegen in einem Kalender von 242 Sitzungen vom 24.11.2025 bis 30.10.2026; 204 Sitzungen enthalten Kandidaten. Kandidaten und Sitzungen sind abhängig. Das Jahr wurde bereits für die Strategieauswahl verwendet und ist kein frischer OOS-Bestand.
+347 eindeutige ES-Kandidaten aus Funded C28.03 liegen in einem Kalender von 242 Sitzungen vom 24.11.2025 bis 30.10.2026; 204 Sitzungen enthalten Kandidaten. Kandidaten und Sitzungen sind abhängig. Das Jahr wurde bereits für die Strategieauswahl verwendet und ist kein frischer OOS-Bestand.
 
 `StandardScaler → L2-Logit`, festes `C=0.1`, verwendet fünf zum Entscheidungszeitpunkt verfügbare Merkmale. Training beginnt mit 80 Sitzungen, gefolgt von einer Sitzung Abstand und 20 Sitzungen Vorhersage; danach expandiert es. Noch nicht bekannte Trainingsoutcomes werden ausgeschlossen. Neun Blöcke erzeugen **230 zeitlich spätere Vorhersagen und 35 Auslassungen**. Der letzte Block umfasst eine Restsitzung. Die Ablehnungsschwelle ist das ausschließlich im Training bestimmte 20%-Quantil; Gleichstände werden angenommen. Diese Schwelle und C sind vorab gewählte Heuristiken, keine optimierten Einstellungen.
 
@@ -37,9 +37,11 @@ Weitere lineare Klassifikatoren müssen vor Training mit festen Einstellungen re
 
 Die mögliche Agentenstudie verlangt zuerst eine konkrete Abgrenzung zu bestehenden Finanz- und Reproduktionsbenchmarks. Allgemeine Eingabestörungen oder „LLMs machen Fehler“ bilden hier keine eigenständige Paperidee. [Forschungsfragen und Gesprächseinstieg](docs/Laskov-und-Forschungsfragen.md).
 
+Der Nutzer möchte anschließend SI-/Stop-/Iceberg-Ereignisse als mögliche Zusatzinformation untersuchen. Der [getrennte SI-Entwurf](docs/SI-Naechster-Schritt.md) unterscheidet eine explorative Zusammenhangssuche von einem gepaarten Zusatznutzen für bestehende Setups. Ältere SI-Gradient-Boosting-Läufe existieren bereits ohne belegten Vorteil; der neue Entwurf ist noch kein ausgeführter Versuch.
+
 ## Öffentlich teilbarer Bestand
 
-Dieser Bereich enthält selbst erstellten Code, Protokolle, geprüfte Aggregate und Primärquellenlinks. Private Marktdaten und vollständige geschützte Paper bleiben außerhalb des Repositorys. Der Prototyp ist ein Offline-Forschungsbeispiel; Live-Handel und produktive Handelsinstallation wurden nicht verändert. Eine frühere Claude-Rückmeldung existiert, die neuen Fragen wurden nach Wiederherstellung der Steuerung an den echten Claude-Chat gesendet. Seine neue Prüfung läuft; eine abgeschlossene Gegenrechnung wird damit noch nicht behauptet.
+Dieser Bereich enthält selbst erstellten Code, Protokolle, geprüfte Aggregate und Primärquellenlinks. Private Marktdaten und vollständige geschützte Paper bleiben außerhalb des Repositorys. Der Prototyp ist ein Offline-Forschungsbeispiel; Live-Handel und produktive Handelsinstallation wurden nicht verändert. Eine frühere Claude-Rückmeldung existiert, die neue tatsächliche Claude-Antwort wurde nach Wiederherstellung der Steuerung vollständig gelesen. [Prüfumfang, Einwände und eigene Einordnung](docs/Claude-Review-20261121.md). Claude hat Code und Berichte geprüft, die ML-/Kontozahlen nicht neu unabhängig gerechnet.
 
 Die Skripte setzen die dokumentierte lokale Projektstruktur und eine lizenzierte SQX-Installation voraus; ein frischer Git-Clone allein kann die Läufe nicht ausführen. Das [lokale Eingabemanifest](evidence/local-input-inventory.json) enthält relative Pfade, Größen und Hashes, keine Tickinhalte. Das [Ergebnismanifest](evidence/ml1-results.json) bindet Training, native Segmente und Kontovergleich an ihre Quellen. Die tatsächlich ausgeführte Trainingsfassung liegt separat unter [train_ml1-executed.py](evidence/train_ml1-executed.py); `train_ml1.py` ergänzt danach ausschließlich die Ausgabe einer leeren Entscheidungsdatei für ein Segment ohne Kandidaten. Kein Modell wurde dafür neu angepasst.
 

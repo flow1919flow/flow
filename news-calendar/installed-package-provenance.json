@@ -1,0 +1,11 @@
+{
+  "state": "source_files_match_saved_installed_v2_package_manifest",
+  "source_manifest_sha256": "1f8d7476ad2db9823a7fde1b3b85a98b942a500de0eb8483bce663cc948bb8fe",
+  "package_v2_zip_sha256": "4487541ed8ea57e3b2f07f8ec874bbc17ed5de68d9abf508b5e125f5a561c563",
+  "pinned_sources": {
+    "FreeCalendar.cs": "e1afb9625d4e90f4c37276f9127f905f02c1b538cc504f593dc331222e43d125",
+    "HYNewsCalendarV5.cs": "41750fa71753b6ee8bdd70e2d3c22ef2b98d6a42bb3bc0a48f758881c85e32d3"
+  },
+  "new_Windows_installation": false,
+  "limits": "Source hash match to the stored package manifest; not a new running-process or timer/reboot acceptance."
+}

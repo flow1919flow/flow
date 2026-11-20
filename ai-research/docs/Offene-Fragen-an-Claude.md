@@ -1,6 +1,6 @@
 # Offene Fragen · nach Wiederherstellung gesendet
 
-Zielchat: **Backtest von Scotts Setups – Nautilus**. Die vorbereiteten Fragen wurden nach Wiederherstellung der Bedienwerkzeuge am 20.11.2026 tatsächlich gesendet. Ergänzt wurden DeepInfra/modernere Modelle, die inzwischen installierte Kalendererneuerung und die Micro-Nachtests. Dieses Dokument enthält die fachliche Sendefassung, keine eigenständige Claude-Gegenprüfung. Die neue Antwort muss gesondert gelesen und belegt werden. Zugangsdaten, Roh-Ticks und private Bewerbungsunterlagen wurden nicht geteilt.
+Zielchat: **Backtest von Scotts Setups – Nautilus**. Die vorbereiteten Fragen wurden nach Wiederherstellung der Bedienwerkzeuge am 20.11.2026 tatsächlich gesendet. Ergänzt wurden DeepInfra/modernere Modelle, die inzwischen installierte Kalendererneuerung und die Micro-Nachtests. Dieses Dokument enthält die fachliche Sendefassung, keine eigenständige Claude-Gegenprüfung. Die neue Antwort wurde inzwischen vollständig gelesen und [separat mit ihrem Prüfumfang dokumentiert](Claude-Review-20261121.md). Zugangsdaten, Roh-Ticks und private Bewerbungsunterlagen wurden nicht geteilt.
 
 ## 1. Erstes tatsächliches ML-Ergebnis
 

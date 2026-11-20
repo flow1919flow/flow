@@ -1,13 +1,14 @@
 # ES/NQ · aktueller Arbeitsstand und Übergabe
 
-**Neuer Chat: zuerst [AKTUELLER-STAND.md](AKTUELLER-STAND.md) lesen.** Stand vom 20. November 2026; laufende Windows-Simulationen müssen vor jeder aktuellen Aussage neu angesehen werden.
+**Neuer Chat: zuerst [AKTUELLER-STAND.md](AKTUELLER-STAND.md) lesen.** Stand vom 20. November mit Nachtrag vom 21. November 2026; laufende Windows-Simulationen müssen vor jeder aktuellen Aussage neu angesehen werden.
 
 - [Arbeitsweise mit RustDesk, NinjaTrader und Claude](methodik/Arbeitsweise-RustDesk-Claude.md)
 - [Computersteuerung: nach erneutem Neustart wiederhergestellt](methodik/Steuerungsdiagnose-2026-11-20.md)
 - [Aktueller gespeicherter MFF-/TradeDay-Datenstand](leaderboards/2026-11-20/README.md)
 - [News-Kalender: Quellen, automatische Erneuerung und Abnahme](news-calendar/README.md)
 - [ML-Forschung: erster tatsächlicher Versuch ohne Verbesserung](ai-research/README.md)
-- [An Claude gesendete offene Fragen](ai-research/docs/Offene-Fragen-an-Claude.md)
+- [Tatsächliche neue Claude-Prüfung und nächste Modelle](ai-research/docs/Claude-Review-20261121.md)
+- [SI als nächste getrennte Forschungsfrage](ai-research/docs/SI-Naechster-Schritt.md)
 
 Der nachfolgende Versionsstand bleibt als historische Installationsdokumentation erhalten. Der neue Snapshot ersetzt weder eine aktuelle Bildschirmprüfung noch eine neue wirtschaftliche Validierung. Roh-Ticks und Zugangsschlüssel bleiben lokal.
 

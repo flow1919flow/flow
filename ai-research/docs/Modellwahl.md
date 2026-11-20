@@ -41,7 +41,7 @@ Der vollständige native Gate-Lauf und Kontoreplay sind abgeschlossen: Mittleres
 
 ## Registrierter zweiter Versuch: Ridge auf Netto-R
 
-Der getrennte ML2-Plan verwendet dieselben fünf Merkmale, Trainingsfenster und Datenregeln. `R = Nettoergebnis / vorab_geplantes_Dollarrisiko`; Nenner und Kostenkonvention werden vor Training geprüft und eingefroren. Späterer Fill oder tatsächlicher Verlust dürfen den Nenner nicht definieren.
+Der getrennte MR1-Plan verwendet dieselben fünf Merkmale, Trainingsfenster und Datenregeln. `R = Nettoergebnis / vorab_geplantes_Dollarrisiko`; Nenner und Kostenkonvention werden vor Training geprüft und eingefroren. Späterer Fill oder tatsächlicher Verlust dürfen den Nenner nicht definieren.
 
 Fest vorgesehen ist `StandardScaler → Ridge(alpha=10.0, fit_intercept=True, solver="svd", positive=False)`, ohne Zieltransformation, Gewichtung, Interaktionen oder Suche. Alpha 10 ist eine unbewiesene feste Wahl, keine mathematische Entsprechung zu Logit-C=0,1. Der Gate-Score lautet geplantes Dollarrisiko × vorhergesagtes R; seine 20%-Trainingsquantilschwelle wird ausschließlich im jeweiligen Training bestimmt, Gleichstände werden angenommen. Ein Gate auf rohem R wäre eine andere Fragestellung.
 
@@ -50,3 +50,5 @@ Fest vorgesehen ist `StandardScaler → Ridge(alpha=10.0, fit_intercept=True, so
 ## Weitere Modelle sind noch keine Ergebnisse
 
 Weitere lineare Klassifikatoren erhalten vor einem Vergleich exakte Lernregel, Scoredefinition, Schwelle und Reihenfolge; dieser Registereintrag ist noch offen. SVM, kNN, Bäume, Netze oder Reinforcement Learning wurden hier nicht trainiert. Die Untersuchung eines Forschungsagenten ist nochmals ein eigenes Experiment; ein negativer Logit-Test misst keine Agentenzuverlässigkeit. [Vorarbeiten](Vorarbeiten-und-Abgrenzung.md).
+
+Kennungskorrektur nach dem Review: Ridge heißt im Register MR1; die frühere Textbezeichnung ML2 war widersprüchlich. Kein ausgeführter Versuch wurde umbenannt.

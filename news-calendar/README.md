@@ -11,3 +11,5 @@ FRED liefert Tage, keine genauen Veröffentlichungsuhrzeiten. Für CPI/NFP gilt 
 Prüfumfang: 23 Komponentenassertionen mit echten Fed-Monatsseiten und synthetischem FRED-XML; anschließend echte Windows-FRED-Abnahme, 699 kompilierte Fälle des unveränderten Ninja-Kalenderlesers und 64 byteidentische archivierte SQX-Eingabevergleiche. Kein Nachweis einer vollständig historischen Point-in-time-Newsdatenbank und keine neue Strategieergebnisberechnung.
 
 Die Quellen sind für die Prüfung/Übergabe veröffentlicht. Im laufenden Windows-Betrieb nichts neu installieren oder überschreiben, ohne den tatsächlichen Zustand, das konkrete Paket und den Nutzerauftrag abzugleichen. [Betriebs- und Übergabestand](../AKTUELLER-STAND.md).
+
+Nachtrag vom 21.11.: [Tatsächlicher Code-Review und offener Monatswechseltest](../ai-research/docs/Claude-Review-20261121.md). [Paket-Quellhashes](package-hashes.json) stimmen mit diesen C#-Quellen überein; [Herkunftsbeleg](installed-package-provenance.json). Das aktualisiert keine Windows-Installation und bestätigt keine künftigen Timerläufe.

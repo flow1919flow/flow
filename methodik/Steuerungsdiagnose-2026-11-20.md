@@ -1,5 +1,11 @@
 # Computersteuerung nach dem App-Update
 
+## Nachtrag: Zugriff wiederhergestellt
+
+Nach einem weiteren App-Neustart am 20.11.2026 wurden die `cua_repl`-Werkzeuge wieder bereitgestellt und tatsächlich erfolgreich aufgerufen. RustDesk zeigte die vier Windows-NinjaTrader-Charts; anschließend wurde der bestehende echte Claude-Chat geöffnet und die sechs Gruppen offener Fragen abgesendet. Der Nutzer hatte „Any App“ bereits zuvor als eingeschaltet bestätigt. Es wurde keine Sicherheits- oder Plugin-Einstellung geändert. Welcher Teil des Neustarts die Bereitstellung wiederhergestellt hat, ist nicht nachgewiesen.
+
+Der folgende Befund beschreibt den vorherigen Ausfall, nicht mehr den aktuellen Werkzeugzustand. Bei einem neuen Ausfall zuerst die tatsächlich verfügbare Werkzeugliste prüfen.
+
 ## Beobachteter Befund
 
 Die vorher in dieser Sitzung verwendeten `cua_repl`-Werkzeuge wurden nach dem App-Update als nicht mehr verfügbar gemeldet. Deshalb ist weder die Claude-App noch RustDesk/Windows aus diesem Chat bedienbar. Dies ist kein belegter Claude-Loginfehler.

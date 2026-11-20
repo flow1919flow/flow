@@ -29,7 +29,7 @@ Der zuletzt gespeicherte Windows-Workspace heißt **`rapid eod - eval und funded
 | TradeDay Fast Pass 50k | NQ | Eval-Simulation | HY3, EMA20 |
 | TradeDay Fast Pass 50k | NQ | Funded-Simulation | HY3, SMA5/10-Fassung |
 
-**Letzte tatsächliche Sichtprüfung: 20.11.2026, 21:48:09 Europe/Vaduz:** alle vier Enabled, Sync True und flat. Seit Verlust der Computerwerkzeuge gab es keine neue Bildschirmprüfung. Ein neuer Chat darf daraus keinen aktuellen Betriebszustand behaupten.
+**Letzte vollständige Control-Center-Sichtprüfung: 20.11.2026, 21:48:09 Europe/Vaduz:** alle vier Enabled, Sync True und flat. Nach Wiederherstellung der Computersteuerung wurden um 23:46 Europe/Vaduz die vier Charts erneut tatsächlich gesehen; alle vier Karten standen außerhalb der regulären Sitzung. Das ersetzt keine erneute Prüfung der Enabled-/Sync-/Positionsspalten im Control Center. Ein neuer Chat muss den tatsächlichen aktuellen Zustand neu prüfen.
 
 Der Forschungs-/Kontoreplay für die führende ES-Mischung verwendet EMA22 in der Eval. Das ist von der dokumentierten EMA20-Sim-Instanz zu unterscheiden. Nicht eigenmächtig eine Variante im Betrieb ersetzen. Zunächst Quellen, Instanzparameter und Nutzerauftrag abgleichen.
 
@@ -84,12 +84,12 @@ Die breite Idee „ein KI-Agent setzt Paper korrekt um und erkennt eigene Fehler
 
 ## Offene Aufgaben in Reihenfolge
 
-1. Computersteuerung wieder verfügbar machen und erst dann Windows/Claude tatsächlich ansehen. Bis dahin keinen aktuellen Sim-Zustand behaupten.
-2. Gesammelte Fragen an den echten Claude-Chat senden und seine tatsächliche Antwort lesen. Interne Codex-Rechercheagenten sind nicht Claude.
+1. Computersteuerung wurde nach erneutem App-Neustart tatsächlich wiederhergestellt; RustDesk und der echte Claude-Chat sind wieder erreichbar. Keine Einstellungsänderung oder bestimmte Fehlerursache nachgewiesen.
+2. Gesammelte Fragen wurden im echten Claude-Chat gesendet: Modellwahl/DeepInfra, ML-Methoden, Kalendercode, Micro-Fairness und Research-Agent-Vorarbeiten. Seine neue Antwort wird getrennt vom alten Review protokolliert. Interne Codex-Rechercheagenten sind nicht Claude.
 3. Modellfamilien nach dem Register einzeln vergleichen, mit identischer Daten- und Kontobasis; keine breite nachträgliche Merkmals-/Schwellensuche als Bestätigung ausgeben.
 4. Vor einem Paperprojekt die engere Forschungsfrage und Abgrenzung mit Laskov besprechen. Ein sauberer Nullbefund ist kein Fehler und kein Profitversprechen.
 
-Der Nutzer bestätigt inzwischen, dass **Settings → Computer use → Control → Any App eingeschaltet** ist. Die Werkzeuge fehlen trotzdem in diesem Chat. Kein weiterer Neustart von NinjaTrader oder Windows ist daraus abzuleiten. Ein neuer Chat soll zunächst nur prüfen, ob ihm Computerwerkzeuge bereitgestellt werden.
+Der Nutzer bestätigt, dass **Settings → Computer use → Control → Any App eingeschaltet** ist. Nach dem weiteren App-Neustart funktionieren die Werkzeuge wieder. NinjaTrader/Windows wurden dafür nicht neu gestartet oder verändert. Ein neuer Chat soll den Werkzeugzugang zunächst prüfen, bevor er auf alte Fehlerzustände reagiert.
 
 ## Lokale Artefakte wiederfinden
 
@@ -112,4 +112,4 @@ Die älteren öffentlichen Leaderboard-Dateien sind als Snapshots vom 17. Novemb
 
 ## Starttext für einen neuen Chat
 
-> Arbeite im vorhandenen lokalen Projekt weiter. Lies im GitHub-Repo `flow1919flow/flow` zuerst `AKTUELLER-STAND.md`, die Arbeitsweise und den Steuerungsbefund. Lies lokal `outputs/AI-Forschung-20261120/RESUME.txt` und prüfe neuere Artefakte. Stelle zuerst den vorgesehenen Computerzugriff wieder her und prüfe RustDesk/NinjaTrader nur lesend. Keine Testorders, keine Konto-Resets, keine Handelslogikänderung. Sende dann die gesammelten Fragen an den bestehenden echten Claude-Chat. ML1 ist ein abgeschlossener negativer Entwicklungsbefund; weitere Klassifikatoren und Ridge stehen im Register, sind nicht bereits getestet. Prüfe den aktuellen Stand, bevor du frühere Angaben übernimmst.
+> Arbeite im vorhandenen lokalen Projekt weiter. Lies im GitHub-Repo `flow1919flow/flow` zuerst `AKTUELLER-STAND.md`, die Arbeitsweise und den Steuerungsbefund. Lies lokal `outputs/AI-Forschung-20261120/RESUME.txt` und prüfe neuere Artefakte. Computerzugriff funktionierte nach dem letzten Neustart wieder; prüfe ihn und RustDesk/NinjaTrader zunächst nur lesend. Keine Testorders, keine Konto-Resets, keine Handelslogikänderung. Die gesammelten Fragen wurden an den bestehenden echten Claude-Chat gesendet; lies dessen neue Antwort, bevor du erneut sendest. ML1 ist ein abgeschlossener negativer Entwicklungsbefund; weitere Klassifikatoren und Ridge stehen im Register, sind nicht bereits getestet. Prüfe den aktuellen Stand, bevor du frühere Angaben übernimmst.

@@ -27,7 +27,7 @@ Dateitransfer verwendet die separate RustDesk-Ansicht. Ein erforderliches Passwo
 3. Bei Blindprüfung erwartete Ergebnisse zurückhalten; anschließend tatsächlich gelieferte Ergebnisse vergleichen. Eine Meinung zu berichteten Zahlen ist keine unabhängige Nachrechnung der vollständigen Matrix.
 4. Antwort vollständig lesen, Änderungen/Einwände dokumentieren und Grenzen der Prüfung nennen. Keine neue Zustimmung aus einer älteren Antwort ableiten.
 
-Die Fragen zu Modellwahl, zur vertieften Research-Agent-Literatur und zum aktuellen Vorgehen wurden nach dem Update noch nicht neu gesendet. Die ältere tatsächliche L2-Logit-Empfehlung liegt lokal in `outputs/Micro-RiskSize-20261120/Claude-Abschluss-Einordnung.txt`.
+Die Fragen zu Modellwahl/DeepInfra, ML-Methodik, Kalendercode, Micro-Fairness und Research-Agent-Vorarbeiten wurden nach Wiederherstellung der Werkzeuge am 20.11.2026 im bestehenden echten Claude-Chat gesendet. Die Antwort wird als neue Prüfung getrennt vom älteren Review geführt. Die ältere tatsächliche L2-Logit-Empfehlung liegt lokal in `outputs/Micro-RiskSize-20261120/Claude-Abschluss-Einordnung.txt`.
 
 ## Betriebsregeln
 

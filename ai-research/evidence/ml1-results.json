@@ -235,5 +235,6 @@
     "1000 random-omission controls",
     "1000 full-pipeline block permutations",
     "independent new Claude review"
-  ]
+  ],
+  "new_Claude_review_status": "questions_sent_actual_existing_chat_review_in_progress"
 }

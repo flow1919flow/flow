@@ -1,6 +1,6 @@
-# Vorbereitete Fragen · noch nicht neu gesendet
+# Offene Fragen · nach Wiederherstellung gesendet
 
-Zielchat: **Backtest von Scotts Setups – Nautilus**. Seit Verlust der Bedienwerkzeuge nach dem App-Update gab es keine neue Übergabe oder Antwort. Dieses Dokument ist eine Sendefassung, keine Claude-Gegenprüfung. Zugangsdaten, Roh-Ticks und private Bewerbungsunterlagen nicht mitsenden.
+Zielchat: **Backtest von Scotts Setups – Nautilus**. Die vorbereiteten Fragen wurden nach Wiederherstellung der Bedienwerkzeuge am 20.11.2026 tatsächlich gesendet. Ergänzt wurden DeepInfra/modernere Modelle, die inzwischen installierte Kalendererneuerung und die Micro-Nachtests. Dieses Dokument enthält die fachliche Sendefassung, keine eigenständige Claude-Gegenprüfung. Die neue Antwort muss gesondert gelesen und belegt werden. Zugangsdaten, Roh-Ticks und private Bewerbungsunterlagen wurden nicht geteilt.
 
 ## 1. Erstes tatsächliches ML-Ergebnis
 

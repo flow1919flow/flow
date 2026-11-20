@@ -5,15 +5,16 @@
   "native_sqx_gate": "6/6 passed",
   "training_test_blocks": 9,
   "cash_replay": "complete_baseline_reproduced",
-  "computer_control": "unavailable_after_app_update_despite_enabled_config_and_available_local_service",
-  "Claude_new_questions": "prepared_not_sent",
+  "computer_control": "restored_and_verified_after_further_app_restart",
+  "Claude_new_questions": "sent_actual_existing_chat_review_in_progress",
   "Windows_last_visual_check_local": "2026-11-20 21:48:09 Europe/Vaduz",
-  "Windows_current_state": "not_observed_since_control_loss",
+  "Windows_current_state": "four_charts_seen_outside_regular_session_Control_Center_flags_not_rechecked",
   "GitHub_publish": "included_in_this_snapshot",
   "next": [
     "restore computer-tool exposure",
     "read prior-art before asserting research novelty",
     "compare next preregistered linear classifiers separately"
   ],
-  "Any_App_user_confirmed_enabled": true
+  "Any_App_user_confirmed_enabled": true,
+  "Windows_chart_check_local": "2026-11-20 23:46 Europe/Vaduz"
 }

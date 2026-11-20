@@ -1,0 +1,12 @@
+{
+  "state": "scheduled_path_refreshed_successfully",
+  "first_verified_at_utc": "2026-11-20 20:37:48+00:00",
+  "task_run_verified_at_utc": "2026-11-20 20:42:44+00:00",
+  "expires_at_utc": "2026-11-21 20:42:44+00:00",
+  "manifest_sha256": "df75bc2c59b3845d16f1124c58339849ef011970b4602baa3a48f03e7092840c",
+  "csv_unchanged_from_first_refresh": true,
+  "schema_validation": true,
+  "covered_through": "2026-12-31",
+  "key_copied": false,
+  "orders_sent": false
+}

@@ -1,0 +1,48 @@
+{
+  "selection_policy": "Same causal feature definitions, calendar splits, costs, no fresh OOS. Each new policy needs its own native SQX gate and cash replay; no winner chosen on training accuracy.",
+  "models": [
+    {
+      "id": "ML1",
+      "name": "L2 LogisticRegression",
+      "status": "trained_native_gate_cash_replayed_worse",
+      "C": 0.1
+    },
+    {
+      "id": "ML2",
+      "name": "L1 LogisticRegression",
+      "status": "queued_not_trained"
+    },
+    {
+      "id": "ML3",
+      "name": "Elastic-Net LogisticRegression",
+      "status": "queued_not_trained"
+    },
+    {
+      "id": "ML4",
+      "name": "RidgeClassifier",
+      "status": "queued_not_trained_scores_not_probabilities"
+    },
+    {
+      "id": "ML5",
+      "name": "LinearSVC",
+      "status": "queued_not_trained_scores_not_probabilities"
+    },
+    {
+      "id": "ML6",
+      "name": "SGDClassifier",
+      "status": "queued_not_trained"
+    },
+    {
+      "id": "ML7",
+      "name": "Perceptron",
+      "status": "queued_not_trained_scores_not_probabilities"
+    },
+    {
+      "id": "MR1",
+      "name": "Ridge expected net R regression",
+      "status": "separate_followup_not_trained",
+      "alpha": 10,
+      "solver": "svd"
+    }
+  ]
+}

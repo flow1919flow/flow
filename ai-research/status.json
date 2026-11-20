@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-20",
+  "ml1": "complete_development_result_worse_than_reference",
+  "native_sqx_observer": "6/6 passed",
+  "native_sqx_gate": "6/6 passed",
+  "training_test_blocks": 9,
+  "cash_replay": "complete_baseline_reproduced",
+  "computer_control": "unavailable_after_app_update_despite_enabled_config_and_available_local_service",
+  "Claude_new_questions": "prepared_not_sent",
+  "Windows_last_visual_check_local": "2026-11-20 21:48:09 Europe/Vaduz",
+  "Windows_current_state": "not_observed_since_control_loss",
+  "GitHub_publish": "included_in_this_snapshot",
+  "next": [
+    "restore computer-tool exposure",
+    "read prior-art before asserting research novelty",
+    "compare next preregistered linear classifiers separately"
+  ],
+  "Any_App_user_confirmed_enabled": true
+}

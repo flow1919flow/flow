@@ -1,0 +1,468 @@
+{
+  "state": "frozen_before_R3_cash",
+  "files": {
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESZ5/tape.csv.gz": {
+      "sha256": "4ef8b9c6638f5ac7bc1a4a60f8e2826032a05e44ffef3a98156df38207fb2610",
+      "bytes": 129410792,
+      "modified_ns": 1795134012430535513
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESZ5/book-sizes.csv.gz": {
+      "sha256": "75c1a544efb3e1859b50c7ac303100e255393963b5e1e9dc8c44dee2df0e1bd5",
+      "bytes": 14818920,
+      "modified_ns": 1795134012446303088
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESZ5/session-states.csv": {
+      "sha256": "677bf4e491998dbd7c6e49d164639302ad0fe5207142346e6c065ba30e8e424d",
+      "bytes": 1396,
+      "modified_ns": 1795134012430309384
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESZ5/staged.json": {
+      "sha256": "890c1c7fc2776f5df8bc13a0f6bc6db6a66ff3e5029d5e517a0b058d2c901332",
+      "bytes": 12302,
+      "modified_ns": 1795134012443143148
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESZ5/native_job.cfx": {
+      "sha256": "ab039a38b070db8dcfb5010c451ed3c278884a5b834ec1490205d61e5b67dabc",
+      "bytes": 4011,
+      "modified_ns": 1795134012442556386
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESZ5/HY104/manifest.txt": {
+      "sha256": "57eee0e02d16ae138b041673628ff25db3c31e800be028dae1d365a6d0e6a4f5",
+      "bytes": 273,
+      "modified_ns": 1795134012442873434
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESU6/tape.csv.gz": {
+      "sha256": "aa53feffeed4e09ff6a84f6a9dc87f7643f40cdef3eeb3af4043e914eb936382",
+      "bytes": 348689696,
+      "modified_ns": 1795134115670398460
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESU6/book-sizes.csv.gz": {
+      "sha256": "aa0c29c9e5189d26db3a290b45b5d703c49fa812b30280e9901db46cf77bf8ac",
+      "bytes": 38824062,
+      "modified_ns": 1795134115684071700
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESU6/session-states.csv": {
+      "sha256": "6c40227e3aa1d310329d830eba44510f41dff4da65f09c0c0511921e389cc06d",
+      "bytes": 4630,
+      "modified_ns": 1795134115670052411
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESU6/staged.json": {
+      "sha256": "92947ad2f38c26eccc42e0754b2c8238ca3ca3410a2d53982ec4ef9642d8e1b4",
+      "bytes": 40667,
+      "modified_ns": 1795134115679690568
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESU6/native_job.cfx": {
+      "sha256": "e8440527175ed41a8820071d80d760fccd4d778af618f2fe430499baab72202a",
+      "bytes": 4010,
+      "modified_ns": 1795134115678375499
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESU6/HY104/manifest.txt": {
+      "sha256": "e2be0827aefd8ae854818a15dd8cfe8ff367e46cdc16a66808f36ce7f3460555",
+      "bytes": 273,
+      "modified_ns": 1795134115678687589
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESM6/tape.csv.gz": {
+      "sha256": "b8a2fdb086dac80a67b5f98b9409cc40fdeddc47f3b14a6847836d49b5abed4f",
+      "bytes": 430151886,
+      "modified_ns": 1795134062478779449
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESM6/book-sizes.csv.gz": {
+      "sha256": "5089bd54bc38d2c01c3eef6714cea2a708be2423a89de07780b7d6efe07dbc9a",
+      "bytes": 47410867,
+      "modified_ns": 1795134062486305104
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESM6/session-states.csv": {
+      "sha256": "e4c8bb712ac01f064d4c3207da89636c587ff089cc9d434503ecacf278441984",
+      "bytes": 4564,
+      "modified_ns": 1795134062478557277
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESM6/staged.json": {
+      "sha256": "65d690b028447aa1a74e534cea9ac82a5ffcbf1c9d4de40b80477bf66046df6f",
+      "bytes": 39725,
+      "modified_ns": 1795134062483511963
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESM6/native_job.cfx": {
+      "sha256": "ea6f05c5c71899580aaf1cd125bb216a03094c1d25b6968287e273c62a2df37a",
+      "bytes": 4010,
+      "modified_ns": 1795134062482675821
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESM6/HY104/manifest.txt": {
+      "sha256": "713d4aeded6be7cd047dec8104681a59f96065a0e58c85e85b670bff87e810e9",
+      "bytes": 273,
+      "modified_ns": 1795134062482959743
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESZ6/tape.csv.gz": {
+      "sha256": "8c976bdf6566bf187187e550e66b420f7845c2cf9315b59c8532fdc461940f08",
+      "bytes": 176245551,
+      "modified_ns": 1795134145458868723
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESZ6/book-sizes.csv.gz": {
+      "sha256": "ae70dd853ed8d70568d44991b0a9a08bd4e511cb71e5dfe500da47dc1fb2b791",
+      "bytes": 20415813,
+      "modified_ns": 1795134145471601110
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESZ6/session-states.csv": {
+      "sha256": "913dddc977d9151f08ccb8c99f97e1b8677eea7e4ca513e04514371b1e32a217",
+      "bytes": 2584,
+      "modified_ns": 1795134145457775575
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESZ6/staged.json": {
+      "sha256": "69bedbc13ace5976e20a486fb693d99492a5cdc26c92424145972543e3f0cdd2",
+      "bytes": 22809,
+      "modified_ns": 1795134145467719655
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESZ6/native_job.cfx": {
+      "sha256": "e8c49367735a16b21f0b4092d305761dc2ea9affd886144c4bd93b185356d0d2",
+      "bytes": 4012,
+      "modified_ns": 1795134145466602132
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESZ6/HY104/manifest.txt": {
+      "sha256": "393da8e8f8d1234ae07f2b374aa23302e5951df2711210e676b04a50d3f048d6",
+      "bytes": 273,
+      "modified_ns": 1795134145466902805
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESH6/tape.csv.gz": {
+      "sha256": "8de4ef572a389918cf7ba74029ee7f02e3042f5a7f1069f85b7e83d525323ec6",
+      "bytes": 402588631,
+      "modified_ns": 1795134032020359170
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESH6/book-sizes.csv.gz": {
+      "sha256": "e71b60582071dc104879e6cee6e47e38a01a142ebee22f3d41c70c2283730d5f",
+      "bytes": 45265831,
+      "modified_ns": 1795134032028625298
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESH6/session-states.csv": {
+      "sha256": "3b425f3151dcb7f8425dce9f7ca86c00be964fda9468fc8e5f2e5bb66543a5dd",
+      "bytes": 4498,
+      "modified_ns": 1795134032019754949
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESH6/staged.json": {
+      "sha256": "5ea3f5d548321a29036c4f3e1078f14800aa09be2675c25e286255be5aa68460",
+      "bytes": 39045,
+      "modified_ns": 1795134032024756010
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESH6/native_job.cfx": {
+      "sha256": "05496b0f0517c57f1ef06ea1b0ef8acd88cdd514ce45b1fa02a28b6198a86169",
+      "bytes": 4012,
+      "modified_ns": 1795134032023689405
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MES/Basisdaten/MESH6/HY104/manifest.txt": {
+      "sha256": "b88c8e7e429de07c6e51640341ab4bab4403c75a69dab4b5a35456676155ca97",
+      "bytes": 273,
+      "modified_ns": 1795134032023978744
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQH6/tape.csv.gz": {
+      "sha256": "1b34cd34d2508a70b5cacbcc4b350eac1fe615c5f922faeee57a15a92315c19c",
+      "bytes": 968509915,
+      "modified_ns": 1795132613039811028
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQH6/book-sizes.csv.gz": {
+      "sha256": "d45b8f5dfbaeb51e358210d7a2348137edda041ca1f457bc07fb7c8e399e7255",
+      "bytes": 57841474,
+      "modified_ns": 1795132613048478006
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQH6/session-states.csv": {
+      "sha256": "3b425f3151dcb7f8425dce9f7ca86c00be964fda9468fc8e5f2e5bb66543a5dd",
+      "bytes": 4498,
+      "modified_ns": 1795132613037488375
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQH6/staged.json": {
+      "sha256": "9d983ebf1493cfa6029fc44258a9fe06930e2978b57b94b98d9c87e47608187f",
+      "bytes": 34835,
+      "modified_ns": 1795135694052886337
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQH6/native_job.cfx": {
+      "sha256": "4fb795e69a660830e4ac604bf1ad72f9a68164bbb9ca0a90d407258a4212313b",
+      "bytes": 4019,
+      "modified_ns": 1795132613049551310
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQH6/HY104/manifest.txt": {
+      "sha256": "f90c6a967fec4629bd7bb6e3b72e6fca7c5abb53c5ee4186a6c9f21261d92925",
+      "bytes": 301,
+      "modified_ns": 1795132613044056328
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQZ6/tape.csv.gz": {
+      "sha256": "a1cbe782e94780a66d354ba6e26cfe41e91766b303bc99b820dade52332960ac",
+      "bytes": 665017909,
+      "modified_ns": 1795132824665935513
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQZ6/book-sizes.csv.gz": {
+      "sha256": "68ed5e6e80f656fb123f441cee26cc13bd242c6f2e0d6f7f379466248d3a5387",
+      "bytes": 41683890,
+      "modified_ns": 1795132824680659688
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQZ6/session-states.csv": {
+      "sha256": "992fcb144a80fb6c9558489fc4b9cccd203ef1e96936860edcd5582a5fe0e64f",
+      "bytes": 2518,
+      "modified_ns": 1795132824663991532
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQZ6/staged.json": {
+      "sha256": "8798f717b41ba34dc2d9752db255c9e1900a89e5f1013590db5ff6f1675beca5",
+      "bytes": 22275,
+      "modified_ns": 1795135694060110011
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQZ6/native_job.cfx": {
+      "sha256": "81af3c299648d8790d865505cc2a43793afc6ccb142f755266ccd3685f4f1a13",
+      "bytes": 4019,
+      "modified_ns": 1795132824681661366
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQZ6/HY104/manifest.txt": {
+      "sha256": "713a3cbf9e8069241da0e9466e2e3a85ba0dba43b2df30c21fc23538dc55576c",
+      "bytes": 301,
+      "modified_ns": 1795132824671360786
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQM6/tape.csv.gz": {
+      "sha256": "f3a6e0888d0c62c5a64ec4c54119adf9b136791beab55ab6c884ad03360eaadc",
+      "bytes": 1096876743,
+      "modified_ns": 1795132681924936816
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQM6/book-sizes.csv.gz": {
+      "sha256": "8bca4cf6f7ccdafdf2a02bb34cb6d5ea2c199c19f27850c6e7dcacef69c385fc",
+      "bytes": 63136862,
+      "modified_ns": 1795132681935537192
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQM6/session-states.csv": {
+      "sha256": "e4c8bb712ac01f064d4c3207da89636c587ff089cc9d434503ecacf278441984",
+      "bytes": 4564,
+      "modified_ns": 1795132681923790219
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQM6/staged.json": {
+      "sha256": "e1ab035a05c834a875e61090486f328b1ead5040713ad7df7a2198903a9e1520",
+      "bytes": 38184,
+      "modified_ns": 1795135694054953542
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQM6/native_job.cfx": {
+      "sha256": "1c1c19a1dfb5e306ec0b62653b76439dda4fc24f6726f50d0e4f9f082bcc655e",
+      "bytes": 4017,
+      "modified_ns": 1795132681936506745
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQM6/HY104/manifest.txt": {
+      "sha256": "6be8141445c146238df234a05e289c6954bccbf6db791e6c9d1bf9cfe420b1a8",
+      "bytes": 302,
+      "modified_ns": 1795132681930769677
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQU6/tape.csv.gz": {
+      "sha256": "d97bf0c7471e5c959992d6f7340ce1e9854ef0d32c601f85df66d33476bc72cd",
+      "bytes": 1335663732,
+      "modified_ns": 1795132775316784177
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQU6/book-sizes.csv.gz": {
+      "sha256": "c04fd932aa45f0169f49c0269f7f33c17ae554983adef424edbf33a625b4ba2e",
+      "bytes": 76271923,
+      "modified_ns": 1795132775327740890
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQU6/session-states.csv": {
+      "sha256": "b4458ba63c2620d66d90ce7651992e9f2fd0e0b3069f44ba4009b96a6e6007d6",
+      "bytes": 4696,
+      "modified_ns": 1795132775315474244
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQU6/staged.json": {
+      "sha256": "13642009f2c224d7cdb067f79e5c3da87c98f172825f16539ecea8b8c23ab671",
+      "bytes": 41313,
+      "modified_ns": 1795135694057960472
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQU6/native_job.cfx": {
+      "sha256": "4ee6db1cbaf60d30b4da13e0b3a9457c5a0e8f9db04734bfc86c5b16d5d48146",
+      "bytes": 4018,
+      "modified_ns": 1795132775328992238
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQU6/HY104/manifest.txt": {
+      "sha256": "05dd82b1659ff5ce231ca2770b9e144156c6a17d11977fa2739be578a1c5e1fc",
+      "bytes": 302,
+      "modified_ns": 1795132775324555311
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQZ5/tape.csv.gz": {
+      "sha256": "1462c00a9395f9876fc96c59a51980093180b0731db74a095c704b9f18d3999e",
+      "bytes": 329991094,
+      "modified_ns": 1795132565982198620
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQZ5/book-sizes.csv.gz": {
+      "sha256": "0fe28550c935c207e220d2c3ff1d87715403c61c46285cb8e6eb09e8a7d500bf",
+      "bytes": 18999832,
+      "modified_ns": 1795132566013428532
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQZ5/session-states.csv": {
+      "sha256": "677bf4e491998dbd7c6e49d164639302ad0fe5207142346e6c065ba30e8e424d",
+      "bytes": 1396,
+      "modified_ns": 1795132565982085035
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQZ5/staged.json": {
+      "sha256": "9ce95f9d73b8b405af43d3e9554c999450e55bbc17bc2b71e2d4066fc51afee8",
+      "bytes": 10768,
+      "modified_ns": 1795135694050227038
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQZ5/native_job.cfx": {
+      "sha256": "9244a8922c347adc91e080509f7ccb9dc8d57a2c23e27bef0908559d835472bc",
+      "bytes": 4018,
+      "modified_ns": 1795132566014301209
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/MNQ/Basisdaten/MNQZ5/HY104/manifest.txt": {
+      "sha256": "393daca1e09d42f8760eb3f77e421751243d5dc8b7dadfe512317ccb9aec8faf",
+      "bytes": 301,
+      "modified_ns": 1795132566009812156
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/september-2026-ESZ6/tape.csv.gz": {
+      "sha256": "c572c43ef3e32c8e85fca61c6ac4f1ccef7d1c106ecbd1e61be3ebc1da87585b",
+      "bytes": 11556992,
+      "modified_ns": 1794620237982676615
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/september-2026-ESZ6/session-states.csv": {
+      "sha256": "aef905fd60882225812a61dd623270a58a633d782729326de92b36951db5e297",
+      "bytes": 502,
+      "modified_ns": 1794620237982300485
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/september-2026-ESZ6/staged.json": {
+      "sha256": "49f2be0f2d743166fa59ee2a220c37503d0988bcd20e5c5c8c937e168b12f564",
+      "bytes": 1617,
+      "modified_ns": 1795135694026111304
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/september-2026-ESZ6/native_job.cfx": {
+      "sha256": "ec7fc5d9e2bb2a04d3b4db9d2d571681ca53ddf4d3a3df48f68fe54fd99d2975",
+      "bytes": 3997,
+      "modified_ns": 1794620238160554205
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/september-2026-ESZ6/HY104/manifest.txt": {
+      "sha256": "1853c5d9ffe684dbfcbc7e4871a1a0529131a48c5762fe0179a7f181544c21a2",
+      "bytes": 288,
+      "modified_ns": 1794620238160821501
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/mai-oktober-2026-ESZ6/tape.csv.gz": {
+      "sha256": "2c0ab6e9f58af51f66481ad8a91360ef880047f643ee19f4b370ced96059d72b",
+      "bytes": 212628419,
+      "modified_ns": 1794618742068077025
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/mai-oktober-2026-ESZ6/session-states.csv": {
+      "sha256": "107f0da128be85e67d7db32a8c02671abf9a44de38638245df13dc1c092e8afb",
+      "bytes": 8068,
+      "modified_ns": 1794618742067750982
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/mai-oktober-2026-ESZ6/staged.json": {
+      "sha256": "cfaad151a9e6a3d3da97f8d6836e679b96a318136519521a4c7e91dfe31b784b",
+      "bytes": 11611,
+      "modified_ns": 1795135694047410111
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/mai-oktober-2026-ESZ6/native_job.cfx": {
+      "sha256": "f9a5b734616b1ce78a0c638710c4bb548e1cbe4927fe1004b653223f3415cc0b",
+      "bytes": 4001,
+      "modified_ns": 1794618742265333548
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/mai-oktober-2026-ESZ6/HY104/manifest.txt": {
+      "sha256": "09b1582d1ade9a8a9096aae63e129a4ec4f40580afd7ce36c8adafe9d4f32eb9",
+      "bytes": 293,
+      "modified_ns": 1794618742265578508
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-ergaenzung-ESZ5/tape.csv.gz": {
+      "sha256": "88b9a7c324b65b47c2480b2bf8144ca0e4d6f8f01b692dd13ac60078fb61b119",
+      "bytes": 202688693,
+      "modified_ns": 1794620014961298531
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-ergaenzung-ESZ5/session-states.csv": {
+      "sha256": "299993c4f159f367bdb8a2fed0f954f3952bb7f3c1b723b80ff69520c78445c2",
+      "bytes": 1594,
+      "modified_ns": 1794620014961057611
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-ergaenzung-ESZ5/staged.json": {
+      "sha256": "d600bd61bafc5bfd6940b83d930c9ec9f3c112ed75423e5bb3a456d590ff8f6e",
+      "bytes": 7704,
+      "modified_ns": 1795135694031043228
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-ergaenzung-ESZ5/native_job.cfx": {
+      "sha256": "ce68249db8f2a96851ef44b427b6b4e2a0fe752735066150a2b97ce4cba9870e",
+      "bytes": 4001,
+      "modified_ns": 1794620014984372972
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-ergaenzung-ESZ5/HY104/manifest.txt": {
+      "sha256": "2f227cd8329854c862e280b9c5fcf1a0b47748a715c37cf14f7074024b220594",
+      "bytes": 291,
+      "modified_ns": 1794620014984620226
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-uebergang-ESM6/tape.csv.gz": {
+      "sha256": "16edb725e7df524cf64d0f9188b3080d4e023dd6630150b5bd61103bec061d10",
+      "bytes": 487699762,
+      "modified_ns": 1794620471144519989
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-uebergang-ESM6/session-states.csv": {
+      "sha256": "e4c8bb712ac01f064d4c3207da89636c587ff089cc9d434503ecacf278441984",
+      "bytes": 4564,
+      "modified_ns": 1794620471144322902
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-uebergang-ESM6/staged.json": {
+      "sha256": "25a93c8cdbe89b017269e6c75b5fdea8802654f526b26cae05dec9e96e65dc92",
+      "bytes": 19987,
+      "modified_ns": 1795135694038774495
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-uebergang-ESM6/native_job.cfx": {
+      "sha256": "4484c07b47816040a657965d0e822d33c9ea231379f5359f513460fd30fd4e43",
+      "bytes": 4001,
+      "modified_ns": 1794620471159701349
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-uebergang-ESM6/HY104/manifest.txt": {
+      "sha256": "f2f0ba52abb55cd75d9c650a816b241621df907d4238dca13747bfb9950f8fb7",
+      "bytes": 289,
+      "modified_ns": 1794620471159980978
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/mai-oktober-2026-ESU6/tape.csv.gz": {
+      "sha256": "8e6f938a87432bfd99d0d74103831d6402a1558165d3a558d9749e93775a3f3f",
+      "bytes": 407792285,
+      "modified_ns": 1794618878752194863
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/mai-oktober-2026-ESU6/session-states.csv": {
+      "sha256": "5dd21f2b2d69b7dc46f6f6050d634368029c5f9c6a077224e406010266547e8e",
+      "bytes": 16418,
+      "modified_ns": 1794618878751943278
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/mai-oktober-2026-ESU6/staged.json": {
+      "sha256": "896c2fd7828f5a91c545f4b6376f4ed3fd032b99d56ed645c4cc4d8ee2d326ad",
+      "bytes": 21941,
+      "modified_ns": 1795135694043387871
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/mai-oktober-2026-ESU6/native_job.cfx": {
+      "sha256": "58e6039efa21bb0c0ecc39a36e17a7495169d21ac50a7fd8feec68842aae5957",
+      "bytes": 3999,
+      "modified_ns": 1794618878929233935
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/mai-oktober-2026-ESU6/HY104/manifest.txt": {
+      "sha256": "a545faa7201c5e965ca05bd137e7f94224b9c94a02341abdd3b394c39f7cf5bc",
+      "bytes": 293,
+      "modified_ns": 1794618878929443936
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-ergaenzung-ESH6/tape.csv.gz": {
+      "sha256": "65e3c25fc1e2d01ce1d49a0c91279440b23491341427a5514f8bbef6aa71283d",
+      "bytes": 471147632,
+      "modified_ns": 1794620219628768230
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-ergaenzung-ESH6/session-states.csv": {
+      "sha256": "3b425f3151dcb7f8425dce9f7ca86c00be964fda9468fc8e5f2e5bb66543a5dd",
+      "bytes": 4498,
+      "modified_ns": 1794620219628625269
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-ergaenzung-ESH6/staged.json": {
+      "sha256": "5bb359d17cac11f08637c4fd6ead4f96b0036aeb0f51519554205172610ceb9c",
+      "bytes": 19722,
+      "modified_ns": 1795135694034765588
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-ergaenzung-ESH6/native_job.cfx": {
+      "sha256": "d5dfc75c1d8ef106f8a85afeeecbac811ca1e8a85bde190ff042365af3aa6be2",
+      "bytes": 4001,
+      "modified_ns": 1794620219645593574
+    },
+    "outputs/Micro-RiskSize-20261120/Inputs/ES/Basisdaten/jahr-ergaenzung-ESH6/HY104/manifest.txt": {
+      "sha256": "4b0404f8d0c3d057e3dda6eb6b374df4b9ccba977aafe7921e667c33747d6e1e",
+      "bytes": 291,
+      "modified_ns": 1794620219645870828
+    },
+    "outputs/NQ-Woche-20261118/full-board-history-20261119/MFF/history1/es-quote-paths.json": {
+      "sha256": "4b7f63dbe494323dd50b352ca54e9767c5fba092d3d79c88ac6ede23bf63d103",
+      "bytes": 88029513,
+      "modified_ns": 1795057941118710457
+    },
+    "outputs/NQ-Woche-20261118/full-board-history-20261119/NQ/Replay/history1/quote-paths.json": {
+      "sha256": "fc53a8d59e3272ba003a0d71d19bf390ce13f6c44658cf922e19136d8ffacc9c",
+      "bytes": 48201107,
+      "modified_ns": 1795057880621129412
+    }
+  },
+  "raw_market_data_uploaded": false,
+  "source_manifest_sha256": "ca442344b2c4bad0490060c293b62b2715d358b6e2efebfcd4cb04a5f754a87e",
+  "note": "Inventory/provenance only; input content remains local under licensed access. Paths are project-relative."
+}

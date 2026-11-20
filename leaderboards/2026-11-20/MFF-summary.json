@@ -1,0 +1,2788 @@
+{
+  "period": [
+    "2025-11-24",
+    "2026-10-30"
+  ],
+  "sessions": 242,
+  "starts": 143,
+  "horizon": 100,
+  "count": 474,
+  "plans": {
+    "rapid_eod_50k": {
+      "combos": [
+        {
+          "key": "HYcomb-28-HY104-03",
+          "evaluation": "HY104",
+          "funded": "HYcomb-28-HY104-03",
+          "normal": {
+            "cash": 8093.92,
+            "median": 9810.1,
+            "paid": 144,
+            "days": 67.0
+          },
+          "stress": {
+            "cash": 6058.78,
+            "median": 6861.13,
+            "paid": 131,
+            "days": 84
+          },
+          "name": "Eröffnungsspanne als Zusatzziel",
+          "settings": "60 min",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-28-OPENINGRANGE/Optimizer/87b10cdb-a0e9abcc-27ca63e6-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 27205.54,
+          "without_top3": 20622.76,
+          "without_top10": 10112.94
+        },
+        {
+          "key": "HYcomb-28-HY85-03",
+          "evaluation": "HY85",
+          "funded": "HYcomb-28-HY85-03",
+          "normal": {
+            "cash": 7884.36,
+            "median": 9765.1,
+            "paid": 144,
+            "days": 68.5
+          },
+          "stress": {
+            "cash": 5873.62,
+            "median": 6726.13,
+            "paid": 127,
+            "days": 86
+          },
+          "name": "Eröffnungsspanne als Zusatzziel",
+          "settings": "60 min",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-28-OPENINGRANGE/Optimizer/87b10cdb-a0e9abcc-27ca63e6-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 26880.54,
+          "without_top3": 20297.76,
+          "without_top10": 9775.44
+        },
+        {
+          "key": "HYcomb-61-HY104-03",
+          "evaluation": "HY104",
+          "funded": "HYcomb-61-HY104-03",
+          "normal": {
+            "cash": 6688.8,
+            "median": 7976.36,
+            "paid": 131,
+            "days": 73
+          },
+          "stress": {
+            "cash": 4809.02,
+            "median": 6320.2,
+            "paid": 121,
+            "days": 88
+          },
+          "name": "True Range",
+          "settings": "Fall 03 · 2,5",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-61-TRUERANGE/Optimizer/aa245961-2d427d49-43049dfa-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 30218.04,
+          "without_top3": 23285.26,
+          "without_top10": 12100.44
+        },
+        {
+          "key": "HYcomb-61-HY104-02",
+          "evaluation": "HY104",
+          "funded": "HYcomb-61-HY104-02",
+          "normal": {
+            "cash": 6514.91,
+            "median": 7143.87,
+            "paid": 131,
+            "days": 72
+          },
+          "stress": {
+            "cash": 4646.7,
+            "median": 5761.49,
+            "paid": 131,
+            "days": 87
+          },
+          "name": "True Range",
+          "settings": "Fall 02 · 2,0",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-61-TRUERANGE/Optimizer/aa245961-2d427d49-43049dfa-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 27187.3,
+          "without_top3": 20254.52,
+          "without_top10": 9244.7
+        },
+        {
+          "key": "HYcomb-61-HY85-03",
+          "evaluation": "HY85",
+          "funded": "HYcomb-61-HY85-03",
+          "normal": {
+            "cash": 6529.99,
+            "median": 7931.36,
+            "paid": 131,
+            "days": 73
+          },
+          "stress": {
+            "cash": 4624.07,
+            "median": 6173.95,
+            "paid": 119,
+            "days": 91
+          },
+          "name": "True Range",
+          "settings": "Fall 03 · 2,5",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-61-TRUERANGE/Optimizer/aa245961-2d427d49-43049dfa-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 29880.54,
+          "without_top3": 22947.76,
+          "without_top10": 11750.44
+        }
+      ],
+      "same_strategy": [
+        {
+          "key": "HYcomb-28-HY104-03",
+          "evaluation": "HYcomb-28-HY104-03",
+          "funded": "HYcomb-28-HY104-03",
+          "normal": {
+            "cash": 7262.53,
+            "median": 8383.77,
+            "paid": 144,
+            "days": 65.5
+          },
+          "stress": {
+            "cash": 5572.12,
+            "median": 5888.11,
+            "paid": 127,
+            "days": 85
+          },
+          "name": "Eröffnungsspanne als Zusatzziel",
+          "settings": "60 min",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-28-OPENINGRANGE/Optimizer/87b10cdb-a0e9abcc-27ca63e6-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 27205.54,
+          "without_top3": 20622.76,
+          "without_top10": 10112.94
+        },
+        {
+          "key": "HYcomb-28-HY85-03",
+          "evaluation": "HYcomb-28-HY85-03",
+          "funded": "HYcomb-28-HY85-03",
+          "normal": {
+            "cash": 7152.18,
+            "median": 8193.33,
+            "paid": 144,
+            "days": 65.5
+          },
+          "stress": {
+            "cash": 5220.05,
+            "median": 5643.38,
+            "paid": 126,
+            "days": 85.5
+          },
+          "name": "Eröffnungsspanne als Zusatzziel",
+          "settings": "60 min",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-28-OPENINGRANGE/Optimizer/87b10cdb-a0e9abcc-27ca63e6-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 26880.54,
+          "without_top3": 20297.76,
+          "without_top10": 9775.44
+        },
+        {
+          "key": "HYcomb-61-HY104-03",
+          "evaluation": "HYcomb-61-HY104-03",
+          "funded": "HYcomb-61-HY104-03",
+          "normal": {
+            "cash": 6533.61,
+            "median": 7739.19,
+            "paid": 131,
+            "days": 74
+          },
+          "stress": {
+            "cash": 4568.08,
+            "median": 5859.52,
+            "paid": 121,
+            "days": 92
+          },
+          "name": "True Range",
+          "settings": "Fall 03 · 2,5",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-61-TRUERANGE/Optimizer/aa245961-2d427d49-43049dfa-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 30218.04,
+          "without_top3": 23285.26,
+          "without_top10": 12100.44
+        },
+        {
+          "key": "HYcomb-61-HY85-03",
+          "evaluation": "HYcomb-61-HY85-03",
+          "funded": "HYcomb-61-HY85-03",
+          "normal": {
+            "cash": 6125.63,
+            "median": 7040.77,
+            "paid": 127,
+            "days": 74
+          },
+          "stress": {
+            "cash": 4466.84,
+            "median": 5825.77,
+            "paid": 119,
+            "days": 92
+          },
+          "name": "True Range",
+          "settings": "Fall 03 · 2,5",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-61-TRUERANGE/Optimizer/aa245961-2d427d49-43049dfa-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 29880.54,
+          "without_top3": 22947.76,
+          "without_top10": 11750.44
+        },
+        {
+          "key": "HYcomb-01-HY104-ziel-1-5sigma",
+          "evaluation": "HYcomb-01-HY104-ziel-1-5sigma",
+          "funded": "HYcomb-01-HY104-ziel-1-5sigma",
+          "normal": {
+            "cash": 6791.7,
+            "median": 6917.02,
+            "paid": 141,
+            "days": 65
+          },
+          "stress": {
+            "cash": 4347.37,
+            "median": 4598.26,
+            "paid": 128,
+            "days": 78.5
+          },
+          "name": "Anchored VWAP",
+          "settings": "Ziel · 1,50 σ",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-01-AVWAP/Optimizer/c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 28280.54,
+          "without_top3": 21797.76,
+          "without_top10": 12175.44
+        },
+        {
+          "key": "HYcomb-01-HY85-ziel-1-5sigma",
+          "evaluation": "HYcomb-01-HY85-ziel-1-5sigma",
+          "funded": "HYcomb-01-HY85-ziel-1-5sigma",
+          "normal": {
+            "cash": 7477.76,
+            "median": 8286.19,
+            "paid": 142,
+            "days": 60.0
+          },
+          "stress": {
+            "cash": 4277.59,
+            "median": 4598.26,
+            "paid": 128,
+            "days": 78.5
+          },
+          "name": "Anchored VWAP",
+          "settings": "Ziel · 1,50 σ",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-01-AVWAP/Optimizer/c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 28055.54,
+          "without_top3": 21572.76,
+          "without_top10": 11950.44
+        },
+        {
+          "key": "HYcomb-73-HY104-02",
+          "evaluation": "HYcomb-73-HY104-02",
+          "funded": "HYcomb-73-HY104-02",
+          "normal": {
+            "cash": 4791.05,
+            "median": 6107.02,
+            "paid": 127,
+            "days": 90
+          },
+          "stress": {
+            "cash": 3330.09,
+            "median": 4722.36,
+            "paid": 111,
+            "days": 98
+          },
+          "name": "CSV Zones",
+          "settings": "Fall 02 · 2",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-73-CSVZONES/Optimizer/7e011746-2d427d49-ef35dd45-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-97e6513e-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 17418.04,
+          "without_top3": 11897.76,
+          "without_top10": 2712.94
+        },
+        {
+          "key": "HYcomb-73-HY104-03",
+          "evaluation": "HYcomb-73-HY104-03",
+          "funded": "HYcomb-73-HY104-03",
+          "normal": {
+            "cash": 4801.22,
+            "median": 6107.02,
+            "paid": 127,
+            "days": 90
+          },
+          "stress": {
+            "cash": 3327.32,
+            "median": 4722.36,
+            "paid": 111,
+            "days": 98
+          },
+          "name": "CSV Zones",
+          "settings": "Fall 03 · 4",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-73-CSVZONES/Optimizer/7e011746-2d427d49-ef35dd45-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-97e6513e-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 16868.04,
+          "without_top3": 11347.76,
+          "without_top10": 2162.94
+        },
+        {
+          "key": "HYcomb-19-HY104-02",
+          "evaluation": "HYcomb-19-HY104-02",
+          "funded": "HYcomb-19-HY104-02",
+          "normal": {
+            "cash": 4678.96,
+            "median": 2829.84,
+            "paid": 131,
+            "days": 75
+          },
+          "stress": {
+            "cash": 3285.77,
+            "median": 2334.84,
+            "paid": 131,
+            "days": 89
+          },
+          "name": "Exponential Moving Average (EMA)",
+          "settings": "Fall 02 · 20",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-19-EMA/Optimizer/b548a44d-30fcff07-d3510689-21f2cfd9-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 24618.04,
+          "without_top3": 17685.26,
+          "without_top10": 6500.44
+        },
+        {
+          "key": "HYcomb-20-HY104-02",
+          "evaluation": "HYcomb-20-HY104-02",
+          "funded": "HYcomb-20-HY104-02",
+          "normal": {
+            "cash": 4678.96,
+            "median": 2829.84,
+            "paid": 131,
+            "days": 75
+          },
+          "stress": {
+            "cash": 3285.77,
+            "median": 2334.84,
+            "paid": 131,
+            "days": 89
+          },
+          "name": "Bollinger Bands",
+          "settings": "Fall 02 · 20",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-20-BOLLINGER/Optimizer/b548a44d-30fcff07-d3510689-21f2cfd9-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 24618.04,
+          "without_top3": 17685.26,
+          "without_top10": 6500.44
+        }
+      ],
+      "mff": [
+        {
+          "key": "HY104-EMA22",
+          "evaluation": "HY104-EMA22",
+          "funded": "HYcomb-28-HY104-03",
+          "normal": {
+            "cash": 8424.89,
+            "median": 9899.36,
+            "paid": 143,
+            "days": 66,
+            "endMedian": 989936.0,
+            "monthlyMean": 108606,
+            "monthlyMedian": 62726
+          },
+          "stress": {
+            "cash": 6860.65,
+            "median": 7142.94,
+            "paid": 143,
+            "days": 69,
+            "endMedian": 714294.0,
+            "monthlyMean": 81856,
+            "monthlyMedian": 31550
+          },
+          "market": "ES",
+          "name": "EMA22 für den Rücklaufeinstieg",
+          "settings": "Keltner-Mitte EMA20",
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 23655.72,
+          "without_top3": 18119.76,
+          "without_top10": 8115.02,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 348,
+                "win_rate": 0.6063218390804598,
+                "net_cents": 2828386,
+                "profit_factor": 1.3380056516201382,
+                "max_open_mark_drawdown_cents": 668578,
+                "without_top3_cents": 2221040,
+                "without_top10_cents": 1104316,
+                "median_trade_net_cents": 19532.0
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6416184971098265,
+                "net_cents": 3230572,
+                "profit_factor": 1.4192535959879213,
+                "max_open_mark_drawdown_cents": 916214,
+                "without_top3_cents": 2669476,
+                "without_top10_cents": 1651502,
+                "median_trade_net_cents": 17032.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 348,
+                "win_rate": 0.6005747126436781,
+                "net_cents": 1958386,
+                "profit_factor": 1.2247775393478282,
+                "max_open_mark_drawdown_cents": 733714,
+                "without_top3_cents": 1358540,
+                "without_top10_cents": 259316,
+                "median_trade_net_cents": 17032.0
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.630057803468208,
+                "net_cents": 2365572,
+                "profit_factor": 1.2949166666043315,
+                "max_open_mark_drawdown_cents": 1036214,
+                "without_top3_cents": 1811976,
+                "without_top10_cents": 811502,
+                "median_trade_net_cents": 14532.0
+              }
+            }
+          },
+          "selection_note": "EMA22 nach Auswahl aus 7 EMA-Perioden in 12 MA-Fällen; kein frisches OOS."
+        },
+        {
+          "key": "HYcomb-28-HY104-03",
+          "evaluation": "HY104",
+          "funded": "HYcomb-28-HY104-03",
+          "normal": {
+            "cash": 8074.34,
+            "median": 9859.73,
+            "paid": 143,
+            "days": 67,
+            "endMedian": 985973.0,
+            "monthlyMean": 100022,
+            "monthlyMedian": 58504
+          },
+          "stress": {
+            "cash": 6105.5,
+            "median": 6813.87,
+            "paid": 139,
+            "days": 78,
+            "endMedian": 681387.0,
+            "monthlyMean": 68951,
+            "monthlyMedian": 14538
+          },
+          "name": "Eröffnungsspanne als Zusatzziel",
+          "settings": "60 min",
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 23655.72,
+          "without_top3": 18119.76,
+          "without_top10": 8115.02,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6167146974063401,
+                "net_cents": 3151354,
+                "profit_factor": 1.375843794396108,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2546508,
+                "without_top10_cents": 1457284,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6416184971098265,
+                "net_cents": 3230572,
+                "profit_factor": 1.4192535959879213,
+                "max_open_mark_drawdown_cents": 916214,
+                "without_top3_cents": 2669476,
+                "without_top10_cents": 1651502,
+                "median_trade_net_cents": 17032.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6109510086455331,
+                "net_cents": 2283854,
+                "profit_factor": 1.2618894398143263,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1686508,
+                "without_top10_cents": 614784,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.630057803468208,
+                "net_cents": 2365572,
+                "profit_factor": 1.2949166666043315,
+                "max_open_mark_drawdown_cents": 1036214,
+                "without_top3_cents": 1811976,
+                "without_top10_cents": 811502,
+                "median_trade_net_cents": 14532.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HYcomb-28-HY85-03",
+          "evaluation": "HY85",
+          "funded": "HYcomb-28-HY85-03",
+          "normal": {
+            "cash": 7877.88,
+            "median": 9708.11,
+            "paid": 143,
+            "days": 67,
+            "endMedian": 970811.0,
+            "monthlyMean": 96970,
+            "monthlyMedian": 58273
+          },
+          "stress": {
+            "cash": 5839.84,
+            "median": 6678.87,
+            "paid": 127,
+            "days": 85,
+            "endMedian": 667887.0,
+            "monthlyMean": 62950,
+            "monthlyMedian": 7505
+          },
+          "name": "Eröffnungsspanne als Zusatzziel",
+          "settings": "60 min",
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 23330.72,
+          "without_top3": 17782.26,
+          "without_top10": 7790.02,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6167146974063401,
+                "net_cents": 3121354,
+                "profit_factor": 1.3723213734034998,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2516508,
+                "without_top10_cents": 1426034,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6416184971098265,
+                "net_cents": 3198072,
+                "profit_factor": 1.415103185475298,
+                "max_open_mark_drawdown_cents": 916214,
+                "without_top3_cents": 2635726,
+                "without_top10_cents": 1619002,
+                "median_trade_net_cents": 17032.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6080691642651297,
+                "net_cents": 2253854,
+                "profit_factor": 1.2584354720273065,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1656508,
+                "without_top10_cents": 583534,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6271676300578035,
+                "net_cents": 2333072,
+                "profit_factor": 1.290847910809061,
+                "max_open_mark_drawdown_cents": 1036214,
+                "without_top3_cents": 1778226,
+                "without_top10_cents": 779002,
+                "median_trade_net_cents": 14532.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HYcomb-61-HY104-03",
+          "evaluation": "HY104",
+          "funded": "HYcomb-61-HY104-03",
+          "normal": {
+            "cash": 6570.28,
+            "median": 7890.99,
+            "paid": 131,
+            "days": 73,
+            "endMedian": 789099.0,
+            "monthlyMean": 58433,
+            "monthlyMedian": 37221
+          },
+          "stress": {
+            "cash": 4998.24,
+            "median": 5934.93,
+            "paid": 131,
+            "days": 85,
+            "endMedian": 593493.0,
+            "monthlyMean": 37873,
+            "monthlyMedian": 3377
+          },
+          "name": "True Range",
+          "settings": "Fall 03 · 2,5",
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 26168.22,
+          "without_top3": 20194.76,
+          "without_top10": 9477.52,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6167146974063401,
+                "net_cents": 3151354,
+                "profit_factor": 1.375843794396108,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2546508,
+                "without_top10_cents": 1457284,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6127167630057804,
+                "net_cents": 3481822,
+                "profit_factor": 1.4538668118280453,
+                "max_open_mark_drawdown_cents": 647488,
+                "without_top3_cents": 2876976,
+                "without_top10_cents": 1787752,
+                "median_trade_net_cents": 18282.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6109510086455331,
+                "net_cents": 2283854,
+                "profit_factor": 1.2618894398143263,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1686508,
+                "without_top10_cents": 614784,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6069364161849711,
+                "net_cents": 2616822,
+                "profit_factor": 1.3266985422286277,
+                "max_open_mark_drawdown_cents": 687488,
+                "without_top3_cents": 2019476,
+                "without_top10_cents": 947752,
+                "median_trade_net_cents": 15782.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HYcomb-61-HY104-02",
+          "evaluation": "HY104",
+          "funded": "HYcomb-61-HY104-02",
+          "normal": {
+            "cash": 6459.21,
+            "median": 7193.49,
+            "paid": 131,
+            "days": 72,
+            "endMedian": 719349.0,
+            "monthlyMean": 58280,
+            "monthlyMedian": 40598
+          },
+          "stress": {
+            "cash": 4555.66,
+            "median": 5536.91,
+            "paid": 131,
+            "days": 87,
+            "endMedian": 553691.0,
+            "monthlyMean": 24891,
+            "monthlyMedian": -4500
+          },
+          "name": "True Range",
+          "settings": "Fall 02 · 2,0",
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 23438.54,
+          "without_top3": 17465.08,
+          "without_top10": 6997.84,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6167146974063401,
+                "net_cents": 3151354,
+                "profit_factor": 1.375843794396108,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2546508,
+                "without_top10_cents": 1457284,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 347,
+                "win_rate": 0.590778097982709,
+                "net_cents": 3211354,
+                "profit_factor": 1.4474846637393164,
+                "max_open_mark_drawdown_cents": 652808,
+                "without_top3_cents": 2606508,
+                "without_top10_cents": 1542284,
+                "median_trade_net_cents": 15782
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6109510086455331,
+                "net_cents": 2283854,
+                "profit_factor": 1.2618894398143263,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1686508,
+                "without_top10_cents": 614784,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 347,
+                "win_rate": 0.5821325648414986,
+                "net_cents": 2343854,
+                "profit_factor": 1.3109957925380245,
+                "max_open_mark_drawdown_cents": 667808,
+                "without_top3_cents": 1746508,
+                "without_top10_cents": 699784,
+                "median_trade_net_cents": 13282
+              }
+            }
+          }
+        },
+        {
+          "key": "HYcomb-61-HY85-03",
+          "evaluation": "HY85",
+          "funded": "HYcomb-61-HY85-03",
+          "normal": {
+            "cash": 6409.99,
+            "median": 7845.99,
+            "paid": 131,
+            "days": 73,
+            "endMedian": 784599.0,
+            "monthlyMean": 56348,
+            "monthlyMedian": 35346
+          },
+          "stress": {
+            "cash": 4483.07,
+            "median": 5777.43,
+            "paid": 119,
+            "days": 90,
+            "endMedian": 577743.0,
+            "monthlyMean": 23789,
+            "monthlyMedian": -9000
+          },
+          "name": "True Range",
+          "settings": "Fall 03 · 2,5",
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 25830.72,
+          "without_top3": 19857.26,
+          "without_top10": 9127.52,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6167146974063401,
+                "net_cents": 3121354,
+                "profit_factor": 1.3723213734034998,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2516508,
+                "without_top10_cents": 1426034,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6127167630057804,
+                "net_cents": 3448072,
+                "profit_factor": 1.4495406385116865,
+                "max_open_mark_drawdown_cents": 647488,
+                "without_top3_cents": 2843226,
+                "without_top10_cents": 1752752,
+                "median_trade_net_cents": 18282.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6080691642651297,
+                "net_cents": 2253854,
+                "profit_factor": 1.2584354720273065,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1656508,
+                "without_top10_cents": 583534,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6040462427745664,
+                "net_cents": 2583072,
+                "profit_factor": 1.3224661644673914,
+                "max_open_mark_drawdown_cents": 687488,
+                "without_top3_cents": 1985726,
+                "without_top10_cents": 912752,
+                "median_trade_net_cents": 15782.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HY104",
+          "evaluation": "HY104",
+          "funded": "HY104",
+          "normal": {
+            "cash": 4518.21,
+            "median": 2845.11,
+            "paid": 131,
+            "days": 75,
+            "endMedian": 284511.0,
+            "monthlyMean": 32160,
+            "monthlyMedian": 35815
+          },
+          "stress": {
+            "cash": 3094.33,
+            "median": 2350.11,
+            "paid": 131,
+            "days": 89,
+            "endMedian": 235011.0,
+            "monthlyMean": 5643,
+            "monthlyMedian": -13500
+          },
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 20780.72,
+          "without_top3": 14807.26,
+          "without_top10": 4090.02,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6167146974063401,
+                "net_cents": 3151354,
+                "profit_factor": 1.375843794396108,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2546508,
+                "without_top10_cents": 1457284,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6127167630057804,
+                "net_cents": 2943072,
+                "profit_factor": 1.3507221983487503,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2338226,
+                "without_top10_cents": 1249002,
+                "median_trade_net_cents": 18907.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6109510086455331,
+                "net_cents": 2283854,
+                "profit_factor": 1.2618894398143263,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1686508,
+                "without_top10_cents": 614784,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6069364161849711,
+                "net_cents": 2078072,
+                "profit_factor": 1.2380408110152032,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1480726,
+                "without_top10_cents": 409002,
+                "median_trade_net_cents": 16407.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HY85",
+          "evaluation": "HY85",
+          "funded": "HY85",
+          "normal": {
+            "cash": 4351.6,
+            "median": 2788.86,
+            "paid": 131,
+            "days": 75,
+            "endMedian": 278886.0,
+            "monthlyMean": 30067,
+            "monthlyMedian": 30661
+          },
+          "stress": {
+            "cash": 2910.23,
+            "median": 2111.04,
+            "paid": 129,
+            "days": 91,
+            "endMedian": 211104.0,
+            "monthlyMean": 3238,
+            "monthlyMedian": -13500
+          },
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 20443.22,
+          "without_top3": 14469.76,
+          "without_top10": 3740.02,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6167146974063401,
+                "net_cents": 3121354,
+                "profit_factor": 1.3723213734034998,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2516508,
+                "without_top10_cents": 1426034,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6127167630057804,
+                "net_cents": 2909322,
+                "profit_factor": 1.3467519056729436,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2304476,
+                "without_top10_cents": 1214002,
+                "median_trade_net_cents": 18907.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6080691642651297,
+                "net_cents": 2253854,
+                "profit_factor": 1.2584354720273065,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1656508,
+                "without_top10_cents": 583534,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6040462427745664,
+                "net_cents": 2044322,
+                "profit_factor": 1.234162233290105,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1446976,
+                "without_top10_cents": 374002,
+                "median_trade_net_cents": 16407.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HY18b",
+          "evaluation": "HY18b",
+          "funded": "HY18b",
+          "normal": {
+            "cash": 2885.13,
+            "median": 2822.62,
+            "paid": 121,
+            "days": 86,
+            "endMedian": 282262.0,
+            "monthlyMean": 18155,
+            "monthlyMedian": -9000
+          },
+          "stress": {
+            "cash": 2603.39,
+            "median": 2327.61,
+            "paid": 110,
+            "days": 82.5,
+            "endMedian": 232761.0,
+            "monthlyMean": 11567,
+            "monthlyMedian": -13500
+          },
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 20743.22,
+          "without_top3": 14769.76,
+          "without_top10": 3802.52,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6138328530259366,
+                "net_cents": 3153854,
+                "profit_factor": 1.370215761028163,
+                "max_open_mark_drawdown_cents": 751214,
+                "without_top3_cents": 2549008,
+                "without_top10_cents": 1434784,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6098265895953757,
+                "net_cents": 2939322,
+                "profit_factor": 1.344761004400822,
+                "max_open_mark_drawdown_cents": 751214,
+                "without_top3_cents": 2334476,
+                "without_top10_cents": 1220252,
+                "median_trade_net_cents": 18282.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6051873198847262,
+                "net_cents": 2286354,
+                "profit_factor": 1.258079248539019,
+                "max_open_mark_drawdown_cents": 871214,
+                "without_top3_cents": 1689008,
+                "without_top10_cents": 592284,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6011560693641619,
+                "net_cents": 2074322,
+                "profit_factor": 1.2339021060776465,
+                "max_open_mark_drawdown_cents": 885414,
+                "without_top3_cents": 1476976,
+                "without_top10_cents": 380252,
+                "median_trade_net_cents": 15782.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HY120",
+          "evaluation": "HY120",
+          "funded": "HY120",
+          "normal": {
+            "cash": 2895.99,
+            "median": 2822.62,
+            "paid": 121,
+            "days": 86,
+            "endMedian": 282262.0,
+            "monthlyMean": 18256,
+            "monthlyMedian": -9000
+          },
+          "stress": {
+            "cash": 2590.35,
+            "median": 2327.61,
+            "paid": 110,
+            "days": 82.5,
+            "endMedian": 232761.0,
+            "monthlyMean": 11915,
+            "monthlyMedian": -13500
+          },
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 21343.22,
+          "without_top3": 15369.76,
+          "without_top10": 4402.52,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.622478386167147,
+                "net_cents": 3213854,
+                "profit_factor": 1.379605136028597,
+                "max_open_mark_drawdown_cents": 751214,
+                "without_top3_cents": 2609008,
+                "without_top10_cents": 1494784,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6184971098265896,
+                "net_cents": 2999322,
+                "profit_factor": 1.3539847511384953,
+                "max_open_mark_drawdown_cents": 751214,
+                "without_top3_cents": 2394476,
+                "without_top10_cents": 1280252,
+                "median_trade_net_cents": 18282.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6080691642651297,
+                "net_cents": 2346354,
+                "profit_factor": 1.2666342268967208,
+                "max_open_mark_drawdown_cents": 871214,
+                "without_top3_cents": 1749008,
+                "without_top10_cents": 652284,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6040462427745664,
+                "net_cents": 2134322,
+                "profit_factor": 1.242285605048225,
+                "max_open_mark_drawdown_cents": 885414,
+                "without_top3_cents": 1536976,
+                "without_top10_cents": 440252,
+                "median_trade_net_cents": 15782.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HY121",
+          "evaluation": "HY121",
+          "funded": "HY121",
+          "normal": {
+            "cash": 3125.48,
+            "median": 2040.76,
+            "paid": 126,
+            "days": 84.0,
+            "endMedian": 204076.0,
+            "monthlyMean": 8112,
+            "monthlyMedian": 8252
+          },
+          "stress": {
+            "cash": 1563.16,
+            "median": 1320.76,
+            "paid": 82,
+            "days": 85.5,
+            "endMedian": 132076.0,
+            "monthlyMean": -7410,
+            "monthlyMedian": -9000
+          },
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 15968.22,
+          "without_top3": 10207.26,
+          "without_top10": 352.52,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.622478386167147,
+                "net_cents": 2638854,
+                "profit_factor": 1.318075703071776,
+                "max_open_mark_drawdown_cents": 841214,
+                "without_top3_cents": 2055258,
+                "without_top10_cents": 1052284,
+                "median_trade_net_cents": 20782
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6184971098265896,
+                "net_cents": 2461822,
+                "profit_factor": 1.2964969638779886,
+                "max_open_mark_drawdown_cents": 841214,
+                "without_top3_cents": 1878226,
+                "without_top10_cents": 875252,
+                "median_trade_net_cents": 19532.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6138328530259366,
+                "net_cents": 1771354,
+                "profit_factor": 1.2052800788785487,
+                "max_open_mark_drawdown_cents": 961214,
+                "without_top3_cents": 1195258,
+                "without_top10_cents": 209784,
+                "median_trade_net_cents": 18282
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6098265895953757,
+                "net_cents": 1596822,
+                "profit_factor": 1.1848563007485373,
+                "max_open_mark_drawdown_cents": 961214,
+                "without_top3_cents": 1020726,
+                "without_top10_cents": 35252,
+                "median_trade_net_cents": 17032.0
+              }
+            }
+          }
+        }
+      ]
+    },
+    "pro_50k": {
+      "combos": [
+        {
+          "key": "HYcomb-28-HY85-03",
+          "evaluation": "HY85",
+          "funded": "HYcomb-28-HY85-03",
+          "normal": {
+            "cash": 4844.08,
+            "median": 4176.48,
+            "paid": 133,
+            "days": 68
+          },
+          "stress": {
+            "cash": 4011.7,
+            "median": 3995.15,
+            "paid": 102,
+            "days": 78.5
+          },
+          "name": "Eröffnungsspanne als Zusatzziel",
+          "settings": "60 min",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-28-OPENINGRANGE/Optimizer/87b10cdb-a0e9abcc-27ca63e6-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 26880.54,
+          "without_top3": 20297.76,
+          "without_top10": 9775.44
+        },
+        {
+          "key": "HYcomb-28-HY104-03",
+          "evaluation": "HY104",
+          "funded": "HYcomb-28-HY104-03",
+          "normal": {
+            "cash": 4895.27,
+            "median": 4356.48,
+            "paid": 133,
+            "days": 68
+          },
+          "stress": {
+            "cash": 4005.94,
+            "median": 3738.11,
+            "paid": 102,
+            "days": 74.5
+          },
+          "name": "Eröffnungsspanne als Zusatzziel",
+          "settings": "60 min",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-28-OPENINGRANGE/Optimizer/87b10cdb-a0e9abcc-27ca63e6-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 27205.54,
+          "without_top3": 20622.76,
+          "without_top10": 10112.94
+        },
+        {
+          "key": "HYcomb-09-HY104-02",
+          "evaluation": "HYcomb-09-HY104-02",
+          "funded": "HY104",
+          "normal": {
+            "cash": 3804.06,
+            "median": 4230.4,
+            "paid": 117,
+            "days": 72
+          },
+          "stress": {
+            "cash": 3938.83,
+            "median": 4296.48,
+            "paid": 120,
+            "days": 68.0
+          },
+          "name": "Aroon",
+          "settings": "Fall 02 · 10 / 3",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-09-AROON/Optimizer/20fb88d6-30fcff07-1ea644f9-21f2cfd9-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 16500.98,
+          "without_top3": 11593.2,
+          "without_top10": 2595.88
+        },
+        {
+          "key": "HYcomb-19-HY85-03",
+          "evaluation": "HY85",
+          "funded": "HYcomb-19-HY85-03",
+          "normal": {
+            "cash": 3921.69,
+            "median": 4836.62,
+            "paid": 105,
+            "days": 69
+          },
+          "stress": {
+            "cash": 3879.81,
+            "median": 3551.21,
+            "paid": 102,
+            "days": 68.5
+          },
+          "name": "Exponential Moving Average (EMA)",
+          "settings": "Fall 03 · 24",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-19-EMA/Optimizer/b548a44d-30fcff07-d3510689-21f2cfd9-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 22241.0,
+          "without_top3": 14808.22,
+          "without_top10": 2885.9
+        },
+        {
+          "key": "HYcomb-09-HY85-02",
+          "evaluation": "HYcomb-09-HY85-02",
+          "funded": "HY85",
+          "normal": {
+            "cash": 3727.76,
+            "median": 4200.4,
+            "paid": 117,
+            "days": 72
+          },
+          "stress": {
+            "cash": 3817.3,
+            "median": 4106.48,
+            "paid": 120,
+            "days": 69.5
+          },
+          "name": "Aroon",
+          "settings": "Fall 02 · 10 / 3",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-09-AROON/Optimizer/20fb88d6-30fcff07-1ea644f9-21f2cfd9-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 16388.48,
+          "without_top3": 11468.2,
+          "without_top10": 2470.88
+        }
+      ],
+      "same_strategy": [
+        {
+          "key": "HYcomb-28-HY104-03",
+          "evaluation": "HYcomb-28-HY104-03",
+          "funded": "HYcomb-28-HY104-03",
+          "normal": {
+            "cash": 4585.52,
+            "median": 5263.77,
+            "paid": 116,
+            "days": 61.0
+          },
+          "stress": {
+            "cash": 3797.18,
+            "median": 4007.55,
+            "paid": 92,
+            "days": 64.5
+          },
+          "name": "Eröffnungsspanne als Zusatzziel",
+          "settings": "60 min",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-28-OPENINGRANGE/Optimizer/87b10cdb-a0e9abcc-27ca63e6-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 27205.54,
+          "without_top3": 20622.76,
+          "without_top10": 10112.94
+        },
+        {
+          "key": "HYcomb-28-HY85-03",
+          "evaluation": "HYcomb-28-HY85-03",
+          "funded": "HYcomb-28-HY85-03",
+          "normal": {
+            "cash": 4551.28,
+            "median": 5203.77,
+            "paid": 116,
+            "days": 61.0
+          },
+          "stress": {
+            "cash": 3720.64,
+            "median": 3870.7,
+            "paid": 92,
+            "days": 64.5
+          },
+          "name": "Eröffnungsspanne als Zusatzziel",
+          "settings": "60 min",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-28-OPENINGRANGE/Optimizer/87b10cdb-a0e9abcc-27ca63e6-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 26880.54,
+          "without_top3": 20297.76,
+          "without_top10": 9775.44
+        },
+        {
+          "key": "HYcomb-19-HY85-03",
+          "evaluation": "HYcomb-19-HY85-03",
+          "funded": "HYcomb-19-HY85-03",
+          "normal": {
+            "cash": 3558.71,
+            "median": 4295.8,
+            "paid": 93,
+            "days": 67
+          },
+          "stress": {
+            "cash": 3452.27,
+            "median": 4323.07,
+            "paid": 92,
+            "days": 77.0
+          },
+          "name": "Exponential Moving Average (EMA)",
+          "settings": "Fall 03 · 24",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-19-EMA/Optimizer/b548a44d-30fcff07-d3510689-21f2cfd9-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 22241.0,
+          "without_top3": 14808.22,
+          "without_top10": 2885.9
+        },
+        {
+          "key": "HYcomb-19-HY104-03",
+          "evaluation": "HYcomb-19-HY104-03",
+          "funded": "HYcomb-19-HY104-03",
+          "normal": {
+            "cash": 3539.34,
+            "median": 3990.62,
+            "paid": 93,
+            "days": 62
+          },
+          "stress": {
+            "cash": 3172.08,
+            "median": 4206.03,
+            "paid": 92,
+            "days": 72.0
+          },
+          "name": "Exponential Moving Average (EMA)",
+          "settings": "Fall 03 · 24",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-19-EMA/Optimizer/b548a44d-30fcff07-d3510689-21f2cfd9-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 22641.0,
+          "without_top3": 15208.22,
+          "without_top10": 3298.4
+        },
+        {
+          "key": "HYcomb-25-HY104-01",
+          "evaluation": "HYcomb-25-HY104-01",
+          "funded": "HYcomb-25-HY104-01",
+          "normal": {
+            "cash": 4195.29,
+            "median": 4615.81,
+            "paid": 135,
+            "days": 80
+          },
+          "stress": {
+            "cash": 2804.54,
+            "median": 3269.87,
+            "paid": 134,
+            "days": 85.0
+          },
+          "name": "BarRange",
+          "settings": "Fall 01 · 1,5",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-25-BARRANGE/Optimizer/87b10cdb-a0e9abcc-27ca63e6-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 27240.5,
+          "without_top3": 20657.72,
+          "without_top10": 9947.9
+        },
+        {
+          "key": "HYcomb-25-HY85-01",
+          "evaluation": "HYcomb-25-HY85-01",
+          "funded": "HYcomb-25-HY85-01",
+          "normal": {
+            "cash": 4109.54,
+            "median": 4425.81,
+            "paid": 135,
+            "days": 80
+          },
+          "stress": {
+            "cash": 2729.06,
+            "median": 3229.87,
+            "paid": 134,
+            "days": 85.0
+          },
+          "name": "BarRange",
+          "settings": "Fall 01 · 1,5",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-25-BARRANGE/Optimizer/87b10cdb-a0e9abcc-27ca63e6-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 26903.0,
+          "without_top3": 20320.22,
+          "without_top10": 9597.9
+        },
+        {
+          "key": "HYcomb-20-HY104-01",
+          "evaluation": "HYcomb-20-HY104-01",
+          "funded": "HYcomb-20-HY104-01",
+          "normal": {
+            "cash": 2937.54,
+            "median": 4186.63,
+            "paid": 103,
+            "days": 62
+          },
+          "stress": {
+            "cash": 2593.24,
+            "median": 4153.97,
+            "paid": 89,
+            "days": 69
+          },
+          "name": "Bollinger Bands",
+          "settings": "Fall 01 · 16",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-20-BOLLINGER/Optimizer/b548a44d-30fcff07-d3510689-21f2cfd9-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 23018.04,
+          "without_top3": 16522.76,
+          "without_top10": 6550.44
+        },
+        {
+          "key": "HYcomb-20-HY85-01",
+          "evaluation": "HYcomb-20-HY85-01",
+          "funded": "HYcomb-20-HY85-01",
+          "normal": {
+            "cash": 2768.01,
+            "median": 2973.14,
+            "paid": 100,
+            "days": 68.0
+          },
+          "stress": {
+            "cash": 2450.62,
+            "median": 3830.97,
+            "paid": 89,
+            "days": 70
+          },
+          "name": "Bollinger Bands",
+          "settings": "Fall 01 · 16",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-20-BOLLINGER/Optimizer/b548a44d-30fcff07-d3510689-21f2cfd9-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 21468.04,
+          "without_top3": 14972.76,
+          "without_top10": 5087.94
+        },
+        {
+          "key": "HYcomb-61-HY85-03",
+          "evaluation": "HYcomb-61-HY85-03",
+          "funded": "HYcomb-61-HY85-03",
+          "normal": {
+            "cash": 2487.18,
+            "median": 1714.16,
+            "paid": 120,
+            "days": 78.5
+          },
+          "stress": {
+            "cash": 2297.17,
+            "median": 1314.16,
+            "paid": 120,
+            "days": 86.5
+          },
+          "name": "True Range",
+          "settings": "Fall 03 · 2,5",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-61-TRUERANGE/Optimizer/aa245961-2d427d49-43049dfa-9313e280-649c0414-ae67afc1-8346dc5d-c0647612-avwap-c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 29880.54,
+          "without_top3": 22947.76,
+          "without_top10": 11750.44
+        },
+        {
+          "key": "HYcomb-01-HY104-ziel-1-5sigma",
+          "evaluation": "HYcomb-01-HY104-ziel-1-5sigma",
+          "funded": "HYcomb-01-HY104-ziel-1-5sigma",
+          "normal": {
+            "cash": 4299.76,
+            "median": 4501.01,
+            "paid": 140,
+            "days": 64.0
+          },
+          "stress": {
+            "cash": 2275.7,
+            "median": 2521.5,
+            "paid": 91,
+            "days": 70
+          },
+          "name": "Anchored VWAP",
+          "settings": "Ziel · 1,50 σ",
+          "proof": "Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/SQX-Indikatorstudie-01-AVWAP/Optimizer/c875537e-bc34fb09-8346dc5d-73e6a42f-daf0932e/Nachweis.md",
+          "trade_net": 28280.54,
+          "without_top3": 21797.76,
+          "without_top10": 12175.44
+        }
+      ],
+      "mff": [
+        {
+          "key": "HY104-EMA22",
+          "evaluation": "HY104-EMA22",
+          "funded": "HYcomb-28-HY104-03",
+          "normal": {
+            "cash": 5131.03,
+            "median": 4407.36,
+            "paid": 132,
+            "days": 65.5,
+            "endMedian": 440735.99999999994,
+            "monthlyMean": 66050,
+            "monthlyMedian": 18906
+          },
+          "stress": {
+            "cash": 4425.76,
+            "median": 4311.62,
+            "paid": 124,
+            "days": 68.5,
+            "endMedian": 431162.0,
+            "monthlyMean": 52350,
+            "monthlyMedian": 14422
+          },
+          "market": "ES",
+          "name": "EMA22 für den Rücklaufeinstieg",
+          "settings": "Keltner-Mitte EMA20",
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 23655.72,
+          "without_top3": 18119.76,
+          "without_top10": 8115.02,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 348,
+                "win_rate": 0.6063218390804598,
+                "net_cents": 2828386,
+                "profit_factor": 1.3380056516201382,
+                "max_open_mark_drawdown_cents": 668578,
+                "without_top3_cents": 2221040,
+                "without_top10_cents": 1104316,
+                "median_trade_net_cents": 19532.0
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6416184971098265,
+                "net_cents": 3230572,
+                "profit_factor": 1.4192535959879213,
+                "max_open_mark_drawdown_cents": 916214,
+                "without_top3_cents": 2669476,
+                "without_top10_cents": 1651502,
+                "median_trade_net_cents": 17032.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 348,
+                "win_rate": 0.6005747126436781,
+                "net_cents": 1958386,
+                "profit_factor": 1.2247775393478282,
+                "max_open_mark_drawdown_cents": 733714,
+                "without_top3_cents": 1358540,
+                "without_top10_cents": 259316,
+                "median_trade_net_cents": 17032.0
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.630057803468208,
+                "net_cents": 2365572,
+                "profit_factor": 1.2949166666043315,
+                "max_open_mark_drawdown_cents": 1036214,
+                "without_top3_cents": 1811976,
+                "without_top10_cents": 811502,
+                "median_trade_net_cents": 14532.0
+              }
+            }
+          },
+          "selection_note": "EMA22 nach Auswahl aus 7 EMA-Perioden in 12 MA-Fällen; kein frisches OOS."
+        },
+        {
+          "key": "HYcomb-28-HY85-03",
+          "evaluation": "HY85",
+          "funded": "HYcomb-28-HY85-03",
+          "normal": {
+            "cash": 4955.01,
+            "median": 4227.36,
+            "paid": 130,
+            "days": 68.0,
+            "endMedian": 422735.99999999994,
+            "monthlyMean": 61931,
+            "monthlyMedian": 31256
+          },
+          "stress": {
+            "cash": 4124.04,
+            "median": 4112.43,
+            "paid": 102,
+            "days": 78.5,
+            "endMedian": 411243.0,
+            "monthlyMean": 41096,
+            "monthlyMedian": -17600
+          },
+          "name": "Eröffnungsspanne als Zusatzziel",
+          "settings": "60 min",
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 23330.72,
+          "without_top3": 17782.26,
+          "without_top10": 7790.02,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6167146974063401,
+                "net_cents": 3121354,
+                "profit_factor": 1.3723213734034998,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2516508,
+                "without_top10_cents": 1426034,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6416184971098265,
+                "net_cents": 3198072,
+                "profit_factor": 1.415103185475298,
+                "max_open_mark_drawdown_cents": 916214,
+                "without_top3_cents": 2635726,
+                "without_top10_cents": 1619002,
+                "median_trade_net_cents": 17032.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6080691642651297,
+                "net_cents": 2253854,
+                "profit_factor": 1.2584354720273065,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1656508,
+                "without_top10_cents": 583534,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6271676300578035,
+                "net_cents": 2333072,
+                "profit_factor": 1.290847910809061,
+                "max_open_mark_drawdown_cents": 1036214,
+                "without_top3_cents": 1778226,
+                "without_top10_cents": 779002,
+                "median_trade_net_cents": 14532.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HYcomb-28-HY104-03",
+          "evaluation": "HY104",
+          "funded": "HYcomb-28-HY104-03",
+          "normal": {
+            "cash": 5005.88,
+            "median": 4407.36,
+            "paid": 130,
+            "days": 68.0,
+            "endMedian": 440735.99999999994,
+            "monthlyMean": 62774,
+            "monthlyMedian": 30923
+          },
+          "stress": {
+            "cash": 4082.65,
+            "median": 3256.13,
+            "paid": 114,
+            "days": 70.0,
+            "endMedian": 325613.0,
+            "monthlyMean": 45882,
+            "monthlyMedian": 10923
+          },
+          "name": "Eröffnungsspanne als Zusatzziel",
+          "settings": "60 min",
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 23655.72,
+          "without_top3": 18119.76,
+          "without_top10": 8115.02,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6167146974063401,
+                "net_cents": 3151354,
+                "profit_factor": 1.375843794396108,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2546508,
+                "without_top10_cents": 1457284,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6416184971098265,
+                "net_cents": 3230572,
+                "profit_factor": 1.4192535959879213,
+                "max_open_mark_drawdown_cents": 916214,
+                "without_top3_cents": 2669476,
+                "without_top10_cents": 1651502,
+                "median_trade_net_cents": 17032.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6109510086455331,
+                "net_cents": 2283854,
+                "profit_factor": 1.2618894398143263,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1686508,
+                "without_top10_cents": 614784,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.630057803468208,
+                "net_cents": 2365572,
+                "profit_factor": 1.2949166666043315,
+                "max_open_mark_drawdown_cents": 1036214,
+                "without_top3_cents": 1811976,
+                "without_top10_cents": 811502,
+                "median_trade_net_cents": 14532.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HYcomb-09-HY104-02",
+          "evaluation": "HYcomb-09-HY104-02",
+          "funded": "HY104",
+          "normal": {
+            "cash": 3918.92,
+            "median": 4272.79,
+            "paid": 117,
+            "days": 72,
+            "endMedian": 427279.0,
+            "monthlyMean": 31434,
+            "monthlyMedian": 37530
+          },
+          "stress": {
+            "cash": 4060.27,
+            "median": 4347.36,
+            "paid": 120,
+            "days": 68.0,
+            "endMedian": 434735.99999999994,
+            "monthlyMean": 26294,
+            "monthlyMedian": 22196
+          },
+          "name": "Aroon",
+          "settings": "Fall 02 · 10 / 3",
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 20780.72,
+          "without_top3": 14807.26,
+          "without_top10": 4090.02,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 195,
+                "win_rate": 0.6307692307692307,
+                "net_cents": 2146240,
+                "profit_factor": 1.5882211069379306,
+                "max_open_mark_drawdown_cents": 667796,
+                "without_top3_cents": 1647644,
+                "without_top10_cents": 729670,
+                "median_trade_net_cents": 14532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6127167630057804,
+                "net_cents": 2943072,
+                "profit_factor": 1.3507221983487503,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2338226,
+                "without_top10_cents": 1249002,
+                "median_trade_net_cents": 18907.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 195,
+                "win_rate": 0.6102564102564103,
+                "net_cents": 1658740,
+                "profit_factor": 1.432744736070427,
+                "max_open_mark_drawdown_cents": 724982,
+                "without_top3_cents": 1167644,
+                "without_top10_cents": 267170,
+                "median_trade_net_cents": 12032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6069364161849711,
+                "net_cents": 2078072,
+                "profit_factor": 1.2380408110152032,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1480726,
+                "without_top10_cents": 409002,
+                "median_trade_net_cents": 16407.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HYcomb-09-HY85-02",
+          "evaluation": "HYcomb-09-HY85-02",
+          "funded": "HY85",
+          "normal": {
+            "cash": 3850.09,
+            "median": 4242.79,
+            "paid": 117,
+            "days": 72,
+            "endMedian": 424279.0,
+            "monthlyMean": 30643,
+            "monthlyMedian": 37863
+          },
+          "stress": {
+            "cash": 3936.52,
+            "median": 4157.36,
+            "paid": 120,
+            "days": 69.5,
+            "endMedian": 415735.99999999994,
+            "monthlyMean": 24001,
+            "monthlyMedian": 22530
+          },
+          "name": "Aroon",
+          "settings": "Fall 02 · 10 / 3",
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 20443.22,
+          "without_top3": 14469.76,
+          "without_top10": 3740.02,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 195,
+                "win_rate": 0.6307692307692307,
+                "net_cents": 2138740,
+                "profit_factor": 1.5863664602573966,
+                "max_open_mark_drawdown_cents": 667796,
+                "without_top3_cents": 1638894,
+                "without_top10_cents": 720920,
+                "median_trade_net_cents": 14532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6127167630057804,
+                "net_cents": 2909322,
+                "profit_factor": 1.3467519056729436,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2304476,
+                "without_top10_cents": 1214002,
+                "median_trade_net_cents": 18907.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 195,
+                "win_rate": 0.6102564102564103,
+                "net_cents": 1651240,
+                "profit_factor": 1.4310692304639938,
+                "max_open_mark_drawdown_cents": 724982,
+                "without_top3_cents": 1158894,
+                "without_top10_cents": 258420,
+                "median_trade_net_cents": 12032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6040462427745664,
+                "net_cents": 2044322,
+                "profit_factor": 1.234162233290105,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1446976,
+                "without_top10_cents": 374002,
+                "median_trade_net_cents": 16407.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HYcomb-19-HY85-03",
+          "evaluation": "HY85",
+          "funded": "HYcomb-19-HY85-03",
+          "normal": {
+            "cash": 3760.12,
+            "median": 3521.47,
+            "paid": 105,
+            "days": 69,
+            "endMedian": 352147.0,
+            "monthlyMean": 55804,
+            "monthlyMedian": 52603
+          },
+          "stress": {
+            "cash": 3069.13,
+            "median": 2781.47,
+            "paid": 102,
+            "days": 68.5,
+            "endMedian": 278147.0,
+            "monthlyMean": 37997,
+            "monthlyMedian": 31299
+          },
+          "name": "Exponential Moving Average (EMA)",
+          "settings": "Fall 03 · 24",
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 17774.44,
+          "without_top3": 11588.48,
+          "without_top10": 233.74,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6167146974063401,
+                "net_cents": 3121354,
+                "profit_factor": 1.3723213734034998,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2516508,
+                "without_top10_cents": 1426034,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 342,
+                "win_rate": 0.5935672514619883,
+                "net_cents": 2632444,
+                "profit_factor": 1.3212725911609775,
+                "max_open_mark_drawdown_cents": 733578,
+                "without_top3_cents": 2006348,
+                "without_top10_cents": 853374,
+                "median_trade_net_cents": 17657.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6080691642651297,
+                "net_cents": 2253854,
+                "profit_factor": 1.2584354720273065,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1656508,
+                "without_top10_cents": 583534,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 342,
+                "win_rate": 0.5789473684210527,
+                "net_cents": 1777444,
+                "profit_factor": 1.2078908131237214,
+                "max_open_mark_drawdown_cents": 786078,
+                "without_top3_cents": 1158848,
+                "without_top10_cents": 23374,
+                "median_trade_net_cents": 15157.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HY104 → HY121",
+          "evaluation": "HY104",
+          "funded": "HY121",
+          "normal": {
+            "cash": 3319.92,
+            "median": 3232.34,
+            "paid": 105,
+            "days": 76,
+            "endMedian": 323234.0,
+            "monthlyMean": 19119,
+            "monthlyMedian": 10755
+          },
+          "stress": {
+            "cash": 2669.34,
+            "median": 3118.8,
+            "paid": 102,
+            "days": 77.5,
+            "endMedian": 311880.0,
+            "monthlyMean": 4822,
+            "monthlyMedian": -22000
+          },
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 15968.22,
+          "without_top3": 10207.26,
+          "without_top10": 352.52,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6167146974063401,
+                "net_cents": 3151354,
+                "profit_factor": 1.375843794396108,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2546508,
+                "without_top10_cents": 1457284,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6184971098265896,
+                "net_cents": 2461822,
+                "profit_factor": 1.2964969638779886,
+                "max_open_mark_drawdown_cents": 841214,
+                "without_top3_cents": 1878226,
+                "without_top10_cents": 875252,
+                "median_trade_net_cents": 19532.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6109510086455331,
+                "net_cents": 2283854,
+                "profit_factor": 1.2618894398143263,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1686508,
+                "without_top10_cents": 614784,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6098265895953757,
+                "net_cents": 1596822,
+                "profit_factor": 1.1848563007485373,
+                "max_open_mark_drawdown_cents": 961214,
+                "without_top3_cents": 1020726,
+                "without_top10_cents": 35252,
+                "median_trade_net_cents": 17032.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HY121",
+          "evaluation": "HY121",
+          "funded": "HY121",
+          "normal": {
+            "cash": 3239.79,
+            "median": 3100.34,
+            "paid": 102,
+            "days": 77.0,
+            "endMedian": 310034.0,
+            "monthlyMean": 17700,
+            "monthlyMedian": -22000
+          },
+          "stress": {
+            "cash": 2492.53,
+            "median": 3294.13,
+            "paid": 91,
+            "days": 75,
+            "endMedian": 329413.0,
+            "monthlyMean": 8178,
+            "monthlyMedian": -22000
+          },
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 15968.22,
+          "without_top3": 10207.26,
+          "without_top10": 352.52,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.622478386167147,
+                "net_cents": 2638854,
+                "profit_factor": 1.318075703071776,
+                "max_open_mark_drawdown_cents": 841214,
+                "without_top3_cents": 2055258,
+                "without_top10_cents": 1052284,
+                "median_trade_net_cents": 20782
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6184971098265896,
+                "net_cents": 2461822,
+                "profit_factor": 1.2964969638779886,
+                "max_open_mark_drawdown_cents": 841214,
+                "without_top3_cents": 1878226,
+                "without_top10_cents": 875252,
+                "median_trade_net_cents": 19532.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6138328530259366,
+                "net_cents": 1771354,
+                "profit_factor": 1.2052800788785487,
+                "max_open_mark_drawdown_cents": 961214,
+                "without_top3_cents": 1195258,
+                "without_top10_cents": 209784,
+                "median_trade_net_cents": 18282
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6098265895953757,
+                "net_cents": 1596822,
+                "profit_factor": 1.1848563007485373,
+                "max_open_mark_drawdown_cents": 961214,
+                "without_top3_cents": 1020726,
+                "without_top10_cents": 35252,
+                "median_trade_net_cents": 17032.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HY104",
+          "evaluation": "HY104",
+          "funded": "HY104",
+          "normal": {
+            "cash": 1924.94,
+            "median": 76.0,
+            "paid": 58,
+            "days": 85.5,
+            "endMedian": 7600.0,
+            "monthlyMean": -7344,
+            "monthlyMedian": -26400
+          },
+          "stress": {
+            "cash": 1352.95,
+            "median": 76.0,
+            "paid": 50,
+            "days": 84.5,
+            "endMedian": 7600.0,
+            "monthlyMean": -15017,
+            "monthlyMedian": -30800
+          },
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 20780.72,
+          "without_top3": 14807.26,
+          "without_top10": 4090.02,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6167146974063401,
+                "net_cents": 3151354,
+                "profit_factor": 1.375843794396108,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2546508,
+                "without_top10_cents": 1457284,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6127167630057804,
+                "net_cents": 2943072,
+                "profit_factor": 1.3507221983487503,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2338226,
+                "without_top10_cents": 1249002,
+                "median_trade_net_cents": 18907.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6109510086455331,
+                "net_cents": 2283854,
+                "profit_factor": 1.2618894398143263,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1686508,
+                "without_top10_cents": 614784,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6069364161849711,
+                "net_cents": 2078072,
+                "profit_factor": 1.2380408110152032,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1480726,
+                "without_top10_cents": 409002,
+                "median_trade_net_cents": 16407.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HY85",
+          "evaluation": "HY85",
+          "funded": "HY85",
+          "normal": {
+            "cash": 1856.55,
+            "median": 76.0,
+            "paid": 58,
+            "days": 85.5,
+            "endMedian": 7600.0,
+            "monthlyMean": -8157,
+            "monthlyMedian": -26400
+          },
+          "stress": {
+            "cash": 1258.45,
+            "median": 76.0,
+            "paid": 50,
+            "days": 87.5,
+            "endMedian": 7600.0,
+            "monthlyMean": -17132,
+            "monthlyMedian": -30800
+          },
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 20443.22,
+          "without_top3": 14469.76,
+          "without_top10": 3740.02,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6167146974063401,
+                "net_cents": 3121354,
+                "profit_factor": 1.3723213734034998,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2516508,
+                "without_top10_cents": 1426034,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6127167630057804,
+                "net_cents": 2909322,
+                "profit_factor": 1.3467519056729436,
+                "max_open_mark_drawdown_cents": 762464,
+                "without_top3_cents": 2304476,
+                "without_top10_cents": 1214002,
+                "median_trade_net_cents": 18907.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6080691642651297,
+                "net_cents": 2253854,
+                "profit_factor": 1.2584354720273065,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1656508,
+                "without_top10_cents": 583534,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6040462427745664,
+                "net_cents": 2044322,
+                "profit_factor": 1.234162233290105,
+                "max_open_mark_drawdown_cents": 882464,
+                "without_top3_cents": 1446976,
+                "without_top10_cents": 374002,
+                "median_trade_net_cents": 16407.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HY120",
+          "evaluation": "HY120",
+          "funded": "HY120",
+          "normal": {
+            "cash": 1542.1,
+            "median": 2113.58,
+            "paid": 93,
+            "days": 92,
+            "endMedian": 211358.0,
+            "monthlyMean": -5669,
+            "monthlyMedian": -22000
+          },
+          "stress": {
+            "cash": 648.74,
+            "median": 76.0,
+            "paid": 31,
+            "days": 118,
+            "endMedian": 7600.0,
+            "monthlyMean": -25757,
+            "monthlyMedian": -26400
+          },
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 21343.22,
+          "without_top3": 15369.76,
+          "without_top10": 4402.52,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.622478386167147,
+                "net_cents": 3213854,
+                "profit_factor": 1.379605136028597,
+                "max_open_mark_drawdown_cents": 751214,
+                "without_top3_cents": 2609008,
+                "without_top10_cents": 1494784,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6184971098265896,
+                "net_cents": 2999322,
+                "profit_factor": 1.3539847511384953,
+                "max_open_mark_drawdown_cents": 751214,
+                "without_top3_cents": 2394476,
+                "without_top10_cents": 1280252,
+                "median_trade_net_cents": 18282.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6080691642651297,
+                "net_cents": 2346354,
+                "profit_factor": 1.2666342268967208,
+                "max_open_mark_drawdown_cents": 871214,
+                "without_top3_cents": 1749008,
+                "without_top10_cents": 652284,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6040462427745664,
+                "net_cents": 2134322,
+                "profit_factor": 1.242285605048225,
+                "max_open_mark_drawdown_cents": 885414,
+                "without_top3_cents": 1536976,
+                "without_top10_cents": 440252,
+                "median_trade_net_cents": 15782.0
+              }
+            }
+          }
+        },
+        {
+          "key": "HY18b",
+          "evaluation": "HY18b",
+          "funded": "HY18b",
+          "normal": {
+            "cash": 1537.06,
+            "median": 2113.58,
+            "paid": 93,
+            "days": 92,
+            "endMedian": 211358.0,
+            "monthlyMean": -5673,
+            "monthlyMedian": -22000
+          },
+          "stress": {
+            "cash": 644.83,
+            "median": 76.0,
+            "paid": 31,
+            "days": 118,
+            "endMedian": 7600.0,
+            "monthlyMean": -25757,
+            "monthlyMedian": -26400
+          },
+          "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+          "trade_net": 20743.22,
+          "without_top3": 14769.76,
+          "without_top10": 3802.52,
+          "history_integrity": {
+            "state": "complete",
+            "mode": 1
+          },
+          "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+          "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+          "metrics_phase": "Funded unter Tickstress",
+          "native_strategy_metrics": {
+            "normal": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6138328530259366,
+                "net_cents": 3153854,
+                "profit_factor": 1.370215761028163,
+                "max_open_mark_drawdown_cents": 751214,
+                "without_top3_cents": 2549008,
+                "without_top10_cents": 1434784,
+                "median_trade_net_cents": 19532
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6098265895953757,
+                "net_cents": 2939322,
+                "profit_factor": 1.344761004400822,
+                "max_open_mark_drawdown_cents": 751214,
+                "without_top3_cents": 2334476,
+                "without_top10_cents": 1220252,
+                "median_trade_net_cents": 18282.0
+              }
+            },
+            "stress": {
+              "evaluation": {
+                "trades": 347,
+                "win_rate": 0.6051873198847262,
+                "net_cents": 2286354,
+                "profit_factor": 1.258079248539019,
+                "max_open_mark_drawdown_cents": 871214,
+                "without_top3_cents": 1689008,
+                "without_top10_cents": 592284,
+                "median_trade_net_cents": 17032
+              },
+              "funded": {
+                "trades": 346,
+                "win_rate": 0.6011560693641619,
+                "net_cents": 2074322,
+                "profit_factor": 1.2339021060776465,
+                "max_open_mark_drawdown_cents": 885414,
+                "without_top3_cents": 1476976,
+                "without_top10_cents": 380252,
+                "median_trade_net_cents": 15782.0
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "sources": {
+    "SQX-HYcomb-Endbargeld.json": "5d4715f7b2a039136d17bb47c51225d291d33397490f6c30bce7792cfd1dda83",
+    "SQX-MFF-Budget-Basisstrategien.json": "242486eafb0e2209ba225c5f89561d149bb540470e1272e6dc89d32e6220e43f",
+    "Eval-Funded-Budgetvergleich.json": "d9ea7c1c0768b5b626503ac2b1e5d8e67ff5fe87f374eb0544c3b90c29b7e43f",
+    "SQX-MFF-Leaderboard-v2.json": "f73d22fd215e975bfad1ec319e9f73457dcecfa437784a5edda2d47b6a29312d",
+    "Portfolio-Vergleich.json": "0996cbe38597497ee904e7c0af1e49ec58f97950d71505c77127b0ea50ac8c86",
+    "Vergleich.json": "6a27bf922ca2e0a1533e06387fedcd54bfc106ab79c54a1dd819daebff47f267",
+    "full_board_strict_MFF": "bb70898a9283bbc4a1f87aa9768e939e69f0dd61bbda852f52ad674d07525169",
+    "matched242": "5150af19f2561002d4daa046884900ea668b982b71844daefc01c1fa7a63fe4d"
+  },
+  "history_integrity": {
+    "state": "complete",
+    "scope": "All25 original pairs, same242 dates, official fees; native reference signals unchanged."
+  },
+  "method_note": "Native SQX 144-Signale und kontrollierte Ein-Kontrakt-Fills; variable Mengen, Ausführungsvolumen und Endbargeld im separaten Kontoreplay. 24.11.2025–30.10.2026 · 242 Sitzungen · 143 überlappende Startfenster von je 100 Sitzungen · keine frische OOS-Prüfung. MFF: 4,68 $ je ES/NQ-Roundtrip; alter Kostenzuschlag separat im Stückzahltest.",
+  "excluded_master_rows": {
+    "rapid_eod_50k": [
+      {
+        "key": "HY104-NQ-Open30",
+        "evaluation": "HY104-NQ-Open30",
+        "funded": "HY104-NQ-Open30",
+        "market": "NQ",
+        "name": "HY 3 · zusätzlicher ROC(5)-Ausstieg",
+        "settings": "Einstieg ab 09:00 Chicago",
+        "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+        "funded_without_top10": -5991.48,
+        "normal": {
+          "cash": 5843.03,
+          "median": 5509.96,
+          "paid": 136,
+          "days": 53.0,
+          "endMedian": 550996.0,
+          "monthlyMean": 110776,
+          "monthlyMedian": 120240
+        },
+        "stress": {
+          "cash": 4761.67,
+          "median": 4382.2,
+          "paid": 138,
+          "days": 60.0,
+          "endMedian": 438220.0,
+          "monthlyMean": 75480,
+          "monthlyMedian": 90923
+        },
+        "trade_net": 22292.56,
+        "without_top3": 11651.6,
+        "without_top10": -6310.64,
+        "history_integrity": {
+          "state": "complete",
+          "mode": 1
+        },
+        "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+        "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+        "metrics_phase": "Funded unter Tickstress",
+        "native_strategy_metrics": {
+          "normal": {
+            "evaluation": {
+              "trades": 258,
+              "win_rate": 0.5077519379844961,
+              "net_cents": 2666256,
+              "profit_factor": 1.2975919466359267,
+              "max_open_mark_drawdown_cents": 1059804,
+              "without_top3_cents": 1599160,
+              "without_top10_cents": -204064,
+              "median_trade_net_cents": 1032.0
+            },
+            "funded": {
+              "trades": 258,
+              "win_rate": 0.5,
+              "net_cents": 2487256,
+              "profit_factor": 1.2756765072422196,
+              "max_open_mark_drawdown_cents": 1059804,
+              "without_top3_cents": 1420160,
+              "without_top10_cents": -383064,
+              "median_trade_net_cents": 32.0
+            }
+          },
+          "stress": {
+            "evaluation": {
+              "trades": 258,
+              "win_rate": 0.5,
+              "net_cents": 2408256,
+              "profit_factor": 1.2650112705851593,
+              "max_open_mark_drawdown_cents": 1112804,
+              "without_top3_cents": 1344160,
+              "without_top10_cents": -452064,
+              "median_trade_net_cents": 32.0
+            },
+            "funded": {
+              "trades": 258,
+              "win_rate": 0.49224806201550386,
+              "net_cents": 2229256,
+              "profit_factor": 1.2435730965347758,
+              "max_open_mark_drawdown_cents": 1112804,
+              "without_top3_cents": 1165160,
+              "without_top10_cents": -631064,
+              "median_trade_net_cents": -968.0
+            }
+          }
+        },
+        "exclusion": "Funded-Tickstress netto ohne Top10 negativ; Daten bleiben verfügbar."
+      }
+    ],
+    "pro_50k": [
+      {
+        "key": "HY104-NQ-Open30",
+        "evaluation": "HY104-NQ-Open30",
+        "funded": "HY104-NQ-Open30",
+        "market": "NQ",
+        "name": "HY 3 · zusätzlicher ROC(5)-Ausstieg",
+        "settings": "Einstieg ab 09:00 Chicago",
+        "proof": "Micro-RiskSize-20261120/Matched-MFF/results.json",
+        "funded_without_top10": -5991.48,
+        "normal": {
+          "cash": 4890.24,
+          "median": 5814.74,
+          "paid": 133,
+          "days": 55,
+          "endMedian": 581474.0,
+          "monthlyMean": 91258,
+          "monthlyMedian": 80772
+        },
+        "stress": {
+          "cash": 4637.37,
+          "median": 5478.74,
+          "paid": 133,
+          "days": 55,
+          "endMedian": 547874.0,
+          "monthlyMean": 84987,
+          "monthlyMedian": 73305
+        },
+        "trade_net": 22292.56,
+        "without_top3": 11651.6,
+        "without_top10": -6310.64,
+        "history_integrity": {
+          "state": "complete",
+          "mode": 1
+        },
+        "status": "242 Sitzungen · gleiche Tage wie Micros · OOS offen",
+        "source_pipeline": "native_SQX144_custom_action_then_separate_account_replay",
+        "metrics_phase": "Funded unter Tickstress",
+        "native_strategy_metrics": {
+          "normal": {
+            "evaluation": {
+              "trades": 258,
+              "win_rate": 0.5077519379844961,
+              "net_cents": 2666256,
+              "profit_factor": 1.2975919466359267,
+              "max_open_mark_drawdown_cents": 1059804,
+              "without_top3_cents": 1599160,
+              "without_top10_cents": -204064,
+              "median_trade_net_cents": 1032.0
+            },
+            "funded": {
+              "trades": 258,
+              "win_rate": 0.5,
+              "net_cents": 2487256,
+              "profit_factor": 1.2756765072422196,
+              "max_open_mark_drawdown_cents": 1059804,
+              "without_top3_cents": 1420160,
+              "without_top10_cents": -383064,
+              "median_trade_net_cents": 32.0
+            }
+          },
+          "stress": {
+            "evaluation": {
+              "trades": 258,
+              "win_rate": 0.5,
+              "net_cents": 2408256,
+              "profit_factor": 1.2650112705851593,
+              "max_open_mark_drawdown_cents": 1112804,
+              "without_top3_cents": 1344160,
+              "without_top10_cents": -452064,
+              "median_trade_net_cents": 32.0
+            },
+            "funded": {
+              "trades": 258,
+              "win_rate": 0.49224806201550386,
+              "net_cents": 2229256,
+              "profit_factor": 1.2435730965347758,
+              "max_open_mark_drawdown_cents": 1112804,
+              "without_top3_cents": 1165160,
+              "without_top10_cents": -631064,
+              "median_trade_net_cents": -968.0
+            }
+          }
+        },
+        "exclusion": "Funded-Tickstress netto ohne Top10 negativ; Daten bleiben verfügbar."
+      }
+    ]
+  },
+  "post_selection": true,
+  "fresh_OOS": false,
+  "independent_probability_claim": false,
+  "legacy_combinations_scope": {
+    "starts": 146,
+    "sessions": 245,
+    "period": [
+      "2025-11-19",
+      "2026-10-30"
+    ]
+  }
+}

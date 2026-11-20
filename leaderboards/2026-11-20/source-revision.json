@@ -1,0 +1,16 @@
+{
+  "revision": "history-micro-20261120-7460a2f26d22",
+  "base": "/board-revisions/history-micro-20261120-7460a2f26d22/",
+  "native_engine": "SQX144.2953",
+  "cash_engine": "frozen_reference_rules_with_causal_size_input",
+  "method_note": "Native SQX 144-Signale und kontrollierte Ein-Kontrakt-Fills; variable Mengen, Ausführungsvolumen und Endbargeld im separaten Kontoreplay. 24.11.2025–30.10.2026 · 242 Sitzungen · 143 überlappende Startfenster von je 100 Sitzungen · keine frische OOS-Prüfung.",
+  "fresh_OOS": false,
+  "independent_probability_claim": false,
+  "source_files_sha256": {
+    "cash-rankings.json": "9b3b2e6894e7e394932cbe87199041c939a38cfdf94cd6d09dbca928af800818",
+    "tradeday-liquidity.json": "b196aa91762c75bc07d2abbf7d73e89346f07f29b0f0047b354b491bb32b394e",
+    "tradeday-vergleich.json": "daef0faafbd6c221878f6491d16d26912975a8a0a3cd2a42c9822cf55f2844a7",
+    "micro-risk-size.json": "68bb001a336f9426696818a2c506e3086799da191870858c2067f679d58ea98e"
+  },
+  "export_note": "Resolved active revision base; unversioned app/static fallbacks may contain older 245-session values. Exports are derived aggregates, not an independent rerun."
+}

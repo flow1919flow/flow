@@ -1,0 +1,4 @@
+# Versions observed in the local training environment; no environment changes made.
+numpy==2.5.5
+scikit-learn==1.9.1
+mlflow==3.18.0

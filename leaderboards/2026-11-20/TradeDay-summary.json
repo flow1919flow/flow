@@ -1,0 +1,874 @@
+{
+  "state": "complete",
+  "history_mode": 1,
+  "period": [
+    "2025-11-24",
+    "2026-10-30"
+  ],
+  "sessions": 242,
+  "starts": 143,
+  "horizon": 100,
+  "horizon_sessions": 100,
+  "budget_cents": 100000,
+  "profiles": {
+    "50k-1x1NQ": {
+      "size": 50,
+      "quantity": 1,
+      "copies": 1,
+      "rates": {
+        "sale": {
+          "fee": 9900,
+          "normal": {
+            "summary": {
+              "end_mean": 448003,
+              "end_median": 530500,
+              "monthly_mean": 60401.14685314685,
+              "monthly_median": 66800.0,
+              "median_fees_90": 39600,
+              "median_fees_end": 39600,
+              "first_paid_days": 60,
+              "ever_paid": 143,
+              "paid_by_90": 127,
+              "first_eval_passes": 52,
+              "review_windows": 40,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 143,
+                    "probability": 1.0,
+                    "median_days_since_initial_purchase": 28
+                  },
+                  "funded_start": {
+                    "count": 143,
+                    "probability": 1.0,
+                    "median_days_since_initial_purchase": 29
+                  },
+                  "first_payout": {
+                    "count": 143,
+                    "probability": 1.0,
+                    "median_days_since_initial_purchase": 60
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          },
+          "stress": {
+            "summary": {
+              "end_mean": 402205,
+              "end_median": 420400,
+              "monthly_mean": 46291.63636363636,
+              "monthly_median": 63500.0,
+              "median_fees_90": 39600,
+              "median_fees_end": 49500,
+              "first_paid_days": 61,
+              "ever_paid": 143,
+              "paid_by_90": 123,
+              "first_eval_passes": 43,
+              "review_windows": 21,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 143,
+                    "probability": 1.0,
+                    "median_days_since_initial_purchase": 31
+                  },
+                  "funded_start": {
+                    "count": 143,
+                    "probability": 1.0,
+                    "median_days_since_initial_purchase": 33
+                  },
+                  "first_payout": {
+                    "count": 143,
+                    "probability": 1.0,
+                    "median_days_since_initial_purchase": 61
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          }
+        },
+        "list": {
+          "fee": 24800,
+          "normal": {
+            "summary": {
+              "end_mean": 332653,
+              "end_median": 410400,
+              "monthly_mean": 32014.433566433567,
+              "monthly_median": 46933.333333333336,
+              "median_fees_90": 99200,
+              "median_fees_end": 99200,
+              "first_paid_days": 41,
+              "ever_paid": 87,
+              "paid_by_90": 87,
+              "first_eval_passes": 52,
+              "review_windows": 39,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 118,
+                    "probability": 0.8251748251748252,
+                    "median_days_since_initial_purchase": 25.0
+                  },
+                  "funded_start": {
+                    "count": 118,
+                    "probability": 0.8251748251748252,
+                    "median_days_since_initial_purchase": 26.0
+                  },
+                  "first_payout": {
+                    "count": 87,
+                    "probability": 0.6083916083916084,
+                    "median_days_since_initial_purchase": 41
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          },
+          "stress": {
+            "summary": {
+              "end_mean": 286976,
+              "end_median": 240800,
+              "monthly_mean": 18668.559440559442,
+              "monthly_median": 6933.333333333333,
+              "median_fees_90": 99200,
+              "median_fees_end": 99200,
+              "first_paid_days": 42,
+              "ever_paid": 91,
+              "paid_by_90": 82,
+              "first_eval_passes": 43,
+              "review_windows": 21,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 117,
+                    "probability": 0.8181818181818182,
+                    "median_days_since_initial_purchase": 26
+                  },
+                  "funded_start": {
+                    "count": 117,
+                    "probability": 0.8181818181818182,
+                    "median_days_since_initial_purchase": 27
+                  },
+                  "first_payout": {
+                    "count": 91,
+                    "probability": 0.6363636363636364,
+                    "median_days_since_initial_purchase": 42
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          }
+        }
+      }
+    },
+    "50k-2x1NQ": {
+      "size": 50,
+      "quantity": 1,
+      "copies": 2,
+      "rates": {
+        "sale": {
+          "fee": 9900,
+          "normal": {
+            "summary": {
+              "end_mean": 774837,
+              "end_median": 961000,
+              "monthly_mean": 114989.71794871795,
+              "monthly_median": 133600.0,
+              "median_fees_90": 79200,
+              "median_fees_end": 79200,
+              "first_paid_days": 51.0,
+              "ever_paid": 116,
+              "paid_by_90": 113,
+              "first_eval_passes": 52,
+              "review_windows": 40,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 138,
+                    "probability": 0.965034965034965,
+                    "median_days_since_initial_purchase": 27.5
+                  },
+                  "funded_start": {
+                    "count": 138,
+                    "probability": 0.965034965034965,
+                    "median_days_since_initial_purchase": 28.5
+                  },
+                  "first_payout": {
+                    "count": 116,
+                    "probability": 0.8111888111888111,
+                    "median_days_since_initial_purchase": 51.0
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          },
+          "stress": {
+            "summary": {
+              "end_mean": 681086,
+              "end_median": 740800,
+              "monthly_mean": 90366.5268065268,
+              "monthly_median": 127000.0,
+              "median_fees_90": 79200,
+              "median_fees_end": 99000,
+              "first_paid_days": 53,
+              "ever_paid": 117,
+              "paid_by_90": 108,
+              "first_eval_passes": 43,
+              "review_windows": 21,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 137,
+                    "probability": 0.958041958041958,
+                    "median_days_since_initial_purchase": 30
+                  },
+                  "funded_start": {
+                    "count": 137,
+                    "probability": 0.958041958041958,
+                    "median_days_since_initial_purchase": 32
+                  },
+                  "first_payout": {
+                    "count": 117,
+                    "probability": 0.8181818181818182,
+                    "median_days_since_initial_purchase": 53
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          }
+        },
+        "list": {
+          "fee": 24800,
+          "normal": {
+            "summary": {
+              "end_mean": 378222,
+              "end_median": 800,
+              "monthly_mean": 39034.24009324009,
+              "monthly_median": -33066.666666666664,
+              "median_fees_90": 99200,
+              "median_fees_end": 99200,
+              "first_paid_days": 32,
+              "ever_paid": 49,
+              "paid_by_90": 49,
+              "first_eval_passes": 52,
+              "review_windows": 24,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 78,
+                    "probability": 0.5454545454545454,
+                    "median_days_since_initial_purchase": 19.0
+                  },
+                  "funded_start": {
+                    "count": 78,
+                    "probability": 0.5454545454545454,
+                    "median_days_since_initial_purchase": 20.0
+                  },
+                  "first_payout": {
+                    "count": 49,
+                    "probability": 0.34265734265734266,
+                    "median_days_since_initial_purchase": 32
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          },
+          "stress": {
+            "summary": {
+              "end_mean": 268281,
+              "end_median": 800,
+              "monthly_mean": 22989.83682983683,
+              "monthly_median": -33066.666666666664,
+              "median_fees_90": 99200,
+              "median_fees_end": 99200,
+              "first_paid_days": 33,
+              "ever_paid": 45,
+              "paid_by_90": 45,
+              "first_eval_passes": 43,
+              "review_windows": 15,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 77,
+                    "probability": 0.5384615384615384,
+                    "median_days_since_initial_purchase": 19
+                  },
+                  "funded_start": {
+                    "count": 77,
+                    "probability": 0.5384615384615384,
+                    "median_days_since_initial_purchase": 20
+                  },
+                  "first_payout": {
+                    "count": 45,
+                    "probability": 0.3146853146853147,
+                    "median_days_since_initial_purchase": 33
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          }
+        }
+      }
+    },
+    "100k-1x2NQ": {
+      "size": 100,
+      "quantity": 2,
+      "copies": 1,
+      "rates": {
+        "sale": {
+          "fee": 19900,
+          "normal": {
+            "summary": {
+              "end_mean": 465059,
+              "end_median": 600500,
+              "monthly_mean": 55574.12587412587,
+              "monthly_median": 73466.66666666667,
+              "median_fees_90": 79600,
+              "median_fees_end": 99500,
+              "first_paid_days": 47.5,
+              "ever_paid": 104,
+              "paid_by_90": 101,
+              "first_eval_passes": 43,
+              "review_windows": 36,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 125,
+                    "probability": 0.8741258741258742,
+                    "median_days_since_initial_purchase": 27
+                  },
+                  "funded_start": {
+                    "count": 125,
+                    "probability": 0.8741258741258742,
+                    "median_days_since_initial_purchase": 28
+                  },
+                  "first_payout": {
+                    "count": 104,
+                    "probability": 0.7272727272727273,
+                    "median_days_since_initial_purchase": 47.5
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          },
+          "stress": {
+            "summary": {
+              "end_mean": 433045,
+              "end_median": 600500,
+              "monthly_mean": 46019.34731934732,
+              "monthly_median": 66833.33333333333,
+              "median_fees_90": 79600,
+              "median_fees_end": 99500,
+              "first_paid_days": 47,
+              "ever_paid": 101,
+              "paid_by_90": 93,
+              "first_eval_passes": 39,
+              "review_windows": 33,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 120,
+                    "probability": 0.8391608391608392,
+                    "median_days_since_initial_purchase": 26.5
+                  },
+                  "funded_start": {
+                    "count": 120,
+                    "probability": 0.8391608391608392,
+                    "median_days_since_initial_purchase": 27.5
+                  },
+                  "first_payout": {
+                    "count": 101,
+                    "probability": 0.7062937062937062,
+                    "median_days_since_initial_purchase": 47
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          }
+        },
+        "list": {
+          "fee": 49800,
+          "normal": {
+            "summary": {
+              "end_mean": 214352,
+              "end_median": 400,
+              "monthly_mean": 12243.356643356643,
+              "monthly_median": -33200.0,
+              "median_fees_90": 99600,
+              "median_fees_end": 99600,
+              "first_paid_days": 32,
+              "ever_paid": 49,
+              "paid_by_90": 49,
+              "first_eval_passes": 43,
+              "review_windows": 21,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 78,
+                    "probability": 0.5454545454545454,
+                    "median_days_since_initial_purchase": 19.0
+                  },
+                  "funded_start": {
+                    "count": 78,
+                    "probability": 0.5454545454545454,
+                    "median_days_since_initial_purchase": 20.0
+                  },
+                  "first_payout": {
+                    "count": 49,
+                    "probability": 0.34265734265734266,
+                    "median_days_since_initial_purchase": 32
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          },
+          "stress": {
+            "summary": {
+              "end_mean": 190936,
+              "end_median": 400,
+              "monthly_mean": 4787.4125874125875,
+              "monthly_median": -33200.0,
+              "median_fees_90": 99600,
+              "median_fees_end": 99600,
+              "first_paid_days": 32,
+              "ever_paid": 45,
+              "paid_by_90": 45,
+              "first_eval_passes": 39,
+              "review_windows": 18,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 76,
+                    "probability": 0.5314685314685315,
+                    "median_days_since_initial_purchase": 18.5
+                  },
+                  "funded_start": {
+                    "count": 76,
+                    "probability": 0.5314685314685315,
+                    "median_days_since_initial_purchase": 19.5
+                  },
+                  "first_payout": {
+                    "count": 45,
+                    "probability": 0.3146853146853147,
+                    "median_days_since_initial_purchase": 32
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          }
+        }
+      }
+    },
+    "100k-2x2NQ": {
+      "size": 100,
+      "quantity": 2,
+      "copies": 2,
+      "rates": {
+        "sale": {
+          "fee": 19900,
+          "normal": {
+            "summary": {
+              "end_mean": 512261,
+              "end_median": 500,
+              "monthly_mean": 68328.67132867132,
+              "monthly_median": -33166.666666666664,
+              "median_fees_90": 99500,
+              "median_fees_end": 99500,
+              "first_paid_days": 33,
+              "ever_paid": 61,
+              "paid_by_90": 61,
+              "first_eval_passes": 43,
+              "review_windows": 31,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 97,
+                    "probability": 0.6783216783216783,
+                    "median_days_since_initial_purchase": 21
+                  },
+                  "funded_start": {
+                    "count": 97,
+                    "probability": 0.6783216783216783,
+                    "median_days_since_initial_purchase": 22
+                  },
+                  "first_payout": {
+                    "count": 61,
+                    "probability": 0.42657342657342656,
+                    "median_days_since_initial_purchase": 33
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          },
+          "stress": {
+            "summary": {
+              "end_mean": 462339,
+              "end_median": 500,
+              "monthly_mean": 50243.12354312354,
+              "monthly_median": -33166.666666666664,
+              "median_fees_90": 99500,
+              "median_fees_end": 99500,
+              "first_paid_days": 34,
+              "ever_paid": 59,
+              "paid_by_90": 55,
+              "first_eval_passes": 39,
+              "review_windows": 31,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 97,
+                    "probability": 0.6783216783216783,
+                    "median_days_since_initial_purchase": 21
+                  },
+                  "funded_start": {
+                    "count": 97,
+                    "probability": 0.6783216783216783,
+                    "median_days_since_initial_purchase": 22
+                  },
+                  "first_payout": {
+                    "count": 59,
+                    "probability": 0.4125874125874126,
+                    "median_days_since_initial_purchase": 34
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          }
+        },
+        "list": {
+          "fee": 49800,
+          "normal": {
+            "summary": {
+              "end_mean": 281519,
+              "end_median": 400,
+              "monthly_mean": 28688.11188811189,
+              "monthly_median": -33200.0,
+              "median_fees_90": 99600,
+              "median_fees_end": 99600,
+              "first_paid_days": 30,
+              "ever_paid": 33,
+              "paid_by_90": 33,
+              "first_eval_passes": 43,
+              "review_windows": 20,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 46,
+                    "probability": 0.32167832167832167,
+                    "median_days_since_initial_purchase": 14.5
+                  },
+                  "funded_start": {
+                    "count": 46,
+                    "probability": 0.32167832167832167,
+                    "median_days_since_initial_purchase": 15.5
+                  },
+                  "first_payout": {
+                    "count": 33,
+                    "probability": 0.23076923076923078,
+                    "median_days_since_initial_purchase": 30
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          },
+          "stress": {
+            "summary": {
+              "end_mean": 236414,
+              "end_median": 400,
+              "monthly_mean": 12953.846153846154,
+              "monthly_median": -33200.0,
+              "median_fees_90": 99600,
+              "median_fees_end": 99600,
+              "first_paid_days": 29,
+              "ever_paid": 29,
+              "paid_by_90": 29,
+              "first_eval_passes": 39,
+              "review_windows": 20,
+              "journey": {
+                "scope": "budget-start cohort; any account/replacement; durations since initial purchase; medians conditional on observed reach",
+                "starts": 143,
+                "stages": {
+                  "eval_pass": {
+                    "count": 42,
+                    "probability": 0.2937062937062937,
+                    "median_days_since_initial_purchase": 14.0
+                  },
+                  "funded_start": {
+                    "count": 42,
+                    "probability": 0.2937062937062937,
+                    "median_days_since_initial_purchase": 15.0
+                  },
+                  "first_payout": {
+                    "count": 29,
+                    "probability": 0.20279720279720279,
+                    "median_days_since_initial_purchase": 29
+                  }
+                },
+                "funded_end": null,
+                "funded_end_reason": "No uniform funded-end field asserted; complete actual status/terminal records retained in cohort file."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "quote_quality": {
+    "1/1/0/0": {
+      "legs": 524,
+      "delayed": 0,
+      "cost_ticks": 0,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 0
+    },
+    "1/1/0/1": {
+      "legs": 0,
+      "delayed": 0,
+      "cost_ticks": 0,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 0
+    },
+    "1/1/1/0": {
+      "legs": 524,
+      "delayed": 0,
+      "cost_ticks": 0,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 0
+    },
+    "1/1/1/1": {
+      "legs": 524,
+      "delayed": 223,
+      "cost_ticks": 71,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 7151341965
+    },
+    "1/1/2/0": {
+      "legs": 524,
+      "delayed": 0,
+      "cost_ticks": 0,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 0
+    },
+    "1/1/2/1": {
+      "legs": 538,
+      "delayed": 178,
+      "cost_ticks": 65,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 7151341965
+    },
+    "1/2/0/0": {
+      "legs": 538,
+      "delayed": 0,
+      "cost_ticks": 0,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 0
+    },
+    "1/2/0/1": {
+      "legs": 0,
+      "delayed": 0,
+      "cost_ticks": 0,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 0
+    },
+    "1/2/1/0": {
+      "legs": 538,
+      "delayed": 0,
+      "cost_ticks": 0,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 0
+    },
+    "1/2/1/1": {
+      "legs": 524,
+      "delayed": 178,
+      "cost_ticks": 65,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 7151341965
+    },
+    "1/2/2/0": {
+      "legs": 538,
+      "delayed": 0,
+      "cost_ticks": 0,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 0
+    },
+    "1/2/2/1": {
+      "legs": 538,
+      "delayed": 230,
+      "cost_ticks": 79,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 7151341965
+    },
+    "2/1/0/0": {
+      "legs": 1048,
+      "delayed": 223,
+      "cost_ticks": 71,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 7151341965
+    },
+    "2/1/0/1": {
+      "legs": 0,
+      "delayed": 0,
+      "cost_ticks": 0,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 0
+    },
+    "2/1/1/0": {
+      "legs": 1048,
+      "delayed": 223,
+      "cost_ticks": 71,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 7151341965
+    },
+    "2/1/1/1": {
+      "legs": 1048,
+      "delayed": 813,
+      "cost_ticks": -67,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 7152028731
+    },
+    "2/1/2/0": {
+      "legs": 1048,
+      "delayed": 223,
+      "cost_ticks": 71,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 7151341965
+    },
+    "2/1/2/1": {
+      "legs": 1076,
+      "delayed": 692,
+      "cost_ticks": -78,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 7152028731
+    },
+    "2/2/0/0": {
+      "legs": 1076,
+      "delayed": 230,
+      "cost_ticks": 79,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 7151341965
+    },
+    "2/2/0/1": {
+      "legs": 0,
+      "delayed": 0,
+      "cost_ticks": 0,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 0
+    },
+    "2/2/1/0": {
+      "legs": 1076,
+      "delayed": 230,
+      "cost_ticks": 79,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 7151341965
+    },
+    "2/2/1/1": {
+      "legs": 1048,
+      "delayed": 685,
+      "cost_ticks": -86,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 7152028731
+    },
+    "2/2/2/0": {
+      "legs": 1076,
+      "delayed": 230,
+      "cost_ticks": 79,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 7151341965
+    },
+    "2/2/2/1": {
+      "legs": 1076,
+      "delayed": 831,
+      "cost_ticks": -66,
+      "missing_entry_lots": 0,
+      "skipped_orders": 0,
+      "max_delay_ns": 7152028731
+    }
+  },
+  "pending_fill_rule": "Shared per-side/per-price liquidity credit persists through price flicker for a pending-order batch. Only positive observed size growth adds capacity. Reset when no order on that side is pending.",
+  "scope": "Same verified SQX orders and unchanged account model; visible top-of-book waiting approximation, not full depth.",
+  "method_note": "Native SQX 144-Signale und kontrollierte Ein-Kontrakt-Fills; variable Mengen, Ausführungsvolumen und Endbargeld im separaten Kontoreplay. 24.11.2025–30.10.2026 · 242 Sitzungen · 143 überlappende Startfenster von je 100 Sitzungen · keine frische OOS-Prüfung.",
+  "volume_note": "Vier Profile auf denselben242 Tagen neu gerechnet: gemeinsamer TBBO-Verbrauch bleibt bei Preisflackern gespeichert. Wartende Restmenge, sichtbares Top-of-Book; keine vollständige Markttiefe.",
+  "export_note": "Summary-only export; daily timelines and purchase ledgers remain in the original source file bound by source-revision.json."
+}

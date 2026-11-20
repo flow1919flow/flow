@@ -1,0 +1,239 @@
+{
+  "state": "first_classifier_and_native_cash_comparison_complete_no_improvement",
+  "data_period": [
+    "2025-11-24",
+    "2026-10-30"
+  ],
+  "sessions": 242,
+  "unique_setup_candidates": 347,
+  "training": {
+    "model": "StandardScaler + L2 LogisticRegression",
+    "C": 0.1,
+    "features": [
+      "planned_stop_risk_usd",
+      "bollinger_keltner_width_ratio",
+      "signed_completed_ema_slope_atr",
+      "completed_relative_volume20",
+      "chicago_session_minute"
+    ],
+    "chronological_blocks": 9,
+    "metrics": {
+      "predicted_candidates": 230,
+      "skipped_candidates": 35,
+      "observed_positive_rate": 0.6521739130434783,
+      "brier": 0.22870762197515923,
+      "dummy_brier": 0.22985302980541505,
+      "log_loss": 0.6498616433608025,
+      "dummy_log_loss": 0.6524803173417987,
+      "auc": 0.5001666666666666,
+      "calibration_claim": "Unconfirmed; scores have not been independently calibrated.",
+      "financial_claim": "Training-stage metrics alone provide no financial claim. The subsequent completed native gate/account comparison is recorded in cash below and is worse than baseline."
+    }
+  },
+  "cash": {
+    "plan": "MFF Rapid EOD 50k",
+    "initial_purchase_budget_usd": 1000,
+    "horizon_sessions": 100,
+    "overlapping_starts": 143,
+    "evaluation_both": "HY104 EMA22",
+    "funded_reference": "C28.03",
+    "funded_candidate": "C28.03 plus chronological ML1 entry gate",
+    "results": {
+      "normal": {
+        "base": {
+          "mean_end_cash_usd": 8424.89,
+          "median_end_cash_usd": 9899.36
+        },
+        "ML1": {
+          "mean_end_cash_usd": 6940.33,
+          "median_end_cash_usd": 6966.99
+        }
+      },
+      "stress": {
+        "base": {
+          "mean_end_cash_usd": 6860.65,
+          "median_end_cash_usd": 7142.94
+        },
+        "ML1": {
+          "mean_end_cash_usd": 5889.35,
+          "median_end_cash_usd": 5964.3
+        }
+      }
+    },
+    "original_account_counterchecks": 3619,
+    "meaning": "End cash includes unspent original purchase budget and payouts after all challenge purchases; subtract1000 for gain."
+  },
+  "native_acceptance": [
+    {
+      "segment": "jahr-ergaenzung-ESH6",
+      "kind": "observer",
+      "state": "native_observer_parity_verified",
+      "seconds": null,
+      "feature_rows": 94,
+      "source_sha256": "cfbfb28af24e648c1656656539d5d2583f3b0dca0afd050e77449c95f85f4db6",
+      "original_native_trades_identical": true,
+      "candidates_identical": true,
+      "replicas_identical": true,
+      "features_sha256": "cb9a416d552c909945064bbee651e55ade8f5236173ff3eead6afb0e3db17a9e",
+      "trades_sha256": "e023d12bc0d036305d6a07f3de1aa1907d5f47449a1dbeec04fe32d897b98dac"
+    },
+    {
+      "segment": "jahr-ergaenzung-ESZ5",
+      "kind": "observer",
+      "state": "native_observer_parity_verified",
+      "seconds": 33.37,
+      "feature_rows": 28,
+      "source_sha256": "cfbfb28af24e648c1656656539d5d2583f3b0dca0afd050e77449c95f85f4db6",
+      "original_native_trades_identical": true,
+      "candidates_identical": true,
+      "replicas_identical": true,
+      "features_sha256": "6bdcd8f7860e099abcf6c0d0acffdfa4855780080e3f854631cc695bc4ecdd3f",
+      "trades_sha256": "84339d927b60979a70287f351dd8846dcbe9ac302099b770f16f503b2b69d796"
+    },
+    {
+      "segment": "jahr-uebergang-ESM6",
+      "kind": "observer",
+      "state": "native_observer_parity_verified",
+      "seconds": 63.22,
+      "feature_rows": 92,
+      "source_sha256": "cfbfb28af24e648c1656656539d5d2583f3b0dca0afd050e77449c95f85f4db6",
+      "original_native_trades_identical": true,
+      "candidates_identical": true,
+      "replicas_identical": true,
+      "features_sha256": "6197d11c67c147d803bc87ff75c0157e00cd7b69a884f9b4652774f7bfadae4b",
+      "trades_sha256": "14993ec82d1b8754478f5c33b4b0c81b28a9f34c94047d19f556dfc7ad384f3e"
+    },
+    {
+      "segment": "mai-oktober-2026-ESU6",
+      "kind": "observer",
+      "state": "native_observer_parity_verified",
+      "seconds": 55.21,
+      "feature_rows": 94,
+      "source_sha256": "cfbfb28af24e648c1656656539d5d2583f3b0dca0afd050e77449c95f85f4db6",
+      "original_native_trades_identical": true,
+      "candidates_identical": true,
+      "replicas_identical": true,
+      "features_sha256": "8d47bd4acf964af6ebe5153467a3dc26f91e26eb41dfcdd41dcfa2210f06c91f",
+      "trades_sha256": "9a2d363596f1402045bcc2e44470db99d0b8991e9aac9266c2aa32a9f2a34179"
+    },
+    {
+      "segment": "mai-oktober-2026-ESZ6",
+      "kind": "observer",
+      "state": "native_observer_parity_verified",
+      "seconds": 34.68,
+      "feature_rows": 45,
+      "source_sha256": "cfbfb28af24e648c1656656539d5d2583f3b0dca0afd050e77449c95f85f4db6",
+      "original_native_trades_identical": true,
+      "candidates_identical": true,
+      "replicas_identical": true,
+      "features_sha256": "b6d5cc5aaa74f98867b57d96d0ed56329106360f277182dd960d0cbb929bfa82",
+      "trades_sha256": "2dfc3166a418fc3cbea33879a68ecfb84b0cd5d5478aa836d31aeebb68e2a31e"
+    },
+    {
+      "segment": "september-2026-ESZ6",
+      "kind": "observer",
+      "state": "native_observer_parity_verified",
+      "seconds": 11.86,
+      "feature_rows": 0,
+      "source_sha256": "cfbfb28af24e648c1656656539d5d2583f3b0dca0afd050e77449c95f85f4db6",
+      "original_native_trades_identical": true,
+      "candidates_identical": true,
+      "replicas_identical": true,
+      "features_sha256": "522ff6168dffbd817591795b87102640614c34404da60d620d267964caf54769",
+      "trades_sha256": "12a8c4381d42394a76adfe40b029e77dd682d0a47645dff591eb89dda170ac17"
+    },
+    {
+      "segment": "jahr-ergaenzung-ESH6",
+      "kind": "gated",
+      "state": "native_gate_verified",
+      "seconds": 61.89,
+      "feature_rows": 94,
+      "source_sha256": "cfbfb28af24e648c1656656539d5d2583f3b0dca0afd050e77449c95f85f4db6",
+      "original_native_trades_identical": false,
+      "candidates_identical": true,
+      "replicas_identical": true,
+      "features_sha256": "cb9a416d552c909945064bbee651e55ade8f5236173ff3eead6afb0e3db17a9e",
+      "trades_sha256": "e023d12bc0d036305d6a07f3de1aa1907d5f47449a1dbeec04fe32d897b98dac"
+    },
+    {
+      "segment": "jahr-ergaenzung-ESZ5",
+      "kind": "gated",
+      "state": "native_gate_verified",
+      "seconds": 33.26,
+      "feature_rows": 28,
+      "source_sha256": "cfbfb28af24e648c1656656539d5d2583f3b0dca0afd050e77449c95f85f4db6",
+      "original_native_trades_identical": false,
+      "candidates_identical": true,
+      "replicas_identical": true,
+      "features_sha256": "6bdcd8f7860e099abcf6c0d0acffdfa4855780080e3f854631cc695bc4ecdd3f",
+      "trades_sha256": "84339d927b60979a70287f351dd8846dcbe9ac302099b770f16f503b2b69d796"
+    },
+    {
+      "segment": "jahr-uebergang-ESM6",
+      "kind": "gated",
+      "state": "native_gate_verified",
+      "seconds": 66.64,
+      "feature_rows": 92,
+      "source_sha256": "cfbfb28af24e648c1656656539d5d2583f3b0dca0afd050e77449c95f85f4db6",
+      "original_native_trades_identical": false,
+      "candidates_identical": true,
+      "replicas_identical": true,
+      "features_sha256": "6197d11c67c147d803bc87ff75c0157e00cd7b69a884f9b4652774f7bfadae4b",
+      "trades_sha256": "9d130749e5aac8e740a921e40d8ce63ab14cc2ff2eb28509a0704e2f0491c1cd"
+    },
+    {
+      "segment": "mai-oktober-2026-ESU6",
+      "kind": "gated",
+      "state": "native_gate_verified",
+      "seconds": 53.63,
+      "feature_rows": 94,
+      "source_sha256": "cfbfb28af24e648c1656656539d5d2583f3b0dca0afd050e77449c95f85f4db6",
+      "original_native_trades_identical": false,
+      "candidates_identical": true,
+      "replicas_identical": true,
+      "features_sha256": "8d47bd4acf964af6ebe5153467a3dc26f91e26eb41dfcdd41dcfa2210f06c91f",
+      "trades_sha256": "79d8935f3eaa4eafd0204d2a4b8c185a51087e97ca4ec1c574497652bead6ff6"
+    },
+    {
+      "segment": "mai-oktober-2026-ESZ6",
+      "kind": "gated",
+      "state": "native_gate_verified",
+      "seconds": 35.04,
+      "feature_rows": 45,
+      "source_sha256": "cfbfb28af24e648c1656656539d5d2583f3b0dca0afd050e77449c95f85f4db6",
+      "original_native_trades_identical": false,
+      "candidates_identical": true,
+      "replicas_identical": true,
+      "features_sha256": "b6d5cc5aaa74f98867b57d96d0ed56329106360f277182dd960d0cbb929bfa82",
+      "trades_sha256": "60885c09e164f01a5f696379558253dd6090ec18f2a5064509ea5fed868af817"
+    },
+    {
+      "segment": "september-2026-ESZ6",
+      "kind": "gated",
+      "state": "native_gate_verified",
+      "seconds": 12.12,
+      "feature_rows": 0,
+      "source_sha256": "cfbfb28af24e648c1656656539d5d2583f3b0dca0afd050e77449c95f85f4db6",
+      "original_native_trades_identical": false,
+      "candidates_identical": true,
+      "replicas_identical": true,
+      "features_sha256": "522ff6168dffbd817591795b87102640614c34404da60d620d267964caf54769",
+      "trades_sha256": "12a8c4381d42394a76adfe40b029e77dd682d0a47645dff591eb89dda170ac17"
+    }
+  ],
+  "fresh_OOS": false,
+  "leaderboard_changed": false,
+  "ninjatrader_changed": false,
+  "new_Claude_review": false,
+  "training_result_sha256": "d34a6e99ab38ba16371db08c68e3a837555e49ecb99deec20aa0fb5401f2081f",
+  "cash_result_sha256": "c98fe7e1a16ab7ae8127a8077031124ae4681250b234a6472072d0c5e0ac00e6",
+  "executed_training_source_sha256": "929a54ad08c5b9418624775514f80826ebb62f3eb164acba4f463da107d3a571",
+  "source_patch_after_training": "Output-only fix: empty decision file for an episode with zero candidates. No fitted weights, labels, thresholds or model logic changed.",
+  "not_yet_accepted": [
+    "fresh forward evidence",
+    "complete native prefix-perturbation causality test",
+    "1000 random-omission controls",
+    "1000 full-pipeline block permutations",
+    "independent new Claude review"
+  ]
+}

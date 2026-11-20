@@ -1,3 +1,18 @@
+# ES/NQ · aktueller Arbeitsstand und Übergabe
+
+**Neuer Chat: zuerst [AKTUELLER-STAND.md](AKTUELLER-STAND.md) lesen.** Stand vom 20. November 2026; laufende Windows-Simulationen müssen vor jeder aktuellen Aussage neu angesehen werden.
+
+- [Arbeitsweise mit RustDesk, NinjaTrader und Claude](methodik/Arbeitsweise-RustDesk-Claude.md)
+- [Computersteuerung: Any App eingeschaltet, Werkzeuge fehlen](methodik/Steuerungsdiagnose-2026-11-20.md)
+- [Aktueller gespeicherter MFF-/TradeDay-Datenstand](leaderboards/2026-11-20/README.md)
+- [News-Kalender: Quellen, automatische Erneuerung und Abnahme](news-calendar/README.md)
+- [ML-Forschung: erster tatsächlicher Versuch ohne Verbesserung](ai-research/README.md)
+- [Vorbereitete Fragen an Claude](ai-research/docs/Offene-Fragen-an-Claude.md)
+
+Der nachfolgende Versionsstand bleibt als historische Installationsdokumentation erhalten. Der neue Snapshot ersetzt weder eine aktuelle Bildschirmprüfung noch eine neue wirtschaftliche Validierung. Roh-Ticks und Zugangsschlüssel bleiben lokal.
+
+---
+
 # ES und NQ · NinjaTrader V8r4 · 19. November 2026
 
 Aktueller auf Windows importierter, nativ kompilierter und auf vier lokalen Sim-Instanzen geprüfter Stand: **AccountReplay V8r4**.
@@ -38,3 +53,4 @@ Der Keltner-Bandwechsel setzt die Handelsrichtung. Der Rücklauf zur Mitte löst
 Mit 1’000 USD TradeDay-Budget und einer modellierten Kaufgebühr von 99 USD je Fast Pass 50k ergaben zwei Konten mit je 1 NQ im Stress den höchsten TradeDay-Median der getesteten Größen. Drei Konten steigerten den Median des gemeinsamen Portfolios mit zwei MFF-Konten von 1’087 auf 1’380 USD je 30 Tage. Zugleich fiel die Zahl positiver Fenster von 133 auf 120 von 146 und die Schwelle der schwächsten 10 % von +121 auf −600 USD. Für ein Ergebnis mit geringerem Verlustrisiko ist 2 MFF + 2 TradeDay die bevorzugte der beiden Kombinationen.
 
 Mit 4’000 USD TradeDay-Budget und Rabatt lag beim Stress-Median 4×100k mit je 2 NQ vorn, bei +2’372 USD je 30 Tage. Die schwächsten 10 % lagen bei ungefähr −1’327 USD je 30 Tage. 5×50k mit je 1 NQ hatte den höchsten Stress-Durchschnitt (+2’291 USD), einen Median von +1’856 USD und die Schwelle der schwächsten 10 % bei −693 USD. Bei 5×150k blieb der Stress-Median über alle vier Kontraktmengen negativ. Preise sind Szenarioannahmen.
+

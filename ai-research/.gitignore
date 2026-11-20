@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.db
+*.db-shm
+*.db-wal
+*.dpapi
+*.env
+raw-data/
+local-data/
+Training/
+Cash/
+SQX/
+Classes/
+Decisions/
+*.sqx
+*.zip

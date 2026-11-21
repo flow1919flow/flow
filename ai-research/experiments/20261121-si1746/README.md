@@ -1,3 +1,5 @@
+> **Abgrenzung nach Zielkorrektur:** Dieser Lauf untersucht die Kursreaktion nach SI-Meldungen. Er testet NICHT den Zusatznutzen von SI vor tatsächlichen HY104-EMA22-Setups. Dieser separate Strategie-Test läuft im Unterprojekt HY104-EMA22-SI-DeepInfra-20261121.
+
 # SI1746 · TabPFN v2 · 21. November 2026
 
 Kein belastbarer zusätzlicher Prognosevorteil durch SI in diesem Vergleich.
@@ -64,5 +66,3 @@ SI-Lauf:c804315311d541689f83ccc5e17aea82
 Built with PriorLabs-TabPFN. Offizielles lokales v2-Modell,CPU,4Estimatoren,
 Seed20261121,kein Fine-Tuning großer Gewichte/keine Cloudaufrufe/keine Käufe.
 Bestehende Strategien,Sims,Leaderboards und deren Geldzahlen unverändert.
-
-![Gepaarter Vergleich](Public/comparison.png)

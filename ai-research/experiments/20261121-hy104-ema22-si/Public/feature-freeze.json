@@ -1,0 +1,135 @@
+{
+  "state": "correct_HY104_EMA22_features_frozen_before_labels",
+  "frozen_at_utc": "2026-11-21T02:19:55.543668+00:00",
+  "metadata_cohort": 159,
+  "price_eligible": 159,
+  "price_status": {
+    "ok": 159
+  },
+  "period": [
+    "2026-05-28",
+    "2026-10-30"
+  ],
+  "cutoff_rule": "Firstknown ESarchive availability+30s,then every subsequent nativeEMA22trade through30Oct2026;NOT observed-message-day selection",
+  "archive_cutoff_utc": "2026-05-27T22:00:33.099000+00:00",
+  "ES_archived_messages": 229,
+  "other_market_SI_rows_used": 0,
+  "all159_prior15m": 8,
+  "all159_prior60m": 27,
+  "eligible_prior15m": 8,
+  "eligible_prior60m": 27,
+  "PRICE": [
+    "side",
+    "chicago_RTH_minute",
+    "signed_move60_rv300",
+    "signed_move300_rv300",
+    "log1p_rv300_ticks",
+    "spread_ticks",
+    "signed_topsize_imbalance",
+    "quote_age_seconds"
+  ],
+  "SI": [
+    "last_STOP_arrow_relative15m",
+    "last_ICEBERG_arrow_relative15m",
+    "archived_count60m_cap5",
+    "SI_archive_status"
+  ],
+  "SI_status_legend": {
+    "A": "Actual archived same-contract message in prior60m;fullfeedcoverage still unknown",
+    "U": "No matching archived message;coverage unknown,not actualnoSI"
+  },
+  "missing_SI_numeric_values": "null,notzero",
+  "features_sha256": "73b486f9ad987a216f60cf5b0e925f9a419f51af231f400fb9afe2d50f2cc68c",
+  "private_quote_manifest_sha256": "a11176dbb4c6b7313c21d6b79cbde935bf8afe8b35761a3892b7bc9458e73789",
+  "quote_files_verified": 95,
+  "native_source_manifests": [
+    {
+      "segment": "jahr-ergaenzung-ESH6",
+      "verified": "outputs/NQ-Woche-20261118/ema22-history-acceptance-20261119/ES/SQX/evaluation/jahr-ergaenzung-ESH6/verified.json",
+      "verified_sha256": "bdbdffeeaecc74ee6f905272b7c631afae44f3c57d58605ec7eef4c9bfdb6b6f",
+      "native_trade_file": "outputs/NQ-Woche-20261118/ema22-history-acceptance-20261119/ES/SQX/evaluation/jahr-ergaenzung-ESH6/native_export_0.75_1.75_0.15_openingrange_0_ma_5_history_1_8b769e7d-1560-42dd-a09b-e5ea48c2e168/trades.csv",
+      "native_trade_sha256": "a19117041aea2661c21f09b643d75fd6ec6fca84890cedcd104b150b6b820003",
+      "native_rows": 94,
+      "entry_case": 5,
+      "entry_average": "EMA22",
+      "target_offset_ticks": 0.75,
+      "phase": "evaluation",
+      "source_not_C28_03": true
+    },
+    {
+      "segment": "jahr-ergaenzung-ESZ5",
+      "verified": "outputs/NQ-Woche-20261118/ema22-history-acceptance-20261119/ES/SQX/evaluation/jahr-ergaenzung-ESZ5/verified.json",
+      "verified_sha256": "e248d024f869824854ba136fbbb283f1eba4ade61ccbfd5f18739ce168fac394",
+      "native_trade_file": "outputs/NQ-Woche-20261118/ema22-history-acceptance-20261119/ES/SQX/evaluation/jahr-ergaenzung-ESZ5/native_export_0.75_1.75_0.15_openingrange_0_ma_5_history_1_f6cb98bf-a808-466e-b958-e89efb4194f4/trades.csv",
+      "native_trade_sha256": "9543c2c431754d20c382230bee3ed337479a88d23484409a3b5f7125e7d53580",
+      "native_rows": 29,
+      "entry_case": 5,
+      "entry_average": "EMA22",
+      "target_offset_ticks": 0.75,
+      "phase": "evaluation",
+      "source_not_C28_03": true
+    },
+    {
+      "segment": "jahr-uebergang-ESM6",
+      "verified": "outputs/NQ-Woche-20261118/ema22-history-acceptance-20261119/ES/SQX/evaluation/jahr-uebergang-ESM6/verified.json",
+      "verified_sha256": "fe7c861e213a415b033eb66a66f40116c38554641d51ddd71f3016917c44e7d5",
+      "native_trade_file": "outputs/NQ-Woche-20261118/ema22-history-acceptance-20261119/ES/SQX/evaluation/jahr-uebergang-ESM6/native_export_0.75_1.75_0.15_openingrange_0_ma_5_history_1_19a91c47-c081-43e5-a95f-5ede93af39b6/trades.csv",
+      "native_trade_sha256": "ba030d0ff7d030c3063f41a29c2d550602f010f1b56a013f5d852c2d466b98e6",
+      "native_rows": 92,
+      "entry_case": 5,
+      "entry_average": "EMA22",
+      "target_offset_ticks": 0.75,
+      "phase": "evaluation",
+      "source_not_C28_03": true
+    },
+    {
+      "segment": "mai-oktober-2026-ESU6",
+      "verified": "outputs/NQ-Woche-20261118/ema22-history-acceptance-20261119/ES/SQX/evaluation/mai-oktober-2026-ESU6/verified.json",
+      "verified_sha256": "15dbcd8f2503f2f6305bd9d42963a54e362d7fdffa2ec17e4fd7cdf5e5bdffa2",
+      "native_trade_file": "outputs/NQ-Woche-20261118/ema22-history-acceptance-20261119/ES/SQX/evaluation/mai-oktober-2026-ESU6/native_export_0.75_1.75_0.15_openingrange_0_ma_5_history_1_18454024-2744-4d71-b429-4e396530f2c3/trades.csv",
+      "native_trade_sha256": "3b97f05e823477433d24c37fca24efcc01b0fbe9a7c0cd404f5fe8525ee07818",
+      "native_rows": 94,
+      "entry_case": 5,
+      "entry_average": "EMA22",
+      "target_offset_ticks": 0.75,
+      "phase": "evaluation",
+      "source_not_C28_03": true
+    },
+    {
+      "segment": "mai-oktober-2026-ESZ6",
+      "verified": "outputs/NQ-Woche-20261118/ema22-history-acceptance-20261119/ES/SQX/evaluation/mai-oktober-2026-ESZ6/verified.json",
+      "verified_sha256": "1f348df582021a43755104a72a413023236cfa3b88ef36b3e5fca13642bcd26a",
+      "native_trade_file": "outputs/NQ-Woche-20261118/ema22-history-acceptance-20261119/ES/SQX/evaluation/mai-oktober-2026-ESZ6/native_export_0.75_1.75_0.15_openingrange_0_ma_5_history_1_e3cd9e77-2cd4-40e0-bd94-6fe437362407/trades.csv",
+      "native_trade_sha256": "e54aeb1d4e99f3f2170d031bc5129881369d67ae98734a8c221320bc98023118",
+      "native_rows": 45,
+      "entry_case": 5,
+      "entry_average": "EMA22",
+      "target_offset_ticks": 0.75,
+      "phase": "evaluation",
+      "source_not_C28_03": true
+    },
+    {
+      "segment": "september-2026-ESZ6",
+      "verified": "outputs/NQ-Woche-20261118/ema22-history-acceptance-20261119/ES/SQX/evaluation/september-2026-ESZ6/verified.json",
+      "verified_sha256": "571d1f3c4ba58df737fb5159d449d3f9ab36ecb93de97ca1986a85d53428194f",
+      "native_trade_file": "outputs/NQ-Woche-20261118/ema22-history-acceptance-20261119/ES/SQX/evaluation/september-2026-ESZ6/native_export_0.75_1.75_0.15_openingrange_0_ma_5_history_1_07c35585-1682-403f-9b6d-a7fb9a441218/trades.csv",
+      "native_trade_sha256": "12a8c4381d42394a76adfe40b029e77dd682d0a47645dff591eb89dda170ac17",
+      "native_rows": 0,
+      "entry_case": 5,
+      "entry_average": "EMA22",
+      "target_offset_ticks": 0.75,
+      "phase": "evaluation",
+      "source_not_C28_03": true
+    }
+  ],
+  "archive_sha256": "ef9c55d7b029e1a58f4b725b2462fd091e9f74d1fcc51dcf27958ebecdee8f04",
+  "bounded_prefix_checks": 159,
+  "all_prefix_checks_passed": true,
+  "labels_accessed_by_feature_builder": false,
+  "source_sha256": {
+    "cohort.py": "e25f8bd1c5f26f38c84a472a4db3cab0addd8de18e8416f1082704686bdf7325",
+    "common.py": "7ef911c66747e263dd5df4073d60ffe42a0d94705377c928818bf6fd139c67d6",
+    "quote_loader.py": "a7841ee1fec7d1e3d94d347a78fa4df81b758a3cd21f1ae0cca22c65bd2b02fa"
+  },
+  "claim": "Source rows are actually executed nativeEMA22 trades,not all counterfactual signals. Generic causal TBBOpricecontext,not copiedC28MLindicators. No fixed15min outcome oraccount payout."
+}

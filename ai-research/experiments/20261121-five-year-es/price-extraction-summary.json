@@ -1,0 +1,150 @@
+{
+  "status": "PRICE_ONLY_EXTRACTED_NATIVE450_CALENDAR_HISTORICAL_OVERLAY_UNRESOLVED",
+  "created_utc": "2026-11-21T02:38:41.056925+00:00",
+  "source_inventory_sha256": "3af042692420088ce777d440ec7b0b49c4528b2959e018c82f1d628d5fb2fe66",
+  "extraction_freeze_sha256": "4810af91105db2e3e717f2a14c60208960929c40d0c6a88943aae01789896279",
+  "minute_sha256": "566c196b72a28b2196213475ec032080f29fee8996f3218bb355cb804a28ac47",
+  "minute_rows": 894352,
+  "all_contract_5m_sha256": "ea4380a8a40d55793ecd97f98a1b5d61c2a9e676b4743603a112de00665e9bf8",
+  "all_contract_5m_rows": 228690,
+  "selected_5m_sha256": "23eaaf6519e0b1785487999ed274f4f1f21feaa6b1359cc6decbfa2ee2765580",
+  "selected_5m_rows": 112800,
+  "schedule_sha256": "407e315470ff6f08ad21289bcff1efe7659febd1ca1917ef524df5974ff57ef1",
+  "schedule_sessions": 1302,
+  "selected_sessions": 1289,
+  "selected_sessions_complete_warmup": 1086,
+  "native_calendar_dates": 250,
+  "rolls": [
+    {
+      "date": "2021-12-13",
+      "selection_information_date": "2021-12-10",
+      "roll_from": "ESZ1",
+      "raw_symbol": "ESH2"
+    },
+    {
+      "date": "2022-03-14",
+      "selection_information_date": "2022-03-11",
+      "roll_from": "ESH2",
+      "raw_symbol": "ESM2"
+    },
+    {
+      "date": "2022-06-14",
+      "selection_information_date": "2022-06-13",
+      "roll_from": "ESM2",
+      "raw_symbol": "ESU2"
+    },
+    {
+      "date": "2022-09-13",
+      "selection_information_date": "2022-09-12",
+      "roll_from": "ESU2",
+      "raw_symbol": "ESZ2"
+    },
+    {
+      "date": "2022-12-13",
+      "selection_information_date": "2022-12-12",
+      "roll_from": "ESZ2",
+      "raw_symbol": "ESH3"
+    },
+    {
+      "date": "2023-03-14",
+      "selection_information_date": "2023-03-13",
+      "roll_from": "ESH3",
+      "raw_symbol": "ESM3"
+    },
+    {
+      "date": "2023-06-13",
+      "selection_information_date": "2023-06-12",
+      "roll_from": "ESM3",
+      "raw_symbol": "ESU3"
+    },
+    {
+      "date": "2023-09-12",
+      "selection_information_date": "2023-09-11",
+      "roll_from": "ESU3",
+      "raw_symbol": "ESZ3"
+    },
+    {
+      "date": "2023-12-12",
+      "selection_information_date": "2023-12-11",
+      "roll_from": "ESZ3",
+      "raw_symbol": "ESH4"
+    },
+    {
+      "date": "2024-03-12",
+      "selection_information_date": "2024-03-11",
+      "roll_from": "ESH4",
+      "raw_symbol": "ESM4"
+    },
+    {
+      "date": "2024-06-18",
+      "selection_information_date": "2024-06-17",
+      "roll_from": "ESM4",
+      "raw_symbol": "ESU4"
+    },
+    {
+      "date": "2024-09-17",
+      "selection_information_date": "2024-09-16",
+      "roll_from": "ESU4",
+      "raw_symbol": "ESZ4"
+    },
+    {
+      "date": "2024-12-17",
+      "selection_information_date": "2024-12-16",
+      "roll_from": "ESZ4",
+      "raw_symbol": "ESH5"
+    },
+    {
+      "date": "2025-03-18",
+      "selection_information_date": "2025-03-17",
+      "roll_from": "ESH5",
+      "raw_symbol": "ESM5"
+    },
+    {
+      "date": "2025-06-17",
+      "selection_information_date": "2025-06-16",
+      "roll_from": "ESM5",
+      "raw_symbol": "ESU5"
+    },
+    {
+      "date": "2025-09-16",
+      "selection_information_date": "2025-09-15",
+      "roll_from": "ESU5",
+      "raw_symbol": "ESZ5"
+    },
+    {
+      "date": "2025-12-16",
+      "selection_information_date": "2025-12-15",
+      "roll_from": "ESZ5",
+      "raw_symbol": "ESH6"
+    },
+    {
+      "date": "2026-03-17",
+      "selection_information_date": "2026-03-16",
+      "roll_from": "ESH6",
+      "raw_symbol": "ESM6"
+    },
+    {
+      "date": "2026-06-16",
+      "selection_information_date": "2026-06-15",
+      "roll_from": "ESM6",
+      "raw_symbol": "ESU6"
+    },
+    {
+      "date": "2026-09-15",
+      "selection_information_date": "2026-09-14",
+      "roll_from": "ESU6",
+      "raw_symbol": "ESZ6"
+    }
+  ],
+  "first_date": "2021-11-01",
+  "last_date": "2026-10-30",
+  "price_unit": "integer1e-9USDpriceunits,ES.25tick;50USDperpoint",
+  "volume_unit": "contracts",
+  "minute_no_trade_semantics": "Absent1mrecord maymean no trades; no fillforward or inventedzero-volume bar",
+  "within_5m_missing_minutes": 85674,
+  "no_strategy_candidates": true,
+  "no_labels": true,
+  "no_models": true,
+  "no_downloads": true,
+  "elapsed_seconds": 11.114445924758911
+}

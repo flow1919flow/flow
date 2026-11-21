@@ -1,0 +1,16 @@
+{
+  "status": "API_ready_after13_offline_tests_NO_provider_calls_yet",
+  "cloud_plan_sha256": "57adafc45bb8036f9aa1791cbafbc81df036268abd766b7b35b501a7c801c57a",
+  "runner_sha256": "d2d1721af01bc4b5a6c4293822d3d59c2da27e7dbf6be414c8ef1ddda3777b00",
+  "offline_tests_sha256": "b280df937a3d13de0230d6aaf581b653b80541fd5357a5ae3a76b95fbd2aebac",
+  "test_source_sha256": "e3e2f9c9c0c9a4dc8708d0a2e4952b282ab4132b4081a9402ca2a6c08f1eeefa",
+  "dataset_manifest_sha256": "2e42228d79f25f3de38d25bf94e198c6757f93692c75055c757a337d38420b53",
+  "total_requests": 484,
+  "max_reserved_usd": 0.9507695999999999,
+  "real_API_calls": 0,
+  "known_SI_test_cases15m": 8,
+  "known_SI_test_cases60m": 26,
+  "scope": "Correct HY104EMA22159nativeexecutedsetups,110temporallylaterpairedtestcases,4arms,notC28/notpostSImarkouts",
+  "root_controls_authorization_and_key": true,
+  "verified_at_utc": "2026-11-21T02:28:11.488073+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-21T02:23:53.262708+00:00",
+  "count": 13,
+  "tests": [
+    "Train-only median and stable explicit flags; all-missing train column uses declared zero with flag",
+    "Future test extremes cannot change imputation/scaling or earlier transformed rows",
+    "Unknown/null SI stays distinguishable from an observed zero after imputation",
+    "Raw decision margins have AUC/accuracy and never fake LogLoss or Brier",
+    "One-row/single-class test block records null AUC while preserving actual accuracy and native probability losses",
+    "Within-block AUC aggregates only identifiable positive-negative pairs",
+    "Actual frozen CSV and canonical float64 NPY match including NaNs; 159 eligible rows and five fixed folds",
+    "Actual folds preserve IDs/order, 48-minimum train, whole business-date gaps, purged unknown outcomes, 110 unique test cases",
+    "Rejected adversarial overlap",
+    "Rejected adversarial late_outcome",
+    "Rejected adversarial missing_gap",
+    "Rejected adversarial wrong_id_order",
+    "Nanosecond CSV times retained as nullable exact Int64, never float64"
+  ],
+  "binding": {
+    "manifest_sha256": "2e42228d79f25f3de38d25bf94e198c6757f93692c75055c757a337d38420b53",
+    "dataset_csv_sha256": "9f71cc1e99cb7749b6ae35c2e1ae1d512b6f4008f05c453e528907dc81e6da54",
+    "canonical_npy_sha256": "598dcf8f4c7307eb678f3af2bc6a67c6718af29780dbbadf630e9c099fcb751b",
+    "folds_json_sha256": "234b02df0ba4c7e18a1002dcad953cbcee2ca636766b8c61f2953b87249c6db2"
+  },
+  "no_corrected_cohort_classifier_fit": true
+}

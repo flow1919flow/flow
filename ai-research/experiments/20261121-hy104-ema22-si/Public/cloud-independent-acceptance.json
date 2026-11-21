@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "actual_provider_responses": 484,
+  "main_predictions": 440,
+  "repeated_predictions": 44,
+  "unique_main_cases_shared_per_arm": 110,
+  "arms": 4,
+  "all_statuses_ok": true,
+  "source_code_and_dataset_hashes_unchanged": true,
+  "exact_frozen_request_ids_and_body_hashes": true,
+  "all_native_labels_and_SI_flags_match_frozen_cases": true,
+  "no_probabilities_imputed_or_replaced": true,
+  "arm_metrics": {
+    "nace-ai/drex-max-finance/context": {
+      "n": 110,
+      "log_loss": 0.745996774659859,
+      "brier": 0.2732850119428955,
+      "pooled_auc": 0.5115358126721763,
+      "accuracy": 0.5181818181818182,
+      "within_block_auc": 0.5491009681881052,
+      "within_block_auc_scope": "Additional descriptive pair-weighted aggregation of prespecified perblockAUC;no new model-selection rule",
+      "within_block_auc_eligible_blocks": 4,
+      "within_block_auc_single_class_blocks": 1
+    },
+    "nace-ai/drex-max-finance/context_SI": {
+      "n": 110,
+      "log_loss": 0.7478507701280138,
+      "brier": 0.27096534927291105,
+      "pooled_auc": 0.5261707988980717,
+      "accuracy": 0.5727272727272728,
+      "within_block_auc": 0.553941908713693,
+      "within_block_auc_scope": "Additional descriptive pair-weighted aggregation of prespecified perblockAUC;no new model-selection rule",
+      "within_block_auc_eligible_blocks": 4,
+      "within_block_auc_single_class_blocks": 1
+    },
+    "Cloudflare/clef/context": {
+      "n": 110,
+      "log_loss": 0.8008200057902801,
+      "brier": 0.30116187481818185,
+      "pooled_auc": 0.41649449035812675,
+      "accuracy": 0.4,
+      "within_block_auc": 0.4460580912863071,
+      "within_block_auc_scope": "Additional descriptive pair-weighted aggregation of prespecified perblockAUC;no new model-selection rule",
+      "within_block_auc_eligible_blocks": 4,
+      "within_block_auc_single_class_blocks": 1
+    },
+    "Cloudflare/clef/context_SI": {
+      "n": 110,
+      "log_loss": 0.8310567632060507,
+      "brier": 0.31445438254545455,
+      "pooled_auc": 0.40909090909090906,
+      "accuracy": 0.4,
+      "within_block_auc": 0.44813278008298757,
+      "within_block_auc_scope": "Additional descriptive pair-weighted aggregation of prespecified perblockAUC;no new model-selection rule",
+      "within_block_auc_eligible_blocks": 4,
+      "within_block_auc_single_class_blocks": 1
+    }
+  },
+  "repeat_metrics": {
+    "nace-ai/drex-max-finance/context": {
+      "n": 11,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "classification_flips_at0_5": 0
+    },
+    "nace-ai/drex-max-finance/context_SI": {
+      "n": 11,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "classification_flips_at0_5": 0
+    },
+    "Cloudflare/clef/context": {
+      "n": 11,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "classification_flips_at0_5": 0
+    },
+    "Cloudflare/clef/context_SI": {
+      "n": 11,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "classification_flips_at0_5": 0
+    }
+  },
+  "reserved_cost_usd": 0.9507695999999999,
+  "quoted_price_cost_estimate_usd": 0.21545904,
+  "undiscounted_upper_cost_estimate_usd": 0.29373984,
+  "actual_invoice_cost_known": false,
+  "total_input_tokens": 1223916,
+  "largest_input_tokens": 2922,
+  "sparse_SI_test_cases15m": 8,
+  "sparse_SI_test_cases60m": 26,
+  "no_gate_or_payout_replay": true,
+  "responses_sha256": "4e500bc4922d8ab2172f4533ec4b48a2e82b295d3fa741ccf2a427ef9b1ef7a7",
+  "cloud_results_sha256": "d8e52a5107d05522571e8de16826c67080d541d0f16424e6f7259dfd2c890b49",
+  "cloud_plan_sha256": "57adafc45bb8036f9aa1791cbafbc81df036268abd766b7b35b501a7c801c57a"
+}

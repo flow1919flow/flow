@@ -1,0 +1,334 @@
+{
+  "status": "staged_only_not_uploaded",
+  "prefix": "ai-research/experiments/20261121-hy104-ema22-si/",
+  "created_at_utc": "2026-11-21T02:42:15.327026+00:00",
+  "text_files": 39,
+  "private_rows_uploaded": false,
+  "raw_quotes_uploaded": false,
+  "SI_message_IDs_uploaded": false,
+  "keys_or_controller_uploaded": false,
+  "source_files_verbatim": true,
+  "hash_scope": "Original frozen local hashes and published sanitized hashes are distinct;see every file record",
+  "optional_binary_plot": {
+    "repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Public/comparison.png",
+    "local_staging_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/PublicExport/files/ai-research/experiments/20261121-hy104-ema22-si/Public/comparison.png",
+    "original_sha256": "d4389966132d8d4806e9dedd33e4c14cc68ffe4d0d96306c3548e304283654e9",
+    "published_sha256": "d4389966132d8d4806e9dedd33e4c14cc68ffe4d0d96306c3548e304283654e9",
+    "bytes": 32682,
+    "included_in_text_tree_entries": false
+  },
+  "files": [
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Source/build_dataset.py",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Source/build_dataset.py",
+      "original_sha256": "3faecb8678c0c5d358b2906623e4490aad4f4dd873107e088ccf0e5cebd61564",
+      "published_sha256": "3faecb8678c0c5d358b2906623e4490aad4f4dd873107e088ccf0e5cebd61564",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Source/cloud_probe.py",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Source/cloud_probe.py",
+      "original_sha256": "d2d1721af01bc4b5a6c4293822d3d59c2da27e7dbf6be414c8ef1ddda3777b00",
+      "published_sha256": "d2d1721af01bc4b5a6c4293822d3d59c2da27e7dbf6be414c8ef1ddda3777b00",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Source/cohort.py",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Source/cohort.py",
+      "original_sha256": "e25f8bd1c5f26f38c84a472a4db3cab0addd8de18e8416f1082704686bdf7325",
+      "published_sha256": "e25f8bd1c5f26f38c84a472a4db3cab0addd8de18e8416f1082704686bdf7325",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Source/common.py",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Source/common.py",
+      "original_sha256": "7ef911c66747e263dd5df4073d60ffe42a0d94705377c928818bf6fd139c67d6",
+      "published_sha256": "7ef911c66747e263dd5df4073d60ffe42a0d94705377c928818bf6fd139c67d6",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Source/native_decode_verify.py",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Source/native_decode_verify.py",
+      "original_sha256": "f8f8530e64789aa4e31922dd2ce70c3475e279103bada2e57e3f16c32ed93db1",
+      "published_sha256": "f8f8530e64789aa4e31922dd2ce70c3475e279103bada2e57e3f16c32ed93db1",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Source/quote_loader.py",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Source/quote_loader.py",
+      "original_sha256": "a7841ee1fec7d1e3d94d347a78fa4df81b758a3cd21f1ae0cca22c65bd2b02fa",
+      "published_sha256": "a7841ee1fec7d1e3d94d347a78fa4df81b758a3cd21f1ae0cca22c65bd2b02fa",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Source/test_offline.py",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Source/test_offline.py",
+      "original_sha256": "e3e2f9c9c0c9a4dc8708d0a2e4952b282ab4132b4081a9402ca2a6c08f1eeefa",
+      "published_sha256": "e3e2f9c9c0c9a4dc8708d0a2e4952b282ab4132b4081a9402ca2a6c08f1eeefa",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Public/API-readiness.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Public/API-readiness.json",
+      "original_sha256": "405ccfd1cb2c76975ce06a205167b8042a63fcd7b4fb5ed1609e221831e748e4",
+      "published_sha256": "405ccfd1cb2c76975ce06a205167b8042a63fcd7b4fb5ed1609e221831e748e4",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Public/cloud-independent-acceptance.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Public/cloud-independent-acceptance.json",
+      "original_sha256": "059e94d1e0b08b29a464305f20ac6834f51889836f85ac6d906d42cb715d1755",
+      "published_sha256": "059e94d1e0b08b29a464305f20ac6834f51889836f85ac6d906d42cb715d1755",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Public/cloud-offline-tests.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Public/cloud-offline-tests.json",
+      "original_sha256": "b280df937a3d13de0230d6aaf581b653b80541fd5357a5ae3a76b95fbd2aebac",
+      "published_sha256": "b280df937a3d13de0230d6aaf581b653b80541fd5357a5ae3a76b95fbd2aebac",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Public/cloud-plan.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Public/cloud-plan.json",
+      "original_sha256": "57adafc45bb8036f9aa1791cbafbc81df036268abd766b7b35b501a7c801c57a",
+      "published_sha256": "57adafc45bb8036f9aa1791cbafbc81df036268abd766b7b35b501a7c801c57a",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Public/cloud-results.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Public/cloud-results.json",
+      "original_sha256": "d8e52a5107d05522571e8de16826c67080d541d0f16424e6f7259dfd2c890b49",
+      "published_sha256": "d8e52a5107d05522571e8de16826c67080d541d0f16424e6f7259dfd2c890b49",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Public/dataset-manifest.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Public/dataset-manifest.json",
+      "original_sha256": "2e42228d79f25f3de38d25bf94e198c6757f93692c75055c757a337d38420b53",
+      "published_sha256": "76dedcfa6e87ab59b69fda97054b903aecadf8c55bd3a3e8be5a5edf500aa5cc",
+      "verbatim": false,
+      "note": "Sanitized/normalized JSON for publication;original freeze digests retained and bound separately"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Public/feature-freeze.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Public/feature-freeze.json",
+      "original_sha256": "79f6a7ad9b08c40efcde5f04714e4189f1455773a002cda6d80673b405d78bd0",
+      "published_sha256": "79f6a7ad9b08c40efcde5f04714e4189f1455773a002cda6d80673b405d78bd0",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Public/label-proof.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Public/label-proof.json",
+      "original_sha256": "577b6205edb3a78a500487c113877be05a9a1660bf116065d0b526f4ce206363",
+      "published_sha256": "577b6205edb3a78a500487c113877be05a9a1660bf116065d0b526f4ce206363",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Public/mlflow-receipt.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Public/mlflow-receipt.json",
+      "original_sha256": "b02b061ee4ae719126422373c65e90e2a00b9c5a4f4f7823fcfc9daac8f0b5bd",
+      "published_sha256": "b02b061ee4ae719126422373c65e90e2a00b9c5a4f4f7823fcfc9daac8f0b5bd",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Public/native-decode-proof.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Public/native-decode-proof.json",
+      "original_sha256": "ccd01e53e5e2019e706bcf65c8fc501f61da951a23a69e8ebcea628438f73c8c",
+      "published_sha256": "ccd01e53e5e2019e706bcf65c8fc501f61da951a23a69e8ebcea628438f73c8c",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Public/tracking-acceptance.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Public/tracking-acceptance.json",
+      "original_sha256": "8067936b2f918b5b60c04d8e0ec7d9414e0b81d9a77a43570c95be70bd247813",
+      "published_sha256": "d77d3d5e173df068a2b074c1729dc35d0088f9ed4a8816cc30d97bc168b3adf3",
+      "verbatim": false,
+      "note": "Sanitized/normalized JSON for publication;original freeze digests retained and bound separately"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/README.md",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/README.md",
+      "original_sha256": "22904c6cc5939de615104604e0bb387ca1e1efc7d7966c998a90229c14f70363",
+      "published_sha256": "22904c6cc5939de615104604e0bb387ca1e1efc7d7966c998a90229c14f70363",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/Stand.html",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/Stand.html",
+      "original_sha256": "f4e08102c02459565d4e6962781b4eb2434e871328e728da22eb9343c7fc2e86",
+      "published_sha256": "706b97f476365acfc29b1c28dcf947f18c8eb48b63de7a50567f8922d2c06980",
+      "verbatim": false,
+      "note": "Only local-model report links adapted to published folder topology"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-DeepInfra-20261121/progress.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/progress.json",
+      "original_sha256": "9f1518a97a54c968c4f84b5b7f3dc919f5d1a48c5bc1046dc01c76582fe410f0",
+      "published_sha256": "9f1518a97a54c968c4f84b5b7f3dc919f5d1a48c5bc1046dc01c76582fe410f0",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Source/audit_results.py",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Source/audit_results.py",
+      "original_sha256": "af145ea360d1e03671b249adf42275b1f1252a9e3c22e9a96542bad543ab52c2",
+      "published_sha256": "af145ea360d1e03671b249adf42275b1f1252a9e3c22e9a96542bad543ab52c2",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Source/common.py",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Source/common.py",
+      "original_sha256": "a2a208adbef72ac8d158da8088fa88d7794fd333bef708973bbc0bcff0731c54",
+      "published_sha256": "a2a208adbef72ac8d158da8088fa88d7794fd333bef708973bbc0bcff0731c54",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Source/config.py",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Source/config.py",
+      "original_sha256": "2ae593ec2f2e3ebf72ec3413a1d86f0096506c0d256f6f01b7e7c6f59c1f617f",
+      "published_sha256": "2ae593ec2f2e3ebf72ec3413a1d86f0096506c0d256f6f01b7e7c6f59c1f617f",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Source/fixtures.py",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Source/fixtures.py",
+      "original_sha256": "5498d7b810228ba497620d55eba21814505d8744795e500033ae9162edf80a22",
+      "published_sha256": "5498d7b810228ba497620d55eba21814505d8744795e500033ae9162edf80a22",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Source/register.py",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Source/register.py",
+      "original_sha256": "ba4c419ec16f93db9f09563419e94323b6d7d039fda5b90d25bd0eb422f64173",
+      "published_sha256": "ba4c419ec16f93db9f09563419e94323b6d7d039fda5b90d25bd0eb422f64173",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Source/train.py",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Source/train.py",
+      "original_sha256": "4830af464525dad059cc4140b4a40306c09946ed1669b1926c9c6dd4a8d1fe9b",
+      "published_sha256": "4830af464525dad059cc4140b4a40306c09946ed1669b1926c9c6dd4a8d1fe9b",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Public/preregister.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Public/preregister.json",
+      "original_sha256": "807f00bb86c5130384397ddb5bef118bba94d48f1e203022000ea0b3ac406ffa",
+      "published_sha256": "807f00bb86c5130384397ddb5bef118bba94d48f1e203022000ea0b3ac406ffa",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Public/results-combined.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Public/results-combined.json",
+      "original_sha256": "fcf3f4a6adad25748ae9e58d021965b4b6bbdef90fbe92173a3a46a7f9ae8c18",
+      "published_sha256": "fcf3f4a6adad25748ae9e58d021965b4b6bbdef90fbe92173a3a46a7f9ae8c18",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Public/results-sklearn.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Public/results-sklearn.json",
+      "original_sha256": "f575b0f18ae3eaecd205d5e6843c4fd8c407b8fc8a80b67fafee38645117f5da",
+      "published_sha256": "f575b0f18ae3eaecd205d5e6843c4fd8c407b8fc8a80b67fafee38645117f5da",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Public/results-tabpfn.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Public/results-tabpfn.json",
+      "original_sha256": "f4133729615be039a080ebed5efa4a85f24ac133ec3eebfe0cad0557b3aff87c",
+      "published_sha256": "f4133729615be039a080ebed5efa4a85f24ac133ec3eebfe0cad0557b3aff87c",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Public/independent-acceptance.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Public/independent-acceptance.json",
+      "original_sha256": "8076f7334ee479ed4f3a2336f2c13341c625006328b3681f240188b9600c1141",
+      "published_sha256": "8076f7334ee479ed4f3a2336f2c13341c625006328b3681f240188b9600c1141",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Public/fixtures.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Public/fixtures.json",
+      "original_sha256": "c22dc8e146fad6e3b15399c836e7ad0523ca21a73d504e3d9526fa4d47b09c3f",
+      "published_sha256": "c22dc8e146fad6e3b15399c836e7ad0523ca21a73d504e3d9526fa4d47b09c3f",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Public/runtime-sklearn.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Public/runtime-sklearn.json",
+      "original_sha256": "490bc869019564dd97f1a40c2a3156e91cc39fa2805859269446e2b2c5cf568a",
+      "published_sha256": "490bc869019564dd97f1a40c2a3156e91cc39fa2805859269446e2b2c5cf568a",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Public/runtime-tabpfn.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Public/runtime-tabpfn.json",
+      "original_sha256": "a84a0244d0258a393adc7d596c33aba8bcd7418ddf5d410678a2724412bc8b65",
+      "published_sha256": "a84a0244d0258a393adc7d596c33aba8bcd7418ddf5d410678a2724412bc8b65",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Public/root-go-receipt.json",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Public/root-go-receipt.json",
+      "original_sha256": "5968f0e6361f81ec481f23ef48dfde20efd21b779616c84b55bcfcc80c52dd25",
+      "published_sha256": "5968f0e6361f81ec481f23ef48dfde20efd21b779616c84b55bcfcc80c52dd25",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Public/model-pairs-summary.csv",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Public/model-pairs-summary.csv",
+      "original_sha256": "7e89f30a95e209adcf4439a0b85620a43a7538eb621fb9b562ad2296823b6a5e",
+      "published_sha256": "7e89f30a95e209adcf4439a0b85620a43a7538eb621fb9b562ad2296823b6a5e",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": "outputs/HY104-EMA22-SI-LocalModels-20261121/Public/README.md",
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/LocalModels/Public/README.md",
+      "original_sha256": "0298a57ee304aca8ad605c6b032950bd63ceca07d716b0b1f31c4ed964423cb6",
+      "published_sha256": "0298a57ee304aca8ad605c6b032950bd63ceca07d716b0b1f31c4ed964423cb6",
+      "verbatim": true,
+      "note": "verbatim"
+    },
+    {
+      "original_workspace_relative_path": null,
+      "published_repository_path": "ai-research/experiments/20261121-hy104-ema22-si/PUBLICATION.md",
+      "original_sha256": null,
+      "published_sha256": "0cdd3ebd10083c7104f6872c7c5b964a1cbeae7b70de12529380f1bec94c86e9",
+      "verbatim": false,
+      "note": "New publication-scope documentation"
+    }
+  ]
+}

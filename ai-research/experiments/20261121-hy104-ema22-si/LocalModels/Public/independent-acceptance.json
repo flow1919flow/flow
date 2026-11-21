@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-21T02:25:51.601512+00:00",
+  "checks": [
+    "sklearn: all fits and native scores/probabilities independently accepted; exact frozen test IDs and y; no fake probability metrics",
+    "tabpfn: all fits and native scores/probabilities independently accepted; exact frozen test IDs and y; no fake probability metrics",
+    "All14modelarms contain identical ordered110eligibletestcases over5folds",
+    "Train-only preprocessing independently reconstructed for70fits; all60linear forecasts reproduced from saved coefficients within1e-10",
+    "Accuracy, pairwise pooled AUC, within-block pair AUC, native LogLoss/Brier independently recomputed from1540savedforecasts",
+    "Exact model/preprocessing/runner preregistration source hashes unchanged; registration precedes GO and both training runtimes"
+  ],
+  "count": 6,
+  "maximum_linear_score_reconstruction_error": 0.0,
+  "model_fits": 70,
+  "saved_forecasts": 1540,
+  "binding": {
+    "manifest_sha256": "2e42228d79f25f3de38d25bf94e198c6757f93692c75055c757a337d38420b53",
+    "dataset_csv_sha256": "9f71cc1e99cb7749b6ae35c2e1ae1d512b6f4008f05c453e528907dc81e6da54",
+    "canonical_npy_sha256": "598dcf8f4c7307eb678f3af2bc6a67c6718af29780dbbadf630e9c099fcb751b",
+    "folds_json_sha256": "234b02df0ba4c7e18a1002dcad953cbcee2ca636766b8c61f2953b87249c6db2"
+  }
+}

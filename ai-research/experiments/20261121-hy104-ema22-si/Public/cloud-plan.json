@@ -1,0 +1,108 @@
+{
+  "state": "prepared_correct_HY104_EMA22_SI_four_cloud_arms_no_calls",
+  "created_at_utc": "2026-11-21T02:28:11.416662+00:00",
+  "models": [
+    "nace-ai/drex-max-finance",
+    "Cloudflare/clef"
+  ],
+  "arms": [
+    "context",
+    "context_SI"
+  ],
+  "endpoint": "https://api.deepinfra.com/v1/decisions",
+  "source_strategy": "Actual nativeHY104EMA22,NOT C28.03;native actualstrategyexits,NOTpostSI15minmarks",
+  "period": [
+    "2026-05-28",
+    "2026-10-30"
+  ],
+  "all_context_eligible_setups": 159,
+  "later_test_cases_each_arm": 110,
+  "folds": 5,
+  "initial_train_minimum_cases": 48,
+  "whole_CT_gap_days": 1,
+  "fewshot_rows_per_request": 32,
+  "fewshot_selection": "Mostrecent32 eligiblecompletedtrainingcases,fixedwithinblock;identicalIDs/labels acrossfourarms",
+  "request_one_current_setup": true,
+  "numeric_rounding": "Fixed6significantdigits,originaldataunchanged",
+  "outgoing_data": "Only8pastprice/setupfeatures;SIarmadds3nullablearchivedSIattributesandunknownstatus;pastbinarylabels.No dates/IDs/contracts/absoluteprices/rawquotes/currentfuturelabels",
+  "label": "Label1:actual HY104-EMA22 strategy exit net,normalized5.74USD roundtripfees and additional25USD adverse roundtripfillstress,is>0;label0:<=0.",
+  "input_features_context": [
+    "side",
+    "chicago_RTH_minute",
+    "signed_move60_rv300",
+    "signed_move300_rv300",
+    "log1p_rv300_ticks",
+    "spread_ticks",
+    "signed_topsize_imbalance",
+    "quote_age_seconds"
+  ],
+  "input_features_context_SI": [
+    "side",
+    "chicago_RTH_minute",
+    "signed_move60_rv300",
+    "signed_move300_rv300",
+    "log1p_rv300_ticks",
+    "spread_ticks",
+    "signed_topsize_imbalance",
+    "quote_age_seconds",
+    "last_STOP_arrow_relative15m",
+    "last_ICEBERG_arrow_relative15m",
+    "archived_count60m_cap5",
+    "SI_status_code"
+  ],
+  "SI_scope": "OwnESRITHMIC229 only,sameexactcontract,knownmaxsentedit<=decision−30s;STOP/ICEBERG15m,count60m.Nulls+explicitunknownstatus,nevertrueabsencezeros",
+  "shared_cohort_rule": "EveryEMA22setupafterfirstESarchivepublication+30s;no conditioning onfuture samedaymessages",
+  "priors": "Fulltraining andexact32-example training winrates;no test-targetcalibration",
+  "primary": "PairedSIincrement permodel:LogLoss(context)−LogLoss(contextSI),Brier same difference.Positive favorsSI.",
+  "uncertainty": "1999 moving5businessdateblock bootstrap,seed20261121;97.5percent interval permodel as two-comparisonfamily95percentdiagnostic;conditional selected-dataonly",
+  "secondary": "AUC/rank,perblockcoverage,rawproper1e-7clipping plusfixed.01-.99sensitivity;knownprior60SItestsubset26cases descriptiveonly,no formalclaim below30",
+  "mechanism": "Exactlymetadata-preselected10percentrepeatIDs perarm,onefirstcaseeach5folds+evenlyspacedremaining;measureduplicateprobabilities,do notaverageorselectwinner",
+  "repeats_per_arm": 11,
+  "main_requests": 440,
+  "repeat_requests": 44,
+  "total_requests": 484,
+  "max_request_bytes": 4500,
+  "wrapper_token_bound": 2048,
+  "reservation_input_USD_per_M_each": 0.3,
+  "output_cost": 0,
+  "max_total_reserved_usd": 0.9507695999999999,
+  "hard_client_cap_usd": 1.0,
+  "quoted_input_USD_per_M": {
+    "nace-ai/drex-max-finance": 0.12,
+    "Cloudflare/clef": 0.24
+  },
+  "undiscounted_upper_input_USD_per_M": {
+    "nace-ai/drex-max-finance": 0.24,
+    "Cloudflare/clef": 0.24
+  },
+  "cost_scope": "Quotes checked21Nov2026;Finance.12promo,Clef.24;estimatesnotactualinvoice;clientreservationnotvendorbillingcap",
+  "sources": [
+    "https://deepinfra.com/nace-ai/drex-max-finance/api",
+    "https://deepinfra.com/Cloudflare/clef/api",
+    "https://docs.deepinfra.com/integrations/clef",
+    "https://docs.deepinfra.com/account/data-privacy"
+  ],
+  "calls_made": 0,
+  "no_fine_tuning": true,
+  "no_API_by_prepare": true,
+  "no_SQX_or_payout_claim": true,
+  "model_scope": "Pretraineddecision-headinference withpast-exampleconditioning,notdocumentedsupervisedweighttraining/calibrationforthistradingtask;userexplicitlyrequestedbothmodels",
+  "model_privacy": "Vendorstatesnostorage/trainingofrequestcontent fortheseinferenceAPIs;metadatalogged.Still external numericresearchdata transfer",
+  "fail_closed": "Noauthenticatedredirects,noautomaticretry;first401/403/404/429/network/schema/tokenbounderrorstopsallnextcalls.Preserveledger,inflightandcoverage.No fakefallback probabilities.",
+  "dataset_manifest_sha256": "2e42228d79f25f3de38d25bf94e198c6757f93692c75055c757a337d38420b53",
+  "canonical_npy_sha256": "598dcf8f4c7307eb678f3af2bc6a67c6718af29780dbbadf630e9c099fcb751b",
+  "dataset_csv_sha256": "9f71cc1e99cb7749b6ae35c2e1ae1d512b6f4008f05c453e528907dc81e6da54",
+  "folds_sha256": "234b02df0ba4c7e18a1002dcad953cbcee2ca636766b8c61f2953b87249c6db2",
+  "private_cases_sha256": "a85cb125951d15b90bcbcc152ea393aed971426e4d47ac27e2279c3e0242cccf",
+  "private_cases_semantic_sha256": "b1bd9fd48eb4b0b1d24af9ea3f66210df2c7f6bf56eaf34fd9f71c17110a4205",
+  "runner_sha256": "d2d1721af01bc4b5a6c4293822d3d59c2da27e7dbf6be414c8ef1ddda3777b00",
+  "source_sha256": {
+    "build_dataset.py": "3faecb8678c0c5d358b2906623e4490aad4f4dd873107e088ccf0e5cebd61564",
+    "cloud_probe.py": "d2d1721af01bc4b5a6c4293822d3d59c2da27e7dbf6be414c8ef1ddda3777b00",
+    "cohort.py": "e25f8bd1c5f26f38c84a472a4db3cab0addd8de18e8416f1082704686bdf7325",
+    "common.py": "7ef911c66747e263dd5df4073d60ffe42a0d94705377c928818bf6fd139c67d6",
+    "native_decode_verify.py": "f8f8530e64789aa4e31922dd2ce70c3475e279103bada2e57e3f16c32ed93db1",
+    "quote_loader.py": "a7841ee1fec7d1e3d94d347a78fa4df81b758a3cd21f1ae0cca22c65bd2b02fa",
+    "test_offline.py": "e3e2f9c9c0c9a4dc8708d0a2e4952b282ab4132b4081a9402ca2a6c08f1eeefa"
+  }
+}

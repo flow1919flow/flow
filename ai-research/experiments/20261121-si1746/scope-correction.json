@@ -1,0 +1,6 @@
+{
+  "status": "different_research_question_not_HY104_setup_SI_test",
+  "scope": "Dieser Lauf untersucht die Kursreaktion nach SI-Meldungen. Er testet NICHT den Zusatznutzen von SI vor tatsächlichen HY104-EMA22-Setups. Dieser separate Strategie-Test läuft im Unterprojekt HY104-EMA22-SI-DeepInfra-20261121.",
+  "metrics_unchanged": true,
+  "successor": "HY104-EMA22-SI-DeepInfra-20261121"
+}

@@ -1,0 +1,152 @@
+{
+  "registered_utc": "2026-11-21T02:23:52.469043+00:00",
+  "task": "Native HY104 EMA22 strategy-outcome classification, context vs context plus SI",
+  "status_at_registration": "No corrected-cohort fits; dataset pending freeze and parent go-ahead",
+  "seed": 20261121,
+  "models": {
+    "ML2_L1_LogisticRegression": {
+      "kind": "LogisticRegression",
+      "C": 0.1,
+      "l1_ratio": 1.0,
+      "solver": "saga",
+      "max_iter": 10000,
+      "tol": 1e-05,
+      "fit_intercept": true,
+      "class_weight": null,
+      "random_state": 20261121
+    },
+    "ML3_ElasticNet_LogisticRegression": {
+      "kind": "LogisticRegression",
+      "C": 0.1,
+      "l1_ratio": 0.5,
+      "solver": "saga",
+      "max_iter": 10000,
+      "tol": 1e-05,
+      "fit_intercept": true,
+      "class_weight": null,
+      "random_state": 20261121
+    },
+    "ML4_RidgeClassifier": {
+      "kind": "RidgeClassifier",
+      "alpha": 1.0,
+      "solver": "svd",
+      "fit_intercept": true,
+      "class_weight": null
+    },
+    "ML5_LinearSVC": {
+      "kind": "LinearSVC",
+      "C": 0.1,
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": false,
+      "tol": 1e-05,
+      "max_iter": 10000,
+      "fit_intercept": true,
+      "class_weight": null,
+      "random_state": 20261121
+    },
+    "ML6_SGDClassifier_log_loss": {
+      "kind": "SGDClassifier",
+      "loss": "log_loss",
+      "penalty": "l2",
+      "alpha": 0.0001,
+      "learning_rate": "optimal",
+      "max_iter": 10000,
+      "tol": 1e-05,
+      "shuffle": false,
+      "early_stopping": false,
+      "average": false,
+      "fit_intercept": true,
+      "class_weight": null,
+      "random_state": 20261121
+    },
+    "ML7_Perceptron": {
+      "kind": "Perceptron",
+      "penalty": null,
+      "alpha": 0.0001,
+      "eta0": 1.0,
+      "max_iter": 10000,
+      "tol": 1e-05,
+      "shuffle": false,
+      "early_stopping": false,
+      "fit_intercept": true,
+      "class_weight": null,
+      "random_state": 20261121
+    },
+    "ML9_TabPFN_v2": {
+      "kind": "TabPFN_v2",
+      "n_estimators": 4,
+      "device": "cpu",
+      "random_state": 20261121,
+      "n_preprocessing_jobs": 1,
+      "torch_threads": 4,
+      "model_version": "V2",
+      "checkpoint_sha256": "cf8c519c01eaf1613ee91239006d57b1c806ff5f23ac1aeb1315ba1015210e49"
+    }
+  },
+  "fit_matrix": "Each fixed classifier independently in both arms, on the identical frozen fold IDs; no search",
+  "source_policy": "Correct 348 native trades in 242-session year; main cohort after ES SI archive starts; never use old 347 C28.03 or standalone SI15m labels",
+  "targets": {
+    "primary": "Frozen y: actual native strategy exit net after normalized roundtrip 5.74 USD, then additional 25 USD cost stress > 0; not a fixed 15-minute markout"
+  },
+  "splits": {
+    "initial_training_eligible_trades": 48,
+    "test_block_business_days": 20,
+    "whole_business_day_gap": 1,
+    "purge": "Training outcomes must be known strictly before frozen test information cutoff",
+    "fold_source": "Canonical dataset builder; no local fold optimization"
+  },
+  "preprocessing": {
+    "fit_rows": "training only",
+    "missing_values": "column train median, zero if all train values missing",
+    "missing_indicators": "One indicator per input feature, always present",
+    "scaling": "Train means and population standard deviations after imputation and indicator append; zero standard deviations become one",
+    "SI_absence": "Null is unknown, never evidence of no SI; coverage status provided as explicit numeric features"
+  },
+  "prediction": {
+    "TabPFN": "One test row per predict_proba call; official V2 checkpoint, CPU, no cloud; categorical indices side, SI_status_code when present, and every appended missing flag",
+    "others": "Native predict and native predict_proba only for models that implement it; decision_function retained as raw scores",
+    "probability_clip_for_scoring": "Only sklearn log_loss numerical endpoint handling; actual probabilities saved unmodified",
+    "calibration": "None; no test fitted calibration"
+  },
+  "shortages": {
+    "one_training_class": "Skip both arms of that model/fold/target with explicit reason",
+    "minority_n1": "Fit fixed settings; record counts and warnings; no synthetic samples",
+    "one_test_class": "Save forecasts/accuracy; AUC undefined null, with reason",
+    "fit_failure": "Retain error, stop model pair; do not silently switch algorithms"
+  },
+  "metrics": {
+    "primary": [
+      "accuracy",
+      "AUC within each chronological block",
+      "positive-negative-pair weighted within-block AUC"
+    ],
+    "descriptive_only": [
+      "Pooled AUC across folds; margin scale may vary by fold"
+    ],
+    "native_probability_only": [
+      "LogLoss",
+      "Brier"
+    ],
+    "baseline": "Train-only Laplace positive prior, no fitted features",
+    "selection": "No winner deployment, threshold search, gate, native SQX job or payout claim"
+  },
+  "limits": [
+    "Selected historical year is development data, not fresh OOS",
+    "Very sparse SI overlap and incomplete feed uptime limit inference",
+    "Strategy outcomes are not portfolio payouts",
+    "Seven model families and two arms are exploratory multiple comparisons"
+  ],
+  "execution": {
+    "checkpoint_sha256": "cf8c519c01eaf1613ee91239006d57b1c806ff5f23ac1aeb1315ba1015210e49",
+    "model_runtime": "work/tools/tabpfn/.venv Python3.12; sklearn runtime work/tools/mlflow/.venv",
+    "network": "HF_HUB_OFFLINE=1, DO_NOT_TRACK=1; no API/GPU/orders"
+  },
+  "source_sha256": {
+    "common.py": "a2a208adbef72ac8d158da8088fa88d7794fd333bef708973bbc0bcff0731c54",
+    "config.py": "2ae593ec2f2e3ebf72ec3413a1d86f0096506c0d256f6f01b7e7c6f59c1f617f",
+    "fixtures.py": "5498d7b810228ba497620d55eba21814505d8744795e500033ae9162edf80a22",
+    "register.py": "ba4c419ec16f93db9f09563419e94323b6d7d039fda5b90d25bd0eb422f64173",
+    "train.py": "4830af464525dad059cc4140b4a40306c09946ed1669b1926c9c6dd4a8d1fe9b"
+  }
+}

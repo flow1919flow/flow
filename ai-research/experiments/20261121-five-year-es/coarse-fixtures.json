@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "count": 20,
+  "tests": [
+    "Golden native EMA20 forming, firstdaybar ATR10 TR=H-L, BB20 population sigma and0.75tickoffset",
+    "Five-minute commits preserve Wilder memory, laterTRincludespreviousclose, relativevolume compareslastclosedbaragainst20precedingbars",
+    "PreORdecisionfeature ignoresfuturecompletedOR; intentionallyleakyORpositivecontrolchangesandisdetected",
+    "Zero/negativeBBdirectionalpathsremainvalidsignedfeatures; no outcome-basedtargetexclusion",
+    "ORfeatureusesdecisioncloseproxyonly; futureactualentryopenisnotanargument",
+    "Physicalprefix: truncatingallminutesafterpreORdecisionorpoisoningfutureOHLCVcannotchangeanypriorprevieworcontact/returnstate",
+    "Entrygapbeyondfixedstopisimmediateatentryopen,fees/stressretained; gapopenneverusedindecisionfeatures",
+    "Same1mbarhitsstopandOR:stopwins; OHLCtouchinformationclockisconservativeminuteEND",
+    "NextopenadversegapstophaspriorityoverpriorBBclosecrossscheduledexit",
+    "Missingexactnextentryminuteisreportedexclusion; neverjumpaheadtoinventexecutionliquidity",
+    "Nativeflattenexitsfirstobservedopenatcutoff; no sessionclose15:00substitution",
+    "Existingreturnisconsumedbeforecurrentcloseestablishesoppositebandsetup",
+    "Nativeoutwardtickroundingretainsnear-integertickswithoutfloatingpointoffbyone",
+    "CivilChicagoDSTspring/fallshiftsUTCopenbyonehourwhilekeeping450minuteRTH",
+    "Priorvolumeonlyselection:tiesretainincumbent; no backwardmaturityevenifoldercontractvolumegreater",
+    "Rollprefix/currentdayvolumepoisoncannotchangeselectionatthatdaysopen",
+    "SealedfourthyearoutcomeguardrejectsevenauthorizedmodewithoutfinalfrozenmodelSHAreceipt",
+    "ActualcanonicalknownpricecalendarcontainsEXACT242nativeknownsessions; fullclosuresexcludedbeforepriorvolumeselection",
+    "Eightactualmonth/DST/yearboundary5mOHLCVbarsindependentlyreconciledtofiveoriginal1mrecords; pricesremainintegernano-units",
+    "Greedyone-to-onematchingusesonlycontract/date/side/time; poisoningalloutcomescannotchangepairs"
+  ],
+  "utc": "2026-11-21T02:43:28.827477+00:00",
+  "protocol_sha256": "07bcf9570e68ab5cbeef5b58ca6b23c543979d8f96ac4c17986ddd2f43311faf",
+  "no_real_candidate_or_outcome_generated": true,
+  "source_sha256": {
+    "accept_known.py": "fa30c984ca3bf040992b2461c74382d587344e7f71f20980d1ad1cfe84263761",
+    "coarse_candidates.py": "a1d45f974b2423b56ac1163bd75dfd25424eafb8ad167991e4b67f07191ab19b",
+    "extract_prices.py": "098f948ec07d96d7a89b1f41c0b5989b66c2d63ab416c59d68db8b68c4557812",
+    "fixtures_coarse.py": "8b45ca026eac4bc5ff7b84c45885dcfe4a460ed74eac4bb32ab4088f8b162df8",
+    "inventory_local.py": "21708f55a5f992fa50b08ced1ba942e801c8b88faee3549260d699c8525b04fd",
+    "quote_only_server.py": "11a0de54b0454f90497ba7bc257b493c28a4b957b4aec437ee93751d68c216a6"
+  }
+}

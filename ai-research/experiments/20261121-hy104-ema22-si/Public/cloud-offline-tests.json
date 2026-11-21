@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "tests_run": 13,
+  "failures": 0,
+  "errors": 0,
+  "actual_API_calls": 0,
+  "real_model_predictions_generated": false,
+  "real_secret_values_read": false,
+  "runner_sha256": "d2d1721af01bc4b5a6c4293822d3d59c2da27e7dbf6be414c8ef1ddda3777b00",
+  "test_sha256": "e3e2f9c9c0c9a4dc8708d0a2e4952b282ab4132b4081a9402ca2a6c08f1eeefa",
+  "scope": "Actualdataset/foldprovenance plus explicitlysyntheticHTTP/evaluationfixtures,notmodelperformanceresults",
+  "completed_at_utc": "2026-11-21T02:27:08.708980+00:00"
+}

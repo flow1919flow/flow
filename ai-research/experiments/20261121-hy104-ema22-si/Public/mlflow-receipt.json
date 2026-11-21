@@ -1,0 +1,31 @@
+{
+  "experiment_id": "4",
+  "study": "HY104EMA22_SI_SETUP_20261121",
+  "local_runs": {
+    "ML2_L1_LogisticRegression/context": "21193d9e2a91479eb6f5727ed4e24c62",
+    "ML2_L1_LogisticRegression/context_plus_SI": "8a95732c304c4e19a60581e7daf2868e",
+    "ML3_ElasticNet_LogisticRegression/context": "debbc1fe81b645368856e38a8c6499e2",
+    "ML3_ElasticNet_LogisticRegression/context_plus_SI": "1aec2a5793914817aa9b099ca13fb473",
+    "ML4_RidgeClassifier/context": "e621039edf82414ca2c91d8f9cd7534a",
+    "ML4_RidgeClassifier/context_plus_SI": "04aa75a34dbd4dc6a1fb3f4a218b23e0",
+    "ML5_LinearSVC/context": "37006fa633ab47aab42b9d13e2dcc7c2",
+    "ML5_LinearSVC/context_plus_SI": "ff76a4cde60148c38d77c67d29d72a3b",
+    "ML6_SGDClassifier_log_loss/context": "21205307ee4e45df81d1ae2a00fa2106",
+    "ML6_SGDClassifier_log_loss/context_plus_SI": "d2000b36122f41a38bf5aab2a4bebc68",
+    "ML7_Perceptron/context": "cf55b42aeb5644fbba396dd1cbbfb888",
+    "ML7_Perceptron/context_plus_SI": "754d81b066ae46b4bf7605cdf69cced4",
+    "ML9_TabPFN_v2/context": "b0b9997fd94a41e2b1c1581a8254b990",
+    "ML9_TabPFN_v2/context_plus_SI": "6d0e85630e7043f8a8bd218d3fe450eb"
+  },
+  "cloud_runs": {
+    "nace-ai/drex-max-finance/context": "ac9846f1cf5b4cc9bb9a1108cef9032f",
+    "nace-ai/drex-max-finance/context_SI": "a87a22df920c4113b81c635f723d428d",
+    "Cloudflare/clef/context": "9fcbb487658e4ac5bf88bf32af8d8351",
+    "Cloudflare/clef/context_SI": "46858b522416457984a96af58b17c7d3"
+  },
+  "local_status": "FINISHED",
+  "cloud_status": "FINISHED",
+  "tracking_uri": "http://127.0.0.1:5055",
+  "created_at_utc": "2026-11-21T02:34:22.946887+00:00",
+  "finished_at_utc": "2026-11-21T02:38:18.569440+00:00"
+}

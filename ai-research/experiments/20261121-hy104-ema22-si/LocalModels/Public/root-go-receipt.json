@@ -1,0 +1,9 @@
+{
+  "authorized": true,
+  "authorization_source": "Root agent explicit GO message after fixed preregistration and correct native dataset identity acceptance, 2026-11-21",
+  "created_utc": "2026-11-21T02:24:01.006599+00:00",
+  "manifest_sha256": "2e42228d79f25f3de38d25bf94e198c6757f93692c75055c757a337d38420b53",
+  "preregister_sha256": "807f00bb86c5130384397ddb5bef118bba94d48f1e203022000ea0b3ac406ffa",
+  "fixtures_sha256": "c22dc8e146fad6e3b15399c836e7ad0523ca21a73d504e3d9526fa4d47b09c3f",
+  "scope": "Seven fixed local classifiers, context vs context+SI, frozen five expanding folds, y after normalized5.74fee plus25USDstress; no tuning/gates"
+}

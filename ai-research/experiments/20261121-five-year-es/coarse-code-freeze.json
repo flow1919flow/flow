@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-11-21T02:43:46.563608+00:00",
+  "before_first_real_coarse_candidate_or_label": true,
+  "protocol_sha256": "07bcf9570e68ab5cbeef5b58ca6b23c543979d8f96ac4c17986ddd2f43311faf",
+  "protocol_public_commit": "493eaf4521cbc28acceb182ce5a9ea113118f3a8",
+  "fixture_sha256": "87d066f6d772ffd7ac4fb3781c2ffcfa1362846607b4f5e97bf5481b2aaa9997",
+  "fixtures_passed": 20,
+  "sources_sha256": {
+    "accept_known.py": "fa30c984ca3bf040992b2461c74382d587344e7f71f20980d1ad1cfe84263761",
+    "coarse_candidates.py": "a1d45f974b2423b56ac1163bd75dfd25424eafb8ad167991e4b67f07191ab19b",
+    "extract_prices.py": "098f948ec07d96d7a89b1f41c0b5989b66c2d63ab416c59d68db8b68c4557812",
+    "fixtures_coarse.py": "8b45ca026eac4bc5ff7b84c45885dcfe4a460ed74eac4bb32ab4088f8b162df8",
+    "inventory_local.py": "21708f55a5f992fa50b08ced1ba942e801c8b88faee3549260d699c8525b04fd",
+    "quote_only_server.py": "11a0de54b0454f90497ba7bc257b493c28a4b957b4aec437ee93751d68c216a6"
+  },
+  "price_manifest_sha256": "b86136949239d724f6e1e8c40155c79fd0517f689f527fa27d6ec2018bc763ce",
+  "OR_feature_causality": "KnownORafter60minutes and>=1tick favorablefromdecisioncloseproxy,neveractualfutureentryopen;labelORprofitguardusesactualentry",
+  "exit_information_clock": "Stop/OR1mH/LtouchesassignedminuteEND;gap,BBnextopenandflattenuseexactobservedopenclock",
+  "known_native_calendar": "Exactly242nativeknownsessions;threefullclosuresremovedviaattestedsourcecalendarbeforepriorroll/warmup",
+  "secondary_fixed_bracket": "Null withuncomputed_preflight_onlystatus; no inventedmultiple",
+  "old_labels_authorized": false,
+  "sealed_labels_authorized": false
+}

@@ -1,0 +1,178 @@
+{
+  "status": "FINISHED_AND_AUDITED",
+  "utc": "2026-11-21T02:25:51.600952+00:00",
+  "binding": {
+    "manifest_sha256": "2e42228d79f25f3de38d25bf94e198c6757f93692c75055c757a337d38420b53",
+    "dataset_csv_sha256": "9f71cc1e99cb7749b6ae35c2e1ae1d512b6f4008f05c453e528907dc81e6da54",
+    "canonical_npy_sha256": "598dcf8f4c7307eb678f3af2bc6a67c6718af29780dbbadf630e9c099fcb751b",
+    "folds_json_sha256": "234b02df0ba4c7e18a1002dcad953cbcee2ca636766b8c61f2953b87249c6db2"
+  },
+  "preregister_sha256": "807f00bb86c5130384397ddb5bef118bba94d48f1e203022000ea0b3ac406ffa",
+  "fixtures_sha256": "c22dc8e146fad6e3b15399c836e7ad0523ca21a73d504e3d9526fa4d47b09c3f",
+  "total_fits": 70,
+  "model_arms": 14,
+  "forecasts_saved": 1540,
+  "shared_cases": 110,
+  "shared_dates": 67,
+  "initial_training_cases": 48,
+  "folds": 5,
+  "primary_label": "ActualnativeEMA22exit net−1.06USDfee normalization−25USD tickstress>0,not15minmarkout",
+  "test_SI15_known": 8,
+  "test_SI60_known": 26,
+  "pairs": [
+    {
+      "model": "ML2_L1_LogisticRegression",
+      "n": 110,
+      "context_accuracy": 0.6,
+      "SI_accuracy": 0.6,
+      "accuracy_delta_SI_minus_context": 0.0,
+      "context_pooled_auc": 0.45265151515151514,
+      "SI_pooled_auc": 0.4760674931129477,
+      "context_within_block_auc": 0.5,
+      "SI_within_block_auc": 0.5,
+      "within_block_auc_delta_SI_minus_context": 0.0,
+      "context_log_loss": 0.6822935668949278,
+      "SI_log_loss": 0.6822252249489512,
+      "paired_log_loss_improvement": 6.834194597660215e-05,
+      "context_brier": 0.24450922911426168,
+      "SI_brier": 0.24451934407080278
+    },
+    {
+      "model": "ML3_ElasticNet_LogisticRegression",
+      "n": 110,
+      "context_accuracy": 0.6,
+      "SI_accuracy": 0.6,
+      "accuracy_delta_SI_minus_context": 0.0,
+      "context_pooled_auc": 0.4628099173553719,
+      "SI_pooled_auc": 0.4607438016528926,
+      "context_within_block_auc": 0.46749654218533887,
+      "SI_within_block_auc": 0.46749654218533887,
+      "within_block_auc_delta_SI_minus_context": 0.0,
+      "context_log_loss": 0.6782952010508825,
+      "SI_log_loss": 0.6785860103991027,
+      "paired_log_loss_improvement": -0.0002908093482202334,
+      "context_brier": 0.2424695909660792,
+      "SI_brier": 0.24260939124481812
+    },
+    {
+      "model": "ML4_RidgeClassifier",
+      "n": 110,
+      "context_accuracy": 0.5454545454545454,
+      "SI_accuracy": 0.5272727272727272,
+      "accuracy_delta_SI_minus_context": -0.018181818181818188,
+      "context_pooled_auc": 0.49139118457300274,
+      "SI_pooled_auc": 0.4900137741046832,
+      "context_within_block_auc": 0.48686030428769017,
+      "SI_within_block_auc": 0.4979253112033195,
+      "within_block_auc_delta_SI_minus_context": 0.011065006915629338
+    },
+    {
+      "model": "ML5_LinearSVC",
+      "n": 110,
+      "context_accuracy": 0.5454545454545454,
+      "SI_accuracy": 0.5363636363636364,
+      "accuracy_delta_SI_minus_context": -0.009090909090909038,
+      "context_pooled_auc": 0.4896694214876033,
+      "SI_pooled_auc": 0.4896694214876033,
+      "context_within_block_auc": 0.4854771784232365,
+      "SI_within_block_auc": 0.5006915629322268,
+      "within_block_auc_delta_SI_minus_context": 0.01521438450899032
+    },
+    {
+      "model": "ML6_SGDClassifier_log_loss",
+      "n": 110,
+      "context_accuracy": 0.509090909090909,
+      "SI_accuracy": 0.4636363636363636,
+      "accuracy_delta_SI_minus_context": -0.045454545454545414,
+      "context_pooled_auc": 0.5006887052341598,
+      "SI_pooled_auc": 0.4827823691460056,
+      "context_within_block_auc": 0.5152143845089903,
+      "SI_within_block_auc": 0.5269709543568465,
+      "within_block_auc_delta_SI_minus_context": 0.011756569847856224,
+      "context_log_loss": 5.698639596971349,
+      "SI_log_loss": 5.422460271800349,
+      "paired_log_loss_improvement": 0.2761793251709994,
+      "context_brier": 0.4317953117766038,
+      "SI_brier": 0.4318839585735957
+    },
+    {
+      "model": "ML7_Perceptron",
+      "n": 110,
+      "context_accuracy": 0.43636363636363634,
+      "SI_accuracy": 0.4727272727272727,
+      "accuracy_delta_SI_minus_context": 0.036363636363636376,
+      "context_pooled_auc": 0.4369834710743802,
+      "SI_pooled_auc": 0.4810606060606061,
+      "context_within_block_auc": 0.48132780082987553,
+      "SI_within_block_auc": 0.4951590594744122,
+      "within_block_auc_delta_SI_minus_context": 0.01383125864453666
+    },
+    {
+      "model": "ML9_TabPFN_v2",
+      "n": 110,
+      "context_accuracy": 0.6,
+      "SI_accuracy": 0.5909090909090909,
+      "accuracy_delta_SI_minus_context": -0.009090909090909038,
+      "context_pooled_auc": 0.4858815426997245,
+      "SI_pooled_auc": 0.474862258953168,
+      "context_within_block_auc": 0.49930843706777317,
+      "SI_within_block_auc": 0.5020746887966805,
+      "within_block_auc_delta_SI_minus_context": 0.0027662517289073207,
+      "context_log_loss": 0.6781023325765829,
+      "SI_log_loss": 0.6815086639399235,
+      "paired_log_loss_improvement": -0.0034063313633405645,
+      "context_brier": 0.24234219689090536,
+      "SI_brier": 0.2440203801609417
+    }
+  ],
+  "train_prior_accuracy": 0.6,
+  "train_prior_log_loss": 0.6775351172444789,
+  "checks": [
+    "sklearn: all fits and native scores/probabilities independently accepted; exact frozen test IDs and y; no fake probability metrics",
+    "tabpfn: all fits and native scores/probabilities independently accepted; exact frozen test IDs and y; no fake probability metrics",
+    "All14modelarms contain identical ordered110eligibletestcases over5folds",
+    "Train-only preprocessing independently reconstructed for70fits; all60linear forecasts reproduced from saved coefficients within1e-10",
+    "Accuracy, pairwise pooled AUC, within-block pair AUC, native LogLoss/Brier independently recomputed from1540savedforecasts",
+    "Exact model/preprocessing/runner preregistration source hashes unchanged; registration precedes GO and both training runtimes"
+  ],
+  "fit_warnings": [
+    {
+      "model": "ML9_TabPFN_v2",
+      "arm": "context",
+      "fold": 0,
+      "warnings": [
+        {
+          "category": "DeprecationWarning",
+          "message": "Importing from 'tabpfn.model.loading' is deprecated and will be removed in a future release; import from 'tabpfn.model_loading' instead."
+        },
+        {
+          "category": "DeprecationWarning",
+          "message": "Importing from 'tabpfn.model.loading' is deprecated and will be removed in a future release; import from 'tabpfn.model_loading' instead."
+        },
+        {
+          "category": "DeprecationWarning",
+          "message": "Importing from 'tabpfn.model.loading' is deprecated and will be removed in a future release; import from 'tabpfn.model_loading' instead."
+        },
+        {
+          "category": "DeprecationWarning",
+          "message": "Importing from 'tabpfn.model.loading' is deprecated and will be removed in a future release; import from 'tabpfn.model_loading' instead."
+        },
+        {
+          "category": "DeprecationWarning",
+          "message": "Importing from 'tabpfn.model.loading' is deprecated and will be removed in a future release; import from 'tabpfn.model_loading' instead."
+        },
+        {
+          "category": "DeprecationWarning",
+          "message": "Importing from 'tabpfn.model.loading' is deprecated and will be removed in a future release; import from 'tabpfn.model_loading' instead."
+        }
+      ]
+    }
+  ],
+  "maximum_linear_score_reconstruction_error": 0.0,
+  "interpretation": "Exploratory development-data model comparison. Sparse SI overlap gives low power; mixed or null changes do not prove that SI carries no information. No strategy gate, account/payout replay or deployment.",
+  "pooled_auc_caveat": "Across-fold margins may have different scales; assess the within-block ranking separately. Final one-row fold has undefined AUC.",
+  "result_source_sha256": {
+    "results-sklearn.json": "f575b0f18ae3eaecd205d5e6843c4fd8c407b8fc8a80b67fafee38645117f5da",
+    "results-tabpfn.json": "f4133729615be039a080ebed5efa4a85f24ac133ec3eebfe0cad0557b3aff87c"
+  }
+}

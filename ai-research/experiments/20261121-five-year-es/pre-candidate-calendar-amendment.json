@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-21T02:38:29.634493+00:00",
+  "before_any_candidate_or_label": true,
+  "reason": "Use attested exact242nativeknown-yearsessiondates instead of245weekdaytemplate; fullclosures2025-12-25,2026-01-01,2026-04-03 absent in nativecalendar",
+  "change": "Exclude exactlynativeclosedknown-yeardates beforecausalprior-sessionrollandfive-sessionwarmup; preserve all older unresolvedcalendarflags",
+  "previous_metadata_artifacts_retained": "Private/retained-price-draft-v1",
+  "no_strategy_outcomes_inspected_for_this_change": true
+}

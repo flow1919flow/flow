@@ -1,0 +1,15 @@
+{
+  "state": "actual_native_EMA22_cost_adjusted_labels_built",
+  "all159_retained": true,
+  "eligible": 159,
+  "stress_label_counts": {
+    "0": 64,
+    "1": 95
+  },
+  "label": "Actual strategy exit net;native4.68fee normalized to5.74(subtract1.06),then additional25USD stress;positive iff>0",
+  "no_fixed15min_markout_label": true,
+  "future_input_outcome_columns": false,
+  "feature_freeze_sha256": "79f6a7ad9b08c40efcde5f04714e4189f1455773a002cda6d80673b405d78bd0",
+  "labeled_sha256": "1c580b8a4843fb0e1db3a4bd931263a6a0f9a3677d7c77cb8e890355ae5d0395",
+  "completed_at_utc": "2026-11-21T02:22:01.488248+00:00"
+}

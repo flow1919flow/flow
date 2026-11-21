@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "tracked_local_arms": 14,
+  "tracked_cloud_arms": 4,
+  "backend_status_counts": {
+    "FINISHED": 18
+  },
+  "all_FINISHED_verified": true,
+  "model_runIDs_local_only_receipt": "Public/mlflow-receipt.json",
+  "study": "HY104EMA22_SI_SETUP_20261121",
+  "verified_at_utc": "2026-11-21T02:39:05.660785+00:00",
+  "stand_html_sha256": "f4e08102c02459565d4e6962781b4eb2434e871328e728da22eb9343c7fc2e86",
+  "cloud_results_sha256": "d8e52a5107d05522571e8de16826c67080d541d0f16424e6f7259dfd2c890b49",
+  "responses_sha256": "4e500bc4922d8ab2172f4533ec4b48a2e82b295d3fa741ccf2a427ef9b1ef7a7",
+  "no_payouts_computed": true,
+  "previous_report_html_sha256": "5b78f10beb30e56be6dcb97f3bb0a47abd8fcdcdc3d05eecbc28ec9dde44cd43",
+  "cosmetic_report_correction": "keine aktuellen oder zukünftigen Ausgänge;no model/source/metric changes",
+  "report_updated_utc": "2026-11-21T02:41:05.174315+00:00"
+}

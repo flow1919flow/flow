@@ -1,0 +1,572 @@
+{
+  "state": "four_arm_decision_diagnostic_evaluated",
+  "source": "ActualHY104EMA22only,noC28orpostSI15minlabels",
+  "expected_main_per_arm": 110,
+  "common_all_four_cases": 110,
+  "full_coverage_all_four": true,
+  "responses_expected": 484,
+  "responses_recorded": 484,
+  "metrics": {
+    "nace-ai/drex-max-finance/context": {
+      "successful_main": 110,
+      "missing_or_failed_main": 0,
+      "all_successful_metrics": {
+        "n": 110,
+        "log_loss": 0.7459967746598594,
+        "brier": 0.2732850119428955,
+        "auc": 0.5115358126721763,
+        "accuracy_at0_5": 0.5181818181818182,
+        "sensitivity_clip01_log_loss": 0.7459967746598594,
+        "sensitivity_clip01_brier": 0.2732850119428955
+      },
+      "all_four_common_metrics": {
+        "n": 110,
+        "log_loss": 0.7459967746598594,
+        "brier": 0.2732850119428955,
+        "auc": 0.5115358126721763,
+        "accuracy_at0_5": 0.5181818181818182,
+        "sensitivity_clip01_log_loss": 0.7459967746598594,
+        "sensitivity_clip01_brier": 0.2732850119428955
+      },
+      "known_prior60_descriptive": {
+        "n": 26,
+        "metrics": {
+          "n": 26,
+          "log_loss": 0.9417101458828989,
+          "brier": 0.36051372428756834,
+          "auc": 0.24404761904761904,
+          "accuracy_at0_5": 0.34615384615384615,
+          "sensitivity_clip01_log_loss": 0.9417101458828989,
+          "sensitivity_clip01_brier": 0.36051372428756834
+        },
+        "inference_claim": false,
+        "reason": "Only26 knownSItestcases;below30,fixeddescriptiveonly"
+      },
+      "spearman_probability_actual_stress_net": 0.05318256635060862
+    },
+    "nace-ai/drex-max-finance/context_SI": {
+      "successful_main": 110,
+      "missing_or_failed_main": 0,
+      "all_successful_metrics": {
+        "n": 110,
+        "log_loss": 0.7478507701280139,
+        "brier": 0.27096534927291105,
+        "auc": 0.5261707988980717,
+        "accuracy_at0_5": 0.5727272727272728,
+        "sensitivity_clip01_log_loss": 0.7478507701280139,
+        "sensitivity_clip01_brier": 0.27096534927291105
+      },
+      "all_four_common_metrics": {
+        "n": 110,
+        "log_loss": 0.7478507701280139,
+        "brier": 0.27096534927291105,
+        "auc": 0.5261707988980717,
+        "accuracy_at0_5": 0.5727272727272728,
+        "sensitivity_clip01_log_loss": 0.7478507701280139,
+        "sensitivity_clip01_brier": 0.27096534927291105
+      },
+      "known_prior60_descriptive": {
+        "n": 26,
+        "metrics": {
+          "n": 26,
+          "log_loss": 0.950437421228804,
+          "brier": 0.3567581644093559,
+          "auc": 0.14583333333333334,
+          "accuracy_at0_5": 0.46153846153846156,
+          "sensitivity_clip01_log_loss": 0.950437421228804,
+          "sensitivity_clip01_brier": 0.3567581644093559
+        },
+        "inference_claim": false,
+        "reason": "Only26 knownSItestcases;below30,fixeddescriptiveonly"
+      },
+      "spearman_probability_actual_stress_net": 0.060724609652296105
+    },
+    "Cloudflare/clef/context": {
+      "successful_main": 110,
+      "missing_or_failed_main": 0,
+      "all_successful_metrics": {
+        "n": 110,
+        "log_loss": 0.80082000579028,
+        "brier": 0.3011618748181818,
+        "auc": 0.41649449035812675,
+        "accuracy_at0_5": 0.4,
+        "sensitivity_clip01_log_loss": 0.80082000579028,
+        "sensitivity_clip01_brier": 0.3011618748181818
+      },
+      "all_four_common_metrics": {
+        "n": 110,
+        "log_loss": 0.80082000579028,
+        "brier": 0.3011618748181818,
+        "auc": 0.41649449035812675,
+        "accuracy_at0_5": 0.4,
+        "sensitivity_clip01_log_loss": 0.80082000579028,
+        "sensitivity_clip01_brier": 0.3011618748181818
+      },
+      "known_prior60_descriptive": {
+        "n": 26,
+        "metrics": {
+          "n": 26,
+          "log_loss": 0.7944559065939385,
+          "brier": 0.29715964115384613,
+          "auc": 0.2857142857142857,
+          "accuracy_at0_5": 0.38461538461538464,
+          "sensitivity_clip01_log_loss": 0.7944559065939385,
+          "sensitivity_clip01_brier": 0.29715964115384613
+        },
+        "inference_claim": false,
+        "reason": "Only26 knownSItestcases;below30,fixeddescriptiveonly"
+      },
+      "spearman_probability_actual_stress_net": -0.1575668909316898
+    },
+    "Cloudflare/clef/context_SI": {
+      "successful_main": 110,
+      "missing_or_failed_main": 0,
+      "all_successful_metrics": {
+        "n": 110,
+        "log_loss": 0.831056763206051,
+        "brier": 0.3144543825454546,
+        "auc": 0.40909090909090906,
+        "accuracy_at0_5": 0.4,
+        "sensitivity_clip01_log_loss": 0.831056763206051,
+        "sensitivity_clip01_brier": 0.3144543825454546
+      },
+      "all_four_common_metrics": {
+        "n": 110,
+        "log_loss": 0.831056763206051,
+        "brier": 0.3144543825454546,
+        "auc": 0.40909090909090906,
+        "accuracy_at0_5": 0.4,
+        "sensitivity_clip01_log_loss": 0.831056763206051,
+        "sensitivity_clip01_brier": 0.3144543825454546
+      },
+      "known_prior60_descriptive": {
+        "n": 26,
+        "metrics": {
+          "n": 26,
+          "log_loss": 0.8206053539846507,
+          "brier": 0.3099047284615385,
+          "auc": 0.29761904761904767,
+          "accuracy_at0_5": 0.4230769230769231,
+          "sensitivity_clip01_log_loss": 0.8206053539846507,
+          "sensitivity_clip01_brier": 0.3099047284615385
+        },
+        "inference_claim": false,
+        "reason": "Only26 knownSItestcases;below30,fixeddescriptiveonly"
+      },
+      "spearman_probability_actual_stress_net": -0.11112388706738717
+    }
+  },
+  "paired_SI_increment": {
+    "nace-ai/drex-max-finance": {
+      "paired_cases": 110,
+      "logloss_improvement_SI": -0.0018539954681546214,
+      "logloss_ci97_5_low": -0.0388939404770006,
+      "logloss_ci97_5_high": 0.0276985970666519,
+      "brier_improvement_SI": 0.0023196626699844426,
+      "brier_ci97_5_low": -0.014723092910187169,
+      "brier_ci97_5_high": 0.015170013151610257,
+      "bootstrap_draws": 1999,
+      "block_businessdates": 5,
+      "seed": 20261121,
+      "interpretation": "PositivefavorsSI;conditionaldevelopmentdiagnostic,two modelprimarycomparisons;notcausalornewOOSproof"
+    },
+    "Cloudflare/clef": {
+      "paired_cases": 110,
+      "logloss_improvement_SI": -0.030236757415770654,
+      "logloss_ci97_5_low": -0.07189085181773945,
+      "logloss_ci97_5_high": 0.009323190225470387,
+      "brier_improvement_SI": -0.01329250772727273,
+      "brier_ci97_5_low": -0.03218704413537414,
+      "brier_ci97_5_high": 0.0053147611919491505,
+      "bootstrap_draws": 1999,
+      "block_businessdates": 5,
+      "seed": 20261121,
+      "interpretation": "PositivefavorsSI;conditionaldevelopmentdiagnostic,two modelprimarycomparisons;notcausalornewOOSproof"
+    }
+  },
+  "training_priors_on_all_four_common": {
+    "full_training_prior": {
+      "n": 110,
+      "log_loss": 0.6775351172444789,
+      "brier": 0.2421681876590019,
+      "auc": 0.45265151515151514,
+      "accuracy_at0_5": 0.6,
+      "sensitivity_clip01_log_loss": 0.6775351172444789,
+      "sensitivity_clip01_brier": 0.2421681876590019
+    },
+    "same32_example_prior": {
+      "n": 110,
+      "log_loss": 0.6757342585305,
+      "brier": 0.24128656810317708,
+      "auc": 0.5096418732782368,
+      "accuracy_at0_5": 0.6,
+      "sensitivity_clip01_log_loss": 0.6757342585305,
+      "sensitivity_clip01_brier": 0.24128656810317708
+    }
+  },
+  "per_block": [
+    {
+      "model": "nace-ai/drex-max-finance",
+      "arm": "context",
+      "fold_id": 0,
+      "expected": 27,
+      "successful": 27,
+      "metrics": {
+        "n": 27,
+        "log_loss": 0.7465181624967974,
+        "brier": 0.27467825562579695,
+        "auc": 0.6677631578947368,
+        "accuracy_at0_5": 0.5185185185185185,
+        "sensitivity_clip01_log_loss": 0.7465181624967974,
+        "sensitivity_clip01_brier": 0.27467825562579695
+      }
+    },
+    {
+      "model": "nace-ai/drex-max-finance",
+      "arm": "context",
+      "fold_id": 1,
+      "expected": 32,
+      "successful": 32,
+      "metrics": {
+        "n": 32,
+        "log_loss": 0.6886149343463852,
+        "brier": 0.24805413980253632,
+        "auc": 0.5607287449392713,
+        "accuracy_at0_5": 0.53125,
+        "sensitivity_clip01_log_loss": 0.6886149343463852,
+        "sensitivity_clip01_brier": 0.24805413980253632
+      }
+    },
+    {
+      "model": "nace-ai/drex-max-finance",
+      "arm": "context",
+      "fold_id": 2,
+      "expected": 19,
+      "successful": 19,
+      "metrics": {
+        "n": 19,
+        "log_loss": 0.8936412025580008,
+        "brier": 0.33834394813956,
+        "auc": 0.29761904761904767,
+        "accuracy_at0_5": 0.3684210526315789,
+        "sensitivity_clip01_log_loss": 0.8936412025580008,
+        "sensitivity_clip01_brier": 0.33834394813956
+      }
+    },
+    {
+      "model": "nace-ai/drex-max-finance",
+      "arm": "context",
+      "fold_id": 3,
+      "expected": 31,
+      "successful": 31,
+      "metrics": {
+        "n": 31,
+        "log_loss": 0.7312481565515965,
+        "brier": 0.265798064799811,
+        "auc": 0.55,
+        "accuracy_at0_5": 0.5806451612903226,
+        "sensitivity_clip01_log_loss": 0.7312481565515965,
+        "sensitivity_clip01_brier": 0.265798064799811
+      }
+    },
+    {
+      "model": "nace-ai/drex-max-finance",
+      "arm": "context",
+      "fold_id": 4,
+      "expected": 1,
+      "successful": 1,
+      "metrics": {
+        "n": 1,
+        "log_loss": 0.22010122438513852,
+        "brier": 0.039030914695050406,
+        "auc": null,
+        "accuracy_at0_5": 1.0,
+        "sensitivity_clip01_log_loss": 0.22010122438513852,
+        "sensitivity_clip01_brier": 0.039030914695050406
+      }
+    },
+    {
+      "model": "nace-ai/drex-max-finance",
+      "arm": "context_SI",
+      "fold_id": 0,
+      "expected": 27,
+      "successful": 27,
+      "metrics": {
+        "n": 27,
+        "log_loss": 0.7163996035441637,
+        "brier": 0.2597112843046396,
+        "auc": 0.6052631578947368,
+        "accuracy_at0_5": 0.5185185185185185,
+        "sensitivity_clip01_log_loss": 0.7163996035441637,
+        "sensitivity_clip01_brier": 0.2597112843046396
+      }
+    },
+    {
+      "model": "nace-ai/drex-max-finance",
+      "arm": "context_SI",
+      "fold_id": 1,
+      "expected": 32,
+      "successful": 32,
+      "metrics": {
+        "n": 32,
+        "log_loss": 0.7104044953144849,
+        "brier": 0.2522736239169886,
+        "auc": 0.5870445344129555,
+        "accuracy_at0_5": 0.65625,
+        "sensitivity_clip01_log_loss": 0.7104044953144849,
+        "sensitivity_clip01_brier": 0.2522736239169886
+      }
+    },
+    {
+      "model": "nace-ai/drex-max-finance",
+      "arm": "context_SI",
+      "fold_id": 2,
+      "expected": 19,
+      "successful": 19,
+      "metrics": {
+        "n": 19,
+        "log_loss": 0.869637119703753,
+        "brier": 0.3292639954241425,
+        "auc": 0.38095238095238093,
+        "accuracy_at0_5": 0.3684210526315789,
+        "sensitivity_clip01_log_loss": 0.869637119703753,
+        "sensitivity_clip01_brier": 0.3292639954241425
+      }
+    },
+    {
+      "model": "nace-ai/drex-max-finance",
+      "arm": "context_SI",
+      "fold_id": 3,
+      "expected": 31,
+      "successful": 31,
+      "metrics": {
+        "n": 31,
+        "log_loss": 0.7559854581914569,
+        "brier": 0.27171797654544017,
+        "auc": 0.5479166666666667,
+        "accuracy_at0_5": 0.6451612903225806,
+        "sensitivity_clip01_log_loss": 0.7559854581914569,
+        "sensitivity_clip01_brier": 0.27171797654544017
+      }
+    },
+    {
+      "model": "nace-ai/drex-max-finance",
+      "arm": "context_SI",
+      "fold_id": 4,
+      "expected": 1,
+      "successful": 1,
+      "metrics": {
+        "n": 1,
+        "log_loss": 0.2291970900191094,
+        "brier": 0.041954592483965825,
+        "auc": null,
+        "accuracy_at0_5": 1.0,
+        "sensitivity_clip01_log_loss": 0.2291970900191094,
+        "sensitivity_clip01_brier": 0.041954592483965825
+      }
+    },
+    {
+      "model": "Cloudflare/clef",
+      "arm": "context",
+      "fold_id": 0,
+      "expected": 27,
+      "successful": 27,
+      "metrics": {
+        "n": 27,
+        "log_loss": 0.9036434345388932,
+        "brier": 0.34839929333333336,
+        "auc": 0.5394736842105262,
+        "accuracy_at0_5": 0.2962962962962963,
+        "sensitivity_clip01_log_loss": 0.9036434345388932,
+        "sensitivity_clip01_brier": 0.34839929333333336
+      }
+    },
+    {
+      "model": "Cloudflare/clef",
+      "arm": "context",
+      "fold_id": 1,
+      "expected": 32,
+      "successful": 32,
+      "metrics": {
+        "n": 32,
+        "log_loss": 0.7805911130861778,
+        "brier": 0.2923215984375,
+        "auc": 0.45546558704453444,
+        "accuracy_at0_5": 0.375,
+        "sensitivity_clip01_log_loss": 0.7805911130861778,
+        "sensitivity_clip01_brier": 0.2923215984375
+      }
+    },
+    {
+      "model": "Cloudflare/clef",
+      "arm": "context",
+      "fold_id": 2,
+      "expected": 19,
+      "successful": 19,
+      "metrics": {
+        "n": 19,
+        "log_loss": 0.8487661540860014,
+        "brier": 0.32417628052631575,
+        "auc": 0.2916666666666667,
+        "accuracy_at0_5": 0.3684210526315789,
+        "sensitivity_clip01_log_loss": 0.8487661540860014,
+        "sensitivity_clip01_brier": 0.32417628052631575
+      }
+    },
+    {
+      "model": "Cloudflare/clef",
+      "arm": "context",
+      "fold_id": 3,
+      "expected": 31,
+      "successful": 31,
+      "metrics": {
+        "n": 31,
+        "log_loss": 0.7194151024656043,
+        "brier": 0.2627767441935484,
+        "auc": 0.43124999999999997,
+        "accuracy_at0_5": 0.5161290322580645,
+        "sensitivity_clip01_log_loss": 0.7194151024656043,
+        "sensitivity_clip01_brier": 0.2627767441935484
+      }
+    },
+    {
+      "model": "Cloudflare/clef",
+      "arm": "context",
+      "fold_id": 4,
+      "expected": 1,
+      "successful": 1,
+      "metrics": {
+        "n": 1,
+        "log_loss": 0.28448718155526176,
+        "brier": 0.06130576000000001,
+        "auc": null,
+        "accuracy_at0_5": 1.0,
+        "sensitivity_clip01_log_loss": 0.28448718155526176,
+        "sensitivity_clip01_brier": 0.06130576000000001
+      }
+    },
+    {
+      "model": "Cloudflare/clef",
+      "arm": "context_SI",
+      "fold_id": 0,
+      "expected": 27,
+      "successful": 27,
+      "metrics": {
+        "n": 27,
+        "log_loss": 0.9354405894476059,
+        "brier": 0.3630804914814814,
+        "auc": 0.5394736842105263,
+        "accuracy_at0_5": 0.2962962962962963,
+        "sensitivity_clip01_log_loss": 0.9354405894476059,
+        "sensitivity_clip01_brier": 0.3630804914814814
+      }
+    },
+    {
+      "model": "Cloudflare/clef",
+      "arm": "context_SI",
+      "fold_id": 1,
+      "expected": 32,
+      "successful": 32,
+      "metrics": {
+        "n": 32,
+        "log_loss": 0.7762102415220336,
+        "brier": 0.28972235968750004,
+        "auc": 0.42510121457489874,
+        "accuracy_at0_5": 0.40625,
+        "sensitivity_clip01_log_loss": 0.7762102415220336,
+        "sensitivity_clip01_brier": 0.28972235968750004
+      }
+    },
+    {
+      "model": "Cloudflare/clef",
+      "arm": "context_SI",
+      "fold_id": 2,
+      "expected": 19,
+      "successful": 19,
+      "metrics": {
+        "n": 19,
+        "log_loss": 0.9495376319715947,
+        "brier": 0.36746761842105263,
+        "auc": 0.36904761904761907,
+        "accuracy_at0_5": 0.3684210526315789,
+        "sensitivity_clip01_log_loss": 0.9495376319715947,
+        "sensitivity_clip01_brier": 0.36746761842105263
+      }
+    },
+    {
+      "model": "Cloudflare/clef",
+      "arm": "context_SI",
+      "fold_id": 3,
+      "expected": 31,
+      "successful": 31,
+      "metrics": {
+        "n": 31,
+        "log_loss": 0.7414223936064065,
+        "brier": 0.2731750341935484,
+        "auc": 0.4416666666666667,
+        "accuracy_at0_5": 0.4838709677419355,
+        "sensitivity_clip01_log_loss": 0.7414223936064065,
+        "sensitivity_clip01_brier": 0.2731750341935484
+      }
+    },
+    {
+      "model": "Cloudflare/clef",
+      "arm": "context_SI",
+      "fold_id": 4,
+      "expected": 1,
+      "successful": 1,
+      "metrics": {
+        "n": 1,
+        "log_loss": 0.2953110996162721,
+        "brier": 0.06538249,
+        "auc": null,
+        "accuracy_at0_5": 1.0,
+        "sensitivity_clip01_log_loss": 0.2953110996162721,
+        "sensitivity_clip01_brier": 0.06538249
+      }
+    }
+  ],
+  "repeat_diagnostic": {
+    "nace-ai/drex-max-finance/context": {
+      "expected": 11,
+      "successful_pairs": 11,
+      "max_absolute_probability_difference": 0.0,
+      "mean_absolute_probability_difference": 0.0,
+      "flips_at0_5": 0,
+      "main_scores_never_averaged_or_replaced": true
+    },
+    "nace-ai/drex-max-finance/context_SI": {
+      "expected": 11,
+      "successful_pairs": 11,
+      "max_absolute_probability_difference": 0.0,
+      "mean_absolute_probability_difference": 0.0,
+      "flips_at0_5": 0,
+      "main_scores_never_averaged_or_replaced": true
+    },
+    "Cloudflare/clef/context": {
+      "expected": 11,
+      "successful_pairs": 11,
+      "max_absolute_probability_difference": 0.0,
+      "mean_absolute_probability_difference": 0.0,
+      "flips_at0_5": 0,
+      "main_scores_never_averaged_or_replaced": true
+    },
+    "Cloudflare/clef/context_SI": {
+      "expected": 11,
+      "successful_pairs": 11,
+      "max_absolute_probability_difference": 0.0,
+      "mean_absolute_probability_difference": 0.0,
+      "flips_at0_5": 0,
+      "main_scores_never_averaged_or_replaced": true
+    }
+  },
+  "client_reserved_cost_usd": 0.9507695999999999,
+  "quoted_price_cost_estimate_usd": 0.21545904,
+  "undiscounted_upper_cost_estimate_usd": 0.29373984,
+  "actual_invoice_cost_known": false,
+  "fresh_OOS": false,
+  "native_gate_or_account_payout_computed": false,
+  "SI_coverage": "Archivecoverageunknown,missingnullnotnoSIzero;26knownpriorSItestcasesonly",
+  "responses_sha256": "4e500bc4922d8ab2172f4533ec4b48a2e82b295d3fa741ccf2a427ef9b1ef7a7",
+  "completed_at_utc": "2026-11-21T02:37:04.232568+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "state": "correct_HY104_EMA22_dataset_and_temporal_folds_frozen",
+  "created_at_utc": "2026-11-21T02:22:01.760763+00:00",
+  "dataset_csv": "Private/dataset.csv",
+  "canonical_npy": "Private/canonical-features.npy",
+  "folds_json": "Private/folds.json",
+  "dataset_csv_sha256": "9f71cc1e99cb7749b6ae35c2e1ae1d512b6f4008f05c453e528907dc81e6da54",
+  "canonical_npy_sha256": "598dcf8f4c7307eb678f3af2bc6a67c6718af29780dbbadf630e9c099fcb751b",
+  "folds_sha256": "234b02df0ba4c7e18a1002dcad953cbcee2ca636766b8c61f2953b87249c6db2",
+  "id_column": "case_key",
+  "label_column": "y",
+  "date_column": "date",
+  "decision_ns_column": "decision_ns",
+  "outcome_ns_column": "native_exit_time_ns",
+  "context_features": [
+    "side",
+    "chicago_RTH_minute",
+    "signed_move60_rv300",
+    "signed_move300_rv300",
+    "log1p_rv300_ticks",
+    "spread_ticks",
+    "signed_topsize_imbalance",
+    "quote_age_seconds"
+  ],
+  "si_features": [
+    "last_STOP_arrow_relative15m",
+    "last_ICEBERG_arrow_relative15m",
+    "archived_count60m_cap5",
+    "SI_status_code"
+  ],
+  "categorical_feature_indices_context_plus_SI": [
+    11
+  ],
+  "SI_status_code_legend": {
+    "1": "Archivedprior60m message observed;fullfeedcoverage unknown",
+    "-1": "No priorarchivedmatch;fullfeedcoverage unknown,NOTactualnoSI"
+  },
+  "missing_SI_values": "NaN inNPY/emptyCSV correspond originalnull;doNOTinterpret asactualnoSI/numericalzero. Any imputation must be training-only with explicit missing indicators.",
+  "source_strategy": "Native HY104EMA22 EntryAverageCase5;OpeningRange0;targetoffset.75;159executedsetupsafterfirstSIpublication",
+  "cohort_n": 159,
+  "common_period": [
+    "2026-05-28",
+    "2026-10-30"
+  ],
+  "initial_minimum_train_cases": 48,
+  "initial_last_train_date": "2026-07-08",
+  "initial_gap_day": "2026-07-09",
+  "first_test_date": "2026-07-10",
+  "test_block_business_dates": 20,
+  "fold_count": 5,
+  "test_cases": 110,
+  "test_days_with_cases": 67,
+  "test_prior15_known_n": 8,
+  "test_prior60_known_n": 26,
+  "all159_prior15_known": 8,
+  "all159_prior60_known": 27,
+  "class_counts_all": {
+    "1": 95,
+    "0": 64
+  },
+  "label": "ActualnativeEMA22exit net−1.06USDfee normalization−25USD tickstress>0,not15minmarkout",
+  "four_cloud_arms": "DrexMaxFinance andClef,eachsamepricecontextalonevsprice+causalSI;sharedIDs/labels/folds",
+  "no_fit_started": true,
+  "no_API_calls": true,
+  "feature_freeze_sha256": "79f6a7ad9b08c40efcde5f04714e4189f1455773a002cda6d80673b405d78bd0",
+  "label_proof_sha256": "577b6205edb3a78a500487c113877be05a9a1660bf116065d0b526f4ce206363",
+  "publication_note": "Private inputs are relative placeholders and are not published. Freeze/binding digests elsewhere refer to the ORIGINAL local file,not this sanitized rendering."
+}

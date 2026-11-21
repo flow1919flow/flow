@@ -1,0 +1,24 @@
+{
+  "utc": "2026-11-21T02:24:15.186812+00:00",
+  "versions": {
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "tabpfn": "10.2.0",
+    "torch": "2.15.0"
+  },
+  "binding": {
+    "manifest_sha256": "2e42228d79f25f3de38d25bf94e198c6757f93692c75055c757a337d38420b53",
+    "dataset_csv_sha256": "9f71cc1e99cb7749b6ae35c2e1ae1d512b6f4008f05c453e528907dc81e6da54",
+    "canonical_npy_sha256": "598dcf8f4c7307eb678f3af2bc6a67c6718af29780dbbadf630e9c099fcb751b",
+    "folds_json_sha256": "234b02df0ba4c7e18a1002dcad953cbcee2ca636766b8c61f2953b87249c6db2"
+  },
+  "preregister_sha256": "807f00bb86c5130384397ddb5bef118bba94d48f1e203022000ea0b3ac406ffa",
+  "sources": {
+    "common.py": "a2a208adbef72ac8d158da8088fa88d7794fd333bef708973bbc0bcff0731c54",
+    "config.py": "2ae593ec2f2e3ebf72ec3413a1d86f0096506c0d256f6f01b7e7c6f59c1f617f",
+    "fixtures.py": "5498d7b810228ba497620d55eba21814505d8744795e500033ae9162edf80a22",
+    "register.py": "ba4c419ec16f93db9f09563419e94323b6d7d039fda5b90d25bd0eb422f64173",
+    "train.py": "4830af464525dad059cc4140b4a40306c09946ed1669b1926c9c6dd4a8d1fe9b"
+  }
+}

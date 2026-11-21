@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "scalar_checks": 760,
+  "max_abs_error": 0.0,
+  "engine": "NautilusTrader1.231.0 nativePrice/Quantity.from_raw",
+  "scope": "First/last filteredquote rows,allinputfilehashesverified separately"
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "SECONDS-V2-NATIVE-QUOTE-GUARD-AND-FEATURE-CLOCK",
+  "registered_at_utc": "2026-11-21T03:14:18.041693+00:00",
+  "protocol_sha256": "498b90431dfeef1f65b8aea232cdff7e9ca2a44153131a5b8c8faeba36b813fa",
+  "prior_addendum_sha256": "b228b39c640dc6ff5a0ef79575c4c6d9557f70eaa77732900ebcb1dc2048aba7",
+  "entry_guard_liquidation_quote_proxy": "OPEN minus side*0.25, exactly analogous to native bid for LONG / ask for SHORT. If this is at/beyond fixed stop, consume/cancel pending entry and record exclusion. No filled trade.",
+  "actual_entry_quote_proxy": "OPEN plus side*0.25; separate from liquidation-side guard.",
+  "completed_features": "Only 5min bars with end<=currentsecondSTART. The bar ending exactly at decisionsecondEND is committed after feature observation, first used as completed feature in next second.",
+  "current_forming_stop_and_BB": "May include currentsecondOHLC at its END, when it is known. No earlier intrasecond decision/fill is claimed.",
+  "path_consensus": "Every reachable prior state and both OHLC scenarios must each contain exactly one return of same side in same second; otherwise no candidate and ambiguity retained.",
+  "registered_before_one_second_candidates": true,
+  "strategy_source_changed": false
+}

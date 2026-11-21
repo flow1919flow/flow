@@ -1,0 +1,26 @@
+{
+  "status": "FROZEN_SOURCE_WITH_NO_REAL_SECOND_CANDIDATES_OR_LABELS",
+  "utc": "2026-11-21T03:14:13.814498+00:00",
+  "sources_sha256": {
+    "second_fixtures.py": "43c9a917c17a5cf65e8fad9608240fa2493f46d8c8cae9cada08d330ceae0543",
+    "second_kernel.py": "9a39d551d80a51a93d74b761ee253e340679d621344a42d06bc2aac3225cc9b2",
+    "second_run.py": "6bf335f245796b75550716385fd72e0aafa6dbad03315b375d7ff02b627a085d",
+    "price_extract_support.py": "034eef6e407d9375762e82702b95ff873d171679748b2be772afd6c8e24753f1"
+  },
+  "fixtures_sha256": "4a63c6f8bf08cb90b5384f381e578d9325304e6708b6ca371ab330ab38b285cc",
+  "fixtures_passed": 16,
+  "known_price_readiness_sha256": "9a00e2e0c52bb54694995a33ef8cb8cb448236f41166f13a17c5c00a44369861",
+  "published_protocol_sha256": "498b90431dfeef1f65b8aea232cdff7e9ca2a44153131a5b8c8faeba36b813fa",
+  "published_addendum_sha256": "b228b39c640dc6ff5a0ef79575c4c6d9557f70eaa77732900ebcb1dc2048aba7",
+  "root_final_proxy_clock_clarification_receipt_still_required": true,
+  "unanimity": "BothprescribedOHLCorders\u00d7everyreachablepriorstate;everypathmustemitEXACTLYONEreturnofsameside;allreachableendstatescarried",
+  "feature_clock": "DecisionatsecondEND; currentformingstop/BBknownthen; completedslope/ATR/relativevolumeonlybarend<=secondSTART",
+  "entry_guard": "FirstpresentOpen>=decisionEND+2s; cancelifentryclock>=flattenorliquidationproxyOPEN\u2212side*.25pastfixedstop; validfillOPEN+side*.25",
+  "exit": "TouchdecidesatsecondEND;firstpresentOpen>=exitdecision+2swithOPEN\u2212side*.25;nosyntheticstop/targetlevelorinstantgapfill;preserveexistingintent;scheduledflatten+2s",
+  "OR_feature": "Decisionquoteproxyclose+side*.25only,neverfutureentry;actualentryprofitguardusedonlyinexitlabel",
+  "known_inputs": "All12zero-quotedmonthsready,242nativecalendardates,0rawcontractrollmismatches,240completeprior5warmups;degradedNov28retained",
+  "no_real_signals_or_labels_yet": true,
+  "no_model_fits": true,
+  "no_extra_API_calls": true,
+  "old_minute_source_untouched": true
+}

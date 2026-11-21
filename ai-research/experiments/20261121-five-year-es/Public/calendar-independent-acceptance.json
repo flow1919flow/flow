@@ -1,0 +1,192 @@
+{
+  "schema": "ES-CALENDAR-INDEPENDENT-ACCEPTANCE-1",
+  "status": "PASS",
+  "checked_at_utc": "2026-11-21T03:08:59.336003+00:00",
+  "overlay_sha256": "81ce4d6785df4e94ed253faf73bf03b87ef1c5471ee49cef362eb7aabe20e5c3",
+  "checker_sha256": "26baf5398f7c1f49e70a742c77049953ecb92461396b33b0158b1d9c82bd9db9",
+  "selected_calendar": "CME Globex Equity",
+  "selected_class": "CMEGlobexEquitiesExchangeCalendar",
+  "wrong_alias_not_used_for_overlay": "CME_Equity",
+  "pandas_market_calendars_version": "5.4.0",
+  "selected_module_sha256": "f268ff384f5e60ead4905fc64e9f126934f50c4646f9482a58c955e9d3b826e3",
+  "package_wheel_sha256": "bb2b93b28d496cab173b41c7d120fd5cd9d506b31f3bb0ad3d1d9f2b60d9d9e3",
+  "official_Carter_URL": "https://www.cmegroup.com/content/dam/cmegroup/trading-hours/files/day-of-mourning-january-9-2024.pdf",
+  "official_CME_general_URL": "https://www.cmegroup.com/trading-hours.html",
+  "selected_library_source_URL": "https://github.com/rsheftel/pandas_market_calendars/blob/5.4.0/pandas_market_calendars/calendars/cme_globex_equities.py",
+  "original_raw_DBN_sources": [
+    {
+      "file_name": "glbx-mdp3-20250101-20250131.ohlcv-1m.dbn.zst",
+      "sha256": "fcd4b6c3c2fb6deea2064360046e7c05330e45a15ec81657ac25022ff9719574",
+      "dataset": "GLBX.MDP3",
+      "schema": "ohlcv-1m",
+      "records_read_only": true
+    },
+    {
+      "file_name": "glbx-mdp3-20211101-20211130.ohlcv-1m.dbn.zst",
+      "sha256": "dbfd0cf0d9388869b4cdcac9cf758dca49fc807f4193a8add9cc622e20afa25b",
+      "dataset": "GLBX.MDP3",
+      "schema": "ohlcv-1m",
+      "records_read_only": true
+    },
+    {
+      "file_name": "glbx-mdp3-20241101-20241130.ohlcv-1m.dbn.zst",
+      "sha256": "888d4bc8190f85e67dc78b11271a33bc4dc604e62135367c5abd24eaa1eb7df7",
+      "dataset": "GLBX.MDP3",
+      "schema": "ohlcv-1m",
+      "records_read_only": true
+    },
+    {
+      "file_name": "glbx-mdp3-20230701-20230731.ohlcv-1m.dbn.zst",
+      "sha256": "caca3dea05e69c2346dd02a136860516cfbd80b4c9124ad7bf1c883033e5033d",
+      "dataset": "GLBX.MDP3",
+      "schema": "ohlcv-1m",
+      "records_read_only": true
+    },
+    {
+      "file_name": "glbx-mdp3-20240701-20240731.ohlcv-1m.dbn.zst",
+      "sha256": "99c4393d226deebac2aa80987f20532a6322cd7e81d986abb85d38cf4fbc6b9d",
+      "dataset": "GLBX.MDP3",
+      "schema": "ohlcv-1m",
+      "records_read_only": true
+    },
+    {
+      "file_name": "glbx-mdp3-20230401-20230430.ohlcv-1m.dbn.zst",
+      "sha256": "93a8815425797368e386a2d139196ff54ce387908d2b9074b3bb648fe3163443",
+      "dataset": "GLBX.MDP3",
+      "schema": "ohlcv-1m",
+      "records_read_only": true
+    },
+    {
+      "file_name": "glbx-mdp3-20211201-20211231.ohlcv-1m.dbn.zst",
+      "sha256": "6e69ec4adc898421b7b33f82b4fdd38f119d691670532d6fdf22671e99e4e3dc",
+      "dataset": "GLBX.MDP3",
+      "schema": "ohlcv-1m",
+      "records_read_only": true
+    }
+  ],
+  "named_date_checks": [
+    {
+      "date": "2021-11-25",
+      "raw_contract": "ESZ1",
+      "expected_close_ct": "12:00",
+      "overlay_status": "open",
+      "original_vendor_1m_records": 210,
+      "first_1m_start_ct": "08:30",
+      "last_1m_start_ct": "11:59",
+      "raw_source_sha256": "dbfd0cf0d9388869b4cdcac9cf758dca49fc807f4193a8add9cc622e20afa25b",
+      "status": "PASS",
+      "source_tier": "versioned_CME_Globex_rule_price_corroborated",
+      "direct_historical_CME_announcement": false
+    },
+    {
+      "date": "2021-11-26",
+      "raw_contract": "ESZ1",
+      "expected_close_ct": "12:15",
+      "overlay_status": "open",
+      "original_vendor_1m_records": 225,
+      "first_1m_start_ct": "08:30",
+      "last_1m_start_ct": "12:14",
+      "raw_source_sha256": "dbfd0cf0d9388869b4cdcac9cf758dca49fc807f4193a8add9cc622e20afa25b",
+      "status": "PASS",
+      "source_tier": "versioned_CME_Globex_rule_price_corroborated",
+      "direct_historical_CME_announcement": false
+    },
+    {
+      "date": "2021-12-31",
+      "raw_contract": "ESH2",
+      "expected_close_ct": "16:00",
+      "overlay_status": "open",
+      "original_vendor_1m_records": 450,
+      "first_1m_start_ct": "08:30",
+      "last_1m_start_ct": "15:59",
+      "raw_source_sha256": "6e69ec4adc898421b7b33f82b4fdd38f119d691670532d6fdf22671e99e4e3dc",
+      "status": "PASS",
+      "source_tier": "versioned_CME_Globex_rule_price_corroborated",
+      "direct_historical_CME_announcement": false
+    },
+    {
+      "date": "2023-04-07",
+      "raw_contract": "ESM3",
+      "expected_close_ct": null,
+      "overlay_status": "closed",
+      "original_vendor_1m_records": 0,
+      "first_1m_start_ct": null,
+      "last_1m_start_ct": null,
+      "raw_source_sha256": "93a8815425797368e386a2d139196ff54ce387908d2b9074b3bb648fe3163443",
+      "status": "PASS",
+      "source_tier": "versioned_CME_Globex_rule_price_corroborated",
+      "direct_historical_CME_announcement": false
+    },
+    {
+      "date": "2023-07-03",
+      "raw_contract": "ESU3",
+      "expected_close_ct": "12:15",
+      "overlay_status": "open",
+      "original_vendor_1m_records": 225,
+      "first_1m_start_ct": "08:30",
+      "last_1m_start_ct": "12:14",
+      "raw_source_sha256": "caca3dea05e69c2346dd02a136860516cfbd80b4c9124ad7bf1c883033e5033d",
+      "status": "PASS",
+      "source_tier": "versioned_CME_Globex_rule_price_corroborated",
+      "direct_historical_CME_announcement": false
+    },
+    {
+      "date": "2024-07-03",
+      "raw_contract": "ESU4",
+      "expected_close_ct": "12:15",
+      "overlay_status": "open",
+      "original_vendor_1m_records": 225,
+      "first_1m_start_ct": "08:30",
+      "last_1m_start_ct": "12:14",
+      "raw_source_sha256": "99c4393d226deebac2aa80987f20532a6322cd7e81d986abb85d38cf4fbc6b9d",
+      "status": "PASS",
+      "source_tier": "versioned_CME_Globex_rule_price_corroborated",
+      "direct_historical_CME_announcement": false
+    },
+    {
+      "date": "2024-07-04",
+      "raw_contract": "ESU4",
+      "expected_close_ct": "12:00",
+      "overlay_status": "open",
+      "original_vendor_1m_records": 210,
+      "first_1m_start_ct": "08:30",
+      "last_1m_start_ct": "11:59",
+      "raw_source_sha256": "99c4393d226deebac2aa80987f20532a6322cd7e81d986abb85d38cf4fbc6b9d",
+      "status": "PASS",
+      "source_tier": "versioned_CME_Globex_rule_price_corroborated",
+      "direct_historical_CME_announcement": false
+    },
+    {
+      "date": "2024-11-29",
+      "raw_contract": "ESZ4",
+      "expected_close_ct": "12:15",
+      "overlay_status": "open",
+      "original_vendor_1m_records": 225,
+      "first_1m_start_ct": "08:30",
+      "last_1m_start_ct": "12:14",
+      "raw_source_sha256": "888d4bc8190f85e67dc78b11271a33bc4dc604e62135367c5abd24eaa1eb7df7",
+      "status": "PASS",
+      "source_tier": "versioned_CME_Globex_rule_price_corroborated",
+      "direct_historical_CME_announcement": false
+    },
+    {
+      "date": "2025-01-09",
+      "raw_contract": "ESH5",
+      "expected_close_ct": null,
+      "overlay_status": "closed",
+      "original_vendor_1m_records": 0,
+      "first_1m_start_ct": null,
+      "last_1m_start_ct": null,
+      "raw_source_sha256": "fcd4b6c3c2fb6deea2064360046e7c05330e45a15ec81657ac25022ff9719574",
+      "status": "PASS",
+      "source_tier": "verified_CME_historical_override",
+      "direct_historical_CME_announcement": true
+    }
+  ],
+  "known242_unchanged": true,
+  "source_tier_limit": "Only Carter has an exact dated primary CME closure announcement in this overlay. Other original per-date Globex announcements have not all been archived; pinned package rules plus price corroboration must not be described as direct announcement verification.",
+  "historical_calendar_feed_delivery_proved": false,
+  "source_trading_outcomes_read": false,
+  "older_labels_or_models_generated": false,
+  "older_labels_released": false
+}

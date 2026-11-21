@@ -1,0 +1,594 @@
+{
+  "original_full_overlay_sha256": "81ce4d6785df4e94ed253faf73bf03b87ef1c5471ee49cef362eb7aabe20e5c3",
+  "scope": [
+    "2021-11-01",
+    "2025-11-24_exclusive"
+  ],
+  "default_weekdays": {
+    "open_ct": "08:30",
+    "close_ct": "16:00",
+    "flatten_ct": "15:09"
+  },
+  "default_weekends": "no_RTH",
+  "exceptions": [
+    {
+      "date": "2021-11-25",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2021-11-26",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:15",
+      "flatten_ct": "12:14",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2021-12-24",
+      "status": "closed",
+      "open_ct": null,
+      "close_ct": null,
+      "flatten_ct": null,
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2022-01-17",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2022-02-21",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2022-04-15",
+      "status": "closed",
+      "open_ct": null,
+      "close_ct": null,
+      "flatten_ct": null,
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2022-05-30",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2022-06-20",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2022-07-04",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2022-09-05",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2022-11-24",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2022-11-25",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:15",
+      "flatten_ct": "12:14",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2022-12-26",
+      "status": "closed",
+      "open_ct": null,
+      "close_ct": null,
+      "flatten_ct": null,
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2023-01-02",
+      "status": "closed",
+      "open_ct": null,
+      "close_ct": null,
+      "flatten_ct": null,
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2023-01-16",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2023-02-20",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2023-04-07",
+      "status": "closed",
+      "open_ct": null,
+      "close_ct": null,
+      "flatten_ct": null,
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2023-05-29",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2023-06-19",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2023-07-03",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:15",
+      "flatten_ct": "12:14",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2023-07-04",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2023-09-04",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2023-11-23",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2023-11-24",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:15",
+      "flatten_ct": "12:14",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2023-12-25",
+      "status": "closed",
+      "open_ct": null,
+      "close_ct": null,
+      "flatten_ct": null,
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2024-01-01",
+      "status": "closed",
+      "open_ct": null,
+      "close_ct": null,
+      "flatten_ct": null,
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2024-01-15",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2024-02-19",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2024-03-29",
+      "status": "closed",
+      "open_ct": null,
+      "close_ct": null,
+      "flatten_ct": null,
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2024-05-27",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2024-06-19",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2024-07-03",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:15",
+      "flatten_ct": "12:14",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2024-07-04",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2024-09-02",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2024-11-28",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2024-11-29",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:15",
+      "flatten_ct": "12:14",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2024-12-24",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:15",
+      "flatten_ct": "12:14",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2024-12-25",
+      "status": "closed",
+      "open_ct": null,
+      "close_ct": null,
+      "flatten_ct": null,
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2025-01-01",
+      "status": "closed",
+      "open_ct": null,
+      "close_ct": null,
+      "flatten_ct": null,
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2025-01-09",
+      "status": "closed",
+      "open_ct": null,
+      "close_ct": null,
+      "flatten_ct": null,
+      "source_ids": [
+        "CME_Carter_schedule",
+        "CME_Carter_release"
+      ],
+      "calendar_status": "verified_CME_historical_override"
+    },
+    {
+      "date": "2025-01-20",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2025-02-17",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2025-04-18",
+      "status": "closed",
+      "open_ct": null,
+      "close_ct": null,
+      "flatten_ct": null,
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2025-05-26",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2025-06-19",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2025-07-03",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:15",
+      "flatten_ct": "12:14",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2025-07-04",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    },
+    {
+      "date": "2025-09-01",
+      "status": "open",
+      "open_ct": "08:30",
+      "close_ct": "12:00",
+      "flatten_ct": "11:59",
+      "source_ids": [
+        "pmc_globex_5_4_0",
+        "CME_general"
+      ],
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated"
+    }
+  ],
+  "point_in_time_limit": "Scheduled recurring dates are deterministic and Carter was announced before the day. This is a retrospective source audit, not a proof of a captured historical calendar-feed delivery timestamp. No future price/strategy outcome is used to choose session clocks.",
+  "historical_rules_complete_or_direct_CME_announcements_for_every_date": false,
+  "original_price_only_full_overlay_kept_local": true
+}

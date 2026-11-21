@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-21T03:16:51.432286+00:00",
+  "fixtures": 17,
+  "tests": [
+    "BothOHLCordersagreeexactlyONEsame-sidedreturn: consensuscandidateatSECONDEND,neverearliertouch",
+    "UnknownH/Lorderbranchesinto2reachableendstates; quietnextseconddoesNOTcollapseunresolvedstateorpickprofitablepath",
+    "Evenunanimoustwo-returnsequenceisambiguous: exactlyONEreturnrequired,nosilentfirst/lastselection",
+    "GoldenEMA20/firstdaybarATR10/BB20populationformulaatsecondEND",
+    "PRECOMMITfeaturecut: secondending5mboundarycannotusecurrentbarincompletedfeatures; nextsecondcan; relvoluses20PRIORbars",
+    "Physicalprefixinvariance: futureOHLCVpoisoningcannotchangepriorfeatures,consensusorreachablemasks",
+    "PreORfeatureignoresfuturehourrange; deliberatelyleakyORpositivecontrolchangesandisdetected",
+    "RiskusesDECISIONclose+adversespread,notfuturefill; negativeBBpathretainedandnotabsolutedropped",
+    "Stop+BB+ORsame1sbar:stoppriority; decideatEND, fillfirstPRESENTOpen>=END+2s, neveratstoplevel/targetlevel",
+    "NativeentryguardusesOPEN\u2212side*tickliquidationproxybeforeOPEN+side*tickentryfill; spreadstraddlestopmustcancel",
+    "Delayedentryat/afterflatteniscancelled/consumed,notfilledtheninstantaneouslystopped",
+    "Filledpositionlatergapsbeyondstop: NOinstantgapstop orretroactivelevelprice; secondEND+2smarketexit",
+    "ExistingBBexitintentpreservedthroughlatency; latertouchingstopdoesnotreplaceearlierintentusingfutureoutcome",
+    "SchedulednativeflattenintentfillsfirstpresentOpen>=flatten+2s,notatflattenor15:00",
+    "Greedy1:1time/contract/day/sidematchingindependentofallprofit/outcomevalues",
+    "Known-onlyauthorizationguardrejectssealed/oldermodebeforeanysourceoroutcomeaccess",
+    "Beforemarketdata/signals: everyfrozenSourcehashandfixtureproofhashvalidated; modifiedtemporarysourceandfixturebothrejected"
+  ],
+  "no_actual1s_candidates_or_labels": true,
+  "no_API_calls": true,
+  "source_sha256": {
+    "second_fixtures.py": "f4e69de8606d29807e4ac4a28a9065e32885c7f92fd07717af7053372f45684e",
+    "second_kernel.py": "9a39d551d80a51a93d74b761ee253e340679d621344a42d06bc2aac3225cc9b2",
+    "second_run.py": "52f8bb5bfa505225e08336b233c05db5b175290a0c1ba60692d521b6709c7f97"
+  }
+}

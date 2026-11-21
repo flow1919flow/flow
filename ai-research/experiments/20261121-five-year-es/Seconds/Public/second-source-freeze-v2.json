@@ -1,0 +1,31 @@
+{
+  "status": "FROZEN_SOURCE_V2_CONTROL_GUARD_BEFORE_FIRST_REAL1S_CANDIDATE",
+  "utc": "2026-11-21T03:17:04.466878+00:00",
+  "sources_sha256": {
+    "price_extract_1s.py": "eca8eb722c0f71f8cd1374991729c25bd468eef62416abfcba47a0afd01f2e19",
+    "price_extract_fixtures.py": "9e2cc38b2866355c16e5ea084c3de13d5edf8dd2cb97cb6bbf45c8210c80fb81",
+    "price_extract_support.py": "034eef6e407d9375762e82702b95ff873d171679748b2be772afd6c8e24753f1",
+    "second_fixtures.py": "f4e69de8606d29807e4ac4a28a9065e32885c7f92fd07717af7053372f45684e",
+    "second_kernel.py": "9a39d551d80a51a93d74b761ee253e340679d621344a42d06bc2aac3225cc9b2",
+    "second_run.py": "52f8bb5bfa505225e08336b233c05db5b175290a0c1ba60692d521b6709c7f97"
+  },
+  "fixtures_sha256": "19c9e90be58989d576d98487b02cc63b5872a63256509fb082d432b6b7433963",
+  "fixtures_passed": 17,
+  "known_price_readiness_sha256": "9a00e2e0c52bb54694995a33ef8cb8cb448236f41166f13a17c5c00a44369861",
+  "published_protocol_sha256": "498b90431dfeef1f65b8aea232cdff7e9ca2a44153131a5b8c8faeba36b813fa",
+  "published_addendum_sha256": "b228b39c640dc6ff5a0ef79575c4c6d9557f70eaa77732900ebcb1dc2048aba7",
+  "root_final_proxy_clock_clarification_receipt_still_required": true,
+  "unanimity": "BothprescribedOHLCorders\u00d7everyreachablepriorstate;everypathmustemitEXACTLYONEreturnofsameside;allreachableendstatescarried",
+  "feature_clock": "DecisionatsecondEND; currentformingstop/BBknownthen; completedslope/ATR/relativevolumeonlybarend<=secondSTART",
+  "entry_guard": "FirstpresentOpen>=decisionEND+2s; cancelifentryclock>=flattenorliquidationproxyOPEN\u2212side*.25pastfixedstop; validfillOPEN+side*.25",
+  "exit": "TouchdecidesatsecondEND;firstpresentOpen>=exitdecision+2swithOPEN\u2212side*.25;nosyntheticstop/targetlevelorinstantgapfill;preserveexistingintent;scheduledflatten+2s",
+  "OR_feature": "Decisionquoteproxyclose+side*.25only,neverfutureentry;actualentryprofitguardusedonlyinexitlabel",
+  "known_inputs": "All12zero-quotedmonthsready,242nativecalendardates,0rawcontractrollmismatches,240completeprior5warmups;degradedNov28retained",
+  "no_real_signals_or_labels_yet": true,
+  "no_model_fits": true,
+  "no_extra_API_calls": true,
+  "old_minute_source_untouched": true,
+  "previous_no_result_source_freeze_sha256": "c35d567c46f4782732c3f6fa5e9288eacad8e555e3723ef1fb6917d0e32cf39f",
+  "control_plane_change": "VerifyeveryfrozenSourcehashandfixtureproofbeforemarketdata/signals; no kernel/math/strategy/threshold edits",
+  "kernel_mathematics_unchanged_sha256": "9a39d551d80a51a93d74b761ee253e340679d621344a42d06bc2aac3225cc9b2"
+}

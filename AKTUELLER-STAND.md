@@ -1,3 +1,27 @@
+# Nachtrag · 21. November 2026 · vier neue Modellarme abgeschlossen
+
+Der neueste Forschungsstand steht im [vollständigen Abschluss](ai-research/experiments/20261121/ABSCHLUSS.md).
+ML1-Zufallskontrollen, fünf native Prefix-Schnitte, L2-Schwellenkontrolle,
+Boosting, Ridge und TabPFN sind inzwischen abgeschlossen, einschließlich
+24 nativer Gate-Jobs und des ursprünglichen Kontoreplays. Frühere Aussagen
+unten wie „noch nicht trainiert“ oder „Kontrollen fehlen“ beschreiben den
+damaligen Stand. ML2–ML7 bleiben weiterhin offen. Laufende Sims und die
+produktiven Leaderboards wurden durch diese Forschung nicht verändert.
+
+| Funded-Modell | Normal Ø | Normal Median | Tickstress Ø | Tickstress Median |
+|---|---:|---:|---:|---:|
+| Basis · HY104-EMA22 → C28.03 | 8,424.89 USD | 9,899.36 USD | 6,860.65 USD | 7,142.94 USD |
+| Logistik · neue Schwellenregel | 7,153.55 USD | 7,131.53 USD | 5,516.02 USD | 6,119.19 USD |
+| Gradient Boosting · flach | 7,059.14 USD | 7,329.98 USD | 5,840.50 USD | 5,986.81 USD |
+| Ridge · erwartetes Netto-R | 7,830.00 USD | 8,286.26 USD | 6,449.53 USD | 6,819.31 USD |
+| TabPFN v2 | 8,325.73 USD | 9,723.52 USD | 6,959.86 USD | 7,794.06 USD |
+
+Diese historischen Endbargelder sind keine garantierten Gewinne und keine
+frische OOS-Bestätigung. Das letzte Windows-Betriebszeugnis unten bleibt
+zeitlich begrenzt; heute wurde kein neuer Handelsbetrieb geprüft.
+
+---
+
 # Arbeitsstand und Übergabe · 20. November, Nachtrag 21. November 2026
 
 Diese Datei ist der Einstieg für einen neuen Codex-Chat. Sie trennt beobachteten Betrieb, historische Forschung und offene Aufgaben. Zugangsdaten, Kontonummern, Remote-ID und lizenzierte Rohdaten werden nicht veröffentlicht.
@@ -74,7 +98,7 @@ Native SQX-Beobachtung: sechs Kontraktabschnitte mit identischen Basis-Trades, K
 | Normal | 8’424,89 | 6’940,33 | 9’899,36 | 6’966,99 |
 | Ein Tick schlechter je Seite | 6’860,65 | 5’889,35 | 7’142,94 | 5’964,30 |
 
-AUC 0,50017; keine erkennbare Trennleistung. Das erste Modell verbessert die Strategie nicht. Keine Übernahme in NinjaTrader oder das Leaderboard. Zusätzliche Zufallsauslassungs-/Permutationstests, eine vollständige native Zukunfts-Prefix-Prüfung, neue Claude-Gegenprüfung und frische Forward-Daten fehlen. Nicht als fertige ML-Einsatzfreigabe darstellen.
+AUC 0,50017; keine erkennbare Trennleistung. Das erste Modell verbessert die Strategie nicht. Keine Übernahme in NinjaTrader oder das Leaderboard. Nachtrag21.11.: Zufallskontrollen und fünf native Prefix-Schnitte sowie die neue Claude-Planprüfung sind erledigt; erweiterte Randfallprüfungen und frische Forward-Daten bleiben offen. Nicht als fertige ML-Einsatzfreigabe darstellen.
 
 Lokal zeigt MLflow den Lauf unter `http://127.0.0.1:5055/#/experiments/4/runs/ebaea0eb92bf4c1993ecc7c953655145`. Startdatei: `outputs/Research-Tools-20261119/MLflow-starten.command`, nur 127.0.0.1. Der Server muss nach einem App-Neustart gegebenenfalls neu gestartet werden. Eine im Browser angezeigte Dokumentationsseite von scikit-learn ist keine Trainingsoberfläche.
 
@@ -114,4 +138,4 @@ Die älteren öffentlichen Leaderboard-Dateien sind als Snapshots vom 17. Novemb
 
 ## Starttext für einen neuen Chat
 
-> Arbeite im vorhandenen lokalen Projekt weiter. Lies im GitHub-Repo `flow1919flow/flow` zuerst `AKTUELLER-STAND.md`, die Arbeitsweise und den Steuerungsbefund. Lies lokal `outputs/AI-Forschung-20261120/RESUME.txt` und prüfe neuere Artefakte. Computerzugriff funktionierte nach dem letzten Neustart wieder; prüfe ihn und RustDesk/NinjaTrader zunächst nur lesend. Keine Testorders, keine Konto-Resets, keine Handelslogikänderung. Die gesammelten Fragen wurden an den bestehenden echten Claude-Chat gesendet; lies dessen neue Antwort, bevor du erneut sendest. ML1 ist ein abgeschlossener negativer Entwicklungsbefund; weitere Klassifikatoren und Ridge stehen im Register, sind nicht bereits getestet. Prüfe den aktuellen Stand, bevor du frühere Angaben übernimmst.
+> Arbeite im vorhandenen lokalen Projekt weiter. Lies im GitHub-Repo `flow1919flow/flow` zuerst `AKTUELLER-STAND.md`, die Arbeitsweise und den Steuerungsbefund. Lies lokal `outputs/AI-Forschung-20261120/RESUME.txt` und prüfe neuere Artefakte. Computerzugriff funktionierte nach dem letzten Neustart wieder; prüfe ihn und RustDesk/NinjaTrader zunächst nur lesend. Keine Testorders, keine Konto-Resets, keine Handelslogikänderung. Die gesammelten Fragen wurden an den bestehenden echten Claude-Chat gesendet; lies dessen neue Antwort, bevor du erneut sendest. ML1 ist ein abgeschlossener negativer Entwicklungsbefund; vier neue Klassifikations-/Regressionsarme sind abgeschlossen; der Abschluss vom21.11. ist maßgeblich, ML2–ML7 bleiben offen. Prüfe den aktuellen Stand, bevor du frühere Angaben übernimmst.

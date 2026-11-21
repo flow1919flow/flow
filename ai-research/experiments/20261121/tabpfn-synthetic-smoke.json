@@ -1,0 +1,11 @@
+{
+  "state": "synthetic_smoke_passed",
+  "real_strategy_data_used": false,
+  "finite": true,
+  "shape": [
+    10,
+    2
+  ],
+  "device": "cpu",
+  "torch": "2.15.0"
+}

@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "${HY_WORKSPACE}/outputs/AI-Forschung-20261121/replay.py", line 10, in <module>
+    import financial_matrix as engine
+  File "${HY_WORKSPACE}/outputs/Micro-RiskSize-20261120/financial_matrix.py", line 16, in <module>
+    import replay_mff as old
+  File "${HY_WORKSPACE}/outputs/NQ-Woche-20261118/full-board-history-20261119/replay_mff.py", line 16, in <module>
+    sys.path.insert(0,str(PREVIOUS));import prepare_integrity_nq as guard
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${HY_WORKSPACE}/outputs/NQ-Woche-20261118/leaderboard-integrity-acceptance/prepare_integrity_nq.py", line 17, in <module>
+    import sqx_tradeday_fast_pass as baseline
+  File "${HY_WORKSPACE}/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/sqx_tradeday_fast_pass.py", line 14, in <module>
+    from sqx_nq_ma_entry import BAR_CASES, CASES, FAMILY, NAME as HY3_NAME, PARAM, ROOT as HY3_ROOT
+  File "${HY_WORKSPACE}/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/sqx_nq_ma_entry.py", line 20, in <module>
+    from sqx_ma_entry_study import BAR_CASES, closed_bar_cases, temporary_banks, run_segments
+  File "${HY_WORKSPACE}/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/sqx_ma_entry_study.py", line 17, in <module>
+    from sqx_market_screening_native import run_segments
+  File "${HY_WORKSPACE}/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/sqx_market_screening_native.py", line 22, in <module>
+    from sqx_native_family_grid import BAR_CASES, FAMILIES, closed_bar_cases, temporary_banks
+  File "${HY_WORKSPACE}/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/sqx_native_family_grid.py", line 26, in <module>
+    from sqx_overnight_profile import verify_profile, write_profile
+  File "${HY_WORKSPACE}/outputs/Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/sqx_overnight_profile.py", line 10, in <module>
+    import databento as db
+ModuleNotFoundError: No module named 'databento'

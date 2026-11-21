@@ -1,0 +1,16 @@
+{
+  "original_sha256": "cfbfb28af24e648c1656656539d5d2583f3b0dca0afd050e77449c95f85f4db6",
+  "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+  "helpers": {
+    "SqxCompletedBarIndicators.java": "b43aac1ba7ab888dd28e0fdfcdeade09bc974617b26587d7e94395d6ec9f59cb",
+    "SqxSessionVwap.java": "bc34fb09d05ac116e51a7b1c488c9d78fba602ad5fbcc3e25a19c22db30616c8",
+    "SqxSessionPriceProfile.java": "7f93d854dbc7b7ff98915b2b98fad79995deafd9c88750044296fefab95ef362",
+    "SqxParametricTpoProfile.java": "3d0cf2e3a2253ca4c93b53078ed75ba50074f9ec9b811413afee81f796c5b370",
+    "SqxExtensionBarIndicators.java": "2d427d495f13d8a646f3e995ad60a91f448885c7e879155e4f23b61c260decac",
+    "SqxRollingVwap.java": "672d5c4ad0b9470208ad3e272118d0bbd67f4c5525ffea5d2c1f728ed8955e0d"
+  },
+  "only_source_change": "finish-time diagnostic prefix branch; feature and trading calculations unchanged",
+  "installed_application_changed": false,
+  "ninja_changed": false,
+  "isolated_runtime": "${HY_WORKSPACE}/work/sqx_ml_20261121/resources"
+}

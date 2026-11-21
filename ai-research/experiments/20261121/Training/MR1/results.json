@@ -1,0 +1,545 @@
+{
+  "state": "chronological_training_complete_not_native_cash",
+  "arm": "MR1",
+  "preregister_sha256": "92fea5d02081c05c64bca5716aa1886c07d58b33119dddbdcba6c2afe5845673",
+  "blocks": [
+    {
+      "block": 81,
+      "train_samples": 116,
+      "calibration_samples": 116,
+      "folds": [
+        {
+          "start": "2025-11-24",
+          "end": "2025-12-15",
+          "inner_samples": 93,
+          "validation_samples": 22
+        },
+        {
+          "start": "2025-12-16",
+          "end": "2026-01-08",
+          "inner_samples": 90,
+          "validation_samples": 23
+        },
+        {
+          "start": "2026-01-09",
+          "end": "2026-01-30",
+          "inner_samples": 87,
+          "validation_samples": 26
+        },
+        {
+          "start": "2026-02-02",
+          "end": "2026-02-23",
+          "inner_samples": 84,
+          "validation_samples": 29
+        },
+        {
+          "start": "2026-02-24",
+          "end": "2026-03-17",
+          "inner_samples": 98,
+          "validation_samples": 16
+        }
+      ],
+      "singleton_batch_max_abs_difference": null,
+      "first_test_day": "2026-03-19",
+      "threshold": -79.86279906918458,
+      "train_ids_sha256": "93881c94c5594c170eb3229b319964b3ebdde1bbb9dc59c46226bd09c70473ca",
+      "metrics": {
+        "candidates": 28,
+        "accepted": 28,
+        "omitted": 0,
+        "auc": 0.6102564102564102,
+        "mean_accepted_stress_net_usd": -44.412142857142854,
+        "mean_omitted_stress_net_usd": null,
+        "selected_candidate_sum_usd": -1243.54,
+        "all_candidate_sum_usd": -1243.54,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": 0.06764345005891524
+      }
+    },
+    {
+      "block": 101,
+      "train_samples": 143,
+      "calibration_samples": 143,
+      "folds": [
+        {
+          "start": "2025-11-24",
+          "end": "2025-12-19",
+          "inner_samples": 114,
+          "validation_samples": 28
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-20",
+          "inner_samples": 109,
+          "validation_samples": 29
+        },
+        {
+          "start": "2026-01-21",
+          "end": "2026-02-17",
+          "inner_samples": 106,
+          "validation_samples": 36
+        },
+        {
+          "start": "2026-02-18",
+          "end": "2026-03-17",
+          "inner_samples": 118,
+          "validation_samples": 23
+        },
+        {
+          "start": "2026-03-18",
+          "end": "2026-04-15",
+          "inner_samples": 116,
+          "validation_samples": 27
+        }
+      ],
+      "singleton_batch_max_abs_difference": null,
+      "first_test_day": "2026-04-17",
+      "threshold": -133.10638757285966,
+      "train_ids_sha256": "d4447ef9a9e688f51c124110afd1a0b4d1118c247a204aef6f6f89624a9a6166",
+      "metrics": {
+        "candidates": 27,
+        "accepted": 26,
+        "omitted": 1,
+        "auc": 0.5571428571428572,
+        "mean_accepted_stress_net_usd": 205.41615384615383,
+        "mean_omitted_stress_net_usd": 182.82,
+        "selected_candidate_sum_usd": 5340.82,
+        "all_candidate_sum_usd": 5523.639999999999,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": 0.25431232169290047
+      }
+    },
+    {
+      "block": 121,
+      "train_samples": 171,
+      "calibration_samples": 171,
+      "folds": [
+        {
+          "start": "2025-11-24",
+          "end": "2025-12-26",
+          "inner_samples": 138,
+          "validation_samples": 32
+        },
+        {
+          "start": "2025-12-29",
+          "end": "2026-01-30",
+          "inner_samples": 128,
+          "validation_samples": 39
+        },
+        {
+          "start": "2026-02-02",
+          "end": "2026-03-05",
+          "inner_samples": 130,
+          "validation_samples": 38
+        },
+        {
+          "start": "2026-03-06",
+          "end": "2026-04-09",
+          "inner_samples": 142,
+          "validation_samples": 28
+        },
+        {
+          "start": "2026-04-10",
+          "end": "2026-05-13",
+          "inner_samples": 137,
+          "validation_samples": 34
+        }
+      ],
+      "singleton_batch_max_abs_difference": null,
+      "first_test_day": "2026-05-15",
+      "threshold": -64.67470248485715,
+      "train_ids_sha256": "d5a52f0477c4396d7c8b80d51718ac3be2dbeb6606a07db913427039a75fb06c",
+      "metrics": {
+        "candidates": 33,
+        "accepted": 27,
+        "omitted": 6,
+        "auc": 0.4506172839506173,
+        "mean_accepted_stress_net_usd": 336.9866666666666,
+        "mean_omitted_stress_net_usd": -23.42999999999999,
+        "selected_candidate_sum_usd": 9098.64,
+        "all_candidate_sum_usd": 8958.06,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": 0.4797726781018802
+      }
+    },
+    {
+      "block": 141,
+      "train_samples": 204,
+      "calibration_samples": 204,
+      "folds": [
+        {
+          "start": "2025-11-24",
+          "end": "2026-01-02",
+          "inner_samples": 163,
+          "validation_samples": 40
+        },
+        {
+          "start": "2026-01-05",
+          "end": "2026-02-11",
+          "inner_samples": 149,
+          "validation_samples": 50
+        },
+        {
+          "start": "2026-02-12",
+          "end": "2026-03-23",
+          "inner_samples": 168,
+          "validation_samples": 32
+        },
+        {
+          "start": "2026-03-24",
+          "end": "2026-05-01",
+          "inner_samples": 162,
+          "validation_samples": 39
+        },
+        {
+          "start": "2026-05-04",
+          "end": "2026-06-10",
+          "inner_samples": 160,
+          "validation_samples": 43
+        }
+      ],
+      "singleton_batch_max_abs_difference": null,
+      "first_test_day": "2026-06-12",
+      "threshold": -45.14661893979239,
+      "train_ids_sha256": "aecc5391d03b4b0f6b4f414bd79c8d911eb7abe538e680bb5192ab2fc74c9580",
+      "metrics": {
+        "candidates": 32,
+        "accepted": 28,
+        "omitted": 4,
+        "auc": 0.4920634920634921,
+        "mean_accepted_stress_net_usd": -8.251428571428587,
+        "mean_omitted_stress_net_usd": 126.57000000000004,
+        "selected_candidate_sum_usd": -231.04000000000042,
+        "all_candidate_sum_usd": 275.24,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": 0.09860703812316715
+      }
+    },
+    {
+      "block": 161,
+      "train_samples": 236,
+      "calibration_samples": 236,
+      "folds": [
+        {
+          "start": "2025-11-24",
+          "end": "2026-01-08",
+          "inner_samples": 190,
+          "validation_samples": 45
+        },
+        {
+          "start": "2026-01-09",
+          "end": "2026-02-23",
+          "inner_samples": 180,
+          "validation_samples": 55
+        },
+        {
+          "start": "2026-02-24",
+          "end": "2026-04-09",
+          "inner_samples": 196,
+          "validation_samples": 37
+        },
+        {
+          "start": "2026-04-10",
+          "end": "2026-05-25",
+          "inner_samples": 187,
+          "validation_samples": 48
+        },
+        {
+          "start": "2026-05-26",
+          "end": "2026-07-08",
+          "inner_samples": 184,
+          "validation_samples": 51
+        }
+      ],
+      "singleton_batch_max_abs_difference": null,
+      "first_test_day": "2026-07-10",
+      "threshold": -51.84290058311621,
+      "train_ids_sha256": "7d08ea8b24f574def1d339cd2aa21aad1ac4d378090ee2d333281c3b146180ed",
+      "metrics": {
+        "candidates": 27,
+        "accepted": 21,
+        "omitted": 6,
+        "auc": 0.5657894736842105,
+        "mean_accepted_stress_net_usd": 153.0580952380953,
+        "mean_omitted_stress_net_usd": -83.84666666666668,
+        "selected_candidate_sum_usd": 3214.220000000001,
+        "all_candidate_sum_usd": 2711.140000000001,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": 0.26110859358909516
+      }
+    },
+    {
+      "block": 181,
+      "train_samples": 264,
+      "calibration_samples": 264,
+      "folds": [
+        {
+          "start": "2025-11-24",
+          "end": "2026-01-14",
+          "inner_samples": 211,
+          "validation_samples": 53
+        },
+        {
+          "start": "2026-01-15",
+          "end": "2026-03-05",
+          "inner_samples": 205,
+          "validation_samples": 56
+        },
+        {
+          "start": "2026-03-06",
+          "end": "2026-04-27",
+          "inner_samples": 216,
+          "validation_samples": 46
+        },
+        {
+          "start": "2026-04-28",
+          "end": "2026-06-16",
+          "inner_samples": 207,
+          "validation_samples": 53
+        },
+        {
+          "start": "2026-06-17",
+          "end": "2026-08-05",
+          "inner_samples": 208,
+          "validation_samples": 56
+        }
+      ],
+      "singleton_batch_max_abs_difference": null,
+      "first_test_day": "2026-08-07",
+      "threshold": -50.1655248687981,
+      "train_ids_sha256": "37afaf9e8f9a9125d7322ba50a4f414b6691c2338e5547cbc60261c4b60fda87",
+      "metrics": {
+        "candidates": 32,
+        "accepted": 27,
+        "omitted": 5,
+        "auc": 0.5021645021645021,
+        "mean_accepted_stress_net_usd": 128.65333333333334,
+        "mean_omitted_stress_net_usd": 142.82,
+        "selected_candidate_sum_usd": 3473.6400000000003,
+        "all_candidate_sum_usd": 4187.74,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": 0.19653497855636223
+      }
+    },
+    {
+      "block": 201,
+      "train_samples": 295,
+      "calibration_samples": 295,
+      "folds": [
+        {
+          "start": "2025-11-24",
+          "end": "2026-01-20",
+          "inner_samples": 235,
+          "validation_samples": 57
+        },
+        {
+          "start": "2026-01-21",
+          "end": "2026-03-17",
+          "inner_samples": 235,
+          "validation_samples": 59
+        },
+        {
+          "start": "2026-03-18",
+          "end": "2026-05-13",
+          "inner_samples": 239,
+          "validation_samples": 55
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-07-08",
+          "inner_samples": 227,
+          "validation_samples": 65
+        },
+        {
+          "start": "2026-07-09",
+          "end": "2026-09-02",
+          "inner_samples": 235,
+          "validation_samples": 59
+        }
+      ],
+      "singleton_batch_max_abs_difference": null,
+      "first_test_day": "2026-09-04",
+      "threshold": -44.51521881832554,
+      "train_ids_sha256": "43d2cfc5ad41d493bd1e19aec7bb03bf0f4dfce40980d239bb976b10a434389d",
+      "metrics": {
+        "candidates": 19,
+        "accepted": 16,
+        "omitted": 3,
+        "auc": 0.5857142857142856,
+        "mean_accepted_stress_net_usd": 215.63250000000002,
+        "mean_omitted_stress_net_usd": 161.9866666666667,
+        "selected_candidate_sum_usd": 3450.1200000000003,
+        "all_candidate_sum_usd": 3936.080000000001,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": 0.32105263157894737
+      }
+    },
+    {
+      "block": 221,
+      "train_samples": 314,
+      "calibration_samples": 314,
+      "folds": [
+        {
+          "start": "2025-11-24",
+          "end": "2026-01-26",
+          "inner_samples": 248,
+          "validation_samples": 64
+        },
+        {
+          "start": "2026-01-27",
+          "end": "2026-03-27",
+          "inner_samples": 248,
+          "validation_samples": 63
+        },
+        {
+          "start": "2026-03-30",
+          "end": "2026-05-29",
+          "inner_samples": 246,
+          "validation_samples": 65
+        },
+        {
+          "start": "2026-06-01",
+          "end": "2026-07-30",
+          "inner_samples": 242,
+          "validation_samples": 68
+        },
+        {
+          "start": "2026-07-31",
+          "end": "2026-09-30",
+          "inner_samples": 259,
+          "validation_samples": 54
+        }
+      ],
+      "singleton_batch_max_abs_difference": null,
+      "first_test_day": "2026-10-02",
+      "threshold": -32.476185624946204,
+      "train_ids_sha256": "8a00b12035deeb702a6f915f61186bb6c7b1862373f88d7af287baeda3e91dac",
+      "metrics": {
+        "candidates": 31,
+        "accepted": 23,
+        "omitted": 8,
+        "auc": 0.5,
+        "mean_accepted_stress_net_usd": -68.2669565217391,
+        "mean_omitted_stress_net_usd": 95.32,
+        "selected_candidate_sum_usd": -1570.1399999999994,
+        "all_candidate_sum_usd": -807.5799999999995,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": -0.08127458272458046
+      }
+    },
+    {
+      "block": 241,
+      "train_samples": 344,
+      "calibration_samples": 344,
+      "folds": [
+        {
+          "start": "2025-11-24",
+          "end": "2026-01-30",
+          "inner_samples": 270,
+          "validation_samples": 71
+        },
+        {
+          "start": "2026-02-02",
+          "end": "2026-04-09",
+          "inner_samples": 275,
+          "validation_samples": 66
+        },
+        {
+          "start": "2026-04-10",
+          "end": "2026-06-16",
+          "inner_samples": 271,
+          "validation_samples": 71
+        },
+        {
+          "start": "2026-06-17",
+          "end": "2026-08-21",
+          "inner_samples": 268,
+          "validation_samples": 72
+        },
+        {
+          "start": "2026-08-24",
+          "end": "2026-10-28",
+          "inner_samples": 279,
+          "validation_samples": 64
+        }
+      ],
+      "singleton_batch_max_abs_difference": null,
+      "first_test_day": "2026-10-30",
+      "threshold": -43.78955506911498,
+      "train_ids_sha256": "1809f08bf0dbe6836e335b46c3f29ee51b3029961f8b2c9e0ebd63cc0c8ae5a6",
+      "metrics": {
+        "candidates": 1,
+        "accepted": 1,
+        "omitted": 0,
+        "auc": null,
+        "mean_accepted_stress_net_usd": -992.18,
+        "mean_omitted_stress_net_usd": null,
+        "selected_candidate_sum_usd": -992.18,
+        "all_candidate_sum_usd": -992.18,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": null
+      }
+    }
+  ],
+  "metrics": {
+    "candidates": 230,
+    "accepted": 197,
+    "omitted": 33,
+    "auc": 0.4995833333333333,
+    "mean_accepted_stress_net_usd": 104.26670050761422,
+    "mean_omitted_stress_net_usd": 60.85030303030303,
+    "selected_candidate_sum_usd": 20540.54,
+    "all_candidate_sum_usd": 22548.6,
+    "no_cash_claim": true,
+    "spearman_score_stress_net": 0.14799562781549144,
+    "net_usd_mse": 424264.77801508695
+  },
+  "fresh_OOS": false,
+  "selected_year": true,
+  "sources": [
+    {
+      "segment": "jahr-ergaenzung-ESH6",
+      "features_sha256": "cb9a416d552c909945064bbee651e55ade8f5236173ff3eead6afb0e3db17a9e",
+      "candidates_sha256": "b6e6ac630d6d545607317304be29ca0fbbcbef0a08958f9a0da050a5ef2bb2e2",
+      "observer_proof_sha256": "e5ff8b183e01c9b65b299068bc0b91bfa6ec7c81b8ffa9444f2f8e4034943943"
+    },
+    {
+      "segment": "jahr-ergaenzung-ESZ5",
+      "features_sha256": "6bdcd8f7860e099abcf6c0d0acffdfa4855780080e3f854631cc695bc4ecdd3f",
+      "candidates_sha256": "c02163d45d1e2bc6b12aaf107ac241160bb071e5996e80fdc9cef62c2b786571",
+      "observer_proof_sha256": "830e73f164eb9e1f1638118ca4839d2ccfc9ac82983cd048433591c223e54d85"
+    },
+    {
+      "segment": "jahr-uebergang-ESM6",
+      "features_sha256": "6197d11c67c147d803bc87ff75c0157e00cd7b69a884f9b4652774f7bfadae4b",
+      "candidates_sha256": "1fda2de66ce4ae41506ce464af31c54c1dc07c5e6f7ac1b69ef4e3cfbf7be658",
+      "observer_proof_sha256": "6176aef5016c3139c940787e4501f29e77849a5ada286e2af118ddcff08fc48b"
+    },
+    {
+      "segment": "mai-oktober-2026-ESU6",
+      "features_sha256": "8d47bd4acf964af6ebe5153467a3dc26f91e26eb41dfcdd41dcfa2210f06c91f",
+      "candidates_sha256": "d0e96ca082f444e77d0ea3de0b58469e48e0f224f20dfa756a21c7683c077c55",
+      "observer_proof_sha256": "40b24e433ae6085b4500d30368b59997264cc83150d2e0e36d2d4d6516680be3"
+    },
+    {
+      "segment": "mai-oktober-2026-ESZ6",
+      "features_sha256": "b6d5cc5aaa74f98867b57d96d0ed56329106360f277182dd960d0cbb929bfa82",
+      "candidates_sha256": "c23b670337c033022193408a446c59580dfb5e7fab813b808fe13a90baea563c",
+      "observer_proof_sha256": "93971ad7677dd2649bfc7d88d7e227b2329912c76378be9712b9d3d9da630806"
+    },
+    {
+      "segment": "september-2026-ESZ6",
+      "features_sha256": "522ff6168dffbd817591795b87102640614c34404da60d620d267964caf54769",
+      "candidates_sha256": "84515ed26e6266964e520ca8ae8506293b3616cca9c51ed4a6bb28bc46a9d029",
+      "observer_proof_sha256": "99a3955ccfd0b0b37606c61c3f54cd95fc7a18922171c303273d3610d1b58ded"
+    }
+  ],
+  "sklearn_version": "1.9.1",
+  "random_omission_control": {
+    "draws": 1000,
+    "observed_utility_usd": 43.416397477311186,
+    "null_q95_usd": 178.4100522996461,
+    "upper_tail_rank": 0.32367632367632365,
+    "scope": "candidate utility only; no position path or cash claim"
+  }
+}

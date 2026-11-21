@@ -1,0 +1,53 @@
+{
+  "state": "passed",
+  "strict_cut_decisions": 5,
+  "total_prefix_parity_rows": 181,
+  "proofs": [
+    {
+      "segment": "jahr-ergaenzung-ESH6",
+      "signal_quote_stop_rows": 48,
+      "exact_signal_quote_stop_parity": true,
+      "replicas": 3,
+      "intentional_future_count_column_rejected": true,
+      "sentinel_scope": "validator sensitivity control; not a native trained feature",
+      "native_prefix_proof_sha256": "c25c76d07d3c4ae93f550116833d0273685e4c6a8ad711abb01a89508162c16a"
+    },
+    {
+      "segment": "jahr-ergaenzung-ESZ5",
+      "signal_quote_stop_rows": 15,
+      "exact_signal_quote_stop_parity": true,
+      "replicas": 3,
+      "intentional_future_count_column_rejected": true,
+      "sentinel_scope": "validator sensitivity control; not a native trained feature",
+      "native_prefix_proof_sha256": "48759b44a1eac3a8cc2af42280e7112d0cb18f5dc50ac6542bcbe364d21f91d5"
+    },
+    {
+      "segment": "jahr-uebergang-ESM6",
+      "signal_quote_stop_rows": 47,
+      "exact_signal_quote_stop_parity": true,
+      "replicas": 3,
+      "intentional_future_count_column_rejected": true,
+      "sentinel_scope": "validator sensitivity control; not a native trained feature",
+      "native_prefix_proof_sha256": "41ce5428bdc4287080cdab63294108c550178df1b8436e32a914e0fc5099f07c"
+    },
+    {
+      "segment": "mai-oktober-2026-ESU6",
+      "signal_quote_stop_rows": 48,
+      "exact_signal_quote_stop_parity": true,
+      "replicas": 3,
+      "intentional_future_count_column_rejected": true,
+      "sentinel_scope": "validator sensitivity control; not a native trained feature",
+      "native_prefix_proof_sha256": "d425f2b0c4a8bd9d229857e1029c68f348bb0b5a0b490353c59ab7a75cd23e53"
+    },
+    {
+      "segment": "mai-oktober-2026-ESZ6",
+      "signal_quote_stop_rows": 23,
+      "exact_signal_quote_stop_parity": true,
+      "replicas": 3,
+      "intentional_future_count_column_rejected": true,
+      "sentinel_scope": "validator sensitivity control; not a native trained feature",
+      "native_prefix_proof_sha256": "2c0aa1505d20b4e61effbacc569dc649a13ca9476a2f3e4a4fa239688e33f4d5"
+    }
+  ],
+  "expanded_random_and_boundary_cut_samples": "not yet performed; no universal guarantee"
+}

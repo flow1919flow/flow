@@ -1,0 +1,66 @@
+{
+  "state": "complete",
+  "completed": [
+    {
+      "state": "native_physical_prefix_identical",
+      "segment": "jahr-ergaenzung-ESH6",
+      "cutoff_ns": 1769784020117180080,
+      "rows": 48,
+      "replicas": 3,
+      "seconds": 33.99,
+      "features_sha256": "1e3b2e0161f9b56ccbbc63acfba368f40ee0ba3d8f6abc1979811dde1f1b4876",
+      "reference_features_sha256": "cb9a416d552c909945064bbee651e55ade8f5236173ff3eead6afb0e3db17a9e",
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe"
+    },
+    {
+      "state": "native_physical_prefix_identical",
+      "segment": "jahr-ergaenzung-ESZ5",
+      "cutoff_ns": 1764788337602817882,
+      "rows": 15,
+      "replicas": 3,
+      "seconds": 28.34,
+      "features_sha256": "700103cc4ca341b8916081f7c46961ae810e9becedc8243207ea17831054d526",
+      "reference_features_sha256": "6bdcd8f7860e099abcf6c0d0acffdfa4855780080e3f854631cc695bc4ecdd3f",
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe"
+    },
+    {
+      "state": "native_physical_prefix_identical",
+      "segment": "jahr-uebergang-ESM6",
+      "cutoff_ns": 1778177168147999439,
+      "rows": 47,
+      "replicas": 3,
+      "seconds": 44.79,
+      "features_sha256": "52b394227b5606b1d965b3cf27d5747e587d900db27e21b76b47c29566cb8cf6",
+      "reference_features_sha256": "6197d11c67c147d803bc87ff75c0157e00cd7b69a884f9b4652774f7bfadae4b",
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe"
+    },
+    {
+      "state": "native_physical_prefix_identical",
+      "segment": "mai-oktober-2026-ESU6",
+      "cutoff_ns": 1785245764474405742,
+      "rows": 48,
+      "replicas": 3,
+      "seconds": 34.62,
+      "features_sha256": "fe8fa97eb9c67f4f3245737701f3bbef66381f11b98f0d876ce7232729bf5edc",
+      "reference_features_sha256": "8d47bd4acf964af6ebe5153467a3dc26f91e26eb41dfcdd41dcfa2210f06c91f",
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe"
+    },
+    {
+      "state": "native_physical_prefix_identical",
+      "segment": "mai-oktober-2026-ESZ6",
+      "cutoff_ns": 1791816884418766338,
+      "rows": 23,
+      "replicas": 3,
+      "seconds": 22.85,
+      "features_sha256": "52804e989f8af6678f16cf02ab9feb77a584f2bfdc2baee5b722df7ecdf77199",
+      "reference_features_sha256": "b6d5cc5aaa74f98867b57d96d0ed56329106360f277182dd960d0cbb929bfa82",
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe"
+    },
+    {
+      "segment": "september-2026-ESZ6",
+      "state": "no_candidates_in_full_segment",
+      "rows": 0
+    }
+  ],
+  "scope": "One intrabar decision-time cutoff per each nonempty segment; five causal features; not a universal proof"
+}

@@ -1,3 +1,27 @@
+# Nachtrag · 21. November 2026 · vier neue Modellarme abgeschlossen
+
+Der neueste Forschungsstand steht im [vollständigen Abschluss](experiments/20261121/ABSCHLUSS.md).
+ML1-Zufallskontrollen, fünf native Prefix-Schnitte, L2-Schwellenkontrolle,
+Boosting, Ridge und TabPFN sind inzwischen abgeschlossen, einschließlich
+24 nativer Gate-Jobs und des ursprünglichen Kontoreplays. Frühere Aussagen
+unten wie „noch nicht trainiert“ oder „Kontrollen fehlen“ beschreiben den
+damaligen Stand. ML2–ML7 bleiben weiterhin offen. Laufende Sims und die
+produktiven Leaderboards wurden durch diese Forschung nicht verändert.
+
+| Funded-Modell | Normal Ø | Normal Median | Tickstress Ø | Tickstress Median |
+|---|---:|---:|---:|---:|
+| Basis · HY104-EMA22 → C28.03 | 8,424.89 USD | 9,899.36 USD | 6,860.65 USD | 7,142.94 USD |
+| Logistik · neue Schwellenregel | 7,153.55 USD | 7,131.53 USD | 5,516.02 USD | 6,119.19 USD |
+| Gradient Boosting · flach | 7,059.14 USD | 7,329.98 USD | 5,840.50 USD | 5,986.81 USD |
+| Ridge · erwartetes Netto-R | 7,830.00 USD | 8,286.26 USD | 6,449.53 USD | 6,819.31 USD |
+| TabPFN v2 | 8,325.73 USD | 9,723.52 USD | 6,959.86 USD | 7,794.06 USD |
+
+Diese historischen Endbargelder sind keine garantierten Gewinne und keine
+frische OOS-Bestätigung. Das letzte Windows-Betriebszeugnis unten bleibt
+zeitlich begrenzt; heute wurde kein neuer Handelsbetrieb geprüft.
+
+---
+
 # Überprüfbare Modelle und Agenten für Finanzforschung
 
 Dieser Forschungsbereich trennt zwei Aufgaben: Ein kleiner Klassifikator bewertet bestehende ES-Setups; eine mögliche spätere Agentenstudie untersucht die Kette Paper → regelgetreuer Code → gültiger Backtest → evidenzgebundene Aussage. Die breite Agentenidee hat deutliche Vorarbeiten. Die [Literaturabgrenzung](docs/Vorarbeiten-und-Abgrenzung.md) begründet keinen Neuheitsanspruch.
@@ -29,11 +53,11 @@ Jede Politik wurde vollständig nativ simuliert; historische Trades wurden nicht
 | Stress | C28.03 | 6.860,65 | 7.142,94 |
 | Stress | C28.03 mit Logit-Gate | 5.889,35 | 5.964,30 |
 
-Diese aggregierten historischen Ergebnisse sind Entwicklungsdiagnostik, einschließlich der bereits ausgewählten Baseline. 143 überlappende Fenster sind keine 143 unabhängigen Replikationen. Zufallsauslassungen, vollständige Blockpermutationen und frische vorab gespeicherte Prognosen sind noch offen. Das Modell wird nicht in eine Bestenliste befördert.
+Diese aggregierten historischen Ergebnisse sind Entwicklungsdiagnostik, einschließlich der bereits ausgewählten Baseline. 143 überlappende Fenster sind keine 143 unabhängigen Replikationen. Nachtrag21.11.: Die bedingten Zufallskontrollen sind abgeschlossen; frische vorab gespeicherte Prognosen bleiben offen. Das Modell wird nicht in eine Bestenliste befördert.
 
 ## Nächste Entscheidungen bleiben getrennte Versuche
 
-Weitere lineare Klassifikatoren müssen vor Training mit festen Einstellungen registriert werden; sie wurden noch nicht trainiert. Ein eigener zweiter Versuch sieht Ridge auf Netto-R mit festem `alpha=10.0` und `solver="svd"` vor. Er ist noch nicht ausgeführt und ersetzt die Klassifikationsfrage nicht nachträglich.
+Weitere lineare Klassifikatoren müssen vor Training mit festen Einstellungen registriert werden; sie wurden noch nicht trainiert. Ein eigener zweiter Versuch sieht Ridge auf Netto-R mit festem `alpha=10.0` und `solver="svd"` vor. Er ist seit21.11. als getrennter Versuch abgeschlossen und ersetzt die Klassifikationsfrage nicht nachträglich.
 
 Die mögliche Agentenstudie verlangt zuerst eine konkrete Abgrenzung zu bestehenden Finanz- und Reproduktionsbenchmarks. Allgemeine Eingabestörungen oder „LLMs machen Fehler“ bilden hier keine eigenständige Paperidee. [Forschungsfragen und Gesprächseinstieg](docs/Laskov-und-Forschungsfragen.md).
 

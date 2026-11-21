@@ -1,0 +1,326 @@
+{
+  "state": "allowlisted_export",
+  "files": [
+    {
+      "path": "ai-research/experiments/20261121/README.md",
+      "local_source_sha256": "3e6925575b50fa7e85676392425f1878f6ab8bcc8f04fa30f44c1b85ed5f2cd3",
+      "public_sha256": "3e6925575b50fa7e85676392425f1878f6ab8bcc8f04fa30f44c1b85ed5f2cd3",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/preregister.json",
+      "local_source_sha256": "8fc9544835072eb354ce9745f89ba4b7041eab8d05be873595ccfc41e4c13e7b",
+      "public_sha256": "8fc9544835072eb354ce9745f89ba4b7041eab8d05be873595ccfc41e4c13e7b",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/preregister-v1.json",
+      "local_source_sha256": "6f6c3ccb4c5b8ef86065fa67246f108401dfbdcede5ec49927d66e56f7d6eae0",
+      "public_sha256": "6f6c3ccb4c5b8ef86065fa67246f108401dfbdcede5ec49927d66e56f7d6eae0",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/preregister-v11.json",
+      "local_source_sha256": "92fea5d02081c05c64bca5716aa1886c07d58b33119dddbdcba6c2afe5845673",
+      "public_sha256": "92fea5d02081c05c64bca5716aa1886c07d58b33119dddbdcba6c2afe5845673",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/preregister-github-receipt.json",
+      "local_source_sha256": "70c3d88e2afcbdab913a57c9638cedf64227d1649b6bff4c64ded908d74b73b8",
+      "public_sha256": "70c3d88e2afcbdab913a57c9638cedf64227d1649b6bff4c64ded908d74b73b8",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/preregister-github-receipt-v1.json",
+      "local_source_sha256": "3b251f79ab91f62524ff3bd303630ac0e539b6efdcd9b27e1999789dd8e0e7ed",
+      "public_sha256": "3b251f79ab91f62524ff3bd303630ac0e539b6efdcd9b27e1999789dd8e0e7ed",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/preregister-github-receipt-v11.json",
+      "local_source_sha256": "a5bee010f2d819f0e97063e77d0c8dfd9b79bb37ffd824ef611cc196633196c4",
+      "public_sha256": "a5bee010f2d819f0e97063e77d0c8dfd9b79bb37ffd824ef611cc196633196c4",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/implementation-amendment.json",
+      "local_source_sha256": "21279ee53f3e64f1b8c10948f2ec80a0a92e8a79981ee00ef9c76a36fe1105eb",
+      "public_sha256": "21279ee53f3e64f1b8c10948f2ec80a0a92e8a79981ee00ef9c76a36fe1105eb",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/tabpfn-numerical-amendment.json",
+      "local_source_sha256": "c0f2d0adb38b0c167990654f65a33ca223b622179bb367037830d1ae28c4037f",
+      "public_sha256": "c0f2d0adb38b0c167990654f65a33ca223b622179bb367037830d1ae28c4037f",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/tabpfn-batch-diagnosis.json",
+      "local_source_sha256": "f3c82046ddfd70c5d5c6834c3912ecff1d72d9110ddaf56c65d2b17abfdae2b1",
+      "public_sha256": "f3c82046ddfd70c5d5c6834c3912ecff1d72d9110ddaf56c65d2b17abfdae2b1",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/tabpfn-weight-proof.json",
+      "local_source_sha256": "83e6dd77550ee7733e6ebae305de86c0ec3631337a72f0c5db83b87c12b32a3a",
+      "public_sha256": "83e6dd77550ee7733e6ebae305de86c0ec3631337a72f0c5db83b87c12b32a3a",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/tabpfn-environment.lock.txt",
+      "local_source_sha256": "6726ce44d43fd51297ed13c40435bbf8e3ae4c901035ba41d05e5fe039392b6d",
+      "public_sha256": "6726ce44d43fd51297ed13c40435bbf8e3ae4c901035ba41d05e5fe039392b6d",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/tabpfn-synthetic-smoke.json",
+      "local_source_sha256": "48a458dd57c5c7a82aad436c3f0a58e1ab7edb5ddfae59ee5d0a3878f8e34024",
+      "public_sha256": "48a458dd57c5c7a82aad436c3f0a58e1ab7edb5ddfae59ee5d0a3878f8e34024",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/train-ML9-batch-audit-failed.log",
+      "local_source_sha256": "e11f826854b9cacf0dfa0fad5721167e50a0629358e867244927bd6423cbf32a",
+      "public_sha256": "087d8554b4083008e5a0c75153d17103cbfff30fbf0efe0a4c1d8adc172ff395",
+      "local_home_path_normalized": true
+    },
+    {
+      "path": "ai-research/experiments/20261121/Training/ML9/batch-audit-failed-progress.json",
+      "local_source_sha256": "6436845bbb604053539fad14f27d6ddd5ed75d53c8c55c5d14553814d51500c5",
+      "public_sha256": "6436845bbb604053539fad14f27d6ddd5ed75d53c8c55c5d14553814d51500c5",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/MLflow/ML9-batch-failed-original.json",
+      "local_source_sha256": "35b28cdbc5868560bb969da7cc016880b48b4be9ac99dfcfcb107ac1d7d4e4b5",
+      "public_sha256": "35b28cdbc5868560bb969da7cc016880b48b4be9ac99dfcfcb107ac1d7d4e4b5",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/cash-attempt1-missing-dependency.log",
+      "local_source_sha256": "3bce87efaed5d26143758cc7f178fe1be76b043a1d3058886734040dd3f94fc3",
+      "public_sha256": "dd796230142ed47b3067d2c4eccfb70876e1c933453511afa5321b48ec45ccd7",
+      "local_home_path_normalized": true
+    },
+    {
+      "path": "ai-research/experiments/20261121/research.py",
+      "local_source_sha256": "acdd3825dd16212417a9092eb8022585ed0182ec1cedaa75fcad29fcee575eb5",
+      "public_sha256": "acdd3825dd16212417a9092eb8022585ed0182ec1cedaa75fcad29fcee575eb5",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/research-v11-executed.py",
+      "local_source_sha256": "91e55174079a48d22b071ad029bf64c4e9789dc53e59c1bc39962511cc9b6e37",
+      "public_sha256": "91e55174079a48d22b071ad029bf64c4e9789dc53e59c1bc39962511cc9b6e37",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/native_check.py",
+      "local_source_sha256": "536c79191c36e6626a49b1e03603c1f06f6d7af5175209ac8f77fced6b6c0936",
+      "public_sha256": "536c79191c36e6626a49b1e03603c1f06f6d7af5175209ac8f77fced6b6c0936",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/accept_prefix.py",
+      "local_source_sha256": "83e44423b3cdcea2775976748a2d99bf7cce9d98ea6eaa25b821bcb2c8e7780c",
+      "public_sha256": "83e44423b3cdcea2775976748a2d99bf7cce9d98ea6eaa25b821bcb2c8e7780c",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/replay.py",
+      "local_source_sha256": "135bd7571884f70017f1297e07f6af921a27ebcf61984d24b45914386efe31cd",
+      "public_sha256": "135bd7571884f70017f1297e07f6af921a27ebcf61984d24b45914386efe31cd",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/track.py",
+      "local_source_sha256": "8df521c1afafeba71692ce4b6b4379a97b453bf273452762645accfded537322",
+      "public_sha256": "8df521c1afafeba71692ce4b6b4379a97b453bf273452762645accfded537322",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/run.py",
+      "local_source_sha256": "a9e5a1fd8362261eb19da72e8f7eed494e039d379d777424b15691fce280542b",
+      "public_sha256": "a9e5a1fd8362261eb19da72e8f7eed494e039d379d777424b15691fce280542b",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/finish.py",
+      "local_source_sha256": "5a10fdff1e09fa2797136bb52e7501f59ed9b90dbc74e0558f7cd2bdd8c4c7ee",
+      "public_sha256": "5a10fdff1e09fa2797136bb52e7501f59ed9b90dbc74e0558f7cd2bdd8c4c7ee",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/parallel_null.py",
+      "local_source_sha256": "156573fca79b105d5d65be256d2b8a4fb4ca463c28eebe3b1b35eb528558c080",
+      "public_sha256": "156573fca79b105d5d65be256d2b8a4fb4ca463c28eebe3b1b35eb528558c080",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/make_report.py",
+      "local_source_sha256": "de918816ad0440219cab04245df31be17e439bd49f1cb8e334e4d3c83ebc275d",
+      "public_sha256": "de918816ad0440219cab04245df31be17e439bd49f1cb8e334e4d3c83ebc275d",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/package_results.py",
+      "local_source_sha256": "bc38e100783c420c4ec17436054b48e2ff68c44fe0910731d73133ff8f058e6d",
+      "public_sha256": "bc38e100783c420c4ec17436054b48e2ff68c44fe0910731d73133ff8f058e6d",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/si_feasibility.py",
+      "local_source_sha256": "dfeae02beeb9cfb0587689c01ab701008524207d1411fbbdb7ab8d13f298bf14",
+      "public_sha256": "dfeae02beeb9cfb0587689c01ab701008524207d1411fbbdb7ab8d13f298bf14",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/operational-resume.json",
+      "local_source_sha256": "1ad662cede7c1094daa40fad224dd467bfd78fb40b60eecee61e631e4ff8cde3",
+      "public_sha256": "1ad662cede7c1094daa40fad224dd467bfd78fb40b60eecee61e631e4ff8cde3",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/native-source-proof.json",
+      "local_source_sha256": "e3b53718792b122a9aef524722c56de13f1895c7fad66fc03f00aadf2c9e05d5",
+      "public_sha256": "1a3e83d518c4b3dabcea619ab524033682eb324e10a95dcd90696ddac952c61a",
+      "local_home_path_normalized": true
+    },
+    {
+      "path": "ai-research/experiments/20261121/prefix-progress.json",
+      "local_source_sha256": "222cf5e625581414af03b1f8a678ec3ea2720cc061dc31b63a073d01eaf90536",
+      "public_sha256": "222cf5e625581414af03b1f8a678ec3ea2720cc061dc31b63a073d01eaf90536",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/prefix-additional-acceptance.json",
+      "local_source_sha256": "9d7f9c22984afc378c4dba96ba27d07a252b9c5cbd67070741b58f344b2a9798",
+      "public_sha256": "9d7f9c22984afc378c4dba96ba27d07a252b9c5cbd67070741b58f344b2a9798",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/cash-environment-correction.json",
+      "local_source_sha256": "bce97aeffc0bc3e71c1b9d28d65a7547536eacc3ef96665f7e8afd64861abed2",
+      "public_sha256": "bce97aeffc0bc3e71c1b9d28d65a7547536eacc3ef96665f7e8afd64861abed2",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/cash-environment.lock.txt",
+      "local_source_sha256": "ce18f9c4223dec54eb76c5ce863474bcda05919570f41bc2118e12f6cf61f35c",
+      "public_sha256": "ce18f9c4223dec54eb76c5ce863474bcda05919570f41bc2118e12f6cf61f35c",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/summary.json",
+      "local_source_sha256": "2fb043fbda3da9d0abd7ca4b23ce28fa3e1a101ddce691210dcaedd3d51aec6a",
+      "public_sha256": "2fb043fbda3da9d0abd7ca4b23ce28fa3e1a101ddce691210dcaedd3d51aec6a",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/native-acceptance-summary.json",
+      "local_source_sha256": "095226ff0eb00e6c0cac5c4a6944aea9e981d47c4e81f6ab70951a1f2d283164",
+      "public_sha256": "095226ff0eb00e6c0cac5c4a6944aea9e981d47c4e81f6ab70951a1f2d283164",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/Ergebnisse.html",
+      "local_source_sha256": "7f715d275888024ddc273cdbb1ebb75065821d2627e7171163b851dcf0bb4637",
+      "public_sha256": "7f715d275888024ddc273cdbb1ebb75065821d2627e7171163b851dcf0bb4637",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/input-dataset-manifest.json",
+      "local_source_sha256": "36563646bfe4ac8c4e19be671dd52d4a4285a106d5c946b138744e594bc1b37f",
+      "public_sha256": "36563646bfe4ac8c4e19be671dd52d4a4285a106d5c946b138744e594bc1b37f",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/Controls/results.json",
+      "local_source_sha256": "74bcb6cec58493afb5a20de6721ff68e7bf52e8c706431867554e3a461b93aec",
+      "public_sha256": "74bcb6cec58493afb5a20de6721ff68e7bf52e8c706431867554e3a461b93aec",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/Controls/execution-provenance.json",
+      "local_source_sha256": "8b3f7c9e1faaeca384a2cb03a1ee078f62dc74c09c98d9abeda674e46885f244",
+      "public_sha256": "8b3f7c9e1faaeca384a2cb03a1ee078f62dc74c09c98d9abeda674e46885f244",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/Controls/family-null.json",
+      "local_source_sha256": "5023132fb79e52593fbbcfe81499a3f849eb93424394c9c9aea6ac9533d2b739",
+      "public_sha256": "5023132fb79e52593fbbcfe81499a3f849eb93424394c9c9aea6ac9533d2b739",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/Controls/parallel-execution.json",
+      "local_source_sha256": "b298eba92af98a2db6229b6564dd911d0ca2298dbb99ada21e0bab8f7492e713",
+      "public_sha256": "b298eba92af98a2db6229b6564dd911d0ca2298dbb99ada21e0bab8f7492e713",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/Cash/design-before-results.json",
+      "local_source_sha256": "3f7aeadf08d11c88500ac5dbdc8b2d5642f103195964d8adb07c1ffa58170cc3",
+      "public_sha256": "3f7aeadf08d11c88500ac5dbdc8b2d5642f103195964d8adb07c1ffa58170cc3",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/Cash/results.json",
+      "local_source_sha256": "50dcb0e942393c17331d3c4c59e99a01ed11b247269e5c1706edaf8846e048b8",
+      "public_sha256": "50dcb0e942393c17331d3c4c59e99a01ed11b247269e5c1706edaf8846e048b8",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/Controls/family-sequential-partial.json",
+      "local_source_sha256": "b9931c837c4278d0161793d152ed183d052d0bffcc5bbc78ada7654f4a7872f4",
+      "public_sha256": "b9931c837c4278d0161793d152ed183d052d0bffcc5bbc78ada7654f4a7872f4",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/SI/feasibility.json",
+      "local_source_sha256": "81ef650f7166bbf8e67ce13f879e86337ab285755c206e96a17d04180dbce529",
+      "public_sha256": "81ef650f7166bbf8e67ce13f879e86337ab285755c206e96a17d04180dbce529",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/Source/HYML1ESResearch.java",
+      "local_source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "public_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/Training/ML1C/results.json",
+      "local_source_sha256": "9382668a0ebd8afd1012ce00bcd4be15aab5268a104dd614701ec3c1961d32f8",
+      "public_sha256": "9382668a0ebd8afd1012ce00bcd4be15aab5268a104dd614701ec3c1961d32f8",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/Training/ML8/results.json",
+      "local_source_sha256": "91960b08c7831139d3e4179d786e11d9d2a3668c87208f9ae4656ebc80c6e5ed",
+      "public_sha256": "91960b08c7831139d3e4179d786e11d9d2a3668c87208f9ae4656ebc80c6e5ed",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/Training/MR1/results.json",
+      "local_source_sha256": "12af4e6df8ec12009454aae93350749609833ef618ab76e5ecec29d918293f84",
+      "public_sha256": "12af4e6df8ec12009454aae93350749609833ef618ab76e5ecec29d918293f84",
+      "local_home_path_normalized": false
+    },
+    {
+      "path": "ai-research/experiments/20261121/Training/ML9/results.json",
+      "local_source_sha256": "cb4677c907a5072bc058f7021bf57850f4b0744ba7251d2a4f65b40326ee4f74",
+      "public_sha256": "cb4677c907a5072bc058f7021bf57850f4b0744ba7251d2a4f65b40326ee4f74",
+      "local_home_path_normalized": false
+    }
+  ],
+  "excluded": [
+    "raw quotes/ticks/carriers",
+    "per-candidate feature rows",
+    "model checkpoint weights",
+    "private messages and credentials",
+    "Windows account identifiers",
+    "raw licensed papers"
+  ],
+  "normalization": "Only workspace/home path strings replaced; source and exported hashes recorded separately."
+}

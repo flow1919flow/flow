@@ -1,0 +1,6 @@
+{
+  "state": "completed_v1_controls_provenance_recorded",
+  "executed_registration_commit": "c918836629711d2ff3ff2ec469c4a784387a14b1",
+  "executed_research_source_sha256": "cbf69372a90f8544aa30cfb64e0e3445767910b6764065a08814330b9288c3d6",
+  "note": "Controls ran before the header-only empty-segment export correction. This did not change any fitting, split, target, threshold or statistical rule. Original controls are retained."
+}

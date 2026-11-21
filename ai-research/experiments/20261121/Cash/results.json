@@ -1,0 +1,295 @@
+{
+  "state": "complete_native_gate_and_original_cash_comparison",
+  "results": {
+    "normal": {
+      "base": {
+        "mean_end_cash_usd": 8424.89,
+        "median_end_cash_usd": 9899.36,
+        "mean_gain_usd": 7424.89,
+        "median_gain_usd": 8899.36,
+        "windows": 143,
+        "windows_with_payout": 143,
+        "mean_challenge_fees_usd": 641.96,
+        "median_challenge_fees_usd": 675.0,
+        "median_first_payout_calendar_day": 66,
+        "horizon_calendar_days": [
+          137,
+          144
+        ],
+        "mean_net_per_30_calendar_days_through_day90_usd": 1086.06,
+        "median_net_per_30_calendar_days_through_day90_usd": 627.26,
+        "attempted_accounts": 680,
+        "mean_filled_quantity": null,
+        "median_filled_quantity": null,
+        "min_quantity": null,
+        "max_quantity": null,
+        "inactivity_accounts": 0,
+        "counts": {
+          "selected_entries": 20604,
+          "evaluation_selected_entries": 11966,
+          "funded_selected_entries": 8638
+        }
+      },
+      "ML1C": {
+        "mean_end_cash_usd": 7153.55,
+        "median_end_cash_usd": 7131.53,
+        "mean_gain_usd": 6153.55,
+        "median_gain_usd": 6131.53,
+        "windows": 143,
+        "windows_with_payout": 143,
+        "mean_challenge_fees_usd": 634.41,
+        "median_challenge_fees_usd": 675.0,
+        "median_first_payout_calendar_day": 66,
+        "horizon_calendar_days": [
+          137,
+          144
+        ],
+        "mean_net_per_30_calendar_days_through_day90_usd": 988.77,
+        "median_net_per_30_calendar_days_through_day90_usd": 609.9,
+        "attempted_accounts": 672,
+        "mean_filled_quantity": null,
+        "median_filled_quantity": null,
+        "min_quantity": null,
+        "max_quantity": null,
+        "inactivity_accounts": 0,
+        "counts": {
+          "selected_entries": 19666,
+          "evaluation_selected_entries": 11934,
+          "funded_selected_entries": 7732
+        }
+      },
+      "ML8": {
+        "mean_end_cash_usd": 7059.14,
+        "median_end_cash_usd": 7329.98,
+        "mean_gain_usd": 6059.14,
+        "median_gain_usd": 6329.98,
+        "windows": 143,
+        "windows_with_payout": 143,
+        "mean_challenge_fees_usd": 641.96,
+        "median_challenge_fees_usd": 675.0,
+        "median_first_payout_calendar_day": 71,
+        "horizon_calendar_days": [
+          137,
+          144
+        ],
+        "mean_net_per_30_calendar_days_through_day90_usd": 954.64,
+        "median_net_per_30_calendar_days_through_day90_usd": 556.01,
+        "attempted_accounts": 680,
+        "mean_filled_quantity": null,
+        "median_filled_quantity": null,
+        "min_quantity": null,
+        "max_quantity": null,
+        "inactivity_accounts": 0,
+        "counts": {
+          "selected_entries": 19145,
+          "evaluation_selected_entries": 11966,
+          "funded_selected_entries": 7179
+        }
+      },
+      "MR1": {
+        "mean_end_cash_usd": 7830.0,
+        "median_end_cash_usd": 8286.26,
+        "mean_gain_usd": 6830.0,
+        "median_gain_usd": 7286.26,
+        "windows": 143,
+        "windows_with_payout": 143,
+        "mean_challenge_fees_usd": 641.96,
+        "median_challenge_fees_usd": 675.0,
+        "median_first_payout_calendar_day": 66,
+        "horizon_calendar_days": [
+          137,
+          144
+        ],
+        "mean_net_per_30_calendar_days_through_day90_usd": 1037.9,
+        "median_net_per_30_calendar_days_through_day90_usd": 601.01,
+        "attempted_accounts": 680,
+        "mean_filled_quantity": null,
+        "median_filled_quantity": null,
+        "min_quantity": null,
+        "max_quantity": null,
+        "inactivity_accounts": 0,
+        "counts": {
+          "selected_entries": 19474,
+          "evaluation_selected_entries": 11966,
+          "funded_selected_entries": 7508
+        }
+      },
+      "ML9": {
+        "mean_end_cash_usd": 8325.73,
+        "median_end_cash_usd": 9723.52,
+        "mean_gain_usd": 7325.73,
+        "median_gain_usd": 8723.52,
+        "windows": 143,
+        "windows_with_payout": 143,
+        "mean_challenge_fees_usd": 641.96,
+        "median_challenge_fees_usd": 675.0,
+        "median_first_payout_calendar_day": 66,
+        "horizon_calendar_days": [
+          137,
+          144
+        ],
+        "mean_net_per_30_calendar_days_through_day90_usd": 1097.85,
+        "median_net_per_30_calendar_days_through_day90_usd": 670.4,
+        "attempted_accounts": 680,
+        "mean_filled_quantity": null,
+        "median_filled_quantity": null,
+        "min_quantity": null,
+        "max_quantity": null,
+        "inactivity_accounts": 0,
+        "counts": {
+          "selected_entries": 20391,
+          "evaluation_selected_entries": 11966,
+          "funded_selected_entries": 8425
+        }
+      }
+    },
+    "stress": {
+      "base": {
+        "mean_end_cash_usd": 6860.65,
+        "median_end_cash_usd": 7142.94,
+        "mean_gain_usd": 5860.65,
+        "median_gain_usd": 6142.94,
+        "windows": 143,
+        "windows_with_payout": 143,
+        "mean_challenge_fees_usd": 686.33,
+        "median_challenge_fees_usd": 675.0,
+        "median_first_payout_calendar_day": 69,
+        "horizon_calendar_days": [
+          137,
+          144
+        ],
+        "mean_net_per_30_calendar_days_through_day90_usd": 818.56,
+        "median_net_per_30_calendar_days_through_day90_usd": 315.5,
+        "attempted_accounts": 727,
+        "mean_filled_quantity": null,
+        "median_filled_quantity": null,
+        "min_quantity": null,
+        "max_quantity": null,
+        "inactivity_accounts": 0,
+        "counts": {
+          "selected_entries": 20491,
+          "evaluation_selected_entries": 11525,
+          "funded_selected_entries": 8966
+        }
+      },
+      "ML1C": {
+        "mean_end_cash_usd": 5516.02,
+        "median_end_cash_usd": 6119.19,
+        "mean_gain_usd": 4516.02,
+        "median_gain_usd": 5119.19,
+        "windows": 143,
+        "windows_with_payout": 143,
+        "mean_challenge_fees_usd": 728.81,
+        "median_challenge_fees_usd": 675.0,
+        "median_first_payout_calendar_day": 69,
+        "horizon_calendar_days": [
+          137,
+          144
+        ],
+        "mean_net_per_30_calendar_days_through_day90_usd": 730.87,
+        "median_net_per_30_calendar_days_through_day90_usd": 206.32,
+        "attempted_accounts": 772,
+        "mean_filled_quantity": null,
+        "median_filled_quantity": null,
+        "min_quantity": null,
+        "max_quantity": null,
+        "inactivity_accounts": 0,
+        "counts": {
+          "selected_entries": 19643,
+          "evaluation_selected_entries": 12219,
+          "funded_selected_entries": 7424
+        }
+      },
+      "ML8": {
+        "mean_end_cash_usd": 5840.5,
+        "median_end_cash_usd": 5986.81,
+        "mean_gain_usd": 4840.5,
+        "median_gain_usd": 4986.81,
+        "windows": 143,
+        "windows_with_payout": 143,
+        "mean_challenge_fees_usd": 676.89,
+        "median_challenge_fees_usd": 675.0,
+        "median_first_payout_calendar_day": 78,
+        "horizon_calendar_days": [
+          137,
+          144
+        ],
+        "mean_net_per_30_calendar_days_through_day90_usd": 721.12,
+        "median_net_per_30_calendar_days_through_day90_usd": 100.38,
+        "attempted_accounts": 717,
+        "mean_filled_quantity": null,
+        "median_filled_quantity": null,
+        "min_quantity": null,
+        "max_quantity": null,
+        "inactivity_accounts": 0,
+        "counts": {
+          "selected_entries": 18964,
+          "evaluation_selected_entries": 11457,
+          "funded_selected_entries": 7507
+        }
+      },
+      "MR1": {
+        "mean_end_cash_usd": 6449.53,
+        "median_end_cash_usd": 6819.31,
+        "mean_gain_usd": 5449.53,
+        "median_gain_usd": 5819.31,
+        "windows": 143,
+        "windows_with_payout": 143,
+        "mean_challenge_fees_usd": 676.89,
+        "median_challenge_fees_usd": 675.0,
+        "median_first_payout_calendar_day": 71,
+        "horizon_calendar_days": [
+          137,
+          144
+        ],
+        "mean_net_per_30_calendar_days_through_day90_usd": 774.28,
+        "median_net_per_30_calendar_days_through_day90_usd": 145.38,
+        "attempted_accounts": 717,
+        "mean_filled_quantity": null,
+        "median_filled_quantity": null,
+        "min_quantity": null,
+        "max_quantity": null,
+        "inactivity_accounts": 0,
+        "counts": {
+          "selected_entries": 19185,
+          "evaluation_selected_entries": 11457,
+          "funded_selected_entries": 7728
+        }
+      },
+      "ML9": {
+        "mean_end_cash_usd": 6959.86,
+        "median_end_cash_usd": 7794.06,
+        "mean_gain_usd": 5959.86,
+        "median_gain_usd": 6794.06,
+        "windows": 143,
+        "windows_with_payout": 143,
+        "mean_challenge_fees_usd": 676.89,
+        "median_challenge_fees_usd": 675.0,
+        "median_first_payout_calendar_day": 69,
+        "horizon_calendar_days": [
+          137,
+          144
+        ],
+        "mean_net_per_30_calendar_days_through_day90_usd": 818.44,
+        "median_net_per_30_calendar_days_through_day90_usd": 324.92,
+        "attempted_accounts": 717,
+        "mean_filled_quantity": null,
+        "median_filled_quantity": null,
+        "min_quantity": null,
+        "max_quantity": null,
+        "inactivity_accounts": 0,
+        "counts": {
+          "selected_entries": 20258,
+          "evaluation_selected_entries": 11457,
+          "funded_selected_entries": 8801
+        }
+      }
+    }
+  },
+  "original_account_counterchecks": 9117,
+  "preregister_sha256": "8fc9544835072eb354ce9745f89ba4b7041eab8d05be873595ccfc41e4c13e7b",
+  "baseline_reproduced_exactly": true,
+  "fresh_OOS": false,
+  "leaderboard_changed": false,
+  "ninja_changed": false
+}

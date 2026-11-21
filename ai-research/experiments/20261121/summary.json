@@ -1,0 +1,56 @@
+{
+  "state": "complete",
+  "comparison": [
+    {
+      "arm": "base",
+      "name": "Basis · HY104-EMA22 → C28.03",
+      "normal_mean": 8424.89,
+      "normal_median": 9899.36,
+      "stress_mean": 6860.65,
+      "stress_median": 7142.94,
+      "stress_mean_delta_from_base": 0.0
+    },
+    {
+      "arm": "ML1C",
+      "name": "Logistik · neue Schwellenregel",
+      "normal_mean": 7153.55,
+      "normal_median": 7131.53,
+      "stress_mean": 5516.02,
+      "stress_median": 6119.19,
+      "stress_mean_delta_from_base": -1344.63
+    },
+    {
+      "arm": "ML8",
+      "name": "Gradient Boosting · flach",
+      "normal_mean": 7059.14,
+      "normal_median": 7329.98,
+      "stress_mean": 5840.5,
+      "stress_median": 5986.81,
+      "stress_mean_delta_from_base": -1020.15
+    },
+    {
+      "arm": "MR1",
+      "name": "Ridge · erwartetes Netto-R",
+      "normal_mean": 7830.0,
+      "normal_median": 8286.26,
+      "stress_mean": 6449.53,
+      "stress_median": 6819.31,
+      "stress_mean_delta_from_base": -411.12
+    },
+    {
+      "arm": "ML9",
+      "name": "TabPFN v2",
+      "normal_mean": 8325.73,
+      "normal_median": 9723.52,
+      "stress_mean": 6959.86,
+      "stress_median": 7794.06,
+      "stress_mean_delta_from_base": 99.21
+    }
+  ],
+  "native_jobs": 24,
+  "original_account_counterchecks": 9117,
+  "fresh_OOS": false,
+  "live_changed": false,
+  "cloud_spend_usd": 0,
+  "preregister_commit": "c98ff866fb51c36cfe052169bc224ed95bc56f60"
+}

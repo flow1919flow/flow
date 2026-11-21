@@ -39,15 +39,19 @@
     },
     {
       "id": "MR1",
-      "name": "Ridge expected net R regression",
-      "status": "separate_followup_not_trained",
+      "name": "Ridge · erwartetes Netto-R",
+      "status": "trained_native_gate_and_cash_complete_selected_year_not_adopted",
       "alpha": 10,
-      "solver": "svd"
+      "solver": "svd",
+      "result": "experiments/20261121/Training/MR1/results.json",
+      "normal_mean_end_cash_usd": 7830.0,
+      "stress_mean_end_cash_usd": 6449.53,
+      "fresh_OOS": false
     },
     {
       "id": "ML8",
-      "name": "HistGradientBoostingClassifier depth-one additive nonlinear control",
-      "status": "proposed_by_Claude_not_trained_not_final_preregistration",
+      "name": "Gradient Boosting · flach",
+      "status": "trained_native_gate_and_cash_complete_selected_year_not_adopted",
       "parameters": {
         "max_depth": 1,
         "learning_rate": 0.05,
@@ -55,13 +59,36 @@
         "min_samples_leaf": 20,
         "l2_regularization": 1.0,
         "early_stopping": false
-      }
+      },
+      "result": "experiments/20261121/Training/ML8/results.json",
+      "normal_mean_end_cash_usd": 7059.14,
+      "stress_mean_end_cash_usd": 5840.5,
+      "fresh_OOS": false
+    },
+    {
+      "id": "ML1C",
+      "name": "Logistik · neue Schwellenregel",
+      "status": "trained_native_gate_and_cash_complete_selected_year_not_adopted",
+      "result": "experiments/20261121/Training/ML1C/results.json",
+      "normal_mean_end_cash_usd": 7153.55,
+      "stress_mean_end_cash_usd": 5516.02,
+      "fresh_OOS": false
+    },
+    {
+      "id": "ML9",
+      "name": "TabPFN v2",
+      "status": "trained_native_gate_and_cash_complete_selected_year_not_adopted",
+      "result": "experiments/20261121/Training/ML9/results.json",
+      "normal_mean_end_cash_usd": 8325.73,
+      "stress_mean_end_cash_usd": 6959.86,
+      "fresh_OOS": false
     }
   ],
   "next_priority": [
-    "ML1 controls and native feature prefix test",
-    "one prespecified nonlinear comparison and separate MR1 expected net R",
-    "separate SI feasibility and coverage inventory"
+    "No automatic adoption from selected year",
+    "Freeze any further policy before future outcomes",
+    "Expanded physical-prefix boundary audits",
+    "Verified SI feed availability before any SI training"
   ],
-  "modern_tabular_comparison": "TabPFN feasibility and version-specific licence check; not installed or tested"
+  "modern_tabular_comparison": "TabPFN v2 completed locally; exact licence/weight/package hashes retained. No cloud calls."
 }

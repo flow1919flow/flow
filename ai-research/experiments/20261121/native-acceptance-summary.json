@@ -1,0 +1,750 @@
+{
+  "jobs": 24,
+  "replicas": true,
+  "proofs": [
+    {
+      "arm": "ML1C",
+      "segment": "jahr-ergaenzung-ESH6",
+      "proof_sha256": "e3c5c9f43a4aa1f4eb91a2640d63fbab7364210881c04665251d53bddf4a99b1",
+      "seconds": 83.51,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "e023d12bc0d036305d6a07f3de1aa1907d5f47449a1dbeec04fe32d897b98dac",
+      "features_sha256": "cb9a416d552c909945064bbee651e55ade8f5236173ff3eead6afb0e3db17a9e",
+      "decision_file_sha256": "4377db69df9f9698e2e2cc67ade522ffe2d502a843abccef9bb3b8fa91a522a6",
+      "manifest_sha256": "4b0404f8d0c3d057e3dda6eb6b374df4b9ccba977aafe7921e667c33747d6e1e",
+      "native_log_sha256": "47ca2eed733efb703d4a286333bd41ec72ffbe34e471b4a21c32acd0f18ce8b5",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML1C/jahr-ergaenzung-ESH6/result_sqx/ML1C_jahr-ergaenzung-ESH6 - Optimized 0.0.sqx",
+          "size_bytes": 22967,
+          "sha256": "5f74ef5fc7a25a303cde5ccf7450b6463f0109c6383a580f84056c6635655997"
+        },
+        {
+          "file": "SQX/ML1C/jahr-ergaenzung-ESH6/result_sqx/ML1C_jahr-ergaenzung-ESH6 - Optimized 0.1.sqx",
+          "size_bytes": 22964,
+          "sha256": "4113f1504452fc31e5ddaa69d2ff48bffe6b0fc53e37b471737715e14cff63a6"
+        },
+        {
+          "file": "SQX/ML1C/jahr-ergaenzung-ESH6/result_sqx/ML1C_jahr-ergaenzung-ESH6.sqx",
+          "size_bytes": 23086,
+          "sha256": "2d013051920f8899c093a75380628799aec2385c30268d7cbb8f03e562c49133"
+        }
+      ]
+    },
+    {
+      "arm": "ML1C",
+      "segment": "jahr-ergaenzung-ESZ5",
+      "proof_sha256": "ab268e89bb1cb697ddc52c609ac16e73a6a89f1bdfd5f2757678fb46197c4619",
+      "seconds": 35.97,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "84339d927b60979a70287f351dd8846dcbe9ac302099b770f16f503b2b69d796",
+      "features_sha256": "6bdcd8f7860e099abcf6c0d0acffdfa4855780080e3f854631cc695bc4ecdd3f",
+      "decision_file_sha256": "55445e4346fe27d7336010924b1ace93e0c1f3bf135662c2fb48603ef6b5b2ea",
+      "manifest_sha256": "2f227cd8329854c862e280b9c5fcf1a0b47748a715c37cf14f7074024b220594",
+      "native_log_sha256": "f9eb34cf94fb39ca518930ca0d3830fe3ee1cd3c5f1c00b32685f1937aa70321",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML1C/jahr-ergaenzung-ESZ5/result_sqx/ML1C_jahr-ergaenzung-ESZ5 - Optimized 0.0.sqx",
+          "size_bytes": 17596,
+          "sha256": "2ef5b78da54af81fdf3b7ef30c36925c15d30419aec9d082d014d87ef8e5f3a2"
+        },
+        {
+          "file": "SQX/ML1C/jahr-ergaenzung-ESZ5/result_sqx/ML1C_jahr-ergaenzung-ESZ5 - Optimized 0.1.sqx",
+          "size_bytes": 17594,
+          "sha256": "029a86d9cf56d42620f445969b93f7987c09e210e5ebad90b31f99b4593e2421"
+        },
+        {
+          "file": "SQX/ML1C/jahr-ergaenzung-ESZ5/result_sqx/ML1C_jahr-ergaenzung-ESZ5.sqx",
+          "size_bytes": 17718,
+          "sha256": "0650b696561dafd573cf029257ddda06e36f9bdcdf70954cef65f10b791e143a"
+        }
+      ]
+    },
+    {
+      "arm": "ML1C",
+      "segment": "jahr-uebergang-ESM6",
+      "proof_sha256": "5d90cfbbba64f4c71c7b392260ebc79d3256e6ef09872d47ad1a35f598e6b2b6",
+      "seconds": 70.99,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "46d7c72325b11acb5a45f6f424e1884c35ad82789e6dca622ca9f3f4062eff1a",
+      "features_sha256": "6197d11c67c147d803bc87ff75c0157e00cd7b69a884f9b4652774f7bfadae4b",
+      "decision_file_sha256": "dab6da4aa1caa0e321a287a0e4599b2fcfb1c0ef8ac5acf92a89d14891677ab2",
+      "manifest_sha256": "f2f0ba52abb55cd75d9c650a816b241621df907d4238dca13747bfb9950f8fb7",
+      "native_log_sha256": "9d27500d80d6746211b7f2fb172c836eb2edc265fef5d81cd2690b06683f854b",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML1C/jahr-uebergang-ESM6/result_sqx/ML1C_jahr-uebergang-ESM6 - Optimized 0.0.sqx",
+          "size_bytes": 22272,
+          "sha256": "dfcd7fdc69c6e67b35a05eb8c75ed21aa2d86ea634fe504b78d9ed828e1ca9e5"
+        },
+        {
+          "file": "SQX/ML1C/jahr-uebergang-ESM6/result_sqx/ML1C_jahr-uebergang-ESM6 - Optimized 0.1.sqx",
+          "size_bytes": 22274,
+          "sha256": "32adc2b22867afe8d1078de58023ea3a994153449a65cfe3b384e28d07be8367"
+        },
+        {
+          "file": "SQX/ML1C/jahr-uebergang-ESM6/result_sqx/ML1C_jahr-uebergang-ESM6.sqx",
+          "size_bytes": 22395,
+          "sha256": "c7fcd83a500dcbb7781ff025aca315118426adc8a41f6bcec6579b0c3442acf8"
+        }
+      ]
+    },
+    {
+      "arm": "ML1C",
+      "segment": "mai-oktober-2026-ESU6",
+      "proof_sha256": "ec7e610a8ec693b60d5f3d31570c8dedb8481ea3ca4b1d23065eda0fff5655b8",
+      "seconds": 61.24,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "1fe05013bf4eb65247dbe9dc0db71ab16497f54ab96fb1253e967318913724ab",
+      "features_sha256": "8d47bd4acf964af6ebe5153467a3dc26f91e26eb41dfcdd41dcfa2210f06c91f",
+      "decision_file_sha256": "fd6103b6109bf1249264e45c0e45069250d5abe925133b838e555d29cecd831c",
+      "manifest_sha256": "a545faa7201c5e965ca05bd137e7f94224b9c94a02341abdd3b394c39f7cf5bc",
+      "native_log_sha256": "0c18b31c69dae7987826167c7e4600e7cc3b6b363b8474c21c810635d2612cc0",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML1C/mai-oktober-2026-ESU6/result_sqx/ML1C_mai-oktober-2026-ESU6 - Optimized 0.0.sqx",
+          "size_bytes": 22276,
+          "sha256": "a2ad55d41785f5d14fc624da90bef74500dddae146eed664ddb3fe225dfc43dc"
+        },
+        {
+          "file": "SQX/ML1C/mai-oktober-2026-ESU6/result_sqx/ML1C_mai-oktober-2026-ESU6 - Optimized 0.1.sqx",
+          "size_bytes": 22278,
+          "sha256": "e3715847da6da982548f721c6b23d8e7313686d5328ef333009682317b174b2c"
+        },
+        {
+          "file": "SQX/ML1C/mai-oktober-2026-ESU6/result_sqx/ML1C_mai-oktober-2026-ESU6.sqx",
+          "size_bytes": 22399,
+          "sha256": "c495ebd239a2ed2a15e54ea2878d8a77c91c6881783ad0cd7ab667a0190365a5"
+        }
+      ]
+    },
+    {
+      "arm": "ML1C",
+      "segment": "mai-oktober-2026-ESZ6",
+      "proof_sha256": "f87396fbdf03fa1e863128a7e82b7ca00634c93f00932cb0dbbfb08ab835c246",
+      "seconds": 38.43,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "279408e46781e6b776ef506f1c418e1e7725f35f0b7899cd7a690f66e939bda3",
+      "features_sha256": "b6d5cc5aaa74f98867b57d96d0ed56329106360f277182dd960d0cbb929bfa82",
+      "decision_file_sha256": "7d950f896eba11f52356211639aff968bd4395a936fb4e088303560cc9ba7cca",
+      "manifest_sha256": "09b1582d1ade9a8a9096aae63e129a4ec4f40580afd7ce36c8adafe9d4f32eb9",
+      "native_log_sha256": "98efe7a733b27a59f95a4e544bcf670ee08dce8ecd42d5bc93008425e6450aed",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML1C/mai-oktober-2026-ESZ6/result_sqx/ML1C_mai-oktober-2026-ESZ6 - Optimized 0.0.sqx",
+          "size_bytes": 18233,
+          "sha256": "3067ac55bb11da92884da15183ee40e777f58a1cf93469272993a5c4c4dad727"
+        },
+        {
+          "file": "SQX/ML1C/mai-oktober-2026-ESZ6/result_sqx/ML1C_mai-oktober-2026-ESZ6 - Optimized 0.1.sqx",
+          "size_bytes": 18235,
+          "sha256": "7c0115cff0fab51bb9036e8207f1a4616e08d3eeead0e18119627b682dff9cde"
+        },
+        {
+          "file": "SQX/ML1C/mai-oktober-2026-ESZ6/result_sqx/ML1C_mai-oktober-2026-ESZ6.sqx",
+          "size_bytes": 18350,
+          "sha256": "ac18436014df78fa2b4d3665f1d62eeb5ed46c530315352b3c3ca1f250ff31a4"
+        }
+      ]
+    },
+    {
+      "arm": "ML1C",
+      "segment": "september-2026-ESZ6",
+      "proof_sha256": "1f54d5861e3491d0b639a9fbdf4d00ebf3e1b3723dfa4c98eb11f3db97bf7b3f",
+      "seconds": 12.65,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "12a8c4381d42394a76adfe40b029e77dd682d0a47645dff591eb89dda170ac17",
+      "features_sha256": "522ff6168dffbd817591795b87102640614c34404da60d620d267964caf54769",
+      "decision_file_sha256": "b3a3b899fc6c1309753022c2e0f48f460e3dc050e647f387bf163ba1eae5a348",
+      "manifest_sha256": "1853c5d9ffe684dbfcbc7e4871a1a0529131a48c5762fe0179a7f181544c21a2",
+      "native_log_sha256": "4fd1b086dbb4566288a8fb301b7db2cc5717df1d82c002dac6bd6ae222b7cc4b",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML1C/september-2026-ESZ6/result_sqx/ML1C_september-2026-ESZ6 - Optimized 0.0.sqx",
+          "size_bytes": 12283,
+          "sha256": "221e7b1c66c36675ba7737329ef7007d917e4e4d32d763a3661482d2c132d71e"
+        },
+        {
+          "file": "SQX/ML1C/september-2026-ESZ6/result_sqx/ML1C_september-2026-ESZ6 - Optimized 0.1.sqx",
+          "size_bytes": 12282,
+          "sha256": "f228b16cd20fd369fdd981ad171aa81c263d3076c2d72ef0443fb661a10a8fd3"
+        },
+        {
+          "file": "SQX/ML1C/september-2026-ESZ6/result_sqx/ML1C_september-2026-ESZ6.sqx",
+          "size_bytes": 12404,
+          "sha256": "d03de1e97d41c7827253ad66866f192453358d180ed2877fbbbaecfcc68e66fa"
+        }
+      ]
+    },
+    {
+      "arm": "ML8",
+      "segment": "jahr-ergaenzung-ESH6",
+      "proof_sha256": "b73ad699d2d966ea04487539c1dc654763de64a72dee0becc348b40288cfb9c3",
+      "seconds": 68.98,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "e023d12bc0d036305d6a07f3de1aa1907d5f47449a1dbeec04fe32d897b98dac",
+      "features_sha256": "cb9a416d552c909945064bbee651e55ade8f5236173ff3eead6afb0e3db17a9e",
+      "decision_file_sha256": "4377db69df9f9698e2e2cc67ade522ffe2d502a843abccef9bb3b8fa91a522a6",
+      "manifest_sha256": "4b0404f8d0c3d057e3dda6eb6b374df4b9ccba977aafe7921e667c33747d6e1e",
+      "native_log_sha256": "6bcb244103409f826cdec027e0f1be7f08db548901d7901940b5d4db76bd656b",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML8/jahr-ergaenzung-ESH6/result_sqx/ML8_jahr-ergaenzung-ESH6 - Optimized 0.0.sqx",
+          "size_bytes": 22966,
+          "sha256": "764eeb318381d57daf2d4097e86c979c674e1c7d60b35d5bbb342068aab06002"
+        },
+        {
+          "file": "SQX/ML8/jahr-ergaenzung-ESH6/result_sqx/ML8_jahr-ergaenzung-ESH6 - Optimized 0.1.sqx",
+          "size_bytes": 22966,
+          "sha256": "e9a2d7c897865ca64e524ed11782f490e998bd64122dd8c1cf286f7249284b73"
+        },
+        {
+          "file": "SQX/ML8/jahr-ergaenzung-ESH6/result_sqx/ML8_jahr-ergaenzung-ESH6.sqx",
+          "size_bytes": 23088,
+          "sha256": "957cbbb2796b971262c530e1aef86071631f71141c8154889e71c73471420320"
+        }
+      ]
+    },
+    {
+      "arm": "ML8",
+      "segment": "jahr-ergaenzung-ESZ5",
+      "proof_sha256": "b81b71a027d9a5b726e8038c64b010a9adc59cbf010d35a2ff33fac7258712a8",
+      "seconds": 35.59,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "84339d927b60979a70287f351dd8846dcbe9ac302099b770f16f503b2b69d796",
+      "features_sha256": "6bdcd8f7860e099abcf6c0d0acffdfa4855780080e3f854631cc695bc4ecdd3f",
+      "decision_file_sha256": "55445e4346fe27d7336010924b1ace93e0c1f3bf135662c2fb48603ef6b5b2ea",
+      "manifest_sha256": "2f227cd8329854c862e280b9c5fcf1a0b47748a715c37cf14f7074024b220594",
+      "native_log_sha256": "5299435f2869a199b164e21a4eeb90de500312d333109be3d7862219d28b4454",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML8/jahr-ergaenzung-ESZ5/result_sqx/ML8_jahr-ergaenzung-ESZ5 - Optimized 0.0.sqx",
+          "size_bytes": 17588,
+          "sha256": "6e634d0a45e736e5714b253b50c94ba9b3ee26ba62a9169d0c5f339f8026be82"
+        },
+        {
+          "file": "SQX/ML8/jahr-ergaenzung-ESZ5/result_sqx/ML8_jahr-ergaenzung-ESZ5 - Optimized 0.1.sqx",
+          "size_bytes": 8422,
+          "sha256": "45ec6120556d2ff0ca37fa764ce7bde962aabe009aef06a9277ac06a38d74c10"
+        },
+        {
+          "file": "SQX/ML8/jahr-ergaenzung-ESZ5/result_sqx/ML8_jahr-ergaenzung-ESZ5.sqx",
+          "size_bytes": 17712,
+          "sha256": "278d6317719c0ae8aa6fbb9595d1413e373ccf982a0d02991b51b61a3bc00d9a"
+        }
+      ]
+    },
+    {
+      "arm": "ML8",
+      "segment": "jahr-uebergang-ESM6",
+      "proof_sha256": "c567aac213f8917337d66e1d99ffa47075cdb0a18048f6e42ff1fdd2d91c6b47",
+      "seconds": 71.59,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "22429d8f9effcab81fafedd2caa55650ca4583a8367604e8e909719ab43a4c6a",
+      "features_sha256": "6197d11c67c147d803bc87ff75c0157e00cd7b69a884f9b4652774f7bfadae4b",
+      "decision_file_sha256": "b14e1fd17f7e11b52a300c50478f39acef9a18b1637c3ec070381809d6d85a13",
+      "manifest_sha256": "f2f0ba52abb55cd75d9c650a816b241621df907d4238dca13747bfb9950f8fb7",
+      "native_log_sha256": "3a8c753355cb49cf1e829be6b175c1d4d78aa6ea676179c98756cc54bcf86fc5",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML8/jahr-uebergang-ESM6/result_sqx/ML8_jahr-uebergang-ESM6 - Optimized 0.0.sqx",
+          "size_bytes": 21543,
+          "sha256": "27e89e62859bde9a9e173d9a8df0c6a770c0c6df748eae1f7cfa9a1f2ba69489"
+        },
+        {
+          "file": "SQX/ML8/jahr-uebergang-ESM6/result_sqx/ML8_jahr-uebergang-ESM6 - Optimized 0.1.sqx",
+          "size_bytes": 21544,
+          "sha256": "19dcd1ab221370108e995c0dd10adce1ea1bd5ec5de3441e66d2133d1e471c85"
+        },
+        {
+          "file": "SQX/ML8/jahr-uebergang-ESM6/result_sqx/ML8_jahr-uebergang-ESM6.sqx",
+          "size_bytes": 21663,
+          "sha256": "6b36def03b6c1678121756bce495dbbbf65ae27b763c03cbdf4335d6cae66956"
+        }
+      ]
+    },
+    {
+      "arm": "ML8",
+      "segment": "mai-oktober-2026-ESU6",
+      "proof_sha256": "821e3535d6c8fadbe667604fabcd1b81443a13a94d995a1a15c93304f9ebe563",
+      "seconds": 60.65,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "92a57f96c2422559d9b2fc43744b35d439fcb6dc42693829994ecf7a476b0249",
+      "features_sha256": "8d47bd4acf964af6ebe5153467a3dc26f91e26eb41dfcdd41dcfa2210f06c91f",
+      "decision_file_sha256": "35faba7fbefbbb22d986fb14ee5cc6bd8360de24eedcc71c3be636b2bdc9f50c",
+      "manifest_sha256": "a545faa7201c5e965ca05bd137e7f94224b9c94a02341abdd3b394c39f7cf5bc",
+      "native_log_sha256": "8c72882acfcde70bd00b5e400985ff8afca0893d62c6f64650ad7b99f93c0d69",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML8/mai-oktober-2026-ESU6/result_sqx/ML8_mai-oktober-2026-ESU6 - Optimized 0.0.sqx",
+          "size_bytes": 22400,
+          "sha256": "1bc9950188a5aa37ddded10d233364ea75107f4262489fbf2f26fb993525776c"
+        },
+        {
+          "file": "SQX/ML8/mai-oktober-2026-ESU6/result_sqx/ML8_mai-oktober-2026-ESU6 - Optimized 0.1.sqx",
+          "size_bytes": 22400,
+          "sha256": "6f87b4a4062562d23152c326940cb223101ab0d5eda06fe7006dba8fb6ca2361"
+        },
+        {
+          "file": "SQX/ML8/mai-oktober-2026-ESU6/result_sqx/ML8_mai-oktober-2026-ESU6.sqx",
+          "size_bytes": 22520,
+          "sha256": "adbf409d9052c0428095b47136294da46f1b1dd0e3bb29f6f8e4aea3c825fafe"
+        }
+      ]
+    },
+    {
+      "arm": "ML8",
+      "segment": "mai-oktober-2026-ESZ6",
+      "proof_sha256": "7e85f07921b8b7cb3bc42161ab5755046386ff431ef17ba0a4f2c3c9a93bbd47",
+      "seconds": 36.77,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "9a5b3dd2825a5bfe7f574e2e24eae3fd0da8f696271ccf97fd7ac6839d4e1521",
+      "features_sha256": "b6d5cc5aaa74f98867b57d96d0ed56329106360f277182dd960d0cbb929bfa82",
+      "decision_file_sha256": "d4f2292209b1301d201d5f5913e4c523e585863259a31b075e25d116b6607e6f",
+      "manifest_sha256": "09b1582d1ade9a8a9096aae63e129a4ec4f40580afd7ce36c8adafe9d4f32eb9",
+      "native_log_sha256": "2b47864f4e666e935c8a4f54317c0be7991edf5d332bb6bc2a39f73cc1dc7a21",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML8/mai-oktober-2026-ESZ6/result_sqx/ML8_mai-oktober-2026-ESZ6 - Optimized 0.0.sqx",
+          "size_bytes": 18181,
+          "sha256": "86ee44661279460256d0f2b2b5a7da90c911a97a26130f05f89e78456b96cb18"
+        },
+        {
+          "file": "SQX/ML8/mai-oktober-2026-ESZ6/result_sqx/ML8_mai-oktober-2026-ESZ6 - Optimized 0.1.sqx",
+          "size_bytes": 18182,
+          "sha256": "cc78753263ce12412f05cb8883eca30a5cc4b2f8536c8bcc2c7cf5d942262da0"
+        },
+        {
+          "file": "SQX/ML8/mai-oktober-2026-ESZ6/result_sqx/ML8_mai-oktober-2026-ESZ6.sqx",
+          "size_bytes": 18303,
+          "sha256": "e9944a2bcc7aa2d849fb18d313ee2962e1e8bf74d429e2152b5b0838f6be78cb"
+        }
+      ]
+    },
+    {
+      "arm": "ML8",
+      "segment": "september-2026-ESZ6",
+      "proof_sha256": "b1fad8e53bcb56ccae17b4e1411d557c53000b34a59c41c680935bf8782b5208",
+      "seconds": 12.35,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "12a8c4381d42394a76adfe40b029e77dd682d0a47645dff591eb89dda170ac17",
+      "features_sha256": "522ff6168dffbd817591795b87102640614c34404da60d620d267964caf54769",
+      "decision_file_sha256": "b3a3b899fc6c1309753022c2e0f48f460e3dc050e647f387bf163ba1eae5a348",
+      "manifest_sha256": "1853c5d9ffe684dbfcbc7e4871a1a0529131a48c5762fe0179a7f181544c21a2",
+      "native_log_sha256": "18368f23c0e53f269a63a9d2e74c448010549f85390055b051199ccf11d65146",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML8/september-2026-ESZ6/result_sqx/ML8_september-2026-ESZ6 - Optimized 0.0.sqx",
+          "size_bytes": 12289,
+          "sha256": "9db67efd2a6e2aad7f3aab3fc3a8a141090d2494fcf274c1372bf765de46bff5"
+        },
+        {
+          "file": "SQX/ML8/september-2026-ESZ6/result_sqx/ML8_september-2026-ESZ6 - Optimized 0.1.sqx",
+          "size_bytes": 12288,
+          "sha256": "914e02cb77e015b6e88cd9041c8ed906c1f411c448dd55ebf83c17df9ea654c2"
+        },
+        {
+          "file": "SQX/ML8/september-2026-ESZ6/result_sqx/ML8_september-2026-ESZ6.sqx",
+          "size_bytes": 12411,
+          "sha256": "95ccb1a0625753dcd79dfb18c563086cb863d65468204e9373bf9d491bc50cce"
+        }
+      ]
+    },
+    {
+      "arm": "MR1",
+      "segment": "jahr-ergaenzung-ESH6",
+      "proof_sha256": "e63ee6504dc691b08260046bfba64cb9a372225c1b07772018b13a61eadf8245",
+      "seconds": 68.07,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "e023d12bc0d036305d6a07f3de1aa1907d5f47449a1dbeec04fe32d897b98dac",
+      "features_sha256": "cb9a416d552c909945064bbee651e55ade8f5236173ff3eead6afb0e3db17a9e",
+      "decision_file_sha256": "4377db69df9f9698e2e2cc67ade522ffe2d502a843abccef9bb3b8fa91a522a6",
+      "manifest_sha256": "4b0404f8d0c3d057e3dda6eb6b374df4b9ccba977aafe7921e667c33747d6e1e",
+      "native_log_sha256": "82f7209881c86436bc3aabd15d6f4b259186971f9b26d8e04ca48747465d7674",
+      "sqx_reports": [
+        {
+          "file": "SQX/MR1/jahr-ergaenzung-ESH6/result_sqx/MR1_jahr-ergaenzung-ESH6 - Optimized 0.0.sqx",
+          "size_bytes": 22969,
+          "sha256": "df6279088520d9aab9a7872e49e406cb6c0d53bdcf2962592aedb7d59d621384"
+        },
+        {
+          "file": "SQX/MR1/jahr-ergaenzung-ESH6/result_sqx/MR1_jahr-ergaenzung-ESH6 - Optimized 0.1.sqx",
+          "size_bytes": 22968,
+          "sha256": "7a6be5d62b575e14697540f5433a296f2650d1faf455bafa1a3b2affb9ee0301"
+        },
+        {
+          "file": "SQX/MR1/jahr-ergaenzung-ESH6/result_sqx/MR1_jahr-ergaenzung-ESH6.sqx",
+          "size_bytes": 23090,
+          "sha256": "c89f923bc2673b0894f8c690f21cb57be81f569ee8cb6d9d0635d62144b181e2"
+        }
+      ]
+    },
+    {
+      "arm": "MR1",
+      "segment": "jahr-ergaenzung-ESZ5",
+      "proof_sha256": "dc9588297f348a409033369ba25235d002753eb7d4841318e2bf86e415ec1328",
+      "seconds": 35.75,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "84339d927b60979a70287f351dd8846dcbe9ac302099b770f16f503b2b69d796",
+      "features_sha256": "6bdcd8f7860e099abcf6c0d0acffdfa4855780080e3f854631cc695bc4ecdd3f",
+      "decision_file_sha256": "55445e4346fe27d7336010924b1ace93e0c1f3bf135662c2fb48603ef6b5b2ea",
+      "manifest_sha256": "2f227cd8329854c862e280b9c5fcf1a0b47748a715c37cf14f7074024b220594",
+      "native_log_sha256": "e602138e07d09fc1e406489c7b6389659d6f5c6f59552b6acd32288fa2a99f2f",
+      "sqx_reports": [
+        {
+          "file": "SQX/MR1/jahr-ergaenzung-ESZ5/result_sqx/MR1_jahr-ergaenzung-ESZ5 - Optimized 0.0.sqx",
+          "size_bytes": 17587,
+          "sha256": "eb2327c400eeab0e0397caab9e79366735f5b14ea0f3802e3ffd785eecf3b489"
+        },
+        {
+          "file": "SQX/MR1/jahr-ergaenzung-ESZ5/result_sqx/MR1_jahr-ergaenzung-ESZ5 - Optimized 0.1.sqx",
+          "size_bytes": 17588,
+          "sha256": "f8afcb46a98c46f698f736bdee833f3013d04389b5c85ba8a129cb227d659d87"
+        },
+        {
+          "file": "SQX/MR1/jahr-ergaenzung-ESZ5/result_sqx/MR1_jahr-ergaenzung-ESZ5.sqx",
+          "size_bytes": 17712,
+          "sha256": "ec687dd8d2145624b75178588c2a9ebf0a9b896f7d332823c36ea915d30507be"
+        }
+      ]
+    },
+    {
+      "arm": "MR1",
+      "segment": "jahr-uebergang-ESM6",
+      "proof_sha256": "610d8c264eddb2b8098ed78dee01894a2460a611116dbd9ee4676ed65be8f3fb",
+      "seconds": 70.09,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "16a4f7558aab3177941993957254701648aa4de904b5486d22b61fa73b3548f1",
+      "features_sha256": "6197d11c67c147d803bc87ff75c0157e00cd7b69a884f9b4652774f7bfadae4b",
+      "decision_file_sha256": "2a449c7a647cf50c190d713af33afc2b51cd11e0fa7b9544a892b500659dc17e",
+      "manifest_sha256": "f2f0ba52abb55cd75d9c650a816b241621df907d4238dca13747bfb9950f8fb7",
+      "native_log_sha256": "2ba90d713eb7e34c22cc3a9def8bdc53c701803cc9268a93ef9cf4f61d89afe2",
+      "sqx_reports": [
+        {
+          "file": "SQX/MR1/jahr-uebergang-ESM6/result_sqx/MR1_jahr-uebergang-ESM6 - Optimized 0.0.sqx",
+          "size_bytes": 22180,
+          "sha256": "439bf87f2622245976786a593e04804e5b349034710a24f5e2e924c13e503181"
+        },
+        {
+          "file": "SQX/MR1/jahr-uebergang-ESM6/result_sqx/MR1_jahr-uebergang-ESM6 - Optimized 0.1.sqx",
+          "size_bytes": 22179,
+          "sha256": "82e76717656efba10a45562732d4bfe13228040189535319906330f07ac0c3bb"
+        },
+        {
+          "file": "SQX/MR1/jahr-uebergang-ESM6/result_sqx/MR1_jahr-uebergang-ESM6.sqx",
+          "size_bytes": 22301,
+          "sha256": "5eb75887999c5a49d05fec1b9bc2213ae4aabd4e6498d673e33d9316c1c7c9e9"
+        }
+      ]
+    },
+    {
+      "arm": "MR1",
+      "segment": "mai-oktober-2026-ESU6",
+      "proof_sha256": "214fd48bcbc39212bd5d6f0b0357099cb2a55286570577468c9585b9da1accdd",
+      "seconds": 59.45,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "c8f7144ab382ec02ba9701562a98c0c3b9b0b7e928ba35e566ba32f57e0f8cb2",
+      "features_sha256": "8d47bd4acf964af6ebe5153467a3dc26f91e26eb41dfcdd41dcfa2210f06c91f",
+      "decision_file_sha256": "a0dcbdbaa607e5d7e7403dea9214977e268f044891ef28f301a1a1388fff4767",
+      "manifest_sha256": "a545faa7201c5e965ca05bd137e7f94224b9c94a02341abdd3b394c39f7cf5bc",
+      "native_log_sha256": "1cfe26516ce2792a2e92fe5b64935e22bd87df73db66bf38569c79ca36f03a4a",
+      "sqx_reports": [
+        {
+          "file": "SQX/MR1/mai-oktober-2026-ESU6/result_sqx/MR1_mai-oktober-2026-ESU6 - Optimized 0.0.sqx",
+          "size_bytes": 21981,
+          "sha256": "ebfa1904aa22e3fdc7a19cf436e05443fc2822e7399b58997197eb739ef6ac9b"
+        },
+        {
+          "file": "SQX/MR1/mai-oktober-2026-ESU6/result_sqx/MR1_mai-oktober-2026-ESU6 - Optimized 0.1.sqx",
+          "size_bytes": 21983,
+          "sha256": "f5f11faf7ff2e831fdf703f8557b60d99de1dac3b65fbff224d2dfcaf40f1891"
+        },
+        {
+          "file": "SQX/MR1/mai-oktober-2026-ESU6/result_sqx/MR1_mai-oktober-2026-ESU6.sqx",
+          "size_bytes": 22100,
+          "sha256": "12d7555fa08d33eeefb32d3e54f837dde6b80e2f6f7cc986417fc1961d2d5344"
+        }
+      ]
+    },
+    {
+      "arm": "MR1",
+      "segment": "mai-oktober-2026-ESZ6",
+      "proof_sha256": "fdb3f803abc99841f3fbf8f7e41051b62a36763d8de2f46d152406da60ec6ea3",
+      "seconds": 35.68,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "3e504c70a4ac11dc8427f36cb147c4e3a5b8094fa2c8fcfa7faae2f9d76b3d00",
+      "features_sha256": "b6d5cc5aaa74f98867b57d96d0ed56329106360f277182dd960d0cbb929bfa82",
+      "decision_file_sha256": "316e469463dda6461b8a7e573d712a56fba31ce3054bbb938bd81821a32201aa",
+      "manifest_sha256": "09b1582d1ade9a8a9096aae63e129a4ec4f40580afd7ce36c8adafe9d4f32eb9",
+      "native_log_sha256": "e15beecd51699b7b9147072605d06d06c20c137db0499c72c8960b09fc0be5f3",
+      "sqx_reports": [
+        {
+          "file": "SQX/MR1/mai-oktober-2026-ESZ6/result_sqx/MR1_mai-oktober-2026-ESZ6 - Optimized 0.0.sqx",
+          "size_bytes": 18182,
+          "sha256": "51e361012a00f57e36ae9ebb0e6afd88fc4069860c321fd3704272c6fdf15a86"
+        },
+        {
+          "file": "SQX/MR1/mai-oktober-2026-ESZ6/result_sqx/MR1_mai-oktober-2026-ESZ6 - Optimized 0.1.sqx",
+          "size_bytes": 18181,
+          "sha256": "6994d660957c1b48fadba7d4f150420136106ec909279d825567673a1f2590a4"
+        },
+        {
+          "file": "SQX/MR1/mai-oktober-2026-ESZ6/result_sqx/MR1_mai-oktober-2026-ESZ6.sqx",
+          "size_bytes": 18305,
+          "sha256": "41c2fa13d8ba88ba92d0093c08f6253a52d24c575d5a07e7b50c21d57b2b560c"
+        }
+      ]
+    },
+    {
+      "arm": "MR1",
+      "segment": "september-2026-ESZ6",
+      "proof_sha256": "4876c304b38f8561af9b22fc2244fd26994f465c1e48f1382f69e426314e5eb1",
+      "seconds": 11.81,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "12a8c4381d42394a76adfe40b029e77dd682d0a47645dff591eb89dda170ac17",
+      "features_sha256": "522ff6168dffbd817591795b87102640614c34404da60d620d267964caf54769",
+      "decision_file_sha256": "b3a3b899fc6c1309753022c2e0f48f460e3dc050e647f387bf163ba1eae5a348",
+      "manifest_sha256": "1853c5d9ffe684dbfcbc7e4871a1a0529131a48c5762fe0179a7f181544c21a2",
+      "native_log_sha256": "9abae1d5ac50f087897973fc6a8a15f96305654dcbeb76a3a9bd33aa6f22f371",
+      "sqx_reports": [
+        {
+          "file": "SQX/MR1/september-2026-ESZ6/result_sqx/MR1_september-2026-ESZ6 - Optimized 0.0.sqx",
+          "size_bytes": 12277,
+          "sha256": "e7c5faae41f2b83bc5b8a87ac249f1ba2d80afaec2c4d7bf3f37e05d237db91d"
+        },
+        {
+          "file": "SQX/MR1/september-2026-ESZ6/result_sqx/MR1_september-2026-ESZ6 - Optimized 0.1.sqx",
+          "size_bytes": 12278,
+          "sha256": "c3d6b6a52e359ace822a7d62c1afa5d3a07224f9b189c64096ef0bfbe8b4cd4e"
+        },
+        {
+          "file": "SQX/MR1/september-2026-ESZ6/result_sqx/MR1_september-2026-ESZ6.sqx",
+          "size_bytes": 12398,
+          "sha256": "bc0d3bb53e942f54930334178f4b6dd322302eef063c0292e4acdded03bbd915"
+        }
+      ]
+    },
+    {
+      "arm": "ML9",
+      "segment": "jahr-ergaenzung-ESH6",
+      "proof_sha256": "31e5bc62bed110ceead2172ecbfaf8c7c177fcc2e8e888e0a4623d258bbbdc5b",
+      "seconds": 64.63,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "e023d12bc0d036305d6a07f3de1aa1907d5f47449a1dbeec04fe32d897b98dac",
+      "features_sha256": "cb9a416d552c909945064bbee651e55ade8f5236173ff3eead6afb0e3db17a9e",
+      "decision_file_sha256": "4377db69df9f9698e2e2cc67ade522ffe2d502a843abccef9bb3b8fa91a522a6",
+      "manifest_sha256": "4b0404f8d0c3d057e3dda6eb6b374df4b9ccba977aafe7921e667c33747d6e1e",
+      "native_log_sha256": "5f49893204f1bd338669a14b90bffff8d6330437d127eab375dfaf2203ed83fe",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML9/jahr-ergaenzung-ESH6/result_sqx/ML9_jahr-ergaenzung-ESH6 - Optimized 0.0.sqx",
+          "size_bytes": 22965,
+          "sha256": "ae26f773768430ca16734d79647828f6284ee398e204f0a4ece87159a2aeb76a"
+        },
+        {
+          "file": "SQX/ML9/jahr-ergaenzung-ESH6/result_sqx/ML9_jahr-ergaenzung-ESH6 - Optimized 0.1.sqx",
+          "size_bytes": 22965,
+          "sha256": "464ccb09a838572d2d4b0c73cce2b5c68f451d1ced21dc5c06327b9f97b4316d"
+        },
+        {
+          "file": "SQX/ML9/jahr-ergaenzung-ESH6/result_sqx/ML9_jahr-ergaenzung-ESH6.sqx",
+          "size_bytes": 23090,
+          "sha256": "0fe6f50b267d32c60b31ac19d3563ca32c5dd97a3308459b4f7a9d28e81143ec"
+        }
+      ]
+    },
+    {
+      "arm": "ML9",
+      "segment": "jahr-ergaenzung-ESZ5",
+      "proof_sha256": "938d865ccb136326fd15f79cb7a95a59559b2d104312c995e0e66303f0e9c471",
+      "seconds": 32.88,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "84339d927b60979a70287f351dd8846dcbe9ac302099b770f16f503b2b69d796",
+      "features_sha256": "6bdcd8f7860e099abcf6c0d0acffdfa4855780080e3f854631cc695bc4ecdd3f",
+      "decision_file_sha256": "55445e4346fe27d7336010924b1ace93e0c1f3bf135662c2fb48603ef6b5b2ea",
+      "manifest_sha256": "2f227cd8329854c862e280b9c5fcf1a0b47748a715c37cf14f7074024b220594",
+      "native_log_sha256": "80a725fea119469501ec1d62b2f940a27731020fcf67978e6d0234ab1cbf92f9",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML9/jahr-ergaenzung-ESZ5/result_sqx/ML9_jahr-ergaenzung-ESZ5 - Optimized 0.0.sqx",
+          "size_bytes": 17586,
+          "sha256": "afb587e8728504878291a18819441ae484a7960faebaa7236f3791bfd763cfe2"
+        },
+        {
+          "file": "SQX/ML9/jahr-ergaenzung-ESZ5/result_sqx/ML9_jahr-ergaenzung-ESZ5 - Optimized 0.1.sqx",
+          "size_bytes": 17588,
+          "sha256": "cef3595eb04896e8dc52d5fe038ac8e4fdfdd52bfd3a5bf2f6046afef115ab27"
+        },
+        {
+          "file": "SQX/ML9/jahr-ergaenzung-ESZ5/result_sqx/ML9_jahr-ergaenzung-ESZ5.sqx",
+          "size_bytes": 17712,
+          "sha256": "16fb06bc377af26328b9afc8e8532745e566b1d76e59fb96733be6ebff0a2e95"
+        }
+      ]
+    },
+    {
+      "arm": "ML9",
+      "segment": "jahr-uebergang-ESM6",
+      "proof_sha256": "c5099f9cbcb59e7e98e7da57b78e4c67a0d937cf7937700e495c76f9c655b5f3",
+      "seconds": 65.24,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "14993ec82d1b8754478f5c33b4b0c81b28a9f34c94047d19f556dfc7ad384f3e",
+      "features_sha256": "6197d11c67c147d803bc87ff75c0157e00cd7b69a884f9b4652774f7bfadae4b",
+      "decision_file_sha256": "317e0fa13e3bbd850c68213b0b000e113af7d25b8ac7274339f9213a522ede46",
+      "manifest_sha256": "f2f0ba52abb55cd75d9c650a816b241621df907d4238dca13747bfb9950f8fb7",
+      "native_log_sha256": "20791709c5672203c34d65459a62df3781b96ffc07770731c2c8faf8614feda3",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML9/jahr-uebergang-ESM6/result_sqx/ML9_jahr-uebergang-ESM6 - Optimized 0.0.sqx",
+          "size_bytes": 22768,
+          "sha256": "79be6348d105ea8b8f5704971f1009c4b81fd84d10cc6d3a4bbc5da15df8b89e"
+        },
+        {
+          "file": "SQX/ML9/jahr-uebergang-ESM6/result_sqx/ML9_jahr-uebergang-ESM6 - Optimized 0.1.sqx",
+          "size_bytes": 22768,
+          "sha256": "dd561ba0856c05da2b131dbb22001c81e38619e139ecd65a4918749cfc1d8924"
+        },
+        {
+          "file": "SQX/ML9/jahr-uebergang-ESM6/result_sqx/ML9_jahr-uebergang-ESM6.sqx",
+          "size_bytes": 22891,
+          "sha256": "99db31643967d5b0695e819b8f06ab222a905bb899c82e8088197abaef45f4d5"
+        }
+      ]
+    },
+    {
+      "arm": "ML9",
+      "segment": "mai-oktober-2026-ESU6",
+      "proof_sha256": "11b30712e7a0c1069d2a56b4189b75ea2c1733a76f95ebce1ac1189fd6d89a50",
+      "seconds": 56.5,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "ba40be859c146bd0a59ebc730251d35fd4d1da6bbdcec43d440d103c6277bf63",
+      "features_sha256": "8d47bd4acf964af6ebe5153467a3dc26f91e26eb41dfcdd41dcfa2210f06c91f",
+      "decision_file_sha256": "2e5b6e5b84a299f46c42602f24a4d502cff0e28b211d984efd5c775f39ac1366",
+      "manifest_sha256": "a545faa7201c5e965ca05bd137e7f94224b9c94a02341abdd3b394c39f7cf5bc",
+      "native_log_sha256": "17169d6f5290f444b01f4a01c0aad63efcf12ff5851b00d8f6cd0be86f5d4a89",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML9/mai-oktober-2026-ESU6/result_sqx/ML9_mai-oktober-2026-ESU6 - Optimized 0.0.sqx",
+          "size_bytes": 22642,
+          "sha256": "de74dc12880b541b88fb1574b9e3684b595cfbe101680375bf0677348ba97bae"
+        },
+        {
+          "file": "SQX/ML9/mai-oktober-2026-ESU6/result_sqx/ML9_mai-oktober-2026-ESU6 - Optimized 0.1.sqx",
+          "size_bytes": 22643,
+          "sha256": "865275a795b89a15dfffb489bf78f0384ca4ae12f1c3948f83507ff5c96094ed"
+        },
+        {
+          "file": "SQX/ML9/mai-oktober-2026-ESU6/result_sqx/ML9_mai-oktober-2026-ESU6.sqx",
+          "size_bytes": 22761,
+          "sha256": "d241f5e8a799142353f8e6361239b62475ac71d99fc02e0c343764f53ebbb807"
+        }
+      ]
+    },
+    {
+      "arm": "ML9",
+      "segment": "mai-oktober-2026-ESZ6",
+      "proof_sha256": "6554b81113a2db230959eb5d086fe578cfd1989a366139e1b5e22bfeba2a4b7e",
+      "seconds": 34.44,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "eb9f6a8c0ecaeaad23f18db42a72d74767ccf318a899f92bf93331ac70d3a8ec",
+      "features_sha256": "b6d5cc5aaa74f98867b57d96d0ed56329106360f277182dd960d0cbb929bfa82",
+      "decision_file_sha256": "7964a4ff7660fc93fc53fbc14d2e9e43b29e6a046a44028c765c22a0856e5575",
+      "manifest_sha256": "09b1582d1ade9a8a9096aae63e129a4ec4f40580afd7ce36c8adafe9d4f32eb9",
+      "native_log_sha256": "a7fc75a9b49f3fdd87b80434188cc12dde2fbde73c84b40f7ead9c08ab27249b",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML9/mai-oktober-2026-ESZ6/result_sqx/ML9_mai-oktober-2026-ESZ6 - Optimized 0.0.sqx",
+          "size_bytes": 18237,
+          "sha256": "7112a97729821c522d3dbb26e7eb6be726e3546bde7b3e6fbd00dbe1cdda3294"
+        },
+        {
+          "file": "SQX/ML9/mai-oktober-2026-ESZ6/result_sqx/ML9_mai-oktober-2026-ESZ6 - Optimized 0.1.sqx",
+          "size_bytes": 18240,
+          "sha256": "0e1aea5a78f487f792246118e9bc093984cdc0e6178dda3c7f068da02382f565"
+        },
+        {
+          "file": "SQX/ML9/mai-oktober-2026-ESZ6/result_sqx/ML9_mai-oktober-2026-ESZ6.sqx",
+          "size_bytes": 18361,
+          "sha256": "a1449c6ba30155dc671fd81b66f0c3f7112a17cbedc4d99a0d2d2766c2699068"
+        }
+      ]
+    },
+    {
+      "arm": "ML9",
+      "segment": "september-2026-ESZ6",
+      "proof_sha256": "64f051eab328c350f961b1d586677f555e34dd6c08a85d993e4ae022ff0fc6f4",
+      "seconds": 11.73,
+      "replicas_identical": true,
+      "candidates_identical": true,
+      "source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+      "trades_sha256": "12a8c4381d42394a76adfe40b029e77dd682d0a47645dff591eb89dda170ac17",
+      "features_sha256": "522ff6168dffbd817591795b87102640614c34404da60d620d267964caf54769",
+      "decision_file_sha256": "b3a3b899fc6c1309753022c2e0f48f460e3dc050e647f387bf163ba1eae5a348",
+      "manifest_sha256": "1853c5d9ffe684dbfcbc7e4871a1a0529131a48c5762fe0179a7f181544c21a2",
+      "native_log_sha256": "5440ebd97be0306017da12f4b79a65792d682f8778e41575f61ab47167206663",
+      "sqx_reports": [
+        {
+          "file": "SQX/ML9/september-2026-ESZ6/result_sqx/ML9_september-2026-ESZ6 - Optimized 0.0.sqx",
+          "size_bytes": 12278,
+          "sha256": "256b0698392393dc641850746a3aaa242547999a7ed598d7348371f77c9df61f"
+        },
+        {
+          "file": "SQX/ML9/september-2026-ESZ6/result_sqx/ML9_september-2026-ESZ6 - Optimized 0.1.sqx",
+          "size_bytes": 12278,
+          "sha256": "ae40dfa76bcfb726dd9eb7d0a6d0ff34344fc79c37f2049aa4d31b839335c623"
+        },
+        {
+          "file": "SQX/ML9/september-2026-ESZ6/result_sqx/ML9_september-2026-ESZ6.sqx",
+          "size_bytes": 12400,
+          "sha256": "c0b0ca0a194af75cac599e7e6330a79399ec798c681a48a74a4318f88a8dcb35"
+        }
+      ]
+    }
+  ]
+}

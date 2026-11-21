@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-11-21T00:00:12.619336+00:00",
+  "reason": "Operational parallelization of identical fixed 199 null draws; not a statistical or model amendment.",
+  "previous_coordinator": "run-r2.log",
+  "sequential_draws": 20,
+  "model_design_changed": false,
+  "original_registered_code_unchanged": true,
+  "verification": "Every previously completed sequential draw must reproduce exactly; all199 recalculated on4 isolated CPU workers.",
+  "native_first_three_process_untouched": true
+}

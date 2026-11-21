@@ -1,0 +1,175 @@
+{
+  "state": "complete",
+  "original_predictions_reproduced": true,
+  "random_omission": {
+    "draws": 1000,
+    "observed_utility_usd": -6.062271062271094,
+    "null_q95_usd": 192.84981684981676,
+    "upper_tail_rank": 0.5164835164835165,
+    "scope": "candidate utility only; no position path or cash claim"
+  },
+  "old_auc_by_block": [
+    {
+      "block": 81,
+      "metrics": {
+        "candidates": 28,
+        "accepted": 28,
+        "omitted": 0,
+        "auc": 0.4666666666666666,
+        "mean_accepted_stress_net_usd": -44.412142857142854,
+        "mean_omitted_stress_net_usd": null,
+        "selected_candidate_sum_usd": -1243.54,
+        "all_candidate_sum_usd": -1243.54,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": -0.20128718944656965,
+        "brier": 0.2626181302420421,
+        "log_loss": 0.7203335796086823
+      }
+    },
+    {
+      "block": 101,
+      "metrics": {
+        "candidates": 27,
+        "accepted": 25,
+        "omitted": 2,
+        "auc": 0.6214285714285714,
+        "mean_accepted_stress_net_usd": 207.32,
+        "mean_omitted_stress_net_usd": 170.32,
+        "selected_candidate_sum_usd": 5183.0,
+        "all_candidate_sum_usd": 5523.639999999999,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": 0.29155854407769505,
+        "brier": 0.21454724140497328,
+        "log_loss": 0.6205380279055466
+      }
+    },
+    {
+      "block": 121,
+      "metrics": {
+        "candidates": 33,
+        "accepted": 28,
+        "omitted": 5,
+        "auc": 0.5864197530864197,
+        "mean_accepted_stress_net_usd": 296.65928571428566,
+        "mean_omitted_stress_net_usd": 130.32,
+        "selected_candidate_sum_usd": 8306.46,
+        "all_candidate_sum_usd": 8958.06,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": 0.545302604867015,
+        "brier": 0.1858760118878606,
+        "log_loss": 0.5596899770356479
+      }
+    },
+    {
+      "block": 141,
+      "metrics": {
+        "candidates": 32,
+        "accepted": 28,
+        "omitted": 4,
+        "auc": 0.5515873015873016,
+        "mean_accepted_stress_net_usd": -24.769285714285722,
+        "mean_omitted_stress_net_usd": 242.19500000000002,
+        "selected_candidate_sum_usd": -693.5400000000002,
+        "all_candidate_sum_usd": 275.24,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": 0.20784457478005863,
+        "brier": 0.25364942653762823,
+        "log_loss": 0.6968031887412668
+      }
+    },
+    {
+      "block": 161,
+      "metrics": {
+        "candidates": 27,
+        "accepted": 23,
+        "omitted": 4,
+        "auc": 0.7236842105263157,
+        "mean_accepted_stress_net_usd": 198.58086956521734,
+        "mean_omitted_stress_net_usd": -464.05499999999995,
+        "selected_candidate_sum_usd": 4567.359999999999,
+        "all_candidate_sum_usd": 2711.140000000001,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": 0.1914796352986698,
+        "brier": 0.19785232564374364,
+        "log_loss": 0.5858469424238709
+      }
+    },
+    {
+      "block": 181,
+      "metrics": {
+        "candidates": 32,
+        "accepted": 25,
+        "omitted": 7,
+        "auc": 0.44155844155844154,
+        "mean_accepted_stress_net_usd": 71.82000000000001,
+        "mean_omitted_stress_net_usd": 341.7485714285714,
+        "selected_candidate_sum_usd": 1795.5000000000002,
+        "all_candidate_sum_usd": 4187.74,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": -0.13970116945890673,
+        "brier": 0.24230352820453294,
+        "log_loss": 0.6844726170208555
+      }
+    },
+    {
+      "block": 201,
+      "metrics": {
+        "candidates": 19,
+        "accepted": 16,
+        "omitted": 3,
+        "auc": 0.3714285714285714,
+        "mean_accepted_stress_net_usd": 215.63250000000002,
+        "mean_omitted_stress_net_usd": 161.9866666666667,
+        "selected_candidate_sum_usd": 3450.1200000000003,
+        "all_candidate_sum_usd": 3936.080000000001,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": -0.25263157894736843,
+        "brier": 0.2068634065446743,
+        "log_loss": 0.60540463100183
+      }
+    },
+    {
+      "block": 221,
+      "metrics": {
+        "candidates": 31,
+        "accepted": 21,
+        "omitted": 10,
+        "auc": 0.5791666666666666,
+        "mean_accepted_stress_net_usd": -68.37047619047615,
+        "mean_omitted_stress_net_usd": 62.82000000000001,
+        "selected_candidate_sum_usd": -1435.7799999999993,
+        "all_candidate_sum_usd": -807.5799999999995,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": 0.025410911720340296,
+        "brier": 0.2522166476295919,
+        "log_loss": 0.6978873456417568
+      }
+    },
+    {
+      "block": 241,
+      "metrics": {
+        "candidates": 1,
+        "accepted": 1,
+        "omitted": 0,
+        "auc": null,
+        "mean_accepted_stress_net_usd": -992.18,
+        "mean_omitted_stress_net_usd": null,
+        "selected_candidate_sum_usd": -992.18,
+        "all_candidate_sum_usd": -992.18,
+        "no_cash_claim": true,
+        "spearman_score_stress_net": null,
+        "brier": 0.3611333522793589,
+        "log_loss": 0.9186528145536808
+      }
+    }
+  ],
+  "completed_permutations": 1000,
+  "permutations": {
+    "draws": 1000,
+    "observed_utility_usd": -6.062271062271094,
+    "null_q95_usd": 298.0701926441663,
+    "conditional_upper_tail_rank": 0.8781218781218781,
+    "exchangeability_warning": "Conditional within-quarter equal-count session-block diagnostic; not an unconditional market-stationary test",
+    "no_cash_claim": true
+  }
+}

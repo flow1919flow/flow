@@ -1,0 +1,7 @@
+{
+  "at_utc": "2026-11-21T00:21:05.473602+00:00",
+  "cause": "MLflow venv lacks offline-import Databento package used by original account-module dependency chain; failure occurred before any cash computation.",
+  "correction": "Use existing research_runtime Python3.12 environment as in prior account research. No package installation, data request or provider-rule change.",
+  "cash_source_unchanged": true,
+  "native_jobs_complete": 24
+}

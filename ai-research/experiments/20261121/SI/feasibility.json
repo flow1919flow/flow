@@ -1,0 +1,24 @@
+{
+  "state": "inventory_complete_training_not_eligible_without_feed_coverage",
+  "source_reader_sha256": "c674a84d1366e440616b1aceb184a3a949a39e79246feabb7e8625bafb9f9883",
+  "archive_sha256": "ef9c55d7b029e1a58f4b725b2462fd091e9f74d1fcc51dcf27958ebecdee8f04",
+  "archive_pagination_verified": true,
+  "ES_stop_iceberg_messages": 229,
+  "ES_events_by_type": {
+    "ICEBERG": 187,
+    "STOP": 42
+  },
+  "first_ES_message_utc": "2026-05-27T22:00:03.099000+00:00",
+  "last_ES_message_utc": "2026-10-30T15:32:01.236000+00:00",
+  "setup_candidates_in_message_date_span": 158,
+  "span_is_not_verified_coverage": true,
+  "setup_candidates_with_same_contract_prior15min_event": 7,
+  "outer_test_candidates_with_prior15min_event": 7,
+  "availability": "last Discord edit/sent proxy plus30seconds; not verified original event or bot receipt",
+  "verified_live_feed_coverage_sessions": 0,
+  "coverage_boundary": "Archive completeness verifies retained messages, not silent bot outages/deleted messages/feed liveness. Do not encode absent intervals as zero SI.",
+  "original_Bookmap_event_time_proven": false,
+  "own_receive_timestamp_proven": false,
+  "new_SI_model_trained": false,
+  "previous_boosting_study_preserved": true
+}

@@ -1,0 +1,68 @@
+{
+  "preregister_sha256": "8fc9544835072eb354ce9745f89ba4b7041eab8d05be873595ccfc41e4c13e7b",
+  "budget_usd": 1000,
+  "sessions": 242,
+  "horizon_sessions": 100,
+  "overlapping_starts": 143,
+  "plan": "MFF Rapid EOD50k",
+  "evaluation": "HY104EMA22, same in all arms",
+  "funded": [
+    "base",
+    "ML1C",
+    "ML8",
+    "MR1",
+    "ML9"
+  ],
+  "sources": {
+    "outputs/AI-Forschung-20261121/replay.py": "135bd7571884f70017f1297e07f6af921a27ebcf61984d24b45914386efe31cd",
+    "outputs/Micro-RiskSize-20261120/financial_matrix.py": "8833987f2cd1772a823513aeb25705f4a0f111072ffeaad58f54b78882625299",
+    "outputs/Micro-RiskSize-20261120/provider_generators.py": "a2bad4877621767610eceaafc4d3f474a91b2ff6c795b45d3a553048e0332467",
+    "outputs/Strategie-Builder-ES-Pilot/hy-vergleich/robustheit/sqx_equity_paths.cpp": "4c61f891dcbe3a82685a746a812b5894297bb829beb4dad872fc04d65668019f"
+  },
+  "native_fills": {
+    "jahr-ergaenzung-ESH6": {
+      "base": "e023d12bc0d036305d6a07f3de1aa1907d5f47449a1dbeec04fe32d897b98dac",
+      "ML1C": "e023d12bc0d036305d6a07f3de1aa1907d5f47449a1dbeec04fe32d897b98dac",
+      "ML8": "e023d12bc0d036305d6a07f3de1aa1907d5f47449a1dbeec04fe32d897b98dac",
+      "MR1": "e023d12bc0d036305d6a07f3de1aa1907d5f47449a1dbeec04fe32d897b98dac",
+      "ML9": "e023d12bc0d036305d6a07f3de1aa1907d5f47449a1dbeec04fe32d897b98dac"
+    },
+    "jahr-ergaenzung-ESZ5": {
+      "base": "84339d927b60979a70287f351dd8846dcbe9ac302099b770f16f503b2b69d796",
+      "ML1C": "84339d927b60979a70287f351dd8846dcbe9ac302099b770f16f503b2b69d796",
+      "ML8": "84339d927b60979a70287f351dd8846dcbe9ac302099b770f16f503b2b69d796",
+      "MR1": "84339d927b60979a70287f351dd8846dcbe9ac302099b770f16f503b2b69d796",
+      "ML9": "84339d927b60979a70287f351dd8846dcbe9ac302099b770f16f503b2b69d796"
+    },
+    "jahr-uebergang-ESM6": {
+      "base": "14993ec82d1b8754478f5c33b4b0c81b28a9f34c94047d19f556dfc7ad384f3e",
+      "ML1C": "46d7c72325b11acb5a45f6f424e1884c35ad82789e6dca622ca9f3f4062eff1a",
+      "ML8": "22429d8f9effcab81fafedd2caa55650ca4583a8367604e8e909719ab43a4c6a",
+      "MR1": "16a4f7558aab3177941993957254701648aa4de904b5486d22b61fa73b3548f1",
+      "ML9": "14993ec82d1b8754478f5c33b4b0c81b28a9f34c94047d19f556dfc7ad384f3e"
+    },
+    "mai-oktober-2026-ESU6": {
+      "base": "9a2d363596f1402045bcc2e44470db99d0b8991e9aac9266c2aa32a9f2a34179",
+      "ML1C": "1fe05013bf4eb65247dbe9dc0db71ab16497f54ab96fb1253e967318913724ab",
+      "ML8": "92a57f96c2422559d9b2fc43744b35d439fcb6dc42693829994ecf7a476b0249",
+      "MR1": "c8f7144ab382ec02ba9701562a98c0c3b9b0b7e928ba35e566ba32f57e0f8cb2",
+      "ML9": "ba40be859c146bd0a59ebc730251d35fd4d1da6bbdcec43d440d103c6277bf63"
+    },
+    "mai-oktober-2026-ESZ6": {
+      "base": "2dfc3166a418fc3cbea33879a68ecfb84b0cd5d5478aa836d31aeebb68e2a31e",
+      "ML1C": "279408e46781e6b776ef506f1c418e1e7725f35f0b7899cd7a690f66e939bda3",
+      "ML8": "9a5b3dd2825a5bfe7f574e2e24eae3fd0da8f696271ccf97fd7ac6839d4e1521",
+      "MR1": "3e504c70a4ac11dc8427f36cb147c4e3a5b8094fa2c8fcfa7faae2f9d76b3d00",
+      "ML9": "eb9f6a8c0ecaeaad23f18db42a72d74767ccf318a899f92bf93331ac70d3a8ec"
+    },
+    "september-2026-ESZ6": {
+      "base": "12a8c4381d42394a76adfe40b029e77dd682d0a47645dff591eb89dda170ac17",
+      "ML1C": "12a8c4381d42394a76adfe40b029e77dd682d0a47645dff591eb89dda170ac17",
+      "ML8": "12a8c4381d42394a76adfe40b029e77dd682d0a47645dff591eb89dda170ac17",
+      "MR1": "12a8c4381d42394a76adfe40b029e77dd682d0a47645dff591eb89dda170ac17",
+      "ML9": "12a8c4381d42394a76adfe40b029e77dd682d0a47645dff591eb89dda170ac17"
+    }
+  },
+  "fresh_OOS": false,
+  "no_leaderboard_promotion": true
+}

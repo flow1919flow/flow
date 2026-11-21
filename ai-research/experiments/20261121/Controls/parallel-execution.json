@@ -1,0 +1,14 @@
+{
+  "state": "complete",
+  "at_utc": "2026-11-21T00:00:27.882045+00:00",
+  "workers": 4,
+  "draws": 199,
+  "rng_seed": 20261122,
+  "synthetic_draws_sha256": "83b4ea7422d778c14d3b2209244e26907748f621b9066637858c8cf719ab4fee",
+  "statistical_design_changed": false,
+  "research_sha256": "acdd3825dd16212417a9092eb8022585ed0182ec1cedaa75fcad29fcee575eb5",
+  "sequential_rows_to_reproduce": 20,
+  "stop_if_any_sequential_row_differs": true,
+  "sequential_rows_reproduced_exactly": 20,
+  "output_sha256": "5023132fb79e52593fbbcfe81499a3f849eb93424394c9c9aea6ac9533d2b739"
+}

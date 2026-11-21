@@ -1,0 +1,123 @@
+{
+  "schema": "ES-ML-COMPARISON-20261121-v1",
+  "created_at_utc": "2026-11-20T23:38:53.418632+00:00",
+  "period": [
+    "2025-11-24",
+    "2026-10-30"
+  ],
+  "sessions": 242,
+  "unique_period_candidates": 347,
+  "features": [
+    "planned_stop_risk_usd",
+    "bollinger_keltner_width_ratio",
+    "signed_completed_ema_slope_atr",
+    "completed_relative_volume20",
+    "chicago_session_minute"
+  ],
+  "existing_reference": "ML1 frozen original in-sample-training-score threshold; preserved separately",
+  "arms": {
+    "ML1C": {
+      "model": "L2 LogisticRegression",
+      "C": 0.1,
+      "threshold_control": true
+    },
+    "ML8": {
+      "model": "HistGradientBoostingClassifier",
+      "max_depth": 1,
+      "learning_rate": 0.05,
+      "max_iter": 100,
+      "min_samples_leaf": 20,
+      "l2_regularization": 1.0,
+      "early_stopping": false,
+      "random_state": 20261121
+    },
+    "MR1": {
+      "model": "StandardScaler + Ridge",
+      "alpha": 10.0,
+      "solver": "svd",
+      "target": "stress net USD / planned_stop_risk_usd",
+      "gate_score": "predicted R * planned_stop_risk_usd"
+    },
+    "ML9": {
+      "model": "TabPFNClassifier",
+      "model_version": "V2",
+      "package_version": "10.2.0",
+      "n_estimators": 4,
+      "device": "cpu",
+      "random_state": 20261121,
+      "input": "same five raw features, model internal training-only preprocessing",
+      "licence": "Prior Labs v2 model license, exact downloaded text and weight hash recorded before fit"
+    }
+  },
+  "outer_split": "same 9 expanding blocks as original:80 initial train sessions,1 gap,20 test",
+  "threshold": "20th percentile of inner chronological held-out scores; ties accepted; NOT in-sample context scores",
+  "inner_split": "5 contiguous calendar-session folds inside outer train; train on other4, embargo adjacent1session on both sides; all labels already known before outer decision",
+  "final_fit": "refit same fixed model on all eligible outer train;20percent threshold from cross-fitted training scores",
+  "class_failure_rule": "stop and report, do not silently drop blocks or change parameters",
+  "validation": "native physical prefix audit before new model fits; outer training uses only already-known outcomes; TabPFN singleton/batch check",
+  "random_omissions": {
+    "draws": 1000,
+    "seed": 20261121,
+    "match": "same number of omissions within each outer test block",
+    "scope": "candidate-utility diagnostic, not a provider cash/null distribution"
+  },
+  "permutation": {
+    "legacy_ML1_draws": 1000,
+    "new_family_max_rank_draws": 199,
+    "seed": 20261122,
+    "unit": "whole within-day ordered outcome vectors",
+    "strata": "calendar quarter and same candidate count per day",
+    "refit": "entire original ML1 pipeline each draw",
+    "scope": "conditional diagnostic; day exchangeability and remaining serial dependence limit formal inference"
+  },
+  "utility": "candidate omission diagnostic: accepted mean stress net minus omitted mean; primary new-family screen is threshold-free Spearman(score,stress net)",
+  "permutation_cost_rule": "For threshold-free statistic refit outer models only; cross-fitting affects gate threshold, not the outer scores. Same first199 permutations, max statistic across4arms. Conditional screen, no fresh-confirmation claim.",
+  "native_cash": "each new completed gate rerun in all6 native SQX segments, same unchanged provider replay; no deleting old fills",
+  "economic_target": "mean and median end cash from1000USD over143 dependent100-session windows; normal and1adverse tick per side",
+  "adoption": "none without later genuinely new evidence; no live changes or leaderboard promotion from this selected year",
+  "sources": [
+    {
+      "segment": "jahr-ergaenzung-ESH6",
+      "features_sha256": "cb9a416d552c909945064bbee651e55ade8f5236173ff3eead6afb0e3db17a9e",
+      "candidates_sha256": "b6e6ac630d6d545607317304be29ca0fbbcbef0a08958f9a0da050a5ef2bb2e2",
+      "observer_proof_sha256": "e5ff8b183e01c9b65b299068bc0b91bfa6ec7c81b8ffa9444f2f8e4034943943"
+    },
+    {
+      "segment": "jahr-ergaenzung-ESZ5",
+      "features_sha256": "6bdcd8f7860e099abcf6c0d0acffdfa4855780080e3f854631cc695bc4ecdd3f",
+      "candidates_sha256": "c02163d45d1e2bc6b12aaf107ac241160bb071e5996e80fdc9cef62c2b786571",
+      "observer_proof_sha256": "830e73f164eb9e1f1638118ca4839d2ccfc9ac82983cd048433591c223e54d85"
+    },
+    {
+      "segment": "jahr-uebergang-ESM6",
+      "features_sha256": "6197d11c67c147d803bc87ff75c0157e00cd7b69a884f9b4652774f7bfadae4b",
+      "candidates_sha256": "1fda2de66ce4ae41506ce464af31c54c1dc07c5e6f7ac1b69ef4e3cfbf7be658",
+      "observer_proof_sha256": "6176aef5016c3139c940787e4501f29e77849a5ada286e2af118ddcff08fc48b"
+    },
+    {
+      "segment": "mai-oktober-2026-ESU6",
+      "features_sha256": "8d47bd4acf964af6ebe5153467a3dc26f91e26eb41dfcdd41dcfa2210f06c91f",
+      "candidates_sha256": "d0e96ca082f444e77d0ea3de0b58469e48e0f224f20dfa756a21c7683c077c55",
+      "observer_proof_sha256": "40b24e433ae6085b4500d30368b59997264cc83150d2e0e36d2d4d6516680be3"
+    },
+    {
+      "segment": "mai-oktober-2026-ESZ6",
+      "features_sha256": "b6d5cc5aaa74f98867b57d96d0ed56329106360f277182dd960d0cbb929bfa82",
+      "candidates_sha256": "c23b670337c033022193408a446c59580dfb5e7fab813b808fe13a90baea563c",
+      "observer_proof_sha256": "93971ad7677dd2649bfc7d88d7e227b2329912c76378be9712b9d3d9da630806"
+    },
+    {
+      "segment": "september-2026-ESZ6",
+      "features_sha256": "522ff6168dffbd817591795b87102640614c34404da60d620d267964caf54769",
+      "candidates_sha256": "84515ed26e6266964e520ca8ae8506293b3616cca9c51ed4a6bb28bc46a9d029",
+      "observer_proof_sha256": "99a3955ccfd0b0b37606c61c3f54cd95fc7a18922171c303273d3610d1b58ded"
+    }
+  ],
+  "sklearn_version": "1.9.1",
+  "code": {
+    "research.py": "cbf69372a90f8544aa30cfb64e0e3445767910b6764065a08814330b9288c3d6",
+    "native_check.py": "536c79191c36e6626a49b1e03603c1f06f6d7af5175209ac8f77fced6b6c0936"
+  },
+  "cost": "local compute; no cloud calls/GPU rental/data purchase",
+  "SI": "separate coverage/availability feasibility audit; no missing-feed intervals encoded as no event"
+}

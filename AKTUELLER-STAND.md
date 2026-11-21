@@ -1,3 +1,17 @@
+# Neuester Stand: Daten vollständig, Forschung vor Modellfit wegen Ablagefehler gestoppt
+
+**Alle 60 Databento-ES-Monatsdateien von November 2021 bis Oktober 2026 sind vollständig gespeichert und gehasht, zusätzliche Datenkosten insgesamt 0 USD.** Der MLflow-Datenlauf 32a50cc086ae473bb88071b625bd2ad3 ist abgeschlossen. Es sind originale OHLCV-Einsekundenkerzen mit Kontraktzuordnungen, keine fünfjährige TBBO-Historie.
+
+Beim anschließenden einmaligen Entwicklungsdurchlauf enthielt unser Perioden-Dispatcher einen Fehler: Neun `Private/...`- und `Public/...`-Ausgabepfade behielten bekannte Dateinamen. Dadurch wurden einige experimentelle bekannte Abgleichdateien überschrieben; das Packaging scheiterte vor dem Release. Gesichert sind 1.143 gefüllte Fälle und 775 Vorlabel-Tagesprüfsummen für 1.145 Entscheidungspläne, einschließlich zweier später stornierter Intents. Der vollständige Intentstrom war noch nicht dauerhaft geschrieben. **Kein neues Modell wurde trainiert, das versiegelte Prüfjahr wurde nicht geöffnet.** Originale Rohkurse, native SQX-Berichte, eingefrorener Strategiekern und ursprüngliche Acceptance-/Audit-JSON sind unverändert. MFF-/TradeDay-Leaderboards und NinjaTrader wurden nicht geändert.
+
+[Vorfall und vorab festgelegte Wiederherstellungskriterien](ai-research/experiments/20261121-five-year-es/Public/dispatch-incident-before-recovery.json). Die frühere AST-Rückwärtsprüfung war kein Nachweis vollständiger Pfadumbenennung: Auch ein unveränderter Pfad reversiert auf sich selbst. Die 18 synthetischen Trainings-Consumer-Tests hatten keinen vollständigen Producer-Dateisystem-Durchlauf geprüft. Diese Lücke wird ausdrücklich dokumentiert.
+
+Der tatsächliche Claude hält eine streng kontrollierte Wiederherstellung ohne neue wissenschaftliche Auswahl für zulässig. Vor Ausführung müssen Vorfall, Kriterien, isolierter Steuercode und vollständige Dateisystemtests veröffentlicht sein. Originaleingaben werden für den Recovery-Prozess auf Betriebssystemebene schreibgeschützt; alle Ausgaben erhalten ein neues leeres Verzeichnis. Die ursprünglichen drei wissenschaftlichen bekannten Dateihashes sowie sämtliche Entwicklungs-Plan-/Fill-Hashes müssen exakt erreicht werden. Jede Abweichung bedeutet STOP. Nicht belegbar wiederherstellbare historische Fortschritts-/Zeitmetadaten werden als solche gekennzeichnet; keine erfundenen Zeitstempel. Modelle, Features, Kosten und Prüfschwellen bleiben unverändert.
+
+Aktueller sichtbarer Status: http://127.0.0.1:8765/report/ES-FiveYear-ML-20261121/Stand.html . Frühere Einträge unten beschreiben den Stand vor diesem Vorfall; insbesondere ist eine damalige Metadaten-Abnahme kein Beleg, dass alle überschriebenen Dateien aktuell schon wiederhergestellt sind.
+
+---
+
 # Neuester Stand: Einsekunden-Abnahme bestanden, Fünfjahres-Training vorbereitet
 
 Vier zusätzliche ES-Jahre werden als originale Databento-Einsekundenkerzen geladen. Jede Monatsanfrage erhält unmittelbar davor eine authentifizierte Preisprüfung auf exakt 0 USD. Dies ist keine fünfjährige TBBO-Tickhistorie. Der Erwerb läuft weiter; vollständige Belege und Status lokal unter `outputs/ES-FiveYear-SecondData-20261121/Public/download-manifest.json` und `download-progress.json`. Unvollständige oder fehlgeschlagene Dateien sind getrennt erhalten und keine verwendbaren Trainingsdaten.

@@ -1,0 +1,12 @@
+{
+  "state": "all60_months_complete",
+  "completed": 60,
+  "total": 60,
+  "new_cost_USD": 0,
+  "downloaded_bytes": 672818411,
+  "known_year_complete": true,
+  "workers": 4,
+  "key_persisted": false,
+  "no_candidate_labels_or_models": true,
+  "completed_at_utc": "2026-11-21T04:04:48.527727+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "pandas": "3.1.1",
+    "pyarrow": "26.0.1",
+    "threadpoolctl": "3.8.0",
+    "mlflow": "3.18.0"
+  },
+  "training_source_sha256": "59426a4be09d9adceff489baebf1849a691e1bc5ff8ee32f3164330fd99646ba",
+  "purpose": "Actual research runtime, no real model fit executed by this inventory"
+}

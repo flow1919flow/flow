@@ -1,0 +1,206 @@
+{
+  "schema": "DISPATCH-NAMESPACE-INCIDENT-INDEPENDENT-1",
+  "status": "READ_ONLY_DIAGNOSIS_NO_RECOVERY_EXECUTED",
+  "utc": "2026-11-21T04:05:17.593898+00:00",
+  "inspector_source_sha256": "a08b530bc4a713d9c07bdc3ec6c28dbd9a7bd40a9e5ab168661423daaef7cc64",
+  "incident_manifest_sha256": "b39ab8dff073d62f050a9d9f20854a7ef8b42c5f1a720374e61d14f2076ea079",
+  "incident_copies": {
+    "Private/second-known-price-roll-freeze.json": {
+      "sha256": "576ecc9071b6eeaa4a1b4475a37a753abd16303456ce63101de690a9f1201343",
+      "bytes": 745947,
+      "copy_sha256": "576ecc9071b6eeaa4a1b4475a37a753abd16303456ce63101de690a9f1201343",
+      "copy_bytes": 745947,
+      "copy_matches": true
+    },
+    "Private/second-candidates-known.jsonl": {
+      "sha256": "e9ad3462256580794182a11520f05ce2e0296f609b2998e8ef72919a147145ce",
+      "bytes": 1521451,
+      "copy_sha256": "e9ad3462256580794182a11520f05ce2e0296f609b2998e8ef72919a147145ce",
+      "copy_bytes": 1521451,
+      "copy_matches": true
+    },
+    "Private/second-candidates-known.csv": {
+      "sha256": "432fa618624d0de557113b8efb4da68752008cc14f3d0395b89197d5239763c5",
+      "bytes": 604208,
+      "copy_sha256": "432fa618624d0de557113b8efb4da68752008cc14f3d0395b89197d5239763c5",
+      "copy_bytes": 604208,
+      "copy_matches": true
+    },
+    "Private/second-known-exclusions.json": {
+      "sha256": "c12545840eea9c4d6e9e478f71ca9cb8e3b8b79468892a656d3bb40dade06dd9",
+      "bytes": 14700,
+      "copy_sha256": "c12545840eea9c4d6e9e478f71ca9cb8e3b8b79468892a656d3bb40dade06dd9",
+      "copy_bytes": 14700,
+      "copy_matches": true
+    },
+    "Private/second-known-ambiguities.json": {
+      "sha256": "df03a3bda4a3a03919f0f4d19ad4680b6c00603dde3b30997175c952d815dd3c",
+      "bytes": 513,
+      "copy_sha256": "df03a3bda4a3a03919f0f4d19ad4680b6c00603dde3b30997175c952d815dd3c",
+      "copy_bytes": 513,
+      "copy_matches": true
+    },
+    "Private/second-known-feature-before-label-proof.json": {
+      "sha256": "1071f17bef916db7dbcafd404ac7e10c6de872e0704d094d8c63fa382c069632",
+      "bytes": 148028,
+      "copy_sha256": "1071f17bef916db7dbcafd404ac7e10c6de872e0704d094d8c63fa382c069632",
+      "copy_bytes": 148028,
+      "copy_matches": true
+    },
+    "Public/second-execution-start.json": {
+      "sha256": "986bb9a317088ad5244325b52081a2916a296c9a1db71140d744081c6d034df1",
+      "bytes": 3670,
+      "copy_sha256": "986bb9a317088ad5244325b52081a2916a296c9a1db71140d744081c6d034df1",
+      "copy_bytes": 3670,
+      "copy_matches": true
+    },
+    "Public/second-preflight-progress.json": {
+      "sha256": "92a573edf584f447d06ef68581d0f5c2776786780043a60b8661a0a8459dfedf",
+      "bytes": 301,
+      "copy_sha256": "92a573edf584f447d06ef68581d0f5c2776786780043a60b8661a0a8459dfedf",
+      "copy_bytes": 301,
+      "copy_matches": true
+    },
+    "Public/second-known-summary.json": {
+      "sha256": "6ff51138e2070747e1a9f8e4e3e9c0b6e6ad4367ec7560bc1755b68fee09f0d1",
+      "bytes": 4657,
+      "copy_sha256": "6ff51138e2070747e1a9f8e4e3e9c0b6e6ad4367ec7560bc1755b68fee09f0d1",
+      "copy_bytes": 4657,
+      "copy_matches": true
+    },
+    "Private/development-label-attempt.json": {
+      "sha256": "87fa1e876210fe1428d66cde04743ade34d10ad88f804de8a135a1dcdbd31e54",
+      "bytes": 245,
+      "copy_sha256": "87fa1e876210fe1428d66cde04743ade34d10ad88f804de8a135a1dcdbd31e54",
+      "copy_bytes": 245,
+      "copy_matches": true
+    },
+    "development-one-attempt.log": {
+      "sha256": "74e776fe64351a0d9f817c62f44e4463a7afaaf8e9ba749ae8483d4826d264f4",
+      "bytes": 47768,
+      "copy_sha256": "74e776fe64351a0d9f817c62f44e4463a7afaaf8e9ba749ae8483d4826d264f4",
+      "copy_bytes": 47768,
+      "copy_matches": true
+    }
+  },
+  "generated_role_paths": {
+    "development": {
+      "source_sha256": "b57022cdcd9207c351abb70e95192f1709e7e45b3f250355fe64cb726c45a728",
+      "path_literals": [
+        "Private/Months",
+        "Private/second-candidates-known.csv",
+        "Private/second-candidates-known.jsonl",
+        "Private/second-known-ambiguities.json",
+        "Private/second-known-exclusions.json",
+        "Private/second-known-feature-before-label-proof.json",
+        "Private/second-known-price-roll-freeze.json",
+        "Public/second-execution-start.json",
+        "Public/second-known-summary.json",
+        "Public/second-preflight-progress.json"
+      ],
+      "price_input_literal": "Private/Months",
+      "unrewritten_known_output_literals": [
+        "Private/second-candidates-known.csv",
+        "Private/second-candidates-known.jsonl",
+        "Private/second-known-ambiguities.json",
+        "Private/second-known-exclusions.json",
+        "Private/second-known-feature-before-label-proof.json",
+        "Private/second-known-price-roll-freeze.json",
+        "Public/second-execution-start.json",
+        "Public/second-known-summary.json",
+        "Public/second-preflight-progress.json"
+      ],
+      "unsafe_original_input_output_namespace_shared": true
+    },
+    "sealed": {
+      "source_sha256": "28d2aeaf43a8f9534637ff5d3fff694b886ec6f397c680f69d9891a6245209f1",
+      "path_literals": [
+        "Private/Months",
+        "Private/second-candidates-known.csv",
+        "Private/second-candidates-known.jsonl",
+        "Private/second-known-ambiguities.json",
+        "Private/second-known-exclusions.json",
+        "Private/second-known-feature-before-label-proof.json",
+        "Private/second-known-price-roll-freeze.json",
+        "Public/second-execution-start.json",
+        "Public/second-known-summary.json",
+        "Public/second-preflight-progress.json"
+      ],
+      "price_input_literal": "Private/Months",
+      "unrewritten_known_output_literals": [
+        "Private/second-candidates-known.csv",
+        "Private/second-candidates-known.jsonl",
+        "Private/second-known-ambiguities.json",
+        "Private/second-known-exclusions.json",
+        "Private/second-known-feature-before-label-proof.json",
+        "Private/second-known-price-roll-freeze.json",
+        "Public/second-execution-start.json",
+        "Public/second-known-summary.json",
+        "Public/second-preflight-progress.json"
+      ],
+      "unsafe_original_input_output_namespace_shared": true
+    }
+  },
+  "root_cause": "LiteralDispatch tests whole-string equality against basename-only mapping keys. Private/... and Public/... literals are not mapped. Date literals are correctly changed. An unchanged path also passes inverse-AST equality, so the old identity check did not establish output namespace isolation.",
+  "minimal_static_counterexample": {
+    "original": "Private/second-candidates-known.jsonl",
+    "mapping": {
+      "second-candidates-known.jsonl": "development-candidates.jsonl"
+    },
+    "changed": "Private/second-candidates-known.jsonl",
+    "restored": "Private/second-candidates-known.jsonl",
+    "reversible_check_passes": true,
+    "output_was_never_renamed": true
+  },
+  "preserved_decision_plans": {
+    "contract_day_proofs": 775,
+    "eligible_prelabel_plans": 1145,
+    "saved_filled_cases": 1143,
+    "missing_cancelled_intents": 2,
+    "post_feature_cancellation_reason_counts": {
+      "excluded_delayed_entry_liquidation_proxy_beyond_stop": 2
+    },
+    "plan_proof_sha256": "1071f17bef916db7dbcafd404ac7e10c6de872e0704d094d8c63fa382c069632",
+    "filled_candidate_files_hashed_only": true
+  },
+  "original_known_recovery_fingerprints": {
+    "Private/second-candidates-known.jsonl": {
+      "expected_sha256": "b021d522a869d69f8893232123420cba78181c9a2f6425bae3c6973e40a2c67a",
+      "current_sha256": "e9ad3462256580794182a11520f05ce2e0296f609b2998e8ef72919a147145ce",
+      "original_matches": false
+    },
+    "Private/second-candidates-known.csv": {
+      "expected_sha256": "163e2bb54c2539e4685e33624bdcd528eb6786fbeadb265fd68e82312766e715",
+      "current_sha256": "432fa618624d0de557113b8efb4da68752008cc14f3d0395b89197d5239763c5",
+      "original_matches": false
+    },
+    "Private/second-known-price-roll-freeze.json": {
+      "expected_sha256": "234897b90557cb44eda32c7ce0d6756a60841980f6eccfbe6ccc9f582c257e9d",
+      "current_sha256": "576ecc9071b6eeaa4a1b4475a37a753abd16303456ce63101de690a9f1201343",
+      "original_matches": false
+    }
+  },
+  "all12_original_known_month_manifests_unchanged": true,
+  "original_known_source_freeze_sha256": "c3ddf25c74a0f9798a469c7401a3a67416018aa339d0a6746b162db5fc9d5c6a",
+  "original_known_acceptance_sha256": "61ecb4431327aa4fb5994fc1d64ca765b82ea0f6e7bd09fa98566692e5b33f5f",
+  "original_known_audit_sha256": "a1f071d15a1ce8eb5d1af4cca70b7b87d2f276a1a917c232e461a538740d609c",
+  "training_guard_limitation": "Published training release_guard binds native audit/acceptance files and frozen source but not every referenced original known data artifact. Require explicit external all-artifact integrity before any real fit after recovery; no frozen training source is altered here.",
+  "required_recovery_acceptance": [
+    "Obtain explicit Root/Claude authorization; keep original attempt/incident immutable and sealed year closed.",
+    "Use fresh physically isolated output namespace with read-only original price/protocol inputs; deny every write/rename/delete outside the attempt, including temporary and failure/progress paths.",
+    "No parameter, chronology, cohort, fill, risk, exclusion or label changes. Eagerly journal original decision plans before delayed_shadow and original results afterward, preserving callable arguments and returned object identity.",
+    "Require exact 1145 decision-plan count, all775 per-day feature-plan hashes, and byte-identical1143 filled JSONL/CSV, exclusions and ambiguities against preserved incident copies. Do not recover from fills alone.",
+    "Independently audit all recovered entry/cancel/exit clocks, five features/costs/R and baseline pending-state parity before fit. Treat any disagreement as STOP, never choose the better result.",
+    "Restore original known private JSONL/CSV/schedule only from authentic backup or reconstruction matching their pre-incident SHA. Other missing original bytes must remain explicitly unavailable/reconstructed, never fabricated.",
+    "Timestamp/elapsed-dependent original public metadata requires authentic backup/published bytes for byte-identical restoration; deterministic replay cannot recreate those original timestamps.",
+    "Require full real-filesystem synthetic integration through progress, decision/result journals, CSV/JSONL, summary and release; old broken mapping negative control must fail before known/input/sealed sentinels change.",
+    "Only after immutable recovery receipt and Root GO may canonical role publication/model fitting proceed. Preserve all failed attempts and make no new paid data calls."
+  ],
+  "real_recovery_executed": false,
+  "known_files_restored": false,
+  "frozen_sources_modified": false,
+  "candidate_outcome_values_read": false,
+  "new_labels_computed": false,
+  "models_fit": false,
+  "sealed_files_opened": false
+}

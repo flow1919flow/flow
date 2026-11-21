@@ -1,0 +1,1786 @@
+[
+  {
+    "month": "2025-11",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2025-11-01T00:00:00Z",
+      "end": "2025-12-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T02:55:43.301006+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T02:58:05.572369+00:00",
+    "relative_path": "Raw/GLBX-2025-11.dbn.zst",
+    "bytes": 11014089,
+    "sha256": "bdb6c41f7dfa86ee9713f270f3ba4923ef5bb1d73e34402728e104e74f50eb84",
+    "seconds": 140.0499391555786,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1761955200000000000",
+    "metadata_end": "1764547200000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2025-12",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2025-12-01T00:00:00Z",
+      "end": "2026-01-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T02:58:05.581985+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T02:59:07.931206+00:00",
+    "relative_path": "Raw/GLBX-2025-12.dbn.zst",
+    "bytes": 12525075,
+    "sha256": "cc385c1a30544de6fc66abe4d80c258e464ef7ee96dd2df2493caafe4efa5986",
+    "seconds": 61.97877097129822,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1764547200000000000",
+    "metadata_end": "1767225600000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2026-01",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2026-01-01T00:00:00Z",
+      "end": "2026-02-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T02:59:07.942983+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T03:01:45.121225+00:00",
+    "relative_path": "Raw/GLBX-2026-01.dbn.zst",
+    "bytes": 9373412,
+    "sha256": "b5d5888b71cdf95ffea672360a8d24fac666209f0cbf0eddc04834f1796e9bb8",
+    "seconds": 156.24262690544128,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1767225600000000000",
+    "metadata_end": "1769904000000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2026-02",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2026-02-01T00:00:00Z",
+      "end": "2026-03-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:01:45.130812+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T03:02:22.222022+00:00",
+    "relative_path": "Raw/GLBX-2026-02.dbn.zst",
+    "bytes": 10984415,
+    "sha256": "59dcc012c67626bf2a60bcdb85d681bd538a2673a0ed322a4b9049a7d570fd5e",
+    "seconds": 14.943660020828247,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1769904000000000000",
+    "metadata_end": "1772323200000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2026-03",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2026-03-01T00:00:00Z",
+      "end": "2026-04-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:02:22.233028+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T03:02:52.560657+00:00",
+    "relative_path": "Raw/GLBX-2026-03.dbn.zst",
+    "bytes": 19816866,
+    "sha256": "295b85094fabcafaa91e775f823b6520c4c295010269e44c387aefbbc5b7756a",
+    "seconds": 29.928789854049683,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1772323200000000000",
+    "metadata_end": "1775001600000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2026-04",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2026-04-01T00:00:00Z",
+      "end": "2026-05-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:02:52.575094+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T03:03:25.532440+00:00",
+    "relative_path": "Raw/GLBX-2026-04.dbn.zst",
+    "bytes": 11244894,
+    "sha256": "e2fd806650a90ea32a621ae298c8c7fb75d2cae57ee393fcc1bd585403bad058",
+    "seconds": 32.567119121551514,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1775001600000000000",
+    "metadata_end": "1777593600000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2026-05",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2026-05-01T00:00:00Z",
+      "end": "2026-06-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:03:25.540764+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T03:03:52.187072+00:00",
+    "relative_path": "Raw/GLBX-2026-05.dbn.zst",
+    "bytes": 10716947,
+    "sha256": "10a228986566c753b465632ec0db8693ab778b35f78a6f36af731e4528fb3490",
+    "seconds": 22.770143032073975,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1777593600000000000",
+    "metadata_end": "1780272000000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2026-06",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2026-06-01T00:00:00Z",
+      "end": "2026-07-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:03:52.197755+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T03:04:25.065530+00:00",
+    "relative_path": "Raw/GLBX-2026-06.dbn.zst",
+    "bytes": 16760442,
+    "sha256": "269150c3f556de05acfc9f14ac448a7da0abf2117eb01cfea53e87dacc172d85",
+    "seconds": 32.48904800415039,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1780272000000000000",
+    "metadata_end": "1782864000000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2026-07",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2026-07-01T00:00:00Z",
+      "end": "2026-08-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:04:25.079402+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T03:05:00.194389+00:00",
+    "relative_path": "Raw/GLBX-2026-07.dbn.zst",
+    "bytes": 12347172,
+    "sha256": "2bf3445d7aec0c449c79bf0d8edbe403cf7c87336c6e4bfeab096c28e3bee056",
+    "seconds": 34.755088329315186,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1782864000000000000",
+    "metadata_end": "1785542400000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2026-08",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2026-08-01T00:00:00Z",
+      "end": "2026-09-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:05:00.206410+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T03:05:37.897318+00:00",
+    "relative_path": "Raw/GLBX-2026-08.dbn.zst",
+    "bytes": 9203254,
+    "sha256": "18f3e32a22aca74c99aaf39dadda7f206f5fffadf349c258bd2fc92c0004efdd",
+    "seconds": 28.8586208820343,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1785542400000000000",
+    "metadata_end": "1788220800000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2026-09",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2026-09-01T00:00:00Z",
+      "end": "2026-10-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:05:37.903289+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T03:06:34.062162+00:00",
+    "relative_path": "Raw/GLBX-2026-09.dbn.zst",
+    "bytes": 13236029,
+    "sha256": "aefde5bfd7b0d31b5710e84647d52961fc0755663b34b0f8e76cd5a5732a6de9",
+    "seconds": 37.30477571487427,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1788220800000000000",
+    "metadata_end": "1790812800000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2026-10",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2026-10-01T00:00:00Z",
+      "end": "2026-11-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:06:34.073669+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T03:12:07.510686+00:00",
+    "relative_path": "Raw/GLBX-2026-10.dbn.zst",
+    "bytes": 11721126,
+    "sha256": "a2f36c87941e40fe13b6f65b71ac006215d390b7af4a3eb19d0a35202028154d",
+    "seconds": 332.80718779563904,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1790812800000000000",
+    "metadata_end": "1793491200000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2021-11",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2021-11-01T00:00:00Z",
+      "end": "2021-12-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:12:07.520519+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T03:13:32.499854+00:00",
+    "relative_path": "Raw/GLBX-2021-11.dbn.zst",
+    "bytes": 8082474,
+    "sha256": "ba30f782d45872fe844dcad6b898f24b2afbde523e0f9cdc1ebf1294ba1bc7c6",
+    "seconds": 80.10220694541931,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1635724800000000000",
+    "metadata_end": "1638316800000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2021-12",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2021-12-01T00:00:00Z",
+      "end": "2022-01-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:13:32.506983+00:00",
+    "status": "error_no_automatic_retry",
+    "quoted_cost_USD": 0.0,
+    "error_type": "BentoServerError",
+    "at_utc": "2026-11-21T03:14:33.578559+00:00"
+  },
+  {
+    "month": "2021-12",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2021-12-01T00:00:00Z",
+      "end": "2022-01-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:18:46.136706+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T03:19:53.555929+00:00",
+    "relative_path": "Raw/GLBX-2021-12.dbn.zst",
+    "bytes": 13676980,
+    "sha256": "0e0753a92738fae06c1eb95bc33e9b2a2e59e99fa08e68519165d7f9f7f8fc36",
+    "seconds": 65.45681524276733,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1638316800000000000",
+    "metadata_end": "1640995200000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2022-01",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-01-01T00:00:00Z",
+      "end": "2022-02-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:19:53.564549+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T03:25:47.105704+00:00",
+    "relative_path": "Raw/GLBX-2022-01.dbn.zst",
+    "bytes": 11659528,
+    "sha256": "0ec946b937dddbebafc25080782c76a27842bbe0b0ac54c0893bd5876fadb43a",
+    "seconds": 352.73780488967896,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1640995200000000000",
+    "metadata_end": "1643673600000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2022-02",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-02-01T00:00:00Z",
+      "end": "2022-03-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:25:47.116264+00:00",
+    "status": "downloaded_and_header_verified",
+    "quoted_cost_USD": 0.0,
+    "completed_at_utc": "2026-11-21T03:26:07.127143+00:00",
+    "relative_path": "Raw/GLBX-2022-02.dbn.zst",
+    "bytes": 12001856,
+    "sha256": "cd8dcff0c876776c190d8dcf46231ba9b196c67aba096091d74ae7d27e55a791",
+    "seconds": 19.591947078704834,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1643673600000000000",
+    "metadata_end": "1646092800000000000",
+    "key_persisted": false
+  },
+  {
+    "month": "2022-04",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-04-01T00:00:00Z",
+      "end": "2022-05-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:29:53.270950+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "status": "error_no_automatic_retry",
+    "error_type": "BentoClientError",
+    "at_utc": "2026-11-21T03:29:53.607591+00:00"
+  },
+  {
+    "month": "2022-06",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-06-01T00:00:00Z",
+      "end": "2022-07-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:29:53.271750+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "status": "error_no_automatic_retry",
+    "error_type": "BentoClientError",
+    "at_utc": "2026-11-21T03:29:53.611280+00:00"
+  },
+  {
+    "month": "2022-05",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-05-01T00:00:00Z",
+      "end": "2022-06-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:29:53.271627+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "status": "error_no_automatic_retry",
+    "error_type": "BentoClientError",
+    "at_utc": "2026-11-21T03:29:53.728424+00:00"
+  },
+  {
+    "month": "2022-03",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-03-01T00:00:00Z",
+      "end": "2022-04-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:29:53.270810+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "status": "error_no_automatic_retry",
+    "error_type": "BentoClientError",
+    "at_utc": "2026-11-21T03:30:03.341284+00:00"
+  },
+  {
+    "month": "2022-03",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-03-01T00:00:00Z",
+      "end": "2022-04-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:30:49.587700+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:30:50.197322+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:33:37.102588+00:00",
+    "relative_path": "Raw/GLBX-2022-03.dbn.zst",
+    "bytes": 18006790,
+    "sha256": "7b3ee2f685d3574ad83fe5f3fcd06a1dd322d0dff33db0d6691db5ec495aeee4",
+    "seconds": 166.91790008544922,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1646092800000000000",
+    "metadata_end": "1648771200000000000"
+  },
+  {
+    "month": "2022-07",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-07-01T00:00:00Z",
+      "end": "2022-08-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:33:37.116349+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:33:38.859875+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:34:31.072122+00:00",
+    "relative_path": "Raw/GLBX-2022-07.dbn.zst",
+    "bytes": 10139284,
+    "sha256": "b7613d0c321716b1dcfdda3353a73fbe4ecf3383b65bdaa54525d95389fcad5d",
+    "seconds": 52.22070503234863,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1656633600000000000",
+    "metadata_end": "1659312000000000000"
+  },
+  {
+    "month": "2022-08",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-08-01T00:00:00Z",
+      "end": "2022-09-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:34:31.081571+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:34:31.513440+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:34:52.862250+00:00",
+    "relative_path": "Raw/GLBX-2022-08.dbn.zst",
+    "bytes": 10517770,
+    "sha256": "0cc19106a3ff19ac3d2004b823dfc690795e08952cfa3cd2b4da3afa2f6dd3ea",
+    "seconds": 21.355064868927002,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1659312000000000000",
+    "metadata_end": "1661990400000000000"
+  },
+  {
+    "month": "2022-05",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-05-01T00:00:00Z",
+      "end": "2022-06-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:30:49.588996+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:30:50.009634+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:35:54.546711+00:00",
+    "relative_path": "Raw/GLBX-2022-05.dbn.zst",
+    "bytes": 13151748,
+    "sha256": "44bede0d34e56d02dd1b2ae5aceb1444e924ce19d949074da4c790eb33e5f256",
+    "seconds": 304.54760909080505,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1651363200000000000",
+    "metadata_end": "1654041600000000000"
+  },
+  {
+    "month": "2022-09",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-09-01T00:00:00Z",
+      "end": "2022-10-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:34:52.869494+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:35:31.444755+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:36:02.889859+00:00",
+    "relative_path": "Raw/GLBX-2022-09.dbn.zst",
+    "bytes": 16147681,
+    "sha256": "013918022cb16f0c3d5771c55c00a294410ccac098d8f2a86ebb3922f2104346",
+    "seconds": 31.453492879867554,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1661990400000000000",
+    "metadata_end": "1664582400000000000"
+  },
+  {
+    "month": "2022-04",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-04-01T00:00:00Z",
+      "end": "2022-05-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:30:49.588445+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:30:54.791519+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:36:06.014397+00:00",
+    "relative_path": "Raw/GLBX-2022-04.dbn.zst",
+    "bytes": 9910618,
+    "sha256": "8e224000fbd53a6c64ef7ca8f47a786868fda5f794e01ed8727de7bfbb8b20dc",
+    "seconds": 311.22815799713135,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1648771200000000000",
+    "metadata_end": "1651363200000000000"
+  },
+  {
+    "month": "2022-06",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-06-01T00:00:00Z",
+      "end": "2022-07-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:30:49.589432+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:30:51.091660+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:36:16.628569+00:00",
+    "relative_path": "Raw/GLBX-2022-06.dbn.zst",
+    "bytes": 16636425,
+    "sha256": "1a43e0d60ced356fc239ee7d7bdcd0b9a04f80937a10d7c0b450a09afdb1405e",
+    "seconds": 325.5482840538025,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1654041600000000000",
+    "metadata_end": "1656633600000000000"
+  },
+  {
+    "month": "2022-11",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-11-01T00:00:00Z",
+      "end": "2022-12-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:36:02.899163+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:36:37.399624+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:37:12.341101+00:00",
+    "relative_path": "Raw/GLBX-2022-11.dbn.zst",
+    "bytes": 10755560,
+    "sha256": "1d67c8a0d580b7bf773d617786c3da3ea94e6bfdf9a1e82e50d80d3f554e6941",
+    "seconds": 34.950798749923706,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1667260800000000000",
+    "metadata_end": "1669852800000000000"
+  },
+  {
+    "month": "2023-01",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2023-01-01T00:00:00Z",
+      "end": "2023-02-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:36:16.641171+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:36:17.156015+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:37:12.825259+00:00",
+    "relative_path": "Raw/GLBX-2023-01.dbn.zst",
+    "bytes": 9371016,
+    "sha256": "7ba0c6c4ed4b7479d0a54e41b65b1db0a76a16d87411a6ce970b7163e9c41e0c",
+    "seconds": 55.67460870742798,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1672531200000000000",
+    "metadata_end": "1675209600000000000"
+  },
+  {
+    "month": "2022-10",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-10-01T00:00:00Z",
+      "end": "2022-11-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:35:54.558347+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:35:54.974784+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:37:23.639928+00:00",
+    "relative_path": "Raw/GLBX-2022-10.dbn.zst",
+    "bytes": 12780247,
+    "sha256": "ce8bd8f4ee80ef1bbcba754f519aeb8e7f84f6bc13514d7188a6d25f1cae0dbb",
+    "seconds": 88.67189121246338,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1664582400000000000",
+    "metadata_end": "1667260800000000000"
+  },
+  {
+    "month": "2022-12",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2022-12-01T00:00:00Z",
+      "end": "2023-01-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:36:06.020667+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:36:07.075074+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:37:35.345997+00:00",
+    "relative_path": "Raw/GLBX-2022-12.dbn.zst",
+    "bytes": 13518398,
+    "sha256": "fbe4439a8a5f699281e34c8dee88685ab6940ed9205a6fa7f34c926524f81d62",
+    "seconds": 88.27984023094177,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1669852800000000000",
+    "metadata_end": "1672531200000000000"
+  },
+  {
+    "month": "2023-04",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2023-04-01T00:00:00Z",
+      "end": "2023-05-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:37:23.647780+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:37:25.335430+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:37:59.839096+00:00",
+    "relative_path": "Raw/GLBX-2023-04.dbn.zst",
+    "bytes": 7368987,
+    "sha256": "d3259bbecd02fe00e372b9744f9118635baf3e05bcaf675aca2d4a6302574391",
+    "seconds": 34.508657932281494,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1680307200000000000",
+    "metadata_end": "1682899200000000000"
+  },
+  {
+    "month": "2023-06",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2023-06-01T00:00:00Z",
+      "end": "2023-07-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:37:59.845208+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:38:01.491071+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:38:21.068172+00:00",
+    "relative_path": "Raw/GLBX-2023-06.dbn.zst",
+    "bytes": 11408398,
+    "sha256": "e6f18542c4f6a495853641b1711e272ef735032e8fe29f1a0ba5bda0be9ce84f",
+    "seconds": 19.585829973220825,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1685577600000000000",
+    "metadata_end": "1688169600000000000"
+  },
+  {
+    "month": "2023-07",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2023-07-01T00:00:00Z",
+      "end": "2023-08-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:38:21.078051+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:38:22.406235+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:38:50.961811+00:00",
+    "relative_path": "Raw/GLBX-2023-07.dbn.zst",
+    "bytes": 6816987,
+    "sha256": "2441e59c226eced664503c6558801b22cf03e523e1711b3c764034ae9ca11bd1",
+    "seconds": 28.561529874801636,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1688169600000000000",
+    "metadata_end": "1690848000000000000"
+  },
+  {
+    "month": "2023-08",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2023-08-01T00:00:00Z",
+      "end": "2023-09-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:38:50.969672+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:38:51.460643+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:39:13.635600+00:00",
+    "relative_path": "Raw/GLBX-2023-08.dbn.zst",
+    "bytes": 9787340,
+    "sha256": "c258f086902879b05975b6ef75aad27ad766245496debb47579f63550d2faca6",
+    "seconds": 22.183825969696045,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1690848000000000000",
+    "metadata_end": "1693526400000000000"
+  },
+  {
+    "month": "2023-03",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2023-03-01T00:00:00Z",
+      "end": "2023-04-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:37:12.831788+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:37:14.762648+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:41:26.620230+00:00",
+    "relative_path": "Raw/GLBX-2023-03.dbn.zst",
+    "bytes": 16549720,
+    "sha256": "628039d3c2dea5151a2a6f3b5b601e20212dd44a48e1f86c7b19dd4490d3ff23",
+    "seconds": 251.8689992427826,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1677628800000000000",
+    "metadata_end": "1680307200000000000"
+  },
+  {
+    "month": "2023-09",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2023-09-01T00:00:00Z",
+      "end": "2023-10-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:39:13.646051+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:39:14.562915+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:41:39.343315+00:00",
+    "relative_path": "Raw/GLBX-2023-09.dbn.zst",
+    "bytes": 10747635,
+    "sha256": "b9ba44fee57ef7769a6fe60eb4ba37425dd6da88a478b204f2a3328fff221129",
+    "seconds": 144.79079604148865,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1693526400000000000",
+    "metadata_end": "1696118400000000000"
+  },
+  {
+    "month": "2023-02",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2023-02-01T00:00:00Z",
+      "end": "2023-03-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:37:12.351651+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:37:14.602331+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:42:44.820407+00:00",
+    "relative_path": "Raw/GLBX-2023-02.dbn.zst",
+    "bytes": 9225976,
+    "sha256": "2731c68add8b84e950363a2aed5a3c422bdf654745ee2b4cfd765753893a73ec",
+    "seconds": 330.22624111175537,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1675209600000000000",
+    "metadata_end": "1677628800000000000"
+  },
+  {
+    "month": "2023-05",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2023-05-01T00:00:00Z",
+      "end": "2023-06-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:37:35.356522+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:37:35.839254+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:42:51.185388+00:00",
+    "relative_path": "Raw/GLBX-2023-05.dbn.zst",
+    "bytes": 9055408,
+    "sha256": "d723acd09d0fbca5396a620f07b3018c305f2b00f08c835b565b399ad0e4bbb5",
+    "seconds": 315.3511416912079,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1682899200000000000",
+    "metadata_end": "1685577600000000000"
+  },
+  {
+    "month": "2023-11",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2023-11-01T00:00:00Z",
+      "end": "2023-12-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:41:39.355441+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:42:12.212764+00:00",
+    "status": "error_no_automatic_retry",
+    "error_type": "BentoServerError",
+    "at_utc": "2026-11-21T03:43:12.523079+00:00"
+  },
+  {
+    "month": "2023-12",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2023-12-01T00:00:00Z",
+      "end": "2024-01-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:42:44.830320+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:42:47.036755+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:45:23.270112+00:00",
+    "relative_path": "Raw/GLBX-2023-12.dbn.zst",
+    "bytes": 9518793,
+    "sha256": "8c346bb2731a6c1ec8a6648994d6ef1a41475c32f597521db6f18862e98266fc",
+    "seconds": 156.2401580810547,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1701388800000000000",
+    "metadata_end": "1704067200000000000"
+  },
+  {
+    "month": "2023-10",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2023-10-01T00:00:00Z",
+      "end": "2023-11-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:41:26.632808+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:41:28.448228+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:46:19.818200+00:00",
+    "relative_path": "Raw/GLBX-2023-10.dbn.zst",
+    "bytes": 10347672,
+    "sha256": "6d38e57239a4b76044fa3d8dce4b1a6f6d45b21fd5d41935357afa6c222e2fa6",
+    "seconds": 291.3755478858948,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1696118400000000000",
+    "metadata_end": "1698796800000000000"
+  },
+  {
+    "month": "2023-11",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2023-11-01T00:00:00Z",
+      "end": "2023-12-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:48:19.333235+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:48:19.953161+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:48:44.543431+00:00",
+    "relative_path": "Raw/GLBX-2023-11.dbn.zst",
+    "bytes": 7812029,
+    "sha256": "1ebadac991a24cfd9ebfd950d9ce2866f57085955b05a374298921e074cb18dd",
+    "seconds": 24.595847129821777,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1698796800000000000",
+    "metadata_end": "1701388800000000000"
+  },
+  {
+    "month": "2024-01",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2024-01-01T00:00:00Z",
+      "end": "2024-02-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:48:19.333377+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:48:24.161231+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:48:56.754306+00:00",
+    "relative_path": "Raw/GLBX-2024-01.dbn.zst",
+    "bytes": 8155168,
+    "sha256": "38dfc6b77738e1fd4225b7eaa093cdecb5479feeaf8f9c4caee93f23556d1131",
+    "seconds": 32.60036110877991,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1704067200000000000",
+    "metadata_end": "1706745600000000000"
+  },
+  {
+    "month": "2024-02",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2024-02-01T00:00:00Z",
+      "end": "2024-03-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:48:19.334360+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:48:20.408480+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:49:04.469993+00:00",
+    "relative_path": "Raw/GLBX-2024-02.dbn.zst",
+    "bytes": 7772216,
+    "sha256": "9bdf4f3b618a86f40f154fab8513a9a62f123bb1ebb39c7587dbacabdee80f88",
+    "seconds": 44.06829285621643,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1706745600000000000",
+    "metadata_end": "1709251200000000000"
+  },
+  {
+    "month": "2024-04",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2024-04-01T00:00:00Z",
+      "end": "2024-05-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:48:44.550548+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:48:45.680990+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:50:23.408162+00:00",
+    "relative_path": "Raw/GLBX-2024-04.dbn.zst",
+    "bytes": 9736189,
+    "sha256": "057798a1a291a6aaa0ae35a748555397eb936a4207cb7fbdc7812714315f1952",
+    "seconds": 97.73556113243103,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1711929600000000000",
+    "metadata_end": "1714521600000000000"
+  },
+  {
+    "month": "2024-06",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2024-06-01T00:00:00Z",
+      "end": "2024-07-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:49:04.478839+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:49:13.583369+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:50:37.844363+00:00",
+    "relative_path": "Raw/GLBX-2024-06.dbn.zst",
+    "bytes": 10439022,
+    "sha256": "5780f8ca4b207149fca79d85e7d6f47e7bca54391e9d5e1626dfd541185b8492",
+    "seconds": 84.27045392990112,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1717200000000000000",
+    "metadata_end": "1719792000000000000"
+  },
+  {
+    "month": "2024-03",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2024-03-01T00:00:00Z",
+      "end": "2024-04-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:48:19.334608+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:48:26.398280+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:50:51.416571+00:00",
+    "relative_path": "Raw/GLBX-2024-03.dbn.zst",
+    "bytes": 10817538,
+    "sha256": "1cf20c263a4c96231ebd305bcedf5f4d4d0ac040fdcad7ec574dbd72294d00fb",
+    "seconds": 145.02762079238892,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1709251200000000000",
+    "metadata_end": "1711929600000000000"
+  },
+  {
+    "month": "2024-09",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2024-09-01T00:00:00Z",
+      "end": "2024-10-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:50:51.427331+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:50:51.838498+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:52:11.777904+00:00",
+    "relative_path": "Raw/GLBX-2024-09.dbn.zst",
+    "bytes": 12763558,
+    "sha256": "befcacf69cd49645608003d38943f01cde548a3a7c6d11935fbb6288f2ce11d9",
+    "seconds": 79.9474630355835,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1725148800000000000",
+    "metadata_end": "1727740800000000000"
+  },
+  {
+    "month": "2024-10",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2024-10-01T00:00:00Z",
+      "end": "2024-11-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:52:11.787384+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:52:12.390575+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:52:28.484295+00:00",
+    "relative_path": "Raw/GLBX-2024-10.dbn.zst",
+    "bytes": 8944651,
+    "sha256": "1f53f49febb73b959778aa9bd6fb40c4e76098349854969cabb5aded9a9f4939",
+    "seconds": 16.101824045181274,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1727740800000000000",
+    "metadata_end": "1730419200000000000"
+  },
+  {
+    "month": "2024-08",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2024-08-01T00:00:00Z",
+      "end": "2024-09-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:50:37.855321+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:50:38.991960+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:52:30.049990+00:00",
+    "relative_path": "Raw/GLBX-2024-08.dbn.zst",
+    "bytes": 11104642,
+    "sha256": "33a20035a684ab077aa7c22193d9d3b72633e7d82c283dde5b62ac985f3c1f95",
+    "seconds": 111.06591510772705,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1722470400000000000",
+    "metadata_end": "1725148800000000000"
+  },
+  {
+    "month": "2024-11",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2024-11-01T00:00:00Z",
+      "end": "2024-12-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:52:28.493724+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:52:33.858172+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:53:41.360183+00:00",
+    "relative_path": "Raw/GLBX-2024-11.dbn.zst",
+    "bytes": 8874974,
+    "sha256": "4634200a9edcedb50153a36997155f47d0a6de6e486da84a3460b2b7e1de1db6",
+    "seconds": 67.50819516181946,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1730419200000000000",
+    "metadata_end": "1733011200000000000"
+  },
+  {
+    "month": "2024-12",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2024-12-01T00:00:00Z",
+      "end": "2025-01-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:52:30.059214+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:52:30.473113+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:54:01.104603+00:00",
+    "relative_path": "Raw/GLBX-2024-12.dbn.zst",
+    "bytes": 11370065,
+    "sha256": "12b28adbebc3d0820e757f6f97d6d8390a1036184a84666e46263a71cdb6b19f",
+    "seconds": 90.64124488830566,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1733011200000000000",
+    "metadata_end": "1735689600000000000"
+  },
+  {
+    "month": "2024-05",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2024-05-01T00:00:00Z",
+      "end": "2024-06-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:48:56.764037+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:48:57.251559+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:54:13.298463+00:00",
+    "relative_path": "Raw/GLBX-2024-05.dbn.zst",
+    "bytes": 7847099,
+    "sha256": "08b57ea9a1d9cf72122993b0c8f98f62a92aade9733a93bfc0c2d77ad8d8dca6",
+    "seconds": 316.0519759654999,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1714521600000000000",
+    "metadata_end": "1717200000000000000"
+  },
+  {
+    "month": "2025-02",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2025-02-01T00:00:00Z",
+      "end": "2025-03-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:54:01.115747+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:54:14.903783+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:54:31.875169+00:00",
+    "relative_path": "Raw/GLBX-2025-02.dbn.zst",
+    "bytes": 9068323,
+    "sha256": "1af89b496b7b1a09f42258891976df604a40a7c7221d126f323f3c4ebd4ecae5",
+    "seconds": 16.979021072387695,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1738368000000000000",
+    "metadata_end": "1740787200000000000"
+  },
+  {
+    "month": "2025-01",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2025-01-01T00:00:00Z",
+      "end": "2025-02-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:53:41.368783+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:54:11.742508+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:55:02.717585+00:00",
+    "relative_path": "Raw/GLBX-2025-01.dbn.zst",
+    "bytes": 9826035,
+    "sha256": "6b4f37aa2ba617b86043723f2d3bb6bc56fb7411e38de4743b23b8a89b5650c7",
+    "seconds": 50.9837920665741,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1735689600000000000",
+    "metadata_end": "1738368000000000000"
+  },
+  {
+    "month": "2024-07",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2024-07-01T00:00:00Z",
+      "end": "2024-08-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:50:23.418023+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:50:33.382394+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:55:34.344940+00:00",
+    "relative_path": "Raw/GLBX-2024-07.dbn.zst",
+    "bytes": 9051719,
+    "sha256": "24630be739f24f8d403358edf25a126f50b03da76dd319268cb13e15509959ca",
+    "seconds": 300.97055530548096,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1719792000000000000",
+    "metadata_end": "1722470400000000000"
+  },
+  {
+    "month": "2025-04",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2025-04-01T00:00:00Z",
+      "end": "2025-05-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:54:31.885191+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:54:41.745705+00:00",
+    "status": "error_no_automatic_retry",
+    "error_type": "BentoServerError",
+    "at_utc": "2026-11-21T03:55:42.055968+00:00"
+  },
+  {
+    "month": "2025-05",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2025-05-01T00:00:00Z",
+      "end": "2025-06-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:55:02.727782+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:55:04.018237+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:55:57.415097+00:00",
+    "relative_path": "Raw/GLBX-2025-05.dbn.zst",
+    "bytes": 10935974,
+    "sha256": "34f2e66f6d5eb8d0eaae325cfccf02e0ee0e6288e0a5ca86f0f1ef457e30f8e3",
+    "seconds": 53.40274500846863,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1746057600000000000",
+    "metadata_end": "1748736000000000000"
+  },
+  {
+    "month": "2025-07",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2025-07-01T00:00:00Z",
+      "end": "2025-08-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:55:42.060031+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:55:51.000980+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:56:08.901908+00:00",
+    "relative_path": "Raw/GLBX-2025-07.dbn.zst",
+    "bytes": 8081077,
+    "sha256": "0f19d0a132626026cf59a308b4bb8ca19deb9622be06983541665639ecc5e7d1",
+    "seconds": 17.905115842819214,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1751328000000000000",
+    "metadata_end": "1754006400000000000"
+  },
+  {
+    "month": "2025-09",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2025-09-01T00:00:00Z",
+      "end": "2025-10-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:56:08.907305+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:56:09.354858+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:56:27.452991+00:00",
+    "relative_path": "Raw/GLBX-2025-09.dbn.zst",
+    "bytes": 10635004,
+    "sha256": "1ae200b5fece68e3b36d413ee8db28bc37dec2334a674bc088a6791e60b6f773",
+    "seconds": 18.106606006622314,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1756684800000000000",
+    "metadata_end": "1759276800000000000"
+  },
+  {
+    "month": "2025-08",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2025-08-01T00:00:00Z",
+      "end": "2025-09-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:55:57.422556+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:55:58.087523+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:56:32.010550+00:00",
+    "relative_path": "Raw/GLBX-2025-08.dbn.zst",
+    "bytes": 8347714,
+    "sha256": "6123f8fc91087b43d85673376f6baf0950a3523c5ef3e95b8431fe5b63873ea6",
+    "seconds": 33.92974781990051,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1754006400000000000",
+    "metadata_end": "1756684800000000000"
+  },
+  {
+    "month": "2025-06",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2025-06-01T00:00:00Z",
+      "end": "2025-07-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:55:34.354481+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:55:36.352723+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:57:21.254254+00:00",
+    "relative_path": "Raw/GLBX-2025-06.dbn.zst",
+    "bytes": 12818601,
+    "sha256": "62f4412814be3af0036ec9eae3433b562eecfa7c36b1a2513403a640aefee121",
+    "seconds": 104.90797472000122,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1748736000000000000",
+    "metadata_end": "1751328000000000000"
+  },
+  {
+    "month": "2025-10",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2025-10-01T00:00:00Z",
+      "end": "2025-11-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:56:27.463053+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:56:57.260257+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T03:57:31.841093+00:00",
+    "relative_path": "Raw/GLBX-2025-10.dbn.zst",
+    "bytes": 10381667,
+    "sha256": "d1ab4822110245737fe5fe3a2419c1f987de2e6791630c68df47fe069b30c778",
+    "seconds": 34.58641195297241,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1759276800000000000",
+    "metadata_end": "1761955200000000000"
+  },
+  {
+    "month": "2025-03",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2025-03-01T00:00:00Z",
+      "end": "2025-04-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T03:54:13.304968+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T03:54:15.851919+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T04:01:15.686151+00:00",
+    "relative_path": "Raw/GLBX-2025-03.dbn.zst",
+    "bytes": 16957870,
+    "sha256": "3b11699d57ff35a0920ca9b998662778584167be0c4bb12fd29bfbfbfaa9c4fb",
+    "seconds": 419.84436678886414,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1740787200000000000",
+    "metadata_end": "1743465600000000000"
+  },
+  {
+    "month": "2025-04",
+    "request": {
+      "dataset": "GLBX.MDP3",
+      "symbols": [
+        "ES.FUT"
+      ],
+      "stype_in": "parent",
+      "schema": "ohlcv-1s",
+      "start": "2025-04-01T00:00:00Z",
+      "end": "2025-05-01T00:00:00Z"
+    },
+    "quoted_at_utc": "2026-11-21T04:03:59.138394+00:00",
+    "manager": "bounded_parallel_v1",
+    "key_persisted": false,
+    "quoted_cost_USD": 0.0,
+    "data_request_at_utc": "2026-11-21T04:04:30.496498+00:00",
+    "status": "downloaded_and_header_verified",
+    "completed_at_utc": "2026-11-21T04:04:48.515021+00:00",
+    "relative_path": "Raw/GLBX-2025-04.dbn.zst",
+    "bytes": 14950264,
+    "sha256": "0fbfd583d9f2c6834f56f0848b7cb4058a18bf6569e6aef4055711b854f2a715",
+    "seconds": 18.029348850250244,
+    "schema": "ohlcv-1s",
+    "dataset": "GLBX.MDP3",
+    "metadata_start": "1743465600000000000",
+    "metadata_end": "1746057600000000000"
+  }
+]

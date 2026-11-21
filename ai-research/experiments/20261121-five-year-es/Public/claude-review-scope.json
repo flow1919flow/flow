@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-21T03:46:09.910641+00:00",
+  "actual_Claude_app_consulted": true,
+  "scope": "Method review of native-acceptance aggregates, reconstruction protocol and exact pre-fit model/evaluation plan.",
+  "actual_full_raw_recomputation_by_Claude": false,
+  "independent_raw_price_fill_recomputation": "Separate local audit, all348 cases; not attributed to Claude.",
+  "decisions": [
+    "One best-available1s attempt after minute failure; original thresholds plus absolute R-bias<=.05.",
+    "Decision at second end; all market fills at first observed Open at least2s later, adverse spread proxy and separate stress.",
+    "Older development labels released only after independent native acceptance, frozen period source and price completeness.",
+    "Ridge net-R primary, fixed shallow boosting descriptive; train-only scaling and finalTRAIN-centered OOF-slope calibration.",
+    "Complete causal intent replay includes cancelled entries; fixed inactivity/benefit classification before outcomes.",
+    "Nonpositive development mean stops before final fits and preserves sealed year.",
+    "Price completeness before one-shot sealed-label marker; known2025/26 DATA acceptance only.",
+    "Official Fed day annotations descriptive only, no invented historical news coverage."
+  ],
+  "private_chat_URL_or_messages_published": false,
+  "no_running_strategy_change": true
+}

@@ -1,0 +1,148 @@
+{
+  "schema": "ES-FIVEYEAR-DISPATCH-INCIDENT-1",
+  "status": "OPEN_STOP_BEFORE_FIT_RECOVERY_NOT_EXECUTED",
+  "utc": "2026-11-21T04:07:38.355819+00:00",
+  "cause": "LiteralDispatch tests whole-string equality against basename-only mapping keys. Private/... and Public/... literals are not mapped. Date literals are correctly changed. An unchanged path also passes inverse-AST equality, so the old identity check did not establish output namespace isolation.",
+  "failed_experiment_role": "development",
+  "filled_cases": 1143,
+  "eligible_plans": 1145,
+  "missing_cancelled_intents": 2,
+  "feature_plan_proof_sha256": "1071f17bef916db7dbcafd404ac7e10c6de872e0704d094d8c63fa382c069632",
+  "incident_files": {
+    "Private/second-known-price-roll-freeze.json": {
+      "sha256": "576ecc9071b6eeaa4a1b4475a37a753abd16303456ce63101de690a9f1201343",
+      "bytes": 745947,
+      "copy_sha256": "576ecc9071b6eeaa4a1b4475a37a753abd16303456ce63101de690a9f1201343",
+      "copy_bytes": 745947,
+      "copy_matches": true
+    },
+    "Private/second-candidates-known.jsonl": {
+      "sha256": "e9ad3462256580794182a11520f05ce2e0296f609b2998e8ef72919a147145ce",
+      "bytes": 1521451,
+      "copy_sha256": "e9ad3462256580794182a11520f05ce2e0296f609b2998e8ef72919a147145ce",
+      "copy_bytes": 1521451,
+      "copy_matches": true
+    },
+    "Private/second-candidates-known.csv": {
+      "sha256": "432fa618624d0de557113b8efb4da68752008cc14f3d0395b89197d5239763c5",
+      "bytes": 604208,
+      "copy_sha256": "432fa618624d0de557113b8efb4da68752008cc14f3d0395b89197d5239763c5",
+      "copy_bytes": 604208,
+      "copy_matches": true
+    },
+    "Private/second-known-exclusions.json": {
+      "sha256": "c12545840eea9c4d6e9e478f71ca9cb8e3b8b79468892a656d3bb40dade06dd9",
+      "bytes": 14700,
+      "copy_sha256": "c12545840eea9c4d6e9e478f71ca9cb8e3b8b79468892a656d3bb40dade06dd9",
+      "copy_bytes": 14700,
+      "copy_matches": true
+    },
+    "Private/second-known-ambiguities.json": {
+      "sha256": "df03a3bda4a3a03919f0f4d19ad4680b6c00603dde3b30997175c952d815dd3c",
+      "bytes": 513,
+      "copy_sha256": "df03a3bda4a3a03919f0f4d19ad4680b6c00603dde3b30997175c952d815dd3c",
+      "copy_bytes": 513,
+      "copy_matches": true
+    },
+    "Private/second-known-feature-before-label-proof.json": {
+      "sha256": "1071f17bef916db7dbcafd404ac7e10c6de872e0704d094d8c63fa382c069632",
+      "bytes": 148028,
+      "copy_sha256": "1071f17bef916db7dbcafd404ac7e10c6de872e0704d094d8c63fa382c069632",
+      "copy_bytes": 148028,
+      "copy_matches": true
+    },
+    "Public/second-execution-start.json": {
+      "sha256": "986bb9a317088ad5244325b52081a2916a296c9a1db71140d744081c6d034df1",
+      "bytes": 3670,
+      "copy_sha256": "986bb9a317088ad5244325b52081a2916a296c9a1db71140d744081c6d034df1",
+      "copy_bytes": 3670,
+      "copy_matches": true
+    },
+    "Public/second-preflight-progress.json": {
+      "sha256": "92a573edf584f447d06ef68581d0f5c2776786780043a60b8661a0a8459dfedf",
+      "bytes": 301,
+      "copy_sha256": "92a573edf584f447d06ef68581d0f5c2776786780043a60b8661a0a8459dfedf",
+      "copy_bytes": 301,
+      "copy_matches": true
+    },
+    "Public/second-known-summary.json": {
+      "sha256": "6ff51138e2070747e1a9f8e4e3e9c0b6e6ad4367ec7560bc1755b68fee09f0d1",
+      "bytes": 4657,
+      "copy_sha256": "6ff51138e2070747e1a9f8e4e3e9c0b6e6ad4367ec7560bc1755b68fee09f0d1",
+      "copy_bytes": 4657,
+      "copy_matches": true
+    },
+    "Private/development-label-attempt.json": {
+      "sha256": "87fa1e876210fe1428d66cde04743ade34d10ad88f804de8a135a1dcdbd31e54",
+      "bytes": 245,
+      "copy_sha256": "87fa1e876210fe1428d66cde04743ade34d10ad88f804de8a135a1dcdbd31e54",
+      "copy_bytes": 245,
+      "copy_matches": true
+    },
+    "development-one-attempt.log": {
+      "sha256": "74e776fe64351a0d9f817c62f44e4463a7afaaf8e9ba749ae8483d4826d264f4",
+      "bytes": 47768,
+      "copy_sha256": "74e776fe64351a0d9f817c62f44e4463a7afaaf8e9ba749ae8483d4826d264f4",
+      "copy_bytes": 47768,
+      "copy_matches": true
+    }
+  },
+  "original_known_fingerprints": {
+    "Private/second-candidates-known.jsonl": {
+      "expected_sha256": "b021d522a869d69f8893232123420cba78181c9a2f6425bae3c6973e40a2c67a",
+      "current_sha256": "e9ad3462256580794182a11520f05ce2e0296f609b2998e8ef72919a147145ce",
+      "original_matches": false
+    },
+    "Private/second-candidates-known.csv": {
+      "expected_sha256": "163e2bb54c2539e4685e33624bdcd528eb6786fbeadb265fd68e82312766e715",
+      "current_sha256": "432fa618624d0de557113b8efb4da68752008cc14f3d0395b89197d5239763c5",
+      "original_matches": false
+    },
+    "Private/second-known-price-roll-freeze.json": {
+      "expected_sha256": "234897b90557cb44eda32c7ce0d6756a60841980f6eccfbe6ccc9f582c257e9d",
+      "current_sha256": "576ecc9071b6eeaa4a1b4475a37a753abd16303456ce63101de690a9f1201343",
+      "original_matches": false
+    }
+  },
+  "known_source_freeze_sha256": "c3ddf25c74a0f9798a469c7401a3a67416018aa339d0a6746b162db5fc9d5c6a",
+  "known_acceptance_sha256": "61ecb4431327aa4fb5994fc1d64ca765b82ea0f6e7bd09fa98566692e5b33f5f",
+  "known_independent_audit_sha256": "a1f071d15a1ce8eb5d1af4cca70b7b87d2f276a1a917c232e461a538740d609c",
+  "all12_known_month_manifests_unchanged": true,
+  "sealed_integrity": {
+    "latest_development_decision_day": "2024-11-22",
+    "all_saved_cases_before_sealed_boundary": true,
+    "sealed_candidate_intent_attempt_paths_absent": true,
+    "no_models_fitted": true
+  },
+  "review_scope": {
+    "development_label_files_generated": true,
+    "candidate_clocks_parsed_to_verify_period": true,
+    "price_coverage_and_counts_viewed": true,
+    "development_PnL_or_mean_returns_or_equity_or_model_performance_not_viewed": true,
+    "computed_but_unsaved_process_means_not_viewed": true,
+    "not_claiming_development_labels_unseen": true
+  },
+  "fixture_limit": "The18 training-consumer synthetic groups did not execute producer filesystem paths. The prior inverse-AST identity was insufficient: an unchanged output also reverses to itself. Real producer\u2192filesystem\u2192consumer integration was missing.",
+  "recovery_required": [
+    "Obtain explicit Root/Claude authorization; keep original attempt/incident immutable and sealed year closed.",
+    "Use fresh physically isolated output namespace with read-only original price/protocol inputs; deny every write/rename/delete outside the attempt, including temporary and failure/progress paths.",
+    "No parameter, chronology, cohort, fill, risk, exclusion or label changes. Eagerly journal original decision plans before delayed_shadow and original results afterward, preserving callable arguments and returned object identity.",
+    "Require exact 1145 decision-plan count, all775 per-day feature-plan hashes, and byte-identical1143 filled JSONL/CSV, exclusions and ambiguities against preserved incident copies. Do not recover from fills alone.",
+    "Independently audit all recovered entry/cancel/exit clocks, five features/costs/R and baseline pending-state parity before fit. Treat any disagreement as STOP, never choose the better result.",
+    "Restore original known private JSONL/CSV/schedule only from authentic backup or reconstruction matching their pre-incident SHA. Other missing original bytes must remain explicitly unavailable/reconstructed, never fabricated.",
+    "Timestamp/elapsed-dependent original public metadata requires authentic backup/published bytes for byte-identical restoration; deterministic replay cannot recreate those original timestamps.",
+    "Require full real-filesystem synthetic integration through progress, decision/result journals, CSV/JSONL, summary and release; old broken mapping negative control must fail before known/input/sealed sentinels change.",
+    "Only after immutable recovery receipt and Root GO may canonical role publication/model fitting proceed. Preserve all failed attempts and make no new paid data calls."
+  ],
+  "additional_Claude_conditions": [
+    "Publish this incident and strict recovery criteria before actual recovery.",
+    "Original input roots OS-read-only, network denied; separate empty output namespace.",
+    "All1143 filled JSONL/CSV bytes and all775 plan counts/hashes must match original evidence, never pick a favorable version.",
+    "Known original scientific files must match their three surviving original SHAs; original timestamp metadata only from genuine backup/published bytes, otherwise explicitly unavailable.",
+    "All3mode write-path allowlists nonoverlapping; sealed mode synthetic-only before real model publication.",
+    "No hypothesis, parameter, feature, chronology, label, fee, stress or qualification change."
+  ],
+  "no_recovery_executed": true,
+  "no_model_fits": true,
+  "no_sealed_label_run": true
+}

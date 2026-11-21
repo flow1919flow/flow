@@ -1,0 +1,68 @@
+{
+  "status": "PASS_SYNTHETIC_CANONICAL_APPLY_FILESYSTEM",
+  "checks_passed": 13,
+  "checks": [
+    {
+      "test": "successful_full20file_publication",
+      "all_exact_bytes_and_pointer_scope_correct": true,
+      "all_writes_intent_journaled_before_commit": true,
+      "source_raw_incident_failed_attempt_unchanged": true,
+      "no_legacy_completion_fabricated": true
+    },
+    {
+      "test": "changed_preimage",
+      "blocked_before_any_canonical_write": true
+    },
+    {
+      "test": "existing_new_target",
+      "blocked_before_any_canonical_write": true
+    },
+    {
+      "test": "changed_source",
+      "blocked_before_any_canonical_write": true
+    },
+    {
+      "test": "Source_destination",
+      "blocked_before_any_canonical_write": true
+    },
+    {
+      "test": "Raw_destination",
+      "blocked_before_any_canonical_write": true
+    },
+    {
+      "test": "Incident_destination",
+      "blocked_before_any_canonical_write": true
+    },
+    {
+      "test": "staging_file_exists",
+      "blocked_before_any_canonical_write": true
+    },
+    {
+      "test": "crash_after_first_commit",
+      "partial_state_durable_no_model_unlock": true,
+      "silent_retry_blocked": true
+    },
+    {
+      "test": "atomic_replace_failure",
+      "original_target_atomic_preimage_retained": true,
+      "intent_durable": true
+    },
+    {
+      "test": "actual_apply_entry_requires_separate_explicit_Root_GO"
+    },
+    {
+      "test": "actual_entry_source_SHA_guard_rejects_before_original_preflight"
+    },
+    {
+      "test": "runtime_guard_denies_unlisted_write_delete_rename_and_allows_journal"
+    }
+  ],
+  "source_sha256": {
+    "test_apply_synthetic.py": "8a365e50a379e3ce83cd5a171e925ccc0198ac33984616a7f47ea795cb3b998e",
+    "apply_canonical.py": "2a4a9e291873d1e812838049809dd5b59830114a0583fa65cb89f5ad2b7243cd",
+    "plan_canonical.py": "4b0fc3925eb367f56e99638a4048ab7f0eb6afce7d15b7055594979bc0f49dd4"
+  },
+  "all_original_roots_synthetic_temporary_only": true,
+  "no_actual_original_root_read_or_write": true,
+  "no_model_fit_or_unlock": true
+}

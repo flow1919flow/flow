@@ -1,0 +1,19 @@
+{
+  "status": "FROZEN_CANONICAL_APPLY_BEFORE_ACTUAL_PUBLICATION",
+  "sources_sha256": {
+    "test_apply_synthetic.py": "8a365e50a379e3ce83cd5a171e925ccc0198ac33984616a7f47ea795cb3b998e",
+    "apply_canonical.py": "2a4a9e291873d1e812838049809dd5b59830114a0583fa65cb89f5ad2b7243cd",
+    "plan_canonical.py": "4b0fc3925eb367f56e99638a4048ab7f0eb6afce7d15b7055594979bc0f49dd4"
+  },
+  "synthetic_proof_sha256": "ef499e96af87e6818f17fada6219257a75ac6de0a85af186a9859d5d7099ae27",
+  "synthetic_groups": 13,
+  "private_plan_sha256": "98627026c1b265f0a90b133c6647b3e001befc76a01f7b8a9c01a0bbc53b50ea",
+  "redacted20_target_plan_sha256": "0097158f06bf0fb344321d1879bb6ed8f852dd9b5d3006b0bf747ae15183c1ee",
+  "no_original_writes_performed": true,
+  "requires_separate_published_Root_GO": true,
+  "all_copy_source_hashes_and_target_preimages_checked": true,
+  "durable_precommit_journal_and_atomic_posthashes": true,
+  "no_legacy_completion_fabricated": true,
+  "no_Source_Raw_Incident_mutation": true,
+  "no_model_unlock": true
+}

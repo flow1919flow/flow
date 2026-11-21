@@ -1,0 +1,23 @@
+{
+  "status": "ROOT_REVIEW_BOTH_EXACT_RECOVERIES_PASS_NOT_YET_PROMOTED",
+  "utc": "2026-11-21T04:31:41.176906+00:00",
+  "checks": {
+    "known": {
+      "acceptance_sha256": "9ac0d611f1e325bdd01a8cb9bf33abe700fd4ef2349c6db30a21bef138e245ea",
+      "filled_cases": 348,
+      "plans": 348,
+      "all_original_roots_postchecks": true
+    },
+    "development": {
+      "acceptance_sha256": "75680f90af83ffb61b89b4ca798737c53b4c4fe7a83a693befae29a4e0f01d3d",
+      "filled_cases": 1143,
+      "plans": 1145,
+      "all_original_roots_postchecks": true
+    }
+  },
+  "no_parameters_or_learning_rules_changed": true,
+  "canonical_publication_pending": true,
+  "independent_allrow_audit_pending": true,
+  "models_fitted": false,
+  "sealed_labels_opened": false
+}

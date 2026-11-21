@@ -1,0 +1,162 @@
+{
+  "schema": "es-deterministic-recovery-acceptance-v1",
+  "status": "EXACT_ORIGINAL_BYTE_AND_PLAN_MATCH",
+  "role": "known",
+  "output_root": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/Attempts/known-byte-recovery-1",
+  "utc": "2026-11-21T04:25:56.530037+00:00",
+  "filled_cases": 348,
+  "decision_plans": 348,
+  "plan_days": 242,
+  "resolved_entry_cancellations": 0,
+  "artifacts": {
+    "candidates_jsonl": {
+      "path_relative_to_attempt": "Private/known-candidates.jsonl",
+      "sha256": "b021d522a869d69f8893232123420cba78181c9a2f6425bae3c6973e40a2c67a"
+    },
+    "candidates_csv": {
+      "path_relative_to_attempt": "Private/known-candidates.csv",
+      "sha256": "163e2bb54c2539e4685e33624bdcd528eb6786fbeadb265fd68e82312766e715"
+    },
+    "schedule_json": {
+      "path_relative_to_attempt": "Private/known-price-roll-freeze.json",
+      "sha256": "234897b90557cb44eda32c7ce0d6756a60841980f6eccfbe6ccc9f582c257e9d"
+    },
+    "decision_plans_jsonl": {
+      "path_relative_to_attempt": "Private/known-intents-plan-journal.jsonl",
+      "sha256": "58f0b34512e23adc0eaa2346def88597063dfae75c0f6f7da6289f9f4218bfdf"
+    },
+    "intents_jsonl": {
+      "path_relative_to_attempt": "Private/known-intents.jsonl",
+      "sha256": "4f56daf29aa806177e8d959db0507e718bebba371f52a377dc91d8a9e406de49"
+    },
+    "exclusions_json": {
+      "path_relative_to_attempt": "Private/known-exclusions.json",
+      "sha256": "95ac55d1e0d8247ca5d1af936717d0ee67ef86fd123f002d5eddcea41f9f8e5e"
+    },
+    "ambiguities_json": {
+      "path_relative_to_attempt": "Private/known-ambiguities.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "feature_proof_json": {
+      "path_relative_to_attempt": "Private/known-feature-before-label-proof.json",
+      "sha256": "aa9a058c0c3dd2c4361e6a6b78cb82417915355748a3afa594f38eee7ce8aab1"
+    },
+    "intents_csv": {
+      "path_relative_to_attempt": "Private/known-intents.csv",
+      "sha256": "9f1f8b31e42c1f3a324434c7396fe5b89704d33db11d4429842968bc9ad9ba59"
+    },
+    "role_release_json": {
+      "path_relative_to_attempt": "Private/known-release.json",
+      "sha256": "487b1eb78af732d9a266871050b5f67d62721708a432fb143884072be45b24ce"
+    }
+  },
+  "known_core_expected_sha256": {
+    "candidates_jsonl": "b021d522a869d69f8893232123420cba78181c9a2f6425bae3c6973e40a2c67a",
+    "candidates_csv": "163e2bb54c2539e4685e33624bdcd528eb6786fbeadb265fd68e82312766e715",
+    "schedule_json": "234897b90557cb44eda32c7ce0d6756a60841980f6eccfbe6ccc9f582c257e9d"
+  },
+  "bindings": {
+    "source_freeze": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/Public/recovery-source-freeze.json",
+      "sha256": "a7bcf50550c58018a5dece7ee656846e6d341f00f31e95b2f8b9a918d7ce1d96"
+    },
+    "incident_manifest": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-SecondData-20261121/Private/Incidents/development-dispatch-path-20261121/incident-files.json",
+      "sha256": "b39ab8dff073d62f050a9d9f20854a7ef8b42c5f1a720374e61d14f2076ea079"
+    },
+    "incident_public_report": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-ML-20261121/Public/dispatch-incident-before-recovery.json",
+      "sha256": "fee4b2b2cc59a6050e9b60506fde9fb429f71482eab3b1eb9d11e93a8c4e3c1f"
+    },
+    "recovery_criteria": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/Public/recovery-criteria-contract.json",
+      "sha256": "e5cbe72b9ee6a16bf9211b46880383f7051f02e52d34b31274661a4fbc4ddf35"
+    },
+    "known_published_summary": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/OriginalPublished/Public/second-known-summary.json",
+      "sha256": "6121214e8a36f0a67e643046609276fec7d76e502797bd401ae598b25d8640bf"
+    },
+    "native_acceptance": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-SecondData-20261121/Public/second-native-acceptance.json",
+      "sha256": "61ecb4431327aa4fb5994fc1d64ca765b82ea0f6e7bd09fa98566692e5b33f5f"
+    },
+    "native_independent_audit": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-SecondData-20261121/Public/second-independent-audit.json",
+      "sha256": "a1f071d15a1ce8eb5d1af4cca70b7b87d2f276a1a917c232e461a538740d609c"
+    },
+    "development_price_audit": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-SecondData-20261121/Public/development-price-completeness.json",
+      "sha256": "695093932703fd2326a467bdc52b72cdd5fb721db10519379afffb0a32cfd041"
+    },
+    "development_price_root_review": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-SecondData-20261121/Public/development-price-root-review.json",
+      "sha256": "3948df80208ae749fb67fab2040eca58960a50c3b3e9d234cf8f84c57eec4afe"
+    },
+    "namespace_acceptance": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/Public/namespace-synthetic-acceptance.json",
+      "sha256": "de90b50e393d7fb2d6c6a1640ed78d17076cb419f7afbafc725612387bcf15fc"
+    },
+    "production_acceptance": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/Public/production-synthetic-acceptance-v4.json",
+      "sha256": "81e35090c9b199354b44e383b81ef1b8dda3a9cad2929910aa5e947f154b0c42"
+    },
+    "OS_acceptance": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/OSProbe/output/result-syscalls-v2.json",
+      "sha256": "d7af2ba33b36fb5c42ff8f2d4015ca73486fbea8834c70cc2ab94d34c4c01995"
+    },
+    "protocol_main": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-ML-20261121/Public/preregister-seconds-v2.json",
+      "sha256": "498b90431dfeef1f65b8aea232cdff7e9ca2a44153131a5b8c8faeba36b813fa"
+    },
+    "protocol_addendum": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-ML-20261121/Public/preregister-seconds-v2-addendum.json",
+      "sha256": "b228b39c640dc6ff5a0ef79575c4c6d9557f70eaa77732900ebcb1dc2048aba7"
+    },
+    "protocol_native": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-ML-20261121/Public/preregister-seconds-native-clarifications.json",
+      "sha256": "c9ed499b4e861afd58b208c3e5f42234826efe78ce4c548c9bb5b0c199589598"
+    },
+    "metadata_scope": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/Public/original-metadata-scope.json",
+      "sha256": "7de2365f3f0e3708de7438d5061ba1cc5652d1c285cab07250d88efd8270941e"
+    },
+    "OS_profile": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/Profiles/known-byte-recovery-1.sb",
+      "sha256": "4e346ae804d857ac02604301c69bb84dc650be9f5ea3d545d7a73c483ae32472"
+    }
+  },
+  "root_go_sha256": "e093207c3794fb52eef2e0fc7639d7a3de40ef631f07c98c01f318d3b36c74e8",
+  "immutable_input_preimages_sha256": "3d86ef68184a9def9fb4e076cf814b71cdacca934b12fa8ce2fd001468c151b3",
+  "original_ML_preimages_sha256": "897757c8b9d56bb79e89b49e149969feeae552f93668c9461422d53a98cf00c4",
+  "algorithm_mathematics_unchanged": true,
+  "output_namespace_isolated": true,
+  "no_promotion_to_originals": true,
+  "no_new_scientific_acceptance_calculation": true,
+  "no_models_fit": true,
+  "no_model_fit": true,
+  "no_selection_or_parameter_change": true,
+  "no_sealed_access": true,
+  "no_sealed_access_scope": "No sealed labels/intents/metrics; price-only bytes/warmup remain permitted",
+  "original_timestamps_fabricated": false,
+  "unavailable_original_files": [
+    "Public/second-execution-start.json",
+    "Public/second-preflight-progress.json"
+  ],
+  "unavailable_original_ephemeral_metadata": [
+    "Public/second-execution-start.json",
+    "Public/second-preflight-progress.json"
+  ],
+  "cancellation_clock_evidence": "new_deterministic_recovery_evidence_not_original_capture",
+  "all_row_independent_raw_price_audit_still_required": true,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "pyarrow": "26.0.1",
+    "databento": "0.90.0"
+  },
+  "immutable_original_Data_root_postcheck_passed": true,
+  "immutable_original_ML_root_postcheck_passed": true,
+  "finalized_utc": "2026-11-21T04:25:57.355351+00:00"
+}

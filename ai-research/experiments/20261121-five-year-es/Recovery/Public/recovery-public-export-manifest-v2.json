@@ -1,0 +1,119 @@
+{
+  "scope": "Canonical publisher and recovery-specific audit/gate frozen before apply/fit; no row data",
+  "files": [
+    {
+      "path": "PromotionProposal/apply_canonical.py",
+      "original_sha256": "2a4a9e291873d1e812838049809dd5b59830114a0583fa65cb89f5ad2b7243cd",
+      "published_sha256": "2a4a9e291873d1e812838049809dd5b59830114a0583fa65cb89f5ad2b7243cd",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "PromotionProposal/plan_canonical.py",
+      "original_sha256": "4b0fc3925eb367f56e99638a4048ab7f0eb6afce7d15b7055594979bc0f49dd4",
+      "published_sha256": "4b0fc3925eb367f56e99638a4048ab7f0eb6afce7d15b7055594979bc0f49dd4",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "PromotionProposal/test_apply_synthetic.py",
+      "original_sha256": "8a365e50a379e3ce83cd5a171e925ccc0198ac33984616a7f47ea795cb3b998e",
+      "published_sha256": "8a365e50a379e3ce83cd5a171e925ccc0198ac33984616a7f47ea795cb3b998e",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "PromotionProposal/source-freeze.json",
+      "original_sha256": "7ee9d2da60d17b155f310a7739c4f3dcec5507eb5a4910498ff386c282111be9",
+      "published_sha256": "7ee9d2da60d17b155f310a7739c4f3dcec5507eb5a4910498ff386c282111be9",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "PromotionProposal/synthetic-acceptance-v3.json",
+      "original_sha256": "ef499e96af87e6818f17fada6219257a75ac6de0a85af186a9859d5d7099ae27",
+      "published_sha256": "ef499e96af87e6818f17fada6219257a75ac6de0a85af186a9859d5d7099ae27",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "PromotionProposal/canonical-plan-targets-redacted.json",
+      "original_sha256": "0097158f06bf0fb344321d1879bb6ed8f852dd9b5d3006b0bf747ae15183c1ee",
+      "published_sha256": "0097158f06bf0fb344321d1879bb6ed8f852dd9b5d3006b0bf747ae15183c1ee",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "Independent/audit_development_recovery_release.py",
+      "original_sha256": "6eb41912fa260a54ad5440a50251a49ddcbea35317b54429529aabeea535cfbd",
+      "published_sha256": "6eb41912fa260a54ad5440a50251a49ddcbea35317b54429529aabeea535cfbd",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "Independent/external_training_gate.py",
+      "original_sha256": "26004178ddb987fe45bf763e51f4740631d10abe93f783341c0bf615e2c85589",
+      "published_sha256": "26004178ddb987fe45bf763e51f4740631d10abe93f783341c0bf615e2c85589",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "Independent/test_adapter_gate_integration_synthetic.py",
+      "original_sha256": "8292dfd06992869e52b5c2bf30eecdde29de2a57e0ef5aadff6fc25687aae5f1",
+      "published_sha256": "8292dfd06992869e52b5c2bf30eecdde29de2a57e0ef5aadff6fc25687aae5f1",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "Independent/test_audit_recovery_authorization_synthetic.py",
+      "original_sha256": "e05643d274b1eddf49ec401e13b26b4f65bd0bf3b7bd62e8cfec0096d67853aa",
+      "published_sha256": "e05643d274b1eddf49ec401e13b26b4f65bd0bf3b7bd62e8cfec0096d67853aa",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "Independent/test_external_training_gate_synthetic.py",
+      "original_sha256": "fe78816919db960e775401288d30631a59248f282ed04f861acfe1c4d564fd19",
+      "published_sha256": "fe78816919db960e775401288d30631a59248f282ed04f861acfe1c4d564fd19",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "Public/recovery-independent-audit-prepared-contract.json",
+      "original_sha256": "c5e4b493bf8074a918d0844b00cad4ee97b943ee9f474966acd27a6c67b2d4e4",
+      "published_sha256": "c5e4b493bf8074a918d0844b00cad4ee97b943ee9f474966acd27a6c67b2d4e4",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "Public/external-training-gate-prepared-contract.json",
+      "original_sha256": "38df7d13a3f01c1e60496150369bee588958d7961a8a5bd22e6d04573761ef13",
+      "published_sha256": "38df7d13a3f01c1e60496150369bee588958d7961a8a5bd22e6d04573761ef13",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "Public/adapter-external-gate-integration-synthetic-acceptance.json",
+      "original_sha256": "29eb87126a3490a1232d8490169f6e1269ae18f6d3b571c202ee7fb99f815636",
+      "published_sha256": "29eb87126a3490a1232d8490169f6e1269ae18f6d3b571c202ee7fb99f815636",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "Public/external-training-gate-synthetic-acceptance.json",
+      "original_sha256": "500fd00e1bbc4c55da9debb4e746fbb27b6a6819e8bb4518b88a0dcf49fc3321",
+      "published_sha256": "500fd00e1bbc4c55da9debb4e746fbb27b6a6819e8bb4518b88a0dcf49fc3321",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "Public/recovery-audit-authorization-synthetic-acceptance.json",
+      "original_sha256": "7ea6358c1d3136fc893ae3b3131347a3a92a1575f0029cf3103db4ff578be9e6",
+      "published_sha256": "7ea6358c1d3136fc893ae3b3131347a3a92a1575f0029cf3103db4ff578be9e6",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "Public/root-recovery-byte-review.json",
+      "original_sha256": "8a50d7fa07adf4d38acec6b087e9625e0b3f79bf6615694d0f4fb4a97286022b",
+      "published_sha256": "8a50d7fa07adf4d38acec6b087e9625e0b3f79bf6615694d0f4fb4a97286022b",
+      "workspace_path_redacted": false
+    },
+    {
+      "path": "Attempts/known-byte-recovery-1/Public/recovery-acceptance.json",
+      "original_sha256": "9ac0d611f1e325bdd01a8cb9bf33abe700fd4ef2349c6db30a21bef138e245ea",
+      "published_sha256": "beb11d7d447e46c3ad0efd9e3d8a05f558ddce224308d8f1c8d9ee92017c69d6",
+      "workspace_path_redacted": true
+    },
+    {
+      "path": "Attempts/development-byte-recovery-1/Public/recovery-acceptance.json",
+      "original_sha256": "75680f90af83ffb61b89b4ca798737c53b4c4fe7a83a693befae29a4e0f01d3d",
+      "published_sha256": "8ade97fd0215796278784faf8ce44eb34f5989f79c1915b4b4ee0ec9c9f24615",
+      "workspace_path_redacted": true
+    }
+  ]
+}

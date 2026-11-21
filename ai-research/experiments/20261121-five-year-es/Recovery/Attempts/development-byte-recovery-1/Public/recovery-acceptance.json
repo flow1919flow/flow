@@ -1,0 +1,162 @@
+{
+  "schema": "es-deterministic-recovery-acceptance-v1",
+  "status": "EXACT_ORIGINAL_BYTE_AND_PLAN_MATCH",
+  "role": "development",
+  "output_root": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/Attempts/development-byte-recovery-1",
+  "utc": "2026-11-21T04:29:44.002474+00:00",
+  "filled_cases": 1143,
+  "decision_plans": 1145,
+  "plan_days": 775,
+  "resolved_entry_cancellations": 2,
+  "artifacts": {
+    "candidates_jsonl": {
+      "path_relative_to_attempt": "Private/development-candidates.jsonl",
+      "sha256": "e9ad3462256580794182a11520f05ce2e0296f609b2998e8ef72919a147145ce"
+    },
+    "candidates_csv": {
+      "path_relative_to_attempt": "Private/development-candidates.csv",
+      "sha256": "432fa618624d0de557113b8efb4da68752008cc14f3d0395b89197d5239763c5"
+    },
+    "schedule_json": {
+      "path_relative_to_attempt": "Private/development-price-roll-freeze.json",
+      "sha256": "576ecc9071b6eeaa4a1b4475a37a753abd16303456ce63101de690a9f1201343"
+    },
+    "decision_plans_jsonl": {
+      "path_relative_to_attempt": "Private/development-intents-plan-journal.jsonl",
+      "sha256": "e4769c78254db49e10dc84e1079f862be9e611ce7fec930bf73b9ef3e3365f1a"
+    },
+    "intents_jsonl": {
+      "path_relative_to_attempt": "Private/development-intents.jsonl",
+      "sha256": "696704f38c4ebd2aff28083a07ab1c366b04799711cf40791d60445c8bf6f4d2"
+    },
+    "exclusions_json": {
+      "path_relative_to_attempt": "Private/development-exclusions.json",
+      "sha256": "c12545840eea9c4d6e9e478f71ca9cb8e3b8b79468892a656d3bb40dade06dd9"
+    },
+    "ambiguities_json": {
+      "path_relative_to_attempt": "Private/development-ambiguities.json",
+      "sha256": "df03a3bda4a3a03919f0f4d19ad4680b6c00603dde3b30997175c952d815dd3c"
+    },
+    "feature_proof_json": {
+      "path_relative_to_attempt": "Private/development-feature-before-label-proof.json",
+      "sha256": "1071f17bef916db7dbcafd404ac7e10c6de872e0704d094d8c63fa382c069632"
+    },
+    "intents_csv": {
+      "path_relative_to_attempt": "Private/development-intents.csv",
+      "sha256": "dffb5b8653c5a10f4150f03919a5dcbf0d44a2547ab7bc6ad0e6e17a843ee399"
+    },
+    "role_release_json": {
+      "path_relative_to_attempt": "Private/development-release.json",
+      "sha256": "8f7adf7ed9d6ca14de9b32eba2317c10f7739418841cab1d7e7d288f1d83841f"
+    }
+  },
+  "known_core_expected_sha256": {
+    "candidates_jsonl": "b021d522a869d69f8893232123420cba78181c9a2f6425bae3c6973e40a2c67a",
+    "candidates_csv": "163e2bb54c2539e4685e33624bdcd528eb6786fbeadb265fd68e82312766e715",
+    "schedule_json": "234897b90557cb44eda32c7ce0d6756a60841980f6eccfbe6ccc9f582c257e9d"
+  },
+  "bindings": {
+    "source_freeze": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/Public/recovery-source-freeze.json",
+      "sha256": "a7bcf50550c58018a5dece7ee656846e6d341f00f31e95b2f8b9a918d7ce1d96"
+    },
+    "incident_manifest": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-SecondData-20261121/Private/Incidents/development-dispatch-path-20261121/incident-files.json",
+      "sha256": "b39ab8dff073d62f050a9d9f20854a7ef8b42c5f1a720374e61d14f2076ea079"
+    },
+    "incident_public_report": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-ML-20261121/Public/dispatch-incident-before-recovery.json",
+      "sha256": "fee4b2b2cc59a6050e9b60506fde9fb429f71482eab3b1eb9d11e93a8c4e3c1f"
+    },
+    "recovery_criteria": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/Public/recovery-criteria-contract.json",
+      "sha256": "e5cbe72b9ee6a16bf9211b46880383f7051f02e52d34b31274661a4fbc4ddf35"
+    },
+    "known_published_summary": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/OriginalPublished/Public/second-known-summary.json",
+      "sha256": "6121214e8a36f0a67e643046609276fec7d76e502797bd401ae598b25d8640bf"
+    },
+    "native_acceptance": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-SecondData-20261121/Public/second-native-acceptance.json",
+      "sha256": "61ecb4431327aa4fb5994fc1d64ca765b82ea0f6e7bd09fa98566692e5b33f5f"
+    },
+    "native_independent_audit": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-SecondData-20261121/Public/second-independent-audit.json",
+      "sha256": "a1f071d15a1ce8eb5d1af4cca70b7b87d2f276a1a917c232e461a538740d609c"
+    },
+    "development_price_audit": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-SecondData-20261121/Public/development-price-completeness.json",
+      "sha256": "695093932703fd2326a467bdc52b72cdd5fb721db10519379afffb0a32cfd041"
+    },
+    "development_price_root_review": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-SecondData-20261121/Public/development-price-root-review.json",
+      "sha256": "3948df80208ae749fb67fab2040eca58960a50c3b3e9d234cf8f84c57eec4afe"
+    },
+    "namespace_acceptance": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/Public/namespace-synthetic-acceptance.json",
+      "sha256": "de90b50e393d7fb2d6c6a1640ed78d17076cb419f7afbafc725612387bcf15fc"
+    },
+    "production_acceptance": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/Public/production-synthetic-acceptance-v4.json",
+      "sha256": "81e35090c9b199354b44e383b81ef1b8dda3a9cad2929910aa5e947f154b0c42"
+    },
+    "OS_acceptance": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/OSProbe/output/result-syscalls-v2.json",
+      "sha256": "d7af2ba33b36fb5c42ff8f2d4015ca73486fbea8834c70cc2ab94d34c4c01995"
+    },
+    "protocol_main": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-ML-20261121/Public/preregister-seconds-v2.json",
+      "sha256": "498b90431dfeef1f65b8aea232cdff7e9ca2a44153131a5b8c8faeba36b813fa"
+    },
+    "protocol_addendum": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-ML-20261121/Public/preregister-seconds-v2-addendum.json",
+      "sha256": "b228b39c640dc6ff5a0ef79575c4c6d9557f70eaa77732900ebcb1dc2048aba7"
+    },
+    "protocol_native": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-ML-20261121/Public/preregister-seconds-native-clarifications.json",
+      "sha256": "c9ed499b4e861afd58b208c3e5f42234826efe78ce4c548c9bb5b0c199589598"
+    },
+    "metadata_scope": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/Public/original-metadata-scope.json",
+      "sha256": "7de2365f3f0e3708de7438d5061ba1cc5652d1c285cab07250d88efd8270941e"
+    },
+    "OS_profile": {
+      "path": "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/Profiles/development-byte-recovery-1.sb",
+      "sha256": "59c8a3301ddf90ccc46b0a3d7c8961b5e22a573d60c8e4f8bf77d67a37510c4b"
+    }
+  },
+  "root_go_sha256": "737c888a8bc38a8e8ea56f28c859f636837b96b64dbb44c6097c9226d8c083fa",
+  "immutable_input_preimages_sha256": "3d86ef68184a9def9fb4e076cf814b71cdacca934b12fa8ce2fd001468c151b3",
+  "original_ML_preimages_sha256": "897757c8b9d56bb79e89b49e149969feeae552f93668c9461422d53a98cf00c4",
+  "algorithm_mathematics_unchanged": true,
+  "output_namespace_isolated": true,
+  "no_promotion_to_originals": true,
+  "no_new_scientific_acceptance_calculation": true,
+  "no_models_fit": true,
+  "no_model_fit": true,
+  "no_selection_or_parameter_change": true,
+  "no_sealed_access": true,
+  "no_sealed_access_scope": "No sealed labels/intents/metrics; price-only bytes/warmup remain permitted",
+  "original_timestamps_fabricated": false,
+  "unavailable_original_files": [
+    "Public/second-execution-start.json",
+    "Public/second-preflight-progress.json"
+  ],
+  "unavailable_original_ephemeral_metadata": [
+    "Public/second-execution-start.json",
+    "Public/second-preflight-progress.json"
+  ],
+  "cancellation_clock_evidence": "new_deterministic_recovery_evidence_not_original_capture",
+  "all_row_independent_raw_price_audit_still_required": true,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "pyarrow": "26.0.1",
+    "databento": "0.90.0"
+  },
+  "immutable_original_Data_root_postcheck_passed": true,
+  "immutable_original_ML_root_postcheck_passed": true,
+  "finalized_utc": "2026-11-21T04:29:44.838186+00:00"
+}

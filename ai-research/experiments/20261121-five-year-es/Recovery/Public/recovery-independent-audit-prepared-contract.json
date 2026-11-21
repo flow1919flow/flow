@@ -1,0 +1,61 @@
+{
+  "schema": "RECOVERY-INDEPENDENT-AUDIT-AUTH-CONTRACT-1",
+  "status": "PREPARED_SYNTHETIC_ONLY_NO_REAL_AUDIT_RELEASE",
+  "utc": "2026-11-21T04:29:29.390464+00:00",
+  "adapter_source": "Independent/audit_development_recovery_release.py",
+  "adapter_source_sha256": "6eb41912fa260a54ad5440a50251a49ddcbea35317b54429529aabeea535cfbd",
+  "adapter_fixture_sha256": "7ea6358c1d3136fc893ae3b3131347a3a92a1575f0029cf3103db4ff578be9e6",
+  "numeric_source_original_sha256": "cfe4d8f21b545097feca330ff69a459370e8e0bf13b1b0949c7b7df236011aa9",
+  "original_scientific_GO_sha256": "5b67d2e4501c83234cdda16679c0bbb843fa6d8f6e0fa96080c0ee19565f3597",
+  "required_authorization": {
+    "authorized": true,
+    "mode": "audit-development-recovery",
+    "adapter_source_sha256": "<published exact adapter SHA>",
+    "original_scientific_go": {
+      "path": "SecondData/Private/root-development-go.json",
+      "sha256": "5b67d2e4501c83234cdda16679c0bbb843fa6d8f6e0fa96080c0ee19565f3597"
+    },
+    "recovery_go": {
+      "path": "RecoveryRoot/Private/<actual development-recovery GO>",
+      "sha256": "<actual GO SHA>"
+    },
+    "recovery_acceptance": {
+      "path": "RecoveryRoot/Attempts/<actual development attempt>/Public/recovery-acceptance.json",
+      "sha256": "<EXACT acceptance SHA>"
+    },
+    "canonical_release": {
+      "path": "SecondData/Private/development-release.json",
+      "sha256": "<exact promoted release SHA>"
+    },
+    "recovered_labels_summary": {
+      "path": "RecoveryRoot/Attempts/<actual development attempt>/Public/development-labels-summary.json",
+      "sha256": "<authentic summary SHA>"
+    },
+    "price_completeness": {
+      "path": "SecondData/Public/development-price-completeness.json",
+      "sha256": "<original before-label price audit SHA>"
+    },
+    "original_label_attempt": {
+      "path": "SecondData/Private/Incidents/development-dispatch-path-20261121/Private/development-label-attempt.json",
+      "sha256": "87fa1e876210fe1428d66cde04743ade34d10ad88f804de8a135a1dcdbd31e54"
+    },
+    "output_root": "RecoveryRoot/AuditRuns/<fresh development audit nonce>"
+  },
+  "execution": "PYTHONDONTWRITEBYTECODE=1 work/tools/mlflow/.venv/bin/python RecoveryRoot/Independent/audit_development_recovery_release.py --authorization <Root audit GO>",
+  "output_parent_must_exist": true,
+  "output_parent": "RecoveryRoot/AuditRuns",
+  "expected_proof": "RecoveryRoot/AuditRuns/<nonce>/Public/development-independent-acceptance.json",
+  "numeric_policy": "Same original numeric function objects and same audit-body AST arithmetic. Exactly one completion-hash I/O expression now names authentic recovery acceptance. No original dispatch completion file is invented.",
+  "authorship": "Original scientific5b67 GO and new development-recovery GO retained separately; original3234 algorithm freeze distinct from newa7bc recovery control freeze.",
+  "price_temporality": "Price audit UTC must precede ORIGINAL03:57 label-attempt marker, not merely later recovery.",
+  "strong_schedule_SHA": "576ecc9071b6eeaa4a1b4475a37a753abd16303456ce63101de690a9f1201343",
+  "original_roots_write_policy": "No writes to original DataRoot or MLRoot; bytecode disabled before imports and all audit outputs routed to fresh RecoveryRoot.",
+  "original_numeric_source_or_learning_code_modified": false,
+  "real_audit_run": false,
+  "real_labels_read": false,
+  "sealed_files_opened": false,
+  "producer_consumer_integration_fixture": "Public/adapter-external-gate-integration-synthetic-acceptance.json",
+  "producer_consumer_integration_sha256": "29eb87126a3490a1232d8490169f6e1269ae18f6d3b571c202ee7fb99f815636",
+  "producer_consumer_integration_groups": 3,
+  "integration_scope": "Actual adapter main/report writer -> filesystem -> actual Gate.verify; numeric market checks explicitly synthetic. Failed adapter proof and wrong cancellation count rejected; no real labels or fit."
+}

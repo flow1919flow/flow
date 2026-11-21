@@ -1,0 +1,243 @@
+{
+  "status": "EXTERNAL_VENDOR_WARNING_PRICE_ONLY_REVIEW",
+  "role": "sealed",
+  "utc": "2026-11-21T04:44:39.317394+00:00",
+  "price_completeness_sha256": "6f7ae2ff1080a76c638ca5bde79fcd66cba0d6415ade10486992aa2e409abb08",
+  "vendor_warning_annotation_sha256": "801631c36f3d2e323d7b51507809d3ce9abedece833736bc4dfb168c9995ca50",
+  "vendor_warning_annotation_complete_coverage": false,
+  "vendor_warning_previous_annotation_sha256": "91f7416211645dec5cefff92105eb6fffc950f3d8de219c96c6423e1f7314d44",
+  "absence_of_warning_means": "UNKNOWN_not_certified_healthy",
+  "FOMC_descriptive_flags_sha256": "e683fe58c8d551c1a1eb754f688a7b0a824d1ed4e721c4e34c1cf778bb5c3c98",
+  "source_sha256": "6a07ca6b13a82c92ff98439778c6149177f48ed0e63e53c7dbf3e97f0931f3a2",
+  "warning_dates": [
+    {
+      "day": "2021-12-05",
+      "vendor_warning": {
+        "day": "2021-12-05",
+        "status": "degraded",
+        "evidence": "SDK reduced-quality warning"
+      },
+      "calendar_open": false,
+      "FOMC_descriptive_flags": null,
+      "outcomes_read": false,
+      "handling": "NoRTHcalendar session; no manufactured price gap or candidate exclusion"
+    },
+    {
+      "day": "2022-01-02",
+      "vendor_warning": {
+        "day": "2022-01-02",
+        "status": "degraded",
+        "evidence": "SDK reduced-quality warning"
+      },
+      "calendar_open": false,
+      "FOMC_descriptive_flags": null,
+      "outcomes_read": false,
+      "handling": "NoRTHcalendar session; no manufactured price gap or candidate exclusion"
+    },
+    {
+      "day": "2022-11-06",
+      "vendor_warning": {
+        "day": "2022-11-06",
+        "status": "degraded",
+        "evidence": "SDK reduced-quality warning"
+      },
+      "calendar_open": false,
+      "FOMC_descriptive_flags": null,
+      "outcomes_read": false,
+      "handling": "NoRTHcalendar session; no manufactured price gap or candidate exclusion"
+    },
+    {
+      "day": "2024-09-18",
+      "vendor_warning": {
+        "day": "2024-09-18",
+        "status": "degraded",
+        "evidence": "SDK reduced-quality warning"
+      },
+      "calendar_open": true,
+      "FOMC_descriptive_flags": {
+        "day": "2024-09-18",
+        "scheduled_FOMC_decision_day": true,
+        "FOMC_press_conference_day": true,
+        "FOMC_minutes_release_day": false,
+        "other_FOMC_notation_vote_day": false,
+        "events": [
+          {
+            "event_type": "scheduled_FOMC_policy_decision",
+            "associated_decision_date": "2024-09-18",
+            "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          },
+          {
+            "event_type": "FOMC_press_conference_linked_on_official_calendar",
+            "associated_decision_date": "2024-09-18",
+            "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          }
+        ]
+      },
+      "outcomes_read": false,
+      "handling": "Outsidecurrentroleandknownbaseline;nooutcomesread"
+    },
+    {
+      "day": "2025-11-28",
+      "vendor_warning": {
+        "day": "2025-11-28",
+        "status": "degraded",
+        "evidence": "SDK reduced-quality warning"
+      },
+      "calendar_open": true,
+      "FOMC_descriptive_flags": null,
+      "outcomes_read": false,
+      "scope": "known_DATA_acceptance_only",
+      "raw_symbol": "ESZ5",
+      "calendar_status": "exact_native_session_metadata",
+      "session_open_CT": "2025-11-28T08:30:00-06:00",
+      "session_close_CT": "2025-11-28T12:15:00-06:00",
+      "flatten_CT": "2025-11-28T12:14:00-06:00",
+      "first_print_CT": "2025-11-28T08:30:00-06:00",
+      "last_print_CT": "2025-11-28T12:14:59-06:00",
+      "price_coverage": {
+        "day": "2025-11-28",
+        "raw_symbol": "ESZ5",
+        "second_records": 11800,
+        "rth_volume": 300011,
+        "expected_second_intervals": 13500,
+        "absent_print_intervals": 1700,
+        "observed_5m_bars": 45,
+        "expected_5m_bars": 45,
+        "missing_5m_buckets": [],
+        "complete_5m_grid": true,
+        "first_ns": 1764340200000000000,
+        "last_ns": 1764353699000000000,
+        "first_present_offset_seconds": 0,
+        "last_absent_seconds": 0,
+        "max_internal_absent_seconds": 5,
+        "max_absent_run_seconds": 5,
+        "quality_flags": [
+          "provider_reported_degraded_known_year_retained"
+        ]
+      },
+      "warmup_complete": true,
+      "warning_day_shard_sha256": "c4ae615f95e1c5ea82169b057f7eeb6fd6e58ae93cf00628a656c15f3df5d5ee",
+      "handling": "Retainwithreportedwarningandfrozeneligibility;nooutcome-baseddatefilter"
+    },
+    {
+      "day": "2026-01-31",
+      "vendor_warning": {
+        "day": "2026-01-31",
+        "status": "degraded",
+        "evidence": "SDK reduced-quality warning"
+      },
+      "calendar_open": false,
+      "FOMC_descriptive_flags": null,
+      "outcomes_read": false,
+      "handling": "NoRTHcalendar session; no manufactured price gap or candidate exclusion"
+    },
+    {
+      "day": "2025-09-17",
+      "vendor_warning": {
+        "day": "2025-09-17",
+        "status": "degraded",
+        "evidence": "Actual SDK reduced-quality warning during completed2025-09 monthlyrequest"
+      },
+      "calendar_open": true,
+      "FOMC_descriptive_flags": {
+        "day": "2025-09-17",
+        "scheduled_FOMC_decision_day": true,
+        "FOMC_press_conference_day": true,
+        "FOMC_minutes_release_day": false,
+        "other_FOMC_notation_vote_day": false,
+        "events": [
+          {
+            "event_type": "scheduled_FOMC_policy_decision",
+            "associated_decision_date": "2025-09-17",
+            "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          },
+          {
+            "event_type": "FOMC_press_conference_linked_on_official_calendar",
+            "associated_decision_date": "2025-09-17",
+            "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          }
+        ]
+      },
+      "outcomes_read": false,
+      "scope": "sealed",
+      "raw_symbol": "ESZ5",
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated",
+      "session_open_CT": "2025-09-17T08:30:00-05:00",
+      "session_close_CT": "2025-09-17T16:00:00-05:00",
+      "flatten_CT": "2025-09-17T15:09:00-05:00",
+      "first_print_CT": "2025-09-17T08:30:00-05:00",
+      "last_print_CT": "2025-09-17T15:59:59-05:00",
+      "price_coverage": {
+        "day": "2025-09-17",
+        "raw_symbol": "ESZ5",
+        "second_records": 21456,
+        "rth_volume": 1286799,
+        "expected_second_intervals": 27000,
+        "absent_print_intervals": 5544,
+        "observed_5m_bars": 90,
+        "expected_5m_bars": 90,
+        "missing_5m_buckets": [],
+        "complete_5m_grid": true,
+        "first_ns": 1758115800000000000,
+        "last_ns": 1758142799000000000,
+        "first_present_offset_seconds": 0,
+        "last_absent_seconds": 0,
+        "max_internal_absent_seconds": 26,
+        "max_absent_run_seconds": 26,
+        "quality_flags": [
+          "no_explicit_vendor_degradation_flag_recorded"
+        ]
+      },
+      "warmup_complete": true,
+      "warning_day_shard_sha256": "49a82392401b798128541afc4f5fec4eb4e91289f6f7c9fd1326299d3515cd65",
+      "handling": "Retainwithreportedwarningandfrozeneligibility;nooutcome-baseddatefilter"
+    },
+    {
+      "day": "2025-09-24",
+      "vendor_warning": {
+        "day": "2025-09-24",
+        "status": "degraded",
+        "evidence": "Actual SDK reduced-quality warning during completed2025-09 monthlyrequest"
+      },
+      "calendar_open": true,
+      "FOMC_descriptive_flags": null,
+      "outcomes_read": false,
+      "scope": "sealed",
+      "raw_symbol": "ESZ5",
+      "calendar_status": "versioned_CME_Globex_rule_price_corroborated",
+      "session_open_CT": "2025-09-24T08:30:00-05:00",
+      "session_close_CT": "2025-09-24T16:00:00-05:00",
+      "flatten_CT": "2025-09-24T15:09:00-05:00",
+      "first_print_CT": "2025-09-24T08:30:00-05:00",
+      "last_print_CT": "2025-09-24T15:59:59-05:00",
+      "price_coverage": {
+        "day": "2025-09-24",
+        "raw_symbol": "ESZ5",
+        "second_records": 22483,
+        "rth_volume": 1072814,
+        "expected_second_intervals": 27000,
+        "absent_print_intervals": 4517,
+        "observed_5m_bars": 90,
+        "expected_5m_bars": 90,
+        "missing_5m_buckets": [],
+        "complete_5m_grid": true,
+        "first_ns": 1758720600000000000,
+        "last_ns": 1758747599000000000,
+        "first_present_offset_seconds": 0,
+        "last_absent_seconds": 0,
+        "max_internal_absent_seconds": 28,
+        "max_absent_run_seconds": 28,
+        "quality_flags": [
+          "no_explicit_vendor_degradation_flag_recorded"
+        ]
+      },
+      "warmup_complete": true,
+      "warning_day_shard_sha256": "49a82392401b798128541afc4f5fec4eb4e91289f6f7c9fd1326299d3515cd65",
+      "handling": "Retainwithreportedwarningandfrozeneligibility;nooutcome-baseddatefilter"
+    }
+  ],
+  "source_or_price_cache_changed": false,
+  "date_filter_changed": false,
+  "features_or_weights_changed": false,
+  "no_candidates_labels_or_model_performance_read": true
+}

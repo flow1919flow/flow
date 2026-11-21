@@ -1,0 +1,65 @@
+{
+  "files": [
+    {
+      "path": "Recovery/Independent/prepare_fit_os_profile.py",
+      "original_sha256": "c07707d9a8551f83352d7ccc00e400a9c63686a0e56cbbc33be8342af89a6cee",
+      "published_sha256": "c07707d9a8551f83352d7ccc00e400a9c63686a0e56cbbc33be8342af89a6cee",
+      "path_redacted": false
+    },
+    {
+      "path": "Recovery/Independent/test_fit_os_profile_synthetic.py",
+      "original_sha256": "8d5163041cef80080997b54eadd1e122a0958c71a897c8896cad913f3abdb4b5",
+      "published_sha256": "8d5163041cef80080997b54eadd1e122a0958c71a897c8896cad913f3abdb4b5",
+      "path_redacted": false
+    },
+    {
+      "path": "Recovery/OSProbe/fit-frozen-trainer-exact-outputs.sb",
+      "original_sha256": "75aff47ea5273aad37487deb419e5b31473eaf38ce6faf2ac82d4854aa078580",
+      "published_sha256": "4d960f960ffa533ff423d85e64fe2287dde266cd17e5607ceabfaca3bb43c979",
+      "path_redacted": true
+    },
+    {
+      "path": "Recovery/Public/fit-os-profile-synthetic-acceptance.json",
+      "original_sha256": "5484562ed5fb67b864e938f0fe6898b5c1e28d687ed949be069b759dcad68620",
+      "published_sha256": "5484562ed5fb67b864e938f0fe6898b5c1e28d687ed949be069b759dcad68620",
+      "path_redacted": false
+    },
+    {
+      "path": "Recovery/Public/external-training-gate-github-receipt.json",
+      "original_sha256": "0b437148e74fbaf5d9b23b3a6b4bffa65498d2a443ae0c2377d0d599b7f1bda2",
+      "published_sha256": "0b437148e74fbaf5d9b23b3a6b4bffa65498d2a443ae0c2377d0d599b7f1bda2",
+      "path_redacted": false
+    },
+    {
+      "path": "Recovery/ApplyRuns/canonical-publication-1/posthash-proof.json",
+      "original_sha256": "65ae273741d796c3e46fbdef3f520bc06eed03760284d972e397906224f73b53",
+      "published_sha256": "65ae273741d796c3e46fbdef3f520bc06eed03760284d972e397906224f73b53",
+      "path_redacted": false
+    },
+    {
+      "path": "Recovery/AuditRuns/development-recovery-audit-2/Public/development-independent-acceptance.json",
+      "original_sha256": "6e00c3c2920f5f73b2dadc1b18b4241f23a816b42a47cc48d0c2526cd03009d9",
+      "published_sha256": "6e00c3c2920f5f73b2dadc1b18b4241f23a816b42a47cc48d0c2526cd03009d9",
+      "path_redacted": false
+    },
+    {
+      "path": "Recovery/Public/claude-recovery-review-20261121.json",
+      "original_sha256": "60af9f4362f71ca839d0f9a19525385baf1f23906f8eb0552e5f9d411ce4afe4",
+      "published_sha256": "60af9f4362f71ca839d0f9a19525385baf1f23906f8eb0552e5f9d411ce4afe4",
+      "path_redacted": false
+    },
+    {
+      "path": "Seconds/Public/sealed-vendor-warning-price-review.json",
+      "original_sha256": "287d0694bee8b2a34f67703c007e82203ee538fd3b5a01445314ef9152215595",
+      "published_sha256": "287d0694bee8b2a34f67703c007e82203ee538fd3b5a01445314ef9152215595",
+      "path_redacted": false
+    },
+    {
+      "path": "Seconds/Public/sealed-price-root-review.json",
+      "original_sha256": "f56150397062bf5cf16973fe185ca56cab8237ff438eecaa2e7610d43e83ec4f",
+      "published_sha256": "f56150397062bf5cf16973fe185ca56cab8237ff438eecaa2e7610d43e83ec4f",
+      "path_redacted": false
+    }
+  ],
+  "allrow_audit_passed_before_fit": true
+}

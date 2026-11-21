@@ -1,0 +1,19 @@
+{
+  "status": "ROOT_PRICE_ONLY_REVIEW_PASS_BEFORE_SEALED_LABELS",
+  "utc": "2026-11-21T04:45:28.009256+00:00",
+  "price_audit_sha256": "6f7ae2ff1080a76c638ca5bde79fcd66cba0d6415ade10486992aa2e409abb08",
+  "warning_price_join_sha256": "287d0694bee8b2a34f67703c007e82203ee538fd3b5a01445314ef9152215595",
+  "role": "sealed",
+  "sessions": 256,
+  "records": 5807701,
+  "no_incomplete_current_or_prior5_grid": true,
+  "source_warning_days_retained": [
+    "2025-09-17",
+    "2025-09-24"
+  ],
+  "warning_absence": "UNKNOWN_not_certified_healthy",
+  "absent_seconds_are_not_automatically_feedloss": true,
+  "no_outcome_based_date_filter": true,
+  "labels_or_model_performance_opened": false,
+  "does_not_authorize_unsealing": true
+}

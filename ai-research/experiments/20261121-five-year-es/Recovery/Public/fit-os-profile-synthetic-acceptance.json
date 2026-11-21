@@ -1,0 +1,20 @@
+{
+  "schema": "FROZEN-FIT-OS-EXACT-OUTPUT-SYNTHETIC-1",
+  "status": "PASS_OS_SYSCALL_WRITE_AND_SEALED_READ_CONTROLS",
+  "utc": "2026-11-21T04:47:55.877338+00:00",
+  "profile_sha256": "75aff47ea5273aad37487deb419e5b31473eaf38ce6faf2ac82d4854aa078580",
+  "profile_builder_sha256": "c07707d9a8551f83352d7ccc00e400a9c63686a0e56cbbc33be8342af89a6cee",
+  "fixture_source_sha256": "8d5163041cef80080997b54eadd1e122a0958c71a897c8896cad913f3abdb4b5",
+  "actual_sandbox_exec_exercised": true,
+  "controls": {
+    "protected_operations_denied": 18,
+    "all_allowed_writes_and_atomic_replacements": true,
+    "sealed_read_denied": true,
+    "price_read_allowed": true,
+    "unregistered_output_denied": true,
+    "numpy_sklearn_import_without_fit": true
+  },
+  "synthetic_roots_only": true,
+  "actual_fit_or_real_label_read": false,
+  "original_roots_written": false
+}

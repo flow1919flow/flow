@@ -1,0 +1,8 @@
+{
+  "published": true,
+  "publication_commit": "e712236c0d625f253391fd930b1e9a2a3c994067",
+  "gate_source_sha256": "26004178ddb987fe45bf763e51f4740631d10abe93f783341c0bf615e2c85589",
+  "published_before_fit": true,
+  "export_manifest_sha256": "0a4b920bab768ffe3ae018b8c7d54c35ff4fb41a379c6df9b484ee1812c529e7",
+  "fixtures_sha256": "10002183a256664270e7684a657728b343e528f6f3fd7164075b559a9228e35b"
+}

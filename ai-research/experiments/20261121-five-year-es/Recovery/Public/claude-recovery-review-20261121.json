@@ -1,0 +1,12 @@
+{
+  "status": "ACTUAL_NATIVE_CLAUDE_REVIEW_READ",
+  "utc": "2026-11-21T04:45:28.009616+00:00",
+  "source": "Existing Claude desktop chat Backtest von Scotts Setups - Nautilus, response126 visible",
+  "methodological_objection": false,
+  "not_independent_recomputation": true,
+  "conditional_requirements": [
+    "New sealed producer must byte-reproduce actual development1145 plans775 day hashes1143 fills before sealed execution; synthetic-only is insufficient",
+    "Freeze first-label-byte technical-failure rule before sealed execution: no silent retry; prelabel retry requires incident, postlabel recovery only unchanged code and exact hashes, code change ends final test"
+  ],
+  "no_new_models_or_thresholds": true
+}

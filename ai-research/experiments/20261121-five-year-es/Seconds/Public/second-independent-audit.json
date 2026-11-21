@@ -1,0 +1,33 @@
+{
+  "status": "PASS_INDEPENDENT_RAW_PRICE_FILL_AND_METRIC_AUDIT",
+  "utc": "2026-11-21T03:21:07.766457+00:00",
+  "cases_verified": 348,
+  "native_cases": 347,
+  "independently_matched": 347,
+  "independent_NetR_Spearman": 0.9875131340216293,
+  "independent_sign_agreement": 0.9913544668587896,
+  "independent_signed_mean_R_error": -0.017820687944580204,
+  "independent_mean_absolute_R_error": 0.040128011456127245,
+  "max_normal_or_stress_net_USD_reconstruction_error": 0.0,
+  "max_NetR_reconstruction_error": 0.0,
+  "max_target_path_feature_error": 0.0,
+  "max_decision_BB_feature_error": 9.094947017729282e-13,
+  "all_entry_exit_first_present_Open_deadlines_verified": true,
+  "all348_first_exit_intents_independently_reconstructed": true,
+  "liquidation_guard_and_adverse_fill_ticks_verified": true,
+  "precommit_completed_feature_clocks_verified": true,
+  "ambiguity_seconds": 0,
+  "exclusion_reasons": {
+    "consumed_consensus_at_or_after_flatten": 22,
+    "decision_trade_already_beyond_stop": 12,
+    "consumed_consensus_incomplete_prior_five_same_contract_warmup": 2
+  },
+  "degraded_date_case_retained": 1,
+  "frozen_sources_and_primary_outputs_unchanged": true,
+  "no_new_signal_reconstruction": true,
+  "no_older_or_sealed_labels": true,
+  "no_models_fit": true,
+  "acceptance_sha256": "61ecb4431327aa4fb5994fc1d64ca765b82ea0f6e7bd09fa98566692e5b33f5f",
+  "candidate_jsonl_sha256": "b021d522a869d69f8893232123420cba78181c9a2f6425bae3c6973e40a2c67a",
+  "audit_source_sha256": "2f56030d626fc8c95cdf3521ce385578c4e8f3ae9b439baa6028a0cbbfe83cf5"
+}

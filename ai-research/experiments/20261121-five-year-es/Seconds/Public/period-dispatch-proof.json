@@ -1,0 +1,89 @@
+{
+  "status": "PREPARED_NO_OLDER_LABELS",
+  "utc": "2026-11-21T03:28:52.703345+00:00",
+  "known_source_freeze_sha256": "c3ddf25c74a0f9798a469c7401a3a67416018aa339d0a6746b162db5fc9d5c6a",
+  "known_kernel_sha256": "9a39d551d80a51a93d74b761ee253e340679d621344a42d06bc2aac3225cc9b2",
+  "roles": {
+    "development": {
+      "date_range": [
+        "2021-11-24",
+        "2024-11-24"
+      ],
+      "required_full_months": [
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06",
+        "2022-07",
+        "2022-08",
+        "2022-09",
+        "2022-10",
+        "2022-11",
+        "2022-12",
+        "2023-01",
+        "2023-02",
+        "2023-03",
+        "2023-04",
+        "2023-05",
+        "2023-06",
+        "2023-07",
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2023-11",
+        "2023-12",
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11"
+      ],
+      "generated_source_sha256": "b57022cdcd9207c351abb70e95192f1709e7e45b3f250355fe64cb726c45a728",
+      "normalized_AST_exactly_equals_frozen_known_run": true,
+      "only_literal_period_outputs_and_metadata_changed": true
+    },
+    "sealed": {
+      "date_range": [
+        "2024-11-24",
+        "2025-11-24"
+      ],
+      "required_full_months": [
+        "2024-11",
+        "2024-12",
+        "2025-01",
+        "2025-02",
+        "2025-03",
+        "2025-04",
+        "2025-05",
+        "2025-06",
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2025-11"
+      ],
+      "generated_source_sha256": "28d2aeaf43a8f9534637ff5d3fff694b886ec6f397c680f69d9891a6245209f1",
+      "normalized_AST_exactly_equals_frozen_known_run": true,
+      "only_literal_period_outputs_and_metadata_changed": true
+    }
+  },
+  "global_bindings_changed_only": [
+    "authorize:roleintegrity/modelguard",
+    "known_sources:requiredrolemonths+calendar",
+    "acceptance:completion/baselineprovenance",
+    "KNOWN_MONTHS:fixedroleinputmonths",
+    "delayed_shadow:transparentidentity-returnintentcapture"
+  ],
+  "known_source_untouched": true,
+  "no_signals_or_labels_or_models": true
+}

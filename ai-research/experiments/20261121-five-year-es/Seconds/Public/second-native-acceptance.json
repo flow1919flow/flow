@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "accepted": true,
+  "utc": "2026-11-21T03:19:17.788755+00:00",
+  "thresholds": {
+    "minimum_matches": 100,
+    "minimum_native_recall": 0.7,
+    "minimum_second_precision": 0.7,
+    "minimum_NettoR_Spearman": 0.6,
+    "minimum_stress_profit_sign_agreement": 0.75,
+    "maximum_absolute_signed_mean_R_error": 0.05
+  },
+  "checks": {
+    "minimum_matches": true,
+    "minimum_native_recall": true,
+    "minimum_second_precision": true,
+    "minimum_NettoR_Spearman": true,
+    "minimum_stress_profit_sign_agreement": true,
+    "maximum_absolute_signed_mean_R_error": true
+  },
+  "metrics": {
+    "native_candidates": 347,
+    "second_candidates": 348,
+    "matches": 347,
+    "native_recall": 1.0,
+    "second_precision": 0.9971264367816092,
+    "NettoR_Spearman": 0.9875131340216293,
+    "stress_profit_sign_agreement": 0.9913544668587896,
+    "mean_net_R_error_second_minus_native": -0.017820687944580204,
+    "absolute_signed_mean_R_error": 0.017820687944580204,
+    "mean_absolute_net_R_error": 0.040128011456127245,
+    "mean_stress_USD_error": -11.743515850144094,
+    "mean_absolute_stress_USD_error": 24.207492795389047,
+    "median_absolute_decision_offset_seconds": 0.534969647,
+    "max_absolute_decision_offset_seconds": 0.999948223
+  },
+  "feature_deviations": {
+    "risk": {
+      "mean_signed": 0.18011527377521416,
+      "mean_absolute": 13.148414985590778,
+      "max_absolute": 187.5
+    },
+    "slope": {
+      "mean_signed": 0.0,
+      "mean_absolute": 0.0,
+      "max_absolute": 0.0
+    },
+    "relvol": {
+      "mean_signed": 0.0,
+      "mean_absolute": 0.0,
+      "max_absolute": 0.0
+    },
+    "session_minute": {
+      "mean_signed": 0.008797460034630809,
+      "mean_absolute": 0.008797460034630809,
+      "max_absolute": 0.016665803716666667
+    }
+  },
+  "ambiguous_native_cases_never_pruned": true,
+  "native_reference_denominator": 347,
+  "sourcehashes": {
+    "source_freeze_sha256": "c3ddf25c74a0f9798a469c7401a3a67416018aa339d0a6746b162db5fc9d5c6a",
+    "root_go_sha256": "871317a867245fd4e0ff18272a439501a143b4a66b84944d672b5c37dd4d7c2d",
+    "known_schedule_sha256": "234897b90557cb44eda32c7ce0d6756a60841980f6eccfbe6ccc9f582c257e9d",
+    "month_manifest_sha256": {
+      "2025-11": "e50e983919213b1c206296f61d05ad110ace49c9daba75efa5e9f7a7ad4778c2",
+      "2025-12": "c6d83506ac14f79da37dbc5e95de0af9548edfe1b28284e60912b37850c41260",
+      "2026-01": "d4a2957c30fdf4b8e8e083ec325a4ecafabcd1c0d49ef047d31a459c7a5c5b1f",
+      "2026-02": "70b79c6d06334ef02c2d9334d484d52ab6ad8c90b2fcec50e2e7a68ac1dbc9ff",
+      "2026-03": "ee1ccbd7227a50e9be5a87b2add0c7f3bc1934d90ba5ecbeee405df28b28e2a4",
+      "2026-04": "d6534ec6b32f74a50694de37c105fa0d6903e9d384608b30b5021a4afb7567bb",
+      "2026-05": "866b3054065974f7596cd56e0bf7befc045c0836391fa7fa9b2b5df6b7ee1677",
+      "2026-06": "355b1e3977d5854801578ef263c8c1dc587b294a81649e19d718f47ec10a6167",
+      "2026-07": "f26a3b994dd7f0c5bfc3349b032121e98c8ccc0dce17e0082b57eef8d0f8ad9b",
+      "2026-08": "1d6d3ac2092f565d91136220ddd8eab89aea9219d4c54d5e0c667609e019431b",
+      "2026-09": "b929b9798f12b57240038ea025d44df99c0a58ca19385735271a3135002b2180",
+      "2026-10": "792197cd601136e1002f1f6d8d7a40dc0007b600425e48e91f870ad9b147f413"
+    },
+    "builder_sha256": "52f8bb5bfa505225e08336b233c05db5b175290a0c1ba60692d521b6709c7f97",
+    "kernel_sha256": "9a39d551d80a51a93d74b761ee253e340679d621344a42d06bc2aac3225cc9b2",
+    "candidates_jsonl_sha256": "b021d522a869d69f8893232123420cba78181c9a2f6425bae3c6973e40a2c67a",
+    "candidates_csv_sha256": "163e2bb54c2539e4685e33624bdcd528eb6786fbeadb265fd68e82312766e715",
+    "native_reader_sha256": "1f25664cba61078a8933198cd5f81ea52e5d376f2b7c05e3bba3661593dbea39",
+    "native_sources": [
+      {
+        "segment": "jahr-ergaenzung-ESH6",
+        "features_sha256": "cb9a416d552c909945064bbee651e55ade8f5236173ff3eead6afb0e3db17a9e",
+        "candidates_sha256": "b6e6ac630d6d545607317304be29ca0fbbcbef0a08958f9a0da050a5ef2bb2e2",
+        "observer_proof_sha256": "e5ff8b183e01c9b65b299068bc0b91bfa6ec7c81b8ffa9444f2f8e4034943943"
+      },
+      {
+        "segment": "jahr-ergaenzung-ESZ5",
+        "features_sha256": "6bdcd8f7860e099abcf6c0d0acffdfa4855780080e3f854631cc695bc4ecdd3f",
+        "candidates_sha256": "c02163d45d1e2bc6b12aaf107ac241160bb071e5996e80fdc9cef62c2b786571",
+        "observer_proof_sha256": "830e73f164eb9e1f1638118ca4839d2ccfc9ac82983cd048433591c223e54d85"
+      },
+      {
+        "segment": "jahr-uebergang-ESM6",
+        "features_sha256": "6197d11c67c147d803bc87ff75c0157e00cd7b69a884f9b4652774f7bfadae4b",
+        "candidates_sha256": "1fda2de66ce4ae41506ce464af31c54c1dc07c5e6f7ac1b69ef4e3cfbf7be658",
+        "observer_proof_sha256": "6176aef5016c3139c940787e4501f29e77849a5ada286e2af118ddcff08fc48b"
+      },
+      {
+        "segment": "mai-oktober-2026-ESU6",
+        "features_sha256": "8d47bd4acf964af6ebe5153467a3dc26f91e26eb41dfcdd41dcfa2210f06c91f",
+        "candidates_sha256": "d0e96ca082f444e77d0ea3de0b58469e48e0f224f20dfa756a21c7683c077c55",
+        "observer_proof_sha256": "40b24e433ae6085b4500d30368b59997264cc83150d2e0e36d2d4d6516680be3"
+      },
+      {
+        "segment": "mai-oktober-2026-ESZ6",
+        "features_sha256": "b6d5cc5aaa74f98867b57d96d0ed56329106360f277182dd960d0cbb929bfa82",
+        "candidates_sha256": "c23b670337c033022193408a446c59580dfb5e7fab813b808fe13a90baea563c",
+        "observer_proof_sha256": "93971ad7677dd2649bfc7d88d7e227b2329912c76378be9712b9d3d9da630806"
+      },
+      {
+        "segment": "september-2026-ESZ6",
+        "features_sha256": "522ff6168dffbd817591795b87102640614c34404da60d620d267964caf54769",
+        "candidates_sha256": "84515ed26e6266964e520ca8ae8506293b3616cca9c51ed4a6bb28bc46a9d029",
+        "observer_proof_sha256": "99a3955ccfd0b0b37606c61c3f54cd95fc7a18922171c303273d3610d1b58ded"
+      }
+    ]
+  },
+  "no_older_labels": true,
+  "no_models_fit": true,
+  "next_action": "Verifyoldercalendarandobtainexplicitrootreleasebeforeolderlabels;nofithere"
+}

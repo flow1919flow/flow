@@ -1,0 +1,46 @@
+{
+  "status": "KNOWN_1S_SINGLE_ATTEMPT_RECONSTRUCTION_COMPLETE",
+  "utc": "2026-11-21T03:19:17.324510+00:00",
+  "cases": 348,
+  "days": 205,
+  "stats": {
+    "known_seconds_processed": 5568524,
+    "unanimous_single_return_seconds": 384
+  },
+  "exclusion_reasons": {
+    "consumed_consensus_at_or_after_flatten": 22,
+    "decision_trade_already_beyond_stop": 12,
+    "consumed_consensus_incomplete_prior_five_same_contract_warmup": 2
+  },
+  "degraded_date_cases_retained": 1,
+  "latency_gaps": {
+    "max_entry_extra_seconds": 5.0,
+    "max_exit_extra_seconds": 3.0,
+    "entries_with_gap": 6,
+    "exits_with_gap": 17
+  },
+  "elapsed_seconds": 47.69055199623108,
+  "no_older_labels": true,
+  "no_models_fit": true,
+  "source_freeze_sha256": "c3ddf25c74a0f9798a469c7401a3a67416018aa339d0a6746b162db5fc9d5c6a",
+  "root_go_sha256": "871317a867245fd4e0ff18272a439501a143b4a66b84944d672b5c37dd4d7c2d",
+  "known_schedule_sha256": "234897b90557cb44eda32c7ce0d6756a60841980f6eccfbe6ccc9f582c257e9d",
+  "month_manifest_sha256": {
+    "2025-11": "e50e983919213b1c206296f61d05ad110ace49c9daba75efa5e9f7a7ad4778c2",
+    "2025-12": "c6d83506ac14f79da37dbc5e95de0af9548edfe1b28284e60912b37850c41260",
+    "2026-01": "d4a2957c30fdf4b8e8e083ec325a4ecafabcd1c0d49ef047d31a459c7a5c5b1f",
+    "2026-02": "70b79c6d06334ef02c2d9334d484d52ab6ad8c90b2fcec50e2e7a68ac1dbc9ff",
+    "2026-03": "ee1ccbd7227a50e9be5a87b2add0c7f3bc1934d90ba5ecbeee405df28b28e2a4",
+    "2026-04": "d6534ec6b32f74a50694de37c105fa0d6903e9d384608b30b5021a4afb7567bb",
+    "2026-05": "866b3054065974f7596cd56e0bf7befc045c0836391fa7fa9b2b5df6b7ee1677",
+    "2026-06": "355b1e3977d5854801578ef263c8c1dc587b294a81649e19d718f47ec10a6167",
+    "2026-07": "f26a3b994dd7f0c5bfc3349b032121e98c8ccc0dce17e0082b57eef8d0f8ad9b",
+    "2026-08": "1d6d3ac2092f565d91136220ddd8eab89aea9219d4c54d5e0c667609e019431b",
+    "2026-09": "b929b9798f12b57240038ea025d44df99c0a58ca19385735271a3135002b2180",
+    "2026-10": "792197cd601136e1002f1f6d8d7a40dc0007b600425e48e91f870ad9b147f413"
+  },
+  "builder_sha256": "52f8bb5bfa505225e08336b233c05db5b175290a0c1ba60692d521b6709c7f97",
+  "kernel_sha256": "9a39d551d80a51a93d74b761ee253e340679d621344a42d06bc2aac3225cc9b2",
+  "candidates_jsonl_sha256": "b021d522a869d69f8893232123420cba78181c9a2f6425bae3c6973e40a2c67a",
+  "candidates_csv_sha256": "163e2bb54c2539e4685e33624bdcd528eb6786fbeadb265fd68e82312766e715"
+}

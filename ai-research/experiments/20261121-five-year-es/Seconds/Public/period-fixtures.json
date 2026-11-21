@@ -1,0 +1,24 @@
+{
+  "status": "PASS_SYNTHETIC_PERIOD_GUARDS_NO_OLDER_LABELS",
+  "utc": "2026-11-21T03:29:17.816876+00:00",
+  "checks_passed": 15,
+  "checks": [
+    "All six frozen known Source files, original fixtures, native PASS and independent audit retain reviewed hashes",
+    "Both generated role engines reverse to exactly the frozen known run AST; same mathematical calls and conditional control flow",
+    "Disjoint fixed three-year development/one-year sealed date windows; boundary UTC months explicitly included for five-session warmup",
+    "Absent authorization or wrong role rejects before market data, source dispatch, attempt marker or labels",
+    "Sealed labels reject missing published final-model receipt",
+    "Unpublished or publication-after-final-labels model proof cannot open sealed labels",
+    "Only exact published bundle SHA passes; subsequent model-byte mutation is rejected",
+    "Missing first required completed price month blocks the whole run with no partial-year labels or attempt marker",
+    "Exclusive durable role attempt marker rejects a second attempt and preserves the first receipt",
+    "New dispatcher Source and fixture hash verification rejects tampered code or proof before any labels",
+    "Adjacent release binds filled CSV and complete cancelled/filled intent stream, counts, fixed dates, protocols and audit before consumer parsing",
+    "Intent observer passes identical argument objects and returns identical frozen result; copies metadata and never invents unknown terminal time",
+    "Actual frozen liquidation-proxy cancellation retained as an unfilled blocking intent without changing native guard or adverse entry spread",
+    "Actual frozen stop-priority/latency filled result and all net labels unchanged through intent capture",
+    "Synthetic fixtures leave all real older/sealed outputs and attempt markers absent; known source and existing outputs immutable"
+  ],
+  "no_older_signals_or_labels_or_models": true,
+  "known_source_unchanged": true
+}

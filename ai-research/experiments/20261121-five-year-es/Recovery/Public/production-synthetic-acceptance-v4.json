@@ -1,0 +1,47 @@
+{
+  "status": "PASS_PRODUCTION_ENTRY_SYNTHETIC_FULL_COUNTS",
+  "utc": "2026-11-21T04:19:44.726699+00:00",
+  "checks_passed": 5,
+  "checks": [
+    {
+      "role": "known",
+      "production_run_end_to_end_synthetic": true,
+      "filled_cases": 348,
+      "decision_plans": 348,
+      "input_and_ML_roots_unchanged": true,
+      "byte_and_plan_checks_pass": true,
+      "canonical_release_and_all_artifact_hashes_valid": true
+    },
+    {
+      "role": "development",
+      "production_run_end_to_end_synthetic": true,
+      "filled_cases": 1143,
+      "decision_plans": 1145,
+      "input_and_ML_roots_unchanged": true,
+      "byte_and_plan_checks_pass": true,
+      "canonical_release_and_all_artifact_hashes_valid": true
+    },
+    {
+      "role": "development",
+      "changed_CSV_criteria_STOP": true,
+      "intents_durable": true
+    },
+    {
+      "test": "unauthorized_actual_CLI_control_stops_before_market_read"
+    },
+    {
+      "test": "real_denial_required_not_GO_boolean_alone",
+      "actual_OS_syscalls_separately_proven": true
+    }
+  ],
+  "sources_sha256": {
+    "test_recovery_production_synthetic.py": "e62553f37ae22c9c50826ca4a9c9638ec6d3d518ede48782eabbd31202c0fe63",
+    "recover_exact.py": "4a73c1831737407ceebe353969a2150694887c84bafb60ccdcdd6f77e95db313",
+    "namespace_prototype.py": "f67606f31dfa67e89b28dd8eeb4c866557373ae7df01a9a5b1e2b1d9c2b4989e"
+  },
+  "authorization_and_market_functions_are_explicit_synthetic_stubs": true,
+  "actual_production_run_function_exercised": true,
+  "no_real_market_rows_or_labels_read_or_recovered": true,
+  "no_models_fit": true,
+  "production_recovery_guard": "CLOSED_UNTIL_PUBLISHED_SOURCE_AND_ROOT_GO"
+}

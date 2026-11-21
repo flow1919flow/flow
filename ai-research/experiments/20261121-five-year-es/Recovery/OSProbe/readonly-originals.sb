@@ -1,0 +1,5 @@
+(version 1)
+(allow default)
+(deny file-write*)
+(allow file-write* (subpath "${WORKSPACE}/outputs/ES-FiveYear-Recovery-20261121/OSProbe/output"))
+(deny network*)

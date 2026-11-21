@@ -1,0 +1,36 @@
+{
+  "schema": "original-known-artifact-restoration-scope-v1",
+  "no_restoration_has_run": true,
+  "known_core_required_exact_SHA256": {
+    "Private/second-candidates-known.jsonl": "b021d522a869d69f8893232123420cba78181c9a2f6425bae3c6973e40a2c67a",
+    "Private/second-candidates-known.csv": "163e2bb54c2539e4685e33624bdcd528eb6786fbeadb265fd68e82312766e715",
+    "Private/second-known-price-roll-freeze.json": "234897b90557cb44eda32c7ce0d6756a60841980f6eccfbe6ccc9f582c257e9d"
+  },
+  "authentic_public_bytes_available": {
+    "Public/second-known-summary.json": {
+      "SHA256": "6121214e8a36f0a67e643046609276fec7d76e502797bd401ae598b25d8640bf",
+      "publication_commit": "814c9030664aedde4f7009c053e059193254975e",
+      "git_blob_SHA1": "2a59a18dfd240d8c033d8f2c885e222fb22ca1de",
+      "handling": "Retain genuine body bytes exactly; any restoration provenance belongs in an adjacent receipt"
+    }
+  },
+  "original_ephemeral_metadata_unavailable": [
+    "Public/second-execution-start.json",
+    "Public/second-preflight-progress.json"
+  ],
+  "deterministically_regenerable_but_original_byte_comparison_unavailable": [
+    "Private/second-known-exclusions.json",
+    "Private/second-known-ambiguities.json",
+    "Private/second-known-feature-before-label-proof.json"
+  ],
+  "unaffected_original_evidence": [
+    "Public/second-native-acceptance.json",
+    "Public/second-independent-audit.json",
+    "Private/second-native-matched-pairs.csv",
+    "Source/second_kernel.py",
+    "Source/second_run.py"
+  ],
+  "new_cancellation_terminal_times": "Recovery-generated only; no original captured terminal times exist. Require all1145 decision-plan hashes/counts and separate independent raw-price audit before training.",
+  "no_invented_original_timestamps": true,
+  "never_claim_all_11_original_artifacts_restored": true
+}

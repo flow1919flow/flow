@@ -1,0 +1,118 @@
+{
+  "schema": "EXTERNAL-TRAINING-GATE-PREPARED-CONTRACT-1",
+  "status": "PREPARED_SYNTHETIC_PASS_PRODUCTION_CLOSED",
+  "utc": "2026-11-21T04:17:24.099284+00:00",
+  "gate_source": "Independent/external_training_gate.py",
+  "gate_source_sha256": "ed620b1d8eea326f85c4b8f3a0ef127ac06cc986e6f88f26ac717eca2335edf2",
+  "fixture_source": "Independent/test_external_training_gate_synthetic.py",
+  "fixture_source_sha256": "94616464b39dc56324de458dbfd9bc28d3d89678df900ff8b144507a256ff5b0",
+  "fixtures": "Public/external-training-gate-synthetic-acceptance.json",
+  "fixtures_sha256": "9230de06e3a00cc94ded8140fa731be82b08add7d73ef33fdedd56cde5b43d8f",
+  "synthetic_groups": 12,
+  "frozen_learning_source_sha256": "59426a4be09d9adceff489baebf1849a691e1bc5ff8ee32f3164330fd99646ba",
+  "original_known_scientific_required_hashes": {
+    "Private/second-candidates-known.jsonl": "b021d522a869d69f8893232123420cba78181c9a2f6425bae3c6973e40a2c67a",
+    "Private/second-candidates-known.csv": "163e2bb54c2539e4685e33624bdcd528eb6786fbeadb265fd68e82312766e715",
+    "Private/second-known-price-roll-freeze.json": "234897b90557cb44eda32c7ce0d6756a60841980f6eccfbe6ccc9f582c257e9d",
+    "Public/second-native-acceptance.json": "61ecb4431327aa4fb5994fc1d64ca765b82ea0f6e7bd09fa98566692e5b33f5f",
+    "Public/second-independent-audit.json": "a1f071d15a1ce8eb5d1af4cca70b7b87d2f276a1a917c232e461a538740d609c",
+    "Public/second-source-freeze-v2.json": "c3ddf25c74a0f9798a469c7401a3a67416018aa339d0a6746b162db5fc9d5c6a",
+    "Source/second_kernel.py": "9a39d551d80a51a93d74b761ee253e340679d621344a42d06bc2aac3225cc9b2"
+  },
+  "incident_development_required_hashes": {
+    "Private/second-candidates-known.jsonl": "e9ad3462256580794182a11520f05ce2e0296f609b2998e8ef72919a147145ce",
+    "Private/second-candidates-known.csv": "432fa618624d0de557113b8efb4da68752008cc14f3d0395b89197d5239763c5",
+    "Private/second-known-exclusions.json": "c12545840eea9c4d6e9e478f71ca9cb8e3b8b79468892a656d3bb40dade06dd9",
+    "Private/second-known-ambiguities.json": "df03a3bda4a3a03919f0f4d19ad4680b6c00603dde3b30997175c952d815dd3c",
+    "Private/second-known-feature-before-label-proof.json": "1071f17bef916db7dbcafd404ac7e10c6de872e0704d094d8c63fa382c069632"
+  },
+  "root_GO": {
+    "authorized": true,
+    "mode": "fit-development-after-exact-recovery",
+    "gate_source_sha256": "<exact published source SHA>",
+    "gate_fixtures_sha256": "<exact synthetic proof SHA>",
+    "gate_publication": {
+      "path": "RecoveryRoot/Public/external-training-gate-github-receipt.json",
+      "sha256": "<published receipt SHA>"
+    },
+    "known_recovery_acceptance": {
+      "path": "RecoveryRoot/Attempts/known-<nonce>/Public/recovery-acceptance.json",
+      "sha256": "<exact known recovery proof SHA>"
+    },
+    "development_recovery_acceptance": {
+      "path": "RecoveryRoot/Attempts/development-<nonce>/Public/recovery-acceptance.json",
+      "sha256": "<exact development recovery proof SHA>"
+    },
+    "namespace_acceptance": {
+      "path": "RecoveryRoot/Public/namespace-synthetic-acceptance.json",
+      "sha256": "<exact synthetic namespace proof SHA>"
+    },
+    "OS_acceptance": {
+      "path": "RecoveryRoot/OSProbe/output/result-syscalls-v2.json",
+      "sha256": "<exact OS proof SHA>"
+    },
+    "canonical_role_release": {
+      "path": "SecondData/Private/development-release.json",
+      "sha256": "<exact promoted role release SHA>"
+    },
+    "development_allrow_audit": {
+      "path": "FiveYearML/Public/development-independent-acceptance.json",
+      "sha256": "<exact future all-row audit SHA>"
+    },
+    "execute_fit": false,
+    "fit_OS_profile": {
+      "path": "RecoveryRoot/OSProbe/<reviewed fit readonly-originals profile>",
+      "sha256": "<exact profile SHA>"
+    },
+    "fit_OS_profile_reviewed": false
+  },
+  "recovery_acceptance_required_common_fields": {
+    "schema": "es-deterministic-recovery-acceptance-v1",
+    "status": "EXACT_ORIGINAL_BYTE_AND_PLAN_MATCH",
+    "role": "known OR development",
+    "no_selection_or_parameter_change": true,
+    "no_sealed_access": true,
+    "no_model_fit": true,
+    "unavailable_original_ephemeral_metadata": [
+      "Public/second-execution-start.json",
+      "Public/second-preflight-progress.json"
+    ],
+    "original_timestamps_fabricated": false
+  },
+  "recovery_development_required_artifact_keys": [
+    "candidates_jsonl",
+    "candidates_csv",
+    "decision_plans_jsonl",
+    "intents_jsonl",
+    "intents_csv",
+    "exclusions_json",
+    "ambiguities_json",
+    "feature_proof_json",
+    "role_release_json"
+  ],
+  "recovery_development_extra_fields": {
+    "output_root": "<exact isolated attempt root>",
+    "cancellation_clock_evidence": "new_deterministic_recovery_evidence_not_original_capture"
+  },
+  "plan_check": "Gate recomputes775 original per-day hashes and1145 plan identities from bare pre-label journal; no future result fields are allowed. 1143 filled artifacts must match preserved incident bytes; exactly2 cancellation terminals must be resolved, then independently audited.",
+  "pre_fit_proofs_unavailable_until_successful_recovery_and_review": [
+    "Restored original known scientific JSONL/CSV/schedule matching pre-incident SHA",
+    "Exact known and development isolated recovery acceptance",
+    "775-day/1145-plan identity and complete recovered intent journal",
+    "Canonical promoted development role release bound to exact recovered artifacts",
+    "Independent all1143filled+2cancel raw-price/feature/fill/cost/baseline acceptance"
+  ],
+  "additional_pre_fit_publication_and_control_requirements": [
+    "Reviewed and published external wrapper/source/fixture receipt",
+    "Explicit Root fit GO binding every exact proof",
+    "Reviewed hashed OS fit profile",
+    "No existing training, external-launch or final-evaluation attempt"
+  ],
+  "model_attachment": "Wrapper writes a durable pre-fit integrity receipt; after fixed frozen trainer exits it creates models-external-integrity.json binding the receipt and exact models-frozen SHA (or futility/failure), without changing frozen learning code or model parameters.",
+  "production_gate_executed": false,
+  "real_recovery_executed": false,
+  "real_fit_executed": false,
+  "real_label_files_opened": false,
+  "sealed_files_opened": false,
+  "frozen_sources_modified": false
+}

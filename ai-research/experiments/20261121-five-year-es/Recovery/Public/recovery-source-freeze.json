@@ -1,0 +1,49 @@
+{
+  "status": "FROZEN_PRODUCTION_RECOVERY_BUILD_BEFORE_ANY_REAL_REPLAY",
+  "utc": "2026-11-21T04:20:15.895567+00:00",
+  "sources_sha256": {
+    "namespace_prototype.py": "f67606f31dfa67e89b28dd8eeb4c866557373ae7df01a9a5b1e2b1d9c2b4989e",
+    "recover_exact.py": "4a73c1831737407ceebe353969a2150694887c84bafb60ccdcdd6f77e95db313",
+    "test_namespace_synthetic.py": "daef70e4e63b16ae8dc86f362dde3548537f14570eccb11844fb72ce7370ed32",
+    "test_recovery_production_synthetic.py": "e62553f37ae22c9c50826ca4a9c9638ec6d3d518ede48782eabbd31202c0fe63"
+  },
+  "public_files_sha256": {
+    "Public/namespace-synthetic-acceptance.json": "de90b50e393d7fb2d6c6a1640ed78d17076cb419f7afbafc725612387bcf15fc",
+    "Public/production-synthetic-acceptance-v4.json": "81e35090c9b199354b44e383b81ef1b8dda3a9cad2929910aa5e947f154b0c42",
+    "Public/recovery-criteria-contract.json": "e5cbe72b9ee6a16bf9211b46880383f7051f02e52d34b31274661a4fbc4ddf35",
+    "Public/original-metadata-scope.json": "7de2365f3f0e3708de7438d5061ba1cc5652d1c285cab07250d88efd8270941e",
+    "OSProbe/readonly-originals.sb": "a0fb71e774cc67375fd0899070acdd699139f97375c1b37d2ab0666943472853",
+    "OSProbe/probe-syscalls-v2.py": "9593f9932f961165105d74a1839bfd4e8b0c0acaf9069b1b3d711c0c6fee798d",
+    "OSProbe/output/result-syscalls-v2.json": "d7af2ba33b36fb5c42ff8f2d4015ca73486fbea8834c70cc2ab94d34c4c01995"
+  },
+  "namespace_synthetic_groups": 11,
+  "production_full_count_synthetic_groups": 5,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "pyarrow": "26.0.1",
+    "databento": "0.90.0"
+  },
+  "original_kernel_sha256": "9a39d551d80a51a93d74b761ee253e340679d621344a42d06bc2aac3225cc9b2",
+  "original_native_source_freeze_sha256": "c3ddf25c74a0f9798a469c7401a3a67416018aa339d0a6746b162db5fc9d5c6a",
+  "original_algorithm_period_freeze_sha256": "3234ca42565168097578e5af8cc6e581e86adc16472d20983fe1f890acec1681",
+  "real_recovery_guard": "CLOSED_REQUIRES_PUBLISHED_INCIDENT_CRITERIA_SOURCE_PROOFS_AND_EXPLICIT_ROOT_GO",
+  "allowed_real_modes": [
+    "known-recovery",
+    "development-recovery"
+  ],
+  "sealed_mode": "SYNTHETIC_ONLY_NO_REAL_CLI",
+  "immutable_original_data_and_ML_roots": true,
+  "OS_readonly_with_direct_denial_required_before_market_read": true,
+  "network_denied": true,
+  "fresh_nonexistent_attempt_output_only": true,
+  "attempt_parent_must_preexist": true,
+  "eager_prelabel_plan_and_result_intent_journals": true,
+  "run_log_created_inside_attempt_after_namespace_creation": true,
+  "byte_mismatch_STOP_no_tolerance_no_version_choice": true,
+  "no_original_output_promotion_by_CLI": true,
+  "no_real_signals_labels_recovery_or_fits_have_run": true,
+  "independent_all_row_raw_price_audit_still_required": true
+}

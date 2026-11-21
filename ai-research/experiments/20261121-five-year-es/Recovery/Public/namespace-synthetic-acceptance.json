@@ -1,0 +1,97 @@
+{
+  "status": "PASS_FULL_GENERATED_FUNCTION_SYNTHETIC_IO",
+  "utc": "2026-11-21T04:08:15.634790+00:00",
+  "checks_passed": 11,
+  "checks": [
+    {
+      "role": "known",
+      "test": "success",
+      "all_input_known_and_other_role_preimages_unchanged": true,
+      "writes_only_fresh_role_allowlist": true,
+      "actual_write_operations": 59,
+      "synthetic_only": true
+    },
+    {
+      "role": "known",
+      "test": "old_mapping_negative",
+      "all_input_known_and_other_role_preimages_unchanged": true,
+      "writes_only_fresh_role_allowlist": true,
+      "actual_write_operations": 4,
+      "synthetic_only": true
+    },
+    {
+      "role": "known",
+      "test": "packaging_failure",
+      "all_input_known_and_other_role_preimages_unchanged": true,
+      "writes_only_fresh_role_allowlist": true,
+      "actual_write_operations": 47,
+      "synthetic_only": true
+    },
+    {
+      "role": "development",
+      "test": "success",
+      "all_input_known_and_other_role_preimages_unchanged": true,
+      "writes_only_fresh_role_allowlist": true,
+      "actual_write_operations": 59,
+      "synthetic_only": true
+    },
+    {
+      "role": "development",
+      "test": "old_mapping_negative",
+      "all_input_known_and_other_role_preimages_unchanged": true,
+      "writes_only_fresh_role_allowlist": true,
+      "actual_write_operations": 4,
+      "synthetic_only": true
+    },
+    {
+      "role": "development",
+      "test": "packaging_failure",
+      "all_input_known_and_other_role_preimages_unchanged": true,
+      "writes_only_fresh_role_allowlist": true,
+      "actual_write_operations": 47,
+      "synthetic_only": true
+    },
+    {
+      "role": "sealed",
+      "test": "success",
+      "all_input_known_and_other_role_preimages_unchanged": true,
+      "writes_only_fresh_role_allowlist": true,
+      "actual_write_operations": 59,
+      "synthetic_only": true
+    },
+    {
+      "role": "sealed",
+      "test": "old_mapping_negative",
+      "all_input_known_and_other_role_preimages_unchanged": true,
+      "writes_only_fresh_role_allowlist": true,
+      "actual_write_operations": 4,
+      "synthetic_only": true
+    },
+    {
+      "role": "sealed",
+      "test": "packaging_failure",
+      "all_input_known_and_other_role_preimages_unchanged": true,
+      "writes_only_fresh_role_allowlist": true,
+      "actual_write_operations": 47,
+      "synthetic_only": true
+    },
+    {
+      "test": "outside_input_other_role_write_and_unregistered_hash_rejected",
+      "synthetic_only": true
+    },
+    {
+      "test": "both_existing_empty_and_nonempty_output_roots_rejected",
+      "synthetic_only": true
+    }
+  ],
+  "sources_sha256": {
+    "test_namespace_synthetic.py": "daef70e4e63b16ae8dc86f362dde3548537f14570eccb11844fb72ce7370ed32",
+    "namespace_prototype.py": "f67606f31dfa67e89b28dd8eeb4c866557373ae7df01a9a5b1e2b1d9c2b4989e"
+  },
+  "all_three_roles_exercised": true,
+  "old_broken_mapping_negative_control_caught_all_roles": true,
+  "intents_durable_before_packaging_failure": true,
+  "per_day_complete_plan_hash_verified": true,
+  "no_real_signals_labels_recovery_or_fit": true,
+  "production_recovery_guard": "CLOSED_PENDING_PUBLISHED_CRITERIA_AND_ROOT_GO"
+}

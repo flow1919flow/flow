@@ -1,0 +1,23 @@
+{
+  "status": "PASS_OS_READONLY_OPEN_TRUNCATE_UNLINK_RENAME",
+  "denials": {
+    "open_truncate": {
+      "errno": 1,
+      "OS_denied": true
+    },
+    "unlink": {
+      "errno": 1,
+      "OS_denied": true
+    },
+    "rename_out_of_input": {
+      "errno": 1,
+      "OS_denied": true
+    }
+  },
+  "allowed_output_create_append_rename_unlink": true,
+  "input_preimage_sha256": "07a554defea721bc6309c0ab76bb4b673ee537fb07ce6bdf11ac01604310240e",
+  "profile_sha256": "a0fb71e774cc67375fd0899070acdd699139f97375c1b37d2ab0666943472853",
+  "probe_sha256": "9593f9932f961165105d74a1839bfd4e8b0c0acaf9069b1b3d711c0c6fee798d",
+  "real_market_or_strategy_inputs_accessed": false,
+  "signals_labels_recovery_or_fit": false
+}

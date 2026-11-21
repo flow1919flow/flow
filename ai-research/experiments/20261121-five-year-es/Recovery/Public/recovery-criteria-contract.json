@@ -1,0 +1,32 @@
+{
+  "schema": "es-exact-recovery-machine-criteria-v1",
+  "status": "PREREGISTERED_BEFORE_RECOVERY_NOT_EXECUTED",
+  "utc": "2026-11-21T04:18:41.235909+00:00",
+  "known_core_expected_sha256": {
+    "candidates_jsonl": "b021d522a869d69f8893232123420cba78181c9a2f6425bae3c6973e40a2c67a",
+    "candidates_csv": "163e2bb54c2539e4685e33624bdcd528eb6786fbeadb265fd68e82312766e715",
+    "schedule_json": "234897b90557cb44eda32c7ce0d6756a60841980f6eccfbe6ccc9f582c257e9d"
+  },
+  "development_expected_filled_cases": 1143,
+  "development_expected_plan_days": 775,
+  "development_expected_decision_plans": 1145,
+  "development_expected_resolved_entry_cancellations": 2,
+  "published_incident_source_sha256": "fee4b2b2cc59a6050e9b60506fde9fb429f71482eab3b1eb9d11e93a8c4e3c1f",
+  "known_published_summary_sha256": "6121214e8a36f0a67e643046609276fec7d76e502797bd401ae598b25d8640bf",
+  "canonical_recovery_acceptance_schema": "es-deterministic-recovery-acceptance-v1",
+  "no_numeric_tolerance_no_version_choice": true,
+  "all_mismatches_STOP": true,
+  "no_original_output_promotion_by_CLI": true,
+  "no_selection_parameter_feature_fee_chronology_label_change": true,
+  "no_actual_recovery_has_run": true,
+  "cancellation_clock_evidence": "new_deterministic_recovery_evidence_not_original_capture",
+  "independent_all_row_raw_price_audit_required_before_fit": true,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "pyarrow": "26.0.1",
+    "databento": "0.90.0"
+  }
+}

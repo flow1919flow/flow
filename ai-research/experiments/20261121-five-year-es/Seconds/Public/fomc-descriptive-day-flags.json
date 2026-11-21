@@ -1,0 +1,1625 @@
+{
+  "schema": "official-fed-descriptive-day-flags-v1",
+  "status": "OFFICIAL_CALENDAR_DESCRIPTIVE_ONLY_NO_FILTER_CHANGE",
+  "retrieved_UTC_date": "2026-11-21",
+  "official_page_last_update": "2026-11-18",
+  "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+  "scope_start_inclusive": "2021-11-01",
+  "scope_end_exclusive": "2026-10-31",
+  "timezone_scope": "UScivilmeeting/releasedates;day-onlyannotation;nointradaywindowsreconstructed",
+  "full_source_meeting_counts": {
+    "2021": 8,
+    "2022": 8,
+    "2023": 8,
+    "2024": 8,
+    "2025": 8,
+    "2026": 7
+  },
+  "meetings_in_scope": 41,
+  "minutes_releases_in_scope": 40,
+  "event_days": 82,
+  "days": [
+    {
+      "day": "2021-11-03",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2021-11-03",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2021-11-03",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2021-11-24",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2021-11-03",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2021-12-15",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2021-12-15",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2021-12-15",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-01-05",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2021-12-15",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-01-26",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2022-01-26",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2022-01-26",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-02-16",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2022-01-26",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-03-16",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2022-03-16",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2022-03-16",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-04-06",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2022-03-16",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-05-04",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2022-05-04",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2022-05-04",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-05-25",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2022-05-04",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-06-15",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2022-06-15",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2022-06-15",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-07-06",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2022-06-15",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-07-27",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2022-07-27",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2022-07-27",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-08-17",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2022-07-27",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-09-21",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2022-09-21",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2022-09-21",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-10-12",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2022-09-21",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-11-02",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2022-11-02",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2022-11-02",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-11-23",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2022-11-02",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2022-12-14",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2022-12-14",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2022-12-14",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-01-04",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2022-12-14",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-02-01",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2023-02-01",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2023-02-01",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-02-22",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2023-02-01",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-03-22",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2023-03-22",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2023-03-22",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-04-12",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2023-03-22",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-05-03",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2023-05-03",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2023-05-03",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-05-24",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2023-05-03",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-06-14",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2023-06-14",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2023-06-14",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-07-05",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2023-06-14",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-07-26",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2023-07-26",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2023-07-26",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-08-16",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2023-07-26",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-09-20",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2023-09-20",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2023-09-20",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-10-11",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2023-09-20",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-11-01",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2023-11-01",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2023-11-01",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-11-21",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2023-11-01",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2023-12-13",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2023-12-13",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2023-12-13",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-01-03",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2023-12-13",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-01-31",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2024-01-31",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2024-01-31",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-02-21",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2024-01-31",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-03-20",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2024-03-20",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2024-03-20",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-04-10",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2024-03-20",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-05-01",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2024-05-01",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2024-05-01",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-05-22",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2024-05-01",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-06-12",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2024-06-12",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2024-06-12",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-07-03",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2024-06-12",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-07-31",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2024-07-31",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2024-07-31",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-08-21",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2024-07-31",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-09-18",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2024-09-18",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2024-09-18",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-10-09",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2024-09-18",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-11-07",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2024-11-07",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2024-11-07",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-11-26",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2024-11-07",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2024-12-18",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2024-12-18",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2024-12-18",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-01-08",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2024-12-18",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-01-29",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2025-01-29",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2025-01-29",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-02-19",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2025-01-29",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-03-19",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2025-03-19",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2025-03-19",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-04-09",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2025-03-19",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-05-07",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2025-05-07",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2025-05-07",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-05-28",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2025-05-07",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-06-18",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2025-06-18",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2025-06-18",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-07-09",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2025-06-18",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-07-30",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2025-07-30",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2025-07-30",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-08-20",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2025-07-30",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-08-22",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": true,
+      "events": [
+        {
+          "event_type": "FOMC_long_run_strategy_notation_vote_no_regular_policy_meeting",
+          "associated_decision_date": "2025-08-22",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-09-17",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2025-09-17",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2025-09-17",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-10-08",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2025-09-17",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-10-29",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2025-10-29",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2025-10-29",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-11-19",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2025-10-29",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-12-10",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2025-12-10",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2025-12-10",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2025-12-30",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2025-12-10",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2026-01-28",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2026-01-28",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2026-01-28",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2026-02-18",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2026-01-28",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2026-03-18",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2026-03-18",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2026-03-18",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2026-04-08",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2026-03-18",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2026-04-29",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2026-04-29",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2026-04-29",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2026-05-20",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2026-04-29",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2026-06-17",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2026-06-17",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2026-06-17",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2026-07-08",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2026-06-17",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2026-07-29",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2026-07-29",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2026-07-29",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2026-08-19",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2026-07-29",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2026-09-16",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2026-09-16",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2026-09-16",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2026-10-07",
+      "scheduled_FOMC_decision_day": false,
+      "FOMC_press_conference_day": false,
+      "FOMC_minutes_release_day": true,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "FOMC_minutes_actual_release_date_listed",
+          "associated_decision_date": "2026-09-16",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "day": "2026-10-28",
+      "scheduled_FOMC_decision_day": true,
+      "FOMC_press_conference_day": true,
+      "FOMC_minutes_release_day": false,
+      "other_FOMC_notation_vote_day": false,
+      "events": [
+        {
+          "event_type": "scheduled_FOMC_policy_decision",
+          "associated_decision_date": "2026-10-28",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "event_type": "FOMC_press_conference_linked_on_official_calendar",
+          "associated_decision_date": "2026-10-28",
+          "evidence_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    }
+  ],
+  "source_pairs_all47": [
+    {
+      "decision_day": "2021-01-27",
+      "minutes_release_day": "2021-02-17",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2021-03-17",
+      "minutes_release_day": "2021-04-07",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2021-04-28",
+      "minutes_release_day": "2021-05-19",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2021-06-16",
+      "minutes_release_day": "2021-07-07",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2021-07-28",
+      "minutes_release_day": "2021-08-18",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2021-09-22",
+      "minutes_release_day": "2021-10-13",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2021-11-03",
+      "minutes_release_day": "2021-11-24",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2021-12-15",
+      "minutes_release_day": "2022-01-05",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2022-01-26",
+      "minutes_release_day": "2022-02-16",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2022-03-16",
+      "minutes_release_day": "2022-04-06",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2022-05-04",
+      "minutes_release_day": "2022-05-25",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2022-06-15",
+      "minutes_release_day": "2022-07-06",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2022-07-27",
+      "minutes_release_day": "2022-08-17",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2022-09-21",
+      "minutes_release_day": "2022-10-12",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2022-11-02",
+      "minutes_release_day": "2022-11-23",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2022-12-14",
+      "minutes_release_day": "2023-01-04",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2023-02-01",
+      "minutes_release_day": "2023-02-22",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2023-03-22",
+      "minutes_release_day": "2023-04-12",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2023-05-03",
+      "minutes_release_day": "2023-05-24",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2023-06-14",
+      "minutes_release_day": "2023-07-05",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2023-07-26",
+      "minutes_release_day": "2023-08-16",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2023-09-20",
+      "minutes_release_day": "2023-10-11",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2023-11-01",
+      "minutes_release_day": "2023-11-21",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2023-12-13",
+      "minutes_release_day": "2024-01-03",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2024-01-31",
+      "minutes_release_day": "2024-02-21",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2024-03-20",
+      "minutes_release_day": "2024-04-10",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2024-05-01",
+      "minutes_release_day": "2024-05-22",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2024-06-12",
+      "minutes_release_day": "2024-07-03",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2024-07-31",
+      "minutes_release_day": "2024-08-21",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2024-09-18",
+      "minutes_release_day": "2024-10-09",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2024-11-07",
+      "minutes_release_day": "2024-11-26",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2024-12-18",
+      "minutes_release_day": "2025-01-08",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2025-01-29",
+      "minutes_release_day": "2025-02-19",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2025-03-19",
+      "minutes_release_day": "2025-04-09",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2025-05-07",
+      "minutes_release_day": "2025-05-28",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2025-06-18",
+      "minutes_release_day": "2025-07-09",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2025-07-30",
+      "minutes_release_day": "2025-08-20",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2025-09-17",
+      "minutes_release_day": "2025-10-08",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2025-10-29",
+      "minutes_release_day": "2025-11-19",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2025-12-10",
+      "minutes_release_day": "2025-12-30",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2026-01-28",
+      "minutes_release_day": "2026-02-18",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2026-03-18",
+      "minutes_release_day": "2026-04-08",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2026-04-29",
+      "minutes_release_day": "2026-05-20",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2026-06-17",
+      "minutes_release_day": "2026-07-08",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2026-07-29",
+      "minutes_release_day": "2026-08-19",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2026-09-16",
+      "minutes_release_day": "2026-10-07",
+      "press_conference_link_present": true
+    },
+    {
+      "decision_day": "2026-10-28",
+      "minutes_release_day": "2026-11-18",
+      "press_conference_link_present": true
+    }
+  ],
+  "limitations": [
+    "Officialcurrenthistoricalcalendar,notarchivedpoint-in-timeadvanceannouncementproof",
+    "NoNFP/CPI/PPI/PCE/GDP/speeches/unschedulednewsinventory;othernewscoverageUNKNOWN",
+    "Noexactintradaynewswindowororiginalhistoricalnewsfilterreconstruction",
+    "AbsenceoflistedFOMCeventdoesNOTproveanews-freeday",
+    "Annotationsarenotmodelinputsanddonotexcludeorchangeanycandidate",
+    "2025-08-22isnotationvotestrategystatement,notregularpolicymeeting"
+  ],
+  "research_policy": "PrimarynoNewsconsistentlyacrossyears;descriptiveflagsONLY",
+  "frozen_strategy_source_unchanged": true,
+  "no_price_or_label_or_model_inputs_read": true,
+  "annotation_source_sha256": "621652482c7918e24f966cfa2922d3d1b05d43c2be77683f990024f45339613a"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "FROZEN_PRICE_ONLY_AUDIT_BEFORE_ROLE_LABELS",
+  "utc": "2026-11-21T03:38:51.433904+00:00",
+  "sources_sha256": {
+    "audit_role_prices.py": "09f8fc814fdba757173a6130d06b6c1c9ab80f286b707085006547a4ad6e5e54",
+    "audit_role_prices_fixtures.py": "56610946e58a1467185b7314867192a4707857a36c85e7dd49dceec32faf284a"
+  },
+  "fixtures_sha256": "88fbd6a06bc4c097ed782a807fef6bea3b8b7dd086ef960d434580b4a958bbd2",
+  "fixtures_passed": 14,
+  "period_source_freeze_sha256": "3234ca42565168097578e5af8cc6e581e86adc16472d20983fe1f890acec1681",
+  "all_source_and_strategy_files_unchanged": true,
+  "all_role_prices_required_before_proof": true,
+  "all_raw_second_5m_mapping_coverage_hashes_verified": true,
+  "whole_missing_selected_session_is_critical": true,
+  "grid_and_prior5_warmup_deviations_are_explicit_root_review_items": true,
+  "missing_seconds_are_unknown_not_proven_feedloss": true,
+  "no_strategy_signals_labels_or_models": true
+}

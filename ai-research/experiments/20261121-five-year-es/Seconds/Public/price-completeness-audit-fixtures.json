@@ -1,0 +1,22 @@
+{
+  "status": "PASS_SYNTHETIC_PRICE_COMPLETENESS_AUDIT",
+  "utc": "2026-11-21T03:38:33.831370+00:00",
+  "checks_passed": 14,
+  "checks": [
+    "Independent cross-batch seconds/volume/bucket/gap recount; sparse seconds may still cover the full 5m grid and remain unfilled",
+    "Absent 5m bucket is explicit, not hidden by a fabricated second/bar",
+    "Duplicate, reversed cross-batch, fractional-second and outside-session records are rejected",
+    "Independent roll uses only prior session volume; poisoned future/current volume cannot alter earlier selections",
+    "Roll tie preserves incumbent and selected maturities cannot move backwards even if expired contract volume rises",
+    "Incomplete same-contract history remains an explicit five-session warmup deviation",
+    "Planned sessions enumerate calendar dates independently of observed price start/end, exposing omitted whole sessions",
+    "Bounded real Parquet batch integration matches manifest and recomputed per-session coverage without reading prices/outcomes",
+    "Parquet header/batch row count mismatch is a critical rejection",
+    "Changed second shard rejected before session enumeration",
+    "Changed raw monthly bytes/hash rejected independently of canonical shards",
+    "Even a self-rehashed incorrect coverage ledger fails independent recount",
+    "Entire missing selected session blocks completeness proof rather than becoming an omitted label day",
+    "All fixtures are synthetic; frozen known sources unchanged and real role label markers remain absent"
+  ],
+  "no_real_role_price_audit_or_signal_label_model_execution": true
+}

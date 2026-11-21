@@ -1,0 +1,91 @@
+{
+  "schema": "ES-FIVE-YEAR-PREFIT-AMENDMENT-1",
+  "created_utc": "2026-11-21T03:33:17.723424+00:00",
+  "reason": "Actual Claude review after independently passed 1s native parity, before any older labels or model fits.",
+  "previous_preregister_retained": true,
+  "scope": {
+    "candidate": "One C28.03 Funded EMA20 economic setup, unchanged accepted second kernel; separate HY104 EMA22 SI study not duplicated.",
+    "development": [
+      "2021-11-24",
+      "2024-11-24_exclusive"
+    ],
+    "sealed": [
+      "2024-11-24",
+      "2025-11-24_exclusive"
+    ],
+    "known": [
+      "2025-11-24",
+      "2026-10-31_exclusive"
+    ],
+    "independence": "Older sealed year held out for this newly registered ML study only; no universal claim that strategy development never consulted older market behavior.",
+    "known_model_performance": "No new model-performance/native-payout supplement on the repeatedly used2025/26 year in this study; its role is data-reconstruction acceptance only."
+  },
+  "model": {
+    "primary": "StandardScaler fit on each training subset + Ridge(alpha=10,solver=svd)",
+    "control": "HistGradientBoostingRegressor(max_depth=1,learning_rate=.05,max_iter=100,min_samples_leaf=20,l2_regularization=1,early_stopping=False,random_state=20261121)",
+    "hyperparameter_search": false
+  },
+  "chronology": {
+    "initial_sessions": 126,
+    "gap_sessions": 1,
+    "expanding_validation_blocks": 5,
+    "last_development_session_excluded_before_sealed_year": true,
+    "label_end_purged_before_each_test": true,
+    "full_fit_label_exit_purge_before_final_gap": true
+  },
+  "calibration": {
+    "a": "Unclipped development training mean stress net-R",
+    "b": "OLS slope of OOF outcomes on centered chronological OOF predictions, clipped to [0,1]",
+    "center": "Mean prediction of final fitted model on its TRAINING inputs; Ridge equals a up to numerical precision",
+    "score": "a+b*(raw-final_training_prediction_mean)",
+    "change_from_original": "OOF mean used only to estimate slope, never as final-model prediction center.",
+    "gate": "Omit only calibrated expected net-R below zero; no bottom-percentile quota."
+  },
+  "futility": {
+    "if_development_mean_nonpositive": "Report a<=0; do not fit final models or release sealed labels. Preserve year for a new separately registered question."
+  },
+  "final": {
+    "primary": "Ridge Spearman(calibrated score,stress net-R) on every shadow candidate",
+    "one_sided_alpha": 0.05,
+    "conditional_permutations": 1999,
+    "permutation_strata": "Whole ordered daily outcome vectors within calendar-quarter and same daily candidate-count strata; report immovable fraction",
+    "descriptive_CI": "1999 moving5 actual-session blocks, fixed seed20261121, no refits",
+    "control": "Boosting descriptive only, never selected because final test looks better.",
+    "one_shot": "Atomic durable marker before first sealed data/label byte; crash or concurrent call cannot silently reopen."
+  },
+  "economic_endpoint": {
+    "input": "Complete decision-intent stream including entry cancellations, exact int nanosecond JSONL and filled outcome CSV hashbound in role manifest.",
+    "path": "One position/pending entry at a time. Apply gate to each causally available intent; an omitted intent leaves later decisions available. Identical ungated/gated clock logic; no filtering saved fills.",
+    "quantities": [
+      "sum stress net-R and net-USD",
+      "sum normal net-USD",
+      "paired delta-R and delta-USD with 1999 moving5-session intervals",
+      "available fillable opportunities omitted",
+      "all omitted intents and cancelled entries separately",
+      "mean net-R of omitted fillable candidates"
+    ],
+    "minimum_available_fillable_omissions": 10,
+    "qualification": "Research benefit only if >=10 available fillable omissions, positive delta-R, paired 95% delta-stressUSD interval lower bound>0 and primary Ridge p<=.05. Missing unresolved intent clocks block qualification.",
+    "three_outcomes": [
+      "practically inactive: fewer than10 available fillable omissions",
+      "active without qualified research benefit",
+      "active with qualified research benefit"
+    ],
+    "not_provider_payout_evidence": true
+  },
+  "release": {
+    "verify_role_manifest_and_csv_hash_before_parsing": true,
+    "verify_day_signal_entry_exit_clocks": true,
+    "native_acceptance_and_independent_audit_bound": true,
+    "freeze_source_fixtures_amendment_protocols_and_publish_before_fit": true,
+    "publish_coefficients_preprocessing_calibration_hashes_before_sealed_labels": true,
+    "sealed_price_completeness_audit_before_one_shot_label_marker": "All required finalized months, row counts/session grids, causal roll/warmup, hash receipts and documented vendor quality, without candidate/outcome construction."
+  },
+  "news": {
+    "primary_policy": "No historical news filtering, consistently with acceptance; no unavailable historical feed interpreted as clean coverage.",
+    "descriptive_flags": "Official Federal Reserve calendar dates for policy decisions/press conferences/minutes stored separately, no features/filter/label/weight changes.",
+    "limits": "No historical intraday windows or original point-in-time announcement proof; other news coverage unknown."
+  },
+  "no_older_labels_or_fits_at_amendment": true,
+  "no_NT_changes_or_orders": true
+}

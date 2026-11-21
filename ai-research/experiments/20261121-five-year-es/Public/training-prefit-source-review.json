@@ -1,0 +1,67 @@
+{
+  "schema": "ES-FIVEYEAR-TRAINING-PREFIT-SOURCE-REVIEW-1",
+  "status": "PASS_SYNTHETIC_READY_FOR_ROOT_PUBLICATION_NOT_FITTED",
+  "utc": "2026-11-21T03:35:38.359390+00:00",
+  "source_sha256": "59426a4be09d9adceff489baebf1849a691e1bc5ff8ee32f3164330fd99646ba",
+  "fixture_source_sha256": "edf6bf2ba7b8b9a8f3daa1f001db723c1a8f8f7001523838544f7730914cd712",
+  "synthetic_acceptance_sha256": "60bc88712249e0b94807b1f29479702e1fc917b263dbb3d76b7545a860618c8d",
+  "synthetic_groups": 18,
+  "actual_release_guard_state": "CLOSED_PENDING_SOURCE_FREEZE_AND_PUBLICATION",
+  "required_training_freeze_fields": {
+    "source_sha256": "59426a4be09d9adceff489baebf1849a691e1bc5ff8ee32f3164330fd99646ba",
+    "fixtures_sha256": "60bc88712249e0b94807b1f29479702e1fc917b263dbb3d76b7545a860618c8d",
+    "native_acceptance_sha256": "61ecb4431327aa4fb5994fc1d64ca765b82ea0f6e7bd09fa98566692e5b33f5f",
+    "native_independent_audit_sha256": "a1f071d15a1ce8eb5d1af4cca70b7b87d2f276a1a917c232e461a538740d609c",
+    "native_source_freeze_sha256": "c3ddf25c74a0f9798a469c7401a3a67416018aa339d0a6746b162db5fc9d5c6a",
+    "native_kernel_sha256": "9a39d551d80a51a93d74b761ee253e340679d621344a42d06bc2aac3225cc9b2",
+    "calendar_overlay_sha256": "81ce4d6785df4e94ed253faf73bf03b87ef1c5471ee49cef362eb7aabe20e5c3",
+    "calendar_independent_acceptance_sha256": "ad5a81abc2b13115003e8725a555d1d0c8a089bf6ed37dcbf98bf69b48e53b34",
+    "features": [
+      "feature_stop_risk_usd",
+      "feature_target_path_R",
+      "feature_signed_completed_ema_slope_atr",
+      "feature_completed_relative_volume20",
+      "feature_chicago_session_minute"
+    ],
+    "sklearn_version": "1.9.1",
+    "protocol_sha256": {
+      "preregister-seconds-v2.json": "498b90431dfeef1f65b8aea232cdff7e9ca2a44153131a5b8c8faeba36b813fa",
+      "preregister-seconds-v2-addendum.json": "b228b39c640dc6ff5a0ef79575c4c6d9557f70eaa77732900ebcb1dc2048aba7",
+      "preregister-seconds-native-clarifications.json": "c9ed499b4e861afd58b208c3e5f42234826efe78ce4c548c9bb5b0c199589598",
+      "training-preregister-amendment.json": "127afea7c62ed2eade9fcc96666853baa42255c549e2184513006e2d17d6853e"
+    }
+  },
+  "software_versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "role_manifest_schema": "es-frozen-second-role-release-v1",
+  "canonical_intent_format": "Role JSONL; optional clocks preserved as exact integers/null, human CSV separately hashed.",
+  "fixed_primary": "Ridge(alpha10,svd), five causal folds, train-only scaler and finalTRAIN-centered OOF-slope calibration",
+  "fixed_control": "Depth1 HistGradientBoosting descriptive only",
+  "futility": "Nonpositive development training mean stops before model fits and sealed release",
+  "economic_replay": "Same complete intent stream, pending cancellation clocks preserved; omitted intents admit later setups; baseline parity with frozen generator flags required",
+  "qualification": "Minimum10 available fillable omissions, positive deltaR, paired moving5session stressUSD95% lower>0, Ridge primary p<=.05; no unresolved executed intents",
+  "one_shot": "Durable exclusive marker before any sealed role data/label bytes; failure or concurrency cannot reopen automatically",
+  "known_year": "2025/26 data/native acceptance only; no model performance supplement or fresh confirmation",
+  "actionable_findings_resolved": [
+    "role/date/hash provenance before label parsing",
+    "actual signal/entry/exit and completed-feature chronology",
+    "full-train label exit purge before final gap",
+    "atomic persistent one-shot evaluation and training attempt markers",
+    "independent native acceptance/source and publication proof bindings",
+    "portable Ridge prediction parity",
+    "causal cancelled-intent-aware economic replay and exact ungated baseline parity",
+    "train-prediction centering and pre-fit futility",
+    "fixed research-benefit qualification and primary-only significance"
+  ],
+  "new_model_variants": false,
+  "real_label_files_opened": false,
+  "real_models_fit": false,
+  "sealed_files_opened": false,
+  "known_kernel_or_frozen_sources_changed": false,
+  "network_calls": 0
+}

@@ -1,0 +1,88 @@
+{
+  "schema": "ES-FIVEYEAR-TRAINING-SYNTHETIC-AUDIT-1",
+  "status": "PASS",
+  "utc": "2026-11-21T03:34:47.816387+00:00",
+  "checks": 18,
+  "tests": [
+    {
+      "name": "separate_role_manifest_before_parse",
+      "status": "PASS"
+    },
+    {
+      "name": "changed_csv_hash_stops_before_parser",
+      "status": "PASS"
+    },
+    {
+      "name": "actual_signal_day_and_role_consistency",
+      "status": "PASS"
+    },
+    {
+      "name": "completed_feature_clock_past_only",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_cost_and_R_label_normalization",
+      "status": "PASS"
+    },
+    {
+      "name": "source_audit_and_publication_integrity",
+      "status": "PASS"
+    },
+    {
+      "name": "five_causal_folds_whole_gap_and_final_exit_purge",
+      "status": "PASS"
+    },
+    {
+      "name": "OOF_slope_final_TRAIN_centering_and_clipping",
+      "status": "PASS"
+    },
+    {
+      "name": "train_only_scaling_and_portable_Ridge_parity",
+      "status": "PASS"
+    },
+    {
+      "name": "gate_releases_later_candidate_causally",
+      "status": "PASS"
+    },
+    {
+      "name": "pending_cancellation_blocks_and_unknown_stops",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_intent_baseline_matches_generator_flags",
+      "status": "PASS"
+    },
+    {
+      "name": "paired_session_economics_and_fixed_qualification",
+      "status": "PASS"
+    },
+    {
+      "name": "exclusive_durable_attempt_concurrency_guard",
+      "status": "PASS"
+    },
+    {
+      "name": "failure_cannot_reopen_sealed_set",
+      "status": "PASS"
+    },
+    {
+      "name": "development_futility_blocks_fitting_and_unsealing",
+      "status": "PASS"
+    },
+    {
+      "name": "immovable_permutation_is_p1_not_false_significance",
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic_only_complete_fit_publication_final_pipeline",
+      "status": "PASS"
+    }
+  ],
+  "training_source_sha256": "59426a4be09d9adceff489baebf1849a691e1bc5ff8ee32f3164330fd99646ba",
+  "fixture_source_sha256": "edf6bf2ba7b8b9a8f3daa1f001db723c1a8f8f7001523838544f7730914cd712",
+  "sklearn_version": "1.9.1",
+  "synthetic_datasets_only": true,
+  "real_label_files_opened": false,
+  "real_models_fit": false,
+  "real_sealed_labels_opened": false,
+  "network_calls": 0
+}

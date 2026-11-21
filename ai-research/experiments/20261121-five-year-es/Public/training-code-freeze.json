@@ -1,0 +1,32 @@
+{
+  "source_sha256": "59426a4be09d9adceff489baebf1849a691e1bc5ff8ee32f3164330fd99646ba",
+  "fixtures_sha256": "60bc88712249e0b94807b1f29479702e1fc917b263dbb3d76b7545a860618c8d",
+  "native_acceptance_sha256": "61ecb4431327aa4fb5994fc1d64ca765b82ea0f6e7bd09fa98566692e5b33f5f",
+  "native_independent_audit_sha256": "a1f071d15a1ce8eb5d1af4cca70b7b87d2f276a1a917c232e461a538740d609c",
+  "native_source_freeze_sha256": "c3ddf25c74a0f9798a469c7401a3a67416018aa339d0a6746b162db5fc9d5c6a",
+  "native_kernel_sha256": "9a39d551d80a51a93d74b761ee253e340679d621344a42d06bc2aac3225cc9b2",
+  "calendar_overlay_sha256": "81ce4d6785df4e94ed253faf73bf03b87ef1c5471ee49cef362eb7aabe20e5c3",
+  "calendar_independent_acceptance_sha256": "ad5a81abc2b13115003e8725a555d1d0c8a089bf6ed37dcbf98bf69b48e53b34",
+  "features": [
+    "feature_stop_risk_usd",
+    "feature_target_path_R",
+    "feature_signed_completed_ema_slope_atr",
+    "feature_completed_relative_volume20",
+    "feature_chicago_session_minute"
+  ],
+  "sklearn_version": "1.9.1",
+  "protocol_sha256": {
+    "preregister-seconds-v2.json": "498b90431dfeef1f65b8aea232cdff7e9ca2a44153131a5b8c8faeba36b813fa",
+    "preregister-seconds-v2-addendum.json": "b228b39c640dc6ff5a0ef79575c4c6d9557f70eaa77732900ebcb1dc2048aba7",
+    "preregister-seconds-native-clarifications.json": "c9ed499b4e861afd58b208c3e5f42234826efe78ce4c548c9bb5b0c199589598",
+    "training-preregister-amendment.json": "127afea7c62ed2eade9fcc96666853baa42255c549e2184513006e2d17d6853e"
+  },
+  "schema": "ES-FIVEYEAR-TRAINING-CODE-FREEZE-1",
+  "utc": "2026-11-21T03:36:19.207709+00:00",
+  "review_sha256": "25228ea5388d439f0c112b0ca73f32aad3b5198187baff9d9af47cab139adbd1",
+  "fixture_source_sha256": "edf6bf2ba7b8b9a8f3daa1f001db723c1a8f8f7001523838544f7730914cd712",
+  "published_before_fit": true,
+  "no_real_labels_read_or_models_fit_at_freeze": true,
+  "actual_Claude_review_complete": true,
+  "required_sealed_price_audit_before_label_marker": true
+}

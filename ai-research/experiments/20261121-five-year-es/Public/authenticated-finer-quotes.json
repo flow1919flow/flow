@@ -1,0 +1,58 @@
+{
+  "state": "authenticated_metadata_only_NO_downloads",
+  "checked_at_utc": "2026-11-21T02:53:23.012823+00:00",
+  "quotes": [
+    {
+      "request": {
+        "dataset": "GLBX.MDP3",
+        "schema": "ohlcv-1s",
+        "symbols": [
+          "ES.FUT"
+        ],
+        "stype_in": "parent",
+        "start": "2021-11-24T00:00:00Z",
+        "end": "2025-11-24T00:00:00Z"
+      },
+      "quoted_cost_USD": 0.0,
+      "billable_bytes_estimate": 2891596568,
+      "exact_quote_is_zero": true,
+      "status": "quoted"
+    },
+    {
+      "request": {
+        "dataset": "GLBX.MDP3",
+        "schema": "ohlcv-1s",
+        "symbols": [
+          "ESZ1"
+        ],
+        "stype_in": "raw_symbol",
+        "start": "2021-11-01T00:00:00Z",
+        "end": "2021-12-14T00:00:00Z"
+      },
+      "quoted_cost_USD": 0.0,
+      "billable_bytes_estimate": 70448280,
+      "exact_quote_is_zero": true,
+      "status": "quoted"
+    },
+    {
+      "request": {
+        "dataset": "GLBX.MDP3",
+        "schema": "ohlcv-1s",
+        "symbols": [
+          "ESZ5"
+        ],
+        "stype_in": "raw_symbol",
+        "start": "2025-11-12T00:00:00Z",
+        "end": "2025-12-17T00:00:00Z"
+      },
+      "quoted_cost_USD": 0.0,
+      "billable_bytes_estimate": 63916104,
+      "exact_quote_is_zero": true,
+      "status": "quoted"
+    }
+  ],
+  "new_data_downloads": 0,
+  "key_persisted": false,
+  "metadata_calls_are_free": true,
+  "no_account_plan_inferred": true
+}

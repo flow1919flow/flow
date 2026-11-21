@@ -1,0 +1,159 @@
+{
+  "schema": "ES-FIVE-YEAR-ML-2-ONE-SECOND",
+  "created_at_utc": "2026-11-21T03:01:51.424863+00:00",
+  "user_scope": "Four extra older ES years, 2021–2026, zero incremental data cost; implement actual Claude recommendations 1–4.",
+  "data": {
+    "source": "Original GLBX.MDP3 OHLCV-1s ES.FUT, exact dated quarterly outrights, no adjusted continuous prices.",
+    "inventory_proof": "../ES-FiveYear-ZeroCost-20261121/Public/local-coverage.json",
+    "incremental_data_cost_usd": 0,
+    "raw_data_uploaded": false,
+    "resolution": "One-second OHLCV, NOT bid/ask TBBO or a known true intrasecond tick path.",
+    "no_spreads_or_back_adjustment": true,
+    "roll": "Existing causal prior-session-volume rule, forward maturity only; freeze price-only schedule before labels. Five same-contract full warm-up sessions.",
+    "calendar": "Preserve exact native ES calendar/session/flatten where available; older exchange holidays/early closes must be verified before older labels.",
+    "price_gate": "Authenticated get_cost exact0USD immediately before EVERY monthly request; positive or error stops without that data request.",
+    "first_authenticated_quote_sha256": "aca6944c9be5c2ac11161eb63176bc2802752637b46aec9538a35017c955d57e",
+    "quality": "Preserve vendor degraded flags, including known28Nov2025; no silent outcome-based exclusion.",
+    "acquisition": "Known Nov2025–Oct2026 months first, then Nov2021–Oct2025; raw prices only, sealed outcomes remain uncomputed."
+  },
+  "periods": {
+    "development": [
+      "2021-11-24",
+      "2024-11-24_exclusive"
+    ],
+    "sealed_final": [
+      "2024-11-24",
+      "2025-11-24_exclusive"
+    ],
+    "known_supplement": [
+      "2025-11-24",
+      "2026-10-31_exclusive"
+    ],
+    "sealed_label_rule": "No labels/outcomes until source, model coefficients/preprocessing, calibrator and rule are frozen; metadata/prices may be audited.",
+    "known_year_status": "Used repeatedly for strategy/model selection; never fresh OOS.",
+    "older_year_status": "Held out within this newly registered ML study; no claim of universal historical data independence."
+  },
+  "review": {
+    "actual_Claude_read": true,
+    "accepted_specs": "Actual Claude confirmation of one-second-end decisions and symmetric >=2-second market fills, 21 November 2026; no private session metadata published.",
+    "private_chat_metadata_published": false,
+    "critical_conditions": [
+      "Approximation acceptance before training",
+      "Strategy-only check on development years only",
+      "One sealed final evaluation",
+      "No operating strategy changes"
+    ]
+  },
+  "candidate": {
+    "strategy_reference": "ES C28.03 funded EMA20, one definition; no near-duplicate EMA22/Eval/Funded rows.",
+    "sequence": "Band → opposite band → first EMA20 return; latest band determines side; consume first return regardless of later eligibility.",
+    "overlap": "Also independent shadow candidate while base position open; base_was_flat flag retained, never multiply one setup across accounts.",
+    "timeframe_seconds": 300,
+    "session_America_Chicago": [
+      "08:30",
+      "16:00"
+    ],
+    "normal_entry_and_flatten_cutoff": "15:09 strictly; native early close/flatten overrides retained.",
+    "center": "EMA20 forming from prior committed 5-minute EMA and current minute close.",
+    "ATR": "Wilder10, initial mean10 TR; first bar each day H−L; subsequent TR includes prior close.",
+    "Keltner": "EMA20 ± 2.0 ATR10",
+    "entry": "Market fill at first observed second interval Open at least2seconds after decision. It must precede native flatten. Report missing intervals/delays; never invent a bar.",
+    "stop": "Decision-end EMA20 − side×2.15formingATR10, outward0.25tick; fixed after decision.",
+    "news": "Omitted consistently for research candidate inventory only; no historical SI/news invented. This is not provider-compliant payout simulation.",
+    "other_logic": "No extra filters, direction/parameter searches or changed session rules.",
+    "reconstruction": "O-H-L-C and O-L-H-C are uncertainty scenarios only. Both include Open and Close; forming5min range updated in scenario order. Carry all unresolved finite sequence states across seconds, deduplicated without outcome information.",
+    "consensus": "A candidate only if all paths/states agree in direction and second. Ambiguous first returns count as missing in native acceptance, never pick the profitable path.",
+    "decision": "At second interval END, using only information available then; stop and five features fixed there. No retrospective trade at an earlier intrasecond EMA touch.",
+    "spread": "Fill trade-price proxy plus one adverse tick for buy, minus one for sell. This is an explicit conservative spread approximation, independent of later stress."
+  },
+  "labels": {
+    "primary": "One-second approximation of original C28.03 moving BB/OR/stop decisions with >=2s market-fill latency. Not native tick labels.",
+    "BB": "20-value forming population BB1.75 with0.75tick offset; target touch during a second is reconstructed without claiming the actual path. Decision at secondEND.",
+    "OR": "Fixed first60min high/low afterminute60; actualentry favorable-distance guard>=1tick. Touch triggers an exit intent, NOT fillatlevel.",
+    "priority": "If stop and any target touch within same second, stop wins. Once an exit intent exists, preserve it; no later outcome-based replacement.",
+    "flatten": "At native flatten time an exit intent is generated, then first observed secondOpen >=flatten+2s, with adverse spread; no new entries at/afterflatten.",
+    "normal_roundtrip_fee_usd": 4.68,
+    "stress_extra_usd": 25.0,
+    "net_R": "(gross from actual proxyfills−4.68−25.00)/(side×(decisionClose+side×0.25−fixedStop)×50+4.68+25.00)",
+    "secondary": "No bracket-rule or separate label search in this one reconstruction; original movingtarget label is primary.",
+    "exit": "All stop/BB/OR market exits fill first observed secondOpen >= exitdecisionEND+2s, with adverse spread tick. No guaranteed stop/target-price fills.",
+    "risk_causality": "Decision quote proxy is decisionClose+side×1spreadtick; never use later actual entryprice to select features/size/risk."
+  },
+  "mandatory_known_year_approximation_acceptance": {
+    "before_any_new_model_or_older_label": true,
+    "reference": "347 unique native C28.03 candidates on same known242 sessions, source hashes checked.",
+    "match": "Same contract, Chicago date and side. All pairs within300s sorted by(abs time difference,native signal ns,coarse signal ns); take each native/coarse candidate at most once. No outcomes used.",
+    "minimum_matches": 100,
+    "minimum_native_recall": 0.7,
+    "minimum_coarse_precision": 0.7,
+    "minimum_NettoR_Spearman": 0.6,
+    "minimum_stress_profit_sign_agreement": 0.75,
+    "also_report": [
+      "All counts/exclusions",
+      "Signed mean and mean absolute net-R error",
+      "Net-USD error",
+      "Decision-time offsets",
+      "Feature deviations",
+      "Source/version hashes"
+    ],
+    "failure_action": "End bar-reconstruction route after this one-second attempt; no older labels/training, no relaxed thresholds. Consult actual Claude on the final result.",
+    "minimum_mean_R_error_abs_maximum": 0.05,
+    "signed_mean_R_error_abs_must_be_at_most": 0.05,
+    "ambiguous_cases": "Count as unmatched, included in denominator; do not prune native reference to easy cases."
+  },
+  "features": [
+    "planned_stop_risk_usd",
+    "nearest_active_target_path_R",
+    "signed_completed_ema_slope_atr",
+    "completed_relative_volume20",
+    "chicago_session_minute"
+  ],
+  "feature_rules": "Decision-second END only. CurrentsecondOHLC is then known. Planned risk uses decision quoteproxy, not future fill. ORfeature eligibility uses decisionquoteproxy; actualentryguard only for later exit label. Slope and relvol from completed5min bars. No intrasecond backdating, future highs/lows/MFE or SI-history invention.",
+  "models": {
+    "primary": {
+      "model": "StandardScaler + Ridge",
+      "alpha": 10.0,
+      "solver": "svd"
+    },
+    "fixed_secondary": {
+      "model": "HistGradientBoostingRegressor",
+      "max_depth": 1,
+      "learning_rate": 0.05,
+      "max_iter": 100,
+      "min_samples_leaf": 20,
+      "l2_regularization": 1.0,
+      "early_stopping": false,
+      "random_state": 20261121
+    },
+    "target": "Unclipped primary stress net-R",
+    "no_search": true,
+    "calibration": "Training-only expanding chronological cross-predictions, whole-session gap and label-end purge. a=unrestricted training mean(y), b=OLS slope of y on centered cross-prediction clipped[0,1]. Prediction=a+b×(raw−mean(cross-predictions)).",
+    "gate": "Omit only if calibrated expected net-R<0; if a<=0, gate inactive, explicitly reported.",
+    "preprocessing": "Fit scaler/imputation only on each training subset; no sealed covariate-assisted fitting.",
+    "forward_shadow": "Frozen portable model/rule; record forecast before outcome; no trading changes. Deployment requires subsequent native gate/account replay and forward evidence."
+  },
+  "evaluation": {
+    "primary_final": "Ridge Spearman(prediction,stressNetR), one-sided session-level conditional permutation at alpha0.05; fixed boosting descriptive secondary, not selection winner.",
+    "conditional_permutation": "1999 permutations,seed20261121; permute whole ordered daily outcome vectors within calendar-quarter and same daily candidate-count strata, report immovable fraction.",
+    "uncertainty": "1999 moving5-session blocks for descriptive confidence intervals; report final test count, do not assert500 cases without counting.",
+    "also_report": [
+      "Mean omitted and taken stress net-R",
+      "Count omitted",
+      "Ungated baseline",
+      "No claim of payout gain without native policy/account rerun"
+    ],
+    "no_leaderboard_or_live_promotion": true
+  },
+  "software_references": [
+    "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html",
+    "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html",
+    "https://databento.com/docs/api-historical/basics/"
+  ],
+  "training_started": false,
+  "sealed_labels_generated": false,
+  "register_source_sha256": "4ded1ebe3b13fc325a3855c0e0992e7b3a84474a705ac5505b685b4a6bd2b4a7",
+  "supersedes_reconstruction_only": "Minute-close v1 failed recall57.64%,precision68.73%; old FAIL/source/data retained. No older labels or fits generated.",
+  "parent_preregister_sha256": "07bcf9570e68ab5cbeef5b58ca6b23c543979d8f96ac4c17986ddd2f43311faf",
+  "new_reconstruction_attempts_allowed": 1,
+  "no_minute_v2_or_resolution_search": true
+}

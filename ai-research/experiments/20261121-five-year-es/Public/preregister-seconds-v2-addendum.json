@@ -1,0 +1,12 @@
+{
+  "schema": "SECONDS-V2-PREEXECUTION-CLARIFICATIONS",
+  "registered_at_utc": "2026-11-21T03:04:38.943205+00:00",
+  "parent_protocol_sha256": "498b90431dfeef1f65b8aea232cdff7e9ca2a44153131a5b8c8faeba36b813fa",
+  "native_reference_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+  "native_reference_path": "outputs/AI-Forschung-20261121/Source/HYML1ESResearch.java",
+  "native_reference_entry_guard": "handleQuote cancels pending entry when ns>=flatten, entry not allowed, or executable quote past fixed stop. No filled trade in that case; consume signal and report exclusion. A valid entry can subsequently trigger a second-end exit intent with >=2s fill latency.",
+  "path_consensus": "For every reachable prior finite state and both O-H-L-C/O-L-H-C orders require exactly one first-return event of identical side in the same second; otherwise no emitted candidate, record ambiguity, retain all reachable end states without using outcomes. All-zero-return second emits none and is not falsely called a trade.",
+  "completed_feature_clock": "Preserve native pre-commit callback: slope/ATR and relative volume only from 5min bars whose end<=secondSTART. Current forming-bar stop/BB may include current second OHLC known at decisionEND. At exact5minboundary the just-finished bar is first used for completed-feature values in the NEXT second.",
+  "no_candidate_execution_before_registration": true,
+  "no_results_or_model_yet": true
+}

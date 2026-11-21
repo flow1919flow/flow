@@ -1,0 +1,257 @@
+{
+  "schema": "ES-FINER-DATA-FEASIBILITY-1",
+  "status": "DOCUMENTED_L0_ONE_SECOND_PATH_ACCOUNT_ZERO_PRICE_UNCONFIRMED",
+  "created_at_utc": "2026-11-21T02:51:48.702382+00:00",
+  "scope": "Read-only official-documentation research and known-catalog raw DBN headers; quotation specification only. No market data requests, downloads, purchases, labels or fits.",
+  "conclusion": {
+    "supported_path": "GLBX.MDP3 / ohlcv-1s / exact ES quarterly contracts, raw_symbol, dated instrument mappings, frozen causal roll.",
+    "potential_zero_cost": "Yes under the publicly described active CME Standard L0 inclusion, after the user account confirms get_cost == 0 for every exact requested block. This is not an assertion about the user subscription.",
+    "trades_TBBO_older_history": "Supported in the catalog, but Standard public inclusion is limited to the last 12 months. Older records are not established as free; Plus/Unlimited public inclusion differs. No upgrade proposed or purchased.",
+    "existing_older_tick_files": "None found within the explicit inventory scope; one-second OHLCV and standalone trades schemas both absent.",
+    "next_step": "Authenticate to Databento for metadata only, record per-schema entitlement ranges and exact prices, then consider a confirmed-zero known-period one-second native acceptance run before any older labels/training."
+  },
+  "sources": [
+    {
+      "id": "pricing",
+      "url": "https://databento.com/pricing/",
+      "checked_utc": "2026-11-21T02:51:48.702291+00:00",
+      "evidence": "Current official table: Standard column, Included historical data; OHLCV row is L0, trades/TBBO rows are L1.",
+      "short_quote": "16+ years of L0 history",
+      "facts": {
+        "CME_Standard_included_OHLCV_1s_1m_1h_1d": "16+ years",
+        "CME_Standard_included_trades_TBBO": "Last 12 months",
+        "CME_Plus_trades_TBBO": "16+ years",
+        "CME_Unlimited_all_schemas": "16+ years"
+      },
+      "limit": "Public plan description only; active subscription, entitlements and account-adjusted request cost were not verified."
+    },
+    {
+      "id": "ES_catalog",
+      "url": "https://databento.com/catalog/cme/GLBX.MDP3/futures/ES",
+      "short_quote": "Since 2010-06-06 UTC",
+      "facts": "Official ES product page lists OHLCV-1s, trades and TBBO in GLBX.MDP3; product availability spans the requested 2021–26 range. Schema-specific availability and daily conditions still require metadata checks."
+    },
+    {
+      "id": "ohlcv",
+      "url": "https://databento.com/docs/schemas/ohlcv",
+      "short_quote": "If no trade occurs within the interval, no record is printed.",
+      "facts": "OHLCV schemas aggregate executed trades. One-second bars retain open, high, low, close and total volume; they do not preserve trade ordering inside a second or bid/ask and size. Bar ts_event is the inclusive interval start, based on ts_recv of source trades. A bar becomes fully known after its interval; its opening timestamp must not make its closing price available early. Missing bars cannot be automatically treated as missing feed or filled with synthetic trades."
+    },
+    {
+      "id": "get_cost",
+      "url": "https://databento.com/docs/api-historical/metadata/metadata-get-cost?lang=python",
+      "short_quote": "This cost respects any discounts provided by flat rate plans.",
+      "facts": "Historical.metadata.get_cost returns the account-adjusted USD estimate for a specific historical request. Start is inclusive; end is exclusive. Ten-minute-aligned bounds avoid known overstatement; definitions/status use UTC-midnight bounds. Symbols must be explicit: None or ALL_SYMBOLS selects the whole dataset. Price quotation does not request time series; actual billing, if a later retrieval were authorized, follows bytes sent."
+    },
+    {
+      "id": "authentication_and_metadata",
+      "url": "https://databento.com/docs/api-historical/basics/",
+      "short_quote": "Access to metadata, symbology, and account management is free.",
+      "facts": "API requests authenticate with a Databento API key. The client defaults to DATABENTO_API_KEY, or accepts a constructor key. Authenticated account pricing is required to establish whether the existing user entitlement produces exactly 0 USD. No credentials were read or reused from another provider."
+    },
+    {
+      "id": "list_schemas",
+      "url": "https://databento.com/docs/api-historical/metadata/metadata-list-schemas",
+      "facts": "metadata.list_schemas(dataset=\"GLBX.MDP3\") lists available formats; the official example includes ohlcv-1s, ohlcv-1m, trades and tbbo."
+    },
+    {
+      "id": "get_dataset_range",
+      "url": "https://databento.com/docs/api-historical/metadata/metadata-get-dataset-range?lang=python",
+      "facts": "metadata.get_dataset_range(dataset=\"GLBX.MDP3\") returns availability given the user entitlements, including per-schema start/end under schema. A product history start alone is not a per-schema/account availability proof."
+    },
+    {
+      "id": "continuous",
+      "url": "https://databento.com/docs/examples/symbology/continuous",
+      "facts": "ES.v.0 with stype_in=\"continuous\" selects the volume-based front contract. It is suitable for a broad metadata quotation, not proof that its roll equals the already frozen native strategy roll. Final data should preserve exact raw contract, dated instrument mapping and frozen roll schedule."
+    }
+  ],
+  "local_inventory": {
+    "proof": "finer-local-inventory.json",
+    "proof_sha256": "155ac92c71f47fa41d965fc04b9322e55f7fb78a8eceea0be2442e0e4b087af6",
+    "files": 1092,
+    "schema_summary": {
+      "definition": {
+        "files": 139,
+        "requested_start_min": "2026-05-22T00:00:00+00:00",
+        "requested_end_max": "2026-10-31T00:00:00+00:00",
+        "files_starting_before_2025": 0
+      },
+      "mbo": {
+        "files": 24,
+        "requested_start_min": "2026-10-04T00:00:00+00:00",
+        "requested_end_max": "2026-10-31T00:00:00+00:00",
+        "files_starting_before_2025": 0
+      },
+      "mbp-1": {
+        "files": 225,
+        "requested_start_min": "2025-11-12T00:00:00+00:00",
+        "requested_end_max": "2026-10-31T00:00:00+00:00",
+        "files_starting_before_2025": 0
+      },
+      "ohlcv-1m": {
+        "files": 198,
+        "requested_start_min": "2010-06-06T00:00:00+00:00",
+        "requested_end_max": "2026-11-06T00:00:00+00:00",
+        "files_starting_before_2025": 175
+      },
+      "tbbo": {
+        "files": 506,
+        "requested_start_min": "2025-11-07T00:00:00+00:00",
+        "requested_end_max": "2026-10-31T00:00:00+00:00",
+        "files_starting_before_2025": 0
+      }
+    },
+    "ohlcv_1s_files": 0,
+    "standalone_trades_schema_files": 0,
+    "older_than_2025_trade_or_TBBO_files": 0,
+    "important_limit": "Raw metadata coverage, not a universal scan of all disks; SQX trade-result CSVs were not mistaken for vendor market trades. TBBO includes transactions plus top-of-book; its oldest checked file begins November 2025."
+  },
+  "auth": {
+    "DATABENTO_API_KEY_environment_present": false,
+    "DB_API_KEY_environment_present": false,
+    "key_values_read": false,
+    "other_secret_stores_searched": false,
+    "DeepInfra_key_reused": false,
+    "account_plan": "UNVERIFIED"
+  },
+  "quote_only_api": {
+    "client": "client = databento.Historical()  # reads only DATABENTO_API_KEY when user makes it available",
+    "method": "client.metadata.get_cost(**params)",
+    "http_endpoint": "https://hist.databento.com/v0/metadata.get_cost",
+    "required_metadata_first": [
+      "client.metadata.list_schemas(dataset=\"GLBX.MDP3\")",
+      "client.metadata.get_dataset_range(dataset=\"GLBX.MDP3\")"
+    ],
+    "requests": [
+      {
+        "purpose": "Exact older-quarter-contract one-month quote; no time series",
+        "params": {
+          "dataset": "GLBX.MDP3",
+          "symbols": [
+            "ESZ1"
+          ],
+          "stype_in": "raw_symbol",
+          "schema": "ohlcv-1s",
+          "start": "2021-11-01T00:00:00Z",
+          "end": "2021-12-01T00:00:00Z"
+        },
+        "cost_usd": null,
+        "status": "NOT_REQUESTED_NO_AUTH"
+      },
+      {
+        "purpose": "Exact older-quarter-contract one-month quote; no time series",
+        "params": {
+          "dataset": "GLBX.MDP3",
+          "symbols": [
+            "ESZ1"
+          ],
+          "stype_in": "raw_symbol",
+          "schema": "trades",
+          "start": "2021-11-01T00:00:00Z",
+          "end": "2021-12-01T00:00:00Z"
+        },
+        "cost_usd": null,
+        "status": "NOT_REQUESTED_NO_AUTH"
+      },
+      {
+        "purpose": "Exact older-quarter-contract one-month quote; no time series",
+        "params": {
+          "dataset": "GLBX.MDP3",
+          "symbols": [
+            "ESZ1"
+          ],
+          "stype_in": "raw_symbol",
+          "schema": "tbbo",
+          "start": "2021-11-01T00:00:00Z",
+          "end": "2021-12-01T00:00:00Z"
+        },
+        "cost_usd": null,
+        "status": "NOT_REQUESTED_NO_AUTH"
+      },
+      {
+        "purpose": "Broad annual L0 feasibility quote only; frozen raw-contract roll still required",
+        "params": {
+          "dataset": "GLBX.MDP3",
+          "symbols": [
+            "ES.v.0"
+          ],
+          "stype_in": "continuous",
+          "schema": "ohlcv-1s",
+          "start": "2021-11-24T00:00:00Z",
+          "end": "2022-11-24T00:00:00Z"
+        },
+        "cost_usd": null,
+        "status": "NOT_REQUESTED_NO_AUTH"
+      },
+      {
+        "purpose": "Broad annual L0 feasibility quote only; frozen raw-contract roll still required",
+        "params": {
+          "dataset": "GLBX.MDP3",
+          "symbols": [
+            "ES.v.0"
+          ],
+          "stype_in": "continuous",
+          "schema": "ohlcv-1s",
+          "start": "2022-11-24T00:00:00Z",
+          "end": "2023-11-24T00:00:00Z"
+        },
+        "cost_usd": null,
+        "status": "NOT_REQUESTED_NO_AUTH"
+      },
+      {
+        "purpose": "Broad annual L0 feasibility quote only; frozen raw-contract roll still required",
+        "params": {
+          "dataset": "GLBX.MDP3",
+          "symbols": [
+            "ES.v.0"
+          ],
+          "stype_in": "continuous",
+          "schema": "ohlcv-1s",
+          "start": "2023-11-24T00:00:00Z",
+          "end": "2024-11-24T00:00:00Z"
+        },
+        "cost_usd": null,
+        "status": "NOT_REQUESTED_NO_AUTH"
+      },
+      {
+        "purpose": "Broad annual L0 feasibility quote only; frozen raw-contract roll still required",
+        "params": {
+          "dataset": "GLBX.MDP3",
+          "symbols": [
+            "ES.v.0"
+          ],
+          "stype_in": "continuous",
+          "schema": "ohlcv-1s",
+          "start": "2024-11-24T00:00:00Z",
+          "end": "2025-11-24T00:00:00Z"
+        },
+        "cost_usd": null,
+        "status": "NOT_REQUESTED_NO_AUTH"
+      }
+    ],
+    "authenticated_calls_performed": 0,
+    "zero_policy": "Require an explicit numeric 0 USD estimate for each exact schema/symbol/start/end. Preserve request, timestamp and response. Do not treat API errors, missing cost, free signup credit or inferred entitlement as zero. Do not submit any time-series or batch request as part of this feasibility check."
+  },
+  "acceptance_barrier": {
+    "native_minute_acceptance": "FAIL",
+    "proof": "../ES-FiveYear-ZeroCost-20261121/Public/minute-native-acceptance.json",
+    "proof_sha256": "64d735f9c5a745206c643ad61083a63c86c28ccb23d3ba8f953b107c40534d68",
+    "native_candidates": 347,
+    "matched": 200,
+    "recall": 0.5763688760806917,
+    "minimum_recall": 0.7,
+    "older_labels_or_training_allowed": false,
+    "one_second_native_acceptance": "NOT_RUN",
+    "one_second_limit": "Finer bars may reduce temporal aggregation mismatch, but they cannot prove within-second ordering or unchanged native fills. Keep the same acceptance thresholds and compare exact native candidate identity/decision/exit/net-R before training. No synthetic bid/ask, top-size imbalance or quote age can be inferred from OHLCV.",
+    "feature_scope": "The five-feature price-only five-year protocol must be validated under one-second input. The separate eight-feature HY104+SI experiment uses quote spread, imbalance and age that OHLCV does not contain; these may not be silently copied or invented."
+  },
+  "spending": {
+    "authenticated_metadata_calls": 0,
+    "timeseries_calls": 0,
+    "batch_jobs": 0,
+    "downloaded_bytes": 0,
+    "new_data_usage_usd": 0,
+    "credit_used_usd": 0,
+    "plan_or_license_changed": false
+  }
+}

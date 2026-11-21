@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "all1746_retained": true,
+  "completed_two_arms_times_folds": 16,
+  "unique_later_predictions_per_arm": 644,
+  "same_test_ids_and_labels": true,
+  "all_whole_day_splits_and_outcome_purges_passed": true,
+  "independent_sklearn_log_loss": {
+    "price_context": 0.8017131770747005,
+    "price_plus_SI": 0.8018604843569311,
+    "train_prior": 0.8022769513135166
+  },
+  "all1635_valid_event_label_bid_ask_fees_recomputed": true,
+  "fit_source_unchanged_since_design_freeze": true,
+  "verified_at_utc": "2026-11-21T01:58:35.965607+00:00",
+  "scope": "Dataset/metrics/separation acceptance, not proof of future profitability"
+}

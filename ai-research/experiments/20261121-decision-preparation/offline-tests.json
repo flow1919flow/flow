@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "real_API_calls": 0,
+  "real_model_outputs_generated": false,
+  "real_credentials_read": false,
+  "scope": "Offline actual-source provenance plus synthetic HTTP/schema/budget/evaluation fixtures;not model performance proof",
+  "runner_sha256": "bf650e03397aa2dc5fead5aa13fac0f0ce408b5eedc0f4fbfcff212207ecc486",
+  "test_source_sha256": "a1491937515399a99c9d3f6f7d17015bac99a75fcb7e30bf437193cc5403c4f5",
+  "completed_at_utc": "2026-11-21T01:59:49.657063+00:00"
+}

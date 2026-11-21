@@ -1,0 +1,177 @@
+{
+  "allowlist": "Source Python, Public aggregate JSON/README, aggregate PNG. No Private folder, inputs, raw quote bytes, raw messages/IDs or weights.",
+  "entries": [
+    {
+      "path": "ai-research/experiments/20261121-si1746/Source/acceptance.py",
+      "original_sha256": "5e081d2c3e49a265a81338cb7a40d879420ac77a74702f02824c4440c7ec5673",
+      "export_sha256": "5e081d2c3e49a265a81338cb7a40d879420ac77a74702f02824c4440c7ec5673"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Source/common.py",
+      "original_sha256": "a1f8824386f4ba5a6a128203fa4931c418f675ad963bd0dbfbac4f78154ac947",
+      "export_sha256": "a1f8824386f4ba5a6a128203fa4931c418f675ad963bd0dbfbac4f78154ac947"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Source/extra_audit.py",
+      "original_sha256": "b916e6c8805b0e41d9bb45305d642fe9ad1fc869b4327f1845483b5d43aecfb7",
+      "export_sha256": "b916e6c8805b0e41d9bb45305d642fe9ad1fc869b4327f1845483b5d43aecfb7"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Source/finish.py",
+      "original_sha256": "9ec540e0709da5ee860cc10dfe580df043f3043c988d9967b464da168bf9b41f",
+      "export_sha256": "9ec540e0709da5ee860cc10dfe580df043f3043c988d9967b464da168bf9b41f"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Source/labels.py",
+      "original_sha256": "acd40cea4047eb835846ffced12adb7ee9477e290683998db92b5b32048684aa",
+      "export_sha256": "acd40cea4047eb835846ffced12adb7ee9477e290683998db92b5b32048684aa"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Source/native_verify.py",
+      "original_sha256": "87ca863c3409bef8b65b2c0f19eb259e54c5d993eda09a7966140e70a7d72abf",
+      "export_sha256": "87ca863c3409bef8b65b2c0f19eb259e54c5d993eda09a7966140e70a7d72abf"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Source/prepare.py",
+      "original_sha256": "3667a682f019844badfeaf677bcf06f5de90d3e8c400e209601bdf1a826576c0",
+      "export_sha256": "3667a682f019844badfeaf677bcf06f5de90d3e8c400e209601bdf1a826576c0"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Source/public_export.py",
+      "original_sha256": "8915c83836e89e5a72a5e804a03766ce9be5a3941a8b073a387b4a61f14acd44",
+      "export_sha256": "8915c83836e89e5a72a5e804a03766ce9be5a3941a8b073a387b4a61f14acd44"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Source/track.py",
+      "original_sha256": "a28837a00baaf9aa80a5999ad2b7df96fd0fa06a257f6f5e9a20522663fba02e",
+      "export_sha256": "a28837a00baaf9aa80a5999ad2b7df96fd0fa06a257f6f5e9a20522663fba02e"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Source/train.py",
+      "original_sha256": "1aa4ad5750d27c64c06f736885ce4071568bca668f4bf8cd6c264e2e6c90913d",
+      "export_sha256": "1aa4ad5750d27c64c06f736885ce4071568bca668f4bf8cd6c264e2e6c90913d"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Source/verify_design.py",
+      "original_sha256": "d461c61d1dc1f9897475be9f5b0a085863352fba6e4abcc6ce99f4dfb0ec1ceb",
+      "export_sha256": "d461c61d1dc1f9897475be9f5b0a085863352fba6e4abcc6ce99f4dfb0ec1ceb"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/acceptance.json",
+      "original_sha256": "b74d56c52b19e9ec9179a278c47d42fe20c13bd663cbab542fb9bdd1e09ffc05",
+      "export_sha256": "b74d56c52b19e9ec9179a278c47d42fe20c13bd663cbab542fb9bdd1e09ffc05"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/attempt1-environment-error.json",
+      "original_sha256": "eb8f338db857c70a6200a896ba1628edc5990cdd2b5bad5f632edee4c5c6e996",
+      "export_sha256": "eb8f338db857c70a6200a896ba1628edc5990cdd2b5bad5f632edee4c5c6e996"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/context-checks.json",
+      "original_sha256": "4209efc6fcbd25af6b13adf44c9bacb841a23b8baa3a3ddea0c162b17d29f898",
+      "export_sha256": "09d57fab61996cd3b8e20710cf730817fadf98e866c2c1e199716b337ae29d3c"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/context-freeze-v1.json",
+      "original_sha256": "119ac1516aaff399d0eac91dd3e94c9a8a57573e553e0cd009b9be4054f5466e",
+      "export_sha256": "119ac1516aaff399d0eac91dd3e94c9a8a57573e553e0cd009b9be4054f5466e"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/context-freeze.json",
+      "original_sha256": "119c83fd859e9ab6203aab0ea27e30ef86892858d8660a2293041ff161d3812a",
+      "export_sha256": "119c83fd859e9ab6203aab0ea27e30ef86892858d8660a2293041ff161d3812a"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/coverage-v1.json",
+      "original_sha256": "38710243db55906de7be1e159da5f2b356cc6cf3131f1c4f9026b45bc272fe41",
+      "export_sha256": "38710243db55906de7be1e159da5f2b356cc6cf3131f1c4f9026b45bc272fe41"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/coverage.json",
+      "original_sha256": "0cfc511839922c604fc05e04a8fa65cc26f2669d78a8a3317ce12dcc0e377c14",
+      "export_sha256": "0cfc511839922c604fc05e04a8fa65cc26f2669d78a8a3317ce12dcc0e377c14"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/design-tests.json",
+      "original_sha256": "e7157d78108ba69b2ec7bbdc2f50406562498ba66616862e161a1f39792c9cc3",
+      "export_sha256": "e7157d78108ba69b2ec7bbdc2f50406562498ba66616862e161a1f39792c9cc3"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/input-provenance.json",
+      "original_sha256": "6c7c92a6641d68b4399d76be8b4e2aa490df04e06a916ca773d2a13adae23ce2",
+      "export_sha256": "6c7c92a6641d68b4399d76be8b4e2aa490df04e06a916ca773d2a13adae23ce2"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/instrument-spec-proof.json",
+      "original_sha256": "2005fc954bdc34af3bbd76cac4a8b1ae68b4fae20b834f5a22853900fb0cb7f3",
+      "export_sha256": "2005fc954bdc34af3bbd76cac4a8b1ae68b4fae20b834f5a22853900fb0cb7f3"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/mlflow-receipt.json",
+      "original_sha256": "b793064cae0ec7a0b172ee567a20f0b6f0545c88b55e9a7a60ed4ed245e7548c",
+      "export_sha256": "b793064cae0ec7a0b172ee567a20f0b6f0545c88b55e9a7a60ed4ed245e7548c"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/model-runtime-transport-proof.json",
+      "original_sha256": "1eb715400e63d82094a4dfa47162f3b7c65cb2c63acf44e7e62decaa97861b28",
+      "export_sha256": "1eb715400e63d82094a4dfa47162f3b7c65cb2c63acf44e7e62decaa97861b28"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/native-decode-proof.json",
+      "original_sha256": "1611d05ef739400864beaae1fbc7903ada5b8212ebd6ad4e8af4eed31da68d7c",
+      "export_sha256": "1611d05ef739400864beaae1fbc7903ada5b8212ebd6ad4e8af4eed31da68d7c"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/numeric-diagnostic.json",
+      "original_sha256": "2f146502afebe1bc76a0508c9d74362fee94c44513739dcc204c68d5b7215cb3",
+      "export_sha256": "2f146502afebe1bc76a0508c9d74362fee94c44513739dcc204c68d5b7215cb3"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/pre-fit-runtime-amendment.json",
+      "original_sha256": "23d72e5c654ab5dbb7eb3f3c4aaa0b320498b0d231395dbf84939eef19e29871",
+      "export_sha256": "23d72e5c654ab5dbb7eb3f3c4aaa0b320498b0d231395dbf84939eef19e29871"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/preregister-local-receipt.json",
+      "original_sha256": "608ae9facb31f01accb8e4cb04ff30eb2671a10f2abb22b8f31a68aeba00e8ec",
+      "export_sha256": "608ae9facb31f01accb8e4cb04ff30eb2671a10f2abb22b8f31a68aeba00e8ec"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/preregister.json",
+      "original_sha256": "dab1f92ec75c280bbfdc7108c53dab78e6e28da7378787b96c4e9acd7650642b",
+      "export_sha256": "dab1f92ec75c280bbfdc7108c53dab78e6e28da7378787b96c4e9acd7650642b"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/results.json",
+      "original_sha256": "63a4b4002a4492c8f2c2a80e94a472558c9427698920f5b4255440d8cc71fe83",
+      "export_sha256": "63a4b4002a4492c8f2c2a80e94a472558c9427698920f5b4255440d8cc71fe83"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/runtime.json",
+      "original_sha256": "d6ec9025e452862d3a5ce1e247cb0eb790b72d3c62c9ceb4e2a4e818651c63c1",
+      "export_sha256": "d6ec9025e452862d3a5ce1e247cb0eb790b72d3c62c9ceb4e2a4e818651c63c1"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/stratified-temporal-audit.json",
+      "original_sha256": "66d8b76c34391e0ec4ccffbac7a0376301aa41b801153d460a9ec6568e3bda55",
+      "export_sha256": "66d8b76c34391e0ec4ccffbac7a0376301aa41b801153d460a9ec6568e3bda55"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/training-design.json",
+      "original_sha256": "cb91baa4a5721e95035e93f9eb41d6761dccf601b0490d6ab5b3c4778e8b65c7",
+      "export_sha256": "6b5b83b96bf938f1af4abe6b517d5cbaefdfcc2b2180c9b2c630a7c20a01eb35"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/training-times.json",
+      "original_sha256": "21f4fc47921eff499ad39a516227adcc13c45a7900e8f0386886e8d7b29672b3",
+      "export_sha256": "21f4fc47921eff499ad39a516227adcc13c45a7900e8f0386886e8d7b29672b3"
+    },
+    {
+      "path": "ai-research/experiments/20261121-si1746/Public/README.md",
+      "original_sha256": "dd2708faaf034a2082d74077ebd38e893fa1c30845c1b464044abc183b7d116b",
+      "export_sha256": "dd2708faaf034a2082d74077ebd38e893fa1c30845c1b464044abc183b7d116b"
+    }
+  ],
+  "private_row_data_uploaded": false,
+  "redactions": "Remove event-level exact timestamp proof rows; retain aggregate prefix counts. Strip single outcome boundary timestamps from public fold design."
+}

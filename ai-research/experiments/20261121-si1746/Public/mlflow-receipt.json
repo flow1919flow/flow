@@ -1,0 +1,9 @@
+{
+  "experiment_id": "4",
+  "runs": {
+    "price_context": "9864ca90541745989eb4d4c4c0ab2340",
+    "price_plus_SI": "c804315311d541689f83ccc5e17aea82"
+  },
+  "tracking_uri": "http://127.0.0.1:5055",
+  "status": "FINISHED"
+}

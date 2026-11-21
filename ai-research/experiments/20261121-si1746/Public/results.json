@@ -1,0 +1,180 @@
+{
+  "status": "FINISHED",
+  "model_version": "TabPFN v2 local CPU,4estimators",
+  "all_raw_events": 1746,
+  "eligible_heads": 936,
+  "chronological_test_episodes": 644,
+  "test_days_with_predictions": 71,
+  "folds_completed": 8,
+  "first_test_day": "2026-07-23",
+  "last_test_day": "2026-10-30",
+  "metrics": {
+    "price_context": {
+      "log_loss": 0.8017131770747005,
+      "brier": 0.5263641032519848,
+      "balanced_accuracy": 0.32947074293228135,
+      "accuracy": 0.515527950310559,
+      "hypothetical_mean_quote_net_usd": 15.544223602484562,
+      "hypothetical_median_quote_net_usd": 9.25999999996362,
+      "hypothetical_mean_stress_quote_net_usd": -1.1017391304346957,
+      "hypothetical_median_stress_quote_net_usd": -5.740000000000001,
+      "nonflat_predictions": 644
+    },
+    "price_plus_SI": {
+      "log_loss": 0.8018604843569311,
+      "brier": 0.5264664280244097,
+      "balanced_accuracy": 0.3276284790707868,
+      "accuracy": 0.5139751552795031,
+      "hypothetical_mean_quote_net_usd": 7.194068322981326,
+      "hypothetical_median_quote_net_usd": 8.00999999996362,
+      "hypothetical_mean_stress_quote_net_usd": -9.451894409937928,
+      "hypothetical_median_stress_quote_net_usd": -5.740000000000002,
+      "nonflat_predictions": 644
+    },
+    "train_prior": {
+      "log_loss": 0.8022769513135166,
+      "brier": 0.5255658693167042,
+      "balanced_accuracy": 0.3333333333333333,
+      "accuracy": 0.5248447204968945,
+      "hypothetical_mean_quote_net_usd": 19.10400621118015,
+      "hypothetical_median_quote_net_usd": 16.759999999999998,
+      "hypothetical_mean_stress_quote_net_usd": 2.4580434782608913,
+      "hypothetical_median_stress_quote_net_usd": -0.74000000003638,
+      "nonflat_predictions": 644
+    }
+  },
+  "by_market": [
+    {
+      "market": "CL",
+      "arm": "price_context",
+      "n": 162,
+      "log_loss": 0.8629341036405492,
+      "brier": 0.5460049825051688,
+      "balanced_accuracy": 0.3231981981981982,
+      "accuracy": 0.47530864197530864
+    },
+    {
+      "market": "ES",
+      "arm": "price_context",
+      "n": 126,
+      "log_loss": 0.8328745386935109,
+      "brier": 0.5354285334396444,
+      "balanced_accuracy": 0.3304661487236404,
+      "accuracy": 0.5238095238095238
+    },
+    {
+      "market": "GC",
+      "arm": "price_context",
+      "n": 77,
+      "log_loss": 0.7218746479138939,
+      "brier": 0.5008577139516963,
+      "balanced_accuracy": 0.5,
+      "accuracy": 0.5714285714285714
+    },
+    {
+      "market": "NQ",
+      "arm": "price_context",
+      "n": 279,
+      "log_loss": 0.7741269587153617,
+      "brier": 0.5179055058808784,
+      "balanced_accuracy": 0.3310502283105023,
+      "accuracy": 0.5197132616487455
+    },
+    {
+      "market": "CL",
+      "arm": "price_plus_SI",
+      "n": 162,
+      "log_loss": 0.861900912517863,
+      "brier": 0.5457004744298921,
+      "balanced_accuracy": 0.330518018018018,
+      "accuracy": 0.4876543209876543
+    },
+    {
+      "market": "ES",
+      "arm": "price_plus_SI",
+      "n": 126,
+      "log_loss": 0.8346690865174687,
+      "brier": 0.536452309859742,
+      "balanced_accuracy": 0.3249167591564928,
+      "accuracy": 0.5238095238095238
+    },
+    {
+      "market": "GC",
+      "arm": "price_plus_SI",
+      "n": 77,
+      "log_loss": 0.7188194814847355,
+      "brier": 0.498083534470213,
+      "balanced_accuracy": 0.5037878787878788,
+      "accuracy": 0.5714285714285714
+    },
+    {
+      "market": "NQ",
+      "arm": "price_plus_SI",
+      "n": 279,
+      "log_loss": 0.7750996384316994,
+      "brier": 0.5186217906578616,
+      "balanced_accuracy": 0.3245219748858447,
+      "accuracy": 0.5089605734767025
+    },
+    {
+      "market": "CL",
+      "arm": "train_prior",
+      "n": 162,
+      "log_loss": 0.85975121841733,
+      "brier": 0.5459853822258602,
+      "balanced_accuracy": 0.3333333333333333,
+      "accuracy": 0.49382716049382713
+    },
+    {
+      "market": "ES",
+      "arm": "train_prior",
+      "n": 126,
+      "log_loss": 0.8303820227262433,
+      "brier": 0.5338778627891128,
+      "balanced_accuracy": 0.3333333333333333,
+      "accuracy": 0.5396825396825397
+    },
+    {
+      "market": "GC",
+      "arm": "train_prior",
+      "n": 77,
+      "log_loss": 0.7257251737142628,
+      "brier": 0.49893631845111475,
+      "balanced_accuracy": 0.5,
+      "accuracy": 0.5714285714285714
+    },
+    {
+      "market": "NQ",
+      "arm": "train_prior",
+      "n": 279,
+      "log_loss": 0.7773393764257789,
+      "brier": 0.5173049486996566,
+      "balanced_accuracy": 0.3333333333333333,
+      "accuracy": 0.5232974910394266
+    }
+  ],
+  "predictions_sha256": "f66fc34ea0f70d3859c9cd07c64d8310aecae7ab0b54e98f260af44dccef3959",
+  "elapsed_seconds": 1667.6285109519958,
+  "fitting_completed_utc": "2026-11-21T01:57:18.642702+00:00",
+  "paired_logloss_improvement_SI": {
+    "mean": -0.00014730728223063646,
+    "ci95_low": -0.0019248126988484385,
+    "ci95_high": 0.0009658387092254746,
+    "moving_day_block": 5,
+    "bootstrap_draws": 1999,
+    "seed": 20261121,
+    "interpretation": "positive favors SI; conditional development-data uncertainty, not fresh OOS or causal proof"
+  },
+  "macro_equal_market_logloss": {
+    "price_context": 0.7979525622408289,
+    "price_plus_SI": 0.7976222797379418,
+    "train_prior": 0.7982994478209038
+  },
+  "limits": [
+    "May-Oct2026 repeatedly studied development period",
+    "Message time proxy, not original detection/receipt time",
+    "45 fixed matched controls only; insufficient for broad causal attribution",
+    "Quote markouts, no orders, account payouts or portfolio equity",
+    "No feature/model/threshold optimization performed"
+  ]
+}

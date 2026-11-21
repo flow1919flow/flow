@@ -1,0 +1,10 @@
+{
+  "first_attempt": "Stopped before model fitting: TabPFN venv has no Arrow reader",
+  "fix": "CSV transport with round_trip float parser, exact feature float parity with canonical Parquet verified; preserve optional nanosecond integers as Int64",
+  "data_selection_changed": false,
+  "matched_ID_pairs_unchanged": true,
+  "label_status_and_class_counts_unchanged": true,
+  "model_rules_changed": false,
+  "model_fitted_before_fix": false,
+  "completed_at_utc": "2026-11-21T01:29:29.182610+00:00"
+}

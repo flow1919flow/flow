@@ -1,0 +1,5 @@
+{
+  "future_truncation_rows": 80,
+  "all_equal": true,
+  "sentinel": "Timestamp-provenance guard only, not proof against all semantic leakage"
+}

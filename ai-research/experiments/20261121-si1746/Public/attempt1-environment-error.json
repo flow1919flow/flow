@@ -1,0 +1,5 @@
+{
+  "status": "FAILED",
+  "error": "ImportError(\"Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.\\nA suitable version of pyarrow or fastparquet is required for parquet support.\\nTrying to import the above resulted in these errors:\\n - `Import pyarrow` failed. pyarrow is required for parquet support. Use pip, conda, or your preferred package management tool to install the pyarrow package.\\n - `Import fastparquet` failed. fastparquet is required for parquet support. Use pip, conda, or your preferred package management tool to install the fastparquet package.\")",
+  "utc": "2026-11-21T01:27:47.319942+00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "stage": "context_and_matching_frozen_before_labels",
+  "frozen_at_utc": "2026-11-21T01:25:08.550450+00:00",
+  "events": 1746,
+  "by_market": {
+    "CL": 402,
+    "ES": 229,
+    "GC": 208,
+    "NQ": 907
+  },
+  "context_status": {
+    "ok": 1672,
+    "past_anchor_invalid_or_stale": 37,
+    "past_path_insufficient": 7,
+    "decision_quote_invalid_or_stale": 16,
+    "session_boundary": 14
+  },
+  "episode_heads": 1019,
+  "control_candidates": 44186,
+  "matched_heads": 45,
+  "matching_status": {
+    "no_control_within_fixed_calipers": 197,
+    "no_same_bucket_archive_bracketed_control": 720,
+    "matched": 45,
+    "invalid_event_context": 57
+  },
+  "edited_events": 0,
+  "verified_quote_files": 361,
+  "verified_quote_bytes": 1884326582,
+  "index_sha256": "5506dfc1acf4f91612f8b8977995b318e771d1b5ddc6a8acc245ce6983de4a99",
+  "archive_sha256": "ef9c55d7b029e1a58f4b725b2462fd091e9f74d1fcc51dcf27958ebecdee8f04",
+  "files": {
+    "Private/events-context.parquet": "24aaffbab96060f08f8f9367115bb5b34a3a6f1efaa9fe4b86215ea1d4a66e6a",
+    "Private/control-candidates.parquet": "d989b59362ce49988e5cedf600feaa8fccf4609c17c4ed64502f490ae3001b13",
+    "Private/matching.parquet": "b98ab5082c3311f08573dfd53a69ada8b5804bddac152b7488a255a3848ffeaa",
+    "Private/selected-controls-context.parquet": "369db343e3f65261e5a68cdc32ae36fb3234e247bc36c91ad2c18ecff76cbf6b",
+    "Private/quote-manifest.json": "17794a3f9b524766fbfa485a21e8ca727b4e16020749c1d3c63309a1edb063f0"
+  },
+  "source_sha256": {
+    "common.py": "a1f8824386f4ba5a6a128203fa4931c418f675ad963bd0dbfbac4f78154ac947",
+    "labels.py": "9b228be892a951d5fb19de02d2a5547a6e2ba05a3e7b693c2c80b513c2fa43fd",
+    "native_verify.py": "87ca863c3409bef8b65b2c0f19eb259e54c5d993eda09a7966140e70a7d72abf",
+    "prepare.py": "b95636c3d9301adc3ee81dd1b7f40f13257001a7d9fb61ccf14c2d59544bcaf5"
+  },
+  "price_labels_computed": false,
+  "model_fitted": false
+}

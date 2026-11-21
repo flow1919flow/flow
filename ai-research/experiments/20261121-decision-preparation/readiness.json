@@ -1,0 +1,17 @@
+{
+  "status": "prepared_not_executed_after_Claude_suitability_review",
+  "plan_sha256": "ccdabfe871286cf47060177170b39b4fc55f64b610c6ad1b4510d6f09414f0bb",
+  "runner_sha256": "bf650e03397aa2dc5fead5aa13fac0f0ce408b5eedc0f4fbfcff212207ecc486",
+  "tests_sha256": "a1491937515399a99c9d3f6f7d17015bac99a75fcb7e30bf437193cc5403c4f5",
+  "offline_tests_sha256": "b7583ed8be415133ed76f69afd12c3d20b76aaab24418f4ad6a72fcd73ec40b5",
+  "key_form_source_sha256": "22dff5f594fa62cb5f8a347dde43ef12737baa99ef0175de1720b6e501b43906",
+  "frozen_payloads_sha256": "450fc086eb015444d9b2f724d9546ec6d1d2cbadf525c4a9e186985b3c11c9e9",
+  "case_count": 570,
+  "main230_each": true,
+  "test_count": 10,
+  "real_API_calls": 0,
+  "real_cost_usd": 0,
+  "authorization_file_exists": false,
+  "key_form_server_left_for_root_to_inspect": true,
+  "no_SI_or_NinjaTrader_changes": true
+}

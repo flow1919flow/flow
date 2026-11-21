@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "features": [
+    "market_code",
+    "chicago_minute",
+    "move60_rv",
+    "move300_rv",
+    "log_rv_ticks",
+    "spread_ticks",
+    "size_imbalance",
+    "quote_age_s",
+    "type_code",
+    "reported_arrow",
+    "log_reported_size",
+    "absolute_factor",
+    "zone_width_rv",
+    "arrow_zone_distance_rv"
+  ],
+  "rows_including_controls": 1791,
+  "exact_float64_parity": true,
+  "float32_parity": true,
+  "csv_sha256": "0c80d9e0ec369aa854e1d8b23c401db0ae8db5df1c23971b03fc310fe97a3de2",
+  "canonical_feature_array_sha256": "9fa672feab11b9b05edbee48634742f0eeab571c9fb98dc9cdd355dc9b615857",
+  "pandas": "3.1.1"
+}

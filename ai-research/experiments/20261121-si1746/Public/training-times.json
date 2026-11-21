@@ -1,0 +1,114 @@
+[
+  {
+    "fold": 0,
+    "arm": "price_context",
+    "train_rows": 288,
+    "test_rows": 80,
+    "seconds": 29.970451831817627
+  },
+  {
+    "fold": 0,
+    "arm": "price_plus_SI",
+    "train_rows": 288,
+    "test_rows": 80,
+    "seconds": 46.52418303489685
+  },
+  {
+    "fold": 1,
+    "arm": "price_context",
+    "train_rows": 358,
+    "test_rows": 71,
+    "seconds": 38.27013111114502
+  },
+  {
+    "fold": 1,
+    "arm": "price_plus_SI",
+    "train_rows": 358,
+    "test_rows": 71,
+    "seconds": 56.54709076881409
+  },
+  {
+    "fold": 2,
+    "arm": "price_context",
+    "train_rows": 434,
+    "test_rows": 93,
+    "seconds": 63.99703502655029
+  },
+  {
+    "fold": 2,
+    "arm": "price_plus_SI",
+    "train_rows": 434,
+    "test_rows": 93,
+    "seconds": 89.45846009254456
+  },
+  {
+    "fold": 3,
+    "arm": "price_context",
+    "train_rows": 531,
+    "test_rows": 67,
+    "seconds": 69.77932024002075
+  },
+  {
+    "fold": 3,
+    "arm": "price_plus_SI",
+    "train_rows": 531,
+    "test_rows": 67,
+    "seconds": 105.44694089889526
+  },
+  {
+    "fold": 4,
+    "arm": "price_context",
+    "train_rows": 597,
+    "test_rows": 91,
+    "seconds": 123.31901502609253
+  },
+  {
+    "fold": 4,
+    "arm": "price_plus_SI",
+    "train_rows": 597,
+    "test_rows": 91,
+    "seconds": 165.7166600227356
+  },
+  {
+    "fold": 5,
+    "arm": "price_context",
+    "train_rows": 681,
+    "test_rows": 101,
+    "seconds": 143.02604579925537
+  },
+  {
+    "fold": 5,
+    "arm": "price_plus_SI",
+    "train_rows": 681,
+    "test_rows": 101,
+    "seconds": 203.39160203933716
+  },
+  {
+    "fold": 6,
+    "arm": "price_context",
+    "train_rows": 781,
+    "test_rows": 108,
+    "seconds": 162.09703183174133
+  },
+  {
+    "fold": 6,
+    "arm": "price_plus_SI",
+    "train_rows": 781,
+    "test_rows": 108,
+    "seconds": 234.94981408119202
+  },
+  {
+    "fold": 7,
+    "arm": "price_context",
+    "train_rows": 892,
+    "test_rows": 33,
+    "seconds": 53.91498613357544
+  },
+  {
+    "fold": 7,
+    "arm": "price_plus_SI",
+    "train_rows": 892,
+    "test_rows": 33,
+    "seconds": 81.10885405540466
+  }
+]

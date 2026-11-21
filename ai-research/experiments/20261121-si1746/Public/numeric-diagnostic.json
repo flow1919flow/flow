@@ -1,0 +1,130 @@
+[
+  {
+    "fold": 0,
+    "arm": "price_context",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 1.650019514354284e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 0,
+    "arm": "price_plus_SI",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 2.8096983689662736e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 1,
+    "arm": "price_context",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 1.6761743903970228e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 1,
+    "arm": "price_plus_SI",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 2.1646183723245116e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 2,
+    "arm": "price_context",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 2.2631966883901455e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 2,
+    "arm": "price_plus_SI",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 3.376316928260792e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 3,
+    "arm": "price_context",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 2.121567126422974e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 3,
+    "arm": "price_plus_SI",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 3.584754003638224e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 4,
+    "arm": "price_context",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 2.600368025351685e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 4,
+    "arm": "price_plus_SI",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 2.4787753050148353e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 5,
+    "arm": "price_context",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 2.2586629189191854e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 5,
+    "arm": "price_plus_SI",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 2.3076258981458153e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 6,
+    "arm": "price_context",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 4.1917806237190547e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 6,
+    "arm": "price_plus_SI",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 1.0839908493043282e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 7,
+    "arm": "price_context",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 2.589786753937062e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  },
+  {
+    "fold": 7,
+    "arm": "price_plus_SI",
+    "diagnostic_rows": 4,
+    "max_batch_singleton_abs": 1.6400181651610168e-07,
+    "argmax_changes": 0,
+    "actual_predictions": "singletons"
+  }
+]

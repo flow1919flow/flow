@@ -1,0 +1,10 @@
+{
+  "archive_sha256": "ef9c55d7b029e1a58f4b725b2462fd091e9f74d1fcc51dcf27958ebecdee8f04",
+  "verified_source_reader_sha256": "7e1fdc3b7d5cdd6a696783890d97816e0c0a9bcd929e5789e2ab3e29cd4f2e1a",
+  "catalog_index_sha256": "5506dfc1acf4f91612f8b8977995b318e771d1b5ddc6a8acc245ce6983de4a99",
+  "private_quote_manifest_sha256": "17794a3f9b524766fbfa485a21e8ca727b4e16020749c1d3c63309a1edb063f0",
+  "canonical_labels_sha256": "b2ea123ab172855566a3dbe0b1c5953c69022d1d2d93f71c9abbfc2f1f1211d0",
+  "frozen_matching_sha256": "b98ab5082c3311f08573dfd53a69ada8b5804bddac152b7488a255a3848ffeaa",
+  "public_preregistration_commit": "3ed9deeaf715391bebc22559e90f8d2ff7accac3",
+  "raw_vendor_quote_distribution": false
+}

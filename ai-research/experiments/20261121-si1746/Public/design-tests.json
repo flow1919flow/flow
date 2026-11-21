@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "tests": [
+    "past_features_physically_future_removed",
+    "deliberately_future_timestamp_rejected_by_guard",
+    "bid_ask_fees_two_side_tickstress_hand_calculation",
+    "flat_after_spread_and_fees",
+    "invalid_latest_quote_not_backfilled",
+    "future_label_path_gap_rejected",
+    "Chicago_DST_session_clock",
+    "all1746_retained_and_mutually_exclusive_labels"
+  ],
+  "count": 8,
+  "scope": "Bounded fixtures and actual retained-row provenance; no universal bug-free guarantee",
+  "verified_before_fit_utc": "2026-11-21T01:29:28.917764+00:00",
+  "source_sha256": "d461c61d1dc1f9897475be9f5b0a085863352fba6e4abcc6ce99f4dfb0ec1ceb"
+}

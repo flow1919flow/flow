@@ -1,0 +1,235 @@
+{
+  "schema": "DEEPINFRA-DECISION-SETUPS-01",
+  "state": "prepared_not_executed_after_Claude_suitability_review",
+  "created_at_utc": "2026-11-21T01:59:34.740216+00:00",
+  "models": [
+    "nace-ai/drex-max-finance",
+    "Cloudflare/clef"
+  ],
+  "endpoint": "https://api.deepinfra.com/v1/decisions",
+  "operation": "pretrained decision-head inference with fixed32 past examples,NOT supervised weight training/fine-tuning",
+  "period": [
+    "2025-11-24",
+    "2026-10-30"
+  ],
+  "sessions": 242,
+  "period_candidates": 347,
+  "later_test_candidates_per_model": 230,
+  "source_sha256": "1f25664cba61078a8933198cd5f81ea52e5d376f2b7c05e3bba3661593dbea39",
+  "runner_sha256": "bf650e03397aa2dc5fead5aa13fac0f0ce408b5eedc0f4fbfcff212207ecc486",
+  "feature_order": [
+    "planned_stop_risk_usd",
+    "bollinger_keltner_width_ratio",
+    "signed_completed_ema_slope_atr",
+    "completed_relative_volume20",
+    "chicago_session_minute"
+  ],
+  "fewshot_count": 32,
+  "selection": "last32 eligible training candidates per fixed outer block;identical examples and question for both models;request numbers fixed6 significant digits,original data retained locally",
+  "label": "Original standalone native candidate net including research mini commission minus25USD extra adverse roundtrip ES tickstress >0",
+  "folds": [
+    {
+      "block": 81,
+      "train_n": 116,
+      "fewshot_n": 32,
+      "test_n": 28,
+      "train_last_day": "2026-03-16",
+      "test_first_day": "2026-03-19",
+      "test_last_day": "2026-04-16",
+      "fewshot_ids_sha256": "20acadd1282f27b5d8ed3f48a14f41c60dae7e722acd268015ee853ba586ba26",
+      "train_ids_sha256": "16dab36157b07c5855797148ec8da315cb4e602fa936b0535d2890492e4a810d"
+    },
+    {
+      "block": 101,
+      "train_n": 143,
+      "fewshot_n": 32,
+      "test_n": 27,
+      "train_last_day": "2026-04-15",
+      "test_first_day": "2026-04-17",
+      "test_last_day": "2026-05-14",
+      "fewshot_ids_sha256": "b93b02e9d34ea91902b7f21d075536a108f3853de27603e091b3ceaa5acda6a9",
+      "train_ids_sha256": "675fd11b3b9a42559a1b97db1543c66cc0d04b21ac8d20e4d4a011619e5cb923"
+    },
+    {
+      "block": 121,
+      "train_n": 171,
+      "fewshot_n": 32,
+      "test_n": 33,
+      "train_last_day": "2026-05-13",
+      "test_first_day": "2026-05-15",
+      "test_last_day": "2026-06-11",
+      "fewshot_ids_sha256": "dc23a6e9b3b2fa5918648e8d141d4d9776708b1399573d2dc64d9f6500c4b587",
+      "train_ids_sha256": "71f237ef26e460cfd9729d7ecd5c75a368566cd402863c7abfd6d7f2dc2ad797"
+    },
+    {
+      "block": 141,
+      "train_n": 204,
+      "fewshot_n": 32,
+      "test_n": 32,
+      "train_last_day": "2026-06-10",
+      "test_first_day": "2026-06-12",
+      "test_last_day": "2026-07-09",
+      "fewshot_ids_sha256": "2c483f34d3967298e9ad40b3324d452e75d7c7db4a2fdd0c681f5da101ac3bfc",
+      "train_ids_sha256": "f1be2ef342be7c408d29eea40eb8d5e996b473eee4fcddc417b2c9a0af4a3259"
+    },
+    {
+      "block": 161,
+      "train_n": 236,
+      "fewshot_n": 32,
+      "test_n": 27,
+      "train_last_day": "2026-07-08",
+      "test_first_day": "2026-07-10",
+      "test_last_day": "2026-08-05",
+      "fewshot_ids_sha256": "7af39a7436bb34bf90d5000262ae57279eb65c250cab640f770d04af55efba81",
+      "train_ids_sha256": "83d43fd800267ab3f4f61310cd885692272c8ac87828b984764f7d1e0aa39188"
+    },
+    {
+      "block": 181,
+      "train_n": 264,
+      "fewshot_n": 32,
+      "test_n": 32,
+      "train_last_day": "2026-08-05",
+      "test_first_day": "2026-08-07",
+      "test_last_day": "2026-09-03",
+      "fewshot_ids_sha256": "8f0fa25ab045f689b42fe7c53afc53d313072c16257004af11b82397918bb9ec",
+      "train_ids_sha256": "f32daff1d97a5aac65785c19ddfaefb07a1a2ce15d4d5544df17b0ef10955c06"
+    },
+    {
+      "block": 201,
+      "train_n": 295,
+      "fewshot_n": 32,
+      "test_n": 19,
+      "train_last_day": "2026-09-02",
+      "test_first_day": "2026-09-04",
+      "test_last_day": "2026-10-01",
+      "fewshot_ids_sha256": "63c63269b9e0fbcd85d8b3b604f3edbc6c64f5aa5c286827902ab4c22e0bdeee",
+      "train_ids_sha256": "95741e2d13ebf1d8e3cc3ce414f3a5dd51cd7e69b8bad8fd24d0178478dd4c68"
+    },
+    {
+      "block": 221,
+      "train_n": 314,
+      "fewshot_n": 32,
+      "test_n": 31,
+      "train_last_day": "2026-09-30",
+      "test_first_day": "2026-10-02",
+      "test_last_day": "2026-10-29",
+      "fewshot_ids_sha256": "c60d0d048e5ddb6d4471896324db008b38e6ed5270d9a560c3732a99b0ed3f22",
+      "train_ids_sha256": "519101281f561aa7f6f95a13bb0263039c83dc218c0a110bab1da7b57845040c"
+    },
+    {
+      "block": 241,
+      "train_n": 344,
+      "fewshot_n": 32,
+      "test_n": 1,
+      "train_last_day": "2026-10-27",
+      "test_first_day": "2026-10-30",
+      "test_last_day": "2026-10-30",
+      "fewshot_ids_sha256": "2f83e30511633442ac7729da6aa23d383fa1b699b406b8081391b277127fa426",
+      "train_ids_sha256": "9bc6b5c8926104b8325bd92f9d2b1d326b1b5e72827bef4b1380db6231eddcd2"
+    }
+  ],
+  "source_manifests": [
+    {
+      "segment": "jahr-ergaenzung-ESH6",
+      "features_sha256": "cb9a416d552c909945064bbee651e55ade8f5236173ff3eead6afb0e3db17a9e",
+      "candidates_sha256": "b6e6ac630d6d545607317304be29ca0fbbcbef0a08958f9a0da050a5ef2bb2e2",
+      "observer_proof_sha256": "e5ff8b183e01c9b65b299068bc0b91bfa6ec7c81b8ffa9444f2f8e4034943943"
+    },
+    {
+      "segment": "jahr-ergaenzung-ESZ5",
+      "features_sha256": "6bdcd8f7860e099abcf6c0d0acffdfa4855780080e3f854631cc695bc4ecdd3f",
+      "candidates_sha256": "c02163d45d1e2bc6b12aaf107ac241160bb071e5996e80fdc9cef62c2b786571",
+      "observer_proof_sha256": "830e73f164eb9e1f1638118ca4839d2ccfc9ac82983cd048433591c223e54d85"
+    },
+    {
+      "segment": "jahr-uebergang-ESM6",
+      "features_sha256": "6197d11c67c147d803bc87ff75c0157e00cd7b69a884f9b4652774f7bfadae4b",
+      "candidates_sha256": "1fda2de66ce4ae41506ce464af31c54c1dc07c5e6f7ac1b69ef4e3cfbf7be658",
+      "observer_proof_sha256": "6176aef5016c3139c940787e4501f29e77849a5ada286e2af118ddcff08fc48b"
+    },
+    {
+      "segment": "mai-oktober-2026-ESU6",
+      "features_sha256": "8d47bd4acf964af6ebe5153467a3dc26f91e26eb41dfcdd41dcfa2210f06c91f",
+      "candidates_sha256": "d0e96ca082f444e77d0ea3de0b58469e48e0f224f20dfa756a21c7683c077c55",
+      "observer_proof_sha256": "40b24e433ae6085b4500d30368b59997264cc83150d2e0e36d2d4d6516680be3"
+    },
+    {
+      "segment": "mai-oktober-2026-ESZ6",
+      "features_sha256": "b6d5cc5aaa74f98867b57d96d0ed56329106360f277182dd960d0cbb929bfa82",
+      "candidates_sha256": "c23b670337c033022193408a446c59580dfb5e7fab813b808fe13a90baea563c",
+      "observer_proof_sha256": "93971ad7677dd2649bfc7d88d7e227b2329912c76378be9712b9d3d9da630806"
+    },
+    {
+      "segment": "september-2026-ESZ6",
+      "features_sha256": "522ff6168dffbd817591795b87102640614c34404da60d620d267964caf54769",
+      "candidates_sha256": "84515ed26e6266964e520ca8ae8506293b3616cca9c51ed4a6bb28bc46a9d029",
+      "observer_proof_sha256": "99a3955ccfd0b0b37606c61c3f54cd95fc7a18922171c303273d3610d1b58ded"
+    }
+  ],
+  "tabpfn_reference_sha256": "fdf4ba73da7db2332ca4bdbae896afda4243b716694b6500e424bdb5229971a6",
+  "payloads_sha256": "dcec0f1d94616da9df0d208a68807b72d68f0db3ffdcf9ce2600651d0732408e",
+  "input_price_reservation_USD_per_M": {
+    "nace-ai/drex-max-finance": 0.3,
+    "Cloudflare/clef": 0.3
+  },
+  "max_request_bytes": 4000,
+  "wrapper_token_allowance": 2048,
+  "estimated_total_conservative_reservation_usd": 0.9958079999999999,
+  "endpoint_output_cost": 0,
+  "quoted_input_price_USD_per_M": {
+    "nace-ai/drex-max-finance": 0.12,
+    "Cloudflare/clef": 0.24
+  },
+  "undiscounted_upper_input_price_USD_per_M": {
+    "nace-ai/drex-max-finance": 0.24,
+    "Cloudflare/clef": 0.24
+  },
+  "pricing_source_urls": [
+    "https://deepinfra.com/nace-ai/drex-max-finance/api",
+    "https://deepinfra.com/Cloudflare/clef/api",
+    "https://docs.deepinfra.com/integrations/clef"
+  ],
+  "price_scope": "Checked21Nov2026:Clef.24/M,Finance.12/M promotional.Reserve.30/M for each;6048 tokens main/repeat,4048 zero-shot,free output;570 reservations=.995808USD.Not provider-side billing cap.",
+  "budget_rule": "Separate explicit authorization JSON required; fail before first call if entire conservative reservation exceeds authorized cap; reserve before every send incl failed calls; no retries; halt if usage exceeds reservation.",
+  "current_label_never_sent": true,
+  "no_dates_or_IDs_or_raw_quotes_sent": true,
+  "seed_temperature": "Not supported by decision schema; no invented generation parameters",
+  "primary": "AUC/rank discrimination on identical230 outer IDs against TabPFN;raw Brier andLogLoss retained to diagnose calibration.Moving5-session paired block bootstrap1999 draws,seed20261121,97.5percent interval permodel as Bonferroni2-comparison family95percent diagnostic.Development data only,not fresh inference.",
+  "reference_diagnostics": "Full-training-only and exact32-example class priors,original Logit,TabPFN on same IDs;perblock Brier/logloss/AUC and coverage;no prompt/parameter/threshold search.Raw proper scores clip1e-7;fixed.01-.99 sensitivity reported separately,never replaces raw.",
+  "mechanism_audits": {
+    "zero_shot_cases_per_model": 32,
+    "repeat_full_context_cases_per_model": 23,
+    "selection": "Metadata only:first case per9 blocks plus evenly spaced remaining chronological cases;never outcomes or model outputs",
+    "zero_shot_role": "Separate small mechanism control,not a competing winner-selection arm",
+    "repeat_role": "Measure response reproducibility on exact same payloads,not improve or average main scores",
+    "total_requests": 570
+  },
+  "secondary": [
+    "Brier",
+    "ROC-AUC",
+    "accuracy@0.5",
+    "per-block coverage",
+    "request latency",
+    "input_tokens",
+    "reserved and reported-price costs"
+  ],
+  "failure_rule": "Keep every response/error;no invented fallback scores;report full coverage and paired common support. Positive claims require full230 coverage for both arms.",
+  "scope": "Repeatedly selected development year,not fresh OOS or evidence of provider payouts. No orders/Sims/leaderboard changes. SQX full rerun needed before any economics claim.",
+  "external_data": "Only five numeric setup features and earlier binary outcome labels sent to DeepInfra;still user research data. No credential in outputs.",
+  "privacy_source": "https://docs.deepinfra.com/account/data-privacy",
+  "retention": "Vendor states input/output not stored/trained and metadata logged;not an independent privacy audit",
+  "calls_made": 0,
+  "uncertainty": {
+    "draws": 1999,
+    "seed": 20261121,
+    "block_sessions": 5,
+    "primary_comparisons": 2,
+    "per_comparison_coverage": 0.975
+  },
+  "execution_hold_reason": "Actual Claude answer138 recommends not using Drex/Clef for this five-numeric-feature setup classification;root confirmed no paid execution.",
+  "post_review_status_utc": "2026-11-21T02:00:14.332741+00:00",
+  "offline_tests_sha256": "b7583ed8be415133ed76f69afd12c3d20b76aaab24418f4ad6a72fcd73ec40b5",
+  "offline_tests_source_sha256": "a1491937515399a99c9d3f6f7d17015bac99a75fcb7e30bf437193cc5403c4f5",
+  "actual_API_calls": 0,
+  "actual_API_cost_usd": 0
+}

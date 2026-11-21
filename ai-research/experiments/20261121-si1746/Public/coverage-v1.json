@@ -1,0 +1,93 @@
+{
+  "state": "labels_complete_for_all1746_audited_events",
+  "by_market": [
+    {
+      "market": "CL",
+      "all_events": 402,
+      "past_context_ok": 358,
+      "labels_ok": 331,
+      "episode_heads": 276,
+      "eligible_heads": 224,
+      "status": {
+        "ok": 331,
+        "past_anchor_invalid_or_stale": 21,
+        "past_path_insufficient": 7,
+        "exit_quote_invalid_or_late": 16,
+        "future_path_insufficient": 8,
+        "decision_quote_invalid_or_stale": 12,
+        "entry_quote_invalid_or_late": 3,
+        "session_boundary": 4
+      }
+    },
+    {
+      "market": "ES",
+      "all_events": 229,
+      "past_context_ok": 224,
+      "labels_ok": 224,
+      "episode_heads": 165,
+      "eligible_heads": 160,
+      "status": {
+        "session_boundary": 4,
+        "ok": 224,
+        "past_anchor_invalid_or_stale": 1
+      }
+    },
+    {
+      "market": "GC",
+      "all_events": 208,
+      "past_context_ok": 192,
+      "labels_ok": 185,
+      "episode_heads": 126,
+      "eligible_heads": 109,
+      "status": {
+        "ok": 185,
+        "past_anchor_invalid_or_stale": 12,
+        "exit_quote_invalid_or_late": 5,
+        "decision_quote_invalid_or_stale": 3,
+        "future_path_insufficient": 1,
+        "session_boundary": 1,
+        "entry_quote_invalid_or_late": 1
+      }
+    },
+    {
+      "market": "NQ",
+      "all_events": 907,
+      "past_context_ok": 898,
+      "labels_ok": 895,
+      "episode_heads": 452,
+      "eligible_heads": 443,
+      "status": {
+        "ok": 895,
+        "session_boundary": 5,
+        "exit_quote_invalid_or_late": 2,
+        "entry_quote_invalid_or_late": 1,
+        "past_anchor_invalid_or_stale": 3,
+        "decision_quote_invalid_or_stale": 1
+      }
+    }
+  ],
+  "all_label_status": {
+    "ok": 1635,
+    "past_anchor_invalid_or_stale": 37,
+    "past_path_insufficient": 7,
+    "exit_quote_invalid_or_late": 23,
+    "future_path_insufficient": 9,
+    "decision_quote_invalid_or_stale": 16,
+    "entry_quote_invalid_or_late": 5,
+    "session_boundary": 14
+  },
+  "total_labels_ok": 1635,
+  "eligible_episode_heads": 936,
+  "eligible_days": 110,
+  "class_counts_heads": {
+    "2": 425,
+    "1": 481,
+    "0": 30
+  },
+  "matched_controls_before_labels": 45,
+  "matched_pairs_both_labels_ok": 43,
+  "labeled_sha256": "2a5a63a6df0e4396f5d30e19598edf32a3521285abb2f781cd82e7b9e0c2a80c",
+  "context_freeze_sha256": "119ac1516aaff399d0eac91dd3e94c9a8a57573e553e0cd009b9be4054f5466e",
+  "completed_at_utc": "2026-11-21T01:25:25.633051+00:00",
+  "descriptive_matched_arrow_net_difference_USD": -120.93023255813881
+}

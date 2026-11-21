@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "prefix_rows": 80,
+  "prefix_rows_per_market": {
+    "ES": 20,
+    "NQ": 20,
+    "GC": 20,
+    "CL": 20
+  },
+  "future_removed_exact_feature_parity": true,
+  "retained_episode_heads": 1019,
+  "all_episode_heads_first": true,
+  "matching_without_reuse": true,
+  "matching_same_contract_day_bucket": true,
+  "matched_count": 45,
+  "matched_mean_absolute_context_differences": {
+    "move60_rv": 0.22695434984929214,
+    "move300_rv": 0.27083017121393504,
+    "log_rv_ticks": 0.20579433218013968,
+    "spread_ticks": 0.3333333333362955,
+    "size_imbalance": 0.21584763557272232,
+    "quote_age_s": 0.3123231353777777
+  },
+  "scope": "80 deterministic dates/markets samples, all primary head IDs and all matched IDs; no full-engine equivalence or universal leakage proof",
+  "audited_at_utc": "2026-11-21T01:32:57.235298+00:00"
+}

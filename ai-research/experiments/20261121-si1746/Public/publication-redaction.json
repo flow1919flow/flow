@@ -1,0 +1,7 @@
+{
+  "initial_publication_auto_review": "Rejected private Claude session URL in review receipt",
+  "safer_revision": "Entire private session review receipt excluded from GitHub; private session URLs/indices removed from public handoff only",
+  "local_original_receipt_retained": true,
+  "raw_rows_keys_or_private_session_metadata_published": false,
+  "aggregate_results_code_and_hashes_unchanged": true
+}

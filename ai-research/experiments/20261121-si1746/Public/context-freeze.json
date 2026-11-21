@@ -1,0 +1,50 @@
+{
+  "stage": "context_and_matching_frozen_before_labels",
+  "frozen_at_utc": "2026-11-21T01:28:49.309152+00:00",
+  "events": 1746,
+  "by_market": {
+    "CL": 402,
+    "ES": 229,
+    "GC": 208,
+    "NQ": 907
+  },
+  "context_status": {
+    "ok": 1672,
+    "past_anchor_invalid_or_stale": 37,
+    "past_path_insufficient": 7,
+    "decision_quote_invalid_or_stale": 16,
+    "session_boundary": 14
+  },
+  "episode_heads": 1019,
+  "control_candidates": 44186,
+  "matched_heads": 45,
+  "matching_status": {
+    "no_control_within_fixed_calipers": 197,
+    "no_same_bucket_archive_bracketed_control": 720,
+    "matched": 45,
+    "invalid_event_context": 57
+  },
+  "edited_events": 0,
+  "verified_quote_files": 361,
+  "verified_quote_bytes": 1884326582,
+  "index_sha256": "5506dfc1acf4f91612f8b8977995b318e771d1b5ddc6a8acc245ce6983de4a99",
+  "archive_sha256": "ef9c55d7b029e1a58f4b725b2462fd091e9f74d1fcc51dcf27958ebecdee8f04",
+  "files": {
+    "Private/events-context.parquet": "989b9424a8da7bc65a54c3ea7c1e64fb7bd0e68b722eb7da5b6661db3d15ea45",
+    "Private/control-candidates.parquet": "f4fd9d5737683a524f2035b19220eae8a4dfc74b70eab1009e30a11782988761",
+    "Private/matching.parquet": "b98ab5082c3311f08573dfd53a69ada8b5804bddac152b7488a255a3848ffeaa",
+    "Private/selected-controls-context.parquet": "9f437759057b6108fe32898dd69bcf22bbccb2727c67fc305737ad2fbd7339b8",
+    "Private/quote-manifest.json": "17794a3f9b524766fbfa485a21e8ca727b4e16020749c1d3c63309a1edb063f0"
+  },
+  "source_sha256": {
+    "common.py": "a1f8824386f4ba5a6a128203fa4931c418f675ad963bd0dbfbac4f78154ac947",
+    "labels.py": "acd40cea4047eb835846ffced12adb7ee9477e290683998db92b5b32048684aa",
+    "native_verify.py": "87ca863c3409bef8b65b2c0f19eb259e54c5d993eda09a7966140e70a7d72abf",
+    "prepare.py": "3667a682f019844badfeaf677bcf06f5de90d3e8c400e209601bdf1a826576c0",
+    "track.py": "18efc191f58645a28bc3f62b5cf66f0bceccb429f64db7c5ad157c41db3f401f",
+    "train.py": "17927f1a8e7c4160e53336a034365e77732d15c4ba9fb84d4567197902c36c56",
+    "verify_design.py": "d461c61d1dc1f9897475be9f5b0a085863352fba6e4abcc6ce99f4dfb0ec1ceb"
+  },
+  "price_labels_computed": false,
+  "model_fitted": false
+}

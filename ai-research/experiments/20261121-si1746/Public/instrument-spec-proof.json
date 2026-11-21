@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "definition_sha256": "cc5d60788f85caf0e6eccea4379572bd8ec9219f51778bb97b54f447c418dc09",
+  "native_loader": "NautilusTrader1.231.0 DatabentoDataLoader",
+  "specifications": {
+    "ES": {
+      "instrument": "ESZ7.GLBX",
+      "price_increment": 0.25,
+      "multiplier": 50.0
+    },
+    "NQ": {
+      "instrument": "NQZ6.GLBX",
+      "price_increment": 0.25,
+      "multiplier": 20.0
+    },
+    "GC": {
+      "instrument": "GCM8.GLBX",
+      "price_increment": 0.1,
+      "multiplier": 100.0
+    },
+    "CL": {
+      "instrument": "CLN8.GLBX",
+      "price_increment": 0.01,
+      "multiplier": 1000.0
+    }
+  }
+}

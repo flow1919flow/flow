@@ -1,0 +1,7 @@
+{
+  "run_id": "9a139eef7d1144328c546f96ce1ef1f7",
+  "url": "http://127.0.0.1:5055/#/experiments/4/runs/9a139eef7d1144328c546f96ce1ef1f7",
+  "state": "finished_import_not_supervised_training",
+  "rows": 229,
+  "parquet_sha256": "3c20d860e3832188400b94a0a031f590bc453f83166eda5a559439ac6bd42b8a"
+}

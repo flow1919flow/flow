@@ -1,3 +1,9 @@
+# Nachtrag · SI und Merkmale · 21. November 2026
+
+Drei tatsächliche neue Claude-Rückmeldungen sind im [Review mit Messbefund](ai-research/experiments/20261121-geometry-si/Review-und-Plan.md) dokumentiert. Alle229ES-SI-Meldungen sind lokal in Parquet und MLflow geladen (78Tage,165Überlappungsgruppen), noch kein SI-Modell. Der zusätzlich registrierte native Ein-Merkmal-Test über347Kandidaten ist vollständig: sechs Beobachter- und fünf physische Prefix-Jobs bestanden; Rangkorrelation0,107, bedingter Nullrang0,082. Die feste5%-Hürde wurde nicht erreicht; kein neues Gate und keine geänderten Auszahlungszahlen. Die Gelddateien des vorherigen Vergleichs sind bytegleich erhalten. Priorität ist jetzt ein geprüfter, eingefrorener SI-Datensatz mit Kurslabels/Kontrollen, gegebenenfalls aus den vorhandenen1746RITHMIC-Meldungen über vier Märkte. Die vollständigen inneren MR1-Kalibrierprognosen wurden nicht gespeichert; keine Testdaten zur nachträglichen Kalibrierung verwenden. Laufende Sims unverändert.
+
+---
+
 # Nachtrag · 21. November 2026 · vier neue Modellarme abgeschlossen
 
 Der neueste Forschungsstand steht im [vollständigen Abschluss](ai-research/experiments/20261121/ABSCHLUSS.md).

@@ -1,0 +1,23 @@
+{
+  "schema": "SI-INGEST-229-v1",
+  "created_at_utc": "2026-11-21T00:41:40.688674+00:00",
+  "unit": "one actual archived ES STOP/ICEBERG message, not one HY104 setup or independent sample",
+  "selection": "all229 RITHMIC ES messages; all retained even if no later label available",
+  "source_archive_sha256": "ef9c55d7b029e1a58f4b725b2462fd091e9f74d1fcc51dcf27958ebecdee8f04",
+  "source_reader_sha256": "c674a84d1366e440616b1aceb184a3a949a39e79246feabb7e8625bafb9f9883",
+  "code_sha256": "36ad203de5f872b20afc0cac5b12d459dedee9d12fc44645192c28130c906741",
+  "known_at": "max(sent,edited), Discord availability proxy only",
+  "decision_delay_seconds": 30,
+  "primary_future_horizon_minutes": 15,
+  "secondary_future_horizon_minutes": 5,
+  "grouping": "same-contract connected episodes with [decision-5min,decision+15min] overlap; Chicago calendar days for validation",
+  "training_started": false,
+  "price_labels_available": false,
+  "known_feed_coverage_sessions": 0,
+  "limits": [
+    "No original Bookmap detection/receipt timestamps",
+    "No true buy/sell interpretation of reported arrow",
+    "Archive completeness is not complete feed coverage",
+    "No model or financial superiority follows from loading data"
+  ]
+}

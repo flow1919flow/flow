@@ -1,0 +1,157 @@
+{
+  "state": "passed_bounded_native_measurement",
+  "source_sha256": "ce5b7b7aef32b24fb4939fa98ccf8433968e93d56f7bb74b1a1859e838baa9f7",
+  "unchanged_helper_sources": {
+    "SqxCompletedBarIndicators.java": "b43aac1ba7ab888dd28e0fdfcdeade09bc974617b26587d7e94395d6ec9f59cb",
+    "SqxSessionVwap.java": "bc34fb09d05ac116e51a7b1c488c9d78fba602ad5fbcc3e25a19c22db30616c8",
+    "SqxSessionPriceProfile.java": "7f93d854dbc7b7ff98915b2b98fad79995deafd9c88750044296fefab95ef362",
+    "SqxParametricTpoProfile.java": "3d0cf2e3a2253ca4c93b53078ed75ba50074f9ec9b811413afee81f796c5b370",
+    "SqxExtensionBarIndicators.java": "2d427d495f13d8a646f3e995ad60a91f448885c7e879155e4f23b61c260decac",
+    "SqxRollingVwap.java": "672d5c4ad0b9470208ad3e272118d0bbd67f4c5525ffea5d2c1f728ed8955e0d"
+  },
+  "proofs": [
+    {
+      "kind": "SQX",
+      "segment": "jahr-ergaenzung-ESH6",
+      "proof_sha256": "b508232e4d315b7752d7f5f51f67f84610587a540c2e7a91bb470598b70b347e",
+      "proof": {
+        "state": "geometry_observer_parity_verified",
+        "folder": "${HY_WORKSPACE}/outputs/AI-Merkmale-SI-20261121/Geometry/SQX/jahr-ergaenzung-ESH6/native_export_0.75_1.75_0.15_openingrange_3_nqresearch_0_ma_0_history_1_ed151bc5-bc13-4f7d-9ccf-4cd4546afe28",
+        "replicas": 3,
+        "seconds": 67.51,
+        "geometry_sha256": "45a759719f296c6cd0fcec5008922a26d944fce5ea20e0c4f643a6dd5ce54977",
+        "source_sha256": "ce5b7b7aef32b24fb4939fa98ccf8433968e93d56f7bb74b1a1859e838baa9f7"
+      }
+    },
+    {
+      "kind": "SQX",
+      "segment": "jahr-ergaenzung-ESZ5",
+      "proof_sha256": "3430fffd30bfe84b0970338685f9708e2e13adb49ee0ee0a3c21f6177af8fd65",
+      "proof": {
+        "state": "geometry_observer_parity_verified",
+        "folder": "${HY_WORKSPACE}/outputs/AI-Merkmale-SI-20261121/Geometry/SQX/jahr-ergaenzung-ESZ5/native_export_0.75_1.75_0.15_openingrange_3_nqresearch_0_ma_0_history_1_a6d45e0b-7e75-4a6e-9a68-1089d3c3910c",
+        "replicas": 3,
+        "seconds": 34.21,
+        "geometry_sha256": "0e132c1b89177b1e709c11b20d85d87374ed6b3b2830f7a2be868e1ae2da4ec6",
+        "source_sha256": "ce5b7b7aef32b24fb4939fa98ccf8433968e93d56f7bb74b1a1859e838baa9f7"
+      }
+    },
+    {
+      "kind": "SQX",
+      "segment": "jahr-uebergang-ESM6",
+      "proof_sha256": "54afce8d09febc72c0306bb352ab4b8a9be27cf84157aa6f84aa35d266daa3eb",
+      "proof": {
+        "state": "geometry_observer_parity_verified",
+        "folder": "${HY_WORKSPACE}/outputs/AI-Merkmale-SI-20261121/Geometry/SQX/jahr-uebergang-ESM6/native_export_0.75_1.75_0.15_openingrange_3_nqresearch_0_ma_0_history_1_8b2096f5-cb79-4d46-ae30-8ed06da10bd9",
+        "replicas": 3,
+        "seconds": 68.78,
+        "geometry_sha256": "e889176f7deb7fe53e5cd736836ce261ca6f3bf8945171fc9ae3150f5cfc1cca",
+        "source_sha256": "ce5b7b7aef32b24fb4939fa98ccf8433968e93d56f7bb74b1a1859e838baa9f7"
+      }
+    },
+    {
+      "kind": "SQX",
+      "segment": "mai-oktober-2026-ESU6",
+      "proof_sha256": "c1698dc38064de3ee622a2c0f1c0b85cedffb6ff74b99f1d5e003e34c0063e09",
+      "proof": {
+        "state": "geometry_observer_parity_verified",
+        "folder": "${HY_WORKSPACE}/outputs/AI-Merkmale-SI-20261121/Geometry/SQX/mai-oktober-2026-ESU6/native_export_0.75_1.75_0.15_openingrange_3_nqresearch_0_ma_0_history_1_0142f9e3-54b4-447e-a476-b66ac4164615",
+        "replicas": 3,
+        "seconds": 57.79,
+        "geometry_sha256": "5ede0883b032217e4a8a87ee1d810e362fdac5e27a4d93893f0b4446017294dd",
+        "source_sha256": "ce5b7b7aef32b24fb4939fa98ccf8433968e93d56f7bb74b1a1859e838baa9f7"
+      }
+    },
+    {
+      "kind": "SQX",
+      "segment": "mai-oktober-2026-ESZ6",
+      "proof_sha256": "cf745aca7794aa8b9d5f4f4e40e43a0417e690a65a8695ce383cc89b180762d2",
+      "proof": {
+        "state": "geometry_observer_parity_verified",
+        "folder": "${HY_WORKSPACE}/outputs/AI-Merkmale-SI-20261121/Geometry/SQX/mai-oktober-2026-ESZ6/native_export_0.75_1.75_0.15_openingrange_3_nqresearch_0_ma_0_history_1_f4609bcd-03d2-4720-911a-99c5e5bf4969",
+        "replicas": 3,
+        "seconds": 35.41,
+        "geometry_sha256": "73c1602dab18b1dcecf87aad23dbbda3e0eaa6bca287d100190ea9975e8a21c5",
+        "source_sha256": "ce5b7b7aef32b24fb4939fa98ccf8433968e93d56f7bb74b1a1859e838baa9f7"
+      }
+    },
+    {
+      "kind": "SQX",
+      "segment": "september-2026-ESZ6",
+      "proof_sha256": "4d04bb306cd3229af590c3c4fdb3647a2399f3de886548229a9fcc38425125a7",
+      "proof": {
+        "state": "geometry_observer_parity_verified",
+        "folder": "${HY_WORKSPACE}/outputs/AI-Merkmale-SI-20261121/Geometry/SQX/september-2026-ESZ6/native_export_0.75_1.75_0.15_openingrange_3_nqresearch_0_ma_0_history_1_4d685964-f8e6-4e70-a919-17622554d9c0",
+        "replicas": 3,
+        "seconds": 11.87,
+        "geometry_sha256": "a752bfb6178aa0737934df344c93f0ce6159ca0457248cc09006ff0ea5ce70a3",
+        "source_sha256": "ce5b7b7aef32b24fb4939fa98ccf8433968e93d56f7bb74b1a1859e838baa9f7"
+      }
+    },
+    {
+      "kind": "Prefix",
+      "segment": "jahr-ergaenzung-ESH6",
+      "proof_sha256": "94da210b60eb34cc6c1e9a3ac7bfe73e2cddae1ad32e5fa27b90b83a92ec4897",
+      "proof": {
+        "state": "geometry_physical_prefix_verified",
+        "cutoff_ns": 1769784020117180080,
+        "rows": 48,
+        "replicas": 3,
+        "seconds": 34.16,
+        "physical_fixture_source_sha256": "f8efa075c449626a3e3525c54198794e0bd401332f365ef3f7e1b5d9aad14124"
+      }
+    },
+    {
+      "kind": "Prefix",
+      "segment": "jahr-ergaenzung-ESZ5",
+      "proof_sha256": "27ec9d39a832bbde5ae1ecd34dec38ae6d115171bb32b8c02f549a2a9c40d663",
+      "proof": {
+        "state": "geometry_physical_prefix_verified",
+        "cutoff_ns": 1764788337602817882,
+        "rows": 15,
+        "replicas": 3,
+        "seconds": 27.79,
+        "physical_fixture_source_sha256": "f5edf1ae3332d97c35158b3f77a70b60dd1c922779b86c53425b460651919f92"
+      }
+    },
+    {
+      "kind": "Prefix",
+      "segment": "jahr-uebergang-ESM6",
+      "proof_sha256": "6024de609758d8baab15ad90787db7b2caa6a488ae83008afc45be9cfbfd2fb2",
+      "proof": {
+        "state": "geometry_physical_prefix_verified",
+        "cutoff_ns": 1778177168147999439,
+        "rows": 47,
+        "replicas": 3,
+        "seconds": 43.2,
+        "physical_fixture_source_sha256": "4f7e07eba8daa2f000220463a07a9c6cc5fb0a2b442d8dc447afd72709aa6966"
+      }
+    },
+    {
+      "kind": "Prefix",
+      "segment": "mai-oktober-2026-ESU6",
+      "proof_sha256": "564c7fb3c74f2cb568600b4b0ec8aa4f571698d96a19e2c497e2179f18d7a2cc",
+      "proof": {
+        "state": "geometry_physical_prefix_verified",
+        "cutoff_ns": 1785245764474405742,
+        "rows": 48,
+        "replicas": 3,
+        "seconds": 33.41,
+        "physical_fixture_source_sha256": "b736efad2ae936d75fcd48b373ffff81b73d82f26fb060b450b45f71225efb8d"
+      }
+    },
+    {
+      "kind": "Prefix",
+      "segment": "mai-oktober-2026-ESZ6",
+      "proof_sha256": "513bd7f1e21b382ceb986241cefadf32defa8f0ee34e11713c52dc71f3442d6d",
+      "proof": {
+        "state": "geometry_physical_prefix_verified",
+        "cutoff_ns": 1791816884418766338,
+        "rows": 23,
+        "replicas": 3,
+        "seconds": 22.53,
+        "physical_fixture_source_sha256": "f73975966beb545b7965c162c820e5b7a0c0e2604041ed967cfcf94dfd988055"
+      }
+    }
+  ]
+}

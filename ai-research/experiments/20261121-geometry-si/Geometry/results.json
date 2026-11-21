@@ -1,0 +1,20 @@
+{
+  "state": "native_geometry_measurement_complete",
+  "candidates": 347,
+  "spearman_rho": 0.10721735844744858,
+  "conditional_upper_tail_rank": 0.08191808191808192,
+  "null_q95": 0.1189699321123111,
+  "draws": 1000,
+  "negative_target_distance_candidates": 0,
+  "OR_ready_candidates": 250,
+  "OR_active_candidates": 174,
+  "strict_physical_prefix_cuts": 5,
+  "prefix_parity_rows": 181,
+  "observer_segments": 6,
+  "trade_logic_unchanged": true,
+  "no_model_trained": true,
+  "no_cash_claim": true,
+  "selected_year": true,
+  "fresh_OOS": false,
+  "source_sha256": "ce5b7b7aef32b24fb4939fa98ccf8433968e93d56f7bb74b1a1859e838baa9f7"
+}

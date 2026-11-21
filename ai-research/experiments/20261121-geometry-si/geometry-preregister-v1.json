@@ -1,0 +1,24 @@
+{
+  "schema": "ES-Geometry-01",
+  "created_at_utc": "2026-11-21T00:47:51.809117+00:00",
+  "role": "single exploratory no-fit measurement; selected development year, not confirmation",
+  "primary": "Spearman(nearest_target_r, candidate stress net USD), positive one-sided",
+  "population": "same347 unique scoring-period ES C28.03 candidates,24Nov2025–30Oct2026",
+  "geometry": "known executable-side decision quote; signed BB distance; OR only after60min and>=1tick on profit side; nearest signed active distance divided by raw planned stop distance; negative BB distance retained",
+  "secondary_outputs": "OR readiness/activity and signed range location described only, not alternative significance tests",
+  "permutation": {
+    "draws": 1000,
+    "seed": 20261124,
+    "strata": "calendar quarter and equal number of candidates in session",
+    "unit": "whole ordered session outcome vector",
+    "scope": "conditional development diagnostic, not independent confirmations"
+  },
+  "native": "6 full observer segments, exact trades/candidates/old-features/quotes parity,5 pre-existing physical prefix fixtures",
+  "prefix_scope": "five strict cuts, earlier rows parity; no general no-leak guarantee",
+  "next": "No model training before measurement; no deployment or leaderboard promotion",
+  "code_sha256": "35430e794080e92a24fe832ae0c9f47f75ae5298714c2f3208ddf0d9f422d4bf",
+  "source_sha256": "ce5b7b7aef32b24fb4939fa98ccf8433968e93d56f7bb74b1a1859e838baa9f7",
+  "prior_source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
+  "live_changed": false,
+  "cloud_spend_usd": 0
+}

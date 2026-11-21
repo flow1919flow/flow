@@ -1,0 +1,127 @@
+{
+  "state": "reviewed_allowlist",
+  "files": [
+    {
+      "file": "geometry.py",
+      "local_source_sha256": "9c0a81dec06c207983fb1a6fa147a4b24d423ceee43842552dd2a3bb6d2c4e57",
+      "public_sha256": "9c0a81dec06c207983fb1a6fa147a4b24d423ceee43842552dd2a3bb6d2c4e57",
+      "path_normalized": false
+    },
+    {
+      "file": "geometry-preregister.json",
+      "local_source_sha256": "b95372d1f3dcf764fe571f753f8639b2738415fe13c5ea227b271efbc69d5793",
+      "public_sha256": "b95372d1f3dcf764fe571f753f8639b2738415fe13c5ea227b271efbc69d5793",
+      "path_normalized": false
+    },
+    {
+      "file": "geometry-preregister-v1.json",
+      "local_source_sha256": "8d374219710f5ae7148e65135c25ae7916c812881599c59a11d47e69f1d5be46",
+      "public_sha256": "8d374219710f5ae7148e65135c25ae7916c812881599c59a11d47e69f1d5be46",
+      "path_normalized": false
+    },
+    {
+      "file": "geometry-build-amendment.json",
+      "local_source_sha256": "c7087b29208b1b2566599103d50cd04a882e145a6ece1ff8c7e7a19a8a4788d3",
+      "public_sha256": "c7087b29208b1b2566599103d50cd04a882e145a6ece1ff8c7e7a19a8a4788d3",
+      "path_normalized": false
+    },
+    {
+      "file": "geometry-github-receipt.json",
+      "local_source_sha256": "81d78e456efbb5b01879547a287dba8668155858f770217e1ae2758e8f3d5fb5",
+      "public_sha256": "81d78e456efbb5b01879547a287dba8668155858f770217e1ae2758e8f3d5fb5",
+      "path_normalized": false
+    },
+    {
+      "file": "ingest_si.py",
+      "local_source_sha256": "36ad203de5f872b20afc0cac5b12d459dedee9d12fc44645192c28130c906741",
+      "public_sha256": "36ad203de5f872b20afc0cac5b12d459dedee9d12fc44645192c28130c906741",
+      "path_normalized": false
+    },
+    {
+      "file": "track_si.py",
+      "local_source_sha256": "1c12ea75cf5318f69885c9b90c494394e24671c036b1a34f770bd42a0684bfc3",
+      "public_sha256": "1c12ea75cf5318f69885c9b90c494394e24671c036b1a34f770bd42a0684bfc3",
+      "path_normalized": false
+    },
+    {
+      "file": "finish_report.py",
+      "local_source_sha256": "381b8753ff9498387ca1eaa6798bc84a35a0866920013bdeca475f55a6801b00",
+      "public_sha256": "381b8753ff9498387ca1eaa6798bc84a35a0866920013bdeca475f55a6801b00",
+      "path_normalized": false
+    },
+    {
+      "file": "Review-und-Plan.md",
+      "local_source_sha256": "18fd2adc7abb926ca0fb993536d6ec1b9206a755ee18c26cb8196d8ef1f1c648",
+      "public_sha256": "18fd2adc7abb926ca0fb993536d6ec1b9206a755ee18c26cb8196d8ef1f1c648",
+      "path_normalized": false
+    },
+    {
+      "file": "claude-review-receipt.json",
+      "local_source_sha256": "9f5bbf900c9b123ac0689684e7638755c6dbacdb8e3485b4504808750072e626",
+      "public_sha256": "9f5bbf900c9b123ac0689684e7638755c6dbacdb8e3485b4504808750072e626",
+      "path_normalized": false
+    },
+    {
+      "file": "Stand.html",
+      "local_source_sha256": "4062d52113cbcff33387c965d7ed47bbf288dd3af73a5ef99baa0acac907460c",
+      "public_sha256": "4062d52113cbcff33387c965d7ed47bbf288dd3af73a5ef99baa0acac907460c",
+      "path_normalized": false
+    },
+    {
+      "file": "SI/ingest-plan.json",
+      "local_source_sha256": "52fc66cd2db1cffe11043ec1b0c38bb3cf0592d961224d09cef114ab4e4a4dd3",
+      "public_sha256": "52fc66cd2db1cffe11043ec1b0c38bb3cf0592d961224d09cef114ab4e4a4dd3",
+      "path_normalized": false
+    },
+    {
+      "file": "SI/ingest-result.json",
+      "local_source_sha256": "a2d292011e0dd61deab86fbb8ad64c024865e2d4e38723d796a9688fa865768f",
+      "public_sha256": "a2d292011e0dd61deab86fbb8ad64c024865e2d4e38723d796a9688fa865768f",
+      "path_normalized": false
+    },
+    {
+      "file": "SI/mlflow-ingest.json",
+      "local_source_sha256": "86bdf6bbc14f9227d73480328bc3db04a3db8c3b0ea89c12c382f8a3f57043d3",
+      "public_sha256": "86bdf6bbc14f9227d73480328bc3db04a3db8c3b0ea89c12c382f8a3f57043d3",
+      "path_normalized": false
+    },
+    {
+      "file": "SI/quote-metadata-feasibility.json",
+      "local_source_sha256": "54166fc284da2d349452bbcc807323468eba25a890ede55017127573ddcf9bdb",
+      "public_sha256": "54166fc284da2d349452bbcc807323468eba25a890ede55017127573ddcf9bdb",
+      "path_normalized": false
+    },
+    {
+      "file": "Geometry/results.json",
+      "local_source_sha256": "706fe7fbb921d2251975dd65c3e50865ac94f4b32d4b7264620bb6ea058ac336",
+      "public_sha256": "706fe7fbb921d2251975dd65c3e50865ac94f4b32d4b7264620bb6ea058ac336",
+      "path_normalized": false
+    },
+    {
+      "file": "Geometry/acceptance.json",
+      "local_source_sha256": "029f51a131260395930b1bc27d8c210666bd8242cca33c8ed8a903a8488694e1",
+      "public_sha256": "b0e64d0bbe5ef1bccb735e97289b689cd0c871790b32848a56b07b25e9408682",
+      "path_normalized": true
+    },
+    {
+      "file": "Geometry/mlflow.json",
+      "local_source_sha256": "45f06f35220a59dab4bce2f1707fd631e0ef31ab931e1c5f0546c01220e505c2",
+      "public_sha256": "45f06f35220a59dab4bce2f1707fd631e0ef31ab931e1c5f0546c01220e505c2",
+      "path_normalized": false
+    },
+    {
+      "file": "Source/HYML1ESResearch.java",
+      "local_source_sha256": "ce5b7b7aef32b24fb4939fa98ccf8433968e93d56f7bb74b1a1859e838baa9f7",
+      "public_sha256": "ce5b7b7aef32b24fb4939fa98ccf8433968e93d56f7bb74b1a1859e838baa9f7",
+      "path_normalized": false
+    }
+  ],
+  "excluded": [
+    "SI canonical CSV and Parquet rows",
+    "private source messages and IDs",
+    "raw tick/quote inputs",
+    "credentials",
+    "model weights"
+  ],
+  "old_cash_results_unchanged": true
+}

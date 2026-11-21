@@ -1,0 +1,14 @@
+{
+  "observed_at_utc": "2026-11-21T00:54:43.809313+00:00",
+  "chat_title": "Backtest von Scotts Setups - Nautilus",
+  "chat_url": "https://claude.ai/chat/b9f3f1ac-a173-4fd0-84d1-86a0ba183dad",
+  "completed_replies_read": 3,
+  "reviewed_result_commit": "170a331f42bb7370ddf125c1b34fcd8dad7860a1",
+  "review_scope": "Claude reported reading public result/control/training/SI files and original Java target-feature rules; no independent financial recalculation.",
+  "independent_recalculation": false,
+  "agreed_next": "One native no-fit target-distance/stop-distance measurement first.",
+  "SI_recommendation": "ES229 loaded; do not present sparse ES-only training as reliable; prepare same-event context vs SI-attribute comparison, potentially pooled1746 across4markets.",
+  "calibration_followup": "Expected stressNetR, cross-fitted centered regression calibration slope clipped0..1; negative-value gate as distinct future test.",
+  "final_result_discussion": "Geometry0.107/conditional rank0.082 did not meet fixed hurdle; no new gate. Prioritize frozen audited pooled SI data without model.",
+  "MR1_crossfit_availability": "Stored outer predictions only; no full inner calibration predictions. No test-set calibration or silent reconstruction."
+}

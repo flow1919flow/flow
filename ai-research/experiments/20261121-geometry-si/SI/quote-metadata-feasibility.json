@@ -1,0 +1,9 @@
+{
+  "state": "metadata_only_not_supervised_labels",
+  "events": 229,
+  "counts": {
+    "catalog_bounds_include_context_and_horizon": 229
+  },
+  "source_catalog_index": "outputs/Flo-Datenimporte/TBBO-2026-05-22_bis_2026-10-30-v2/katalog_index.json",
+  "warning": "Rowgroup timebounds do not prove valid/stale-free quotes, continuous coverage or correct labels. No quote payloads loaded."
+}

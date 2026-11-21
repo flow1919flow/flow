@@ -1,0 +1,7 @@
+{
+  "reason": "First javac invocation could not resolve six existing helper classes; compile their unchanged source files explicitly as in prior native build.",
+  "measured_feature_rows_before_correction": 0,
+  "native_source_unchanged": true,
+  "statistical_design_unchanged": true,
+  "previous_commit": "0ed2c385e24fe993985203231e40bf5894be9275"
+}

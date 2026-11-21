@@ -79,11 +79,16 @@ def build():
         subprocess.run(['cp','-cR',str(native.APP),str(APP)],check=True)
     classes=HERE/'Classes';classes.mkdir(exist_ok=True)
     source=HERE/'Source/HYML1ESResearch.java'
-    subprocess.run([str(APP/'j64/bin/javac'),'-cp',str(APP/'internal/libs/*'),'-d',str(classes),str(source)],check=True)
+    helpers=['SqxCompletedBarIndicators','SqxSessionVwap','SqxSessionPriceProfile',
+        'SqxParametricTpoProfile','SqxExtensionBarIndicators','SqxRollingVwap']
+    helper_sources=[native.ROBUST/(n+'.java') for n in helpers]
+    subprocess.run([str(APP/'j64/bin/javac'),'-cp',str(APP/'internal/libs/*'),'-d',str(classes),
+        *map(str,helper_sources),str(source)],check=True)
     jar=APP/'internal/libs/Snippets.jar';temp=jar.with_suffix('.geometry')
+    prefixes=tuple('SQ/Blocks/OtherActions/'+n for n in ['HYML1ESResearch',*helpers])
     with ZipFile(jar) as src,ZipFile(temp,'w',ZIP_DEFLATED) as dst:
         for item in src.infolist():
-            if not item.filename.startswith('SQ/Blocks/OtherActions/HYML1ESResearch'):dst.writestr(item,src.read(item.filename))
+            if not item.filename.startswith(prefixes):dst.writestr(item,src.read(item.filename))
         for p in classes.rglob('*.class'):dst.write(p,p.relative_to(classes).as_posix())
     temp.replace(jar)
     dest=APP/'user/extend/Snippets/SQ/Blocks/OtherActions/HYML1ESResearch.java';shutil.copy2(source,dest)

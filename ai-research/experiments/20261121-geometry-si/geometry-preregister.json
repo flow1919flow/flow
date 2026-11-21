@@ -1,6 +1,6 @@
 {
   "schema": "ES-Geometry-01",
-  "created_at_utc": "2026-11-21T00:47:51.809117+00:00",
+  "created_at_utc": "2026-11-21T00:50:26.302812+00:00",
   "role": "single exploratory no-fit measurement; selected development year, not confirmation",
   "primary": "Spearman(nearest_target_r, candidate stress net USD), positive one-sided",
   "population": "same347 unique scoring-period ES C28.03 candidates,24Nov2025–30Oct2026",
@@ -16,7 +16,7 @@
   "native": "6 full observer segments, exact trades/candidates/old-features/quotes parity,5 pre-existing physical prefix fixtures",
   "prefix_scope": "five strict cuts, earlier rows parity; no general no-leak guarantee",
   "next": "No model training before measurement; no deployment or leaderboard promotion",
-  "code_sha256": "35430e794080e92a24fe832ae0c9f47f75ae5298714c2f3208ddf0d9f422d4bf",
+  "code_sha256": "9c0a81dec06c207983fb1a6fa147a4b24d423ceee43842552dd2a3bb6d2c4e57",
   "source_sha256": "ce5b7b7aef32b24fb4939fa98ccf8433968e93d56f7bb74b1a1859e838baa9f7",
   "prior_source_sha256": "ac5f8a2045b1e05c18e57f24cddf2d4c3e28e14d3675ef54c13f4698bcf196fe",
   "live_changed": false,

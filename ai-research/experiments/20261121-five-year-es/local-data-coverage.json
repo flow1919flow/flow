@@ -1,0 +1,52 @@
+{
+  "status": "EXISTING_LOCAL_OHLCV_VERIFIED_NO_DOWNLOAD_NEEDED",
+  "checked_at_utc": "2026-11-21T02:30:16.189838+00:00",
+  "scope": "Read-only raw price metadata/counts/hash audit, no strategy candidates/labels/outcomes/training",
+  "original_inventory_sha256": "6a1a3f6e42f589d1797fbca3730cb89b01e6c5c634e2980de4c5729fae957831",
+  "original_ohlcv_files_all_history": 198,
+  "original_ohlcv_files_existing": 198,
+  "original_ohlcv_requested_span": [
+    "2010-06-06 00:00:00+00:00",
+    "2026-11-06 00:00:00+00:00"
+  ],
+  "audit_files": 60,
+  "audit_span": [
+    "2021-11-01",
+    "2026-11-01_exclusive"
+  ],
+  "four_extra_year_span": [
+    "2021-11-24",
+    "2025-11-24_exclusive"
+  ],
+  "totals": {
+    "compressed_bytes": 1279711706,
+    "all_parent_records": 112431451,
+    "ES_quarterly_outright_records": 2435131,
+    "ES_four_extra_year_records": 1955630
+  },
+  "distinct_ES_raw_quarterly_symbols": 25,
+  "four_extra_year_UTC_dates_with_ES_records": 1244,
+  "weekdays_without_any_ES_records": [
+    "2021-12-24",
+    "2022-04-15",
+    "2024-03-29",
+    "2025-04-18"
+  ],
+  "weekday_gap_interpretation": "UTC weekday flag only; holidays and exchange-session calendar still require final protocol validation",
+  "ohlc_invariant_violations": 0,
+  "preserves_raw_contracts": true,
+  "includes_spreads": false,
+  "back_adjusted": false,
+  "roll_selection": "None chosen here; retain raw symbol and dated instrument_id mapping, candidate protocol must freeze roll rule",
+  "credentials": {
+    "DATABENTO_API_KEY_present": false,
+    "DB_API_KEY_present": false,
+    "other_secret_stores_searched": false
+  },
+  "network_calls": 0,
+  "new_downloads": 0,
+  "new_usage_cost_USD": 0,
+  "new_credit_consumption_USD": 0,
+  "files_inventory_sha256": "3af042692420088ce777d440ec7b0b49c4528b2959e018c82f1d628d5fb2fe66",
+  "elapsed_seconds": 8.355387926101685
+}

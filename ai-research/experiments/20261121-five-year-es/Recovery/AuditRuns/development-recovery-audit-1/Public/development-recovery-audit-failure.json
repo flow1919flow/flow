@@ -1,0 +1,11 @@
+{
+  "status": "AUDIT_CLOSED_NO_FIT",
+  "utc": "2026-11-21T04:44:32.144021+00:00",
+  "adapter_source_sha256": "6eb41912fa260a54ad5440a50251a49ddcbea35317b54429529aabeea535cfbd",
+  "independent_numeric_source_sha256": "cfe4d8f21b545097feca330ff69a459370e8e0bf13b1b0949c7b7df236011aa9",
+  "error_type": "KeyError",
+  "error": "'role_release_sha256'",
+  "original_Data_or_ML_written": false,
+  "no_models_fit": true,
+  "no_sealed_files_opened": true
+}

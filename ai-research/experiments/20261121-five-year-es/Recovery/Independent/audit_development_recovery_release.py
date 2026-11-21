@@ -86,15 +86,24 @@ class CompletionHashIO(ast.NodeTransformer):
             self.count+=1;return ast.copy_location(ast.BinOp(left=ast.Name(id='DATA',ctx=ast.Load()),op=ast.Div(),right=ast.Constant('Public/development-labels-completion.json')),node)
         return node
 
+def completion_view(ctx):
+    """Adapter metadata only; never edits authentic recovered summary bytes."""
+    value=dict(ctx.summary);digest=sha(ctx.manifest_path)
+    need(all(name in value for name in ['known_schedule_sha256','month_manifest_sha256','candidates_jsonl_sha256']),'Recovered summary lacks metadata required by the unchanged numeric auditor')
+    need(value.get('role_release_sha256',digest)==digest,'Recovered summary contains a conflicting canonical release hash')
+    value['role_release_sha256']=digest
+    value['role_release_sha256_evidence_kind']='derived_from_already_bound_canonical_recovery_release_not_original_dispatch_metadata'
+    return value
+
 def audit_function(module,ctx):
     original=next(n for n in ast.parse(Path(module.__file__).read_text()).body if isinstance(n,ast.FunctionDef)and n.name=='audit');changed=copy.deepcopy(original);transform=CompletionHashIO();changed=transform.visit(changed);ast.fix_missing_locations(changed);need(transform.count==1,'Expected exactly one legacy completion-hash I/O expression')
     restored=CompletionHashIO(reverse=True).visit(copy.deepcopy(changed));ast.fix_missing_locations(restored);need(ast.dump(restored,include_attributes=False)==ast.dump(original,include_attributes=False),'Independent arithmetic/body changed beyond named provenance I/O')
     def authorize(receipt):
-        need(Path(receipt).resolve()==ctx.recovery_go_path.resolve(),'Numeric audit received wrong recovery authorship');return ctx.recovery_go,dict(ctx.summary),ctx.manifest,ctx.price
+        need(Path(receipt).resolve()==ctx.recovery_go_path.resolve(),'Numeric audit received wrong recovery authorship');return ctx.recovery_go,completion_view(ctx),ctx.manifest,ctx.price
     def save(path,value):
         path=Path(path).resolve();need(ctx.output.resolve()in path.parents,'Audit write escaped fresh recovery output')
         if path.name=='development-independent-acceptance.json':
-            value=dict(value,authorization_mode='development_recovery',recovery_authorship_preserved=True,original_scientific_go_sha256=sha(ctx.original_go_path),recovery_go_sha256=sha(ctx.recovery_go_path),recovery_acceptance_sha256=sha(ctx.acceptance_path),authentic_recovered_summary_sha256=sha(ctx.summary_path),original_label_marker_sha256=sha(ctx.marker_path),audit_authorization_sha256=sha(ctx.authorization_path),independent_numeric_source_sha256=ORIGINAL_AUDIT_SHA,independent_authorization_adapter_sha256=sha(__file__),development_completion_evidence_kind='authentic_isolated_recovery_acceptance_NOT_original_dispatch_completion',numeric_function_objects_unchanged=True,audit_body_only_one_metadata_hash_IO_expression_adapted=True,original_ML_and_Data_roots_written=False,all_output_under_fresh_RecoveryRoot_AuditRuns=True)
+            value=dict(value,authorization_mode='development_recovery',recovery_authorship_preserved=True,original_scientific_go_sha256=sha(ctx.original_go_path),recovery_go_sha256=sha(ctx.recovery_go_path),recovery_acceptance_sha256=sha(ctx.acceptance_path),authentic_recovered_summary_sha256=sha(ctx.summary_path),original_label_marker_sha256=sha(ctx.marker_path),audit_authorization_sha256=sha(ctx.authorization_path),independent_numeric_source_sha256=ORIGINAL_AUDIT_SHA,independent_authorization_adapter_sha256=sha(__file__),development_completion_evidence_kind='authentic_isolated_recovery_acceptance_NOT_original_dispatch_completion',completion_view_derived_fields={'role_release_sha256':sha(ctx.manifest_path)},completion_view_derivation_evidence='already_bound_promoted_canonical_release_hash_only; authentic_summary_and_original_attempt_unmodified',numeric_function_objects_unchanged=True,audit_body_only_one_metadata_hash_IO_expression_adapted=True,original_ML_and_Data_roots_written=False,all_output_under_fresh_RecoveryRoot_AuditRuns=True)
         module.save(path,value)
     env=dict(vars(module));env.update(HERE=ctx.output,__file__=__file__,RECOVERY_ACCEPTANCE_PATH=ctx.acceptance_path,authorize=authorize,save=save)
     for name in ['indicators','band','outward','expected_label','RawPrices']:need(env[name]is getattr(module,name),'Independent numeric function replaced')

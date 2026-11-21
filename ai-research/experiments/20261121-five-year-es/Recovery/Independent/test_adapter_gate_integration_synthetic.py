@@ -24,6 +24,8 @@ RESULT=[]
 def make_producer(ctx,gate,output_root,fail=False,wrong_cancel_count=False):
  source_tree=ast.parse(ACTUAL_NUMERIC_SOURCE.read_text());function=next(n for n in source_tree.body if isinstance(n,ast.FunctionDef)and n.name=='audit');start=next(i for i,n in enumerate(function.body)if isinstance(n,ast.Assign)and any(isinstance(k,ast.Name)and k.id=='proof'for k in n.targets));tail=copy.deepcopy(function.body[start:]);actual_constructor=ast.dump(tail[0],include_attributes=False)
  prelude='''go,completion,manifest,priceproof=authorize(receipt)
+for required_name in ['known_schedule_sha256','month_manifest_sha256','candidates_jsonl_sha256','role_release_sha256']:need(required_name in completion,'Production audit metadata key missing: '+required_name)
+need(completion['role_release_sha256']==sha(DATA/'Private/development-release.json'),'Derived canonical role-release metadata mismatch')
 canonical=DATA/'Private/development-candidates.jsonl'
 cases=[json.loads(s)for s in canonical.read_text().splitlines()if s]
 intents=[json.loads(s)for s in (DATA/'Private/development-intents.jsonl').read_text().splitlines()if s]
@@ -61,7 +63,7 @@ def bind_actual_inputs(f):
  release=g.read(f.canonical);release['intent_jsonl_sha256']=g.sha(ip);fixtures.dump(f.canonical,release);rp=attempt/proof['artifacts']['role_release_json']['path_relative_to_attempt'];rp.write_bytes(f.canonical.read_bytes());proof['artifacts']['role_release_json']['sha256']=g.sha(rp)
  recovery_go=g.RECOVERY/'Private/actual-synthetic-development-recovery-go.json';fixtures.dump(recovery_go,dict(authorized=True,mode='development-recovery',synthetic=True));proof['root_go_sha256']=g.sha(recovery_go);fixtures.dump(f.devproof,proof);fixtures.update_binding(f.go,'development_recovery_acceptance',f.devproof);fixtures.update_binding(f.go,'canonical_role_release',f.canonical)
  original_copy=g.DATA/'Private/original-scientific-go.json';original_copy.write_bytes(ORIGINAL_GO.read_bytes());marker=g.DATA/'Private/original-label-marker.json';marker.write_bytes(ORIGINAL_MARKER.read_bytes())
- summary=g.RECOVERY/'Private/authentic-synthetic-recovery-summary.json';fixtures.dump(summary,dict(status='DEVELOPMENT_LABELS_COMPLETE_FROZEN_ENGINE',root_go_sha256=g.sha(recovery_go),synthetic=True))
+ summary=g.RECOVERY/'Private/authentic-synthetic-recovery-summary.json';summary.write_bytes((ROOT/'Attempts/development-byte-recovery-1/Public/development-labels-summary.json').read_bytes())
  authorization=g.RECOVERY/'Private/audit-authorization.json';fixtures.dump(authorization,dict(authorized=True,mode='audit-development-recovery',synthetic=True))
  fixtures.dump(g.DATA/'Public/development-price-completeness.json',dict(status='PASS_PRICE_INTEGRITY_AND_SESSION_ENUMERATION',synthetic=True))
  return recovery_go,original_copy,marker,summary,authorization
@@ -72,7 +74,7 @@ def execute_integration(label,fail=False,wrong_cancel_count=False):
   # Delete the old hand-authored ideal proof. Consumer must use actual producer.
   f.allrow.unlink()
   output=g.RECOVERY/'AuditRuns'/label
-  ctx=SimpleNamespace(output=output,acceptance_path=f.devproof,recovery_go_path=recovery_go,recovery_go=g.read(recovery_go),summary=g.read(summary),manifest=g.read(f.canonical),price={},original_go_path=original,summary_path=summary,marker_path=marker,authorization_path=authorization)
+  ctx=SimpleNamespace(output=output,acceptance_path=f.devproof,recovery_go_path=recovery_go,recovery_go=g.read(recovery_go),summary=g.read(summary),manifest_path=f.canonical,manifest=g.read(f.canonical),price={},original_go_path=original,summary_path=summary,marker_path=marker,authorization_path=authorization)
   producer,constructor_sha=make_producer(ctx,g,output,fail,wrong_cancel_count)
   with patch.object(adapter,'recovery_context',return_value=ctx),patch.object(adapter,'original_numeric_module',return_value=producer),patch.object(sys,'argv',['audit_adapter','--authorization',str(authorization)]),redirect_stdout(io.StringIO()):
    if fail:
@@ -95,7 +97,7 @@ def execute_integration(label,fail=False,wrong_cancel_count=False):
     assert proof['recovery_acceptance_sha256']==g.sha(f.devproof)==proof['development_completion_sha256'];assert proof['independent_numeric_source_sha256']==adapter.ORIGINAL_AUDIT_SHA and proof['independent_authorization_adapter_sha256']==adapter.sha(adapter.__file__)
    assert not child.called
   assert not(g.LEARNING/'Public/development-independent-acceptance.json').exists()and not(g.LEARNING/'Public/models-frozen.json').exists()
-  RESULT.append(dict(test=label,status='PASS',actual_adapter_main_and_real_report_save_executed=True,actual_external_gate_verify_executed=True,actual_cfe4_report_constructor_AST_sha256=constructor_sha,numeric_market_checks_explicit_synthetic_stubs=True,hand_authored_PASS_proof_consumed=False,failed_proof_negative_control=fail,no_fit_subprocess=True))
+  RESULT.append(dict(test=label,status='PASS',actual_adapter_main_and_real_report_save_executed=True,actual_external_gate_verify_executed=True,actual_cfe4_report_constructor_AST_sha256=constructor_sha,authentic_recovered_summary_metadata_bytes_unchanged=True,all_original_completion_metadata_reads_covered=True,numeric_market_checks_explicit_synthetic_stubs=True,hand_authored_PASS_proof_consumed=False,failed_proof_negative_control=fail,no_fit_subprocess=True))
 
 def main():
  execute_integration('producer-adapter-to-external-gate')

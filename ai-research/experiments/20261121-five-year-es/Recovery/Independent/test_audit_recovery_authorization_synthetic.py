@@ -98,8 +98,25 @@ def audit(receipt):
         assert p['recovery_authorship_preserved']and p['independent_numeric_source_sha256']==m.ORIGINAL_AUDIT_SHA and p['independent_source_sha256']==m.sha(P)
         assert not(m.DATA/'Public/development-labels-completion.json').exists()and not(m.LEARNING/'Public/development-independent-acceptance.json').exists()
 
+def actual_recovered_summary_schema_and_view():
+    # Real metadata only: no real candidate, intent, price or label rows opened.
+    p=R/'Attempts/development-byte-recovery-1/Public/development-labels-summary.json';before=m.sha(p);summary=m.read(p)
+    manifest=R.parent/'ES-FiveYear-SecondData-20261121/Private/development-release.json'
+    ctx=SimpleNamespace(summary=summary,manifest_path=manifest);view=m.completion_view(ctx)
+    tree=ast.parse((R.parent/'ES-FiveYear-ML-20261121/Audit/audit_development_release.py').read_text());body=next(n for n in tree.body if isinstance(n,ast.FunctionDef)and n.name=='audit')
+    required={n.slice.value for n in ast.walk(body)if isinstance(n,ast.Subscript)and isinstance(n.value,ast.Name)and n.value.id=='completion'and isinstance(n.slice,ast.Constant)}
+    assert required=={'known_schedule_sha256','month_manifest_sha256','candidates_jsonl_sha256','role_release_sha256'}and required<=set(view)
+    assert all(view[k]==v for k,v in summary.items())and'role_release_sha256'not in summary
+    assert view['role_release_sha256']==m.sha(manifest)and m.sha(p)==before
+
+def completion_view_schema_negative_controls():
+    with fixture()as f:
+        c=m.recovery_context(f.auth);c.summary['role_release_sha256']='0'*64;rejects(lambda:m.completion_view(c))
+    with fixture()as f:
+        c=m.recovery_context(f.auth);del c.summary['month_manifest_sha256'];rejects(lambda:m.completion_view(c))
+
 def main():
-    for name,fn in [('original_and_recovery_authorship_stay_distinct',positive_authors),('cannot_rewrite_recovery_manifest_as_original_dispatch',reject_relabelled_original),('exact_original_scientific_GO_required',reject_wrong_original_GO),('price_audit_must_predate_original_not_recovery_marker',price_must_precede_original_marker),('any_prior_fit_or_changed_known_science_blocks',models_and_known_changes_block),('actual_cfe4_numeric_functions_and_arithmetic_AST_unchanged',actual_numeric_AST_is_unchanged),('full_synthetic_metadata_adapter_IO_no_legacy_file_fabrication',synthetic_end_to_end_metadata_IO)]:check(name,fn)
+    for name,fn in [('original_and_recovery_authorship_stay_distinct',positive_authors),('cannot_rewrite_recovery_manifest_as_original_dispatch',reject_relabelled_original),('exact_original_scientific_GO_required',reject_wrong_original_GO),('price_audit_must_predate_original_not_recovery_marker',price_must_precede_original_marker),('any_prior_fit_or_changed_known_science_blocks',models_and_known_changes_block),('actual_cfe4_numeric_functions_and_arithmetic_AST_unchanged',actual_numeric_AST_is_unchanged),('full_synthetic_metadata_adapter_IO_no_legacy_file_fabrication',synthetic_end_to_end_metadata_IO),('real_authentic_summary_schema_covers_every_original_audit_metadata_read',actual_recovered_summary_schema_and_view),('conflicting_derived_hash_or_missing_consumer_metadata_blocks',completion_view_schema_negative_controls)]:check(name,fn)
     proof=dict(status='PASS',schema='RECOVERY-AUDIT-AUTHORIZATION-SYNTHETIC-1',utc=__import__('datetime').datetime.now(__import__('datetime').timezone.utc).isoformat(),checks=len(RESULT),tests=RESULT,adapter_source_sha256=m.sha(P),fixture_source_sha256=m.sha(__file__),independent_numeric_source_sha256=m.ORIGINAL_AUDIT_SHA,original_scientific_go_sha256=m.ORIGINAL_GO_SHA,synthetic_only=True,actual_audit_executed=False,real_label_files_opened=False,model_fits=False,original_Data_or_ML_written=False,sealed_files_opened=False)
     dump(R/'Public/recovery-audit-authorization-synthetic-acceptance.json',proof);print(json.dumps(proof,indent=2))
 if __name__=='__main__':main()

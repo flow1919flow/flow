@@ -3,8 +3,8 @@
   "status": "PREPARED_SYNTHETIC_ONLY_NO_REAL_AUDIT_RELEASE",
   "utc": "2026-11-21T04:29:29.390464+00:00",
   "adapter_source": "Independent/audit_development_recovery_release.py",
-  "adapter_source_sha256": "6eb41912fa260a54ad5440a50251a49ddcbea35317b54429529aabeea535cfbd",
-  "adapter_fixture_sha256": "7ea6358c1d3136fc893ae3b3131347a3a92a1575f0029cf3103db4ff578be9e6",
+  "adapter_source_sha256": "3f4265dfe2ba40dc5434622a90d5d29ce304de1c0661df0b987981f2005afb14",
+  "adapter_fixture_sha256": "73687f31fb8a5b2ecc940a2820b6cd892f2eb629920191a9ee92c08504995404",
   "numeric_source_original_sha256": "cfe4d8f21b545097feca330ff69a459370e8e0bf13b1b0949c7b7df236011aa9",
   "original_scientific_GO_sha256": "5b67d2e4501c83234cdda16679c0bbb843fa6d8f6e0fa96080c0ee19565f3597",
   "required_authorization": {
@@ -55,7 +55,8 @@
   "real_labels_read": false,
   "sealed_files_opened": false,
   "producer_consumer_integration_fixture": "Public/adapter-external-gate-integration-synthetic-acceptance.json",
-  "producer_consumer_integration_sha256": "29eb87126a3490a1232d8490169f6e1269ae18f6d3b571c202ee7fb99f815636",
+  "producer_consumer_integration_sha256": "86e0558a96ed9d1d8ceaebf4c8591a44bc8e385afe32ac8e8d20bef8cf636ecf",
   "producer_consumer_integration_groups": 3,
-  "integration_scope": "Actual adapter main/report writer -> filesystem -> actual Gate.verify; numeric market checks explicitly synthetic. Failed adapter proof and wrong cancellation count rejected; no real labels or fit."
+  "integration_scope": "Actual adapter main/report writer -> filesystem -> actual Gate.verify; numeric market checks explicitly synthetic. Failed adapter proof and wrong cancellation count rejected; no real labels or fit.",
+  "metadata_view_only_amendment": "The authentic recovered summary stays byte-identical; adapter adds role_release_sha256 derived from the already-bound canonical recovery manifest, explicitly labelled as derived metadata. All four completion metadata fields read by cfe4 audit are checked against the authentic schema."
 }

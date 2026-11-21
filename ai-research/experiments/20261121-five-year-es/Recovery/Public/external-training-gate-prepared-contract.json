@@ -7,7 +7,7 @@
   "fixture_source": "Independent/test_external_training_gate_synthetic.py",
   "fixture_source_sha256": "fe78816919db960e775401288d30631a59248f282ed04f861acfe1c4d564fd19",
   "fixtures": "Public/external-training-gate-synthetic-acceptance.json",
-  "fixtures_sha256": "500fd00e1bbc4c55da9debb4e746fbb27b6a6819e8bb4518b88a0dcf49fc3321",
+  "fixtures_sha256": "10002183a256664270e7684a657728b343e528f6f3fd7164075b559a9228e35b",
   "synthetic_groups": 12,
   "frozen_learning_source_sha256": "59426a4be09d9adceff489baebf1849a691e1bc5ff8ee32f3164330fd99646ba",
   "original_known_scientific_required_hashes": {
@@ -127,7 +127,8 @@
     "development_completion_sha256=<same exact recovery acceptance SHA>"
   ],
   "producer_consumer_integration_fixture": "Public/adapter-external-gate-integration-synthetic-acceptance.json",
-  "producer_consumer_integration_sha256": "29eb87126a3490a1232d8490169f6e1269ae18f6d3b571c202ee7fb99f815636",
+  "producer_consumer_integration_sha256": "86e0558a96ed9d1d8ceaebf4c8591a44bc8e385afe32ac8e8d20bef8cf636ecf",
   "producer_consumer_integration_groups": 3,
-  "integration_scope": "Actual adapter main/report writer -> filesystem -> actual Gate.verify; numeric market checks explicitly synthetic. Failed adapter proof and wrong cancellation count rejected; no real labels or fit."
+  "integration_scope": "Actual adapter main/report writer -> filesystem -> actual Gate.verify; numeric market checks explicitly synthetic. Failed adapter proof and wrong cancellation count rejected; no real labels or fit.",
+  "metadata_view_only_amendment": "The authentic recovered summary stays byte-identical; adapter adds role_release_sha256 derived from the already-bound canonical recovery manifest, explicitly labelled as derived metadata. All four completion metadata fields read by cfe4 audit are checked against the authentic schema."
 }

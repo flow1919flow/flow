@@ -1,0 +1,55 @@
+{
+  "files": [
+    {
+      "path": "Independent/audit_development_recovery_release.py",
+      "original_sha256": "3f4265dfe2ba40dc5434622a90d5d29ce304de1c0661df0b987981f2005afb14",
+      "published_sha256": "3f4265dfe2ba40dc5434622a90d5d29ce304de1c0661df0b987981f2005afb14"
+    },
+    {
+      "path": "Independent/test_audit_recovery_authorization_synthetic.py",
+      "original_sha256": "51b6806ca0e8df096cf7cb81cf3c4a7b3d96c75409c81a98022949a7ef1e31e3",
+      "published_sha256": "51b6806ca0e8df096cf7cb81cf3c4a7b3d96c75409c81a98022949a7ef1e31e3"
+    },
+    {
+      "path": "Independent/test_adapter_gate_integration_synthetic.py",
+      "original_sha256": "080a7263a0a5c44f0b3cfa8289fca789cfdeca9f4ccc32bb3a6a77e4999f86fd",
+      "published_sha256": "080a7263a0a5c44f0b3cfa8289fca789cfdeca9f4ccc32bb3a6a77e4999f86fd"
+    },
+    {
+      "path": "Public/recovery-audit-metadata-view-amendment.json",
+      "original_sha256": "b21deb6983126802e7fba7499256fbcd55183b813e09833e665fccda827fbcf7",
+      "published_sha256": "b21deb6983126802e7fba7499256fbcd55183b813e09833e665fccda827fbcf7"
+    },
+    {
+      "path": "Public/recovery-audit-authorization-synthetic-acceptance.json",
+      "original_sha256": "73687f31fb8a5b2ecc940a2820b6cd892f2eb629920191a9ee92c08504995404",
+      "published_sha256": "73687f31fb8a5b2ecc940a2820b6cd892f2eb629920191a9ee92c08504995404"
+    },
+    {
+      "path": "Public/external-training-gate-synthetic-acceptance.json",
+      "original_sha256": "10002183a256664270e7684a657728b343e528f6f3fd7164075b559a9228e35b",
+      "published_sha256": "10002183a256664270e7684a657728b343e528f6f3fd7164075b559a9228e35b"
+    },
+    {
+      "path": "Public/adapter-external-gate-integration-synthetic-acceptance.json",
+      "original_sha256": "86e0558a96ed9d1d8ceaebf4c8591a44bc8e385afe32ac8e8d20bef8cf636ecf",
+      "published_sha256": "86e0558a96ed9d1d8ceaebf4c8591a44bc8e385afe32ac8e8d20bef8cf636ecf"
+    },
+    {
+      "path": "Public/recovery-independent-audit-prepared-contract.json",
+      "original_sha256": "774fe44cc1e42344d937cf191ce0850e8c5c02dd01bed67f69fa87421f4b9c2d",
+      "published_sha256": "774fe44cc1e42344d937cf191ce0850e8c5c02dd01bed67f69fa87421f4b9c2d"
+    },
+    {
+      "path": "Public/external-training-gate-prepared-contract.json",
+      "original_sha256": "24b235c3ee8a1d5e759cb327572ef1479a58b33c0e87961f78b820fa8b71c2cc",
+      "published_sha256": "24b235c3ee8a1d5e759cb327572ef1479a58b33c0e87961f78b820fa8b71c2cc"
+    },
+    {
+      "path": "AuditRuns/development-recovery-audit-1/Public/development-recovery-audit-failure.json",
+      "original_sha256": "b1e205282d3164ad08fc6d44e9950fcf9e1bcad40f0cabfdbace3a8cf2aaa06a",
+      "published_sha256": "b1e205282d3164ad08fc6d44e9950fcf9e1bcad40f0cabfdbace3a8cf2aaa06a"
+    }
+  ],
+  "no_numeric_model_or_strategy_change": true
+}

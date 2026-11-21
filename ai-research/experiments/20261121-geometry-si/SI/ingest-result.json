@@ -1,0 +1,33 @@
+{
+  "state": "all229_ES_events_loaded_and_roundtrip_verified",
+  "rows": 229,
+  "unique_messages": 229,
+  "types": {
+    "ICEBERG": 187,
+    "STOP": 42
+  },
+  "symbols": {
+    "ESM6": 18,
+    "ESU6": 98,
+    "ESZ6": 113
+  },
+  "utc_calendar_days": 78,
+  "chicago_calendar_days": 78,
+  "connected_overlap_episodes": 165,
+  "edited_messages": 0,
+  "first_known_at_utc": "2026-05-27T22:00:03.099000+00:00",
+  "last_known_at_utc": "2026-10-30T15:32:01.236000+00:00",
+  "parquet_sha256": "3c20d860e3832188400b94a0a031f590bc453f83166eda5a559439ac6bd42b8a",
+  "csv_sha256": "5f0546328b97248cbd1df772447839dd93114fd2a93d36a0efc47f078f232203",
+  "original_archive_sha256": "ef9c55d7b029e1a58f4b725b2462fd091e9f74d1fcc51dcf27958ebecdee8f04",
+  "original_archive_pagination_verified": true,
+  "parquet_roundtrip_identical": true,
+  "private_raw_messages_copied": false,
+  "all_rows_retained": true,
+  "supervised_model_trained": false,
+  "label_status": "pending",
+  "verified_feed_coverage_sessions": 0,
+  "absence_is_not_no_event": true,
+  "live_changed": false,
+  "cloud_spend_usd": 0
+}
